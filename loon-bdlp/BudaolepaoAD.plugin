@@ -1,0 +1,101 @@
+#!name=步道乐跑 · 全量去广告
+#!desc=去除步道乐跑广告
+#!author=許諾
+#!tag=去广告
+#!system=ios
+
+# ============================================================
+# 一、第三方广告 SDK 域名拦截
+#    命中即 REJECT，App 拿不到广告素材，广告位自然空掉
+# ============================================================
+[Rule]
+
+# ---------- 穿山甲 / Pangle / 字节跳动广告 ----------
+DOMAIN-SUFFIX,pangle.cn,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
+DOMAIN-SUFFIX,pangolin-be.com,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,gromore.pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,ad.oceanengine.com,REJECT
+DOMAIN-SUFFIX,ad.oceanengine.cn,REJECT
+DOMAIN-SUFFIX,tongseng.cn,REJECT
+DOMAIN-SUFFIX,ad.toutiao.com,REJECT
+DOMAIN-SUFFIX,mon.toutiaocloud.com,REJECT
+DOMAIN-SUFFIX,ad.ixigua.com,REJECT
+
+# ---------- 优量汇 / 广点通 GDT ----------
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
+DOMAIN-SUFFIX,adsdk.qq.com,REJECT
+DOMAIN-SUFFIX,adsview.qq.com,REJECT
+DOMAIN-SUFFIX,pgdt.gtimg.com,REJECT
+DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
+DOMAIN-SUFFIX,gdt.mdt.qq.com,REJECT
+
+# ---------- 快手联盟 ----------
+DOMAIN-SUFFIX,kwaicdn.com,REJECT
+DOMAIN-SUFFIX,ksad.com,REJECT
+DOMAIN-SUFFIX,adkwai.com,REJECT
+DOMAIN-SUFFIX,uykwai.com,REJECT
+DOMAIN-SUFFIX,kuaishouzt.com,REJECT
+DOMAIN-SUFFIX,gifshow.com,REJECT
+
+# ---------- 百度联盟 ----------
+DOMAIN-SUFFIX,mobads.baidu.com,REJECT
+DOMAIN-SUFFIX,mobads-logs.baidu.com,REJECT
+DOMAIN-SUFFIX,cpro.baidustatic.com,REJECT
+DOMAIN-SUFFIX,pos.baidu.com,REJECT
+
+# ---------- 汇量科技 Mintegral / 亿动 / 多盟 ----------
+DOMAIN-SUFFIX,mintegral.com,REJECT
+DOMAIN-SUFFIX,mtgrtb.com,REJECT
+DOMAIN-SUFFIX,mobvista.com,REJECT
+DOMAIN-SUFFIX,adview.cn,REJECT
+DOMAIN-SUFFIX,domob.cn,REJECT
+DOMAIN-SUFFIX,miaozhen.com,REJECT
+DOMAIN-SUFFIX,irs01.com,REJECT
+
+# ---------- 海外聚合 SDK（有装就一起拦） ----------
+DOMAIN-SUFFIX,applovin.com,REJECT
+DOMAIN-SUFFIX,unityads.unity3d.com,REJECT
+DOMAIN-SUFFIX,chartboost.com,REJECT
+DOMAIN-SUFFIX,inmobi.com,REJECT
+DOMAIN-SUFFIX,adcolony.com,REJECT
+DOMAIN-SUFFIX,vungle.com,REJECT
+DOMAIN-SUFFIX,tapjoy.com,REJECT
+DOMAIN-SUFFIX,supersonicads.com,REJECT
+DOMAIN-SUFFIX,ironsrc.com,REJECT
+
+# ---------- 统计/埋点（可选，全拦可能影响登录风控，按需取消注释） ----------
+# DOMAIN-SUFFIX,umeng.com,REJECT
+# DOMAIN-SUFFIX,umengcloud.com,REJECT
+# DOMAIN-SUFFIX,talkingdata.com,REJECT
+# DOMAIN-SUFFIX,growingio.com,REJECT
+# DOMAIN-SUFFIX,cnzz.com,REJECT
+
+# ============================================================
+# 二、App 内广告接口兜底（返回空 JSON，避免 App 解析崩）
+#    路径里明确带广告关键字的请求直接给空对象
+# ============================================================
+[URL Rewrite]
+^https?:\/\/[^\/]+\/[^\/]*\/(ad|ads|advert|adverts|advertise)\/[^\/]* - reject-dict
+^https?:\/\/[^\/]+\/[^\/]*\/(splash|open_screen|openscreen|startpage|kaiping)[^\/]* - reject-dict
+^https?:\/\/[^\/]+\/[^\/]*[?&](ad|ads|adid|ad_id)=[^&]* - reject-dict
+
+# ============================================================
+# 三、广告字段清洗脚本
+#    MITM 解密后，把 JSON 响应里的广告节点 / 广告列表项 / 广告位字段清空
+# ============================================================
+[Script]
+http-response ^https?:\/\/[^\/]*(budaolepao|lepao|bdty)\.(com|cn)\/ script-path=budaolepao_ad.js, requires-body=true, max-size=0, binary-body-mode=false, tag=步道乐跑去广告
+# 如果你的接口域名不在这几个里，把上面那条的正则换成你自己的域名，例如：
+# http-response ^https?:\/\/api\.你的域名\.com\/ script-path=budaolepao_ad.js, requires-body=true, max-size=0, binary-body-mode=false, tag=步道乐跑去广告
+
+# ============================================================
+# 四、需要解密的域名
+#    *.budaolepao.com / *.budaolepao.cn 是步道乐跑常用域名，
+#    如果你抓包发现是别的域名，补在后面即可
+# ============================================================
+[MITM]
+hostname = %APPEND% *.budaolepao.com, *.budaolepao.cn, *.lepao.com, *.lepao.cn

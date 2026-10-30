@@ -1,1 +1,1 @@
-# loon-plugins
+https://github.com/Crack22/loon-plugins
