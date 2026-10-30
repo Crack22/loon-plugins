@@ -1,3 +1,19 @@
+# 步道乐跑 · 全量去广告（Loon 插件）v2
+
+## v2 改了什么（上一版为什么“什么都不行”）
+- **主因：远程导入的脚本地址错了。** 上一版插件里 `script-path=budaolepao_ad.js` 只是文件名，Loon 远程导入时不会自动下载这个 JS，只有手动把 JS 放进本地 Scripts 才生效。v2 已改成绝对地址 `https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-bdlp/budaolepao_ad.js`，导入即生效，不用手动放 JS。
+- MITM 和 Script 匹配放宽：不再只认 `.com/.cn`，任何含 `budaolepao/lepao/bdty/bdlp` 的域名都走脚本。
+- 脚本新增：字符串里套 JSON 也清、列表项按 `type/adId` 也踢、更多广告 key（sponsor/chaping/tuiguang/gg 等）。
+- 导入后务必：插件已启用、MitM 证书已安装并信任、杀掉步道乐跑重开。
+
+## 如果 v2 还有广告，先这样排查
+1. Loon → 配置 → 插件，确认本插件是启用状态，且不是只导入了没开。
+2. Loon → 设置 → MitM，确认证书已安装，系统设置 → 通用 → 关于本机 → 证书信任设置里已打开 Loon。
+3. Loon → 日志/请求记录，打开步道乐跑刷几下，看广告请求到底是哪个域名，把那个域名告诉我，我再补进 Rule/MITM。
+4. 如果广告和正常内容走同一个接口、同一个字段，脚本只能按 key 清，域名拦截是拦不住的，得靠第 3 步抓到的真实字段名再补。
+
+---
+
 # 步道乐跑 · 全量去广告（Loon 插件）
 
 ```

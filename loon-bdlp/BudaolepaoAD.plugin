@@ -4,13 +4,16 @@
 #!tag=去广告
 #!system=ios
 
+# v2 关键修复：远程导入时 script-path 必须用绝对 URL，否则 Loon 不会自动下载 JS，
+# 只写文件名的话只有手动把 JS 放进本地 Scripts 才生效，这就是上一版“什么都不行”的主因。
+# 这一版同时放宽了 MITM 和 Script 匹配，不再只认 .com/.cn，任何含 budaolepao/lepao/bdty/bdlp 的域名都走脚本。
+
 # ============================================================
 # 一、第三方广告 SDK 域名拦截
-#    命中即 REJECT，App 拿不到广告素材，广告位自然空掉
 # ============================================================
 [Rule]
 
-# ---------- 穿山甲 / Pangle / 字节跳动广告 ----------
+# ---------- 穿山甲 / Pangle / 字节跳动 ----------
 DOMAIN-SUFFIX,pangle.cn,REJECT
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
@@ -23,8 +26,13 @@ DOMAIN-SUFFIX,tongseng.cn,REJECT
 DOMAIN-SUFFIX,ad.toutiao.com,REJECT
 DOMAIN-SUFFIX,mon.toutiaocloud.com,REJECT
 DOMAIN-SUFFIX,ad.ixigua.com,REJECT
+DOMAIN-SUFFIX,csj.com,REJECT
+DOMAIN-SUFFIX,byteoversea.com,REJECT
+DOMAIN-SUFFIX,bytedance.com,REJECT
+DOMAIN-SUFFIX,douyin.com,REJECT
+DOMAIN-SUFFIX,ad.douyin.com,REJECT
 
-# ---------- 优量汇 / 广点通 GDT ----------
+# ---------- 优量汇 / 广点通 / 腾讯 ----------
 DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,mi.gdt.qq.com,REJECT
 DOMAIN-SUFFIX,adsdk.qq.com,REJECT
@@ -32,6 +40,9 @@ DOMAIN-SUFFIX,adsview.qq.com,REJECT
 DOMAIN-SUFFIX,pgdt.gtimg.com,REJECT
 DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
 DOMAIN-SUFFIX,gdt.mdt.qq.com,REJECT
+DOMAIN-SUFFIX,ad.qq.com,REJECT
+DOMAIN-SUFFIX,adservice.qq.com,REJECT
+DOMAIN-SUFFIX,ad.tencent.com,REJECT
 
 # ---------- 快手联盟 ----------
 DOMAIN-SUFFIX,kwaicdn.com,REJECT
@@ -40,14 +51,18 @@ DOMAIN-SUFFIX,adkwai.com,REJECT
 DOMAIN-SUFFIX,uykwai.com,REJECT
 DOMAIN-SUFFIX,kuaishouzt.com,REJECT
 DOMAIN-SUFFIX,gifshow.com,REJECT
+DOMAIN-SUFFIX,ad.kuaishou.com,REJECT
+DOMAIN-SUFFIX,ksads.com,REJECT
 
 # ---------- 百度联盟 ----------
 DOMAIN-SUFFIX,mobads.baidu.com,REJECT
 DOMAIN-SUFFIX,mobads-logs.baidu.com,REJECT
 DOMAIN-SUFFIX,cpro.baidustatic.com,REJECT
 DOMAIN-SUFFIX,pos.baidu.com,REJECT
+DOMAIN-SUFFIX,ad.baidu.com,REJECT
+DOMAIN-SUFFIX,duapps.baidu.com,REJECT
 
-# ---------- 汇量科技 Mintegral / 亿动 / 多盟 ----------
+# ---------- 汇量 / Mintegral / 亿动 / 多盟 / 海外聚合 ----------
 DOMAIN-SUFFIX,mintegral.com,REJECT
 DOMAIN-SUFFIX,mtgrtb.com,REJECT
 DOMAIN-SUFFIX,mobvista.com,REJECT
@@ -55,8 +70,6 @@ DOMAIN-SUFFIX,adview.cn,REJECT
 DOMAIN-SUFFIX,domob.cn,REJECT
 DOMAIN-SUFFIX,miaozhen.com,REJECT
 DOMAIN-SUFFIX,irs01.com,REJECT
-
-# ---------- 海外聚合 SDK（有装就一起拦） ----------
 DOMAIN-SUFFIX,applovin.com,REJECT
 DOMAIN-SUFFIX,unityads.unity3d.com,REJECT
 DOMAIN-SUFFIX,chartboost.com,REJECT
@@ -66,36 +79,33 @@ DOMAIN-SUFFIX,vungle.com,REJECT
 DOMAIN-SUFFIX,tapjoy.com,REJECT
 DOMAIN-SUFFIX,supersonicads.com,REJECT
 DOMAIN-SUFFIX,ironsrc.com,REJECT
+DOMAIN-SUFFIX,ironsource.com,REJECT
 
-# ---------- 统计/埋点（可选，全拦可能影响登录风控，按需取消注释） ----------
-# DOMAIN-SUFFIX,umeng.com,REJECT
-# DOMAIN-SUFFIX,umengcloud.com,REJECT
-# DOMAIN-SUFFIX,talkingdata.com,REJECT
-# DOMAIN-SUFFIX,growingio.com,REJECT
-# DOMAIN-SUFFIX,cnzz.com,REJECT
+# ---------- 手机厂商广告 ----------
+DOMAIN-SUFFIX,ad.mi.com,REJECT
+DOMAIN-SUFFIX,ad.xiaomi.com,REJECT
+DOMAIN-SUFFIX,ad.huawei.com,REJECT
+DOMAIN-SUFFIX,ad.oppo.com,REJECT
+DOMAIN-SUFFIX,ad.vivo.com,REJECT
+DOMAIN-SUFFIX,ad.meizu.com,REJECT
 
 # ============================================================
-# 二、App 内广告接口兜底（返回空 JSON，避免 App 解析崩）
-#    路径里明确带广告关键字的请求直接给空对象
+# 二、App 内广告接口兜底：路径里明确带广告段的请求直接给空 JSON
+# 注意：不用 .*ad.* 这种裸匹配，会误伤 download/header/address/load
 # ============================================================
 [URL Rewrite]
-^https?:\/\/[^\/]+\/[^\/]*\/(ad|ads|advert|adverts|advertise)\/[^\/]* - reject-dict
-^https?:\/\/[^\/]+\/[^\/]*\/(splash|open_screen|openscreen|startpage|kaiping)[^\/]* - reject-dict
-^https?:\/\/[^\/]+\/[^\/]*[?&](ad|ads|adid|ad_id)=[^&]* - reject-dict
+^https?:\/\/[^\/]+\/[^?]*\/(ad|ads|advert|advertisement|banner|splash|kaiping|openscreen|open_screen|startpage|start_page|interstitial|reward|rewarded|incentive|promotion|tuiguang|feed_ad|native_ad|popup_ad)(\/|$|\?|&) - reject-dict
+^https?:\/\/[^\/]+\/[^?]*[?&](ad|ads|ad_id|adid|is_ad|ad_type|adtype)=[^&]* - reject-dict
 
 # ============================================================
-# 三、广告字段清洗脚本
-#    MITM 解密后，把 JSON 响应里的广告节点 / 广告列表项 / 广告位字段清空
+# 三、广告字段清洗脚本（远程绝对地址，导入即生效，不用手动放 JS）
 # ============================================================
 [Script]
-http-response ^https?:\/\/[^\/]*(budaolepao|lepao|bdty)\.(com|cn)\/ script-path=budaolepao_ad.js, requires-body=true, max-size=0, binary-body-mode=false, tag=步道乐跑去广告
-# 如果你的接口域名不在这几个里，把上面那条的正则换成你自己的域名，例如：
-# http-response ^https?:\/\/api\.你的域名\.com\/ script-path=budaolepao_ad.js, requires-body=true, max-size=0, binary-body-mode=false, tag=步道乐跑去广告
+http-response ^https?:\/\/[^\/]*(budaolepao|lepao|bdty|bdlp)[^\/]*\/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-bdlp/budaolepao_ad.js, requires-body=true, max-size=0, binary-body-mode=false, tag=步道乐跑去广告
+# 兼容：万一 App 换了全新域名但接口里仍带广告字段，先用 Loon 日志看真实域名，再把域名加进下面的 MITM 和上面这条正则
 
 # ============================================================
 # 四、需要解密的域名
-#    *.budaolepao.com / *.budaolepao.cn 是步道乐跑常用域名，
-#    如果你抓包发现是别的域名，补在后面即可
 # ============================================================
 [MITM]
-hostname = %APPEND% *.budaolepao.com, *.budaolepao.cn, *.lepao.com, *.lepao.cn
+hostname = %APPEND% *.budaolepao.com, *.budaolepao.cn, *.budaolepao.net, *.lepao.com, *.lepao.cn, *.bdty.com, *.bdty.cn, *.bdlp.com, *.bdlp.cn
