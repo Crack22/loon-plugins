@@ -4,7 +4,7 @@
 #!tag=大蓝树
 #!system=ios
 
-# 脚本来源：fmz200/wool_scripts
+# 脚本来源：xunuo/wool_scripts
 # 使用教程：
 # 1、导入本插件，开启重写脚本 + cron
 # 2、打开大蓝树 APP，触发 /api/v1/me/checkin/status 接口，自动抓取 Token
