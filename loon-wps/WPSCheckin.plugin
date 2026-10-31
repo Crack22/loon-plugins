@@ -1,11 +1,15 @@
 #!name=WPS Office 每日签到
-#!desc=每日签到，打卡领会员，天天抽奖，会员试用申请，限量爆款领取，小程序打卡
+#!desc=每日签到，打卡领会员，天天抽奖，会员试用申请，限量爆款领取，小程序打卡；用法：开重写+cron，打开WPS进活动页停1秒，收到WPS Cookie获取成功即抓取成功，cron每天10:00触发
 #!author=許諾
 #!tag=WPS
 #!system=ios
 
 # 脚本来源：MaYIHEI/paperclip
-# 使用步骤：开启重写脚本 + cron 后，打开 WPS APP 进任意活动页停留 1 秒，收到 WPS Cookie 获取成功即抓取成功，cron 每天 10:00 触发
+# 用法：
+# 1、按下方配置，开启重写脚本 + cron
+# 2、打开「WPS」APP → 进任意活动页（任务中心 / 福利中心「天天领福利」）停留 1 秒
+# 3、收到 ✅ WPS Cookie 获取成功 通知即抓取成功
+# 4、cron 每天 10:00 触发
 [MITM]
 hostname = personal-act.wps.cn
 
