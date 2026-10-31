@@ -1,11 +1,16 @@
 #!name=大蓝树每日签到
-#!desc=一个对标小红书的男性社区，居然有签到；支持每日签到
-#!author=許諾 和 fmz200
+#!desc=一个对标小红书的男性社区，居然有签到；用法：开重写+cron，打开大蓝树APP触发签到状态接口抓Token，cron每天8:30自动签到
+#!author=許諾
 #!tag=大蓝树
 #!system=ios
 
 # 脚本来源：fmz200/wool_scripts
-# 用法：开启重写脚本 + cron 后，打开大蓝树 APP 触发签到状态接口抓取 Token，cron 每天 8:30 触发签到
+# 使用教程：
+# 1、导入本插件，开启重写脚本 + cron
+# 2、打开大蓝树 APP，触发 /api/v1/me/checkin/status 接口，自动抓取 Token
+# 3、确认 Token 已抓取成功后，不用再手动操作
+# 4、cron 每天 8:30 自动触发签到
+# 注意：首次使用前必须先抓 Token，否则 cron 签到会失败
 [MITM]
 hostname = dalanshu.top
 
