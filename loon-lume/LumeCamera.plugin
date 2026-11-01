@@ -1,0 +1,13 @@
+#!name=lume相机
+#!desc=Lume 相机 VIP 验证响应修改；原脚本光卷，移植到 Loon
+#!author=許諾
+#!tag=lume
+#!system=ios
+
+# 原脚本来源：89996462/Quantumult-X/main/ycdz/gj.js（原名光卷，原作者彭于晏）
+# 移植作者：許諾
+[MITM]
+hostname = lume96resapi.imendon.com
+
+[Script]
+http-response ^https:\/\/lume96resapi\.imendon\.com\/v2\/purchase\/vip\/verification script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-lume/lume.js, requires-body=true, tag=lume相机
