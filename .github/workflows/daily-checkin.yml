@@ -39,3 +39,8 @@ jobs:
           CHILLEDMELON_PASSWORD: ${{ secrets.CHILLEDMELON_PASSWORD }}
           CHILLEDMELON_ACCOUNTS: ${{ secrets.CHILLEDMELON_ACCOUNTS }}
           CHILLEDMELON_MAX_ACCOUNTS: ${{ secrets.CHILLEDMELON_MAX_ACCOUNTS }}
+          GLADOS_COOKIE: ${{ secrets.GLADOS_COOKIE }}
+          GLADOS_UA: ${{ secrets.GLADOS_UA }}
+          GLADOS_ACCOUNTS: ${{ secrets.GLADOS_ACCOUNTS }}
+          GLADOS_MAX_ACCOUNTS: ${{ secrets.GLADOS_MAX_ACCOUNTS }}
+          GLADOS_EXCHANGE: ${{ secrets.GLADOS_EXCHANGE }}
