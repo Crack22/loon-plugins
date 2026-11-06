@@ -1,10 +1,14 @@
 {
   "name": "許諾 BoxJs 图标",
-  "description": "BoxJs 订阅里的全部图标，共 11 个，每天自动同步 BoxJs 订阅的新图标。",
+  "description": "BoxJs 订阅里的全部图标，共 12 个，每天自动同步 BoxJs 订阅的新图标。",
   "icons": [
     {
       "name": "ChilledMelon 每日签到",
       "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/chilledmelon.jpg"
+    },
+    {
+      "name": "Loon配置状态备份",
+      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/loon-backup.jpg"
     },
     {
       "name": "WPS Office 每日签到",

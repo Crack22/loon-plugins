@@ -453,7 +453,7 @@
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
       "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/subscription.jpg"
+        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/loon-backup.jpg"
       ],
       "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-config-backup/loon_config_backup.js",
       "descs_html": [

@@ -6,4 +6,4 @@
 
 # 每天 04:00 自动备份一次；平时点一下 BoxJs 里的「Loon配置状态备份」也能立即备份一次。
 [Script]
-cron "0 4 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-config-backup/loon_config_backup.js, tag=Loon配置备份, enable=true
+cron "0 4 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-config-backup/loon_config_backup.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/loon-backup.jpg, tag=Loon配置备份, enable=true
