@@ -2,105 +2,214 @@
   "id": "xunuo.app.sub",
   "name": "許諾的签到订阅",
   "author": "許諾",
-  "icon": "https://www.chilledmelon.com/favicon.ico",
+  "icon": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/subscription.jpg",
   "repo": "https://github.com/Crack22/loon-plugins",
   "apps": [
     {
       "id": "wps_checkin",
       "name": "WPS Office 每日签到",
-      "keys": ["wps_sid"],
+      "keys": [
+        "wps_sid"
+      ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": ["https://raw.githubusercontent.com/MaYIHEI/pin/refs/heads/main/app/wps.png"],
+      "icons": [
+        "https://raw.githubusercontent.com/MaYIHEI/pin/refs/heads/main/app/wps.png"
+      ],
       "script": "https://raw.githubusercontent.com/MaYIHEI/paperclip/refs/heads/main/app/wps/wps.js",
       "settings": [
-        {"id": "wps_sid", "name": "Cookie（wps_sid）", "val": "", "type": "textarea", "desc": "打开 WPS 进任意活动页停 1 秒自动抓取；抓不到时可手动粘贴。每天 10:00 自动签到"}
+        {
+          "id": "wps_sid",
+          "name": "Cookie（wps_sid）",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开 WPS 进任意活动页停 1 秒自动抓取；抓不到时可手动粘贴。每天 10:00 自动签到"
+        }
       ]
     },
     {
       "id": "dalanshu_checkin",
       "name": "大蓝树每日签到",
-      "keys": ["fmz200_dalanshu_authorization"],
+      "keys": [
+        "fmz200_dalanshu_authorization"
+      ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": ["https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dalanshu.jpg"],
+      "icons": [
+        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dalanshu.jpg"
+      ],
       "script": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/dalanshu/dalanshu_checkin.js",
       "settings": [
-        {"id": "fmz200_dalanshu_authorization", "name": "Token", "val": "", "type": "textarea", "desc": "打开大蓝树 APP 触发签到状态接口自动抓取；抓不到时可手动粘贴 Authorization。每天 08:30 自动签到"}
+        {
+          "id": "fmz200_dalanshu_authorization",
+          "name": "Token",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开大蓝树 APP 触发签到状态接口自动抓取；抓不到时可手动粘贴 Authorization。每天 08:30 自动签到"
+        }
       ]
     },
     {
       "id": "woniu_checkin",
       "name": "蜗牛每日签到",
-      "keys": ["woniu_cookie"],
+      "keys": [
+        "woniu_cookie"
+      ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": ["https://woniu.qljiang.com/weixin_files/woniu_white.png"],
+      "icons": [
+        "https://woniu.qljiang.com/weixin_files/woniu_white.png"
+      ],
       "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_checkin.js",
       "settings": [
-        {"id": "woniu_cookie", "name": "Cookie", "val": "", "type": "textarea", "desc": "打开蜗牛签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 09:00 自动签到"}
+        {
+          "id": "woniu_cookie",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开蜗牛签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 09:00 自动签到"
+        }
       ]
     },
     {
       "id": "risha_checkin",
       "name": "七日杀每日签到",
-      "keys": ["risha_cookie"],
+      "keys": [
+        "risha_cookie"
+      ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": ["https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/7risha.jpg"],
+      "icons": [
+        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/7risha.jpg"
+      ],
       "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha_checkin.js",
       "settings": [
-        {"id": "risha_cookie", "name": "Cookie", "val": "", "type": "textarea", "desc": "打开七日杀签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 08:30 自动签到"}
+        {
+          "id": "risha_cookie",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开七日杀签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 08:30 自动签到"
+        }
       ]
     },
     {
       "id": "chilledmelon_checkin",
       "name": "ChilledMelon 每日签到",
-      "keys": ["chilledmelon_username", "chilledmelon_password"],
+      "keys": [
+        "chilledmelon_username",
+        "chilledmelon_password"
+      ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": ["https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/chilledmelon.jpg"],
+      "icons": [
+        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/chilledmelon.jpg"
+      ],
       "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/chilledmelon_checkin.js",
       "settings": [
-        {"id": "chilledmelon_username", "name": "账号", "val": "", "type": "text", "desc": "ChilledMelon 用户名"},
-        {"id": "chilledmelon_password", "name": "密码", "val": "", "type": "password", "desc": "ChilledMelon 密码。每天 09:00 自动登录、做运算题、签到"}
+        {
+          "id": "chilledmelon_username",
+          "name": "账号",
+          "val": "",
+          "type": "text",
+          "desc": "ChilledMelon 用户名"
+        },
+        {
+          "id": "chilledmelon_password",
+          "name": "密码",
+          "val": "",
+          "type": "password",
+          "desc": "ChilledMelon 密码。每天 09:00 自动登录、做运算题、签到"
+        }
       ]
     },
     {
       "id": "weibo_daka",
       "name": "微博超话打卡",
-      "keys": ["weibo_daka_check_url", "weibo_daka_check_headers", "weibo_daka_pic_fid", "weibo_daka_pic_md5", "weibo_daka_copy"],
+      "keys": [
+        "weibo_daka_check_url",
+        "weibo_daka_check_headers",
+        "weibo_daka_pic_fid",
+        "weibo_daka_pic_md5",
+        "weibo_daka_copy"
+      ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
       "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_checkin.js",
       "settings": [
-        {"id": "weibo_daka_copy", "name": "打卡文案", "val": "八年风与歌，初心未改，愿黄子弘凡永远自在发光🎶", "type": "text", "desc": "每天打卡帖里跟在 DayN 后面的那句文案"},
-        {"id": "weibo_daka_pic_fid", "name": "打卡图片 fid", "val": "", "type": "text", "desc": "抓取插件发一次打卡后自动保存"},
-        {"id": "weibo_daka_pic_md5", "name": "打卡图片 md5", "val": "", "type": "text", "desc": "抓取插件自动保存"},
-        {"id": "weibo_daka_check_url", "name": "打卡检查链接", "val": "", "type": "textarea", "desc": "抓取插件自动保存"},
-        {"id": "weibo_daka_check_headers", "name": "打卡请求头", "val": "", "type": "textarea", "desc": "抓取插件自动保存"}
+        {
+          "id": "weibo_daka_copy",
+          "name": "打卡文案",
+          "val": "八年风与歌，初心未改，愿黄子弘凡永远自在发光🎶",
+          "type": "text",
+          "desc": "每天打卡帖里跟在 DayN 后面的那句文案"
+        },
+        {
+          "id": "weibo_daka_pic_fid",
+          "name": "打卡图片 fid",
+          "val": "",
+          "type": "text",
+          "desc": "抓取插件发一次打卡后自动保存"
+        },
+        {
+          "id": "weibo_daka_pic_md5",
+          "name": "打卡图片 md5",
+          "val": "",
+          "type": "text",
+          "desc": "抓取插件自动保存"
+        },
+        {
+          "id": "weibo_daka_check_url",
+          "name": "打卡检查链接",
+          "val": "",
+          "type": "textarea",
+          "desc": "抓取插件自动保存"
+        },
+        {
+          "id": "weibo_daka_check_headers",
+          "name": "打卡请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "抓取插件自动保存"
+        }
       ]
     },
     {
       "id": "embypulse_taotu_checkin",
       "name": "乐蛙每日签到",
-      "keys": ["embypulse1_session_id"],
+      "keys": [
+        "embypulse1_session_id"
+      ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
       "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/embypulse_taotu_checkin.js",
       "settings": [
-        {"id": "embypulse1_session_id", "name": "session_id", "val": "", "type": "textarea", "desc": "https://ue2.taotu.ink/ 的 Cookie 里 session_id 的值。每天 09:00 自动签到，奖励 100-120 积分"}
+        {
+          "id": "embypulse1_session_id",
+          "name": "session_id",
+          "val": "",
+          "type": "textarea",
+          "desc": "https://ue2.taotu.ink/ 的 Cookie 里 session_id 的值。每天 09:00 自动签到，奖励 100-120 积分"
+        }
       ]
     },
     {
       "id": "embypulse_dijia_checkin",
       "name": "乐观每日签到",
-      "keys": ["embypulse2_session_id"],
+      "keys": [
+        "embypulse2_session_id"
+      ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
       "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/embypulse_dijia_checkin.js",
       "settings": [
-        {"id": "embypulse2_session_id", "name": "session_id", "val": "", "type": "textarea", "desc": "https://embyyh.dijia.de/ 的 Cookie 里 session_id 的值。每天 09:00 自动签到，奖励 90-130 积分"}
+        {
+          "id": "embypulse2_session_id",
+          "name": "session_id",
+          "val": "",
+          "type": "textarea",
+          "desc": "https://embyyh.dijia.de/ 的 Cookie 里 session_id 的值。每天 09:00 自动签到，奖励 90-130 积分"
+        }
       ]
     }
   ]
