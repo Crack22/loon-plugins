@@ -172,6 +172,9 @@
           "type": "textarea",
           "desc": "抓取插件自动保存"
         }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg"
       ]
     },
     {
