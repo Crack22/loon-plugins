@@ -1,6 +1,6 @@
 // 乐观每日签到：session_id 或账号密码登录（二选一），账号数量不限
 // 账号1：embypulse2_session_id / embypulse2_username + embypulse2_password
-// 更多账号：embypulse2_accounts，每行一个，填 session_id 或 账号----密码（四个短横线隔开）
+// 更多账号：embypulse2_accounts，每行一个，填 session_id 或 账号 密码（中间一个空格隔开，旧的 ---- 也还能用）
 // 登录数量：embypulse2_max_accounts，填数字只签前 N 个账号，空着就是全部都签
 // 登录接口：POST /api/requests/auth（JSON {username, password}），成功 status=success，登录后从 Set-Cookie 取 session_id 保存
 // 签到接口：GET /api/user/points/info + POST /api/user/points/checkin，需带 Cookie session_id 和 Origin 头
@@ -49,10 +49,12 @@ function collectAccounts() {
     var line = lines[i].trim();
     if (!line) continue;
     var a = { cookieKey: "", cookie: "", user: "", pass: "" };
-    var p = line.indexOf("----");
+    var p = line.indexOf(" ");
+    var cut = 1;
+    if (p === -1) { p = line.indexOf("----"); cut = 4; }
     if (p !== -1) {
       a.user = line.slice(0, p).trim();
-      a.pass = line.slice(p + 4).trim();
+      a.pass = line.slice(p + cut).trim();
       if (!a.user || !a.pass) continue;
     } else {
       a.cookie = line;

@@ -292,7 +292,7 @@
           "name": "多账号",
           "val": "",
           "type": "textarea",
-          "desc": "每行一个账号：填 session_id，或 账号----密码（四个短横线隔开），不限个数"
+          "desc": "每行一个账号：填 session_id，或 账号 密码（中间一个空格隔开），不限个数"
         },
         {
           "id": "embypulse1_max_accounts",
@@ -351,7 +351,7 @@
           "name": "多账号",
           "val": "",
           "type": "textarea",
-          "desc": "每行一个账号：填 session_id，或 账号----密码（四个短横线隔开），不限个数"
+          "desc": "每行一个账号：填 session_id，或 账号 密码（中间一个空格隔开），不限个数"
         },
         {
           "id": "embypulse2_max_accounts",
