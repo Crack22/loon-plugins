@@ -1,7 +1,7 @@
 // GitHub Actions 每日签到：不用挂梯子，云端定时跑
 // 每天 09:00（北京时间）由 .github/workflows/daily-checkin.yml 触发
 // 账号来自 GitHub Secrets（用 Loon 里的「同步到 GitHub Secrets」插件从 BoxJs 上传）
-// 覆盖 5 个境外站：蜗牛 / 乐蛙 / 乐观 / ChilledMelon / GLaDOS
+// 覆盖 6 个境外站：蜗牛 / 乐蛙 / 乐观 / ChilledMelon / GLaDOS / 网易云
 // 七日杀、WPS、大蓝树、微博是国内站，直连就能签，继续留在 Loon 里
 // 运行结果只打印在 Actions 的日志里，不会把账号密码写进日志
 
@@ -283,7 +283,41 @@ await runWoniu();
 await runEmby("乐蛙", "https://ue2.taotu.ink", "LEWA");
 await runEmby("乐观", "https://embyyh.dijia.de", "LEGUAN");
 await runChilledMelon();
+
+// ---------- 网易云音乐 ----------
+// 签到接口：GET https://music.163.com/api/point/dailyTask?type=1（网页端，+2 成长值）
+// 实测 2026-11-07：首次 {"code":200,"point":2}，重复 {"code":-2,"msg":"重复签到"}
+// APP 端 type=0 已停用（/api 和 /weapi 都是 "功能暂不支持"），所以只签网页端
+// 注意：多账号每行是一个完整 Cookie，Cookie 里本身带分号，不能用 collectAccounts 的分号拆分
+async function runNetease() {
+  const accounts = [];
+  for (let n = 1; n <= 3; n++) {
+    const c = env("NETEASE_COOKIE" + (n === 1 ? "" : String(n)));
+    if (c) accounts.push({ label: "账号" + n, cookie: c });
+  }
+  for (const line of (env("NETEASE_ACCOUNTS") || "").split("\n")) {
+    const t = line.trim();
+    if (!t) continue;
+    accounts.push({ label: "账号" + (accounts.length + 1), cookie: t });
+  }
+  if (!accounts.length) { console.log("[网易云音乐] 未配置账号，跳过"); return; }
+  const UA_WEB = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15";
+  for (const acct of accounts) {
+    let res;
+    try {
+      res = await fetch("https://music.163.com/api/point/dailyTask?type=1", {
+        headers: { Cookie: acct.cookie, "User-Agent": UA_WEB, Referer: "https://music.163.com/", Host: "music.163.com" },
+      });
+    } catch (e) { bad("网易云音乐", acct.label, "签到网络异常"); continue; }
+    const r = await parseJson(res);
+    if (r && r.code === 200 && r.point !== undefined) ok("网易云音乐", acct.label, "签到成功 +" + r.point + " 成长值");
+    else if (r && r.code === -2) ok("网易云音乐", acct.label, "今日已签到");
+    else bad("网易云音乐", acct.label, "签到失败，" + ((r && r.msg) || ("HTTP " + res.status)) + "（Cookie 可能过期）");
+  }
+}
+
 await runGlados();
+await runNetease();
 
 console.log("---- 签到结果 ----");
 if (!results.length) console.log("没有配置任何账号");
