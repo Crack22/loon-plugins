@@ -25,6 +25,10 @@
           "type": "textarea",
           "desc": "打开 WPS 进任意活动页停 1 秒自动抓取；抓不到时可手动粘贴。每天 10:00 自动签到"
         }
+      ],
+      "descs_html": [
+        "WPS Office 每日签到，每天 10:00 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-wps/WPSCheckin.plugin\">点击安装 Loon 插件</a>"
       ]
     },
     {
@@ -47,6 +51,10 @@
           "type": "textarea",
           "desc": "打开大蓝树 APP 触发签到状态接口自动抓取；抓不到时可手动粘贴 Authorization。每天 08:30 自动签到"
         }
+      ],
+      "descs_html": [
+        "大蓝树每日签到，每天 08:30 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-dalanshu/DalanshuCheckin.plugin\">点击安装 Loon 插件</a>"
       ]
     },
     {
@@ -101,6 +109,10 @@
           "type": "text",
           "desc": "填数字只签前 N 个账号，空着就是全部都签"
         }
+      ],
+      "descs_html": [
+        "蜗牛 4K 每日签到，每天 09:00 自动签到，+10 积分。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/WoNiuCheckin.plugin\">点击安装 Loon 插件</a>"
       ]
     },
     {
@@ -123,6 +135,10 @@
           "type": "textarea",
           "desc": "打开七日杀签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 08:30 自动签到"
         }
+      ],
+      "descs_html": [
+        "七日杀中文网每日签到，每天 08:30 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha.plugin\">点击安装 Loon 插件</a>"
       ]
     },
     {
@@ -169,6 +185,10 @@
           "type": "text",
           "desc": "填数字只签前 N 个账号，空着就是全部都签"
         }
+      ],
+      "descs_html": [
+        "ChilledMelon 每日签到，每天 09:00 自动登录、做运算题、签到，+5~20 积分。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/ChilledMelonCheckin.plugin\">点击安装 Loon 插件</a>"
       ]
     },
     {
@@ -223,6 +243,11 @@
       ],
       "icons": [
         "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg"
+      ],
+      "descs_html": [
+        "微博超话每日打卡，每天 09:00 自动签到并发打卡帖（黄子弘凡出道八周年活动）。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohuaCheckin.plugin\">点击安装打卡插件</a>",
+        "抓取插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohuaCapture.plugin\">点击安装</a>（先用抓取插件在微博 App 里打卡一次，保存打卡信息）"
       ]
     },
     {
@@ -277,6 +302,10 @@
       ],
       "icons": [
         "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/lewa.jpg"
+      ],
+      "descs_html": [
+        "乐蛙每日签到，每天 09:00 自动签到，奖励 100-120 积分。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/EmbyPulseTaotuCheckin.plugin\">点击安装 Loon 插件</a>"
       ]
     },
     {
@@ -331,6 +360,10 @@
       ],
       "icons": [
         "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/leguan.jpg"
+      ],
+      "descs_html": [
+        "乐观每日签到，每天 09:00 自动签到，奖励 90-130 积分。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/EmbyPulseDijiaCheckin.plugin\">点击安装 Loon 插件</a>"
       ]
     }
   ]
