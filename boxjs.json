@@ -112,7 +112,8 @@
       ],
       "descs_html": [
         "蜗牛 4K 每日签到，每天 09:00 自动签到，+10 积分。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/WoNiuCheckin.plugin\">点击安装 Loon 插件</a>"
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/WoNiuCheckin.plugin\">点击安装 Loon 插件</a>",
+        "不用挂梯子也能签：用「同步到 GitHub Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
       ]
     },
     {
@@ -188,7 +189,8 @@
       ],
       "descs_html": [
         "ChilledMelon 每日签到，每天 09:00 自动登录、做运算题、签到，+5~20 积分。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/ChilledMelonCheckin.plugin\">点击安装 Loon 插件</a>"
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/ChilledMelonCheckin.plugin\">点击安装 Loon 插件</a>",
+        "不用挂梯子也能签：用「同步到 GitHub Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
       ]
     },
     {
@@ -305,7 +307,8 @@
       ],
       "descs_html": [
         "乐蛙每日签到，每天 09:00 自动签到，奖励 100-120 积分。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/EmbyPulseTaotuCheckin.plugin\">点击安装 Loon 插件</a>"
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/EmbyPulseTaotuCheckin.plugin\">点击安装 Loon 插件</a>",
+        "不用挂梯子也能签：用「同步到 GitHub Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
       ]
     },
     {
@@ -363,7 +366,44 @@
       ],
       "descs_html": [
         "乐观每日签到，每天 09:00 自动签到，奖励 90-130 积分。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/EmbyPulseDijiaCheckin.plugin\">点击安装 Loon 插件</a>"
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/EmbyPulseDijiaCheckin.plugin\">点击安装 Loon 插件</a>",
+        "不用挂梯子也能签：用「同步到 GitHub Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
+      ]
+    },
+    {
+      "id": "gh_secrets_sync",
+      "name": "同步到 GitHub Secrets",
+      "keys": [
+        "github_pat",
+        "github_repo"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/subscription.jpg"
+      ],
+      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-gh-sync/github_secrets_sync.js",
+      "descs_html": [
+        "把 BoxJs 里的签到账号传到 GitHub 仓库的 Secrets 里，GitHub Actions 每天 09:00 自动签到，不用挂梯子，手机关机也能签。本地 Loon 插件保持不变，两边同时跑，先签到的那个生效。",
+        "先创建一个 Token：<a href=\"https://github.com/settings/tokens?type=beta\">点这里创建 Fine-grained Token</a>，选 Only select repositories → loon-plugins，Repository permissions 里 Secrets 选 Read and write，然后把 Token 粘贴到下面的「GitHub Token」。",
+        "填好后在 Loon 里点这个插件的脚本手动运行一次，就会上传（空着的账号不会上传）。以后账号换了，再运行一次就行。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-gh-sync/GitHubSecretsSync.plugin\">点击安装</a>"
+      ],
+      "settings": [
+        {
+          "id": "github_pat",
+          "name": "GitHub Token",
+          "val": "",
+          "type": "password",
+          "desc": "在 GitHub 上创建一个 Fine-grained Token，只给 loon-plugins 仓库 Secrets 的读写权限，粘贴到这里，不要发给任何人"
+        },
+        {
+          "id": "github_repo",
+          "name": "仓库",
+          "val": "Crack22/loon-plugins",
+          "type": "text",
+          "desc": "格式：用户名/仓库名"
+        }
       ]
     }
   ]
