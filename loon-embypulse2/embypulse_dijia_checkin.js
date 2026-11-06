@@ -3,7 +3,7 @@
 // session_id 保存在 BoxJs（键 embypulse2_session_id），不在插件里写死；过期了重新粘贴
 const SITE = "https://embyyh.dijia.de";
 const SESSION_KEY = "embypulse2_session_id";
-const NAME = "EmbyPulse-dijia";
+const NAME = "EmbyPulse-乐观";
 
 function headers(sessionId) {
   return {

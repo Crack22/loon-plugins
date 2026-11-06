@@ -1,7 +1,7 @@
-#!name=EmbyPulse 每日签到（dijia）
+#!name=EmbyPulse 每日签到（乐观）
 #!desc=每天 09:00 自动签到 https://embyyh.dijia.de/，签到奖励 90-130 积分。\n先在 BoxJs 里填 session_id（键 embypulse2_session_id）：登录这个站后，从 Cookie 里复制 session_id 的值粘贴进去。\nCookie 只保存在你手机本地，不会上传；过期了重新粘贴一次。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Script]
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/embypulse_dijia_checkin.js, tag=EmbyPulse-dijia签到, enable=true
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/embypulse_dijia_checkin.js, tag=EmbyPulse-乐观签到, enable=true

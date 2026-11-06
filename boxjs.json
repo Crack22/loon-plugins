@@ -83,7 +83,7 @@
     },
     {
       "id": "embypulse_taotu_checkin",
-      "name": "EmbyPulse 每日签到（taotu）",
+      "name": "EmbyPulse 每日签到（乐蛙）",
       "keys": ["embypulse1_session_id"],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
@@ -94,7 +94,7 @@
     },
     {
       "id": "embypulse_dijia_checkin",
-      "name": "EmbyPulse 每日签到（dijia）",
+      "name": "EmbyPulse 每日签到（乐观）",
       "keys": ["embypulse2_session_id"],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",

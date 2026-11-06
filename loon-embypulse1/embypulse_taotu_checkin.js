@@ -3,7 +3,7 @@
 // session_id 保存在 BoxJs（键 embypulse1_session_id），不在插件里写死；过期了重新粘贴
 const SITE = "https://ue2.taotu.ink";
 const SESSION_KEY = "embypulse1_session_id";
-const NAME = "EmbyPulse-taotu";
+const NAME = "EmbyPulse-乐蛙";
 
 function headers(sessionId) {
   return {
