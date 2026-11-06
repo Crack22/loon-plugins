@@ -63,3 +63,7 @@ jobs:
             GLADOS_UA: ${{ secrets.GLADOS_UA }}
             GLADOS_ACCOUNTS: ${{ secrets.GLADOS_ACCOUNTS }}
             GLADOS_EXCHANGE: ${{ secrets.GLADOS_EXCHANGE }}
+            NETEASE_COOKIE: ${{ secrets.NETEASE_COOKIE }}
+            NETEASE_COOKIE2: ${{ secrets.NETEASE_COOKIE2 }}
+            NETEASE_COOKIE3: ${{ secrets.NETEASE_COOKIE3 }}
+            NETEASE_ACCOUNTS: ${{ secrets.NETEASE_ACCOUNTS }}
