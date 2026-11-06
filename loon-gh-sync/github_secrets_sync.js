@@ -438,7 +438,11 @@ var MAPPING = [
   ["glados_cookie3", "GLADOS_COOKIE3"],
   ["glados_ua", "GLADOS_UA"],
   ["glados_accounts", "GLADOS_ACCOUNTS"],
-  ["glados_exchange", "GLADOS_EXCHANGE"]
+  ["glados_exchange", "GLADOS_EXCHANGE"],
+  ["netease_cookie", "NETEASE_COOKIE"],
+  ["netease_cookie2", "NETEASE_COOKIE2"],
+  ["netease_cookie3", "NETEASE_COOKIE3"],
+  ["netease_accounts", "NETEASE_ACCOUNTS"]
 ];
 
 function read(k) { return $persistentStore.read(k) || ""; }
