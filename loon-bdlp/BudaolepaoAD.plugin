@@ -44,6 +44,10 @@ DOMAIN-SUFFIX,ad.qq.com,REJECT
 DOMAIN-SUFFIX,adservice.qq.com,REJECT
 DOMAIN-SUFFIX,ad.tencent.com,REJECT
 
+# ---------- 易帆广告 / GDT SDK（2026-11-06 抓包确认：跑完步 1 秒后请求 yfanads 取弹窗广告；GDT SDK 同时在场） ----------
+DOMAIN-SUFFIX,yfanads.com,REJECT
+DOMAIN-SUFFIX,e.qq.com,REJECT
+
 # ---------- 快手联盟 ----------
 DOMAIN-SUFFIX,kwaicdn.com,REJECT
 DOMAIN-SUFFIX,ksad.com,REJECT
@@ -101,11 +105,12 @@ DOMAIN-SUFFIX,ad.meizu.com,REJECT
 # 三、广告字段清洗脚本（远程绝对地址，导入即生效，不用手动放 JS）
 # ============================================================
 [Script]
-http-response ^https?:\/\/[^\/]*(budaolepao|lepao|bdty|bdlp)[^\/]*\/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-bdlp/budaolepao_ad.js, requires-body=true, max-size=0, binary-body-mode=false, tag=步道乐跑去广告
+http-response ^https?:\/\/[^\/]*(budaolepao|lepao|bdty|bdlp|lptiyu)[^\/]*\/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-bdlp/budaolepao_ad.js, requires-body=true, max-size=0, binary-body-mode=false, tag=步道乐跑去广告
+# 2026-11-06 抓包确认：App 真实接口域名是 api2.lptiyu.com，之前没加进来，脚本一直没跑在它身上（响应本身是加密的，脚本只能清外层明文字段）
 # 兼容：万一 App 换了全新域名但接口里仍带广告字段，先用 Loon 日志看真实域名，再把域名加进下面的 MITM 和上面这条正则
 
 # ============================================================
 # 四、需要解密的域名
 # ============================================================
 [MITM]
-hostname = %APPEND% *.budaolepao.com, *.budaolepao.cn, *.budaolepao.net, *.lepao.com, *.lepao.cn, *.bdty.com, *.bdty.cn, *.bdlp.com, *.bdlp.cn
+hostname = %APPEND% *.budaolepao.com, *.budaolepao.cn, *.budaolepao.net, *.lepao.com, *.lepao.cn, *.bdty.com, *.bdty.cn, *.bdlp.com, *.bdlp.cn, *.lptiyu.com
