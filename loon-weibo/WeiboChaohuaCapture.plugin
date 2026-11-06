@@ -1,5 +1,5 @@
 #!name=微博超话签到抓取
-#!desc=抓取微博 App 超话签到要用的链接和请求头，共两步（只能在 App 里做，网页做不了）：\n1、打开微博 App → 我的 → 超话社区 → 我的 → 关注，弹“已获取已关注超话列表”；\n2、点进一个超话手动签到一次，弹“已获取超话签到链接”。\n如果当天都已签到，先关注一个新超话再签。\n抓完后在 Loon 里关掉本插件的重写，签到由“微博超话每日签到”插件定时执行。
+#!desc=抓取微博 App 超话签到和打卡要用的链接、请求头和图片 ID，共三步（只能在 App 里做，网页做不了）：\n1、打开微博 App → 我的 → 超话社区 → 我的 → 关注，弹“已获取已关注超话列表”；\n2、点进一个超话点“签到”，弹“已获取超话签到链接”；\n3、点“打卡”，用每天要发的那张照片发一次，弹“已获取打卡检查链接”和“已保存打卡图片”。\n抓完后在 Loon 里关掉本插件的重写，签到和打卡由“微博超话每日打卡”插件每天 09:00 定时执行。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
@@ -7,4 +7,4 @@
 hostname = api.weibo.cn, m.api.weibo.com
 
 [Script]
-http-request ^https?://m?api\.weibo\.c(n|om)/2/(cardlist|page/button) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_cookie.js, requires-body=false, tag=微博超话抓取, enable=true
+http-request ^https?://m?api\.weibo\.c(n|om)/2/(cardlist|page/button|statuses/send) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_cookie.js, requires-body=true, tag=微博超话抓取, enable=true

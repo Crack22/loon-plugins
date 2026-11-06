@@ -65,6 +65,21 @@
         {"id": "chilledmelon_username", "name": "账号", "val": "", "type": "text", "desc": "ChilledMelon 用户名"},
         {"id": "chilledmelon_password", "name": "密码", "val": "", "type": "password", "desc": "ChilledMelon 密码。每天 09:00 自动登录、做运算题、签到"}
       ]
+    },
+    {
+      "id": "weibo_daka",
+      "name": "微博超话打卡",
+      "keys": ["weibo_daka_check_url", "weibo_daka_check_headers", "weibo_daka_pic_fid", "weibo_daka_pic_md5", "weibo_daka_copy"],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_checkin.js",
+      "settings": [
+        {"id": "weibo_daka_copy", "name": "打卡文案", "val": "八年风与歌，初心未改，愿黄子弘凡永远自在发光🎶", "type": "text", "desc": "每天打卡帖里跟在 DayN 后面的那句文案"},
+        {"id": "weibo_daka_pic_fid", "name": "打卡图片 fid", "val": "", "type": "text", "desc": "抓取插件发一次打卡后自动保存"},
+        {"id": "weibo_daka_pic_md5", "name": "打卡图片 md5", "val": "", "type": "text", "desc": "抓取插件自动保存"},
+        {"id": "weibo_daka_check_url", "name": "打卡检查链接", "val": "", "type": "textarea", "desc": "抓取插件自动保存"},
+        {"id": "weibo_daka_check_headers", "name": "打卡请求头", "val": "", "type": "textarea", "desc": "抓取插件自动保存"}
+      ]
     }
   ]
 }
