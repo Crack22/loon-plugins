@@ -1,5 +1,5 @@
 #!name=乐观每日签到
-#!desc=每天 09:00 自动签到 https://embyyh.dijia.de/，签到奖励 90-130 积分。\n装好插件后打开这个站一次，就会自动抓取 Cookie 保存（键 embypulse2_session_id），不用手动粘贴；也可以在 BoxJs 里手动粘贴 session_id。\nCookie 只保存在你手机本地，不会上传；过期了重新打开一次这个站就行。
+#!desc=每天 09:00 自动签到 https://embyyh.dijia.de/，签到奖励 90-130 积分。\nCookie 和账号密码二选一，支持 3 个账号：在 BoxJs 里填 session_id（打开这个站一次可自动抓取），或填账号密码自动登录；Cookie 过期时有账号密码会自动重新登录。\nCookie 和密码只保存在你手机本地，不会上传。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 

@@ -53,7 +53,15 @@
       "id": "woniu_checkin",
       "name": "蜗牛每日签到",
       "keys": [
-        "woniu_cookie"
+        "woniu_cookie",
+        "woniu_username",
+        "woniu_password",
+        "woniu_cookie2",
+        "woniu_username2",
+        "woniu_password2",
+        "woniu_cookie3",
+        "woniu_username3",
+        "woniu_password3"
       ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
@@ -64,10 +72,66 @@
       "settings": [
         {
           "id": "woniu_cookie",
-          "name": "Cookie",
+          "name": "账号1 Cookie",
           "val": "",
           "type": "textarea",
-          "desc": "打开蜗牛签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 09:00 自动签到"
+          "desc": "账号1 的 Cookie：打开蜗牛签到页停 1 秒自动抓取；抓不到时可手动粘贴。也可以只填账号密码登录，不用填 Cookie"
+        },
+        {
+          "id": "woniu_username",
+          "name": "账号1 账号",
+          "val": "",
+          "type": "text",
+          "desc": "蜗牛账号（和 Cookie 二选一）"
+        },
+        {
+          "id": "woniu_password",
+          "name": "账号1 密码",
+          "val": "",
+          "type": "password",
+          "desc": "蜗牛密码"
+        },
+        {
+          "id": "woniu_cookie2",
+          "name": "账号2 Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "第 2 个蜗牛账号的 Cookie（和账号密码二选一）"
+        },
+        {
+          "id": "woniu_username2",
+          "name": "账号2 账号",
+          "val": "",
+          "type": "text",
+          "desc": "第 2 个蜗牛账号"
+        },
+        {
+          "id": "woniu_password2",
+          "name": "账号2 密码",
+          "val": "",
+          "type": "password",
+          "desc": "第 2 个蜗牛账号的密码"
+        },
+        {
+          "id": "woniu_cookie3",
+          "name": "账号3 Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "第 3 个蜗牛账号的 Cookie（和账号密码二选一）"
+        },
+        {
+          "id": "woniu_username3",
+          "name": "账号3 账号",
+          "val": "",
+          "type": "text",
+          "desc": "第 3 个蜗牛账号"
+        },
+        {
+          "id": "woniu_password3",
+          "name": "账号3 密码",
+          "val": "",
+          "type": "password",
+          "desc": "第 3 个蜗牛账号的密码"
         }
       ]
     },
@@ -181,7 +245,15 @@
       "id": "embypulse_taotu_checkin",
       "name": "乐蛙每日签到",
       "keys": [
-        "embypulse1_session_id"
+        "embypulse1_session_id",
+        "embypulse1_username",
+        "embypulse1_password",
+        "embypulse1_session_id2",
+        "embypulse1_username2",
+        "embypulse1_password2",
+        "embypulse1_session_id3",
+        "embypulse1_username3",
+        "embypulse1_password3"
       ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
@@ -189,10 +261,66 @@
       "settings": [
         {
           "id": "embypulse1_session_id",
-          "name": "session_id",
+          "name": "账号1 session_id",
           "val": "",
           "type": "textarea",
-          "desc": "https://ue2.taotu.ink/ 的 Cookie 里 session_id 的值。每天 09:00 自动签到，奖励 100-120 积分"
+          "desc": "账号1 的 session_id：打开 https://ue2.taotu.ink/ 自动抓取，或手动粘贴。也可以只填账号密码登录，不用填 session_id"
+        },
+        {
+          "id": "embypulse1_username",
+          "name": "账号1 账号",
+          "val": "",
+          "type": "text",
+          "desc": "乐蛙账号（和 session_id 二选一）"
+        },
+        {
+          "id": "embypulse1_password",
+          "name": "账号1 密码",
+          "val": "",
+          "type": "password",
+          "desc": "乐蛙密码"
+        },
+        {
+          "id": "embypulse1_session_id2",
+          "name": "账号2 session_id",
+          "val": "",
+          "type": "textarea",
+          "desc": "第 2 个乐蛙账号的 session_id（和账号密码二选一）"
+        },
+        {
+          "id": "embypulse1_username2",
+          "name": "账号2 账号",
+          "val": "",
+          "type": "text",
+          "desc": "第 2 个乐蛙账号"
+        },
+        {
+          "id": "embypulse1_password2",
+          "name": "账号2 密码",
+          "val": "",
+          "type": "password",
+          "desc": "第 2 个乐蛙账号的密码"
+        },
+        {
+          "id": "embypulse1_session_id3",
+          "name": "账号3 session_id",
+          "val": "",
+          "type": "textarea",
+          "desc": "第 3 个乐蛙账号的 session_id（和账号密码二选一）"
+        },
+        {
+          "id": "embypulse1_username3",
+          "name": "账号3 账号",
+          "val": "",
+          "type": "text",
+          "desc": "第 3 个乐蛙账号"
+        },
+        {
+          "id": "embypulse1_password3",
+          "name": "账号3 密码",
+          "val": "",
+          "type": "password",
+          "desc": "第 3 个乐蛙账号的密码"
         }
       ],
       "icons": [
@@ -203,7 +331,15 @@
       "id": "embypulse_dijia_checkin",
       "name": "乐观每日签到",
       "keys": [
-        "embypulse2_session_id"
+        "embypulse2_session_id",
+        "embypulse2_username",
+        "embypulse2_password",
+        "embypulse2_session_id2",
+        "embypulse2_username2",
+        "embypulse2_password2",
+        "embypulse2_session_id3",
+        "embypulse2_username3",
+        "embypulse2_password3"
       ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
@@ -211,10 +347,66 @@
       "settings": [
         {
           "id": "embypulse2_session_id",
-          "name": "session_id",
+          "name": "账号1 session_id",
           "val": "",
           "type": "textarea",
-          "desc": "https://embyyh.dijia.de/ 的 Cookie 里 session_id 的值。每天 09:00 自动签到，奖励 90-130 积分"
+          "desc": "账号1 的 session_id：打开 https://embyyh.dijia.de/ 自动抓取，或手动粘贴。也可以只填账号密码登录，不用填 session_id"
+        },
+        {
+          "id": "embypulse2_username",
+          "name": "账号1 账号",
+          "val": "",
+          "type": "text",
+          "desc": "乐观账号（和 session_id 二选一）"
+        },
+        {
+          "id": "embypulse2_password",
+          "name": "账号1 密码",
+          "val": "",
+          "type": "password",
+          "desc": "乐观密码"
+        },
+        {
+          "id": "embypulse2_session_id2",
+          "name": "账号2 session_id",
+          "val": "",
+          "type": "textarea",
+          "desc": "第 2 个乐观账号的 session_id（和账号密码二选一）"
+        },
+        {
+          "id": "embypulse2_username2",
+          "name": "账号2 账号",
+          "val": "",
+          "type": "text",
+          "desc": "第 2 个乐观账号"
+        },
+        {
+          "id": "embypulse2_password2",
+          "name": "账号2 密码",
+          "val": "",
+          "type": "password",
+          "desc": "第 2 个乐观账号的密码"
+        },
+        {
+          "id": "embypulse2_session_id3",
+          "name": "账号3 session_id",
+          "val": "",
+          "type": "textarea",
+          "desc": "第 3 个乐观账号的 session_id（和账号密码二选一）"
+        },
+        {
+          "id": "embypulse2_username3",
+          "name": "账号3 账号",
+          "val": "",
+          "type": "text",
+          "desc": "第 3 个乐观账号"
+        },
+        {
+          "id": "embypulse2_password3",
+          "name": "账号3 密码",
+          "val": "",
+          "type": "password",
+          "desc": "第 3 个乐观账号的密码"
         }
       ],
       "icons": [
