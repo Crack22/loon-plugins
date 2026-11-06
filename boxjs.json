@@ -501,7 +501,7 @@
           "name": "账号1 Cookie",
           "val": "",
           "type": "textarea",
-          "desc": "账号1 的 Cookie：打开 https://glados.rocks/console/account 停 1 秒自动抓取；抓不到时可手动粘贴"
+          "desc": "账号1 的 Cookie：点上面链接打开账号页停 1 秒自动抓取；抓不到时可手动粘贴"
         },
         {
           "id": "glados_accounts",
@@ -528,6 +528,7 @@
       "descs_html": [
         "GLaDOS 每日签到，每天 09:00 自动签到领积分。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/GladosCheckin.plugin\">点击安装 Loon 插件</a>",
+        "抓 Cookie：<a href=\"https://glados.rocks/console/account\">打开 GLaDOS 账号页</a>，停 1 秒自动抓取。",
         "注意：GLaDOS 会校验抓包时的设备，抓包和签到必须用同一台设备（建议都在手机上），换设备登录后要重新抓 Cookie。",
         "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
       ]
