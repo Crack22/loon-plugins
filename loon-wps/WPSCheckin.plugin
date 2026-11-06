@@ -1,6 +1,7 @@
 #!name=WPS Office 每日签到
 #!desc=每日签到，打卡领会员，天天抽奖，会员试用申请，限量爆款领取，小程序打卡；用法：开重写+cron，打开WPS进活动页停1秒，收到WPS Cookie获取成功即抓取成功，cron每天10:00触发
 #!author=許諾
+#!icon=https://raw.githubusercontent.com/MaYIHEI/pin/refs/heads/main/app/wps.png
 #!tag=WPS
 #!system=ios
 

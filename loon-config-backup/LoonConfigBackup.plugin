@@ -1,6 +1,7 @@
 #!name=Loon配置状态备份
 #!desc=每天自动备份 Loon 运行配置（运行模式、各策略组选择、节点列表）到你的私人 GitHub 仓库。注意：Loon 不允许脚本读取完整 .conf 文件，节点账号、规则、脚本原文不在备份内；完整配置请在 Loon 里手动导出 .conf 后放进同一仓库。
 #!author=許諾
+#!icon=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/loon-backup.jpg
 #!tag=备份
 #!system=ios
 

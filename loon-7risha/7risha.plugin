@@ -1,6 +1,7 @@
 #!name=七日杀每日签到
 #!desc=七日杀中文网每日签到，只需点签到按钮即可成功，无需人机验证；用法：开重写+cron，打开签到页 https://www.7risha.com/sign 停 1 秒，收到 7risha Cookie 获取成功即抓取成功，cron 每天 08:30 触发
 #!author=許諾
+#!icon=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/7risha.jpg
 #!tag=七日杀
 #!system=ios
 

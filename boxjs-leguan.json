@@ -76,7 +76,7 @@
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
       "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/subscription.jpg"
+        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/gh-secrets.jpg"
       ],
       "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-gh-sync/github_secrets_sync.js",
       "descs_html": [

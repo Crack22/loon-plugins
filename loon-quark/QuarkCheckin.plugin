@@ -1,6 +1,7 @@
 #!name=夸克每日签到
 #!desc=夸克网盘 + 夸克浏览器 每日签到，每天 09:00 自动签到领网盘容量。\n第一次使用：打开一次夸克网盘和夸克浏览器，插件会自动保存签到参数，之后每天自动签。\n两个 App 是两个账号，都会签。参数只保存在你手机本地，不会上传。\n超级会员每天 +100MB 起，连续第 7 天 +1024MB；普通会员每天 +20MB 起，连续第 7 天 +200MB。
 #!author=許諾
+#!icon=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/quark.jpg
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Script]

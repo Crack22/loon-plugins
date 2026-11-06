@@ -1,6 +1,7 @@
 #!name=大蓝树每日签到
 #!desc=一个对标小红书的男性社区，居然有签到；用法：开重写+cron，打开大蓝树APP触发签到状态接口抓Token，cron每天8:30自动签到
 #!author=許諾
+#!icon=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dalanshu.jpg
 #!tag=大蓝树
 #!system=ios
 
