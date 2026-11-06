@@ -22,10 +22,13 @@ jobs:
       - name: 合并图标库
         run: node icons/merge-icons.mjs
 
+      - name: 生成 BoxJs 图标库
+        run: node icons/merge-boxjs-icons.mjs
+
       - name: 提交更新
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add icons/icons-merged.json
+          git add icons/icons-merged.json icons/icons-boxjs.json
           git diff --cached --quiet || git commit -m "自动更新图标合集"
           git push
