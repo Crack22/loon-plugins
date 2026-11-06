@@ -35,6 +35,7 @@ loon-plugins/
 | 夸克每日签到 | 夸克网盘 + 夸克浏览器每日签到领容量 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-quark/QuarkCheckin.plugin) |
 | GLaDOS 每日签到 | GLaDOS 每日签到领积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/GladosCheckin.plugin) |
 | 识日每日签到 | 识日每日签到领读币 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/ShiriCheckin.plugin) |
+| 网易云音乐每日签到 | 网易云音乐每日签到，+2 成长值 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-netease/NetEaseCheckin.plugin) |
 | X 网页版会员标签页 | X 网页版会员标签页 | — | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-x/XWebEnhance.plugin) |
 | lume 相机 | Lume 相机 VIP 验证响应修改 | — | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-lume/LumeCamera.plugin) |
 | 同步 Git Secrets | 把 BoxJs 里的签到账号同步到 GitHub Secrets | 手动 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-gh-sync/GitHubSecretsSync.plugin) |
@@ -48,7 +49,7 @@ loon-plugins/
 
 | 订阅 | 内容 | 导入 |
 | --- | --- | --- |
-| 許諾自用应用 | 13 个应用：上面全部签到插件 + 同步 Git Secrets + Loon 配置状态备份 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs.json |
+| 許諾自用应用 | 14 个应用：上面全部签到插件 + 同步 Git Secrets + Loon 配置状态备份 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs.json |
 | 乐观专用 | 乐观每日签到 + 同步 Git Secrets（可分享给别人用） | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-leguan.json |
 
 乐观专用完整使用指南：[docs/leguan-guide.md](docs/leguan-guide.md)
@@ -66,7 +67,7 @@ loon-plugins/
 
 GitHub Actions 每天自动跑两件事，仓库是公开的免费的：
 
-- **每日签到**（09:00）：蜗牛、乐蛙、乐观、冰瓜、GLaDOS 在云端签到，不用挂梯子；本地 Loon 插件保持不变，两边谁先签到谁赢，另一边会看到今日已签到。
+- **每日签到**（09:00）：蜗牛、乐蛙、乐观、冰瓜、GLaDOS、网易云在云端签到，不用挂梯子；本地 Loon 插件保持不变，两边谁先签到谁赢，另一边会看到今日已签到。
 - **更新图标合集**（06:00）：两个图标库有变化就自动提交更新。
 
 ## 致谢
