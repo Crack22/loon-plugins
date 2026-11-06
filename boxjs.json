@@ -371,6 +371,40 @@
       ]
     },
     {
+      "id": "quark_checkin",
+      "name": "夸克每日签到",
+      "keys": [
+        "quark_drive_query",
+        "quark_drive_ua",
+        "quark_browser_query",
+        "quark_browser_ua"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-quark/quark_checkin.js",
+      "settings": [
+        {
+          "id": "quark_drive_query",
+          "name": "夸克网盘 签到参数",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开一次夸克网盘 App 自动抓取；也可以手动粘贴签到请求的完整 query（? 后面的那串）"
+        },
+        {
+          "id": "quark_browser_query",
+          "name": "夸克浏览器 签到参数",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开一次夸克浏览器 App 自动抓取；也可以手动粘贴签到请求的完整 query（? 后面的那串）"
+        }
+      ],
+      "descs_html": [
+        "夸克网盘 + 夸克浏览器每日签到，每天 09:00 自动签到领网盘容量。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-quark/QuarkCheckin.plugin\">点击安装 Loon 插件</a>",
+        "第一次使用：打开一次夸克网盘和夸克浏览器，插件会自动保存签到参数。"
+      ]
+    },
+    {
       "id": "gh_secrets_sync",
       "name": "同步Git Secrets",
       "keys": [
