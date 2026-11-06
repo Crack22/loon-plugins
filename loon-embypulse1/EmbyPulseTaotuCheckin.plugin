@@ -1,7 +1,11 @@
 #!name=乐蛙每日签到
-#!desc=每天 09:00 自动签到 https://ue2.taotu.ink/，签到奖励 100-120 积分。\n先在 BoxJs 里填 session_id（键 embypulse1_session_id）：登录这个站后，从 Cookie 里复制 session_id 的值粘贴进去。\nCookie 只保存在你手机本地，不会上传；过期了重新粘贴一次。
+#!desc=每天 09:00 自动签到 https://ue2.taotu.ink/，签到奖励 100-120 积分。\n装好插件后打开这个站一次，就会自动抓取 Cookie 保存（键 embypulse1_session_id），不用手动粘贴；也可以在 BoxJs 里手动粘贴 session_id。\nCookie 只保存在你手机本地，不会上传；过期了重新打开一次这个站就行。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Script]
 cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/embypulse_taotu_checkin.js, tag=乐蛙签到, enable=true
+http-request ^https?://ue2\.taotu\.ink/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/embypulse_taotu_cookie.js, requires-body=false, tag=乐蛙Cookie抓取, enable=true
+
+[MITM]
+hostname = ue2.taotu.ink
