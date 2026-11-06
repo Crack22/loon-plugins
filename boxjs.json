@@ -442,6 +442,43 @@
           "desc": "格式：用户名/仓库名"
         }
       ]
+    },
+    {
+      "id": "loon_config_backup",
+      "name": "Loon配置状态备份",
+      "keys": [
+        "loon_backup_pat",
+        "loon_backup_repo"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/subscription.jpg"
+      ],
+      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-config-backup/loon_config_backup.js",
+      "descs_html": [
+        "每天 04:00 自动把 Loon 当前运行配置（运行模式、各策略组、每个策略组当前选的节点、各组节点名）保存到你的私人 GitHub 仓库，单个文件 loon-config-state.json，有变化才提交。",
+        "注意：Loon 不允许脚本读取完整的 .conf 文件，所以这份备份不含节点账号密码、订阅地址、规则、脚本原文。完整配置请在 Loon 里手动导出 .conf 后放进同一个私人仓库。",
+        "先创建一个 Token：<a href=\"https://github.com/settings/tokens?type=beta\">点这里创建 Fine-grained Token</a>，选 Only select repositories → loon-config-backup，Repository permissions 里 Contents 选 Read and write，然后把 Token 粘贴到下面的「GitHub Token」。",
+        "仓库填 用户名/仓库名，例如 Crack22/loon-config-backup。填好后点一下这个 App 就能立即备份一次。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-config-backup/LoonConfigBackup.plugin\">点击安装</a>"
+      ],
+      "settings": [
+        {
+          "id": "loon_backup_pat",
+          "name": "GitHub Token",
+          "val": "",
+          "type": "password",
+          "desc": "在 GitHub 上创建一个 Fine-grained Token，只给私人备份仓库 Contents 的读写权限，粘贴到这里，不要发给任何人"
+        },
+        {
+          "id": "loon_backup_repo",
+          "name": "备份仓库",
+          "val": "",
+          "type": "text",
+          "desc": "格式：用户名/仓库名，例如 Crack22/loon-config-backup"
+        }
+      ]
     }
   ]
 }
