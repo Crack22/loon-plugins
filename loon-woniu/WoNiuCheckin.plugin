@@ -13,5 +13,5 @@
 hostname = www.wn4k.com
 
 [Script]
-http-request ^https:\/\/www\.wn4k\.com\/user\/checkin\.html tag=蜗牛 Cookie, script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_cookie.js, requires-body=false
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_checkin.js, tag=蜗牛签到, enable=true
+http-request ^https:\/\/www\.wn4k\.com\/user\/checkin\.html tag=蜗牛 Cookie, script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_cookie.js, requires-body=false, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_checkin.js, tag=蜗牛签到, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, enable=true

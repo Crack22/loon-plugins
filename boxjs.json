@@ -23,7 +23,7 @@
       "keys": ["fmz200_dalanshu_authorization"],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": ["https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/dalanshu.png"],
+      "icons": ["https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dalanshu.jpg"],
       "script": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/dalanshu/dalanshu_checkin.js",
       "settings": [
         {"id": "fmz200_dalanshu_authorization", "name": "Token", "val": "", "type": "textarea", "desc": "打开大蓝树 APP 触发签到状态接口自动抓取；抓不到时可手动粘贴 Authorization。每天 08:30 自动签到"}
@@ -35,6 +35,7 @@
       "keys": ["woniu_cookie"],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": ["https://woniu.qljiang.com/weixin_files/woniu_white.png"],
       "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_checkin.js",
       "settings": [
         {"id": "woniu_cookie", "name": "Cookie", "val": "", "type": "textarea", "desc": "打开蜗牛签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 09:00 自动签到"}
@@ -57,7 +58,7 @@
       "keys": ["chilledmelon_username", "chilledmelon_password"],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": ["https://www.chilledmelon.com/favicon.ico"],
+      "icons": ["https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/chilledmelon.jpg"],
       "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/chilledmelon_checkin.js",
       "settings": [
         {"id": "chilledmelon_username", "name": "账号", "val": "", "type": "text", "desc": "ChilledMelon 用户名"},
