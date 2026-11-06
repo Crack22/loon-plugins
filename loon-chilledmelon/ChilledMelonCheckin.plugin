@@ -10,4 +10,4 @@
 #    （订阅不生效时，在 BoxJs 数据里手动添加 chilledmelon_username、chilledmelon_password 两个键）
 # 3、cron 每天 09:00 自动登录、做运算题、签到，成功会通知得了多少积分
 [Script]
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/chilledmelon_checkin.js, tag=ChilledMelon签到, enable=true
+cron "0 9 * * *" script-path=https://cdn.jsdelivr.net/gh/Crack22/loon-plugins@06e9894d1db109093d938784e6a95f0134f219c1/loon-chilledmelon/chilledmelon_checkin.js, tag=ChilledMelon签到, enable=true
