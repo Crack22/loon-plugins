@@ -1,6 +1,6 @@
 // 蜗牛每日签到：Cookie 或账号密码登录（二选一），账号数量不限
 // 账号1：woniu_cookie / woniu_username + woniu_password
-// 更多账号：woniu_accounts，每行一个，填 Cookie 或 账号----密码（四个短横线隔开）
+// 更多账号：woniu_accounts，每行一个，填 Cookie 或 账号 密码（中间一个空格隔开，旧的 ---- 也还能用）
 // 登录数量：woniu_max_accounts，填数字只签前 N 个账号，空着就是全部都签
 // 登录接口：POST https://www.wn4k.com/user/login.html（user_name + user_pwd），成功 code=1，登录后从 Set-Cookie 取 user_check 保存
 // 签到接口：POST https://www.wn4k.com/user/checkin.html，成功 code=1（info.points 积分），已签到 code=1001
@@ -49,10 +49,12 @@ function collectAccounts() {
     var line = lines[i].trim();
     if (!line) continue;
     var a = { cookieKey: "", cookie: "", user: "", pass: "" };
-    var p = line.indexOf("----");
+    var p = line.indexOf(" ");
+    var cut = 1;
+    if (p === -1) { p = line.indexOf("----"); cut = 4; }
     if (p !== -1) {
       a.user = line.slice(0, p).trim();
-      a.pass = line.slice(p + 4).trim();
+      a.pass = line.slice(p + cut).trim();
       if (!a.user || !a.pass) continue;
     } else {
       a.cookie = line;

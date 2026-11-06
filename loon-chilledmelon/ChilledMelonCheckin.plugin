@@ -1,5 +1,5 @@
 #!name=ChilledMelon 每日签到
-#!desc=ChilledMelon 每日签到，每天 +5~20 积分；用法：在 BoxJs 里填好账号密码，cron 每天 09:00 自动登录、做运算题、签到。\n账号数量不限：多账号在 BoxJs 的「多账号」里每行填一个 账号----密码；「登录账号数量」填数字只签前 N 个，空着就是全部都签。
+#!desc=ChilledMelon 每日签到，每天 +5~20 积分；用法：在 BoxJs 里填好账号密码，cron 每天 09:00 自动登录、做运算题、签到。\n账号数量不限：多账号在 BoxJs 的「多账号」里每行填一个 账号 密码；「登录账号数量」填数字只签前 N 个，空着就是全部都签。
 #!author=許諾
 #!icon=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/chilledmelon.jpg
 #!tag=ChilledMelon
@@ -9,7 +9,7 @@
 # 1、安装插件，开启 cron
 # 2、在 BoxJs 里添加统一签到订阅 https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs.json，找到 ChilledMelon 填好账号和密码
 #    （订阅不生效时，在 BoxJs 数据里手动添加 chilledmelon_username、chilledmelon_password 两个键）
-#    多账号在「多账号」里每行填一个 账号----密码，「登录账号数量」填数字只签前 N 个，空着就是全部都签
+#    多账号在「多账号」里每行填一个 账号 密码，「登录账号数量」填数字只签前 N 个，空着就是全部都签
 # 3、cron 每天 09:00 自动登录、做运算题、签到，成功会通知得了多少积分
 [Script]
 cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/chilledmelon_checkin.js, tag=ChilledMelon签到, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/chilledmelon.jpg, enable=true

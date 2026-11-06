@@ -34,8 +34,8 @@ function extractSession(setCookies) {
   return "";
 }
 
-// 收集账号：账号1（单独的 Secret）+ 多账号文本（每行一个 Cookie 或 账号+分隔符+密码；乐观用空格，其他站用 ----）
-function collectAccounts(prefix, firstCookie, firstUser, firstPass, sep = "----") {
+// 收集账号：账号1（单独的 Secret）+ 多账号文本（每行一个 Cookie 或 账号 密码，中间一个空格隔开；旧的 ---- 也还能用）
+function collectAccounts(prefix, firstCookie, firstUser, firstPass, sep = " ") {
   const list = [];
   const cookie = env(firstCookie), user = env(firstUser), pass = env(firstPass);
   if (cookie || (user && pass)) list.push({ label: "账号1", cookie, user, pass });
@@ -146,7 +146,7 @@ async function embyLogin(site, acct) {
   await embyCheckin(site, acct, sessionId, true);
 }
 
-async function runEmby(name, site, prefix, sep = "----") {
+async function runEmby(name, site, prefix, sep = " ") {
   const accounts = collectAccounts(prefix, prefix + "_SESSION_ID", prefix + "_USERNAME", prefix + "_PASSWORD", sep);
   if (!accounts.length) { console.log(`[${name}] 未配置账号，跳过`); return; }
   for (const acct of accounts) {
@@ -277,7 +277,7 @@ async function runGlados() {
 
 await runWoniu();
 await runEmby("乐蛙", "https://ue2.taotu.ink", "LEWA");
-await runEmby("乐观", "https://embyyh.dijia.de", "LEGUAN", " ");
+await runEmby("乐观", "https://embyyh.dijia.de", "LEGUAN");
 await runChilledMelon();
 await runGlados();
 
