@@ -4,8 +4,8 @@
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Script]
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/embypulse_dijia_checkin.js, tag=乐观签到, enable=true
-http-request ^https?://embyyh\.dijia\.de/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/embypulse_dijia_cookie.js, requires-body=false, tag=乐观Cookie抓取, enable=true
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/embypulse_dijia_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/leguan.jpg, tag=乐观签到, enable=true
+http-request ^https?://embyyh\.dijia\.de/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/embypulse_dijia_cookie.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/leguan.jpg, requires-body=false, tag=乐观Cookie抓取, enable=true
 
 [MITM]
 hostname = embyyh.dijia.de

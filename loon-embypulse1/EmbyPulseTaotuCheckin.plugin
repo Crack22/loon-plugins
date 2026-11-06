@@ -4,8 +4,8 @@
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Script]
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/embypulse_taotu_checkin.js, tag=乐蛙签到, enable=true
-http-request ^https?://ue2\.taotu\.ink/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/embypulse_taotu_cookie.js, requires-body=false, tag=乐蛙Cookie抓取, enable=true
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/embypulse_taotu_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/lewa.jpg, tag=乐蛙签到, enable=true
+http-request ^https?://ue2\.taotu\.ink/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/embypulse_taotu_cookie.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/lewa.jpg, requires-body=false, tag=乐蛙Cookie抓取, enable=true
 
 [MITM]
 hostname = ue2.taotu.ink

@@ -191,6 +191,9 @@
           "type": "textarea",
           "desc": "https://ue2.taotu.ink/ 的 Cookie 里 session_id 的值。每天 09:00 自动签到，奖励 100-120 积分"
         }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/lewa.jpg"
       ]
     },
     {
@@ -210,6 +213,9 @@
           "type": "textarea",
           "desc": "https://embyyh.dijia.de/ 的 Cookie 里 session_id 的值。每天 09:00 自动签到，奖励 90-130 积分"
         }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/leguan.jpg"
       ]
     }
   ]
