@@ -1,0 +1,41 @@
+name: 每日签到
+
+# 每天 09:00（北京时间）自动跑，不用挂梯子，手机关机也能签
+# 账号来自仓库 Secrets：用 Loon 里的「同步到 GitHub Secrets」插件从 BoxJs 上传
+# 也可以点 Actions 页面的 Run workflow 手动跑一次
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+jobs:
+  checkin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run check-ins
+        run: node actions/checkin.mjs
+        env:
+          WONIU_COOKIE: ${{ secrets.WONIU_COOKIE }}
+          WONIU_USERNAME: ${{ secrets.WONIU_USERNAME }}
+          WONIU_PASSWORD: ${{ secrets.WONIU_PASSWORD }}
+          WONIU_ACCOUNTS: ${{ secrets.WONIU_ACCOUNTS }}
+          WONIU_MAX_ACCOUNTS: ${{ secrets.WONIU_MAX_ACCOUNTS }}
+          LEWA_SESSION_ID: ${{ secrets.LEWA_SESSION_ID }}
+          LEWA_USERNAME: ${{ secrets.LEWA_USERNAME }}
+          LEWA_PASSWORD: ${{ secrets.LEWA_PASSWORD }}
+          LEWA_ACCOUNTS: ${{ secrets.LEWA_ACCOUNTS }}
+          LEWA_MAX_ACCOUNTS: ${{ secrets.LEWA_MAX_ACCOUNTS }}
+          LEGUAN_SESSION_ID: ${{ secrets.LEGUAN_SESSION_ID }}
+          LEGUAN_USERNAME: ${{ secrets.LEGUAN_USERNAME }}
+          LEGUAN_PASSWORD: ${{ secrets.LEGUAN_PASSWORD }}
+          LEGUAN_ACCOUNTS: ${{ secrets.LEGUAN_ACCOUNTS }}
+          LEGUAN_MAX_ACCOUNTS: ${{ secrets.LEGUAN_MAX_ACCOUNTS }}
+          CHILLEDMELON_USERNAME: ${{ secrets.CHILLEDMELON_USERNAME }}
+          CHILLEDMELON_PASSWORD: ${{ secrets.CHILLEDMELON_PASSWORD }}
+          CHILLEDMELON_ACCOUNTS: ${{ secrets.CHILLEDMELON_ACCOUNTS }}
+          CHILLEDMELON_MAX_ACCOUNTS: ${{ secrets.CHILLEDMELON_MAX_ACCOUNTS }}
