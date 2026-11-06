@@ -400,7 +400,7 @@
         {
           "id": "github_repo",
           "name": "仓库",
-          "val": "Crack22/loon-plugins",
+          "val": "",
           "type": "text",
           "desc": "格式：用户名/仓库名"
         }
