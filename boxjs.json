@@ -532,6 +532,46 @@
         "注意：GLaDOS 会校验抓包时的设备，抓包和签到必须用同一台设备（建议都在手机上），换设备登录后要重新抓 Cookie。",
         "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
       ]
+    },
+    {
+      "id": "shiri_checkin",
+      "name": "识日每日签到",
+      "keys": [
+        "shiri_token",
+        "shiri_accounts",
+        "shiri_max_accounts"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/shiri_checkin.js",
+      "settings": [
+        {
+          "id": "shiri_token",
+          "name": "账号1 Token",
+          "val": "",
+          "type": "textarea",
+          "desc": "账号1 的 Token：打开识日 App 停 1 秒自动抓取；抓不到时可手动粘贴"
+        },
+        {
+          "id": "shiri_accounts",
+          "name": "多账号",
+          "val": "",
+          "type": "textarea",
+          "desc": "每行一个 Token（账号2起），不限个数"
+        },
+        {
+          "id": "shiri_max_accounts",
+          "name": "登录账号数量",
+          "val": "",
+          "type": "text",
+          "desc": "填数字只签前 N 个账号，空着就是全部都签"
+        }
+      ],
+      "descs_html": [
+        "识日每日签到，每天 09:00 自动签到领读币。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/ShiriCheckin.plugin\">点击安装 Loon 插件</a>",
+        "抓 Token：打开识日 App 停 1 秒自动抓取；Token 过期时重新打开 App 抓一次。"
+      ]
     }
   ]
 }

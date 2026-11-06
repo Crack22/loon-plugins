@@ -1,0 +1,17 @@
+#!name=识日每日签到
+#!desc=识日每日签到，每天 09:00 自动签到领读币；用法：开重写，打开识日 App 停 1 秒，收到 Token 获取成功即抓取成功，cron 每天 09:00 自动签到。\nToken 过期时重新打开 App 抓一次。
+#!author=許諾
+#!tag=识日
+#!system=ios
+
+# 用法：
+# 1、安装插件，开启重写脚本 + cron
+# 2、打开识日 App 停留 1 秒
+# 3、收到 ✅ 识日 Token 获取成功 通知即抓取成功
+# 4、cron 每天 09:00 自动签到
+[MITM]
+hostname = shiri.jingqueyun.com
+
+[Script]
+http-request ^https:\/\/shiri\.jingqueyun\.com\/(MobileHome\/getHomeData|MobileAccount\/signIn|MobileUserMessage\/getUserData|user\/hello) tag=识日 Token, script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/shiri_token.js, requires-body=false
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/shiri_checkin.js, tag=识日签到, enable=true

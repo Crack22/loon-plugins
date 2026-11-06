@@ -34,6 +34,7 @@ loon-plugins/
 | 乐观每日签到 | EmbyPulse 乐观每日签到，+90~130 积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/EmbyPulseDijiaCheckin.plugin) |
 | 夸克每日签到 | 夸克网盘 + 夸克浏览器每日签到领容量 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-quark/QuarkCheckin.plugin) |
 | GLaDOS 每日签到 | GLaDOS 每日签到领积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/GladosCheckin.plugin) |
+| 识日每日签到 | 识日每日签到领读币 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/ShiriCheckin.plugin) |
 | X 网页版会员标签页 | X 网页版会员标签页 | — | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-x/XWebEnhance.plugin) |
 | lume 相机 | Lume 相机 VIP 验证响应修改 | — | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-lume/LumeCamera.plugin) |
 | 同步 Git Secrets | 把 BoxJs 里的签到账号同步到 GitHub Secrets | 手动 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-gh-sync/GitHubSecretsSync.plugin) |
@@ -47,7 +48,7 @@ loon-plugins/
 
 | 订阅 | 内容 | 导入 |
 | --- | --- | --- |
-| 許諾自用应用 | 12 个应用：上面全部签到插件 + 同步 Git Secrets + Loon 配置状态备份 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs.json |
+| 許諾自用应用 | 13 个应用：上面全部签到插件 + 同步 Git Secrets + Loon 配置状态备份 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs.json |
 | 乐观专用 | 乐观每日签到 + 同步 Git Secrets（可分享给别人用） | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-leguan.json |
 
 乐观专用完整使用指南：[docs/leguan-guide.md](docs/leguan-guide.md)
