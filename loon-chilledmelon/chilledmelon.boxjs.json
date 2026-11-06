@@ -1,0 +1,13 @@
+{
+  "id": "chilledmelon_checkin",
+  "name": "ChilledMelon 每日签到",
+  "keys": ["chilledmelon_username", "chilledmelon_password"],
+  "author": "許諾",
+  "repo": "https://github.com/Crack22/loon-plugins",
+  "icons": ["https://www.chilledmelon.com/favicon.ico"],
+  "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/chilledmelon_checkin.js",
+  "settings": [
+    {"id": "chilledmelon_username", "name": "账号", "val": "", "type": "text", "desc": "ChilledMelon 用户名"},
+    {"id": "chilledmelon_password", "name": "密码", "val": "", "type": "password", "desc": "ChilledMelon 密码"}
+  ]
+}
