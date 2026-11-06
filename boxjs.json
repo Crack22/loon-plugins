@@ -571,6 +571,9 @@
         "识日每日签到，每天 09:00 自动签到领读币。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/ShiriCheckin.plugin\">点击安装 Loon 插件</a>",
         "抓 Token：打开识日 App 停 1 秒自动抓取；Token 过期时重新打开 App 抓一次。"
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/shiri.jpg"
       ]
     }
   ]

@@ -58,7 +58,7 @@ loon-plugins/
 | 图标库 | 内容 | 链接 |
 | --- | --- | --- |
 | 許諾图标合集 | 15 个上游图标库合并，4968 个图标，每天 06:00 自动更新 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/icons-merged.json |
-| 許諾 BoxJs 图标 | 本仓库全部 BoxJs 图标，14 个图标，每天 06:00 自动更新 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/icons-boxjs.json |
+| 許諾 BoxJs 图标 | 本仓库全部 BoxJs 图标，15 个图标，每天 06:00 自动更新 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/icons-boxjs.json |
 
 图标库来源在 [icons/sources.json](icons/sources.json) 里，改它就能增减上游库。`icons/zishi-cs.json` 是 LovedGM 图标库的原样备份，不参与合并。
 
