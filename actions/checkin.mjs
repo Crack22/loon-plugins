@@ -1,7 +1,7 @@
 // GitHub Actions 每日签到：不用挂梯子，云端定时跑
 // 每天 09:00（北京时间）由 .github/workflows/daily-checkin.yml 触发
 // 账号来自 GitHub Secrets（用 Loon 里的「同步到 GitHub Secrets」插件从 BoxJs 上传）
-// 覆盖 4 个境外站：蜗牛 / 乐蛙 / 乐观 / ChilledMelon
+// 覆盖 5 个境外站：蜗牛 / 乐蛙 / 乐观 / ChilledMelon / GLaDOS
 // 七日杀、WPS、大蓝树、微博是国内站，直连就能签，继续留在 Loon 里
 // 运行结果只打印在 Actions 的日志里，不会把账号密码写进日志
 
@@ -221,10 +221,64 @@ async function runChilledMelon() {
   }
 }
 
+
+// ---------- GLaDOS ----------
+const GLADOS_BASE = "https://glados.rocks";
+
+async function runGlados() {
+  const accounts = collectAccounts("GLADOS", "GLADOS_COOKIE", "", "");
+  if (!accounts.length) { console.log("[GLaDOS] 未配置账号，跳过"); return; }
+  const ua = env("GLADOS_UA") || UA;  // 用抓包时的 UA，避免 device-mismatch
+  const exchange = (env("GLADOS_EXCHANGE") || "").trim();
+  const plans = { "100": "plan100", "200": "plan200", "500": "plan500" };
+  const planDays = { "100": 10, "200": 30, "500": 100 };
+  for (const acct of accounts) {
+    const headers = { Cookie: acct.cookie, "User-Agent": ua, Origin: GLADOS_BASE, Referer: GLADOS_BASE + "/console/checkin", "Content-Type": "application/json;charset=UTF-8", Accept: "application/json, text/plain, */*" };
+    let stRes;
+    try { stRes = await fetch(GLADOS_BASE + "/api/user/status", { headers }); } catch (e) { bad("GLaDOS", acct.label, "查询状态网络异常"); continue; }
+    const st = await parseJson(stRes);
+    const email = st && st.data && st.data.email ? st.data.email : "";
+    const who = email ? `${acct.label}（${email}）` : acct.label;
+    const daysBefore = st && st.data && st.data.leftDays !== undefined ? Math.floor(parseFloat(st.data.leftDays)) + " 天" : "?";
+    let res;
+    try { res = await fetch(GLADOS_BASE + "/api/user/checkin", { method: "POST", headers, body: JSON.stringify({ token: "glados.rocks" }) }); } catch (e) { bad("GLaDOS", who, "签到网络异常"); continue; }
+    const r = await parseJson(res);
+    const msg = (r && r.message) || "";
+    const code = r ? r.code : -1;
+    let earned = 0;
+    const m = msg.match(/Got\s+(\d+)\s+Points/i);
+    if (m) earned = parseInt(m[1], 10);
+    else if (r && r.points !== undefined) earned = Math.floor(parseFloat(r.points));
+    let statusText;
+    if (code === 0) statusText = "签到成功 +" + earned + " 积分";
+    else if (code === 1 || /repeat|already|重复|已签到|签到过/i.test(msg)) statusText = "今日已签到";
+    else if (code === 4 || /device-mismatch|Automated check-in detected/i.test(msg)) { bad("GLaDOS", who, "设备校验失败，请重新抓取 Cookie"); continue; }
+    else { bad("GLaDOS", who, "签到失败，" + (msg || "请重新抓取 Cookie")); continue; }
+    let ptsRes;
+    try { ptsRes = await fetch(GLADOS_BASE + "/api/user/points", { headers }); } catch (e) { ptsRes = null; }
+    const pts = await parseJson(ptsRes);
+    const points = pts && pts.points !== undefined ? Math.floor(parseFloat(pts.points)) : 0;
+    let exText = "";
+    const need = parseInt(exchange || "0", 10);
+    if (plans[exchange] && points >= need) {
+      let exRes;
+      try { exRes = await fetch(GLADOS_BASE + "/api/user/exchange", { method: "POST", headers, body: JSON.stringify({ planType: plans[exchange] }) }); } catch (e) { exRes = null; }
+      const ex = await parseJson(exRes);
+      exText = ex && ex.code === 0 ? "，已兑换 " + plans[exchange] + "（+" + planDays[exchange] + " 天）" : "，兑换失败，" + ((ex && ex.message) || "未知错误");
+    }
+    let st2Res;
+    try { st2Res = await fetch(GLADOS_BASE + "/api/user/status", { headers }); } catch (e) { st2Res = null; }
+    const st2 = await parseJson(st2Res);
+    const daysAfter = st2 && st2.data && st2.data.leftDays !== undefined ? Math.floor(parseFloat(st2.data.leftDays)) + " 天" : "?";
+    ok("GLaDOS", who, `${statusText}，剩余 ${daysBefore} → ${daysAfter}，积分 ${points}${exText}`);
+  }
+}
+
 await runWoniu();
 await runEmby("乐蛙", "https://ue2.taotu.ink", "LEWA");
 await runEmby("乐观", "https://embyyh.dijia.de", "LEGUAN");
 await runChilledMelon();
+await runGlados();
 
 console.log("---- 签到结果 ----");
 if (!results.length) console.log("没有配置任何账号");

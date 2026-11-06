@@ -414,7 +414,12 @@ var MAPPING = [
   ["chilledmelon_username", "CHILLEDMELON_USERNAME"],
   ["chilledmelon_password", "CHILLEDMELON_PASSWORD"],
   ["chilledmelon_accounts", "CHILLEDMELON_ACCOUNTS"],
-  ["chilledmelon_max_accounts", "CHILLEDMELON_MAX_ACCOUNTS"]
+  ["chilledmelon_max_accounts", "CHILLEDMELON_MAX_ACCOUNTS"],
+  ["glados_cookie", "GLADOS_COOKIE"],
+  ["glados_ua", "GLADOS_UA"],
+  ["glados_accounts", "GLADOS_ACCOUNTS"],
+  ["glados_max_accounts", "GLADOS_MAX_ACCOUNTS"],
+  ["glados_exchange", "GLADOS_EXCHANGE"]
 ];
 
 function read(k) { return $persistentStore.read(k) || ""; }

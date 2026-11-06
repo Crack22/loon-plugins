@@ -528,7 +528,8 @@
       "descs_html": [
         "GLaDOS 每日签到，每天 09:00 自动签到领积分。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/GladosCheckin.plugin\">点击安装 Loon 插件</a>",
-        "注意：GLaDOS 会校验抓包时的设备，抓包和签到必须用同一台设备（建议都在手机上），换设备登录后要重新抓 Cookie。"
+        "注意：GLaDOS 会校验抓包时的设备，抓包和签到必须用同一台设备（建议都在手机上），换设备登录后要重新抓 Cookie。",
+        "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
       ]
     }
   ]
