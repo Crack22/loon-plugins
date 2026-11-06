@@ -1,9 +1,10 @@
-// 同步到 GitHub Secrets：把 BoxJs 里的签到账号上传到 GitHub 仓库 Secrets
+// 同步Git Secrets：把 BoxJs 里的签到账号上传到 GitHub 仓库 Secrets
 // GitHub Actions 每天 09:00 自动签到，不用挂梯子，手机关机也能签
 // 本地 Loon 插件保持不变，继续在手机上跑；云端是多一条路，先签到的那个生效，另一个会显示今日已签到
 // 加密库：tweetnacl + tweetnacl-util + blakejs（密封盒加密，和 GitHub 服务端用的 libsodium 一致）
 // Token 创建：GitHub → Settings → Developer settings → Personal access tokens
 // → Fine-grained tokens → Only select repositories → loon-plugins → Secrets 选 Read and write
+
 
 
 
@@ -478,10 +479,10 @@ var synced = [], skipped = [], failed = [];
 var queue = [];
 
 if (!pat) {
-  $notification.post("同步到 GitHub Secrets", "还没填 GitHub Token", "在 BoxJs 里填 Token，创建方法看简介栏");
+  $notification.post("同步Git Secrets", "还没填 GitHub Token", "在 BoxJs 里填 Token，创建方法看简介栏");
   $done({});
 } else if (repo.indexOf("/") === -1) {
-  $notification.post("同步到 GitHub Secrets", "仓库格式不对", "仓库要填 用户名/仓库名，例如 Crack22/loon-plugins");
+  $notification.post("同步Git Secrets", "仓库格式不对", "仓库要填 用户名/仓库名，例如 Crack22/loon-plugins");
   $done({});
 } else {
   for (var i = 0; i < MAPPING.length; i++) {
@@ -490,7 +491,7 @@ if (!pat) {
     else skipped.push(MAPPING[i][1]);
   }
   if (!queue.length) {
-    $notification.post("同步到 GitHub Secrets", "BoxJs 里没有账号", "先在签到应用里填好 Cookie 或账号密码");
+    $notification.post("同步Git Secrets", "BoxJs 里没有账号", "先在签到应用里填好 Cookie 或账号密码");
     $done({});
   } else {
     $httpClient.get({
@@ -499,17 +500,17 @@ if (!pat) {
     }, function (error, response, data) {
       var r = parseJson(data);
       if (error || !response || response.status === 401) {
-        $notification.post("同步到 GitHub Secrets", "Token 无效或过期", "重新创建一个 Token 粘贴到 BoxJs 里");
+        $notification.post("同步Git Secrets", "Token 无效或过期", "重新创建一个 Token 粘贴到 BoxJs 里");
         $done({});
         return;
       }
       if (response.status === 404) {
-        $notification.post("同步到 GitHub Secrets", "仓库不存在或 Token 没权限", "检查仓库名，Token 要给这个仓库 Secrets 的读写权限");
+        $notification.post("同步Git Secrets", "仓库不存在或 Token 没权限", "检查仓库名，Token 要给这个仓库 Secrets 的读写权限");
         $done({});
         return;
       }
       if (!r || !r.key || !r.key_id) {
-        $notification.post("同步到 GitHub Secrets", "拿不到仓库公钥", "HTTP " + (response && response.status));
+        $notification.post("同步Git Secrets", "拿不到仓库公钥", "HTTP " + (response && response.status));
         $done({});
         return;
       }
@@ -547,7 +548,7 @@ function finish() {
   if (failed.length) lines.push("失败 " + failed.length + " 个：" + failed.join("、"));
   if (skipped.length) lines.push("BoxJs 里空着、没上传：" + skipped.length + " 个");
   lines.push("GitHub Actions 每天 09:00 自动签到，不用挂梯子");
-  $notification.post("同步到 GitHub Secrets", synced.length ? "上传完成" : "上传失败", lines.join("\n"));
+  $notification.post("同步Git Secrets", synced.length ? "上传完成" : "上传失败", lines.join("\n"));
   $done({});
 }
 

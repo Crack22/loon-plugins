@@ -113,7 +113,7 @@
       "descs_html": [
         "蜗牛 4K 每日签到，每天 09:00 自动签到，+10 积分。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/WoNiuCheckin.plugin\">点击安装 Loon 插件</a>",
-        "不用挂梯子也能签：用「同步到 GitHub Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
+        "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
       ]
     },
     {
@@ -190,7 +190,7 @@
       "descs_html": [
         "ChilledMelon 每日签到，每天 09:00 自动登录、做运算题、签到，+5~20 积分。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/ChilledMelonCheckin.plugin\">点击安装 Loon 插件</a>",
-        "不用挂梯子也能签：用「同步到 GitHub Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
+        "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
       ]
     },
     {
@@ -308,7 +308,7 @@
       "descs_html": [
         "乐蛙每日签到，每天 09:00 自动签到，奖励 100-120 积分。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/EmbyPulseTaotuCheckin.plugin\">点击安装 Loon 插件</a>",
-        "不用挂梯子也能签：用「同步到 GitHub Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
+        "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
       ]
     },
     {
@@ -367,12 +367,12 @@
       "descs_html": [
         "乐观每日签到，每天 09:00 自动签到，奖励 90-130 积分。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/EmbyPulseDijiaCheckin.plugin\">点击安装 Loon 插件</a>",
-        "不用挂梯子也能签：用「同步到 GitHub Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
+        "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
       ]
     },
     {
       "id": "gh_secrets_sync",
-      "name": "同步到 GitHub Secrets",
+      "name": "同步Git Secrets",
       "keys": [
         "github_pat",
         "github_repo"
