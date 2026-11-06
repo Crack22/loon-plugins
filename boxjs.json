@@ -1,0 +1,68 @@
+{
+  "id": "xunuo.app.sub",
+  "name": "許諾的签到订阅",
+  "author": "許諾",
+  "icon": "https://www.chilledmelon.com/favicon.ico",
+  "repo": "https://github.com/Crack22/loon-plugins",
+  "apps": [
+    {
+      "id": "wps_checkin",
+      "name": "WPS Office 每日签到",
+      "keys": ["wps_sid"],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": ["https://raw.githubusercontent.com/MaYIHEI/pin/refs/heads/main/app/wps.png"],
+      "script": "https://raw.githubusercontent.com/MaYIHEI/paperclip/refs/heads/main/app/wps/wps.js",
+      "settings": [
+        {"id": "wps_sid", "name": "Cookie（wps_sid）", "val": "", "type": "textarea", "desc": "打开 WPS 进任意活动页停 1 秒自动抓取；抓不到时可手动粘贴。每天 10:00 自动签到"}
+      ]
+    },
+    {
+      "id": "dalanshu_checkin",
+      "name": "大蓝树每日签到",
+      "keys": ["fmz200_dalanshu_authorization"],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": ["https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/dalanshu.png"],
+      "script": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/dalanshu/dalanshu_checkin.js",
+      "settings": [
+        {"id": "fmz200_dalanshu_authorization", "name": "Token", "val": "", "type": "textarea", "desc": "打开大蓝树 APP 触发签到状态接口自动抓取；抓不到时可手动粘贴 Authorization。每天 08:30 自动签到"}
+      ]
+    },
+    {
+      "id": "woniu_checkin",
+      "name": "蜗牛每日签到",
+      "keys": ["woniu_cookie"],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "script": "https://cdn.jsdelivr.net/gh/Crack22/loon-plugins@main/loon-woniu/woniu_checkin.js",
+      "settings": [
+        {"id": "woniu_cookie", "name": "Cookie", "val": "", "type": "textarea", "desc": "打开蜗牛签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 09:00 自动签到"}
+      ]
+    },
+    {
+      "id": "risha_checkin",
+      "name": "七日杀每日签到",
+      "keys": ["risha_cookie"],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "script": "https://cdn.jsdelivr.net/gh/Crack22/loon-plugins@main/loon-7risha/7risha_checkin.js",
+      "settings": [
+        {"id": "risha_cookie", "name": "Cookie", "val": "", "type": "textarea", "desc": "打开七日杀签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 08:30 自动签到"}
+      ]
+    },
+    {
+      "id": "chilledmelon_checkin",
+      "name": "ChilledMelon 每日签到",
+      "keys": ["chilledmelon_username", "chilledmelon_password"],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": ["https://www.chilledmelon.com/favicon.ico"],
+      "script": "https://cdn.jsdelivr.net/gh/Crack22/loon-plugins@main/loon-chilledmelon/chilledmelon_checkin.js",
+      "settings": [
+        {"id": "chilledmelon_username", "name": "账号", "val": "", "type": "text", "desc": "ChilledMelon 用户名"},
+        {"id": "chilledmelon_password", "name": "密码", "val": "", "type": "password", "desc": "ChilledMelon 密码。每天 09:00 自动登录、做运算题、签到"}
+      ]
+    }
+  ]
+}
