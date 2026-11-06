@@ -6,7 +6,7 @@
 
 # 用法：
 # 1、安装插件，开启 cron
-# 2、在 BoxJs 里添加订阅 https://cdn.jsdelivr.net/gh/Crack22/loon-plugins@d5f28ee47675dfd15e86e97f1d742ebabb6aa3fb/loon-chilledmelon/chilledmelon.boxjs.json，填好账号和密码
+# 2、在 BoxJs 里添加统一签到订阅 https://cdn.jsdelivr.net/gh/Crack22/loon-plugins@2ebd1d93b2b6a8058981f1b3f9c15c4039f7ab32/boxjs.json，找到 ChilledMelon 填好账号和密码
 #    （订阅不生效时，在 BoxJs 数据里手动添加 chilledmelon_username、chilledmelon_password 两个键）
 # 3、cron 每天 09:00 自动登录、做运算题、签到，成功会通知得了多少积分
 [Script]
