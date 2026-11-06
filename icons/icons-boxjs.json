@@ -1,0 +1,50 @@
+{
+  "name": "許諾 BoxJs 图标",
+  "description": "BoxJs 订阅里的全部图标，共 11 个，每天自动同步 BoxJs 订阅的新图标。",
+  "icons": [
+    {
+      "name": "ChilledMelon 每日签到",
+      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/chilledmelon.jpg"
+    },
+    {
+      "name": "WPS Office 每日签到",
+      "url": "https://raw.githubusercontent.com/MaYIHEI/pin/refs/heads/main/app/wps.png"
+    },
+    {
+      "name": "七日杀每日签到",
+      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/7risha.jpg"
+    },
+    {
+      "name": "乐蛙每日签到",
+      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/lewa.jpg"
+    },
+    {
+      "name": "乐观每日签到",
+      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/leguan.jpg"
+    },
+    {
+      "name": "大蓝树每日签到",
+      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dalanshu.jpg"
+    },
+    {
+      "name": "夸克每日签到",
+      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/quark.jpg"
+    },
+    {
+      "name": "微博超话打卡",
+      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg"
+    },
+    {
+      "name": "步道乐跑",
+      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/budaolepao.jpg"
+    },
+    {
+      "name": "蜗牛每日签到",
+      "url": "https://woniu.qljiang.com/weixin_files/woniu_white.png"
+    },
+    {
+      "name": "許諾自用应用",
+      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/subscription.jpg"
+    }
+  ]
+}
