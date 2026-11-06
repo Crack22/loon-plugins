@@ -735,6 +735,57 @@
       "icons": [
         "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/shiri.jpg"
       ]
+    },
+    {
+      "id": "netease_checkin",
+      "name": "网易云音乐每日签到",
+      "keys": [
+        "netease_cookie",
+        "netease_cookie2",
+        "netease_cookie3",
+        "netease_accounts"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": ["https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/netease.jpg"],
+      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-netease/netease_checkin.js",
+      "settings": [
+        {
+          "id": "netease_cookie",
+          "name": "账号1 Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "账号1 的 Cookie：打开网易云音乐 App 停 1 秒自动抓取；抓不到时可手动粘贴完整 Cookie。每天 09:00 自动签到"
+        },
+        {
+          "id": "netease_cookie2",
+          "name": "账号2 Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "第 2 个网易云账号的完整 Cookie"
+        },
+        {
+          "id": "netease_cookie3",
+          "name": "账号3 Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "第 3 个网易云账号的完整 Cookie"
+        },
+        {
+          "id": "netease_accounts",
+          "name": "多账号",
+          "val": "",
+          "type": "textarea",
+          "desc": "多账号：每行一个完整 Cookie，不限个数（Cookie 里本身带分号，每行就是一个账号，不要拆开）"
+        }
+      ],
+      "descs_html": [
+        "网易云音乐每日签到，每天 09:00 自动签到，+2 成长值。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-netease/NetEaseCheckin.plugin\">点击安装 Loon 插件</a>",
+        "抓 Cookie：打开网易云音乐 App 停 1 秒自动抓取；Cookie 过期时重新打开 App 抓一次。",
+        "注意：APP 端签到接口已停用，只能签网页端；云贝中心和 VIP 签到是加密接口，做不了自动签。",
+        "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
+      ]
     }
   ]
 }
