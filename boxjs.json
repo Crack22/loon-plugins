@@ -47,6 +47,7 @@
       "keys": ["risha_cookie"],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": ["https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/7risha.jpg"],
       "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha_checkin.js",
       "settings": [
         {"id": "risha_cookie", "name": "Cookie", "val": "", "type": "textarea", "desc": "打开七日杀签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 08:30 自动签到"}
