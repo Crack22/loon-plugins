@@ -1,38 +1,41 @@
 // ChilledMelon 每日签到 cron：账号数量不限
-// 账号1：chilledmelon_username + chilledmelon_password
-// 更多账号：chilledmelon_accounts，每行一个 账号 密码（中间一个空格隔开，旧的 ---- 也还能用）
-// 登录数量：chilledmelon_max_accounts，填数字只签前 N 个账号，空着就是全部都签
+// 账号1/2/3：chilledmelon_username(+2/+3) + chilledmelon_password(+2/+3)
+// 多账号：chilledmelon_accounts，每行一个 账号；密码（中文分号隔开）
 // 流程：BoxJs 读账号密码 → POST /api/auth/login 拿 accessToken → GET /api/auth/me/checkin 查今日状态
 // → 未签到则 GET /api/auth/me/checkin/captcha 取运算题 → 算出答案 → POST /api/auth/me/checkin 提交
 // 账号密码存在 BoxJs（$persistentStore），不在脚本里
 const USER_KEY = 'chilledmelon_username';
 const PASS_KEY = 'chilledmelon_password';
 const EXTRA_KEY = 'chilledmelon_accounts';
-const MAX_KEY = 'chilledmelon_max_accounts';
 const BASE = 'https://www.chilledmelon.com';
 const UA = 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1';
 
 function read(k) { return $persistentStore.read(k) || ""; }
 
 // 收集全部账号：账号1（单独的键）+ 多账号文本框（每行一个 账号 密码）
+// 收集全部账号：账号1/2/3（固定栏位）+ 多账号文本框（每行一个 账号；密码）
 function collectAccounts() {
   var list = [];
-  var u1 = read(USER_KEY), p1 = read(PASS_KEY);
-  if (u1 && p1) list.push({ label: '账号1', user: u1, pass: p1 });
-  var lines = (read(EXTRA_KEY) || '').split('\n');
+  var slots = [
+    { u: USER_KEY, p: PASS_KEY },
+    { u: USER_KEY + "2", p: PASS_KEY + "2" },
+    { u: USER_KEY + "3", p: PASS_KEY + "3" }
+  ];
+  for (var n = 0; n < 3; n++) {
+    var u = read(slots[n].u), pw = read(slots[n].p);
+    if (u && pw) list.push({ label: "账号" + (n + 1), user: u, pass: pw });
+  }
+  var lines = (read(EXTRA_KEY) || "").split("\n");
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i].trim();
     if (!line) continue;
-    var p = line.indexOf(' ');
-    var cut = 1;
-    if (p === -1) { p = line.indexOf('----'); cut = 4; }
+    var p = line.indexOf("；");
+    if (p === -1) p = line.indexOf(";");
     if (p === -1) continue;
-    var u = line.slice(0, p).trim(), pw = line.slice(p + cut).trim();
+    var u = line.slice(0, p).trim(), pw = line.slice(p + 1).trim();
     if (!u || !pw) continue;
-    list.push({ label: '账号' + (list.length + 1), user: u, pass: pw });
+    list.push({ label: "账号" + (list.length + 1), user: u, pass: pw });
   }
-  var max = parseInt(read(MAX_KEY) || '0', 10);
-  if (max > 0) list = list.slice(0, max);
   return list;
 }
 
@@ -48,7 +51,7 @@ function processNext() {
 
 function finish() {
   if (results.length === 0) {
-    $notification.post('ChilledMelon 签到', '还没填账号', '在 BoxJs 里填账号密码，多账号每行一个 账号 密码');
+    $notification.post('ChilledMelon 签到', '还没填账号', '在 BoxJs 里填账号密码，多账号每行一个 账号；密码');
   } else {
     $notification.post('ChilledMelon 签到', '共 ' + results.length + ' 个账号', results.join('\n'));
   }

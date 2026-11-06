@@ -34,8 +34,9 @@ https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-leguan.json
 
 ### 4. 多账号（可选）
 
-- **多账号**那一栏，每行写一个账号：填 session_id，或者写 `账号 密码`（中间一个空格隔开）。
-- **登录账号数量**：填数字就只签前 N 个账号，空着就是全部都签。
+账号1/2/3：在 BoxJs 里分别填 session_id 或账号密码，最多三个固定账号。
+
+- **多账号**那一栏，每行写一个账号：填 session_id，或者写 `账号；密码`（中文分号隔开）。
 
 ### 5. 完成
 

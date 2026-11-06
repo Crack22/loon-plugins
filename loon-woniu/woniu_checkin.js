@@ -1,7 +1,6 @@
 // 蜗牛每日签到：Cookie 或账号密码登录（二选一），账号数量不限
-// 账号1：woniu_cookie / woniu_username + woniu_password
-// 更多账号：woniu_accounts，每行一个，填 Cookie 或 账号 密码（中间一个空格隔开，旧的 ---- 也还能用）
-// 登录数量：woniu_max_accounts，填数字只签前 N 个账号，空着就是全部都签
+// 账号1/2/3：woniu_cookie(+2/+3) / woniu_username(+2/+3) + woniu_password(+2/+3)
+// 多账号：woniu_accounts，每行一个，填 Cookie 或 账号；密码（中文分号隔开）
 // 登录接口：POST https://www.wn4k.com/user/login.html（user_name + user_pwd），成功 code=1，登录后从 Set-Cookie 取 user_check 保存
 // 签到接口：POST https://www.wn4k.com/user/checkin.html，成功 code=1（info.points 积分），已签到 code=1001
 const NAME = "蜗牛";
@@ -32,29 +31,29 @@ function buildCookie(setCookieStr) {
 }
 
 // 收集全部账号：账号1（单独的键）+ 多账号文本框（每行一个）
+// 收集全部账号：账号1/2/3（固定栏位）+ 多账号文本框（每行一个）
 function collectAccounts() {
   var list = [];
-  var a1 = {
-    cookieKey: "woniu_cookie",
-    cookie: read("woniu_cookie"),
-    user: read("woniu_username"),
-    pass: read("woniu_password")
-  };
-  if (a1.cookie || (a1.user && a1.pass)) {
-    a1.label = "账号1";
-    list.push(a1);
+  var slots = [
+    { ck: "woniu_cookie", u: "woniu_username", p: "woniu_password" },
+    { ck: "woniu_cookie2", u: "woniu_username2", p: "woniu_password2" },
+    { ck: "woniu_cookie3", u: "woniu_username3", p: "woniu_password3" }
+  ];
+  for (var n = 0; n < 3; n++) {
+    var k = slots[n];
+    var a = { cookieKey: k.ck, cookie: read(k.ck), user: read(k.u), pass: read(k.p) };
+    if (a.cookie || (a.user && a.pass)) { a.label = "账号" + (n + 1); list.push(a); }
   }
   var lines = (read("woniu_accounts") || "").split("\n");
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i].trim();
     if (!line) continue;
     var a = { cookieKey: "", cookie: "", user: "", pass: "" };
-    var p = line.indexOf(" ");
-    var cut = 1;
-    if (p === -1) { p = line.indexOf("----"); cut = 4; }
+    var p = line.indexOf("；");
+    if (p === -1) p = line.indexOf(";");
     if (p !== -1) {
       a.user = line.slice(0, p).trim();
-      a.pass = line.slice(p + cut).trim();
+      a.pass = line.slice(p + 1).trim();
       if (!a.user || !a.pass) continue;
     } else {
       a.cookie = line;
@@ -62,8 +61,6 @@ function collectAccounts() {
     a.label = "账号" + (list.length + 1);
     list.push(a);
   }
-  var max = parseInt(read("woniu_max_accounts") || "0", 10);
-  if (max > 0) list = list.slice(0, max);
   return list;
 }
 

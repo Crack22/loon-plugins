@@ -1,7 +1,6 @@
 // 识日每日签到：Token 方式，账号数量不限
-// 账号1：shiri_token（打开识日 App 停 1 秒自动保存）
-// 更多账号：shiri_accounts，每行一个 Token
-// 登录数量：shiri_max_accounts，填数字只签前 N 个账号，空着就是全部都签
+// 账号1/2/3：shiri_token(+2/+3)（打开识日 App 停 1 秒自动保存）
+// 多账号：shiri_accounts，每行一个 Token
 // 状态接口：GET https://shiri.jingqueyun.com/MobileHome/getHomeData（home.sign_data.flag：100 已签到，101 未签到；widget.sign_amount 累计天数）
 // 签到接口：GET https://shiri.jingqueyun.com/MobileAccount/signIn，成功 flag=100，amount 累计天数，duobi 本次奖励读币
 // 注意：请求头用 token（不是 Cookie）；Token 过期时重新打开 App 抓一次
@@ -12,18 +11,21 @@ var UA = "Dart/3.10 (dart:io)";
 function read(k) { return $persistentStore.read(k) || ""; }
 function parseJson(d) { try { return JSON.parse(d); } catch (e) { return null; } }
 
+// 收集全部账号：账号1/2/3（固定栏位）+ 多账号文本框（每行一个 Token）
 function collectAccounts() {
   var list = [];
   var t1 = read("shiri_token").trim();
   if (t1) list.push({ token: t1, label: "账号1" });
+  var t2 = read("shiri_token2").trim();
+  if (t2) list.push({ token: t2, label: "账号2" });
+  var t3 = read("shiri_token3").trim();
+  if (t3) list.push({ token: t3, label: "账号3" });
   var lines = (read("shiri_accounts") || "").split("\n");
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i].trim();
     if (!line) continue;
     list.push({ token: line, label: "账号" + (list.length + 1) });
   }
-  var max = parseInt(read("shiri_max_accounts") || "0", 10);
-  if (max > 0) list = list.slice(0, max);
   return list;
 }
 

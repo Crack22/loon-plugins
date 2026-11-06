@@ -1,5 +1,5 @@
 #!name=蜗牛每日签到
-#!desc=蜗牛 4K 每日签到，每天 +10 积分；Cookie 和账号密码二选一，账号数量不限。\nCookie 方式：开重写，打开蜗牛签到页停 1 秒，收到 Cookie 获取成功即抓取成功。\n账号密码方式：在 BoxJs 里填账号和密码，签到时自动登录，Cookie 过期时也会自动重新登录。\n多账号：在 BoxJs 的「多账号」里每行填一个 Cookie 或 账号 密码；「登录账号数量」填数字只签前 N 个，空着就是全部都签。\ncron 每天 09:00 自动签到，Cookie 和密码只保存在手机本地。
+#!desc=蜗牛 4K 每日签到，每天 +10 积分；Cookie 和账号密码二选一，账号数量不限。\nCookie 方式：开重写，打开蜗牛签到页停 1 秒，收到 Cookie 获取成功即抓取成功。\n账号密码方式：在 BoxJs 里填账号和密码，签到时自动登录，Cookie 过期时也会自动重新登录。\n账号1/2/3：在 BoxJs 里分别填 Cookie 或账号密码；多账号：在「多账号」里每行填一个 Cookie 或 账号；密码（中文分号隔开）。\ncron 每天 09:00 自动签到，Cookie 和密码只保存在手机本地。
 #!author=許諾
 #!icon=https://woniu.qljiang.com/weixin_files/woniu_white.png
 #!tag=蜗牛

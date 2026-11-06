@@ -1,7 +1,6 @@
 // GLaDOS 每日签到：Cookie 方式，账号数量不限
-// 账号1：glados_cookie（抓包自动保存，UA 一起保存到 glados_ua）
-// 更多账号：glados_accounts，每行一个 Cookie
-// 登录数量：glados_max_accounts，填数字只签前 N 个账号，空着就是全部都签
+// 账号1/2/3：glados_cookie(+2/+3)（抓包自动保存，UA 一起保存到 glados_ua）
+// 多账号：glados_accounts，每行一个 Cookie
 // 自动兑换：glados_exchange，填 100 / 200 / 500，积分够了自动换 10 / 30 / 100 天，空着不兑换
 // 签到接口：POST https://glados.rocks/api/user/checkin（body {"token":"glados.rocks"}），成功 code=0，message "Checkin! Got N Points"
 // 状态接口：GET https://glados.rocks/api/user/status（data.leftDays 剩余天数，data.email 邮箱）
@@ -19,18 +18,21 @@ function parseJson(d) { try { return JSON.parse(d); } catch (e) { return null; }
 function parsePoints(v) { var n = parseInt(parseFloat(v), 10); return isNaN(n) ? 0 : n; }
 function parseDays(v) { var n = parseInt(parseFloat(v), 10); return isNaN(n) ? "?" : n + " 天"; }
 
+// 收集全部账号：账号1/2/3（固定栏位）+ 多账号文本框（每行一个 Cookie）
 function collectAccounts() {
   var list = [];
   var c1 = read("glados_cookie");
   if (c1) list.push({ cookie: c1, label: "账号1" });
+  var c2 = read("glados_cookie2");
+  if (c2) list.push({ cookie: c2, label: "账号2" });
+  var c3 = read("glados_cookie3");
+  if (c3) list.push({ cookie: c3, label: "账号3" });
   var lines = (read("glados_accounts") || "").split("\n");
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i].trim();
     if (!line) continue;
     list.push({ cookie: line, label: "账号" + (list.length + 1) });
   }
-  var max = parseInt(read("glados_max_accounts") || "0", 10);
-  if (max > 0) list = list.slice(0, max);
   return list;
 }
 

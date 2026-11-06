@@ -34,27 +34,31 @@ function extractSession(setCookies) {
   return "";
 }
 
-// 收集账号：账号1（单独的 Secret）+ 多账号文本（每行一个 Cookie 或 账号 密码，中间一个空格隔开；旧的 ---- 也还能用）
-function collectAccounts(prefix, firstCookie, firstUser, firstPass, sep = " ") {
+// 收集账号见 collectAccounts：账号1/2/3 + 多账号文本
+// 收集账号：账号1/2/3（单独的 Secret）+ 多账号文本（每行一个 Cookie，或 账号；密码）
+function collectAccounts(prefix, firstCookie, firstUser, firstPass) {
   const list = [];
-  const cookie = env(firstCookie), user = env(firstUser), pass = env(firstPass);
-  if (cookie || (user && pass)) list.push({ label: "账号1", cookie, user, pass });
+  for (let n = 1; n <= 3; n++) {
+    const suf = n === 1 ? "" : String(n);
+    const cookie = env(firstCookie + suf), user = env(firstUser + suf), pass = env(firstPass + suf);
+    if (cookie || (user && pass)) list.push({ label: "账号" + n, cookie, user, pass });
+  }
   for (const line of (env(prefix + "_ACCOUNTS") || "").split("\n")) {
     const t = line.trim();
     if (!t) continue;
-    let p = t.indexOf(sep), cut = sep.length;
-    if (p === -1 && sep !== "----") { p = t.indexOf("----"); cut = 4; }
+    let p = t.indexOf("；");
+    if (p === -1) p = t.indexOf(";");
     if (p !== -1) {
-      const u = t.slice(0, p).trim(), pw = t.slice(p + cut).trim();
+      const u = t.slice(0, p).trim(), pw = t.slice(p + 1).trim();
       if (!u || !pw) continue;
       list.push({ label: "账号" + (list.length + 1), cookie: "", user: u, pass: pw });
     } else {
       list.push({ label: "账号" + (list.length + 1), cookie: t, user: "", pass: "" });
     }
   }
-  const max = parseInt(env(prefix + "_MAX_ACCOUNTS") || "0", 10);
-  return max > 0 ? list.slice(0, max) : list;
+  return list;
 }
+
 
 const results = [];
 const failed = [];
@@ -146,8 +150,8 @@ async function embyLogin(site, acct) {
   await embyCheckin(site, acct, sessionId, true);
 }
 
-async function runEmby(name, site, prefix, sep = " ") {
-  const accounts = collectAccounts(prefix, prefix + "_SESSION_ID", prefix + "_USERNAME", prefix + "_PASSWORD", sep);
+async function runEmby(name, site, prefix) {
+  const accounts = collectAccounts(prefix, prefix + "_SESSION_ID", prefix + "_USERNAME", prefix + "_PASSWORD");
   if (!accounts.length) { console.log(`[${name}] 未配置账号，跳过`); return; }
   for (const acct of accounts) {
     acct.site = name;

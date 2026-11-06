@@ -1,7 +1,6 @@
 // 乐观每日签到：session_id 或账号密码登录（二选一），账号数量不限
-// 账号1：embypulse2_session_id / embypulse2_username + embypulse2_password
-// 更多账号：embypulse2_accounts，每行一个，填 session_id 或 账号 密码（中间一个空格隔开，旧的 ---- 也还能用）
-// 登录数量：embypulse2_max_accounts，填数字只签前 N 个账号，空着就是全部都签
+// 账号1/2/3：embypulse2_session_id(+2/+3) / embypulse2_username(+2/+3) + embypulse2_password(+2/+3)
+// 多账号：embypulse2_accounts，每行一个，填 session_id 或 账号；密码（中文分号隔开）
 // 登录接口：POST /api/requests/auth（JSON {username, password}），成功 status=success，登录后从 Set-Cookie 取 session_id 保存
 // 签到接口：GET /api/user/points/info + POST /api/user/points/checkin，需带 Cookie session_id 和 Origin 头
 const SITE = "https://embyyh.dijia.de";
@@ -9,7 +8,6 @@ const SESSION_KEY = "embypulse2_session_id";
 const USER_KEY = "embypulse2_username";
 const PASS_KEY = "embypulse2_password";
 const EXTRA_KEY = "embypulse2_accounts";
-const MAX_KEY = "embypulse2_max_accounts";
 const NAME = "乐观";
 const UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1";
 const REFERER = SITE + "/?tab=explore";
@@ -37,24 +35,29 @@ function headers(sessionId) {
 }
 
 // 收集全部账号：账号1（单独的键）+ 多账号文本框（每行一个）
+// 收集全部账号：账号1/2/3（固定栏位）+ 多账号文本框（每行一个）
 function collectAccounts() {
   var list = [];
-  var a1 = { cookieKey: SESSION_KEY, cookie: read(SESSION_KEY), user: read(USER_KEY), pass: read(PASS_KEY) };
-  if (a1.cookie || (a1.user && a1.pass)) {
-    a1.label = "账号1";
-    list.push(a1);
+  var slots = [
+    { ck: SESSION_KEY, u: USER_KEY, p: PASS_KEY },
+    { ck: SESSION_KEY + "2", u: USER_KEY + "2", p: PASS_KEY + "2" },
+    { ck: SESSION_KEY + "3", u: USER_KEY + "3", p: PASS_KEY + "3" }
+  ];
+  for (var n = 0; n < 3; n++) {
+    var k = slots[n];
+    var a = { cookieKey: k.ck, cookie: read(k.ck), user: read(k.u), pass: read(k.p) };
+    if (a.cookie || (a.user && a.pass)) { a.label = "账号" + (n + 1); list.push(a); }
   }
   var lines = (read(EXTRA_KEY) || "").split("\n");
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i].trim();
     if (!line) continue;
     var a = { cookieKey: "", cookie: "", user: "", pass: "" };
-    var p = line.indexOf(" ");
-    var cut = 1;
-    if (p === -1) { p = line.indexOf("----"); cut = 4; }
+    var p = line.indexOf("；");
+    if (p === -1) p = line.indexOf(";");
     if (p !== -1) {
       a.user = line.slice(0, p).trim();
-      a.pass = line.slice(p + cut).trim();
+      a.pass = line.slice(p + 1).trim();
       if (!a.user || !a.pass) continue;
     } else {
       a.cookie = line;
@@ -62,8 +65,6 @@ function collectAccounts() {
     a.label = "账号" + (list.length + 1);
     list.push(a);
   }
-  var max = parseInt(read(MAX_KEY) || "0", 10);
-  if (max > 0) list = list.slice(0, max);
   return list;
 }
 
