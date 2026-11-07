@@ -99,6 +99,14 @@ DOMAIN-SUFFIX,ad.meizu.com,REJECT
 # 注意：不用 .*ad.* 这种裸匹配，会误伤 download/header/address/load
 # ============================================================
 [URL Rewrite]
+# 2026-11-07 抓包确认：弹窗广告走易帆 yfanads（adx-data.yfanads.com/v1/adx/click，点后跳淘宝淘金币小镇），
+# 广告配置 /v3/api.php/System/advConfig 响应是加密的（is_encrypt=1），脚本清不了，只能从网络层拦。
+# 关键：[Rule] 里的 DOMAIN-SUFFIX,yfanads.com 没拦住 adx-data——yfanads 解析到国内 IP，
+# 用户配置里 GEOIP,CN,DIRECT 在插件规则前面，先走了 DIRECT。URL Rewrite 不看规则顺序、只看 URL，按域名拦才稳。
+# 抓包实测：tracker.yfanads.com 的 batchUpload 已被下面 /ads/ 规则拦住（replace_response），
+# mobads-logs.baidu.com 的 /dz.zb 已被 [Rule] 拦住（无响应），只剩 adx-data.yfanads.com 漏网。
+^https?:\/\/([^\/]*\.)?yfanads\.com\/ - reject
+^https?:\/\/([^\/]*\.)?e\.qq\.com\/ - reject
 ^https?:\/\/[^\/]+\/[^?]*\/(ad|ads|advert|advertisement|banner|splash|kaiping|openscreen|open_screen|startpage|start_page|interstitial|reward|rewarded|incentive|promotion|tuiguang|feed_ad|native_ad|popup_ad)(\/|$|\?|&) - reject-dict
 ^https?:\/\/[^\/]+\/[^?]*[?&](ad|ads|ad_id|adid|is_ad|ad_type|adtype)=[^&]* - reject-dict
 
