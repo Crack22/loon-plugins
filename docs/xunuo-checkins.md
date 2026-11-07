@@ -1,6 +1,6 @@
 # 許諾签到合集
 
-把签到类任务全部转成 Loon 插件，共 139 个。签到脚本本身留在上游，这里只提供插件外壳（抓取 Cookie + 定时触发）和 BoxJs 设置。
+把签到类任务全部转成 Loon 插件，共 135 个。签到脚本本身留在上游，这里只提供插件外壳（抓取 Cookie + 定时触发）和 BoxJs 设置。
 
 BoxJs 订阅：https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-checkins.json
 
@@ -38,7 +38,6 @@ BoxJs 订阅：https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs
 | 中免会员每日签到 | 00:03 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-zmhy/SliverkissZmhy.plugin) |
 | 中兴每日签到 | 01:33, 19:33 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/zte/Zte.plugin) |
 | 中国联通每日签到 | 08:05 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/china-unicom/ChinaUnicom.plugin) |
-| 中青自动阅读每日签到 | 08:35 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sy-youth-read/SyYouthRead.plugin) |
 | 丽影云街每日签到 | 07:17 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/livingmall/Livingmall.plugin) |
 | 九木杂物社每日签到 | 00:05 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/jiumu/Jiumu.plugin) |
 | 京东成长分每日签到 | 08:10 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/jd-czf/JdCzf.plugin) |
@@ -52,7 +51,6 @@ BoxJs 订阅：https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs
 | 加油广东每日签到 | 08:04 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/gdoil/Gdoil.plugin) |
 | 华住会每日签到 | 00:05 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/hzh/Hzh.plugin) |
 | 南方周末每日签到 | 02:11 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/nfzm/Nfzm.plugin) |
-| 去哪儿每日签到 | 08:02 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qunar/Qunar.plugin) |
 | 叮咚买菜每日签到 | 08:06 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/dingdong/Dingdong.plugin) |
 | 叮咚农场 | 08:01 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/dingdong-farm/DingdongFarm.plugin) |
 | 吾爱破解每日签到 | 08:01 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/52pojie/52Pojie.plugin) |
@@ -113,11 +111,9 @@ BoxJs 订阅：https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs
 | 百度贴吧(客户端)每日签到 | 08:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/tieba-app/TiebaApp.plugin) |
 | 百果园每日签到 | 02:11 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/pagoda/Pagoda.plugin) |
 | 知音漫客每日签到 | 00:17 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zymk/Zymk.plugin) |
-| 米游社每日签到 | 08:04 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/mihoyo/Mihoyo.plugin) |
 | 索尼俱乐部签到 | 00:04 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/sony/Sony.plugin) |
 | 绝区零每日签到 | 10:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkzzz/Lkzzz.plugin) |
 | 网易严选每日签到 | 08:03 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/yanxuan/Yanxuan.plugin) |
-| 网易新闻每日签到 | 08:02 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/neteasenews/NeteaseNews.plugin) |
 | 美团外卖每日签到 | 08:05 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/meituan-waimai/MeituanWaimai.plugin) |
 | 美团每日签到 | 08:05 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/meituan/Meituan.plugin) |
 | 腾讯视频每日签到 | 08:03 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/videoqq/VideoQq.plugin) |

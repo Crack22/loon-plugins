@@ -5539,6 +5539,86 @@
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/wyyx/Wyyx.plugin\">点击安装 Loon 插件</a>"
    ],
    "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX_Exchange.js"
+  },
+  {
+   "id": "yuheng-mi-step",
+   "name": "小米刷步",
+   "keys": [
+    "xiaomi_step_debug",
+    "xiaomi_step_increment_mode",
+    "xiaomi_step_run_count",
+    "xiaomi_step_username",
+    "xiaomi_step_password",
+    "xiaomi_step_space",
+    "xiaomi_step_step",
+    "xiaomi_step_increment_cache_list"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/color.png"
+   ],
+   "settings": [
+    {
+     "id": "xiaomi_step_debug",
+     "name": "是否开启调试模式",
+     "val": false,
+     "type": "boolean"
+    },
+    {
+     "id": "xiaomi_step_increment_mode",
+     "name": "是否开启递增模式",
+     "val": false,
+     "type": "boolean"
+    },
+    {
+     "id": "xiaomi_step_run_count",
+     "name": "运行次数",
+     "val": "",
+     "type": "text",
+     "desc": "cron 运行几次就填几次，默认 1"
+    },
+    {
+     "id": "xiaomi_step_username",
+     "name": "小米账号",
+     "val": "",
+     "type": "textarea",
+     "desc": "多账号用 && 分隔"
+    },
+    {
+     "id": "xiaomi_step_password",
+     "name": "小米密码",
+     "val": "",
+     "type": "textarea",
+     "desc": "多账号用 && 分隔，与账号一一对应"
+    },
+    {
+     "id": "xiaomi_step_space",
+     "name": "步数区间",
+     "val": "",
+     "type": "text",
+     "desc": "自定义步数区间"
+    },
+    {
+     "id": "xiaomi_step_step",
+     "name": "步数",
+     "val": "",
+     "type": "text",
+     "desc": "每次刷取的步数"
+    },
+    {
+     "id": "xiaomi_step_increment_cache_list",
+     "name": "递增模式缓存",
+     "val": "",
+     "type": "textarea",
+     "desc": "递增模式的缓存列表，脚本自动维护，一般不用填"
+    }
+   ],
+   "descs_html": [
+    "小米运动刷步：每天自动刷步数，需填小米账号和密码。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-mi-step/YuhengMiStep.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/step.js"
   }
  ]
 }

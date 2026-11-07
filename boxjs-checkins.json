@@ -851,64 +851,6 @@
    ]
   },
   {
-   "id": "neteasenews_checkin",
-   "name": "网易新闻每日签到",
-   "keys": [
-    "chavy_cookie_neteasenews",
-    "chavy_body_neteasenews"
-   ],
-   "author": "許諾",
-   "repo": "https://github.com/Crack22/loon-plugins",
-   "icons": [
-    "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Netease.png"
-   ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/neteasenews/neteasenews.js",
-   "settings": [
-    {
-     "id": "chavy_cookie_neteasenews",
-     "name": "Cookie",
-     "val": "",
-     "type": "textarea",
-     "desc": "打开网易新闻自动抓取；抓不到时可手动粘贴；每天 08:02 自动签到"
-    },
-    {
-     "id": "chavy_body_neteasenews",
-     "name": "请求体",
-     "val": "",
-     "type": "textarea",
-     "desc": "打开网易新闻自动抓取；抓不到时可手动粘贴；每天 08:02 自动签到"
-    }
-   ],
-   "descs_html": [
-    "网易新闻每日签到，每天 08:02 自动签到。",
-    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/neteasenews/NeteaseNews.plugin\">点击安装 Loon 插件</a>"
-   ]
-  },
-  {
-   "id": "qunar_checkin",
-   "name": "去哪儿每日签到",
-   "keys": [
-    "chavy_cookie_qunar"
-   ],
-   "author": "許諾",
-   "repo": "https://github.com/Crack22/loon-plugins",
-   "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/qunar/qunar.js",
-   "settings": [
-    {
-     "id": "chavy_cookie_qunar",
-     "name": "Cookie",
-     "val": "",
-     "type": "textarea",
-     "desc": "打开去哪儿自动抓取；抓不到时可手动粘贴；每天 08:02 自动签到"
-    }
-   ],
-   "descs_html": [
-    "去哪儿每日签到，每天 08:02 自动签到。",
-    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qunar/Qunar.plugin\">点击安装 Loon 插件</a>"
-   ]
-  },
-  {
    "id": "sfexpress_checkin",
    "name": "顺丰速运每日签到",
    "keys": [
@@ -1266,38 +1208,6 @@
    "descs_html": [
     "芒果TV每日签到，每天 08:04 自动签到。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/mgtv/Mgtv.plugin\">点击安装 Loon 插件</a>"
-   ]
-  },
-  {
-   "id": "mihoyo_checkin",
-   "name": "米游社每日签到",
-   "keys": [
-    "chavy_signurl_mihoyo",
-    "chavy_signheader_mihoyo"
-   ],
-   "author": "許諾",
-   "repo": "https://github.com/Crack22/loon-plugins",
-   "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/mihoyo/mihoyo.js",
-   "settings": [
-    {
-     "id": "chavy_signurl_mihoyo",
-     "name": "URL",
-     "val": "",
-     "type": "textarea",
-     "desc": "打开米游社自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
-    },
-    {
-     "id": "chavy_signheader_mihoyo",
-     "name": "请求头",
-     "val": "",
-     "type": "textarea",
-     "desc": "打开米游社自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
-    }
-   ],
-   "descs_html": [
-    "米游社每日签到，每天 08:04 自动签到。",
-    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/mihoyo/Mihoyo.plugin\">点击安装 Loon 插件</a>"
    ]
   },
   {
@@ -5297,33 +5207,6 @@
     "STLXZ每日签到，每天 08:30 自动签到。",
     "抓 Cookie：<a href=\"https://www.stlxz.com\">👉 点我打开STLXZ抓取</a>",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-stlxz/SliverkissStlxz.plugin\">点击安装 Loon 插件</a>"
-   ]
-  },
-  {
-   "id": "sy-youth-read_checkin",
-   "name": "中青自动阅读每日签到",
-   "keys": [
-    "zqgetbody_body"
-   ],
-   "author": "許諾",
-   "repo": "https://github.com/Crack22/loon-plugins",
-   "icons": [
-    "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/youth.png"
-   ],
-   "script": "https://raw.githubusercontent.com/songyangzz/QuantumultX/master/YOUTH_READ.js",
-   "settings": [
-    {
-     "id": "zqgetbody_body",
-     "name": "请求体",
-     "val": "",
-     "type": "textarea",
-     "desc": "中青看点文章请求体，在 App 里阅读文章自动抓取，多个用 & 或换行分隔；脚本较老（2020 年），可能已失效；每天 08:35 自动阅读"
-    }
-   ],
-   "descs_html": [
-    "中青自动阅读每日签到，每天 08:35 自动阅读。脚本较老（2020 年），可能已失效。",
-    "抓请求体：在中青看点 App 里阅读文章，读完即自动抓取请求体。",
-    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sy-youth-read/SyYouthRead.plugin\">点击安装 Loon 插件</a>"
    ]
   }
  ]

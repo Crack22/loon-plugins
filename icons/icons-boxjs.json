@@ -1,6 +1,6 @@
 {
   "name": "許諾 BoxJs 图标",
-  "description": "BoxJs 订阅里的全部图标，共 160 个，每天自动同步 BoxJs 订阅的新图标。",
+  "description": "BoxJs 订阅里的全部图标，共 159 个，每天自动同步 BoxJs 订阅的新图标。",
   "icons": [
     {
       "name": "4K世界自动签到",
@@ -187,10 +187,6 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/China_Unicom.png"
     },
     {
-      "name": "中青自动阅读每日签到",
-      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/youth.png"
-    },
-    {
       "name": "丽影云街每日签到",
       "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/livingmall.png"
     },
@@ -301,6 +297,10 @@
     {
       "name": "小木虫每日签到",
       "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/muchong.png"
+    },
+    {
+      "name": "小米刷步",
+      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/color.png"
     },
     {
       "name": "小红书功能增强",
@@ -497,10 +497,6 @@
     {
       "name": "网易云音乐每日签到",
       "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/netease.jpg"
-    },
-    {
-      "name": "网易新闻每日签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Netease.png"
     },
     {
       "name": "美团外卖每日签到",
