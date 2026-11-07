@@ -1,5 +1,5 @@
 #!name=海德汇一城每日签到
-#!desc=海德汇一城每日签到；用法：装好插件，打开重写和 cron，打开「海德汇一城」小程序停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 00:12 自动签到。
+#!desc=海德汇一城每日签到；用法：装好插件，打开重写和 cron，打开「海德汇一城」小程序停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 00:12 自动签到。\n手动抓取：点 Loon 脚本里的「海德汇一城去抓取」，按弹出的提示操作。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
@@ -13,3 +13,4 @@ hostname = wox2019.woxshare.com
 [Script]
 http-request ^https?://wox2019\.woxshare\.com/.*clientApi/signInRecord script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/hdhyc/hdhyc_capture.js, requires-body=true, tag=海德汇一城 Cookie, argument="title=海德汇一城", enable={capture}
 cron "12 0 * * *" script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/hdhycSign.js, timeout=300, tag=海德汇一城签到, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=海德汇一城去抓取, argument="title=海德汇一城&url=&hint=打开「海德汇一城」小程序停留几秒即自动抓取", enable={capture}

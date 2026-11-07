@@ -1,5 +1,5 @@
 #!name=飞常准每日签到
-#!desc=飞常准每日签到；用法：装好插件，打开重写和 cron，打开「飞常准」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:10 自动签到。
+#!desc=飞常准每日签到；用法：装好插件，打开重写和 cron，打开「飞常准」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:10 自动签到。\n手动抓取：点 Loon 脚本里的「飞常准去抓取」，按弹出的提示操作。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
@@ -13,3 +13,4 @@ hostname = activity.m.duiba.com.cn
 [Script]
 http-request ^https?://activity\.m\.duiba\.com\.cn/signactivity/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_checkin_capture.js, requires-body=false, tag=飞常准 Cookie, argument="key=chen_cookie_fcz&source=cookie&title=飞常准", enable={capture}
 cron "10 8 * * *" script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/fcz/fcz_sign.js, timeout=300, tag=飞常准签到, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=飞常准去抓取, argument="title=飞常准&url=&hint=打开「飞常准」停留几秒即自动抓取", enable={capture}

@@ -1,5 +1,5 @@
 #!name=哔哩哔哩银瓜子换硬币每日签到
-#!desc=哔哩哔哩银瓜子换硬币每日签到；用法：装好插件，打开重写和 cron，打开「哔哩哔哩」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:03 自动签到。
+#!desc=哔哩哔哩银瓜子换硬币每日签到；用法：装好插件，打开重写和 cron，打开「哔哩哔哩」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:03 自动签到。\n手动抓取：点 Loon 脚本里的「哔哩哔哩银瓜子换硬币去抓取」，点弹出的通知即打开抓取页。
 #!author=許諾
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png
 #!homepage=https://github.com/Crack22/loon-plugins
@@ -14,3 +14,4 @@ hostname = *.bilibili.com
 [Script]
 http-request ^https?://(www|live)\.bilibili\.com/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_checkin_capture.js, requires-body=false, tag=哔哩哔哩银瓜子换硬币每日签到 Cookie, argument="key=chavy_cookie_bilibili&source=cookie&title=哔哩哔哩银瓜子换硬币", enable={capture}
 cron "3 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.silver2coin.js, timeout=300, tag=哔哩哔哩银瓜子换硬币每日签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=哔哩哔哩银瓜子换硬币去抓取, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png, argument="title=哔哩哔哩银瓜子换硬币&url=https%3A%2F%2Fwww.bilibili.com%2F&hint=在浏览器里打开哔哩哔哩，停留几秒即自动抓取", enable={capture}

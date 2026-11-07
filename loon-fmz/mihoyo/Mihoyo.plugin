@@ -1,5 +1,5 @@
 #!name=米游社每日签到
-#!desc=米游社每日签到；用法：装好插件，打开重写和 cron，打开「米游社」App 浏览几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:04 自动签到。
+#!desc=米游社每日签到；用法：装好插件，打开重写和 cron，打开「米游社」App 浏览几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:04 自动签到。\n手动抓取：点 Loon 脚本里的「米游社去抓取」，按弹出的提示操作。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
@@ -13,3 +13,4 @@ hostname = api-takumi.mihoyo.com
 [Script]
 http-request ^https?://api-takumi\.mihoyo\.com/apihub/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/mihoyo/mihoyo_capture.js, requires-body=false, tag=米游社 Cookie, argument="title=米游社", enable={capture}
 cron "4 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mihoyo/mihoyo.js, timeout=300, tag=米游社签到, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=米游社去抓取, argument="title=米游社&url=&hint=打开「米游社」App 浏览几秒即自动抓取", enable={capture}

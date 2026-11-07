@@ -1,5 +1,5 @@
 #!name=掌上飞车每日签到
-#!desc=掌上飞车每日签到；用法：装好插件，打开重写和 cron，打开「掌上飞车」停留几秒，收到通知即抓取成功；每月需打开一次掌上飞车 App 签到页以更新签到数据，抓完后在设置里关掉「抓取开关」；cron 每天 08:08 自动签到。
+#!desc=掌上飞车每日签到；用法：装好插件，打开重写和 cron，打开「掌上飞车」停留几秒，收到通知即抓取成功；每月需打开一次掌上飞车 App 签到页以更新签到数据，抓完后在设置里关掉「抓取开关」；cron 每天 08:08 自动签到。\n手动抓取：点 Loon 脚本里的「掌上飞车去抓取」，按弹出的提示操作。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
@@ -13,3 +13,4 @@ hostname = comm.ams.game.qq.com
 [Script]
 http-request ^https?://comm\.ams\.game\.qq\.com/ams/ame/amesvr script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zsfc/zsfc_capture.js, requires-body=true, tag=掌上飞车 Cookie, argument="title=掌上飞车", enable={capture}
 cron "8 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js, timeout=300, tag=掌上飞车签到, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=掌上飞车去抓取, argument="title=掌上飞车&url=&hint=打开「掌上飞车」停留几秒即自动抓取", enable={capture}

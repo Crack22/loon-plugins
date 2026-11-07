@@ -1,5 +1,5 @@
 #!name=奇瑞汽车App签到
-#!desc=奇瑞汽车App签到；用法：装好插件，打开重写和 cron，打开「奇瑞汽车 App」进入「我的」页面，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 7:17 自动签到。
+#!desc=奇瑞汽车App签到；用法：装好插件，打开重写和 cron，打开「奇瑞汽车 App」进入「我的」页面，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 7:17 自动签到。\n手动抓取：点 Loon 脚本里的「奇瑞汽车App去抓取」，按弹出的提示操作。
 #!author=許諾
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chery.png
 #!homepage=https://github.com/Crack22/loon-plugins
@@ -14,3 +14,4 @@ hostname = mobile-consumer-sapp.chery.cn
 [Script]
 http-response ^https://mobile-consumer-sapp\.chery\.cn/.*web/user/current/details\? script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/chery/chery_capture.js, requires-body=true, tag=奇瑞汽车App签到抓取, enable={capture}
 cron "17 7 * * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/chery/cheryAppSignin.js, timeout=300, tag=奇瑞汽车App签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chery.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=奇瑞汽车App去抓取, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chery.png, argument="title=奇瑞汽车App&url=&hint=打开「奇瑞汽车 App」进入「我的」页面即自动抓取", enable={capture}

@@ -1,5 +1,5 @@
 #!name=Zaker每日签到
-#!desc=Zaker每日签到；用法：装好插件，打开重写和 cron，打开「Zaker」App 手动签到一次，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:08 自动签到。
+#!desc=Zaker每日签到；用法：装好插件，打开重写和 cron，打开「Zaker」App 手动签到一次，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:08 自动签到。\n手动抓取：点 Loon 脚本里的「Zaker去抓取」，按弹出的提示操作。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
@@ -13,3 +13,4 @@ hostname = iphone.myzaker.com
 [Script]
 http-request ^https://iphone\.myzaker\.com/zaker/sign_in//api/sign_in\.php script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zaker/zaker_capture.js, requires-body=false, tag=Zaker Cookie, argument="title=Zaker", enable={capture}
 cron "8 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zaker/zaker.js, timeout=300, tag=Zaker签到, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=Zaker去抓取, argument="title=Zaker&url=&hint=打开「Zaker」App 手动签到一次即自动抓取", enable={capture}

@@ -1,5 +1,5 @@
 #!name=快手果园
-#!desc=快手果园；用法：装好插件，打开重写和 cron，打开「快手」进果园浇一次水，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 1:30、8:30、12:30、17:30 自动签到。
+#!desc=快手果园；用法：装好插件，打开重写和 cron，打开「快手」进果园浇一次水，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 1:30、8:30、12:30、17:30 自动签到。\n手动抓取：点 Loon 脚本里的「快手果园去抓取」，按弹出的提示操作。
 #!author=許諾
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/kuaishou.png
 #!homepage=https://github.com/Crack22/loon-plugins
@@ -14,3 +14,4 @@ hostname = ug-fission.kuaishou.com
 [Script]
 http-request ^https?://ug-fission\.kuaishou\.com/rest/n/darwin/orchard/water/watering script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_checkin_capture.js, requires-body=false, tag=快手果园 Cookie, argument="key=kscookies&source=cookie&title=快手果园", enable={capture}
 cron "30 1,8,12,17 * * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/kuaishou/ks_fruit.js, timeout=300, tag=快手果园, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/kuaishou.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=快手果园去抓取, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/kuaishou.png, argument="title=快手果园&url=&hint=打开「快手」进果园浇一次水即自动抓取", enable={capture}

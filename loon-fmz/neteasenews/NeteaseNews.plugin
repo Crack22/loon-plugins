@@ -1,5 +1,5 @@
 #!name=网易新闻每日签到
-#!desc=网易新闻每日签到；用法：装好插件，打开重写和 cron，打开「网易新闻」点一次签到，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:02 自动签到。
+#!desc=网易新闻每日签到；用法：装好插件，打开重写和 cron，打开「网易新闻」点一次签到，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:02 自动签到。\n手动抓取：点 Loon 脚本里的「网易新闻去抓取」，按弹出的提示操作。
 #!author=許諾
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Netease.png
 #!homepage=https://github.com/Crack22/loon-plugins
@@ -14,3 +14,4 @@ hostname = c.m.163.com, v6-c.m.163.com
 [Script]
 http-request ^https?://(v6-c\.)?c\.m\.163\.com/uc/api/sign/v[23]/commit script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/neteasenews/neteasenews_capture.js, requires-body=true, tag=网易新闻每日签到 Cookie, argument="key=chavy_cookie_neteasenews&title=网易新闻", enable={capture}
 cron "2 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasenews/neteasenews.js, timeout=300, tag=网易新闻每日签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Netease.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=网易新闻去抓取, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Netease.png, argument="title=网易新闻&url=&hint=打开「网易新闻」点一次签到即自动抓取", enable={capture}

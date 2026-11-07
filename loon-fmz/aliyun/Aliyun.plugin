@@ -1,5 +1,5 @@
 #!name=阿里云盘签到
-#!desc=阿里云盘签到；用法：装好插件，打开重写和 cron，打开「阿里云盘」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 7:00、11:00、17:00 自动签到。
+#!desc=阿里云盘签到；用法：装好插件，打开重写和 cron，打开「阿里云盘」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 7:00、11:00、17:00 自动签到。\n手动抓取：点 Loon 脚本里的「阿里云盘去抓取」，按弹出的提示操作。
 #!author=許諾
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AliYunDrive.png
 #!homepage=https://github.com/Crack22/loon-plugins
@@ -14,3 +14,4 @@ hostname = auth.alipan.com, auth.aliyundrive.com
 [Script]
 http-request ^https://(auth|aliyundrive)\.alipan\.com/v2/account/token script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/aliyun/aliyun_capture.js, requires-body=true, tag=阿里云盘签到抓取, enable={capture}
 cron "0 7,11,17 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=300, tag=阿里云盘签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AliYunDrive.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=阿里云盘去抓取, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AliYunDrive.png, argument="title=阿里云盘&url=&hint=打开「阿里云盘」停留几秒即自动抓取", enable={capture}

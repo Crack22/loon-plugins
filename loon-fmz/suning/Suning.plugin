@@ -1,5 +1,5 @@
 #!name=苏宁易购每日签到
-#!desc=苏宁易购每日签到；用法：装好插件，打开重写和 cron，打开「苏宁易购」App 登录并手动签到一次，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:08 自动签到。
+#!desc=苏宁易购每日签到；用法：装好插件，打开重写和 cron，打开「苏宁易购」App 登录并手动签到一次，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:08 自动签到。\n手动抓取：点 Loon 脚本里的「苏宁易购去抓取」，点弹出的通知即打开抓取页。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
@@ -16,3 +16,4 @@ http-request ^https://luckman\.suning\.com/luck-web/sign/api/clock_sign\.do scri
 http-request ^https://sign\.suning\.com/sign-web/m/promotion/sign/doSign\.do script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/suning/suning_capture.js, requires-body=false, tag=苏宁易购 Cookie, argument="title=苏宁易购", enable={capture}
 http-request ^https://gameapi\.suning\.com/sngame-web/(api/signin/private/customerSignOperation\.do|gateway/api/queryPrize\.do) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/suning/suning_capture.js, requires-body=false, tag=苏宁易购 Cookie, argument="title=苏宁易购", enable={capture}
 cron "8 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.js, timeout=300, tag=苏宁易购签到, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=苏宁易购去抓取, argument="title=苏宁易购&url=https%3A%2F%2Fpassport.suning.com%2Fids%2Flogin&hint=在浏览器里登录苏宁易购，停留几秒即自动抓取", enable={capture}

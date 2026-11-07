@@ -51,7 +51,7 @@ loon-plugins/
 
 ## fmz200 签到合集
 
-从 [fmz200/wool_scripts](https://github.com/fmz200/wool_scripts) 的定时任务合集里把签到类全部转成 Loon 插件，共 87 个（京东、爱奇艺、哔哩哔哩、腾讯视频、百度贴吧、QQ 音乐、喜马拉雅、美团、饿了么、顺丰、携程、芒果 TV、米游社……）。签到脚本本身留在上游，这里只提供插件外壳和 BoxJs 设置；只在 Loon 本地跑，不进云端。
+从 [fmz200/wool_scripts](https://github.com/fmz200/wool_scripts) 的定时任务合集里把签到类全部转成 Loon 插件，共 87 个（京东、爱奇艺、哔哩哔哩、腾讯视频、百度贴吧、QQ 音乐、喜马拉雅、美团、饿了么、顺丰、携程、芒果 TV、米游社……）。签到脚本本身留在上游，这里只提供插件外壳和 BoxJs 设置；只在 Loon 本地跑，不进云端。每个带抓取的插件都有「去抓取」手动按钮（Loon → 脚本里点一下，点通知打开抓取页）和设置里的抓取开关。
 
 完整列表：[docs/fmz-checkins.md](docs/fmz-checkins.md)
 

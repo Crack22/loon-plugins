@@ -1,5 +1,5 @@
 #!name=V2EX每日签到
-#!desc=V2EX每日签到；用法：装好插件，打开重写和 cron，打开「V2EX」点一次每日任务，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:03 自动签到。
+#!desc=V2EX每日签到；用法：装好插件，打开重写和 cron，打开「V2EX」点一次每日任务，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:03 自动签到。\n手动抓取：点 Loon 脚本里的「V2EX去抓取」，点弹出的通知即打开抓取页。
 #!author=許諾
 #!icon=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/V2ex.png
 #!homepage=https://github.com/Crack22/loon-plugins
@@ -14,3 +14,4 @@ hostname = www.v2ex.com
 [Script]
 http-request ^https?://www\.v2ex\.com/mission/daily script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_checkin_capture.js, requires-body=false, tag=V2EX每日签到 Cookie, argument="key=chavy_cookie_v2ex&source=cookie&title=V2EX", enable={capture}
 cron "3 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.js, timeout=300, tag=V2EX每日签到, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/V2ex.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=V2EX去抓取, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/V2ex.png, argument="title=V2EX&url=https%3A%2F%2Fwww.v2ex.com%2Fmission%2Fdaily&hint=在浏览器里打开 V2EX 每日任务页，停留几秒即自动抓取", enable={capture}

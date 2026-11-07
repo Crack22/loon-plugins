@@ -1,5 +1,5 @@
 #!name=追书畅读版每日签到
-#!desc=追书畅读版每日签到；用法：装好插件，打开重写和 cron，打开「追书畅读版」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 00:16 自动签到。
+#!desc=追书畅读版每日签到；用法：装好插件，打开重写和 cron，打开「追书畅读版」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 00:16 自动签到。\n手动抓取：点 Loon 脚本里的「追书畅读版去抓取」，按弹出的提示操作。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
@@ -13,3 +13,4 @@ hostname = *.zhuishushenqi.com
 [Script]
 http-request ^https?://[^/]*zhuishushenqi\.com/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zscdb/zscdb_capture.js, requires-body=true, tag=追书畅读版 Cookie, argument="title=追书畅读版", enable={capture}
 cron "16 0 * * *" script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/zscdbSign.js, timeout=300, tag=追书畅读版签到, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=追书畅读版去抓取, argument="title=追书畅读版&url=&hint=打开「追书畅读版」停留几秒即自动抓取", enable={capture}

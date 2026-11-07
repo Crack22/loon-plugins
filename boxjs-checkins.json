@@ -234,6 +234,7 @@
       ],
       "descs_html": [
         "斗鱼鱼吧签到，每天 07:15 自动签到。",
+        "抓 Cookie：<a href=\"https://yuba.douyu.com/homepage/hotwbs\">👉 点我打开斗鱼鱼吧抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/douyu/Douyu.plugin\">点击安装 Loon 插件</a>"
       ]
     },
@@ -416,6 +417,7 @@
       ],
       "descs_html": [
         "京东每日签到，每天 01:15 自动签到。",
+        "抓 Cookie：<a href=\"https://home.m.jd.com/myJd/newhome.action\">👉 点我打开京东抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/jd/JD.plugin\">点击安装 Loon 插件</a>"
       ]
     },
@@ -468,6 +470,7 @@
       ],
       "descs_html": [
         "吾爱破解每日签到，每天 08:01 自动签到。",
+        "抓 Cookie：<a href=\"https://www.52pojie.cn/home.php\">👉 点我打开吾爱破解抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/52pojie/52Pojie.plugin\">点击安装 Loon 插件</a>"
       ]
     },
@@ -604,6 +607,7 @@
       ],
       "descs_html": [
         "百度签到(网页)，每天 08:03 自动签到。",
+        "抓 Cookie：<a href=\"https://tieba.baidu.com/\">👉 点我打开百度签到(网页)抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/tieba-web/TiebaWeb.plugin\">点击安装 Loon 插件</a>"
       ]
     },
@@ -704,6 +708,7 @@
       ],
       "descs_html": [
         "APK.TW每日签到，每天 08:03 自动签到。",
+        "抓 Cookie：<a href=\"https://apk.tw/member.php?mod=logging&action=login\">👉 点我打开APK.TW抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/apktw/Apktw.plugin\">点击安装 Loon 插件</a>"
       ]
     },
@@ -730,6 +735,7 @@
       ],
       "descs_html": [
         "哔哩哔哩每日签到，每天 08:03 自动签到。",
+        "抓 Cookie：<a href=\"https://www.bilibili.com/\">👉 点我打开哔哩哔哩抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/bilibili/Bilibili.plugin\">点击安装 Loon 插件</a>"
       ]
     },
@@ -756,6 +762,7 @@
       ],
       "descs_html": [
         "哔哩哔哩银瓜子换硬币每日签到，每天 08:03 自动签到。",
+        "抓 Cookie：<a href=\"https://www.bilibili.com/\">👉 点我打开哔哩哔哩银瓜子换硬币抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/bilibili-silver2coin/BilibiliSilver2Coin.plugin\">点击安装 Loon 插件</a>"
       ]
     },
@@ -950,6 +957,7 @@
       ],
       "descs_html": [
         "什么值得买每日签到，每天 08:03 自动签到。",
+        "抓 Cookie：<a href=\"https://www.smzdm.com/\">👉 点我打开什么值得买抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/smzdm/Smzdm.plugin\">点击安装 Loon 插件</a>"
       ]
     },
@@ -976,6 +984,7 @@
       ],
       "descs_html": [
         "V2EX每日签到，每天 08:03 自动签到。",
+        "抓 Cookie：<a href=\"https://www.v2ex.com/mission/daily\">👉 点我打开V2EX抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/v2ex/V2ex.plugin\">点击安装 Loon 插件</a>"
       ]
     },
@@ -1370,6 +1379,7 @@
       ],
       "descs_html": [
         "中国联通每日签到，每天 08:05 自动签到。",
+        "抓 Cookie：<a href=\"https://act.10010.com/SigninApp/signin/querySigninActivity.htm\">👉 点我打开中国联通抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/china-unicom/ChinaUnicom.plugin\">点击安装 Loon 插件</a>"
       ]
     },
@@ -1402,6 +1412,7 @@
       ],
       "descs_html": [
         "猫咪音乐每日签到，每天 08:05 自动签到。",
+        "抓 Cookie：<a href=\"https://www.maomicd.com/plugin.php?id=k_misign:sign&operation=qiandao\">👉 点我打开猫咪音乐抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/maomicd/Maomicd.plugin\">点击安装 Loon 插件</a>"
       ]
     },
@@ -1966,6 +1977,7 @@
       ],
       "descs_html": [
         "苏宁易购每日签到，每天 08:08 自动签到。",
+        "抓 Cookie：<a href=\"https://passport.suning.com/ids/login\">👉 点我打开苏宁易购抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/suning/Suning.plugin\">点击安装 Loon 插件</a>"
       ]
     },
@@ -2126,6 +2138,7 @@
       ],
       "descs_html": [
         "多看每日签到，每天 03:00 自动签到。",
+        "抓 Cookie：<a href=\"https://www.duokan.com/\">👉 点我打开多看抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/duokan/Duokan.plugin\">点击安装 Loon 插件</a>"
       ]
     },
@@ -2177,9 +2190,7 @@
       ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": [
-        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/wanda.png"
-      ],
+      "icons": [],
       "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js",
       "settings": [
         {
@@ -2322,6 +2333,7 @@
       ],
       "descs_html": [
         "go语言中文网每日签到，每天 09:00 自动签到。",
+        "抓 Cookie：<a href=\"https://studygolang.com/account/edit\">👉 点我打开go语言中文网抓取</a>",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/studygolang/StudyGolang.plugin\">点击安装 Loon 插件</a>"
       ]
     },

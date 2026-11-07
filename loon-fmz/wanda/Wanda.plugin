@@ -1,7 +1,6 @@
 #!name=万达电影每日签到
-#!desc=万达电影每日签到；用法：装好插件，打开重写和 cron，打开「万达电影」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 02:12 自动签到。
+#!desc=万达电影每日签到；用法：装好插件，打开重写和 cron，打开「万达电影」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 02:12 自动签到。\n手动抓取：点 Loon 脚本里的「万达电影去抓取」，按弹出的提示操作。
 #!author=許諾
-#!icon=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/wanda.png
 #!homepage=https://github.com/Crack22/loon-plugins
 
 # 脚本来源：chavyleung/scripts（wanda.js）
@@ -13,4 +12,5 @@ hostname = user-api-prd-mx.wandafilm.com
 
 [Script]
 http-request ^https?://user-api-prd-mx\.wandafilm\.com script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/wanda/wanda_capture.js, requires-body=false, tag=万达电影 Cookie, argument="title=万达电影", enable={capture}
-cron "12 2 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js, timeout=300, tag=万达电影签到, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/wanda.png, enable=true
+cron "12 2 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js, timeout=300, tag=万达电影签到, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=万达电影去抓取, argument="title=万达电影&url=&hint=打开「万达电影」停留几秒即自动抓取", enable={capture}

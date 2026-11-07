@@ -1,5 +1,5 @@
 #!name=go语言中文网每日签到
-#!desc=go语言中文网每日签到；用法：装好插件，打开重写和 cron，打开「go语言中文网」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 09:00 自动签到。
+#!desc=go语言中文网每日签到；用法：装好插件，打开重写和 cron，打开「go语言中文网」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 09:00 自动签到。\n手动抓取：点 Loon 脚本里的「go语言中文网去抓取」，点弹出的通知即打开抓取页。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
@@ -13,3 +13,4 @@ hostname = studygolang.com
 [Script]
 http-request ^https?://studygolang\.com/account/edit script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_checkin_capture.js, requires-body=false, tag=go语言中文网 Cookie, argument="key=StudyGolang&source=cookie&title=go语言中文网", enable={capture}
 cron "0 9 * * *" script-path=https://raw.githubusercontent.com/iepngs/Script/master/studygolang/index.js, timeout=300, tag=go语言中文网签到, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=go语言中文网去抓取, argument="title=go语言中文网&url=https%3A%2F%2Fstudygolang.com%2Faccount%2Fedit&hint=在浏览器里打开 go语言中文网账号页，停留几秒即自动抓取", enable={capture}

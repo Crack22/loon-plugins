@@ -4,7 +4,7 @@
 
 BoxJs 订阅：https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-checkins.json
 
-用法：装好插件，打开重写和 cron，打开对应 App 停留几秒，收到「Cookie 获取成功」即抓取成功；抓完后在插件设置里关掉「抓取开关」，只留定时签到。Cookie 只保存在手机本地，不会上传。
+用法：装好插件，打开重写和 cron，打开对应 App 停留几秒，收到「Cookie 获取成功」即抓取成功；抓完后在插件设置里关掉「抓取开关」，只留定时签到。也可以在 Loon → 脚本里点「<服务>去抓取」手动触发：点一下发通知，点通知打开抓取页，停几秒即自动抓取（14 个有网页目标的在 BoxJs 里也有「点我打开抓取」链接）。Cookie 只保存在手机本地，不会上传。
 
 注意：这些插件只在 Loon 本地跑，不进 GitHub Actions 云端；上游脚本年久未更新的可能已经失效，装之前先看一眼对应 App 还能不能签到。
 

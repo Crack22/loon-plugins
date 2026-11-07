@@ -1,5 +1,5 @@
 #!name=智行火车每日签到
-#!desc=智行火车每日签到；用法：装好插件，打开重写和 cron，打开「智行火车」App 手动签到一次，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:07 自动签到。
+#!desc=智行火车每日签到；用法：装好插件，打开重写和 cron，打开「智行火车」App 手动签到一次，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:07 自动签到。\n手动抓取：点 Loon 脚本里的「智行火车去抓取」，按弹出的提示操作。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
@@ -13,3 +13,4 @@ hostname = m.suanya.cn
 [Script]
 http-request ^https://m\.suanya\.cn/restapi/soa2/\d+/attendanceDay script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zxhc/zxhc_capture.js, requires-body=true, tag=智行火车 Cookie, argument="title=智行火车", enable={capture}
 cron "7 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zxhc/zxhc.js, timeout=300, tag=智行火车签到, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=智行火车去抓取, argument="title=智行火车&url=&hint=打开「智行火车」App 手动签到一次即自动抓取", enable={capture}
