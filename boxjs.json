@@ -259,8 +259,10 @@
     },
     {
       "id": "weibo_daka",
-      "name": "微博超话打卡",
+      "name": "微博超话签到打卡",
       "keys": [
+        "weibo_chaohua_tokens",
+        "weibo_signin_tokens",
         "weibo_daka_check_url",
         "weibo_daka_check_headers",
         "weibo_daka_pic_fid",
@@ -305,15 +307,29 @@
           "val": "",
           "type": "textarea",
           "desc": "抓取插件自动保存"
+        },
+        {
+          "id": "weibo_chaohua_tokens",
+          "name": "超话签到凭证",
+          "val": "",
+          "type": "textarea",
+          "desc": "抓取插件自动保存（已关注超话列表+签到链接）"
+        },
+        {
+          "id": "weibo_signin_tokens",
+          "name": "微博签到凭证",
+          "val": "",
+          "type": "textarea",
+          "desc": "抓取插件自动保存（每日签到链接）"
         }
       ],
       "icons": [
         "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg"
       ],
       "descs_html": [
-        "微博超话每日打卡，每天 09:00 自动签到并发打卡帖（黄子弘凡出道八周年活动）。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohuaCheckin.plugin\">点击安装打卡插件</a>",
-        "抓取插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohuaCapture.plugin\">点击安装</a>（先用抓取插件在微博 App 里打卡一次，保存打卡信息）"
+        "微博超话签到打卡，每天 09:00 自动做三件事：微博每日签到、所有已关注超话全部签到、只给黄子弘凡发图文打卡帖（出道八周年活动）。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohua.plugin\">点击安装</a>",
+        "使用前先抓一次：装好插件后，在微博 App 里打开超话社区 → 我的 → 关注，点进一个超话签到一次，在黄子弘凡超话点“打卡”用每天要发的照片发一次，随便刷一下微博。"
       ]
     },
     {
@@ -747,7 +763,9 @@
       ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": ["https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/netease.jpg"],
+      "icons": [
+        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/netease.jpg"
+      ],
       "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-netease/netease_checkin.js",
       "settings": [
         {

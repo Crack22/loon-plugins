@@ -29,7 +29,7 @@ loon-plugins/
 | 蜗牛每日签到 | 蜗牛 4K 每日签到，+10 积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/WoNiuCheckin.plugin) |
 | 七日杀每日签到 | 七日杀中文网每日签到 | 08:30 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha.plugin) |
 | ChilledMelon 每日签到 | ChilledMelon 每日签到，+5~20 积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/ChilledMelonCheckin.plugin) |
-| 微博超话每日打卡 | 黄子弘凡超话签到 + 打卡发帖 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohuaCheckin.plugin) |
+| 微博超话签到打卡 | 微博每日签到 + 所有超话全部签到 + 只给黄子弘凡图文打卡 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohua.plugin) |
 | 乐蛙每日签到 | EmbyPulse 乐蛙每日签到，+100~120 积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/EmbyPulseTaotuCheckin.plugin) |
 | 乐观每日签到 | EmbyPulse 乐观每日签到，+90~130 积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/EmbyPulseDijiaCheckin.plugin) |
 | 夸克每日签到 | 夸克网盘 + 夸克浏览器每日签到领容量 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-quark/QuarkCheckin.plugin) |
