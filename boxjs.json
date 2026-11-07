@@ -287,7 +287,7 @@
     "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg"
    ],
    "descs_html": [
-    "微博超话签到，每天 09:00 自动做两件事：微博每日签到、所有已关注超话全部签到。本版没有黄子弘凡图文打卡。",
+    "微博超话签到，每天 09:00 自动做两件事：微博每日签到、所有已关注超话全部签到。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohuaSignin.plugin\">点击安装</a>",
     "使用前先抓一次：装好插件后，在微博 App 里打开超话社区 → 我的 → 关注，点进一个超话签到一次，随便刷一下微博。"
    ]
