@@ -75,6 +75,7 @@
    ],
    "descs_html": [
     "微博超话签到打卡，每天 09:00 自动做三件事：微博每日签到、所有已关注超话全部签到、只给黄子弘凡发图文打卡帖（出道八周年活动）。",
+    "手动运行：插件设置里有「手动运行一次」，打开后 1 分钟内马上跑一次（签到+打卡），跑完自己手动关掉。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohua.plugin\">点击安装</a>",
     "使用前先抓一次：装好插件后，在微博 App 里打开超话社区 → 我的 → 关注，点进一个超话签到一次，在黄子弘凡超话点“打卡”用每天要发的照片发一次，随便刷一下微博。"
    ]

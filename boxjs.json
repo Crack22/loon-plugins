@@ -287,6 +287,7 @@
    ],
    "descs_html": [
     "微博超话签到，每天 09:00 自动做两件事：微博每日签到、所有已关注超话全部签到。",
+    "手动运行：插件设置里有「手动运行一次」，打开后 1 分钟内马上跑一次签到，跑完自己手动关掉。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohuaSignin.plugin\">点击安装</a>",
     "使用前先抓一次：装好插件后，在微博 App 里打开超话社区 → 我的 → 关注，点进一个超话签到一次，随便刷一下微博。"
    ]
@@ -759,7 +760,7 @@
    "descs_html": [
     "网易云音乐每日签到，每天 09:00 自动签到，+2 成长值。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-netease/NetEaseCheckin.plugin\">点击安装 Loon 插件</a>",
-    "抓 Cookie：打开网易云音乐 App 停 1 秒自动抓取；Cookie 过期时重新打开 App 抓一次。",
+    "抓 Cookie：插件设置里「抓取开关」默认开，打开网易云音乐 App 停 1 秒自动抓取；抓完可以关掉；Cookie 过期时重新打开抓一次。",
     "注意：APP 端签到接口已停用，只能签网页端；云贝中心和 VIP 签到是加密接口，做不了自动签。",
     "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
    ]
