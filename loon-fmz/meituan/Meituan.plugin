@@ -1,0 +1,16 @@
+#!name=美团每日签到
+#!desc=美团每日签到；用法：装好插件，打开重写和 cron，打开「美团」App 手动签到一次，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:05 自动签到。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meituan.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：chavyleung/scripts（meituan.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = i.meituan.com
+
+[Script]
+http-request ^https://i\.meituan\.com/evolve/signin/signpost/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/meituan/meituan_capture.js, requires-body=true, tag=美团 Cookie, argument="title=美团", enable={capture}
+cron "5 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js, timeout=300, tag=美团签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meituan.png, enable=true

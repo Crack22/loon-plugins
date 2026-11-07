@@ -1,0 +1,15 @@
+#!name=叮咚农场
+#!desc=叮咚农场；用法：装好插件，打开重写和 cron，打开「叮咚买菜」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:01、12:01、17:01 自动签到。
+#!author=許諾
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：iepngs/Script（dingdong/index.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = maicai.api.ddxq.mobi
+
+[Script]
+http-request ^https?://maicai\.api\.ddxq\.mobi/user/checkLogin script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/dingdong-farm/dingdong-farm_capture.js, requires-body=false, tag=叮咚农场 Cookie, argument="title=叮咚农场", enable={capture}
+cron "1 8,12,17 * * *" script-path=https://raw.githubusercontent.com/iepngs/Script/master/dingdong/index.js, timeout=300, tag=叮咚农场签到, enable=true

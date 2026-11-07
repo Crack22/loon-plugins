@@ -1,0 +1,15 @@
+#!name=欧可林商城每日签到
+#!desc=欧可林商城每日签到；用法：装好插件，打开重写和 cron，打开微信小程序「欧可林商城」点一下「每日任务」，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 4:03 自动签到。
+#!author=許諾
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：zZPiglet/Task（Oclean_mini.js；与欧可林共用同一账号签到）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = mall.oclean.com
+
+[Script]
+http-request ^https://mall\.oclean\.com/API/VshopProcess\.ashx\?action=TaskHome&clientType=5&client=5&openId= script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_checkin_capture.js, requires-body=false, tag=欧可林商城每日签到 Cookie, argument="key=Oclean_mini&source=query:openId&title=欧可林商城每日签到", enable={capture}
+cron "3 4 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Oclean/Oclean_mini.js, timeout=300, tag=欧可林商城每日签到, enable=true

@@ -1,0 +1,15 @@
+#!name=哈啰出行每日签到
+#!desc=哈啰出行每日签到；用法：装好插件，打开重写和 cron，打开「哈啰出行」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:08 自动签到。
+#!author=許諾
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：chavyleung/scripts（hellobike.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = gameapi.hellobike.com
+
+[Script]
+http-request ^https?://gameapi\.hellobike\.com/api script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/hellobike/hellobike_capture.js, requires-body=true, tag=哈啰出行 Cookie, argument="title=哈啰出行", enable={capture}
+cron "8 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js, timeout=300, tag=哈啰出行签到, enable=true

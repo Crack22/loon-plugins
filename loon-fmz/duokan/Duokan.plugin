@@ -1,0 +1,15 @@
+#!name=多看每日签到
+#!desc=多看每日签到；用法：装好插件，打开重写和 cron，打开「多看阅读」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 03:00 自动签到。
+#!author=許諾
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：chavyleung/scripts（duokan.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = www.duokan.com
+
+[Script]
+http-request ^https?://www\.duokan\.com/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/duokan/duokan_capture.js, requires-body=false, tag=多看 Cookie, argument="title=多看", enable={capture}
+cron "0 3 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.js, timeout=300, tag=多看签到, enable=true

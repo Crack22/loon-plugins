@@ -1,0 +1,14 @@
+#!name=太好购每日签到
+#!desc=太好购每日签到；用法：装好插件，打开重写和 cron，打开「太好购」小程序停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 00:10 自动签到。注意：太好购为各商家独立域名，抓取前需把本次请求里的域名加入 Loon 的 MITM 主机名。
+#!author=許諾
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：id77/QuantumultX（task/thg.js，抓取见 task/thg.cookie.js）
+# 注意：太好购为各商家独立域名，MITM 需手动添加本次抓包请求里的域名。
+
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[Script]
+http-request ^https?://[^/]+/taieshop/api/CustomerFansInfo/GetFansInfo script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/thg/thg_capture.js, requires-body=false, tag=太好购 Cookie, argument="title=太好购", enable={capture}
+cron "10 0 * * *" script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/thg.js, timeout=300, tag=太好购签到, enable=true

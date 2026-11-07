@@ -1,0 +1,16 @@
+#!name=携程小程序每日签到
+#!desc=携程小程序每日签到；用法：装好插件，打开重写和 cron，打开微信小程序「携程」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:09 自动签到。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiechenglvxing.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：barrym-chen/Script（ctrip_wx/ct_sign.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = m.ctrip.com
+
+[Script]
+http-request ^https?://m\.ctrip\.com/restapi/soa2/16575/signin script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/ctrip-wx/ctrip-wx_capture.js, requires-body=true, tag=携程小程序 Cookie, argument="title=携程小程序", enable={capture}
+cron "9 8 * * *" script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip_wx/ct_sign.js, timeout=300, tag=携程小程序签到, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiechenglvxing.png, enable=true

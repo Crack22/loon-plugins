@@ -1,0 +1,3185 @@
+{
+  "id": "xunuo.checkins.sub",
+  "name": "許諾签到合集",
+  "author": "許諾",
+  "icon": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/checkins.jpg",
+  "repo": "https://github.com/Crack22/loon-plugins",
+  "apps": [
+    {
+      "id": "aliyun_checkin",
+      "name": "阿里云盘签到",
+      "keys": [
+        "aliyun_data"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AliYunDrive.png"
+      ],
+      "script": "https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js",
+      "settings": [
+        {
+          "id": "aliyun_data",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开阿里云盘签到自动抓取；抓不到时可手动粘贴；每天 07:00、11:00、17:00 自动签到"
+        }
+      ],
+      "descs_html": [
+        "阿里云盘签到，每天 07:00、11:00、17:00 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/aliyun/Aliyun.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "kuaishou_checkin",
+      "name": "快手果园",
+      "keys": [
+        "kscookies"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/kuaishou.png"
+      ],
+      "script": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/kuaishou/ks_fruit.js",
+      "settings": [
+        {
+          "id": "kscookies",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开快手果园自动抓取；抓不到时可手动粘贴；每天 01:30、08:30、12:30、17:30 自动签到"
+        }
+      ],
+      "descs_html": [
+        "快手果园，每天 01:30、08:30、12:30、17:30 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/kuaishou/Kuaishou.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "pdd_checkin",
+      "name": "拼多多果园",
+      "keys": [
+        "ddgyck",
+        "fmz200_pdd_token"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/pinduoduo.png"
+      ],
+      "script": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/pinduoduo/pdd_guoyuan.js",
+      "settings": [
+        {
+          "id": "ddgyck",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开拼多多果园自动抓取；抓不到时可手动粘贴；每天 01:30、07:30、12:30、18:30、22:30 自动签到"
+        },
+        {
+          "id": "fmz200_pdd_token",
+          "name": "Token",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开拼多多果园自动抓取；抓不到时可手动粘贴；每天 01:30、07:30、12:30、18:30、22:30 自动签到"
+        }
+      ],
+      "descs_html": [
+        "拼多多果园，每天 01:30、07:30、12:30、18:30、22:30 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/pdd/PDD.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "macat_checkin",
+      "name": "马克喵签到",
+      "keys": [
+        "fmz200.macat_loginBody"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Macat.png"
+      ],
+      "script": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/macat/macat_signin.js",
+      "settings": [
+        {
+          "id": "fmz200.macat_loginBody",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开马克喵签到自动抓取；抓不到时可手动粘贴；每天 07:22 自动签到"
+        }
+      ],
+      "descs_html": [
+        "马克喵签到，每天 07:22 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/macat/Macat.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "ccb-life_checkin",
+      "name": "建行生活签到",
+      "keys": [
+        "JHSH_BODY",
+        "JHSH_LOGIN_INFO",
+        "JHSH_GIFT"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ccbLife.jpg"
+      ],
+      "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js",
+      "settings": [
+        {
+          "id": "JHSH_BODY",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开建行生活签到自动抓取；抓不到时可手动粘贴；每天 07:17 自动签到"
+        },
+        {
+          "id": "JHSH_LOGIN_INFO",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开建行生活签到自动抓取；抓不到时可手动粘贴；每天 07:17 自动签到"
+        },
+        {
+          "id": "JHSH_GIFT",
+          "name": "奖品设置",
+          "val": "",
+          "type": "textarea",
+          "desc": "奖品设置，默认 2（外卖券）"
+        }
+      ],
+      "descs_html": [
+        "建行生活签到，每天 07:17 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/ccb-life/CCBLife.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "xxyx_checkin",
+      "name": "晓晓优选每日任务",
+      "keys": [
+        "fmz200_xxyx_token"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/xxyx.png"
+      ],
+      "script": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/xxyx/xxyx_signin.js",
+      "settings": [
+        {
+          "id": "fmz200_xxyx_token",
+          "name": "Token",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开晓晓优选每日任务自动抓取；抓不到时可手动粘贴；每天 07:17 自动签到"
+        }
+      ],
+      "descs_html": [
+        "晓晓优选每日任务，每天 07:17 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/xxyx/XXYX.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "chery_checkin",
+      "name": "奇瑞汽车App签到",
+      "keys": [
+        "fmz200_chery_account"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chery.png"
+      ],
+      "script": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/chery/cheryAppSignin.js",
+      "settings": [
+        {
+          "id": "fmz200_chery_account",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开奇瑞汽车App签到自动抓取；抓不到时可手动粘贴；每天 07:17 自动签到"
+        }
+      ],
+      "descs_html": [
+        "奇瑞汽车App签到，每天 07:17 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/chery/Chery.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "douyu_checkin",
+      "name": "斗鱼鱼吧签到",
+      "keys": [
+        "CookieDY"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/douyu.png"
+      ],
+      "script": "https://github.com/fmz200/wool_scripts/raw/main/Scripts/douyu/yubaSign.js",
+      "settings": [
+        {
+          "id": "CookieDY",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开斗鱼鱼吧签到自动抓取；抓不到时可手动粘贴；每天 07:15 自动签到"
+        }
+      ],
+      "descs_html": [
+        "斗鱼鱼吧签到，每天 07:15 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/douyu/Douyu.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "gaode-dache_checkin",
+      "name": "高德地图打车签到",
+      "keys": [
+        "GD_Val"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/GaodeMap.jpg"
+      ],
+      "script": "https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js",
+      "settings": [
+        {
+          "id": "GD_Val",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开高德地图打车签到自动抓取；抓不到时可手动粘贴；每天 00:01 自动签到"
+        }
+      ],
+      "descs_html": [
+        "高德地图打车签到，每天 00:01 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/gaode-dache/GaodeDache.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "flyert_checkin",
+      "name": "飞客-签到",
+      "keys": [
+        "Flyert_Cookie_Key",
+        "Flyert_Param_Key"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/flyert.png"
+      ],
+      "script": "https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/CheckIn/flyert.js",
+      "settings": [
+        {
+          "id": "Flyert_Cookie_Key",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开飞客-签到自动抓取；抓不到时可手动粘贴；每天 00:10 自动签到"
+        },
+        {
+          "id": "Flyert_Param_Key",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开飞客-签到自动抓取；抓不到时可手动粘贴；每天 00:10 自动签到"
+        }
+      ],
+      "descs_html": [
+        "飞客-签到，每天 00:10 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/flyert/Flyert.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "funboat_checkin",
+      "name": "Funboat签到",
+      "keys": [
+        "evil_funkourl",
+        "evil_funkocookie",
+        "evil_funkostatusurl",
+        "evil_funkostatuscookie"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js",
+      "settings": [
+        {
+          "id": "evil_funkourl",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开Funboat签到自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        },
+        {
+          "id": "evil_funkocookie",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开Funboat签到自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        },
+        {
+          "id": "evil_funkostatusurl",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开Funboat签到自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        },
+        {
+          "id": "evil_funkostatuscookie",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开Funboat签到自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        }
+      ],
+      "descs_html": [
+        "Funboat签到，每天 08:04 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/funboat/Funboat.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "oclean_checkin",
+      "name": "欧可林每日签到",
+      "keys": [
+        "Oclean"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/zZPiglet/Task/master/Oclean/Oclean.js",
+      "settings": [
+        {
+          "id": "Oclean",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开欧可林自动抓取；抓不到时可手动粘贴；每天 10:00、21:00 自动签到"
+        }
+      ],
+      "descs_html": [
+        "欧可林每日签到，每天 10:00、21:00 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/oclean/Oclean.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "oclean-mall_checkin",
+      "name": "欧可林商城每日签到",
+      "keys": [
+        "Oclean_mini"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/zZPiglet/Task/master/Oclean/Oclean_mini.js",
+      "settings": [
+        {
+          "id": "Oclean_mini",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开欧可林商城自动抓取；抓不到时可手动粘贴；每天 04:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "欧可林商城每日签到，每天 04:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/oclean-mall/OcleanMall.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "jd_checkin",
+      "name": "京东每日签到",
+      "keys": [
+        "CookiesJD"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jingdong.png"
+      ],
+      "script": "https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js",
+      "settings": [
+        {
+          "id": "CookiesJD",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开京东自动抓取；抓不到时可手动粘贴；每天 01:15 自动签到"
+        }
+      ],
+      "descs_html": [
+        "京东每日签到，每天 01:15 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/jd/JD.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "iqiyi_checkin",
+      "name": "爱奇艺每日签到",
+      "keys": [
+        "CookieQY"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/iqiyi.png"
+      ],
+      "script": "https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js",
+      "settings": [
+        {
+          "id": "CookieQY",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开爱奇艺自动抓取；抓不到时可手动粘贴；每天 08:01 自动签到"
+        }
+      ],
+      "descs_html": [
+        "爱奇艺每日签到，每天 08:01 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/iqiyi/Iqiyi.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "52pojie_checkin",
+      "name": "吾爱破解每日签到",
+      "keys": [
+        "COOKIE"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/52pojie.png"
+      ],
+      "script": "https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js",
+      "settings": [
+        {
+          "id": "COOKIE",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开吾爱破解自动抓取；抓不到时可手动粘贴；每天 08:01 自动签到"
+        }
+      ],
+      "descs_html": [
+        "吾爱破解每日签到，每天 08:01 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/52pojie/52Pojie.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "bilibili-manga_checkin",
+      "name": "哔哩哔哩漫画每日签到",
+      "keys": [
+        "BILI_COMICS_CHECKIN"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png"
+      ],
+      "script": "https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js",
+      "settings": [
+        {
+          "id": "BILI_COMICS_CHECKIN",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开哔哩哔哩漫画自动抓取；抓不到时可手动粘贴；每天 08:01 自动签到"
+        }
+      ],
+      "descs_html": [
+        "哔哩哔哩漫画每日签到，每天 08:01 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/bilibili-manga/BilibiliManga.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "tieba-app_checkin",
+      "name": "百度贴吧(客户端)每日签到",
+      "keys": [
+        "CookieTB"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/baidutieba.png"
+      ],
+      "script": "https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js",
+      "settings": [
+        {
+          "id": "CookieTB",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开百度贴吧(客户端)自动抓取；抓不到时可手动粘贴；每天定时 自动签到"
+        }
+      ],
+      "descs_html": [
+        "百度贴吧(客户端)每日签到，每天定时 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/tieba-app/TiebaApp.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "kuaikan_checkin",
+      "name": "快看漫画每日签到",
+      "keys": [
+        "KKMH"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/NobyDa/Script/master/KuaiKan-DailyBonus/KKMH.js",
+      "settings": [
+        {
+          "id": "KKMH",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开快看漫画自动抓取；抓不到时可手动粘贴；每天 09:04 自动签到"
+        }
+      ],
+      "descs_html": [
+        "快看漫画每日签到，每天 09:04 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/kuaikan/Kuaikan.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "jd-baitiao_checkin",
+      "name": "京东白条每日签到",
+      "keys": [
+        "CookieJD",
+        "CookieJD2"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/JD.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/jd/JD_BaiTiao.js",
+      "settings": [
+        {
+          "id": "CookieJD",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开京东白条自动抓取；抓不到时可手动粘贴；每天 03:05 自动签到"
+        },
+        {
+          "id": "CookieJD2",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "账号2，手动填写"
+        }
+      ],
+      "descs_html": [
+        "京东白条每日签到，每天 03:05 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/jd-baitiao/JdBaitiao.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "tieba-web_checkin",
+      "name": "百度签到(网页)",
+      "keys": [
+        "chavy_cookie_tieba"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/baidutieba.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_tieba",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开百度签到(网页)自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "百度签到(网页)，每天 08:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/tieba-web/TiebaWeb.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "telecom-10000_checkin",
+      "name": "电信营业厅每日签到",
+      "keys": [
+        "chavy_signheader_10000",
+        "chavy_signbody_10000",
+        "chavy_mobile_10000"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dianxin.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js",
+      "settings": [
+        {
+          "id": "chavy_signheader_10000",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开电信营业厅自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        },
+        {
+          "id": "chavy_signbody_10000",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开电信营业厅自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        },
+        {
+          "id": "chavy_mobile_10000",
+          "name": "手机号",
+          "val": "",
+          "type": "textarea",
+          "desc": "手机号，手动填写"
+        }
+      ],
+      "descs_html": [
+        "电信营业厅每日签到，每天 08:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/telecom-10000/Telecom10000.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "acfun_checkin",
+      "name": "AcFun每日签到",
+      "keys": [
+        "chavy_cookie_acfun",
+        "chavy_token_acfun"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/acfun.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_acfun",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开AcFun自动抓取；抓不到时可手动粘贴；每天 08:01 自动签到"
+        },
+        {
+          "id": "chavy_token_acfun",
+          "name": "Token",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开AcFun自动抓取；抓不到时可手动粘贴；每天 08:01 自动签到"
+        }
+      ],
+      "descs_html": [
+        "AcFun每日签到，每天 08:01 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/acfun/Acfun.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "apktw_checkin",
+      "name": "APK.TW每日签到",
+      "keys": [
+        "chavy_cookie_apktw"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/apktw/apktw.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_apktw",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开APK.TW自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "APK.TW每日签到，每天 08:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/apktw/Apktw.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "bilibili_checkin",
+      "name": "哔哩哔哩每日签到",
+      "keys": [
+        "chavy_cookie_bilibili"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_bilibili",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开哔哩哔哩自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "哔哩哔哩每日签到，每天 08:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/bilibili/Bilibili.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "bilibili-silver2coin_checkin",
+      "name": "哔哩哔哩银瓜子换硬币每日签到",
+      "keys": [
+        "chavy_cookie_bilibili"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.silver2coin.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_bilibili",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开哔哩哔哩银瓜子换硬币自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "哔哩哔哩银瓜子换硬币每日签到，每天 08:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/bilibili-silver2coin/BilibiliSilver2Coin.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "dongqiudi_checkin",
+      "name": "懂球帝每日签到",
+      "keys": [
+        "chavy_cookie_dongqiudi"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dongqiudi.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/dongqiudi/dongqiudi.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_dongqiudi",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开懂球帝自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "懂球帝每日签到，每天 08:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/dongqiudi/Dongqiudi.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "feng_checkin",
+      "name": "威锋网每日签到",
+      "keys": [
+        "chavy_login_feng"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/feng/feng.js",
+      "settings": [
+        {
+          "id": "chavy_login_feng",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开威锋网自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "威锋网每日签到，每天 08:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/feng/Feng.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "flyertea_checkin",
+      "name": "飞客茶馆每日签到",
+      "keys": [
+        "chavy_cookie_flyertea",
+        "chavy_token_flyertea"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/flyert.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_flyertea",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开飞客茶馆自动抓取；抓不到时可手动粘贴；每天 08:02 自动签到"
+        },
+        {
+          "id": "chavy_token_flyertea",
+          "name": "Token",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开飞客茶馆自动抓取；抓不到时可手动粘贴；每天 08:02 自动签到"
+        }
+      ],
+      "descs_html": [
+        "飞客茶馆每日签到，每天 08:02 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/flyertea/Flyertea.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "neteasenews_checkin",
+      "name": "网易新闻每日签到",
+      "keys": [
+        "chavy_cookie_neteasenews",
+        "chavy_body_neteasenews"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Netease.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/neteasenews/neteasenews.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_neteasenews",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开网易新闻自动抓取；抓不到时可手动粘贴；每天 08:02 自动签到"
+        },
+        {
+          "id": "chavy_body_neteasenews",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开网易新闻自动抓取；抓不到时可手动粘贴；每天 08:02 自动签到"
+        }
+      ],
+      "descs_html": [
+        "网易新闻每日签到，每天 08:02 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/neteasenews/NeteaseNews.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "qunar_checkin",
+      "name": "去哪儿每日签到",
+      "keys": [
+        "chavy_cookie_qunar"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/qunar/qunar.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_qunar",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开去哪儿自动抓取；抓不到时可手动粘贴；每天 08:02 自动签到"
+        }
+      ],
+      "descs_html": [
+        "去哪儿每日签到，每天 08:02 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qunar/Qunar.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "sfexpress_checkin",
+      "name": "顺丰速运每日签到",
+      "keys": [
+        "chavy_login_sfexpress"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/shunfeng.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js",
+      "settings": [
+        {
+          "id": "chavy_login_sfexpress",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开顺丰速运自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "顺丰速运每日签到，每天 08:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/sfexpress/SfExpress.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "smzdm_checkin",
+      "name": "什么值得买每日签到",
+      "keys": [
+        "chavy_cookie_smzdm"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/smzdm.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_smzdm",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开什么值得买自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "什么值得买每日签到，每天 08:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/smzdm/Smzdm.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "v2ex_checkin",
+      "name": "V2EX每日签到",
+      "keys": [
+        "chavy_cookie_v2ex"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/V2ex.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_v2ex",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开V2EX自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "V2EX每日签到，每天 08:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/v2ex/V2ex.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "videoqq_checkin",
+      "name": "腾讯视频每日签到",
+      "keys": [
+        "chavy_cookie_videoqq",
+        "chavy_auth_url_videoqq",
+        "chavy_auth_header_videoqq",
+        "chavy_msign_url_videoqq",
+        "chavy_msign_header_videoqq"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/TencentVideo.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_videoqq",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开腾讯视频自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        },
+        {
+          "id": "chavy_auth_url_videoqq",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开腾讯视频自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        },
+        {
+          "id": "chavy_auth_header_videoqq",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开腾讯视频自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        },
+        {
+          "id": "chavy_msign_url_videoqq",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开腾讯视频自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        },
+        {
+          "id": "chavy_msign_header_videoqq",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开腾讯视频自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "腾讯视频每日签到，每天 08:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/videoqq/VideoQq.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "ximalaya_checkin",
+      "name": "喜马拉雅每日签到",
+      "keys": [
+        "chavy_cookie_ximalaya"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ximalaya.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_ximalaya",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开喜马拉雅自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "喜马拉雅每日签到，每天 08:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/ximalaya/Ximalaya.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "yanxuan_checkin",
+      "name": "网易严选每日签到",
+      "keys": [
+        "chavy_cookie_yanxuan",
+        "chavy_token_yanxuan"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/yanxuan/yanxuan.js",
+      "settings": [
+        {
+          "id": "chavy_cookie_yanxuan",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开网易严选自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        },
+        {
+          "id": "chavy_token_yanxuan",
+          "name": "Token",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开网易严选自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "网易严选每日签到，每天 08:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/yanxuan/Yanxuan.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "qqmusic_checkin",
+      "name": "QQ音乐每日签到",
+      "keys": [
+        "chavy_signurl_qqmusic",
+        "chavy_header_qqmusic",
+        "chavy_body_qqmusic",
+        "chavy_flag_qqmusic"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/QQMusic.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/qqmusic/qqmusic.js",
+      "settings": [
+        {
+          "id": "chavy_signurl_qqmusic",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开QQ音乐自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        },
+        {
+          "id": "chavy_header_qqmusic",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开QQ音乐自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        },
+        {
+          "id": "chavy_body_qqmusic",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开QQ音乐自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        },
+        {
+          "id": "chavy_flag_qqmusic",
+          "name": "状态",
+          "val": "",
+          "type": "textarea",
+          "desc": "抓取脚本自动维护"
+        }
+      ],
+      "descs_html": [
+        "QQ音乐每日签到，每天 08:04 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qqmusic/QqMusic.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "csdn_checkin",
+      "name": "CSDN每日签到",
+      "keys": [
+        "chavy_tokenurl_csdn",
+        "chavy_tokenheader_csdn",
+        "chavy_signurl_csdn",
+        "chavy_signheader_csdn"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.js",
+      "settings": [
+        {
+          "id": "chavy_tokenurl_csdn",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开CSDN自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        },
+        {
+          "id": "chavy_tokenheader_csdn",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开CSDN自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        },
+        {
+          "id": "chavy_signurl_csdn",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开CSDN自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        },
+        {
+          "id": "chavy_signheader_csdn",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开CSDN自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        }
+      ],
+      "descs_html": [
+        "CSDN每日签到，每天 08:04 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/csdn/Csdn.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "gdoil_checkin",
+      "name": "加油广东每日签到",
+      "keys": [
+        "chavy_signurl_gdoil",
+        "chavy_signheader_gdoil"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/gdoil/gdoil.js",
+      "settings": [
+        {
+          "id": "chavy_signurl_gdoil",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开加油广东自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        },
+        {
+          "id": "chavy_signheader_gdoil",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开加油广东自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        }
+      ],
+      "descs_html": [
+        "加油广东每日签到，每天 08:04 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/gdoil/Gdoil.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "mgtv_checkin",
+      "name": "芒果TV每日签到",
+      "keys": [
+        "chavy_signurl_mgtv",
+        "chavy_signheader_mgtv"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/mangguotv.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.js",
+      "settings": [
+        {
+          "id": "chavy_signurl_mgtv",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开芒果TV自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        },
+        {
+          "id": "chavy_signheader_mgtv",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开芒果TV自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        }
+      ],
+      "descs_html": [
+        "芒果TV每日签到，每天 08:04 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/mgtv/Mgtv.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "mihoyo_checkin",
+      "name": "米游社每日签到",
+      "keys": [
+        "chavy_signurl_mihoyo",
+        "chavy_signheader_mihoyo"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/mihoyo/mihoyo.js",
+      "settings": [
+        {
+          "id": "chavy_signurl_mihoyo",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开米游社自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        },
+        {
+          "id": "chavy_signheader_mihoyo",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开米游社自动抓取；抓不到时可手动粘贴；每天 08:04 自动签到"
+        }
+      ],
+      "descs_html": [
+        "米游社每日签到，每天 08:04 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/mihoyo/Mihoyo.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "china-unicom_checkin",
+      "name": "中国联通每日签到",
+      "keys": [
+        "chavy_tokenurl_10010",
+        "chavy_tokenheader_10010",
+        "chavy_signurl_10010",
+        "chavy_signheader_10010",
+        "chavy_loginlotteryurl_10010",
+        "chavy_loginlotteryheader_10010",
+        "chavy_findlotteryurl_10010",
+        "chavy_findlotteryheader_10010"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/China_Unicom.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js",
+      "settings": [
+        {
+          "id": "chavy_tokenurl_10010",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开中国联通自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_tokenheader_10010",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开中国联通自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_signurl_10010",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开中国联通自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_signheader_10010",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开中国联通自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_loginlotteryurl_10010",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开中国联通自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_loginlotteryheader_10010",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开中国联通自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_findlotteryurl_10010",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开中国联通自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_findlotteryheader_10010",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开中国联通自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        }
+      ],
+      "descs_html": [
+        "中国联通每日签到，每天 08:05 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/china-unicom/ChinaUnicom.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "maomicd_checkin",
+      "name": "猫咪音乐每日签到",
+      "keys": [
+        "chavy_signurl_maomicd",
+        "chavy_signheader_maomicd"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/maomicd/maomicd.js",
+      "settings": [
+        {
+          "id": "chavy_signurl_maomicd",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开猫咪音乐自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_signheader_maomicd",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开猫咪音乐自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        }
+      ],
+      "descs_html": [
+        "猫咪音乐每日签到，每天 08:05 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/maomicd/Maomicd.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "meituan-waimai_checkin",
+      "name": "美团外卖每日签到",
+      "keys": [
+        "chavy_tokenurl_wmmeituan",
+        "chavy_tokenheader_wmmeituan",
+        "chavy_signurl_wmmeituan",
+        "chavy_signheader_wmmeituan",
+        "chavy_signbody_wmmeituan"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meituan.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.js",
+      "settings": [
+        {
+          "id": "chavy_tokenurl_wmmeituan",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开美团外卖自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_tokenheader_wmmeituan",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开美团外卖自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_signurl_wmmeituan",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开美团外卖自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_signheader_wmmeituan",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开美团外卖自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_signbody_wmmeituan",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开美团外卖自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        }
+      ],
+      "descs_html": [
+        "美团外卖每日签到，每天 08:05 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/meituan-waimai/MeituanWaimai.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "meituan_checkin",
+      "name": "美团每日签到",
+      "keys": [
+        "chavy_signurl_meituan",
+        "chavy_signheader_meituan",
+        "chavy_signbody_meituan",
+        "chavy_tokenurl_meituan",
+        "chavy_tokenheader_meituan"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meituan.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js",
+      "settings": [
+        {
+          "id": "chavy_signurl_meituan",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开美团自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_signheader_meituan",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开美团自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_signbody_meituan",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开美团自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_tokenurl_meituan",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "可留空"
+        },
+        {
+          "id": "chavy_tokenheader_meituan",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "可留空"
+        }
+      ],
+      "descs_html": [
+        "美团每日签到，每天 08:05 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/meituan/Meituan.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "everphoto_checkin",
+      "name": "时光相册每日签到",
+      "keys": [
+        "chavy_sign_url_everphoto",
+        "chavy_sign_header_everphoto"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/everphoto/everphoto.js",
+      "settings": [
+        {
+          "id": "chavy_sign_url_everphoto",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开时光相册自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        },
+        {
+          "id": "chavy_sign_header_everphoto",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开时光相册自动抓取；抓不到时可手动粘贴；每天 08:05 自动签到"
+        }
+      ],
+      "descs_html": [
+        "时光相册每日签到，每天 08:05 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/everphoto/Everphoto.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "dingdong_checkin",
+      "name": "叮咚买菜每日签到",
+      "keys": [
+        "chavy_home_url_mcdd",
+        "chavy_home_header_mcdd"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.js",
+      "settings": [
+        {
+          "id": "chavy_home_url_mcdd",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开叮咚买菜自动抓取；抓不到时可手动粘贴；每天 08:06 自动签到"
+        },
+        {
+          "id": "chavy_home_header_mcdd",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开叮咚买菜自动抓取；抓不到时可手动粘贴；每天 08:06 自动签到"
+        }
+      ],
+      "descs_html": [
+        "叮咚买菜每日签到，每天 08:06 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/dingdong/Dingdong.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "fandeng_checkin",
+      "name": "樊登读书每日签到",
+      "keys": [
+        "senku_signurl_pandeng",
+        "senku_signheader_pandeng",
+        "senku_signbody_pandeng"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/fandeng/fandeng.js",
+      "settings": [
+        {
+          "id": "senku_signurl_pandeng",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开樊登读书自动抓取；抓不到时可手动粘贴；每天 08:06 自动签到"
+        },
+        {
+          "id": "senku_signheader_pandeng",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开樊登读书自动抓取；抓不到时可手动粘贴；每天 08:06 自动签到"
+        },
+        {
+          "id": "senku_signbody_pandeng",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开樊登读书自动抓取；抓不到时可手动粘贴；每天 08:06 自动签到"
+        }
+      ],
+      "descs_html": [
+        "樊登读书每日签到，每天 08:06 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fandeng/Fandeng.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "qmkg_checkin",
+      "name": "全民K歌每日签到",
+      "keys": [
+        "senku_signurl_qmkg",
+        "senku_signheader_qmkg",
+        "senku_signbody_qmkg"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/qmkg/qmkg.js",
+      "settings": [
+        {
+          "id": "senku_signurl_qmkg",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开全民K歌自动抓取；抓不到时可手动粘贴；每天 08:06 自动签到"
+        },
+        {
+          "id": "senku_signheader_qmkg",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开全民K歌自动抓取；抓不到时可手动粘贴；每天 08:06 自动签到"
+        },
+        {
+          "id": "senku_signbody_qmkg",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开全民K歌自动抓取；抓不到时可手动粘贴；每天 08:06 自动签到"
+        }
+      ],
+      "descs_html": [
+        "全民K歌每日签到，每天 08:06 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qmkg/Qmkg.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "nio_checkin",
+      "name": "蔚来每日签到",
+      "keys": [
+        "signurl_nextevcar",
+        "signheader_nextevcar"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/nio/nio.js",
+      "settings": [
+        {
+          "id": "signurl_nextevcar",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开蔚来自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        },
+        {
+          "id": "signheader_nextevcar",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开蔚来自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        }
+      ],
+      "descs_html": [
+        "蔚来每日签到，每天 08:07 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/nio/Nio.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "haidilao_checkin",
+      "name": "海底捞每日签到",
+      "keys": [
+        "signurl_hdl",
+        "signheader_hdl",
+        "signbody_hdl"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/haidilao/hdl.js",
+      "settings": [
+        {
+          "id": "signurl_hdl",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开海底捞自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        },
+        {
+          "id": "signheader_hdl",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开海底捞自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        },
+        {
+          "id": "signbody_hdl",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开海底捞自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        }
+      ],
+      "descs_html": [
+        "海底捞每日签到，每天 08:07 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/haidilao/Haidilao.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "qimao_checkin",
+      "name": "七猫小说每日签到",
+      "keys": [
+        "UrlDC",
+        "CookieDC",
+        "UrlNC",
+        "CookieNC",
+        "UrlLT",
+        "CookieLT",
+        "UrlVC"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/qimao/qmnovel.js",
+      "settings": [
+        {
+          "id": "UrlDC",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开七猫小说自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        },
+        {
+          "id": "CookieDC",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开七猫小说自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        },
+        {
+          "id": "UrlNC",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开七猫小说自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        },
+        {
+          "id": "CookieNC",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开七猫小说自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        },
+        {
+          "id": "UrlLT",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开七猫小说自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        },
+        {
+          "id": "CookieLT",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开七猫小说自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        },
+        {
+          "id": "UrlVC",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开七猫小说自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        }
+      ],
+      "descs_html": [
+        "七猫小说每日签到，每天 08:07 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qimao/Qimao.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "zxhc_checkin",
+      "name": "智行火车每日签到",
+      "keys": [
+        "senku_signheader_zxhc",
+        "senku_signbody_zxhc"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/zxhc/zxhc.js",
+      "settings": [
+        {
+          "id": "senku_signheader_zxhc",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开智行火车自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        },
+        {
+          "id": "senku_signbody_zxhc",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开智行火车自动抓取；抓不到时可手动粘贴；每天 08:07 自动签到"
+        }
+      ],
+      "descs_html": [
+        "智行火车每日签到，每天 08:07 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zxhc/Zxhc.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "suning_checkin",
+      "name": "苏宁易购每日签到",
+      "keys": [
+        "chavy_login_url_suning",
+        "chavy_login_header_suning",
+        "chavy_login_body_suning",
+        "chavy_sign_url_suning",
+        "chavy_sign_header_suning",
+        "chavy_signweb_url_suning",
+        "chavy_signweb_header_suning",
+        "chavy_signgame_url_suning",
+        "chavy_signgame_header_suning",
+        "chavy_signgetgame_url_suning",
+        "chavy_signgetgame_header_suning",
+        "snyg_userTokenKey",
+        "snyg_userCookieKey",
+        "snyg_userAgentKey"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.js",
+      "settings": [
+        {
+          "id": "chavy_login_url_suning",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开苏宁易购自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "chavy_login_header_suning",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开苏宁易购自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "chavy_login_body_suning",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开苏宁易购自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "chavy_sign_url_suning",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开苏宁易购自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "chavy_sign_header_suning",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开苏宁易购自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "chavy_signweb_url_suning",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开苏宁易购自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "chavy_signweb_header_suning",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开苏宁易购自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "chavy_signgame_url_suning",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开苏宁易购自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "chavy_signgame_header_suning",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开苏宁易购自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "chavy_signgetgame_url_suning",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开苏宁易购自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "chavy_signgetgame_header_suning",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开苏宁易购自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "snyg_userTokenKey",
+          "name": "Token",
+          "val": "",
+          "type": "textarea",
+          "desc": "需手动填写"
+        },
+        {
+          "id": "snyg_userCookieKey",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "需手动填写"
+        },
+        {
+          "id": "snyg_userAgentKey",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "需手动填写"
+        }
+      ],
+      "descs_html": [
+        "苏宁易购每日签到，每天 08:08 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/suning/Suning.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "zaker_checkin",
+      "name": "Zaker每日签到",
+      "keys": [
+        "UrlZK",
+        "CookieZK"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/zaker/zaker.js",
+      "settings": [
+        {
+          "id": "UrlZK",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开Zaker自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "CookieZK",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开Zaker自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        }
+      ],
+      "descs_html": [
+        "Zaker每日签到，每天 08:08 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zaker/Zaker.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "hellobike_checkin",
+      "name": "哈啰出行每日签到",
+      "keys": [
+        "hellobike"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js",
+      "settings": [
+        {
+          "id": "hellobike",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开哈啰出行自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        }
+      ],
+      "descs_html": [
+        "哈啰出行每日签到，每天 08:08 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/hellobike/HelloBike.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "zsfc_checkin",
+      "name": "掌上飞车每日签到",
+      "keys": [
+        "zsfc_accessToken",
+        "zsfc_openid",
+        "zsfc_roleId",
+        "zsfc_uin",
+        "zsfc_areaId",
+        "zsfc_iActivityId",
+        "zsfc_iFlowId"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js",
+      "settings": [
+        {
+          "id": "zsfc_accessToken",
+          "name": "Token",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开掌上飞车自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "zsfc_openid",
+          "name": "OpenId",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开掌上飞车自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "zsfc_roleId",
+          "name": "ID",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开掌上飞车自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "zsfc_uin",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开掌上飞车自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "zsfc_areaId",
+          "name": "ID",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开掌上飞车自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "zsfc_iActivityId",
+          "name": "ID",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开掌上飞车自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        },
+        {
+          "id": "zsfc_iFlowId",
+          "name": "ID",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开掌上飞车自动抓取；抓不到时可手动粘贴；每天 08:08 自动签到"
+        }
+      ],
+      "descs_html": [
+        "掌上飞车每日签到，每天 08:08 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zsfc/Zsfc.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "duokan_checkin",
+      "name": "多看每日签到",
+      "keys": [
+        "duokan_cookie",
+        "duokan_device_id"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.js",
+      "settings": [
+        {
+          "id": "duokan_cookie",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开多看自动抓取；抓不到时可手动粘贴；每天 03:00 自动签到"
+        },
+        {
+          "id": "duokan_device_id",
+          "name": "设备号",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开多看自动抓取；抓不到时可手动粘贴；每天 03:00 自动签到"
+        }
+      ],
+      "descs_html": [
+        "多看每日签到，每天 03:00 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/duokan/Duokan.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "noteyoudao_checkin",
+      "name": "有道云笔记每日签到",
+      "keys": [
+        "chavy_signurl_noteyoudao",
+        "chavy_signbody_noteyoudao",
+        "chavy_signheaders_noteyoudao"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/noteyoudao/noteyoudao.js",
+      "settings": [
+        {
+          "id": "chavy_signurl_noteyoudao",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开有道云笔记自动抓取；抓不到时可手动粘贴；每天 03:03 自动签到"
+        },
+        {
+          "id": "chavy_signbody_noteyoudao",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开有道云笔记自动抓取；抓不到时可手动粘贴；每天 03:03 自动签到"
+        },
+        {
+          "id": "chavy_signheaders_noteyoudao",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开有道云笔记自动抓取；抓不到时可手动粘贴；每天 03:03 自动签到"
+        }
+      ],
+      "descs_html": [
+        "有道云笔记每日签到，每天 03:03 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/noteyoudao/NoteYoudao.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "wanda_checkin",
+      "name": "万达电影每日签到",
+      "keys": [
+        "senku_wanda_mi_"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/wanda.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js",
+      "settings": [
+        {
+          "id": "senku_wanda_mi_",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开万达电影自动抓取；抓不到时可手动粘贴；每天 02:12 自动签到"
+        }
+      ],
+      "descs_html": [
+        "万达电影每日签到，每天 02:12 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/wanda/Wanda.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "pagoda_checkin",
+      "name": "百果园每日签到",
+      "keys": [
+        "chavy_sign_pagoda"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/pagoda/pagoda.js",
+      "settings": [
+        {
+          "id": "chavy_sign_pagoda",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开百果园自动抓取；抓不到时可手动粘贴；每天 02:11 自动签到"
+        }
+      ],
+      "descs_html": [
+        "百果园每日签到，每天 02:11 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/pagoda/Pagoda.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "ithome_checkin",
+      "name": "IT之家每日签到",
+      "keys": [
+        "senku_ithome_userHash"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/ithome.png"
+      ],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/ithome/ithome.js",
+      "settings": [
+        {
+          "id": "senku_ithome_userHash",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开IT之家自动抓取；抓不到时可手动粘贴；每天 02:11 自动签到"
+        }
+      ],
+      "descs_html": [
+        "IT之家每日签到，每天 02:11 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/ithome/Ithome.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "nfzm_checkin",
+      "name": "南方周末每日签到",
+      "keys": [
+        "senku_nfzm_url"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/nfzm/nfzm.js",
+      "settings": [
+        {
+          "id": "senku_nfzm_url",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开南方周末自动抓取；抓不到时可手动粘贴；每天 02:11 自动签到"
+        }
+      ],
+      "descs_html": [
+        "南方周末每日签到，每天 02:11 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/nfzm/Nfzm.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "dingdong-farm_checkin",
+      "name": "叮咚农场",
+      "keys": [
+        "CookieDDXQfarm",
+        "CookieDDXQfarmStationId"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/iepngs/Script/master/dingdong/index.js",
+      "settings": [
+        {
+          "id": "CookieDDXQfarm",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开叮咚农场自动抓取；抓不到时可手动粘贴；每天 08:01、12:01、17:01 自动签到"
+        },
+        {
+          "id": "CookieDDXQfarmStationId",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开叮咚农场自动抓取；抓不到时可手动粘贴；每天 08:01、12:01、17:01 自动签到"
+        }
+      ],
+      "descs_html": [
+        "叮咚农场，每天 08:01、12:01、17:01 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/dingdong-farm/DingdongFarm.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "studygolang_checkin",
+      "name": "go语言中文网每日签到",
+      "keys": [
+        "StudyGolang"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/iepngs/Script/master/studygolang/index.js",
+      "settings": [
+        {
+          "id": "StudyGolang",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开go语言中文网自动抓取；抓不到时可手动粘贴；每天 09:00 自动签到"
+        }
+      ],
+      "descs_html": [
+        "go语言中文网每日签到，每天 09:00 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/studygolang/StudyGolang.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "ctrip_checkin",
+      "name": "携程旅行每日签到",
+      "keys": [
+        "cookie_ctrip"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiechenglvxing.png"
+      ],
+      "script": "https://raw.githubusercontent.com/iepngs/Script/master/ctrip/index.js",
+      "settings": [
+        {
+          "id": "cookie_ctrip",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开携程旅行自动抓取；抓不到时可手动粘贴；每天 08:29 自动签到"
+        }
+      ],
+      "descs_html": [
+        "携程旅行每日签到，每天 08:29 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/ctrip/Ctrip.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "jrtt_checkin",
+      "name": "今日头条极速版每日签到",
+      "keys": [
+        "jrttTaskCookie",
+        "jrttReadCookie",
+        "jrttFarmCookie"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jinritoutiao.png"
+      ],
+      "script": "https://raw.githubusercontent.com/iepngs/Script/master/jrtt/index.js",
+      "settings": [
+        {
+          "id": "jrttTaskCookie",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开今日头条极速版自动抓取；抓不到时可手动粘贴；每天定时 自动签到"
+        },
+        {
+          "id": "jrttReadCookie",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开今日头条极速版自动抓取；抓不到时可手动粘贴；每天定时 自动签到"
+        },
+        {
+          "id": "jrttFarmCookie",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开今日头条极速版自动抓取；抓不到时可手动粘贴；每天定时 自动签到"
+        }
+      ],
+      "descs_html": [
+        "今日头条极速版每日签到，每天定时 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/jrtt/Jrtt.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "lxsj_checkin",
+      "name": "旅行世界购物版每日签到",
+      "keys": [
+        "lxsjCookie"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/iepngs/Script/master/lxsj/index.js",
+      "settings": [
+        {
+          "id": "lxsjCookie",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开旅行世界购物版自动抓取；抓不到时可手动粘贴；每天 09:00 自动签到"
+        }
+      ],
+      "descs_html": [
+        "旅行世界购物版每日签到，每天 09:00 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/lxsj/Lxsj.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "qqvip_checkin",
+      "name": "qq会员成长值",
+      "keys": [
+        "lkQQSignHeaderKey"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png"
+      ],
+      "script": "https://raw.githubusercontent.com/lowking/Scripts/master/QQVip/qqVipCheckIn.js",
+      "settings": [
+        {
+          "id": "lkQQSignHeaderKey",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开qq会员成长值自动抓取；抓不到时可手动粘贴；每天 05:05 自动签到"
+        }
+      ],
+      "descs_html": [
+        "qq会员成长值，每天 05:05 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qqvip/QqVip.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "sony_checkin",
+      "name": "索尼俱乐部签到",
+      "keys": [
+        "lkSonyClubLoginId",
+        "lkSonyClubPassword",
+        "lkSonyClubToken"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/lowking/Scripts/master/sony/sonyClub.js",
+      "settings": [
+        {
+          "id": "lkSonyClubLoginId",
+          "name": "账号",
+          "val": "",
+          "type": "textarea",
+          "desc": "索尼账号，手动填写"
+        },
+        {
+          "id": "lkSonyClubPassword",
+          "name": "密码",
+          "val": "",
+          "type": "textarea",
+          "desc": "索尼密码，手动填写"
+        },
+        {
+          "id": "lkSonyClubToken",
+          "name": "Token",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开索尼俱乐部签到自动抓取；抓不到时可手动粘贴；每天 00:04 自动签到"
+        }
+      ],
+      "descs_html": [
+        "索尼俱乐部签到，每天 00:04 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/sony/Sony.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "qqpet_checkin",
+      "name": "QQ萌宠每日签到",
+      "keys": [
+        "lkQQPetToken",
+        "lkQQPetId"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png"
+      ],
+      "script": "https://raw.githubusercontent.com/lowking/Scripts/master/QQPet/lkQQPet.js",
+      "settings": [
+        {
+          "id": "lkQQPetToken",
+          "name": "Token",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开QQ萌宠自动抓取；抓不到时可手动粘贴；每天 00:04、02:04 自动签到"
+        },
+        {
+          "id": "lkQQPetId",
+          "name": "ID",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开QQ萌宠自动抓取；抓不到时可手动粘贴；每天 00:04、02:04 自动签到"
+        }
+      ],
+      "descs_html": [
+        "QQ萌宠每日签到，每天 00:04、02:04 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qqpet/QqPet.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "eleme_checkin",
+      "name": "饿了么每日签到",
+      "keys": [
+        "cookie_elem"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Element.png"
+      ],
+      "script": "https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js",
+      "settings": [
+        {
+          "id": "cookie_elem",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开饿了么自动抓取；抓不到时可手动粘贴；每天 08:09 自动签到"
+        }
+      ],
+      "descs_html": [
+        "饿了么每日签到，每天 08:09 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/eleme/Eleme.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "ctrip-wx_checkin",
+      "name": "携程小程序每日签到",
+      "keys": [
+        "chen_body_xc",
+        "chen_header_xc"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiechenglvxing.png"
+      ],
+      "script": "https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip_wx/ct_sign.js",
+      "settings": [
+        {
+          "id": "chen_body_xc",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开携程小程序自动抓取；抓不到时可手动粘贴；每天 08:09 自动签到"
+        },
+        {
+          "id": "chen_header_xc",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开携程小程序自动抓取；抓不到时可手动粘贴；每天 08:09 自动签到"
+        }
+      ],
+      "descs_html": [
+        "携程小程序每日签到，每天 08:09 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/ctrip-wx/CtripWx.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "jd-czf_checkin",
+      "name": "京东成长分每日签到",
+      "keys": [
+        "chen_cookie_jingdong"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/JD.png"
+      ],
+      "script": "https://raw.githubusercontent.com/barrym-chen/Script/master/jdczf/jdczf.js",
+      "settings": [
+        {
+          "id": "chen_cookie_jingdong",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开京东成长分自动抓取；抓不到时可手动粘贴；每天 08:10 自动签到"
+        }
+      ],
+      "descs_html": [
+        "京东成长分每日签到，每天 08:10 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/jd-czf/JdCzf.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "icbc_checkin",
+      "name": "工银e生活每日签到",
+      "keys": [
+        "chen_body_icbc",
+        "chen_header_icbc"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/ICBC.png"
+      ],
+      "script": "https://raw.githubusercontent.com/barrym-chen/Script/master/icbc/icbc_sign.js",
+      "settings": [
+        {
+          "id": "chen_body_icbc",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开工银e生活自动抓取；抓不到时可手动粘贴；每天 08:10 自动签到"
+        },
+        {
+          "id": "chen_header_icbc",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开工银e生活自动抓取；抓不到时可手动粘贴；每天 08:10 自动签到"
+        }
+      ],
+      "descs_html": [
+        "工银e生活每日签到，每天 08:10 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/icbc/Icbc.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "tongcheng_checkin",
+      "name": "微信小程序-同程艺龙每日签到",
+      "keys": [
+        "chen_body_tc",
+        "chen_header_tc"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/barrym-chen/Script/master/tongc/tongc_sign.js",
+      "settings": [
+        {
+          "id": "chen_body_tc",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开微信小程序-同程艺龙自动抓取；抓不到时可手动粘贴；每天 08:10 自动签到"
+        },
+        {
+          "id": "chen_header_tc",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开微信小程序-同程艺龙自动抓取；抓不到时可手动粘贴；每天 08:10 自动签到"
+        }
+      ],
+      "descs_html": [
+        "微信小程序-同程艺龙每日签到，每天 08:10 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/tongcheng/Tongcheng.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "fcz_checkin",
+      "name": "飞常准每日签到",
+      "keys": [
+        "chen_cookie_fcz"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/barrym-chen/Script/master/fcz/fcz_sign.js",
+      "settings": [
+        {
+          "id": "chen_cookie_fcz",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开飞常准自动抓取；抓不到时可手动粘贴；每天 08:10 自动签到"
+        }
+      ],
+      "descs_html": [
+        "飞常准每日签到，每天 08:10 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fcz/Fcz.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "nga_checkin",
+      "name": "NGA刮墙每日签到",
+      "keys": [
+        "vei_nga_cookie",
+        "vei_nga_content_type",
+        "vei_nga_user_agent",
+        "vei_nga_body"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/nga/nga.js",
+      "settings": [
+        {
+          "id": "vei_nga_cookie",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开NGA刮墙自动抓取；抓不到时可手动粘贴；每天 00:10 自动签到"
+        },
+        {
+          "id": "vei_nga_content_type",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开NGA刮墙自动抓取；抓不到时可手动粘贴；每天 00:10 自动签到"
+        },
+        {
+          "id": "vei_nga_user_agent",
+          "name": "Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开NGA刮墙自动抓取；抓不到时可手动粘贴；每天 00:10 自动签到"
+        },
+        {
+          "id": "vei_nga_body",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开NGA刮墙自动抓取；抓不到时可手动粘贴；每天 00:10 自动签到"
+        }
+      ],
+      "descs_html": [
+        "NGA刮墙每日签到，每天 00:10 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/nga/Nga.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "thg_checkin",
+      "name": "太好购每日签到",
+      "keys": [
+        "id77_thg_token",
+        "id77_thg_host"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/thg.js",
+      "settings": [
+        {
+          "id": "id77_thg_token",
+          "name": "Token",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开太好购自动抓取；抓不到时可手动粘贴；每天 00:10 自动签到"
+        },
+        {
+          "id": "id77_thg_host",
+          "name": "域名",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开太好购自动抓取；抓不到时可手动粘贴；每天 00:10 自动签到"
+        }
+      ],
+      "descs_html": [
+        "太好购每日签到，每天 00:10 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/thg/Thg.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "yzkb_checkin",
+      "name": "柚子快报每日签到",
+      "keys": [
+        "yzkburlname",
+        "yzkbhdname",
+        "yzkbbdname"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/yzkbSign.js",
+      "settings": [
+        {
+          "id": "yzkburlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开柚子快报自动抓取；抓不到时可手动粘贴；每天 00:11 自动签到"
+        },
+        {
+          "id": "yzkbhdname",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开柚子快报自动抓取；抓不到时可手动粘贴；每天 00:11 自动签到"
+        },
+        {
+          "id": "yzkbbdname",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开柚子快报自动抓取；抓不到时可手动粘贴；每天 00:11 自动签到"
+        }
+      ],
+      "descs_html": [
+        "柚子快报每日签到，每天 00:11 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/yzkb/Yzkb.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "jd-read_checkin",
+      "name": "京东读书",
+      "keys": [
+        "jddsurlname",
+        "jddshdname"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/jddsSign.js",
+      "settings": [
+        {
+          "id": "jddsurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开京东读书自动抓取；抓不到时可手动粘贴；每天 00:14 自动签到"
+        },
+        {
+          "id": "jddshdname",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开京东读书自动抓取；抓不到时可手动粘贴；每天 00:14 自动签到"
+        }
+      ],
+      "descs_html": [
+        "京东读书，每天 00:14 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/jd-read/JdRead.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "zymk_checkin",
+      "name": "知音漫客每日签到",
+      "keys": [
+        "zymkurlname",
+        "zymkhdname",
+        "zymkbdname"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/zymkSign.js",
+      "settings": [
+        {
+          "id": "zymkurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开知音漫客自动抓取；抓不到时可手动粘贴；每天 00:17 自动签到"
+        },
+        {
+          "id": "zymkhdname",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开知音漫客自动抓取；抓不到时可手动粘贴；每天 00:17 自动签到"
+        },
+        {
+          "id": "zymkbdname",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开知音漫客自动抓取；抓不到时可手动粘贴；每天 00:17 自动签到"
+        }
+      ],
+      "descs_html": [
+        "知音漫客每日签到，每天 00:17 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zymk/Zymk.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "hdhyc_checkin",
+      "name": "海德汇一城每日签到",
+      "keys": [
+        "RecordAddbdname",
+        "RecordAddurlname",
+        "RecordAddhdname",
+        "RecordListurlname",
+        "RecordListbdname"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/hdhycSign.js",
+      "settings": [
+        {
+          "id": "RecordAddbdname",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开海德汇一城自动抓取；抓不到时可手动粘贴；每天 00:12 自动签到"
+        },
+        {
+          "id": "RecordAddurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开海德汇一城自动抓取；抓不到时可手动粘贴；每天 00:12 自动签到"
+        },
+        {
+          "id": "RecordAddhdname",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开海德汇一城自动抓取；抓不到时可手动粘贴；每天 00:12 自动签到"
+        },
+        {
+          "id": "RecordListurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开海德汇一城自动抓取；抓不到时可手动粘贴；每天 00:12 自动签到"
+        },
+        {
+          "id": "RecordListbdname",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开海德汇一城自动抓取；抓不到时可手动粘贴；每天 00:12 自动签到"
+        }
+      ],
+      "descs_html": [
+        "海德汇一城每日签到，每天 00:12 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/hdhyc/Hdhyc.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "mygmc_checkin",
+      "name": "民盈国贸城每日签到",
+      "keys": [
+        "Recordgeturlname",
+        "Recordgethdname",
+        "accounturlname",
+        "accounthdname",
+        "customerurlname",
+        "customerhdname",
+        "Recordurlname",
+        "Recordbdname",
+        "Recordhdname"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/mygmcSign.js",
+      "settings": [
+        {
+          "id": "Recordgeturlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开民盈国贸城自动抓取；抓不到时可手动粘贴；每天 00:15 自动签到"
+        },
+        {
+          "id": "Recordgethdname",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开民盈国贸城自动抓取；抓不到时可手动粘贴；每天 00:15 自动签到"
+        },
+        {
+          "id": "accounturlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开民盈国贸城自动抓取；抓不到时可手动粘贴；每天 00:15 自动签到"
+        },
+        {
+          "id": "accounthdname",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开民盈国贸城自动抓取；抓不到时可手动粘贴；每天 00:15 自动签到"
+        },
+        {
+          "id": "customerurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开民盈国贸城自动抓取；抓不到时可手动粘贴；每天 00:15 自动签到"
+        },
+        {
+          "id": "customerhdname",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开民盈国贸城自动抓取；抓不到时可手动粘贴；每天 00:15 自动签到"
+        },
+        {
+          "id": "Recordurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开民盈国贸城自动抓取；抓不到时可手动粘贴；每天 00:15 自动签到"
+        },
+        {
+          "id": "Recordbdname",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开民盈国贸城自动抓取；抓不到时可手动粘贴；每天 00:15 自动签到"
+        },
+        {
+          "id": "Recordhdname",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开民盈国贸城自动抓取；抓不到时可手动粘贴；每天 00:15 自动签到"
+        }
+      ],
+      "descs_html": [
+        "民盈国贸城每日签到，每天 00:15 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/mygmc/Mygmc.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "wsxq_checkin",
+      "name": "微商星球每日签到",
+      "keys": [
+        "wsxqurlname",
+        "wsxqhdname",
+        "wsxqspurlname",
+        "wsxqdturlname",
+        "wsxqkkurlname",
+        "wsxqppurlname",
+        "wsxqssurlname",
+        "wsxqwdurlname"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/wsxqSign.js",
+      "settings": [
+        {
+          "id": "wsxqurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开微商星球自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        },
+        {
+          "id": "wsxqhdname",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开微商星球自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        },
+        {
+          "id": "wsxqspurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开微商星球自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        },
+        {
+          "id": "wsxqdturlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开微商星球自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        },
+        {
+          "id": "wsxqkkurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开微商星球自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        },
+        {
+          "id": "wsxqppurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开微商星球自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        },
+        {
+          "id": "wsxqssurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开微商星球自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        },
+        {
+          "id": "wsxqwdurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开微商星球自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        }
+      ],
+      "descs_html": [
+        "微商星球每日签到，每天 00:16 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/wsxq/Wsxq.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
+      "id": "zscdb_checkin",
+      "name": "追书畅读版每日签到",
+      "keys": [
+        "userurlname",
+        "userhdname",
+        "adverturlname",
+        "advertbdname",
+        "tasksurlname",
+        "tasksbdname",
+        "taskurlname"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "icons": [],
+      "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/zscdbSign.js",
+      "settings": [
+        {
+          "id": "userurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开追书畅读版自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        },
+        {
+          "id": "userhdname",
+          "name": "请求头",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开追书畅读版自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        },
+        {
+          "id": "adverturlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开追书畅读版自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        },
+        {
+          "id": "advertbdname",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开追书畅读版自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        },
+        {
+          "id": "tasksurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开追书畅读版自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        },
+        {
+          "id": "tasksbdname",
+          "name": "请求体",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开追书畅读版自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        },
+        {
+          "id": "taskurlname",
+          "name": "URL",
+          "val": "",
+          "type": "textarea",
+          "desc": "打开追书畅读版自动抓取；抓不到时可手动粘贴；每天 00:16 自动签到"
+        }
+      ],
+      "descs_html": [
+        "追书畅读版每日签到，每天 00:16 自动签到。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zscdb/Zscdb.plugin\">点击安装 Loon 插件</a>"
+      ]
+    }
+  ]
+}

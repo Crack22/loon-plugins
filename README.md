@@ -14,6 +14,8 @@ loon-plugins/
 ├── loon-*/            # 插件：每个插件一个文件夹（.plugin + 脚本）
 ├── boxjs.json         # BoxJs 统一订阅：許諾自用应用
 ├── boxjs-leguan.json  # BoxJs 独立订阅：乐观专用
+├── boxjs-checkins.json # BoxJs 独立订阅：許諾签到合集（87 个 fmz 签到）
+├── loon-fmz/          # fmz200 定时任务签到合集：87 个插件
 ├── icons/             # 图标与图标库
 ├── docs/              # 使用指南
 └── actions/           # GitHub Actions 云端签到脚本
@@ -46,12 +48,19 @@ loon-plugins/
 
 签到类插件支持多账号：Cookie 和账号密码二选一，Cookie 过期时有账号密码会自动重新登录。Cookie 和密码只保存在手机本地，不会上传。
 
+## fmz200 签到合集
+
+从 [fmz200/wool_scripts](https://github.com/fmz200/wool_scripts) 的定时任务合集里把签到类全部转成 Loon 插件，共 87 个（京东、爱奇艺、哔哩哔哩、腾讯视频、百度贴吧、QQ 音乐、喜马拉雅、美团、饿了么、顺丰、携程、芒果 TV、米游社……）。签到脚本本身留在上游，这里只提供插件外壳和 BoxJs 设置；只在 Loon 本地跑，不进云端。
+
+完整列表：[docs/fmz-checkins.md](docs/fmz-checkins.md)
+
 ## BoxJs 订阅
 
 | 订阅 | 内容 | 导入 |
 | --- | --- | --- |
 | 許諾自用应用 | 14 个应用：上面全部签到插件 + 同步 Git Secrets + Loon 配置状态备份 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs.json |
 | 乐观专用 | 乐观每日签到 + 同步 Git Secrets（可分享给别人用） | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-leguan.json |
+| 許諾签到合集 | 87 个 fmz 签到应用，详见 [docs/fmz-checkins.md](docs/fmz-checkins.md) | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-checkins.json |
 
 乐观专用完整使用指南：[docs/leguan-guide.md](docs/leguan-guide.md)
 
@@ -60,7 +69,7 @@ loon-plugins/
 | 图标库 | 内容 | 链接 |
 | --- | --- | --- |
 | 許諾图标合集 | 15 个上游图标库合并，4968 个图标，每天 06:00 自动更新 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/icons-merged.json |
-| 許諾 BoxJs 图标 | 本仓库全部 BoxJs 图标，15 个图标，每天 06:00 自动更新 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/icons-boxjs.json |
+| 許諾 BoxJs 图标 | 本仓库全部 BoxJs 图标，53 个图标，每天 06:00 自动更新 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/icons-boxjs.json |
 
 图标库来源在 [icons/sources.json](icons/sources.json) 里，改它就能增减上游库。`icons/zishi-cs.json` 是 LovedGM 图标库的原样备份，不参与合并。
 

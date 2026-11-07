@@ -1,4 +1,4 @@
-// 从两个 BoxJs 订阅（boxjs.json、boxjs-leguan.json）收集全部图标，生成图标订阅 icons-boxjs.json。
+// 从三个 BoxJs 订阅（boxjs.json、boxjs-leguan.json、boxjs-checkins.json）收集全部图标，生成图标订阅 icons-boxjs.json。
 // 订阅图标 + 每个 App 的图标都会收进来，按图片地址去重；BoxJs 里没有、但想收进图标库的图标，
 // 加到下面的 EXTRA_ICONS 里（例如步道乐跑：只有 Loon 插件，没有 BoxJs 应用）。
 // 以后 BoxJs 里加了新图标，每天自动更新的工作流会重新跑这个脚本，图标库自动跟上。
@@ -23,7 +23,7 @@ function add(name, url) {
   icons.push({ name, url });
 }
 
-for (const file of ['boxjs.json', 'boxjs-leguan.json']) {
+for (const file of ['boxjs.json', 'boxjs-leguan.json', 'boxjs-checkins.json']) {
   const sub = JSON.parse(readFileSync(join(ROOT, file), 'utf8'));
   if (sub.icon) add(sub.name, sub.icon);
   for (const app of sub.apps || []) {

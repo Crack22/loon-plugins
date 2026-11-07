@@ -1,0 +1,15 @@
+#!name=Zaker每日签到
+#!desc=Zaker每日签到；用法：装好插件，打开重写和 cron，打开「Zaker」App 手动签到一次，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:08 自动签到。
+#!author=許諾
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：chavyleung/scripts（zaker.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = iphone.myzaker.com
+
+[Script]
+http-request ^https://iphone\.myzaker\.com/zaker/sign_in//api/sign_in\.php script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zaker/zaker_capture.js, requires-body=false, tag=Zaker Cookie, argument="title=Zaker", enable={capture}
+cron "8 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zaker/zaker.js, timeout=300, tag=Zaker签到, enable=true

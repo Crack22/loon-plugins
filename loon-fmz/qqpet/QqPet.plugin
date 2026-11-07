@@ -1,0 +1,16 @@
+#!name=QQ萌宠每日签到
+#!desc=QQ萌宠每日签到；用法：装好插件，打开重写和 cron，打开「QQ萌宠」停留几秒，收到通知即抓取成功；Token 有效期不足半天，需经常打开 App 重新抓取，抓完后在设置里关掉「抓取开关」；cron 每天 00:04、02:04 自动签到。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：lowking/Scripts（QQPet/lkQQPet.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = qqpet.jwetech.com
+
+[Script]
+http-response ^https?://qqpet\.jwetech\.com/api/authorizations script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qqpet/qqpet_capture.js, requires-body=true, tag=QQ萌宠 Cookie, argument="title=QQ萌宠", enable={capture}
+cron "4 0,2 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/QQPet/lkQQPet.js, timeout=300, tag=QQ萌宠签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png, enable=true

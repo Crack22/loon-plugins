@@ -1,0 +1,15 @@
+#!name=旅行世界购物版每日签到
+#!desc=旅行世界购物版每日签到；用法：装好插件，打开重写和 cron，打开「旅行世界」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 09:00 自动签到。
+#!author=許諾
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：iepngs/Script（lxsj/index.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = ios-fenqu11.lxsjgo.com
+
+[Script]
+http-request ^https?://ios-fenqu11\.lxsjgo\.com/dog/bug\?ts script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/lxsj/lxsj_capture.js, requires-body=true, tag=旅行世界购物版 Cookie, argument="title=旅行世界购物版", enable={capture}
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/iepngs/Script/master/lxsj/index.js, timeout=300, tag=旅行世界购物版签到, enable=true

@@ -1,0 +1,16 @@
+#!name=拼多多果园
+#!desc=拼多多果园；用法：装好插件，打开重写和 cron，打开「拼多多」进果园逛一圈并浇水，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 1:30、7:30、12:30、18:30、22:30 自动签到。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/pinduoduo.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：fmz200/wool_scripts（pdd_guoyuan.js；抓取见 pdd_getToken.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = mobile.yangkeduo.com
+
+[Script]
+http-request ^https?://mobile\.yangkeduo\.com/proxy/api/api/server/_stm script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/pdd/pdd_capture.js, tag=拼多多果园抓取, enable={capture}
+cron "30 1,7,12,18,22 * * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/pinduoduo/pdd_guoyuan.js, timeout=300, tag=拼多多果园, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/pinduoduo.png, enable=true

@@ -1,0 +1,16 @@
+#!name=斗鱼鱼吧签到
+#!desc=斗鱼鱼吧签到；用法：装好插件，打开重写和 cron，打开斗鱼鱼吧关注列表页（yuba.douyu.com/homepage/hotwbs）并登录，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 7:15 自动签到。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Color/douyu.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：fmz200/wool_scripts（yubaSign.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = yuba.douyu.com
+
+[Script]
+http-request ^https?://yuba\.douyu\.com/wbapi/web/group/myFollow script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_checkin_capture.js, requires-body=false, tag=斗鱼鱼吧签到 Cookie, argument="key=CookieDY&source=cookie&title=斗鱼鱼吧签到", enable={capture}
+cron "15 7 * * *" script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/douyu/yubaSign.js, timeout=300, tag=斗鱼鱼吧签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/douyu.png, enable=true

@@ -1,0 +1,15 @@
+#!name=Funboat签到
+#!desc=Funboat签到；用法：装好插件，打开重写和 cron，打开微信小程序 Funboat，点「我的」并手动签到一次，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 8:04 自动签到。
+#!author=許諾
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：evilbutcher/Quantumult_X（funboat.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = h5.youzan.com
+
+[Script]
+http-request ^https?://h5\.youzan\.com/wsc.*app_id=wx9b5caf9d1669dc96 script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/funboat/funboat_capture.js, tag=Funboat签到抓取, enable={capture}
+cron "4 8 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js, timeout=300, tag=Funboat签到, enable=true

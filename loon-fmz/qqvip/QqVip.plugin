@@ -1,0 +1,16 @@
+#!name=qq会员成长值
+#!desc=qq会员成长值；用法：装好插件，打开重写和 cron，打开「QQ」停留几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 05:05 自动签到。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：lowking/Scripts（QQVip/qqVipCheckIn.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = proxy.vac.qq.com
+
+[Script]
+http-request ^https?://proxy\.vac\.qq\.com/cgi-bin/srfentry\.fcgi script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qqvip/qqvip_capture.js, requires-body=false, tag=qq会员成长值 Cookie, argument="title=qq会员成长值", enable={capture}
+cron "5 5 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/QQVip/qqVipCheckIn.js, timeout=300, tag=qq会员成长值签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png, enable=true
