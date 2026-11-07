@@ -141,9 +141,15 @@ function main() {
       'User-Agent': 'loon-config-backup'
     };
 
-    // 先读现有文件：拿到 sha（更新用），没变化就不提交
-    $httpClient.get({ url: url, headers: headers, timeout: 20 }, function (err, resp, data) {
-      if (err) { fail('备份失败', '读仓库文件失败：' + err); return; }
+    // 先读现有文件：拿到 sha（更新用），没变化就不提交；网络超时重试 2 次
+    var getTries = 0;
+    function doGet() {
+      $httpClient.get({ url: url, headers: headers, timeout: 60 }, function (err, resp, data) {
+      if (err) {
+        getTries++;
+        if (getTries <= 2) { console.log('[Loon配置备份] 读文件超时，第 ' + getTries + ' 次重试'); setTimeout(doGet, 3000); return; }
+        fail('备份失败', '读仓库文件失败：' + err); return;
+      }
       var status = resp && resp.status;
       var sha = null;
       if (status === 200) {
@@ -162,8 +168,14 @@ function main() {
       }
       var body = { message: '备份 Loon 配置状态 ' + beijingNow(), content: b64 };
       if (sha) body.sha = sha;
-      $httpClient.put({ url: url, headers: headers, body: JSON.stringify(body), timeout: 20 }, function (err2, resp2, data2) {
-        if (err2) { fail('备份失败', '上传失败：' + err2); return; }
+      var putTries = 0;
+      function doPut() {
+      $httpClient.put({ url: url, headers: headers, body: JSON.stringify(body), timeout: 60 }, function (err2, resp2, data2) {
+        if (err2) {
+          putTries++;
+          if (putTries <= 2) { console.log('[Loon配置备份] 上传超时，第 ' + putTries + ' 次重试'); setTimeout(doPut, 3000); return; }
+          fail('备份失败', '上传失败：' + err2); return;
+        }
         var st = resp2 && resp2.status;
         if (st === 200 || st === 201) {
           $notification.post('Loon配置备份', '已备份', '已保存到 ' + repo + '（' + beijingNow() + '）');
@@ -176,7 +188,11 @@ function main() {
           fail('备份失败', 'GitHub 返回 HTTP ' + st + '：' + String(data2 || '').slice(0, 200));
         }
       });
+      }
+      doPut();
     });
+    }
+    doGet();
   }
 }
 
