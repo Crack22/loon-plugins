@@ -1,0 +1,18 @@
+#!name=新浪微博每日签到
+#!desc=新浪微博每日签到；用法：装好插件，打开重写和 cron，打开微博 App 任意浏览几秒，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 8:15 自动签到。\n手动抓取：点 Loon 脚本里的「新浪微博去抓取」，按弹出的提示操作。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/weibo.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：FoKit/Scripts（weibo_sign.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = api.weibo.cn
+
+[Script]
+http-request ^https://api\.weibo\.cn/\d/users/show script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/weibo/weibo_capture.js, requires-body=false, tag=新浪微博每日签到抓取, enable={capture}
+http-request ^https://api\.weibo\.cn/2/logservice/attach script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/weibo/weibo_capture.js, requires-body=false, tag=新浪微博每日签到抓取, enable={capture}
+cron "15 8 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js, timeout=300, tag=新浪微博每日签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/weibo.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=新浪微博去抓取, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/weibo.png, argument="title=新浪微博&url=&hint=打开微博 App 任意浏览几秒", enable={capture}

@@ -1,0 +1,9 @@
+#!name=巴哈姆特每日签到
+#!desc=巴哈姆特每日签到；用法：在 BoxJs 里填写巴哈姆特账号、密码（TOTP 有就填），每天 8:00 自动签到。\n无自动抓取，需在 BoxJs 里手动粘贴。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/bahamutGame.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：NobyDa/Script（BahamutDailyBonus.js）
+[Script]
+cron "0 8 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bahamut/BahamutDailyBonus.js, timeout=300, tag=巴哈姆特每日签到, img-url=https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/bahamutGame.png, enable=true

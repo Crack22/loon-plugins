@@ -1,0 +1,13 @@
+#!name=网上国网
+#!desc=网上国网电费查询：每天 9:00 查询账户余额、本期电量、年度用电等并通知。需要网上国网账号（手机号）和密码。重写行是小组件服务模式接口，配合 Scriptable 组件使用；只用推送可忽略。
+#!author=許諾
+#!icon=https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/83/d8/8a/83d88a92-5a4d-7a2f-118c-80d795e7a9f6/AppIcon-0-0-1x_U007emarketing-0-5-0-0-sRGB-85-220.png/144x144.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：Yuheng0101/X（95598.js）
+[MITM]
+hostname = api.wsgw-rewrite.com
+
+[Script]
+http-request ^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.js, requires-body=true, tag=网上国网接口重写, enable=true
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.js, timeout=300, tag=网上国网, img-url=https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/83/d8/8a/83d88a92-5a4d-7a2f-118c-80d795e7a9f6/AppIcon-0-0-1x_U007emarketing-0-5-0-0-sRGB-85-220.png/144x144.png, enable=true

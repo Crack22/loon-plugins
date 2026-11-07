@@ -1,0 +1,10 @@
+#!name=机场流量查询
+#!desc=定时查询机场订阅的流量使用情况、剩余流量和到期时间并推送通知；在 BoxJs 里填订阅链接（JSON 格式，含链接、名字和图标）；每天 9:05 运行。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/58xinian/icon/master/flow.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：Peng-YM/QuanX（flow.js）
+
+[Script]
+cron "5 9 * * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/flow.js, timeout=300, tag=机场流量查询, img-url=https://raw.githubusercontent.com/58xinian/icon/master/flow.png, enable=true

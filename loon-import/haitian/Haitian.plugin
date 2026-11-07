@@ -1,0 +1,10 @@
+#!name=海天美味馆兑换
+#!desc=海天美味馆积分兑换：每周四 16:59 自动兑换指定商品；商品 ID 为 0 时只查看、不兑换，开启「查看商品列表」可先查看可兑换商品。定时由上游 6 段式（周四 16:59:58）转为 Loon 5 段式。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiTian/HaiTian.jpg
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：xzxxn777/Surge（HaiTian_Exchange.js）
+
+[Script]
+cron "59 16 * * 4" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiTian/HaiTian_Exchange.js, timeout=300, tag=海天美味馆兑换, img-url=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiTian/HaiTian.jpg, enable=true

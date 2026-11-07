@@ -1,0 +1,17 @@
+#!name=达美乐披萨每日签到
+#!desc=达美乐披萨每日签到；用法：打开达美乐披萨公众号，进入「优惠｜咨询」→「有奖游戏」，手动完成一次游戏自动抓取，抓完后在设置里关掉「抓取开关」；cron 每天 10:30 自动签到。\n手动抓取：点 Loon 脚本里的「达美乐披萨去抓取」查看抓取提示。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Dlm.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：Sliverkiss（gist dlm.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 或小程序会自动保存签到要用的凭证；抓完可以关掉
+
+[MITM]
+hostname = game.dominos.com.cn
+
+[Script]
+http-request ^https:\/\/game\.dominos\.com\.cn\/.+\/game\/gameDone script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-dlm/sliverkiss-dlm_capture.js, requires-body=true, tag=达美乐披萨每日签到 Cookie, enable={capture}
+cron "30 10 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js, timeout=300, tag=达美乐披萨每日签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Dlm.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=达美乐披萨去抓取, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Dlm.png, argument="title=达美乐披萨&url=&hint=打开达美乐披萨公众号，进入「优惠｜咨询」→「有奖游戏」，手动完成一次游戏即自动抓取", enable={capture}

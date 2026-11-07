@@ -15,8 +15,9 @@ loon-plugins/
 ├── boxjs.json         # BoxJs 统一订阅：許諾自用应用
 ├── boxjs-leguan.json  # BoxJs 独立订阅：乐观专用
 ├── boxjs-weibo-daka.json  # BoxJs 独立订阅：微博超话签到打卡（带黄子弘凡打卡）
-├── boxjs-checkins.json # BoxJs 独立订阅：許諾签到合集（87 个签到）
+├── boxjs-checkins.json # BoxJs 独立订阅：許諾签到合集（139 个签到）
 ├── loon-fmz/          # 許諾签到合集：87 个插件
+├── loon-import/       # 移植合集：52 个新签到插件 + 26 个工具插件
 ├── icons/             # 图标与图标库
 ├── docs/              # 使用指南
 └── actions/           # GitHub Actions 云端签到脚本
@@ -51,7 +52,7 @@ loon-plugins/
 
 ## 許諾签到合集
 
-把签到类任务全部转成 Loon 插件，共 87 个（京东、爱奇艺、哔哩哔哩、腾讯视频、百度贴吧、QQ 音乐、喜马拉雅、美团、饿了么、顺丰、携程、芒果 TV、米游社……）。签到脚本本身留在上游，这里只提供插件外壳和 BoxJs 设置；只在 Loon 本地跑，不进云端。每个带抓取的插件都有「去抓取」手动按钮（Loon → 脚本里点一下，点通知打开抓取页）和设置里的抓取开关。
+把签到类任务全部转成 Loon 插件，共 139 个（京东、爱奇艺、哔哩哔哩、腾讯视频、百度贴吧、QQ 音乐、喜马拉雅、美团、饿了么、顺丰、携程、芒果 TV、米游社……）。签到脚本本身留在上游，这里只提供插件外壳和 BoxJs 设置；只在 Loon 本地跑，不进云端。每个带抓取的插件都有「去抓取」手动按钮（Loon → 脚本里点一下，点通知打开抓取页）和设置里的抓取开关。
 
 完整列表：[docs/xunuo-checkins.md](docs/xunuo-checkins.md)
 
@@ -59,10 +60,10 @@ loon-plugins/
 
 | 订阅 | 内容 | 导入 |
 | --- | --- | --- |
-| 許諾自用应用 | 14 个应用：上面全部签到插件 + 同步 Git Secrets + Loon 配置状态备份 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs.json |
+| 許諾自用应用 | 91 个应用：上面全部签到插件 + 工具 + 同步 Git Secrets + Loon 配置状态备份 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs.json |
 | 乐观专用 | 乐观每日签到 + 同步 Git Secrets（可分享给别人用） | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-leguan.json |
 | 微博超话签到打卡·特供版 | 微博每日签到 + 所有超话全部签到 + 只给黄子弘凡图文打卡（可分享给别人用） | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-weibo-daka.json |
-| 許諾签到合集 | 87 个签到应用，详见 [docs/xunuo-checkins.md](docs/xunuo-checkins.md) | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-checkins.json |
+| 許諾签到合集 | 139 个签到应用，详见 [docs/xunuo-checkins.md](docs/xunuo-checkins.md) | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-checkins.json |
 
 乐观专用完整使用指南：[docs/leguan-guide.md](docs/leguan-guide.md)
 
@@ -70,8 +71,8 @@ loon-plugins/
 
 | 图标库 | 内容 | 链接 |
 | --- | --- | --- |
-| 許諾图标合集 | 15 个上游图标库合并，4968 个图标，每天 06:00 自动更新 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/icons-merged.json |
-| 許諾 BoxJs 图标 | 本仓库全部 BoxJs 图标，53 个图标，每天 06:00 自动更新 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/icons-boxjs.json |
+| 許諾图标合集 | 16 个图标库合并，5375 个图标，每天 06:00 自动更新 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/icons-merged.json |
+| 許諾 BoxJs 图标 | 本仓库全部 BoxJs 图标，160 个图标，每天 06:00 自动更新 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/icons-boxjs.json |
 
 图标库来源在 [icons/sources.json](icons/sources.json) 里，改它就能增减上游库。`icons/zishi-cs.json` 是 LovedGM 图标库的原样备份，不参与合并。
 
@@ -87,7 +88,7 @@ GitHub Actions 每天自动跑两件事，仓库是公开的免费的：
 ### 图标库来源
 
 <details>
-<summary>15 个上游图标库（点击展开）</summary>
+<summary>16 个图标库（点击展开）</summary>
 
 - [TheMagic-Icons](https://github.com/Twoandz9/TheMagic-Icons) — Twoandz9
 - [Quremini / QureColor / QureColor-All](https://github.com/Koolson/Qure) — Koolson
@@ -100,6 +101,7 @@ GitHub Actions 每天自动跑两件事，仓库是公开的免费的：
 - [lige](https://github.com/lige47) — lige47
 - [PVSZ](https://github.com/shoujiqiyuan) — shoujiqiyuan
 - [wool_scripts 图标](https://github.com/fmz200/wool_scripts) — fmz200
+- 第三方 BoxJs 订阅图标（本仓库 icons/icons-third-party-boxjs.json，从 24 个第三方 BoxJs 订阅收集）
 
 </details>
 

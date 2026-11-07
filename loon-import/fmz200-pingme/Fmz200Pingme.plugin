@@ -1,0 +1,17 @@
+#!name=PingMe每日签到
+#!desc=PingMe每日签到；用法：打开 PingMe App 自动抓取签到参数（JSON），抓完后在设置里关掉「抓取开关」；cron 每天 08:30 和 20:30 自动签到。\n手动抓取：点 Loon 脚本里的「PingMe去抓取」查看抓取提示。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/PingMe.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：fmz200/wool_scripts（PingMeSignin.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 或小程序会自动保存签到要用的凭证；抓完可以关掉
+
+[MITM]
+hostname = api.pingmeapp.net
+
+[Script]
+http-request ^https:\/\/api\.pingmeapp\.net\/app\/queryBalanceAndBonus script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/fmz200-pingme/fmz200-pingme_capture.js, tag=PingMe每日签到 Cookie, enable={capture}
+cron "30 8,20 * * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/PingMe/PingMeSignin.js, timeout=300, tag=PingMe每日签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/PingMe.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=PingMe去抓取, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/PingMe.png, argument="title=PingMe&url=&hint=打开 PingMe App，停留几秒即自动抓取", enable={capture}

@@ -1,0 +1,8 @@
+#!name=follow每日签到
+#!desc=follow每日签到；用法：在 BoxJs 里手动粘贴 Follow 的 csrfToken 和 Cookie，每天 8:06 自动签到。\n无自动抓取，需在 BoxJs 里手动粘贴。
+#!author=許諾
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：chavyleung/scripts（作者@gideonsenku）（follow.js）
+[Script]
+cron "6 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/follow/follow.js, timeout=300, tag=follow每日签到, enable=true

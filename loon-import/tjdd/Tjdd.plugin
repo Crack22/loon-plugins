@@ -1,0 +1,17 @@
+#!name=唐机豆豆每日签到
+#!desc=唐机豆豆每日签到；用法：装好插件，打开重写和 cron，微信打开唐机豆豆小程序，点会员中心签到，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 09:15 自动签到。\n手动抓取：点 Loon 脚本里的「唐机豆豆去抓取」，按弹出的提示操作。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Former-Years/icon/master/tjdd.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：Former-Years/Surge（tjdd.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = h5.youzan.com
+
+[Script]
+http-request ^https://h5\.youzan\.com/wscshop/weappp/shop_business_hour\.json script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/tjdd/tjdd_capture.js, requires-body=false, tag=唐机豆豆每日签到 Cookie, argument="title=唐机豆豆", enable={capture}
+cron "15 9 * * *" script-path=https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/tjdd.js, timeout=300, tag=唐机豆豆每日签到, img-url=https://raw.githubusercontent.com/Former-Years/icon/master/tjdd.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=唐机豆豆去抓取, img-url=https://raw.githubusercontent.com/Former-Years/icon/master/tjdd.png, argument="title=唐机豆豆&url=&hint=微信打开唐机豆豆小程序，点会员中心签到，收到通知即抓取成功", enable={capture}

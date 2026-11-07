@@ -1,0 +1,9 @@
+#!name=霸王茶姬每日签到
+#!desc=霸王茶姬每日签到；用法：在小程序里抓包 Qm-User-Token，粘贴到 BoxJs 的 bw_token 里（脚本内 activityId 为写死的示例值，如签到失败可能需更换）；cron 每天 10:00 自动签到。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：Guding88/Script（bwcj.js）
+[Script]
+cron "0 10 * * *" script-path=https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj.js, timeout=300, tag=霸王茶姬每日签到, img-url=https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj.png, enable=true

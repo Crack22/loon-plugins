@@ -1,6 +1,6 @@
 {
   "name": "許諾图标合集",
-  "description": "合并自 15 个图标库，共 4968 个图标，每天自动同步更新，有新图标自动加入。",
+  "description": "合并自 16 个图标库，共 5375 个图标，每天自动同步更新，有新图标自动加入。",
   "icons": [
     {
       "name": "#.png",
@@ -215,8 +215,36 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/pokemon/100.png"
     },
     {
+      "name": "10000.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/10000.png"
+    },
+    {
+      "name": "10000.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/10000.png"
+    },
+    {
+      "name": "10010.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/10010.png"
+    },
+    {
+      "name": "10010.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/10010.png"
+    },
+    {
+      "name": "10086.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/10086.png"
+    },
+    {
+      "name": "10086.png",
+      "url": "https://raw.githubusercontent.com/Former-Years/icon/refs/heads/master/10086.png"
+    },
+    {
       "name": "102.png",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/pokemon/102.png"
+    },
+    {
+      "name": "1024.png",
+      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/1024.png"
     },
     {
       "name": "104.png",
@@ -315,6 +343,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/12123.png"
     },
     {
+      "name": "12123.png",
+      "url": "https://raw.githubusercontent.com/Nanako718/Scripting/main/images/12123.png"
+    },
+    {
       "name": "122.png",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/pokemon/122.png"
     },
@@ -337,6 +369,14 @@
     {
       "name": "12306(2)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/12306(2).png"
+    },
+    {
+      "name": "12306.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/12306.png"
+    },
+    {
+      "name": "12306.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/12306.png"
     },
     {
       "name": "124.png",
@@ -391,6 +431,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/pokemon/138.png"
     },
     {
+      "name": "13th.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/13th.png"
+    },
+    {
       "name": "140.png",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/pokemon/140.png"
     },
@@ -405,6 +449,22 @@
     {
       "name": "144.png",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/pokemon/144.png"
+    },
+    {
+      "name": "144x144bb.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/70/a4/56/70a456c9-4df9-3bdb-03b6-ecf99f13e7c1/AppIcon-1x_U007epad-0-10-0-85-220.png/144x144bb.png"
+    },
+    {
+      "name": "144x144bb.png",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png"
+    },
+    {
+      "name": "144x144bb.png",
+      "url": "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/90/5d/f8/905df82a-0e2e-5a2c-2be6-cc690fb0bec0/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png"
+    },
+    {
+      "name": "144x144bb.png",
+      "url": "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/9a/d8/77/9ad877c6-e3d7-61a1-3911-5036239a41a6/AppIcon-1x_U007emarketing-0-7-0-0-sRGB-85-220.png/144x144bb.png"
     },
     {
       "name": "145.png",
@@ -791,12 +851,28 @@
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/4icon.png"
     },
     {
+      "name": "4ksj.png",
+      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/4ksj.png"
+    },
+    {
       "name": "51chigua",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/51chigua.png"
     },
     {
+      "name": "52pj.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/52pj.png"
+    },
+    {
+      "name": "52pj.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Color/52pj.png"
+    },
+    {
       "name": "52pojie",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/52pojie.png"
+    },
+    {
+      "name": "52pojie.png",
+      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/52pojie.png"
     },
     {
       "name": "542606ac798c64f9.png",
@@ -821,6 +897,10 @@
     {
       "name": "60b4ccdcc6794033.png",
       "url": "https://raw.githubusercontent.com/Yuanxsxs/QtumultX/master/Icon/Catcat/60b4ccdcc6794033.png"
+    },
+    {
+      "name": "60s.png",
+      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/60s.png"
     },
     {
       "name": "6564b4c292b60648.png",
@@ -1163,6 +1243,14 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/AiDeer.png"
     },
     {
+      "name": "AiHaiYan.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/AiHaiYan/AiHaiYan.png"
+    },
+    {
+      "name": "AiLuQiao.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/AiLuQiao/AiLuQiao.png"
+    },
+    {
       "name": "Ailuomusic",
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Ailuomusic.png"
     },
@@ -1212,6 +1300,10 @@
     },
     {
       "name": "AliYunDrive",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AliYunDrive.png"
+    },
+    {
+      "name": "AliYunDrive.png",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AliYunDrive.png"
     },
     {
@@ -2271,6 +2363,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/BlueskySocial(1).png"
     },
     {
+      "name": "Bnmdhg.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Bnmdhg.png"
+    },
+    {
       "name": "BoYinYuan",
       "url": "https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/BoYinYuan.png"
     },
@@ -2587,6 +2683,10 @@
       "url": "https://raw.githubusercontent.com/black2c7/TheMagic-Icons/main/Icons/COO.png"
     },
     {
+      "name": "COVID-19.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/COVID-19.png"
+    },
+    {
       "name": "CSsaomiaoquannengwang",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/CSsaomiaoquannengwang.png"
     },
@@ -2799,6 +2899,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Category_Weather.png"
     },
     {
+      "name": "Category_Weather.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Category_Weather.png"
+    },
+    {
       "name": "Catnet",
       "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Catnet.png"
     },
@@ -2923,6 +3027,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ChatGPT9.png"
     },
     {
+      "name": "Checkbox.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Checkbox.png"
+    },
+    {
       "name": "CherryLink",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/CherryLink.png"
     },
@@ -2941,6 +3049,10 @@
     {
       "name": "CherrynetWork2",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/CherrynetWork2.png"
+    },
+    {
+      "name": "Cheryfs.jpg",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs.jpg"
     },
     {
       "name": "ChiangKai-shekMemorialHall",
@@ -2969,6 +3081,10 @@
     {
       "name": "ChinaBroadcastNetwork",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/ChinaBroadcastNetwork.png"
+    },
+    {
+      "name": "ChinaMobile 的应用订阅",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/92/8b/03/928b0371-20fc-288b-e4e4-05f48b7082c2/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/144x144.png"
     },
     {
       "name": "China_Map.png",
@@ -3001,6 +3117,10 @@
     {
       "name": "Chuiyan",
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Chuiyan.png"
+    },
+    {
+      "name": "CiXiao.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/CiXiao/CiXiao.png"
     },
     {
       "name": "Ciji",
@@ -3183,6 +3303,10 @@
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Costa_Rica.png"
     },
     {
+      "name": "Cqxhsd.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Cqxhsd.png"
+    },
+    {
       "name": "Cream2",
       "url": "https://raw.githubusercontent.com/black2c7/TheMagic-Icons/main/Icons/Cream2.png"
     },
@@ -3347,6 +3471,10 @@
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/CurlyMouse2.png"
     },
     {
+      "name": "Cwm.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Cwm.png"
+    },
+    {
       "name": "Cydia.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cydia.png"
     },
@@ -3463,6 +3591,10 @@
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/DVYY2.png"
     },
     {
+      "name": "DaChao.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/DaChao/DaChao.png"
+    },
+    {
       "name": "DaHangHai",
       "url": "https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/DaHangHai.png"
     },
@@ -3489,6 +3621,10 @@
     {
       "name": "Daily_Motion",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Daily_Motion.png"
+    },
+    {
+      "name": "DataManagement1.png",
+      "url": "https://raw.githubusercontent.com/ByteValley/Icon/main/server/DataManagement1.png"
     },
     {
       "name": "Davyingyuan",
@@ -3675,6 +3811,14 @@
       "url": "https://raw.githubusercontent.com/black2c7/TheMagic-Icons/main/Icons/Dlercloud1.png"
     },
     {
+      "name": "Dlm.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Dlm.png"
+    },
+    {
+      "name": "Dmzj.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Dmzj.png"
+    },
+    {
       "name": "Docs",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Docs.png"
     },
@@ -3709,6 +3853,10 @@
     {
       "name": "Dominican_Republic",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Dominican_Republic.png"
+    },
+    {
+      "name": "DomplingYaYa 应用订阅",
+      "url": "https://avatars3.githubusercontent.com/u/23498579?s=460&u=1e87605e4abc4e6ecf3edd8b1d730227f54db4d4&v=4"
     },
     {
       "name": "Doraemon-1001",
@@ -4171,6 +4319,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Drunk.png"
     },
     {
+      "name": "DuJia.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/DuJia/DuJia.png"
+    },
+    {
       "name": "Duang",
       "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Duang.png"
     },
@@ -4539,6 +4691,10 @@
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Eritrea.png"
     },
     {
+      "name": "Eshop打折监控",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/71/e3/98/71e39886-3a94-fb5d-e15b-45beadd64ac0/AppIcon-1x_U007emarketing-0-5-0-85-220.jpeg/144x144.png"
+    },
+    {
       "name": "Estonia",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Estonia.png"
     },
@@ -4645,6 +4801,10 @@
     {
       "name": "FRANXX",
       "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/FRANXX.png"
+    },
+    {
+      "name": "FTEJ.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/FTEJ/FTEJ.png"
     },
     {
       "name": "FacMata",
@@ -5011,6 +5171,10 @@
       "url": "https://raw.githubusercontent.com/black2c7/TheMagic-Icons/main/Icons/Fm.png"
     },
     {
+      "name": "FoKit 应用订阅",
+      "url": "https://avatars.githubusercontent.com/u/44187836"
+    },
+    {
       "name": "ForeignMedia.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png"
     },
@@ -5279,6 +5443,10 @@
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/GingaRessha.png"
     },
     {
+      "name": "Gist 备份",
+      "url": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/asset/icon.png"
+    },
+    {
       "name": "GitHub",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/GitHub.png"
     },
@@ -5289,6 +5457,14 @@
     {
       "name": "GitHub_Letter.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub_Letter.png"
+    },
+    {
+      "name": "Github.png",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/Github.png"
+    },
+    {
+      "name": "Github_mini.png",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/Github_mini.png"
     },
     {
       "name": "GlaDos",
@@ -5357,6 +5533,14 @@
     {
       "name": "Google.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Google.png"
+    },
+    {
+      "name": "Google.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/Google.png"
+    },
+    {
+      "name": "Google.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Color/Google.png"
     },
     {
       "name": "GoogleAdsense",
@@ -5719,6 +5903,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/HSBC.png"
     },
     {
+      "name": "HaiTian.jpg",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiTian/HaiTian.jpg"
+    },
+    {
       "name": "Haiti",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Haiti.png"
     },
@@ -5753,6 +5941,10 @@
     {
       "name": "Hawaii",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Hawaii.png"
+    },
+    {
+      "name": "Hax.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hax.png"
     },
     {
       "name": "Heart.png",
@@ -5843,6 +6035,10 @@
       "url": "https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Hka.png"
     },
     {
+      "name": "Hldc.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hldc.png"
+    },
+    {
       "name": "HoHai",
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/HoHai.png"
     },
@@ -5899,6 +6095,10 @@
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Howcast.png"
     },
     {
+      "name": "Hsay.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hsay.png"
+    },
+    {
       "name": "Hualu",
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Hualu.png"
     },
@@ -5949,6 +6149,10 @@
     {
       "name": "Hxd2",
       "url": "https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Hxd2.png"
+    },
+    {
+      "name": "Hxek.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hxek.png"
     },
     {
       "name": "Hxlm",
@@ -6021,6 +6225,10 @@
     {
       "name": "IPLC.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/IPLC.png"
+    },
+    {
+      "name": "IQOO.jpg",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/IQOO/IQOO.jpg"
     },
     {
       "name": "IT",
@@ -6207,6 +6415,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/LPL/JDG.png"
     },
     {
+      "name": "JDLM.png",
+      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/JDLM.png"
+    },
+    {
       "name": "JD_02",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/JD_02.png"
     },
@@ -6299,6 +6511,10 @@
       "url": "https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Jhemby.png"
     },
     {
+      "name": "JiaShan.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/JiaShan/JiaShan.png"
+    },
+    {
       "name": "Jianshouqing",
       "url": "https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Jianshouqing.png"
     },
@@ -6349,6 +6565,10 @@
     {
       "name": "JingFuGong",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/JingFuGong.png"
+    },
+    {
+      "name": "JingZhou.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/JingZhou/JingZhou.png"
     },
     {
       "name": "Jingzhe",
@@ -6535,6 +6755,10 @@
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Kazakhstan.png"
     },
     {
+      "name": "Kbj.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Kbj.png"
+    },
+    {
       "name": "KeLi",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/KeLi.png"
     },
@@ -6651,6 +6875,14 @@
       "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Kuai.png"
     },
     {
+      "name": "KuaiKan.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/KuaiKan.png"
+    },
+    {
+      "name": "KuaiKan.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Color/KuaiKan.png"
+    },
+    {
       "name": "Kuanemby",
       "url": "https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Kuanemby.png"
     },
@@ -6749,6 +6981,10 @@
     {
       "name": "Lambda.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Lambda.png"
+    },
+    {
+      "name": "LanJingLing.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/LanJingLing/LanJingLing.png"
     },
     {
       "name": "Laos",
@@ -7013,6 +7249,10 @@
     {
       "name": "Linkeless(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Linkeless(1).png"
+    },
+    {
+      "name": "Linovel.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Linovel.png"
     },
     {
       "name": "Linyun",
@@ -7443,6 +7683,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Macat.png"
     },
     {
+      "name": "Macat.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Macat.png"
+    },
+    {
       "name": "Madagascar",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Madagascar.png"
     },
@@ -7473,6 +7717,10 @@
     {
       "name": "MagicCloud",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/MagicCloud.png"
+    },
+    {
+      "name": "MagicJS",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/magicjs/images/logo.png"
     },
     {
       "name": "Magpie",
@@ -7683,6 +7931,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/Twoandz9/Miaosu.png"
     },
     {
+      "name": "Michelin.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Michelin.png"
+    },
+    {
       "name": "Mickey",
       "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Mickey.png"
     },
@@ -7737,6 +7989,10 @@
     {
       "name": "Micu",
       "url": "https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Micu.png"
+    },
+    {
+      "name": "Midea.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Midea.png"
     },
     {
       "name": "Midsummer",
@@ -7941,6 +8197,14 @@
     {
       "name": "Mouse.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Mouse.png"
+    },
+    {
+      "name": "MovieCalendar.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/MovieCalendar.png"
+    },
+    {
+      "name": "MovieCalendar.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/MovieCalendar.png"
     },
     {
       "name": "Movist",
@@ -8179,6 +8443,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Nerwo.png"
     },
     {
+      "name": "Nestle.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Nestle.png"
+    },
+    {
       "name": "NetEase_Music",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/NetEase_Music.png"
     },
@@ -8193,6 +8461,10 @@
     {
       "name": "Netease",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Netease.png"
+    },
+    {
+      "name": "Netease.png",
+      "url": "https://raw.githubusercontent.com/Keywos/rule/main/tv/app/144px/Netease.png"
     },
     {
       "name": "NeteaseMusic",
@@ -8459,6 +8731,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/NmEmby.png"
     },
     {
+      "name": "NobyDa 脚本订阅",
+      "url": "https://avatars2.githubusercontent.com/u/53217160"
+    },
+    {
       "name": "NodeLoc",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/NodeLoc.png"
     },
@@ -8619,6 +8895,14 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Oceania_Map.png"
     },
     {
+      "name": "Oclean.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Oclean.png"
+    },
+    {
+      "name": "Oclean.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Oclean.png"
+    },
+    {
       "name": "Odyssey",
       "url": "https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Odyssey.png"
     },
@@ -8737,6 +9021,10 @@
     {
       "name": "OtterLife",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/OtterLife.png"
+    },
+    {
+      "name": "OuHai.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/OuHai/OuHai.png"
     },
     {
       "name": "Outside",
@@ -9503,6 +9791,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/Twoandz9/Peiqian.png"
     },
     {
+      "name": "Peng-YM 应用订阅",
+      "url": "https://avatars2.githubusercontent.com/u/21050064?s=460&u=40a74913dd0a3d00670d05148c3a08c787470021&v=4"
+    },
+    {
       "name": "Perfect",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Perfect.png"
     },
@@ -9576,6 +9868,10 @@
     },
     {
       "name": "PingMe",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/PingMe.png"
+    },
+    {
+      "name": "PingMe.png",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/PingMe.png"
     },
     {
@@ -9943,6 +10239,14 @@
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Qidianzhan1.png"
     },
     {
+      "name": "QieHuang.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TongYi/QieHuang.png"
+    },
+    {
+      "name": "QingJiao.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/QingJiao/QingJiao.png"
+    },
+    {
       "name": "Qingfu",
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Qingfu.png"
     },
@@ -10047,6 +10351,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Quantumult_X_7.png"
     },
     {
+      "name": "Quark.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Quark.png"
+    },
+    {
       "name": "QuarkDrive",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/QuarkDrive.png"
     },
@@ -10133,6 +10441,10 @@
     {
       "name": "RecMata",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/RecMata.png"
+    },
+    {
+      "name": "RedBull.jpg",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.jpg"
     },
     {
       "name": "Redapricot",
@@ -10283,6 +10595,10 @@
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Romania.png"
     },
     {
+      "name": "RongPanAn.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RongPanAn/RongPanAn.png"
+    },
+    {
       "name": "Rookie",
       "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Rookie.png"
     },
@@ -10401,6 +10717,14 @@
     {
       "name": "SKNP",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/Twoandz9/SKNP.png"
+    },
+    {
+      "name": "SONY.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/SONY.png"
+    },
+    {
+      "name": "SONY.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/SONY.png"
     },
     {
       "name": "SS.png",
@@ -11525,6 +11849,10 @@
     {
       "name": "Spotify.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Spotify.png"
+    },
+    {
+      "name": "Spotify.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png"
     },
     {
       "name": "Spotify_01",
@@ -13083,6 +13411,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/menhera/Sticker_1335.png"
     },
     {
+      "name": "Stlxz.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Stlxz.png"
+    },
+    {
       "name": "StoneHenge",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/StoneHenge.png"
     },
@@ -13163,6 +13495,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/Twoandz9/Suannai.png"
     },
     {
+      "name": "Sub-Store Mega(请使用 Lite)",
+      "url": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/sub-store-scripts/mega/assets/icon.png"
+    },
+    {
       "name": "SubStore",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/SubStore.png"
     },
@@ -13193,6 +13529,10 @@
     {
       "name": "Suncloud",
       "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Sun.png"
+    },
+    {
+      "name": "Sunert 签到应用订阅",
+      "url": "https://avatars2.githubusercontent.com/u/47924389?s=460&u=5152f048a9e8aaa45102763a578172407c40fcc8&v=4"
     },
     {
       "name": "Surfboard",
@@ -13269,6 +13609,26 @@
     {
       "name": "Surge_01",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Surge_01.png"
+    },
+    {
+      "name": "Surge_logo.png",
+      "url": "https://raw.githubusercontent.com/githubdulong/Script/master/Images/Surge_logo.png"
+    },
+    {
+      "name": "Surge_run.png",
+      "url": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/assets/icons/Surge_run.png?raw=true"
+    },
+    {
+      "name": "Surge_run1.png",
+      "url": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/assets/icons/Surge_run1.png?raw=true"
+    },
+    {
+      "name": "Surge_run_transparent.png",
+      "url": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/assets/icons/Surge_run_transparent.png?raw=true"
+    },
+    {
+      "name": "Surge_run_transparent1.png",
+      "url": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/assets/icons/Surge_run_transparent1.png?raw=true"
     },
     {
       "name": "Suriname",
@@ -13371,6 +13731,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Switch.png"
     },
     {
+      "name": "Switch.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Switch.png"
+    },
+    {
       "name": "Switzerland",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Switzerland.png"
     },
@@ -13453,6 +13817,10 @@
     {
       "name": "TKV(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/TKV(1).png"
+    },
+    {
+      "name": "TKZX.PNG",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TKZX/TKZX.PNG"
     },
     {
       "name": "TMDB",
@@ -13759,6 +14127,14 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/TestFlight.png"
     },
     {
+      "name": "TestFlight_01.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/TestFlight_01.png"
+    },
+    {
+      "name": "TestFlight_03.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/TestFlight_03.png"
+    },
+    {
       "name": "TestFlight_1.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight_1.png"
     },
@@ -13817,6 +14193,10 @@
     {
       "name": "Thefreeemby",
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Thefreeemby.png"
+    },
+    {
+      "name": "ThomasCook.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/ThomasCook.png"
     },
     {
       "name": "Threads",
@@ -13949,6 +14329,10 @@
     {
       "name": "Tokelau",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Tokelau.png"
+    },
+    {
+      "name": "TongLu.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TongLu/TongLu.png"
     },
     {
       "name": "Tonga",
@@ -14121,6 +14505,10 @@
     {
       "name": "Twitter_04",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Twitter_04.png"
+    },
+    {
+      "name": "Two_color_ball.png",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/Two_color_ball.png"
     },
     {
       "name": "UA.png",
@@ -14575,6 +14963,14 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/LPL/WE.png"
     },
     {
+      "name": "WIFI.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/WIFI.png"
+    },
+    {
+      "name": "WIFI.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/WIFI.png"
+    },
+    {
       "name": "WTT.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/WTT.png"
     },
@@ -14585,6 +14981,10 @@
     {
       "name": "WYY",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/Twoandz9/WYY.png"
+    },
+    {
+      "name": "WYYX.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX.png"
     },
     {
       "name": "Wagon",
@@ -14617,6 +15017,10 @@
     {
       "name": "Wallless",
       "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Wallless.png"
+    },
+    {
+      "name": "WangChao.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WangChao/WangChao.png"
     },
     {
       "name": "WangZhe",
@@ -14657,6 +15061,10 @@
     {
       "name": "WeChat",
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/WeChat.png"
+    },
+    {
+      "name": "WeChat.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/WeChat.png"
     },
     {
       "name": "WeChat.png",
@@ -14720,6 +15128,10 @@
     },
     {
       "name": "Weibo-00",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Weibo-00.png"
+    },
+    {
+      "name": "Weibo-00.png",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Weibo-00.png"
     },
     {
@@ -14915,6 +15327,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/WeiboTalk.png"
     },
     {
+      "name": "WeiboTalk.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/WeiboTalk.png"
+    },
+    {
       "name": "Weiguang",
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Weiguang.png"
     },
@@ -14995,12 +15411,24 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png"
     },
     {
+      "name": "WowYiJiu 脚本订阅",
+      "url": "https://avatars.githubusercontent.com/u/63225855?v=4"
+    },
+    {
+      "name": "Wzyd.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Wzyd.png"
+    },
+    {
       "name": "X",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/X.png"
     },
     {
       "name": "X.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png"
+    },
+    {
+      "name": "X.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/X.png"
     },
     {
       "name": "X001.png",
@@ -15127,6 +15555,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/XfEmby1.png"
     },
     {
+      "name": "XiShiYan.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/XiShiYan/XiShiYan.png"
+    },
+    {
       "name": "Xiami",
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Xiami.png"
     },
@@ -15177,6 +15609,10 @@
     {
       "name": "Xiaozhuxuan",
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Xiaozhuxuan.png"
+    },
+    {
+      "name": "XinJiangBei.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/XinJiangBei/XinJiangBei.png"
     },
     {
       "name": "Xinghai",
@@ -15383,6 +15819,14 @@
       "url": "https://raw.githubusercontent.com/Softlyx/Fileball/main/YUAN/Yomo2.png"
     },
     {
+      "name": "YongPai.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YongPai/YongPai.png"
+    },
+    {
+      "name": "YongXin.jpg",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YongXin/YongXin.jpg"
+    },
+    {
       "name": "YouTube",
       "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png"
     },
@@ -15463,6 +15907,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Youtube.png"
     },
     {
+      "name": "Ysf.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Ysf.png"
+    },
+    {
       "name": "Ytoo1",
       "url": "https://raw.githubusercontent.com/black2c7/TheMagic-Icons/main/Icons/Ytoo1.png"
     },
@@ -15489,6 +15937,10 @@
     {
       "name": "YuanweiAcg",
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/YuanweiAcg.png"
+    },
+    {
+      "name": "YueCheng.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YueCheng/YueCheng.png"
     },
     {
       "name": "YueErFMChat",
@@ -15715,6 +16167,14 @@
       "url": "https://raw.githubusercontent.com/shoujiqiyuan/PVSZforQuanX/master/IconSet/Z0302.png"
     },
     {
+      "name": "ZSWY.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/ZSWY/ZSWY.png"
+    },
+    {
+      "name": "ZTE.png",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/ZTE/ZTE.png"
+    },
+    {
       "name": "Zalo",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Zalo.png"
     },
@@ -15787,6 +16247,10 @@
       "url": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Zimbabwe.png"
     },
     {
+      "name": "Zmhy.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Zmhy.png"
+    },
+    {
       "name": "Zoulu",
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Zoulu.png"
     },
@@ -15829,6 +16293,14 @@
     {
       "name": "acfun",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/acfun.png"
+    },
+    {
+      "name": "acfun.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/acfun.png"
+    },
+    {
+      "name": "acfun.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/acfun.png"
     },
     {
       "name": "ad",
@@ -15891,6 +16363,10 @@
       "url": "https://raw.githubusercontent.com/Yuanxsxs/QtumultX/master/Icon/Catcat/ae49e35adfd291ad.png"
     },
     {
+      "name": "aeon.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/aeon.png"
+    },
+    {
       "name": "aifun",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/aifun.png"
     },
@@ -15907,8 +16383,20 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/airport/airport.png"
     },
     {
+      "name": "airport.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/airport/airport.png"
+    },
+    {
       "name": "akkcloud",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/akkcloud.png"
+    },
+    {
+      "name": "aliYunPan.png",
+      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/aliYunPan.png"
+    },
+    {
+      "name": "aliYunPana.png",
+      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/aliYunPana.png"
     },
     {
       "name": "alicloud",
@@ -15921,6 +16409,14 @@
     {
       "name": "alipay",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/alipay.png"
+    },
+    {
+      "name": "alipay.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/alipay.png"
+    },
+    {
+      "name": "alipay.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/alipay.png"
     },
     {
       "name": "alist",
@@ -15947,12 +16443,24 @@
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/amazon.png"
     },
     {
+      "name": "ampDache.png",
+      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/ampDache.png"
+    },
+    {
       "name": "android.png",
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/android.png"
     },
     {
       "name": "anyland",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/anyland.png"
+    },
+    {
+      "name": "apktw.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/apktw.png"
+    },
+    {
+      "name": "apktw.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/apktw.png"
     },
     {
       "name": "apple",
@@ -15969,6 +16477,14 @@
     {
       "name": "applefitness+",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/applefitness%2B.png"
+    },
+    {
+      "name": "applestore.png",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/applestore/icon/applestore.png"
+    },
+    {
+      "name": "applestore_dark.png",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/applestore/icon/applestore_dark.png"
     },
     {
       "name": "aqiyi",
@@ -15991,8 +16507,16 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/atomlantis.png"
     },
     {
+      "name": "atstudy.png",
+      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/atstudy.png"
+    },
+    {
       "name": "audio.png",
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/audio.png"
+    },
+    {
+      "name": "avatar.png",
+      "url": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/asset/avatar.png"
     },
     {
       "name": "b2b4e2bf895a2c76.png",
@@ -16011,8 +16535,24 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bagel.png"
     },
     {
+      "name": "bahamutGame.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/bahamutGame.png"
+    },
+    {
+      "name": "bahamutGame.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Color/bahamutGame.png"
+    },
+    {
       "name": "bahamute",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bahamute.png"
+    },
+    {
+      "name": "baidu.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/baidu.png"
+    },
+    {
+      "name": "baidu.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/baidu.png"
     },
     {
       "name": "baidu.png",
@@ -16025,6 +16565,14 @@
     {
       "name": "baidunetdisk(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/baidunetdisk(1).png"
+    },
+    {
+      "name": "baiduspeed.png",
+      "url": "https://raw.githubusercontent.com/Sunert/Profiles/master/QuantumultX/Rules/Images/icon/baiduspeed.png"
+    },
+    {
+      "name": "baiduspeed_mini.png",
+      "url": "https://raw.githubusercontent.com/Sunert/Profiles/master/QuantumultX/Rules/Images/icon/baiduspeed_mini.png"
     },
     {
       "name": "baidutieba",
@@ -16049,6 +16597,14 @@
     {
       "name": "banwagong",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/banwagong.png"
+    },
+    {
+      "name": "bark.jpg",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/matrix/color/bark.jpg"
+    },
+    {
+      "name": "bark.jpg",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/matrix/dark/bark.jpg"
     },
     {
       "name": "bat",
@@ -16077,6 +16633,10 @@
     {
       "name": "bellsprout.png",
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/bellsprout.png"
+    },
+    {
+      "name": "bgps.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/bgps.png"
     },
     {
       "name": "bian",
@@ -16135,6 +16695,22 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/bilibili.png"
     },
     {
+      "name": "bilibili.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/bilibili.png"
+    },
+    {
+      "name": "bilibili.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Color/bilibili.png"
+    },
+    {
+      "name": "bilibili.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/bilibili.png"
+    },
+    {
+      "name": "bilibili.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/bilibili.png"
+    },
+    {
       "name": "bilibili_1.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_1.png"
     },
@@ -16183,6 +16759,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bing(3).png"
     },
     {
+      "name": "bingPoint.png",
+      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/bingPoint.png"
+    },
+    {
       "name": "bishi",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/bishi.png"
     },
@@ -16209,6 +16789,10 @@
     {
       "name": "blacklist(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/blacklist(1).png"
+    },
+    {
+      "name": "blackmatrix7 应用订阅",
+      "url": "https://avatars.githubusercontent.com/u/27717518?v=4"
     },
     {
       "name": "blogger.png",
@@ -16251,8 +16835,16 @@
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/bulbasaur.png"
     },
     {
+      "name": "bus.png",
+      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/bus.png"
+    },
+    {
       "name": "buschelaile",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/buschelaile.png"
+    },
+    {
+      "name": "bwcj.png",
+      "url": "https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj.png"
     },
     {
       "name": "bybit",
@@ -16295,6 +16887,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ccbLife.jpg"
     },
     {
+      "name": "ccbLife.jpg",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ccbLife.jpg"
+    },
+    {
       "name": "charmander.png",
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/charmander.png"
     },
@@ -16321,6 +16917,10 @@
     {
       "name": "chatgpt4.0",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatgpt4.0.png"
+    },
+    {
+      "name": "chavyleung应用订阅",
+      "url": "https://avatars3.githubusercontent.com/u/29748519?s=460&u=392a19e85465abbcb1791c9b8b32184a16e6795e&v=4"
     },
     {
       "name": "chaxun",
@@ -16351,6 +16951,14 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chery.png"
     },
     {
+      "name": "chery.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chery.png"
+    },
+    {
+      "name": "china_telecom.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/china_telecom.png"
+    },
+    {
       "name": "chinamobilemcloud",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/chinamobilemcloud.png"
     },
@@ -16377,6 +16985,10 @@
     {
       "name": "chinese",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/chinese.png"
+    },
+    {
+      "name": "chouchoui 应用订阅",
+      "url": "https://avatars3.githubusercontent.com/u/14866249?s=460&u=40faa1309b2303e1a3d9cec8f57f05c7005256de&v=4"
     },
     {
       "name": "chrom",
@@ -16435,6 +17047,14 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/cloudflare.png"
     },
     {
+      "name": "cmbchina.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/cmbchina.png"
+    },
+    {
+      "name": "cmbchina.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/cmbchina.png"
+    },
+    {
       "name": "cocoduck",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/cocoduck.png"
     },
@@ -16445,6 +17065,10 @@
     {
       "name": "cokecloud",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/cokecloud.png"
+    },
+    {
+      "name": "color.png",
+      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/color.png"
     },
     {
       "name": "congyuyun",
@@ -16459,12 +17083,28 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/cookie.png"
     },
     {
+      "name": "crh.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/crh.png"
+    },
+    {
       "name": "crush",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/crush.png"
     },
     {
+      "name": "cst.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/cst.png"
+    },
+    {
       "name": "ctc",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ctc.png"
+    },
+    {
+      "name": "ctrip.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/ctrip.png"
+    },
+    {
+      "name": "ctrip.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Color/ctrip.png"
     },
     {
       "name": "cursor",
@@ -16484,6 +17124,10 @@
     },
     {
       "name": "dalanshu 大蓝树",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/dalanshu.png"
+    },
+    {
+      "name": "dalanshu.png",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/dalanshu.png"
     },
     {
@@ -16513,6 +17157,10 @@
     {
       "name": "ddm_02",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ddm_02.png"
+    },
+    {
+      "name": "debug.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/debug.png"
     },
     {
       "name": "dedipath",
@@ -16563,6 +17211,14 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dewu.png"
     },
     {
+      "name": "dianshijia.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/dianshijia.png"
+    },
+    {
+      "name": "dianshijia.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/dianshijia.png"
+    },
+    {
       "name": "dianxin",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dianxin.png"
     },
@@ -16576,6 +17232,10 @@
     },
     {
       "name": "didi",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/didi.png"
+    },
+    {
+      "name": "didi.png",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/didi.png"
     },
     {
@@ -16696,6 +17356,10 @@
     },
     {
       "name": "douyu",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/douyu.png"
+    },
+    {
+      "name": "douyu.png",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/douyu.png"
     },
     {
@@ -16831,8 +17495,20 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/epic(1).png"
     },
     {
+      "name": "epic.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/epic.png"
+    },
+    {
+      "name": "epic.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/epic.png"
+    },
+    {
       "name": "epub",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/epub.png"
+    },
+    {
+      "name": "erke.png",
+      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/erke.png"
     },
     {
       "name": "error",
@@ -16847,8 +17523,24 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/eton.png"
     },
     {
+      "name": "eu.org.png",
+      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/eu.org.png"
+    },
+    {
       "name": "evernote.png",
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/evernote.png"
+    },
+    {
+      "name": "everphoto.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/everphoto.png"
+    },
+    {
+      "name": "everphoto.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/everphoto.png"
+    },
+    {
+      "name": "ex.png",
+      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/ex.png"
     },
     {
       "name": "exhentai",
@@ -16899,6 +17591,14 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/fan.png"
     },
     {
+      "name": "fandeng.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/fandeng.png"
+    },
+    {
+      "name": "fandeng.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/fandeng.png"
+    },
+    {
       "name": "fanqiexiaoshuo",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/fanqiexiaoshuo.png"
     },
@@ -16921,6 +17621,14 @@
     {
       "name": "feiyue",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/feiyue.png"
+    },
+    {
+      "name": "feng.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/feng.png"
+    },
+    {
+      "name": "feng.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/feng.png"
     },
     {
       "name": "fengling",
@@ -16955,12 +17663,32 @@
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/flickr.png"
     },
     {
+      "name": "flow.png",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/flow.png"
+    },
+    {
+      "name": "flow_mini.png",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/flow_mini.png"
+    },
+    {
       "name": "flowcast666",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/flowcast666.png"
     },
     {
+      "name": "fly.gif",
+      "url": "https://raw.githubusercontent.com/zZPiglet/Task/master/img/fly.gif"
+    },
+    {
       "name": "flyert",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/flyert.png"
+    },
+    {
+      "name": "flyertea.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/flyertea.png"
+    },
+    {
+      "name": "flyertea.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/flyertea.png"
     },
     {
       "name": "fmz200",
@@ -16977,6 +17705,10 @@
     {
       "name": "fmz200",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/fmz200-04.png"
+    },
+    {
+      "name": "fmz200のBoxJS订阅",
+      "url": "https://avatars.githubusercontent.com/u/57740735?s=60&v=4"
     },
     {
       "name": "forward",
@@ -16999,6 +17731,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/airport/frog.jpeg"
     },
     {
+      "name": "ftms.png",
+      "url": "https://raw.githubusercontent.com/dompling/Scriptable/master/images/ftms.png"
+    },
+    {
       "name": "fuboTV.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/fuboTV.png"
     },
@@ -17007,12 +17743,24 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/fuboTV.png"
     },
     {
+      "name": "funko.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/funko.png"
+    },
+    {
+      "name": "funko_tran.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/funko_tran.png"
+    },
+    {
       "name": "fuzai",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/fuzai.png"
     },
     {
       "name": "fuzai(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/fuzai(1).png"
+    },
+    {
+      "name": "fxsh.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/fxsh.png"
     },
     {
       "name": "game",
@@ -17035,6 +17783,22 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/gateio.png"
     },
     {
+      "name": "gdoil.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/gdoil.png"
+    },
+    {
+      "name": "gdoil.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/gdoil.png"
+    },
+    {
+      "name": "gdong.png",
+      "url": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/gdong.png"
+    },
+    {
+      "name": "gdong.png",
+      "url": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Color/gdong.png"
+    },
+    {
       "name": "gemini",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/gemini.png"
     },
@@ -17043,12 +17807,36 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/gemini(1).png"
     },
     {
+      "name": "geocaching.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/geocaching.png"
+    },
+    {
       "name": "github",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/github.png"
     },
     {
       "name": "github(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/github(1).png"
+    },
+    {
+      "name": "github-bf.png",
+      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/github-bf.png"
+    },
+    {
+      "name": "github-black.jpg",
+      "url": "https://raw.githubusercontent.com/dompling/Script/master/icon/github-black.jpg"
+    },
+    {
+      "name": "github-white.jpg",
+      "url": "https://raw.githubusercontent.com/dompling/Script/master/icon/github-white.jpg"
+    },
+    {
+      "name": "github.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/github.png"
+    },
+    {
+      "name": "github.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/github.png"
     },
     {
       "name": "github.png",
@@ -17131,6 +17919,22 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/github_18.png"
     },
     {
+      "name": "glados1.png",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/glados1.png"
+    },
+    {
+      "name": "glados1_mini.png",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/glados1_mini.png"
+    },
+    {
+      "name": "glados_animation.gif",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/glados_animation.gif"
+    },
+    {
+      "name": "glados_mini.png",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/glados_mini.png"
+    },
+    {
       "name": "gmail",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/gmail.png"
     },
@@ -17191,6 +17995,14 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/guojiayibao.png"
     },
     {
+      "name": "gxrcw.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/gxrcw.png"
+    },
+    {
+      "name": "gxrcw_tran.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/gxrcw_tran.png"
+    },
+    {
       "name": "hamhub",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/hamhub.png"
     },
@@ -17219,12 +18031,36 @@
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/hat.png"
     },
     {
+      "name": "hch.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/hch.png"
+    },
+    {
+      "name": "heiliao.png",
+      "url": "https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/heiliao.png"
+    },
+    {
       "name": "hela",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/hela.png"
     },
     {
+      "name": "heytea.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/heytea.png"
+    },
+    {
+      "name": "hifinisignin-dark.png",
+      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/hifinisignin-dark.png"
+    },
+    {
+      "name": "hifinisignin.png",
+      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/hifinisignin.png"
+    },
+    {
       "name": "himalaya",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/himalaya.png"
+    },
+    {
+      "name": "hisense.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/hisense.png"
     },
     {
       "name": "hitun.png",
@@ -17263,6 +18099,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/hongxingyun.png"
     },
     {
+      "name": "hot.png",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/hot.png"
+    },
+    {
       "name": "hot_search",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/hot_search.png"
     },
@@ -17279,12 +18119,28 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/huihuyunnetworks.png"
     },
     {
+      "name": "huke.png",
+      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/huke.png"
+    },
+    {
+      "name": "huke_mini.png",
+      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/huke_mini.png"
+    },
+    {
       "name": "huobi",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/huobi.png"
     },
     {
       "name": "huyazhibo",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/huyazhibo.png"
+    },
+    {
+      "name": "hzh.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh.png"
+    },
+    {
+      "name": "hzh_tran.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png"
     },
     {
       "name": "iBeta",
@@ -17301,6 +18157,10 @@
     {
       "name": "iCloud.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/iCloud.png"
+    },
+    {
+      "name": "iMaoTai.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/iMaoTai.png"
     },
     {
       "name": "iNetS",
@@ -17327,6 +18187,14 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/iQIYI.png"
     },
     {
+      "name": "iQIYI.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/iQIYI.png"
+    },
+    {
+      "name": "iQIYI.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Color/iQIYI.png"
+    },
+    {
       "name": "iQIYI_1.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI_1.png"
     },
@@ -17337,6 +18205,18 @@
     {
       "name": "iRingo",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/iRingo.png"
+    },
+    {
+      "name": "id77 脚本订阅",
+      "url": "https://avatars0.githubusercontent.com/u/9592236"
+    },
+    {
+      "name": "idaily.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/idaily.png"
+    },
+    {
+      "name": "idaily_tran.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/idaily_tran.png"
     },
     {
       "name": "ihezu",
@@ -17399,12 +18279,72 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/iqoo.png"
     },
     {
+      "name": "iqooc.png",
+      "url": "https://raw.githubusercontent.com/czy13724/LeviIcons/main/leviicons/iqooc.png"
+    },
+    {
       "name": "ithome",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/ithome.png"
     },
     {
+      "name": "ithome.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/ithome.png"
+    },
+    {
+      "name": "ithome.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/ithome.png"
+    },
+    {
+      "name": "i茅台预约",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ae/f4/18/aef41811-955e-e6b0-5d23-6763c2eef1ab/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png"
+    },
+    {
+      "name": "javday.png",
+      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/javday.png"
+    },
+    {
+      "name": "jd.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/jd.png"
+    },
+    {
+      "name": "jd.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Color/jd.png"
+    },
+    {
+      "name": "jd.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/jd.png"
+    },
+    {
+      "name": "jd.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
+    },
+    {
+      "name": "jdWuLiu.png",
+      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/jdWuLiu.png"
+    },
+    {
+      "name": "jd_car.png",
+      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/jd_car.png"
+    },
+    {
+      "name": "jddj.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/jddj.png"
+    },
+    {
+      "name": "jddj.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/jddj.png"
+    },
+    {
+      "name": "jdjoy.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jdjoy.png"
+    },
+    {
       "name": "jellyfin",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jellyfin.png"
+    },
+    {
+      "name": "jhsh.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jhsh.png"
     },
     {
       "name": "jiajiayun",
@@ -17439,6 +18379,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jingdong(2).png"
     },
     {
+      "name": "jingfen.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jingfen.png"
+    },
+    {
       "name": "jinmenyun",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/jinmenyun.png"
     },
@@ -17455,8 +18399,36 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jiuhaochuxing.png"
     },
     {
+      "name": "jiumu.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/jiumu.png"
+    },
+    {
+      "name": "jiumu_tran.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/jiumu_tran.png"
+    },
+    {
       "name": "jiux",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/jiux.png"
+    },
+    {
+      "name": "jparking.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jparking.png"
+    },
+    {
+      "name": "jsb.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/jsb.png"
+    },
+    {
+      "name": "jukan.png",
+      "url": "https://raw.githubusercontent.com/Sunert/Profiles/master/QuantumultX/Rules/Images/icon/jukan.png"
+    },
+    {
+      "name": "jukan_mini.png",
+      "url": "https://raw.githubusercontent.com/Sunert/Profiles/master/QuantumultX/Rules/Images/icon/jukan_mini.png"
+    },
+    {
+      "name": "jump.png",
+      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/jump.png"
     },
     {
       "name": "jwt",
@@ -17511,6 +18483,14 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/kittynetwork.png"
     },
     {
+      "name": "klcw.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw.png"
+    },
+    {
+      "name": "klcw_tran.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw_tran.png"
+    },
+    {
       "name": "kuaichongyun",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/kuaichongyun.png"
     },
@@ -17525,6 +18505,18 @@
     {
       "name": "kuaishou",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/kuaishou.png"
+    },
+    {
+      "name": "kuaishou.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/kuaishou.png"
+    },
+    {
+      "name": "kuaishou.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/kuaishou.png"
+    },
+    {
+      "name": "kuaishou.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/kuaishou.png"
     },
     {
       "name": "kuancoolapk",
@@ -17623,6 +18615,10 @@
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/line.png"
     },
     {
+      "name": "link.png",
+      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/link.png"
+    },
+    {
       "name": "linkcube",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/linkcube.png"
     },
@@ -17691,8 +18687,24 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/liuliang(6).png"
     },
     {
+      "name": "livingmall.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/livingmall.png"
+    },
+    {
+      "name": "lkyl.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/lkyl.png"
+    },
+    {
+      "name": "lkyl.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/lkyl.png"
+    },
+    {
       "name": "llgjc",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/llgjc.png"
+    },
+    {
+      "name": "logo_dark.png",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/magicjs/images/logo_dark.png"
     },
     {
       "name": "longbridge",
@@ -17707,8 +18719,16 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/lovekey.png"
     },
     {
+      "name": "lowking应用订阅",
+      "url": "https://avatars0.githubusercontent.com/u/33308659?s=460&u=9223074586cb14f2ae7ee0953515f8781ded8be9&v=4"
+    },
+    {
       "name": "luckin",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/luckin.png"
+    },
+    {
+      "name": "luka.png",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/luka/luka.png"
     },
     {
       "name": "luyuyun",
@@ -17717,6 +18737,10 @@
     {
       "name": "luyuyun(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/luyuyun(1).png"
+    },
+    {
+      "name": "lzft.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/lzft.png"
     },
     {
       "name": "lzymtzpd",
@@ -17755,6 +18779,14 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/mail(3).png"
     },
     {
+      "name": "manga.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/manga.png"
+    },
+    {
+      "name": "manga.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Color/manga.png"
+    },
+    {
       "name": "mangguotv",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/mangguotv.png"
     },
@@ -17791,6 +18823,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/mega.png"
     },
     {
+      "name": "meitu.png",
+      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/meitu.png"
+    },
+    {
       "name": "meituan",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meituan.png"
     },
@@ -17801,6 +18837,18 @@
     {
       "name": "meituan(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/meituan(1).png"
+    },
+    {
+      "name": "meituan.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/meituan.png"
+    },
+    {
+      "name": "meituan.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/meituan.png"
+    },
+    {
+      "name": "meituan.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meituan.png"
     },
     {
       "name": "meituxiuxiu",
@@ -17855,6 +18903,18 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/mexc.png"
     },
     {
+      "name": "mgtv.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/mgtv.png"
+    },
+    {
+      "name": "mgtv.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/mgtv.png"
+    },
+    {
+      "name": "mi_sport.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/mi_sport.png"
+    },
+    {
       "name": "miaomiaoyun",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/miaomiaoyun.png"
     },
@@ -17887,8 +18947,16 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/milkcat.png"
     },
     {
+      "name": "mini.png",
+      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/mini.png"
+    },
+    {
       "name": "misakaF",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/misakaF.png"
+    },
+    {
+      "name": "missevan.png",
+      "url": "https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/missevan.png"
     },
     {
       "name": "mitce",
@@ -17905,6 +18973,18 @@
     {
       "name": "mixuebingcheng(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/mixuebingcheng(1).png"
+    },
+    {
+      "name": "miyoushe.png",
+      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/miyoushe.png"
+    },
+    {
+      "name": "moji.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/moji.png"
+    },
+    {
+      "name": "moji.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/moji.png"
     },
     {
       "name": "mojie(1)",
@@ -17931,6 +19011,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/mxbc.png"
     },
     {
+      "name": "mxbc.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png"
+    },
+    {
       "name": "myTV_SUPER.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/myTV_SUPER.png"
     },
@@ -17939,12 +19023,24 @@
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/myTV_SUPER.png"
     },
     {
+      "name": "mydigit.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/mydigit.png"
+    },
+    {
+      "name": "mydigit.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/mydigit.png"
+    },
+    {
       "name": "naiu",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/naiu.png"
     },
     {
       "name": "naiu(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/naiu(1).png"
+    },
+    {
+      "name": "naixue.png",
+      "url": "https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/naixue.png"
     },
     {
       "name": "nanguadianying",
@@ -17959,6 +19055,34 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/nanoPort.png"
     },
     {
+      "name": "nasa.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa.png"
+    },
+    {
+      "name": "nasa_tran.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa_tran.png"
+    },
+    {
+      "name": "ncsp.png",
+      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/ncsp.png"
+    },
+    {
+      "name": "neteasemusic.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/neteasemusic.png"
+    },
+    {
+      "name": "neteasemusic.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/neteasemusic.png"
+    },
+    {
+      "name": "neteasenews.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/neteasenews.png"
+    },
+    {
+      "name": "neteasenews.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/neteasenews.png"
+    },
+    {
       "name": "netflix",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/netflix.png"
     },
@@ -17969,6 +19093,10 @@
     {
       "name": "netflix(red)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/netflix(red).png"
+    },
+    {
+      "name": "netflixgc.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/netflixgc.png"
     },
     {
       "name": "netgoldstar",
@@ -17993,6 +19121,22 @@
     {
       "name": "nfxiaopu",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/nfxiaopu.jpeg"
+    },
+    {
+      "name": "nfzm.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/nfzm.png"
+    },
+    {
+      "name": "nfzm.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/nfzm.png"
+    },
+    {
+      "name": "nga.png",
+      "url": "https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/nga/nga.png"
+    },
+    {
+      "name": "nga.task.png",
+      "url": "https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/nga/nga.task.png"
     },
     {
       "name": "nianyun",
@@ -18043,6 +19187,18 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/nodeseek.png"
     },
     {
+      "name": "nodeseek.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/nodeseek.png"
+    },
+    {
+      "name": "noteyoudao.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/noteyoudao.png"
+    },
+    {
+      "name": "noteyoudao.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/noteyoudao.png"
+    },
+    {
       "name": "now",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/now.png"
     },
@@ -18072,6 +19228,10 @@
     },
     {
       "name": "oil",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/oil.png"
+    },
+    {
+      "name": "oil.png",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/oil.png"
     },
     {
@@ -18139,6 +19299,14 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/paga.png"
     },
     {
+      "name": "pagoda.png",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/pagoda.png"
+    },
+    {
+      "name": "pagoda_mini.png",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/pagoda_mini.png"
+    },
+    {
       "name": "paipai",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/paipai.png"
     },
@@ -18187,12 +19355,20 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/peiqianjichang.png"
     },
     {
+      "name": "pgsh.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/pgsh.png"
+    },
+    {
       "name": "photo_2022-05-31_15-30-03.png",
       "url": "https://raw.githubusercontent.com/Yuanxsxs/QtumultX/master/Icon/Catcat/photo_2022-05-31_15-30-03.png"
     },
     {
       "name": "picachu_play.png",
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/picachu_play.png"
+    },
+    {
+      "name": "picc.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/picc.png"
     },
     {
       "name": "pidgey.png",
@@ -18225,6 +19401,10 @@
     {
       "name": "pinduoduo(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/pinduoduo(1).png"
+    },
+    {
+      "name": "pinduoduo.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/pinduoduo.png"
     },
     {
       "name": "pinganhaochezhu",
@@ -18299,6 +19479,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/pokemon.png"
     },
     {
+      "name": "pp_parking.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/pp_parking.png"
+    },
+    {
       "name": "proxmox",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/proxmox.png"
     },
@@ -18311,6 +19495,22 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/pukoudaixiaoyuan.png"
     },
     {
+      "name": "pupu.png",
+      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/pupu.png"
+    },
+    {
+      "name": "pupua.png",
+      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/pupua.png"
+    },
+    {
+      "name": "qcej.png",
+      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/qcej.png"
+    },
+    {
+      "name": "qdsnmc.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/qdsnmc.png"
+    },
+    {
       "name": "qidian",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/qidian.png"
     },
@@ -18321,6 +19521,14 @@
     {
       "name": "qingfengyun",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/qingfengyun.png"
+    },
+    {
+      "name": "qinglong.png",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/magicjs/images/qinglong.png"
+    },
+    {
+      "name": "qinglong_dark.png",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/magicjs/images/qinglong_dark.png"
     },
     {
       "name": "qingting9dragonfly",
@@ -18339,6 +19547,30 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/qishuiyinyue.png"
     },
     {
+      "name": "ql.png",
+      "url": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/ql.png"
+    },
+    {
+      "name": "ql.png",
+      "url": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Color/ql.png"
+    },
+    {
+      "name": "ql.png",
+      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/ql.png"
+    },
+    {
+      "name": "ql.png",
+      "url": "https://raw.githubusercontent.com/dompling/Script/master/image/ql.png"
+    },
+    {
+      "name": "qmkg.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/qmkg.png"
+    },
+    {
+      "name": "qmkg.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/qmkg.png"
+    },
+    {
       "name": "qq",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/qq.png"
     },
@@ -18349,6 +19581,18 @@
     {
       "name": "qq(2)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/qq(2).png"
+    },
+    {
+      "name": "qqvip.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/qqvip.png"
+    },
+    {
+      "name": "qqvip.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/qqvip.png"
+    },
+    {
+      "name": "qtx.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/qtx.png"
     },
     {
       "name": "quanqiu",
@@ -18421,6 +19665,10 @@
     {
       "name": "rattata.png",
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/rattata.png"
+    },
+    {
+      "name": "rbxj.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/rbxj.png"
     },
     {
       "name": "reddit",
@@ -18523,6 +19771,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/rrgg_inc.png"
     },
     {
+      "name": "sakura.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/sakura.png"
+    },
+    {
       "name": "scrssr",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/scrssr.jpeg"
     },
@@ -18545,6 +19797,22 @@
     {
       "name": "sensortower",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/sensortower.png"
+    },
+    {
+      "name": "setTime.png",
+      "url": "https://raw.githubusercontent.com/dompling/Script/master/icon/setTime.png"
+    },
+    {
+      "name": "sfexpress.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/sfexpress.png"
+    },
+    {
+      "name": "sfexpress.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/sfexpress.png"
+    },
+    {
+      "name": "sfsy.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/sfsy.png"
     },
     {
       "name": "shadowrocket",
@@ -18655,6 +19923,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/sifangcai.png"
     },
     {
+      "name": "sim.png",
+      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+    },
+    {
       "name": "singapore",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/singapore.png"
     },
@@ -18677,6 +19949,10 @@
     {
       "name": "siri(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/siri(1).png"
+    },
+    {
+      "name": "sjxzs.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/sjxzs.png"
     },
     {
       "name": "skylines",
@@ -18704,6 +19980,18 @@
     },
     {
       "name": "smzdm",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/smzdm.png"
+    },
+    {
+      "name": "smzdm.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/smzdm.png"
+    },
+    {
+      "name": "smzdm.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/smzdm.png"
+    },
+    {
+      "name": "smzdm.png",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/smzdm.png"
     },
     {
@@ -18791,6 +20079,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ssone.png"
     },
     {
+      "name": "ssq_tran.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/ssq_tran.png"
+    },
+    {
       "name": "ssrcloud.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/ssrcloud.png"
     },
@@ -18843,6 +20135,14 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/sultanahmedmosque.png"
     },
     {
+      "name": "suning.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/suning.png"
+    },
+    {
+      "name": "suning.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/suning.png"
+    },
+    {
       "name": "suno",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/suno.png"
     },
@@ -18871,8 +20171,20 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/swy.png"
     },
     {
+      "name": "sydw.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/sydw.png"
+    },
+    {
+      "name": "sydw_tran.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/sydw_tran.png"
+    },
+    {
       "name": "syn(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/syn(1).png"
+    },
+    {
+      "name": "sync.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/sync.png"
     },
     {
       "name": "tailscale",
@@ -18931,12 +20243,32 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/taoqitu.png"
     },
     {
+      "name": "tb.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/tb.png"
+    },
+    {
+      "name": "tb_tran.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/tb_tran.png"
+    },
+    {
+      "name": "teaMilk.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/teaMilk.png"
+    },
+    {
       "name": "teams",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/teams.png"
     },
     {
       "name": "teasmoke",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/teasmoke.png"
+    },
+    {
+      "name": "telecominfinty.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/telecominfinty.png"
+    },
+    {
+      "name": "telecominfinty.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/telecominfinty.png"
     },
     {
       "name": "telegram",
@@ -18963,6 +20295,14 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/telegram(blue1).png"
     },
     {
+      "name": "telegram.png",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/telegram.png"
+    },
+    {
+      "name": "telegram_mini.png",
+      "url": "https://raw.githubusercontent.com/58xinian/icon/master/telegram_mini.png"
+    },
+    {
       "name": "tencent",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/tencent.png"
     },
@@ -18987,6 +20327,14 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/tengxuntiyu.png"
     },
     {
+      "name": "tenvideo.png",
+      "url": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/tenvideo.png"
+    },
+    {
+      "name": "tenvideo.png",
+      "url": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Color/tenvideo.png"
+    },
+    {
       "name": "tesla",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/tesla.png"
     },
@@ -19003,12 +20351,40 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/testflight(2).png"
     },
     {
+      "name": "testflight.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/testflight.png"
+    },
+    {
+      "name": "testflight.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Color/testflight.png"
+    },
+    {
+      "name": "testflight.png",
+      "url": "https://raw.githubusercontent.com/githubdulong/Script/master/Images/testflight.png"
+    },
+    {
       "name": "tianping",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/tianping.png"
     },
     {
       "name": "tianping(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/tianping(1).png"
+    },
+    {
+      "name": "tieba.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/tieba.png"
+    },
+    {
+      "name": "tieba.png",
+      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Color/tieba.png"
+    },
+    {
+      "name": "tieba.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/tieba.png"
+    },
+    {
+      "name": "tieba.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/tieba.png"
     },
     {
       "name": "tiktok",
@@ -19023,8 +20399,20 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/tiktok(1).png"
     },
     {
+      "name": "timepop.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/timepop.png"
+    },
+    {
+      "name": "timepop_tran.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/timepop_tran.png"
+    },
+    {
       "name": "tinder",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/tinder.png"
+    },
+    {
+      "name": "tjdd.png",
+      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/tjdd.png"
     },
     {
       "name": "tmobile",
@@ -19039,6 +20427,14 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/torii.png"
     },
     {
+      "name": "toulanboy 脚本订阅",
+      "url": "https://avatars2.githubusercontent.com/u/12446619?s=460&v=4"
+    },
+    {
+      "name": "tpt.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/tpt.png"
+    },
+    {
       "name": "trakt",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/trakt.png"
     },
@@ -19047,12 +20443,36 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/trakt(1).png"
     },
     {
+      "name": "translate.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/translate.png"
+    },
+    {
+      "name": "translate.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/translate.png"
+    },
+    {
+      "name": "tsl.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tsl.png"
+    },
+    {
       "name": "tt",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/tt.png"
     },
     {
       "name": "tt(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/tt(1).png"
+    },
+    {
+      "name": "tuhu.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png"
+    },
+    {
+      "name": "tvpreview.png",
+      "url": "https://raw.githubusercontent.com/Sunert/Profiles/master/QuantumultX/Rules/Images/icon/tvpreview.png"
+    },
+    {
+      "name": "tvpreview_mini.png",
+      "url": "https://raw.githubusercontent.com/Sunert/Profiles/master/QuantumultX/Rules/Images/icon/tvpreview_mini.png"
     },
     {
       "name": "twitch",
@@ -19087,8 +20507,24 @@
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/twitter.png"
     },
     {
+      "name": "txnews.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/txnews.png"
+    },
+    {
+      "name": "txnews.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/txnews.png"
+    },
+    {
       "name": "ubuntu",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/ubuntu.png"
+    },
+    {
+      "name": "v2ex.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/v2ex.png"
+    },
+    {
+      "name": "v2ex.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/v2ex.png"
     },
     {
       "name": "v2paw",
@@ -19101,6 +20537,14 @@
     {
       "name": "venonat.png",
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/venonat.png"
+    },
+    {
+      "name": "videoqq.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/videoqq.png"
+    },
+    {
+      "name": "videoqq.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/videoqq.png"
     },
     {
       "name": "vidhub",
@@ -19141,6 +20585,14 @@
     {
       "name": "wanda(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/wanda(1).png"
+    },
+    {
+      "name": "wanda.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/wanda.png"
+    },
+    {
+      "name": "wanda.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/wanda.png"
     },
     {
       "name": "wangfeimaowfm",
@@ -19199,6 +20651,18 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/wechat(1).png"
     },
     {
+      "name": "wechat.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/wechat.png"
+    },
+    {
+      "name": "wechat_pay_coupon.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png"
+    },
+    {
+      "name": "wechat_tran.png",
+      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/wechat_tran.png"
+    },
+    {
       "name": "weedle.png",
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/hand-painted/56.png"
     },
@@ -19209,6 +20673,14 @@
     {
       "name": "weibo(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/weibo(1).png"
+    },
+    {
+      "name": "weibo.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/weibo.png"
+    },
+    {
+      "name": "weibo.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/weibo.png"
     },
     {
       "name": "westdata",
@@ -19271,6 +20743,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/wmbwc.png"
     },
     {
+      "name": "wmbwc.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/wmbwc.png"
+    },
+    {
       "name": "woniu4k",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/woniu4k.png"
     },
@@ -19285,6 +20761,18 @@
     {
       "name": "wps(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/wps(1).png"
+    },
+    {
+      "name": "wps.png",
+      "url": "https://raw.githubusercontent.com/MaYIHEI/pin/refs/heads/main/app/wps.png"
+    },
+    {
+      "name": "wps.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/wps.png"
+    },
+    {
+      "name": "wps.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/wps.png"
     },
     {
       "name": "wulavpn",
@@ -19305,6 +20793,10 @@
     {
       "name": "wuyouyun(1)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/wuyouyun(1).png"
+    },
+    {
+      "name": "wyx.png",
+      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/wyx.png"
     },
     {
       "name": "wyy",
@@ -19387,6 +20879,10 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/xbox.png"
     },
     {
+      "name": "xcbwc.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/xcbwc.png"
+    },
+    {
       "name": "xfss1",
       "url": "https://raw.githubusercontent.com/black2c7/TheMagic-Icons/main/Icons/xfss1.png"
     },
@@ -19433,6 +20929,10 @@
     {
       "name": "xiaohongshu(2)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiaohongshu(2).png"
+    },
+    {
+      "name": "xiaohongshu.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/xiaohongshu.png"
     },
     {
       "name": "xiaohuanRodelPlayer",
@@ -19491,8 +20991,24 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/ximalaya.png"
     },
     {
+      "name": "ximalaya.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/ximalaya.png"
+    },
+    {
+      "name": "ximalaya.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/ximalaya.png"
+    },
+    {
+      "name": "xinian.png",
+      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/xinian.png"
+    },
+    {
       "name": "xitongdianchifenxi",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xitongdianchifenxi.png"
+    },
+    {
+      "name": "xmApp.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/xmApp.png"
     },
     {
       "name": "xqcloud",
@@ -19531,8 +21047,24 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xunlei.png"
     },
     {
+      "name": "xxyx.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/xxyx.png"
+    },
+    {
+      "name": "xxyx_01.png",
+      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/xxyx_01.png"
+    },
+    {
+      "name": "xzxxn.JPG",
+      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/xzxxn.JPG"
+    },
+    {
       "name": "yawang",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yawang.png"
+    },
+    {
+      "name": "ydyp.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/ydyp.png"
     },
     {
       "name": "yeshayun",
@@ -19549,6 +21081,18 @@
     {
       "name": "yeshayun(3)",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yeshayun(3).png"
+    },
+    {
+      "name": "yhss.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/yhss.png"
+    },
+    {
+      "name": "yht.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/yht.png"
+    },
+    {
+      "name": "yiLi.png",
+      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png"
     },
     {
       "name": "yidong",
@@ -19611,6 +21155,14 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/youkushipin(1).png"
     },
     {
+      "name": "youth.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/youth.png"
+    },
+    {
+      "name": "youth.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/youth.png"
+    },
+    {
       "name": "youtu",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/youtu.png"
     },
@@ -19635,6 +21187,10 @@
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/youtube.png"
     },
     {
+      "name": "yrh.png",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/yrh.png"
+    },
+    {
       "name": "ytoo",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/ytoo.png"
     },
@@ -19651,8 +21207,16 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/yu(2).png"
     },
     {
+      "name": "yuchenios.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/yuchenios.png"
+    },
+    {
       "name": "yuezhianmian",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/yuezhianmian.png"
+    },
+    {
+      "name": "yuheng 脚本订阅",
+      "url": "https://avatars.githubusercontent.com/u/50571734?s=460&u=808616a26243d457cae2e41ffa728895e1e5ed4b&v=4"
     },
     {
       "name": "yujiyun",
@@ -19711,6 +21275,14 @@
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/zapdos.png"
     },
     {
+      "name": "zbs.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/zbs.png"
+    },
+    {
+      "name": "zgrb.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/zgrb.png"
+    },
+    {
       "name": "zhangjun",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/zhangjun.png"
     },
@@ -19729,6 +21301,10 @@
     {
       "name": "zhaoshangyinhang",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/zhaoshangyinhang.png"
+    },
+    {
+      "name": "zheye.png",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zheye/zheye.png"
     },
     {
       "name": "zhihu",
@@ -19759,6 +21335,14 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/zhuanyi(4).png"
     },
     {
+      "name": "zippo.jpg",
+      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/zippo.jpg"
+    },
+    {
+      "name": "zippo.png",
+      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/zippo.png"
+    },
+    {
       "name": "zoomearth",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/zoomearth.png"
     },
@@ -19775,8 +21359,24 @@
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/zuiyou.png"
     },
     {
+      "name": "zxhc.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/zxhc.png"
+    },
+    {
+      "name": "zxhc.png",
+      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/zxhc.png"
+    },
+    {
+      "name": "zzz.png",
+      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/zzz.png"
+    },
+    {
       "name": "中信银行",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/CNCB.png"
+    },
+    {
+      "name": "中国联通",
+      "url": "https://github.com/ChinaTelecomOperators/ChinaUnicom/releases/download/Prerelease-Alpha/icon.png"
     },
     {
       "name": "中国银行",
@@ -19809,6 +21409,10 @@
     {
       "name": "发现生活",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/CGDB_1.png"
+    },
+    {
+      "name": "字符串替换",
+      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/default.png"
     },
     {
       "name": "少数派",
@@ -19851,6 +21455,10 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/CMBC.png"
     },
     {
+      "name": "波点音乐自动签到",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/05/b9/57/05b9577c-3773-cd2b-5a99-49c0dc3f331d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png"
+    },
+    {
       "name": "浦发银行",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/SPDB.png"
     },
@@ -19867,12 +21475,32 @@
       "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Airport/baiyueguang.png"
     },
     {
+      "name": "第三方库缓存查看",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0d/31/0b/0d310b25-aa91-99c5-b23b-af1e8753c4d0/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/144x144.png"
+    },
+    {
+      "name": "网上国网（95598）",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/83/d8/8a/83d88a92-5a4d-7a2f-118c-80d795e7a9f6/AppIcon-0-0-1x_U007emarketing-0-5-0-0-sRGB-85-220.png/144x144.png"
+    },
+    {
       "name": "花云",
       "url": "https://raw.githubusercontent.com/erdongchanyo/icon/main/Airport/huacloud.png"
     },
     {
+      "name": "起点读书自动签到",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/97/40/5e/97405e49-87bb-3f0a-bf3a-91cf8fdf99a0/AppIcon-0-0-1x_U007epad-0-1-0-0-sRGB-GLES2_U002c0-85-220.png/144x144.png"
+    },
+    {
       "name": "邮储银行",
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/PSBC.png"
+    },
+    {
+      "name": "酷我音乐",
+      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4c/a1/f9/4ca1f959-ec03-5080-c142-c059a6ed844c/AppIcon-1x_U007emarketing-0-7-0-0-sRGB-85-220-0.png/144x144.png"
+    },
+    {
+      "name": "青龙面板配置",
+      "url": "https://qn.whyour.cn/logo.png"
     }
   ]
 }

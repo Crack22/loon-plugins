@@ -1,0 +1,10 @@
+#!name=通用重放脚本
+#!desc=通用请求重放调试工具：把抓到的请求信息（方法、地址、请求头、请求体）填进 BoxJs，按设置的次数和间隔重复执行；在 Loon「脚本」列表里点「通用重放脚本」手动运行。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/id77/QuantumultX/master/icon/ex.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：id77/QuantumultX（ex.task.js）
+
+[Script]
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/ex.task.js, timeout=300, tag=通用重放脚本, img-url=https://raw.githubusercontent.com/id77/QuantumultX/master/icon/ex.png, enable=true

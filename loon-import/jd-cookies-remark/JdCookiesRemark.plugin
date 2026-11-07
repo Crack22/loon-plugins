@@ -1,0 +1,9 @@
+#!name=登录助手
+#!desc=京东 Cookie 查询/备注助手：给多账号加备注、按下标/用户名/备注/状态搜索；每天 9:00 自动检查 Cookie 过期状态。读取京东签到插件抓取的 Cookie（CookiesJD），在 BoxJs 里点运行可初始化数据。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jingdong.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：dompling/Script（jd_cookie_search.js）
+[Script]
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/dompling/Script/master/jd/jd_cookie_search.js, timeout=300, tag=登录助手, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jingdong.png, enable=true

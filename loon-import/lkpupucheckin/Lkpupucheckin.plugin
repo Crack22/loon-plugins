@@ -1,0 +1,17 @@
+#!name=朴朴签到
+#!desc=朴朴签到；用法：装好插件，打开重写和 cron，打开朴朴 App，用短信验证码登录一次，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 10:00 自动签到。\n手动抓取：点 Loon 脚本里的「朴朴去抓取」，按弹出的提示操作。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/pupu.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：lowking/Scripts（pupuCheckIn.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = cauth.pupuapi.com
+
+[Script]
+http-response ^https://cauth\.pupuapi\.com/clientauth/user/verify_login script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkpupucheckin/lkpupucheckin_capture.js, requires-body=true, tag=朴朴签到 Token, argument="title=朴朴", enable={capture}
+cron "0 10 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/pupu/pupuCheckIn.js, timeout=300, tag=朴朴签到, img-url=https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/pupu.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=朴朴去抓取, img-url=https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/pupu.png, argument="title=朴朴&url=&hint=打开朴朴 App，用短信验证码登录一次，收到通知即抓取成功", enable={capture}

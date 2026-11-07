@@ -1,0 +1,9 @@
+#!name=每天60秒读懂世界
+#!desc=每天 60 秒读懂世界早报推送：每天 9:30 推送，点击通知可跳转原文或图片。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/60s.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：Yuheng0101/X（60s.js）
+[Script]
+cron "30 9 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js, timeout=300, tag=每天60秒读懂世界, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/60s.png, enable=true

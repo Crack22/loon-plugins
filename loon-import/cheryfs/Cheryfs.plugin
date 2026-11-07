@@ -1,0 +1,9 @@
+#!name=好奇车生活兑换
+#!desc=好奇车生活积分兑换：每天 17:59 自动用积分兑换配置的商品。需要在 BoxJs 填写账号数据和商品 id；账号需已有积分。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs.jpg
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：xzxxn777/Surge（Cheryfs_Exchange.js）
+[Script]
+cron "59 17 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs_Exchange.js, timeout=300, tag=好奇车生活兑换, img-url=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs.jpg, enable=true

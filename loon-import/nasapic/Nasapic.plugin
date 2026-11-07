@@ -1,0 +1,10 @@
+#!name=NASA每日一图
+#!desc=每天 0:05 获取 NASA 每日一图并推送通知（可在 BoxJs 里开启翻译）；需要先去 https://api.nasa.gov/ 免费申请一个 API Key 填入 BoxJs。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：evilbutcher/Quantumult_X（nasapic.js）
+
+[Script]
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js, timeout=300, tag=NASA每日一图, img-url=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa.png, enable=true

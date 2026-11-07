@@ -1,0 +1,17 @@
+#!name=中青自动阅读每日签到
+#!desc=中青自动阅读每日签到；用法：在中青看点 App 里阅读文章，读完即自动抓取请求体；脚本较老（2020 年），可能已失效；cron 每天 08:35 自动签到。\n手动抓取：点 Loon 脚本里的「中青自动阅读去抓取」查看抓取提示。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/youth.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：songyangzz/QuantumultX（YOUTH_READ.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 或小程序会自动保存签到要用的凭证；抓完可以关掉
+
+[MITM]
+hostname = ios.baertt.com
+
+[Script]
+http-request ^https:\/\/ios\.baertt\.com\/v5\/article\/complete\.json script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sy-youth-read/sy-youth-read_capture.js, requires-body=true, tag=中青自动阅读每日签到 Cookie, enable={capture}
+cron "35 8 * * *" script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/YOUTH_READ.js, timeout=300, tag=中青自动阅读每日签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/youth.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=中青自动阅读去抓取, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/youth.png, argument="title=中青自动阅读&url=&hint=在中青看点 App 里阅读文章，读完即自动抓取请求体", enable={capture}

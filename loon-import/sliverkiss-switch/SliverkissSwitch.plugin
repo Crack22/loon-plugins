@@ -1,0 +1,9 @@
+#!name=Switch520每日签到
+#!desc=Switch520每日签到；用法：把账号和密码用 # 拼接（账号#密码）填到 BoxJs 的 switch_data 里，多账号用 & 分隔；cron 每天 10:11 自动签到。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Switch.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：Sliverkiss（gist switch520.js）
+[Script]
+cron "11 10 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/3d9c00790143eba146c3ba798eda4696/raw/switch520.js, timeout=300, tag=Switch520每日签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Switch.png, enable=true

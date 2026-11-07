@@ -1,0 +1,16 @@
+#!name=去重二剪
+#!desc=去重二剪视频处理工具：每天 9:15 自动执行去重二剪任务。需要去重二剪服务的 Token：打开「抓取开关」后打开去重二剪小程序即可自动抓取。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Former-Years/icon/master/qcej.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：Former-Years/Surge（qcej.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开对应 App/小程序会自动保存要用的数据；抓完可以关掉
+
+[MITM]
+hostname = apis.ddfans.com
+
+[Script]
+http-request ^https://apis\.ddfans\.com/bian/public/index\.php/water script-path=https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/qcej.js, requires-body=true, tag=去重二剪 Token, enable={capture}
+cron "15 9 * * *" script-path=https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/qcej.js, timeout=300, tag=去重二剪, img-url=https://raw.githubusercontent.com/Former-Years/icon/master/qcej.png, enable=true

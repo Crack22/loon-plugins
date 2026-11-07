@@ -1,769 +1,5544 @@
 {
-  "id": "xunuo.app.sub",
-  "name": "許諾自用应用",
-  "author": "許諾",
-  "icon": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/subscription.jpg",
-  "repo": "https://github.com/Crack22/loon-plugins",
-  "apps": [
+ "id": "xunuo.app.sub",
+ "name": "許諾自用应用",
+ "author": "許諾",
+ "icon": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/subscription.jpg",
+ "repo": "https://github.com/Crack22/loon-plugins",
+ "apps": [
+  {
+   "id": "wps_checkin",
+   "name": "WPS Office 每日签到",
+   "keys": [
+    "wps_sid"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/MaYIHEI/pin/refs/heads/main/app/wps.png"
+   ],
+   "script": "https://raw.githubusercontent.com/MaYIHEI/paperclip/refs/heads/main/app/wps/wps.js",
+   "settings": [
     {
-      "id": "wps_checkin",
-      "name": "WPS Office 每日签到",
-      "keys": [
-        "wps_sid"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": [
-        "https://raw.githubusercontent.com/MaYIHEI/pin/refs/heads/main/app/wps.png"
-      ],
-      "script": "https://raw.githubusercontent.com/MaYIHEI/paperclip/refs/heads/main/app/wps/wps.js",
-      "settings": [
-        {
-          "id": "wps_sid",
-          "name": "Cookie（wps_sid）",
-          "val": "",
-          "type": "textarea",
-          "desc": "打开 WPS 进任意活动页停 1 秒自动抓取；抓不到时可手动粘贴。每天 10:00 自动签到"
-        }
-      ],
-      "descs_html": [
-        "WPS Office 每日签到，每天 10:00 自动签到。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-wps/WPSCheckin.plugin\">点击安装 Loon 插件</a>"
-      ]
-    },
-    {
-      "id": "dalanshu_checkin",
-      "name": "大蓝树每日签到",
-      "keys": [
-        "fmz200_dalanshu_authorization"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dalanshu.jpg"
-      ],
-      "script": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/dalanshu/dalanshu_checkin.js",
-      "settings": [
-        {
-          "id": "fmz200_dalanshu_authorization",
-          "name": "Token",
-          "val": "",
-          "type": "textarea",
-          "desc": "打开大蓝树 APP 触发签到状态接口自动抓取；抓不到时可手动粘贴 Authorization。每天 08:30 自动签到"
-        }
-      ],
-      "descs_html": [
-        "大蓝树每日签到，每天 08:30 自动签到。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-dalanshu/DalanshuCheckin.plugin\">点击安装 Loon 插件</a>"
-      ]
-    },
-    {
-      "id": "woniu_checkin",
-      "name": "蜗牛每日签到",
-      "keys": [
-        "woniu_cookie",
-        "woniu_username",
-        "woniu_password",
-        "woniu_cookie2",
-        "woniu_username2",
-        "woniu_password2",
-        "woniu_cookie3",
-        "woniu_username3",
-        "woniu_password3",
-        "woniu_accounts"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": [
-        "https://woniu.qljiang.com/weixin_files/woniu_white.png"
-      ],
-      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_checkin.js",
-      "settings": [
-        {
-          "id": "woniu_cookie",
-          "name": "账号1 Cookie",
-          "val": "",
-          "type": "textarea",
-          "desc": "账号1 的 Cookie：打开蜗牛签到页停 1 秒自动抓取；抓不到时可手动粘贴。也可以只填账号密码登录，不用填 Cookie"
-        },
-        {
-          "id": "woniu_username",
-          "name": "账号1 账号",
-          "val": "",
-          "type": "text",
-          "desc": "蜗牛账号（和 Cookie 二选一）"
-        },
-        {
-          "id": "woniu_password",
-          "name": "账号1 密码",
-          "val": "",
-          "type": "password",
-          "desc": "蜗牛密码"
-        },
-        {
-          "id": "woniu_cookie2",
-          "name": "账号2 Cookie",
-          "val": "",
-          "type": "textarea",
-          "desc": "第 2 个蜗牛账号的 Cookie（和账号密码二选一）"
-        },
-        {
-          "id": "woniu_username2",
-          "name": "账号2 账号",
-          "val": "",
-          "type": "text",
-          "desc": "第 2 个蜗牛账号"
-        },
-        {
-          "id": "woniu_password2",
-          "name": "账号2 密码",
-          "val": "",
-          "type": "password",
-          "desc": "第 2 个蜗牛账号的密码"
-        },
-        {
-          "id": "woniu_cookie3",
-          "name": "账号3 Cookie",
-          "val": "",
-          "type": "textarea",
-          "desc": "第 3 个蜗牛账号的 Cookie（和账号密码二选一）"
-        },
-        {
-          "id": "woniu_username3",
-          "name": "账号3 账号",
-          "val": "",
-          "type": "text",
-          "desc": "第 3 个蜗牛账号"
-        },
-        {
-          "id": "woniu_password3",
-          "name": "账号3 密码",
-          "val": "",
-          "type": "password",
-          "desc": "第 3 个蜗牛账号的密码"
-        },
-        {
-          "id": "woniu_accounts",
-          "name": "多账号",
-          "val": "",
-          "type": "textarea",
-          "desc": "多账号：每行一个，填 Cookie，或 账号；密码（中文分号隔开），不限个数"
-        }
-      ],
-      "descs_html": [
-        "蜗牛 4K 每日签到，每天 09:00 自动签到，+10 积分。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/WoNiuCheckin.plugin\">点击安装 Loon 插件</a>",
-        "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
-      ]
-    },
-    {
-      "id": "risha_checkin",
-      "name": "七日杀每日签到",
-      "keys": [
-        "risha_cookie"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/7risha.jpg"
-      ],
-      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha_checkin.js",
-      "settings": [
-        {
-          "id": "risha_cookie",
-          "name": "Cookie",
-          "val": "",
-          "type": "textarea",
-          "desc": "打开七日杀签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 08:30 自动签到"
-        }
-      ],
-      "descs_html": [
-        "七日杀中文网每日签到，每天 08:30 自动签到。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha.plugin\">点击安装 Loon 插件</a>"
-      ]
-    },
-    {
-      "id": "chilledmelon_checkin",
-      "name": "ChilledMelon 每日签到",
-      "keys": [
-        "chilledmelon_username",
-        "chilledmelon_password",
-        "chilledmelon_username2",
-        "chilledmelon_password2",
-        "chilledmelon_username3",
-        "chilledmelon_password3",
-        "chilledmelon_accounts"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/chilledmelon.jpg"
-      ],
-      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/chilledmelon_checkin.js",
-      "settings": [
-        {
-          "id": "chilledmelon_username",
-          "name": "账号1 账号",
-          "val": "",
-          "type": "text",
-          "desc": "ChilledMelon 用户名"
-        },
-        {
-          "id": "chilledmelon_password",
-          "name": "账号1 密码",
-          "val": "",
-          "type": "password",
-          "desc": "ChilledMelon 密码。每天 09:00 自动登录、做运算题、签到"
-        },
-        {
-          "id": "chilledmelon_username2",
-          "name": "账号2 账号",
-          "val": "",
-          "type": "text",
-          "desc": "第 2 个 ChilledMelon 账号"
-        },
-        {
-          "id": "chilledmelon_password2",
-          "name": "账号2 密码",
-          "val": "",
-          "type": "password",
-          "desc": "第 2 个 ChilledMelon 账号的密码"
-        },
-        {
-          "id": "chilledmelon_username3",
-          "name": "账号3 账号",
-          "val": "",
-          "type": "text",
-          "desc": "第 3 个 ChilledMelon 账号"
-        },
-        {
-          "id": "chilledmelon_password3",
-          "name": "账号3 密码",
-          "val": "",
-          "type": "password",
-          "desc": "第 3 个 ChilledMelon 账号的密码"
-        },
-        {
-          "id": "chilledmelon_accounts",
-          "name": "多账号",
-          "val": "",
-          "type": "textarea",
-          "desc": "多账号：每行一个 账号；密码（中文分号隔开），不限个数"
-        }
-      ],
-      "descs_html": [
-        "ChilledMelon 每日签到，每天 09:00 自动登录、做运算题、签到，+5~20 积分。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/ChilledMelonCheckin.plugin\">点击安装 Loon 插件</a>",
-        "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
-      ]
-    },
-    {
-      "id": "weibo_signin",
-      "name": "微博超话签到",
-      "keys": [
-        "weibo_chaohua_tokens",
-        "weibo_signin_tokens"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_signin_checkin.js",
-      "settings": [
-        {
-          "id": "weibo_chaohua_tokens",
-          "name": "超话签到凭证",
-          "val": "",
-          "type": "textarea",
-          "desc": "抓取插件自动保存（已关注超话列表+签到链接）"
-        },
-        {
-          "id": "weibo_signin_tokens",
-          "name": "微博签到凭证",
-          "val": "",
-          "type": "textarea",
-          "desc": "抓取插件自动保存（每日签到链接）"
-        }
-      ],
-      "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg"
-      ],
-      "descs_html": [
-        "微博超话签到，每天 09:00 自动做两件事：微博每日签到、所有已关注超话全部签到。本版没有黄子弘凡图文打卡。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohuaSignin.plugin\">点击安装</a>",
-        "使用前先抓一次：装好插件后，在微博 App 里打开超话社区 → 我的 → 关注，点进一个超话签到一次，随便刷一下微博。"
-      ]
-    },
-    {
-      "id": "embypulse_taotu_checkin",
-      "name": "乐蛙每日签到",
-      "keys": [
-        "embypulse1_session_id",
-        "embypulse1_username",
-        "embypulse1_password",
-        "embypulse1_session_id2",
-        "embypulse1_username2",
-        "embypulse1_password2",
-        "embypulse1_session_id3",
-        "embypulse1_username3",
-        "embypulse1_password3",
-        "embypulse1_accounts"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/embypulse_taotu_checkin.js",
-      "settings": [
-        {
-          "id": "embypulse1_session_id",
-          "name": "账号1 session_id",
-          "val": "",
-          "type": "textarea",
-          "desc": "账号1 的 session_id：打开 https://ue2.taotu.ink/ 自动抓取，或手动粘贴。也可以只填账号密码登录，不用填 session_id"
-        },
-        {
-          "id": "embypulse1_username",
-          "name": "账号1 账号",
-          "val": "",
-          "type": "text",
-          "desc": "乐蛙账号（和 session_id 二选一）"
-        },
-        {
-          "id": "embypulse1_password",
-          "name": "账号1 密码",
-          "val": "",
-          "type": "password",
-          "desc": "乐蛙密码"
-        },
-        {
-          "id": "embypulse1_session_id2",
-          "name": "账号2 session_id",
-          "val": "",
-          "type": "textarea",
-          "desc": "第 2 个乐蛙账号的 session_id（和账号密码二选一）"
-        },
-        {
-          "id": "embypulse1_username2",
-          "name": "账号2 账号",
-          "val": "",
-          "type": "text",
-          "desc": "第 2 个乐蛙账号"
-        },
-        {
-          "id": "embypulse1_password2",
-          "name": "账号2 密码",
-          "val": "",
-          "type": "password",
-          "desc": "第 2 个乐蛙账号的密码"
-        },
-        {
-          "id": "embypulse1_session_id3",
-          "name": "账号3 session_id",
-          "val": "",
-          "type": "textarea",
-          "desc": "第 3 个乐蛙账号的 session_id（和账号密码二选一）"
-        },
-        {
-          "id": "embypulse1_username3",
-          "name": "账号3 账号",
-          "val": "",
-          "type": "text",
-          "desc": "第 3 个乐蛙账号"
-        },
-        {
-          "id": "embypulse1_password3",
-          "name": "账号3 密码",
-          "val": "",
-          "type": "password",
-          "desc": "第 3 个乐蛙账号的密码"
-        },
-        {
-          "id": "embypulse1_accounts",
-          "name": "多账号",
-          "val": "",
-          "type": "textarea",
-          "desc": "多账号：每行一个，填 session_id，或 账号；密码（中文分号隔开），不限个数"
-        }
-      ],
-      "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/lewa.jpg"
-      ],
-      "descs_html": [
-        "乐蛙每日签到，每天 09:00 自动签到，奖励 100-120 积分。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/EmbyPulseTaotuCheckin.plugin\">点击安装 Loon 插件</a>",
-        "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
-      ]
-    },
-    {
-      "id": "embypulse_dijia_checkin",
-      "name": "乐观每日签到",
-      "keys": [
-        "embypulse2_session_id",
-        "embypulse2_username",
-        "embypulse2_password",
-        "embypulse2_session_id2",
-        "embypulse2_username2",
-        "embypulse2_password2",
-        "embypulse2_session_id3",
-        "embypulse2_username3",
-        "embypulse2_password3",
-        "embypulse2_accounts"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/embypulse_dijia_checkin.js",
-      "settings": [
-        {
-          "id": "embypulse2_session_id",
-          "name": "账号1 session_id",
-          "val": "",
-          "type": "textarea",
-          "desc": "账号1 的 session_id：打开 https://embyyh.dijia.de/ 自动抓取，或手动粘贴。也可以只填账号密码登录，不用填 session_id"
-        },
-        {
-          "id": "embypulse2_username",
-          "name": "账号1 账号",
-          "val": "",
-          "type": "text",
-          "desc": "乐观账号（和 session_id 二选一）"
-        },
-        {
-          "id": "embypulse2_password",
-          "name": "账号1 密码",
-          "val": "",
-          "type": "password",
-          "desc": "乐观密码"
-        },
-        {
-          "id": "embypulse2_session_id2",
-          "name": "账号2 session_id",
-          "val": "",
-          "type": "textarea",
-          "desc": "第 2 个乐观账号的 session_id（和账号密码二选一）"
-        },
-        {
-          "id": "embypulse2_username2",
-          "name": "账号2 账号",
-          "val": "",
-          "type": "text",
-          "desc": "第 2 个乐观账号"
-        },
-        {
-          "id": "embypulse2_password2",
-          "name": "账号2 密码",
-          "val": "",
-          "type": "password",
-          "desc": "第 2 个乐观账号的密码"
-        },
-        {
-          "id": "embypulse2_session_id3",
-          "name": "账号3 session_id",
-          "val": "",
-          "type": "textarea",
-          "desc": "第 3 个乐观账号的 session_id（和账号密码二选一）"
-        },
-        {
-          "id": "embypulse2_username3",
-          "name": "账号3 账号",
-          "val": "",
-          "type": "text",
-          "desc": "第 3 个乐观账号"
-        },
-        {
-          "id": "embypulse2_password3",
-          "name": "账号3 密码",
-          "val": "",
-          "type": "password",
-          "desc": "第 3 个乐观账号的密码"
-        },
-        {
-          "id": "embypulse2_accounts",
-          "name": "多账号",
-          "val": "",
-          "type": "textarea",
-          "desc": "多账号：每行一个，填 session_id，或 账号；密码（中文分号隔开），不限个数"
-        }
-      ],
-      "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/leguan.jpg"
-      ],
-      "descs_html": [
-        "乐观每日签到，每天 09:00 自动签到，奖励 90-130 积分。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/EmbyPulseDijiaCheckin.plugin\">点击安装 Loon 插件</a>",
-        "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
-      ]
-    },
-    {
-      "id": "quark_checkin",
-      "name": "夸克每日签到",
-      "keys": [
-        "quark_drive_query",
-        "quark_drive_ua",
-        "quark_browser_query",
-        "quark_browser_ua"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-quark/quark_checkin.js",
-      "settings": [
-        {
-          "id": "quark_drive_query",
-          "name": "夸克网盘 签到参数",
-          "val": "",
-          "type": "textarea",
-          "desc": "打开一次夸克网盘 App 自动抓取；也可以手动粘贴签到请求的完整 query（? 后面的那串）"
-        },
-        {
-          "id": "quark_browser_query",
-          "name": "夸克浏览器 签到参数",
-          "val": "",
-          "type": "textarea",
-          "desc": "打开一次夸克浏览器 App 自动抓取；也可以手动粘贴签到请求的完整 query（? 后面的那串）"
-        }
-      ],
-      "descs_html": [
-        "夸克网盘 + 夸克浏览器每日签到，每天 09:00 自动签到领网盘容量。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-quark/QuarkCheckin.plugin\">点击安装 Loon 插件</a>",
-        "第一次使用：打开一次夸克网盘和夸克浏览器，插件会自动保存签到参数。"
-      ],
-      "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/quark.jpg"
-      ]
-    },
-    {
-      "id": "gh_secrets_sync",
-      "name": "同步Git Secrets",
-      "keys": [
-        "github_pat",
-        "github_repo"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/gh-secrets.jpg"
-      ],
-      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-gh-sync/github_secrets_sync.js",
-      "descs_html": [
-        "把 BoxJs 里的签到账号传到 GitHub 仓库的 Secrets 里，GitHub Actions 每天 09:00 自动签到，不用挂梯子，手机关机也能签。本地 Loon 插件保持不变，两边同时跑，先签到的那个生效。",
-        "先创建一个 Token：<a href=\"https://github.com/settings/tokens?type=beta\">点这里创建 Fine-grained Token</a>，选 Only select repositories → loon-plugins，Repository permissions 里 Secrets 选 Read and write，然后把 Token 粘贴到下面的「GitHub Token」。",
-        "填好后在 Loon 里点这个插件的脚本手动运行一次，就会上传（空着的账号不会上传）。以后账号换了，再运行一次就行。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-gh-sync/GitHubSecretsSync.plugin\">点击安装</a>"
-      ],
-      "settings": [
-        {
-          "id": "github_pat",
-          "name": "GitHub Token",
-          "val": "",
-          "type": "password",
-          "desc": "在 GitHub 上创建一个 Fine-grained Token，只给 loon-plugins 仓库 Secrets 的读写权限，粘贴到这里，不要发给任何人"
-        },
-        {
-          "id": "github_repo",
-          "name": "仓库",
-          "val": "",
-          "type": "text",
-          "desc": "格式：用户名/仓库名"
-        }
-      ]
-    },
-    {
-      "id": "loon_config_backup",
-      "name": "Loon配置状态备份",
-      "keys": [
-        "loon_backup_pat",
-        "loon_backup_repo"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/loon-backup.jpg"
-      ],
-      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-config-backup/loon_config_backup.js",
-      "descs_html": [
-        "每天 04:00 自动把 Loon 当前运行配置（运行模式、各策略组、每个策略组当前选的节点、各组节点名）保存到你的私人 GitHub 仓库，单个文件 loon-config-state.json，有变化才提交。",
-        "注意：Loon 不允许脚本读取完整的 .conf 文件，所以这份备份不含节点账号密码、订阅地址、规则、脚本原文。完整配置请在 Loon 里手动导出 .conf 后放进同一个私人仓库。",
-        "先创建一个 Token：<a href=\"https://github.com/settings/tokens?type=beta\">点这里创建 Fine-grained Token</a>，选 Only select repositories → loon-config-backup，Repository permissions 里 Contents 选 Read and write，然后把 Token 粘贴到下面的「GitHub Token」。",
-        "仓库填 用户名/仓库名，例如 Crack22/loon-config-backup。填好后点一下这个 App 就能立即备份一次。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-config-backup/LoonConfigBackup.plugin\">点击安装</a>"
-      ],
-      "settings": [
-        {
-          "id": "loon_backup_pat",
-          "name": "GitHub Token",
-          "val": "",
-          "type": "password",
-          "desc": "在 GitHub 上创建一个 Fine-grained Token，只给私人备份仓库 Contents 的读写权限，粘贴到这里，不要发给任何人"
-        },
-        {
-          "id": "loon_backup_repo",
-          "name": "备份仓库",
-          "val": "",
-          "type": "text",
-          "desc": "格式：用户名/仓库名，例如 Crack22/loon-config-backup"
-        }
-      ]
-    },
-    {
-      "id": "glados_checkin",
-      "name": "GLaDOS 每日签到",
-      "keys": [
-        "glados_cookie",
-        "glados_cookie2",
-        "glados_cookie3",
-        "glados_accounts",
-        "glados_exchange"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/glados.png"
-      ],
-      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/glados_checkin.js",
-      "settings": [
-        {
-          "id": "glados_cookie",
-          "name": "账号1 Cookie",
-          "val": "",
-          "type": "textarea",
-          "desc": "账号1 的 Cookie：点上面链接打开账号页停 1 秒自动抓取；抓不到时可手动粘贴"
-        },
-        {
-          "id": "glados_cookie2",
-          "name": "账号2 Cookie",
-          "val": "",
-          "type": "textarea",
-          "desc": "第 2 个 GLaDOS 账号的 Cookie"
-        },
-        {
-          "id": "glados_cookie3",
-          "name": "账号3 Cookie",
-          "val": "",
-          "type": "textarea",
-          "desc": "第 3 个 GLaDOS 账号的 Cookie"
-        },
-        {
-          "id": "glados_accounts",
-          "name": "多账号",
-          "val": "",
-          "type": "textarea",
-          "desc": "多账号：每行一个 Cookie，不限个数"
-        },
-        {
-          "id": "glados_exchange",
-          "name": "自动兑换",
-          "val": "",
-          "type": "text",
-          "desc": "积分够了自动兑换天数：填 100 / 200 / 500，分别换 10 / 30 / 100 天，空着不兑换"
-        }
-      ],
-      "descs_html": [
-        "GLaDOS 每日签到，每天 09:00 自动签到领积分。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/GladosCheckin.plugin\">点击安装 Loon 插件</a>",
-        "抓 Cookie：<a href=\"https://glados.rocks/console/account\">打开 GLaDOS 账号页</a>，停 1 秒自动抓取。",
-        "注意：GLaDOS 会校验抓包时的设备，抓包和签到必须用同一台设备（建议都在手机上），换设备登录后要重新抓 Cookie。",
-        "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
-      ]
-    },
-    {
-      "id": "shiri_checkin",
-      "name": "识日每日签到",
-      "keys": [
-        "shiri_token",
-        "shiri_token2",
-        "shiri_token3",
-        "shiri_accounts"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/shiri_checkin.js",
-      "settings": [
-        {
-          "id": "shiri_token",
-          "name": "账号1 Token",
-          "val": "",
-          "type": "textarea",
-          "desc": "账号1 的 Token：打开识日 App 停 1 秒自动抓取；抓不到时可手动粘贴"
-        },
-        {
-          "id": "shiri_token2",
-          "name": "账号2 Token",
-          "val": "",
-          "type": "textarea",
-          "desc": "第 2 个识日账号的 Token"
-        },
-        {
-          "id": "shiri_token3",
-          "name": "账号3 Token",
-          "val": "",
-          "type": "textarea",
-          "desc": "第 3 个识日账号的 Token"
-        },
-        {
-          "id": "shiri_accounts",
-          "name": "多账号",
-          "val": "",
-          "type": "textarea",
-          "desc": "多账号：每行一个 Token，不限个数"
-        }
-      ],
-      "descs_html": [
-        "识日每日签到，每天 09:00 自动签到领读币。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/ShiriCheckin.plugin\">点击安装 Loon 插件</a>",
-        "抓 Token：打开识日 App 停 1 秒自动抓取；Token 过期时重新打开 App 抓一次。"
-      ],
-      "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/shiri.jpg"
-      ]
-    },
-    {
-      "id": "netease_checkin",
-      "name": "网易云音乐每日签到",
-      "keys": [
-        "netease_cookie",
-        "netease_cookie2",
-        "netease_cookie3",
-        "netease_accounts"
-      ],
-      "author": "許諾",
-      "repo": "https://github.com/Crack22/loon-plugins",
-      "icons": [
-        "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/netease.jpg"
-      ],
-      "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-netease/netease_checkin.js",
-      "settings": [
-        {
-          "id": "netease_cookie",
-          "name": "账号1 Cookie",
-          "val": "",
-          "type": "textarea",
-          "desc": "账号1 的 Cookie：打开网易云音乐 App 停 1 秒自动抓取；抓不到时可手动粘贴完整 Cookie。每天 09:00 自动签到"
-        },
-        {
-          "id": "netease_cookie2",
-          "name": "账号2 Cookie",
-          "val": "",
-          "type": "textarea",
-          "desc": "第 2 个网易云账号的完整 Cookie"
-        },
-        {
-          "id": "netease_cookie3",
-          "name": "账号3 Cookie",
-          "val": "",
-          "type": "textarea",
-          "desc": "第 3 个网易云账号的完整 Cookie"
-        },
-        {
-          "id": "netease_accounts",
-          "name": "多账号",
-          "val": "",
-          "type": "textarea",
-          "desc": "多账号：每行一个完整 Cookie，不限个数（Cookie 里本身带分号，每行就是一个账号，不要拆开）"
-        }
-      ],
-      "descs_html": [
-        "网易云音乐每日签到，每天 09:00 自动签到，+2 成长值。",
-        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-netease/NetEaseCheckin.plugin\">点击安装 Loon 插件</a>",
-        "抓 Cookie：打开网易云音乐 App 停 1 秒自动抓取；Cookie 过期时重新打开 App 抓一次。",
-        "注意：APP 端签到接口已停用，只能签网页端；云贝中心和 VIP 签到是加密接口，做不了自动签。",
-        "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
-      ]
+     "id": "wps_sid",
+     "name": "Cookie（wps_sid）",
+     "val": "",
+     "type": "textarea",
+     "desc": "打开 WPS 进任意活动页停 1 秒自动抓取；抓不到时可手动粘贴。每天 10:00 自动签到"
     }
-  ]
+   ],
+   "descs_html": [
+    "WPS Office 每日签到，每天 10:00 自动签到。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-wps/WPSCheckin.plugin\">点击安装 Loon 插件</a>"
+   ]
+  },
+  {
+   "id": "dalanshu_checkin",
+   "name": "大蓝树每日签到",
+   "keys": [
+    "fmz200_dalanshu_authorization"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dalanshu.jpg"
+   ],
+   "script": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/dalanshu/dalanshu_checkin.js",
+   "settings": [
+    {
+     "id": "fmz200_dalanshu_authorization",
+     "name": "Token",
+     "val": "",
+     "type": "textarea",
+     "desc": "打开大蓝树 APP 触发签到状态接口自动抓取；抓不到时可手动粘贴 Authorization。每天 08:30 自动签到"
+    }
+   ],
+   "descs_html": [
+    "大蓝树每日签到，每天 08:30 自动签到。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-dalanshu/DalanshuCheckin.plugin\">点击安装 Loon 插件</a>"
+   ]
+  },
+  {
+   "id": "woniu_checkin",
+   "name": "蜗牛每日签到",
+   "keys": [
+    "woniu_cookie",
+    "woniu_username",
+    "woniu_password",
+    "woniu_cookie2",
+    "woniu_username2",
+    "woniu_password2",
+    "woniu_cookie3",
+    "woniu_username3",
+    "woniu_password3",
+    "woniu_accounts"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://woniu.qljiang.com/weixin_files/woniu_white.png"
+   ],
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_checkin.js",
+   "settings": [
+    {
+     "id": "woniu_cookie",
+     "name": "账号1 Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "账号1 的 Cookie：打开蜗牛签到页停 1 秒自动抓取；抓不到时可手动粘贴。也可以只填账号密码登录，不用填 Cookie"
+    },
+    {
+     "id": "woniu_username",
+     "name": "账号1 账号",
+     "val": "",
+     "type": "text",
+     "desc": "蜗牛账号（和 Cookie 二选一）"
+    },
+    {
+     "id": "woniu_password",
+     "name": "账号1 密码",
+     "val": "",
+     "type": "password",
+     "desc": "蜗牛密码"
+    },
+    {
+     "id": "woniu_cookie2",
+     "name": "账号2 Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 2 个蜗牛账号的 Cookie（和账号密码二选一）"
+    },
+    {
+     "id": "woniu_username2",
+     "name": "账号2 账号",
+     "val": "",
+     "type": "text",
+     "desc": "第 2 个蜗牛账号"
+    },
+    {
+     "id": "woniu_password2",
+     "name": "账号2 密码",
+     "val": "",
+     "type": "password",
+     "desc": "第 2 个蜗牛账号的密码"
+    },
+    {
+     "id": "woniu_cookie3",
+     "name": "账号3 Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 3 个蜗牛账号的 Cookie（和账号密码二选一）"
+    },
+    {
+     "id": "woniu_username3",
+     "name": "账号3 账号",
+     "val": "",
+     "type": "text",
+     "desc": "第 3 个蜗牛账号"
+    },
+    {
+     "id": "woniu_password3",
+     "name": "账号3 密码",
+     "val": "",
+     "type": "password",
+     "desc": "第 3 个蜗牛账号的密码"
+    },
+    {
+     "id": "woniu_accounts",
+     "name": "多账号",
+     "val": "",
+     "type": "textarea",
+     "desc": "多账号：每行一个，填 Cookie，或 账号；密码（中文分号隔开），不限个数"
+    }
+   ],
+   "descs_html": [
+    "蜗牛 4K 每日签到，每天 09:00 自动签到，+10 积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/WoNiuCheckin.plugin\">点击安装 Loon 插件</a>",
+    "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
+   ]
+  },
+  {
+   "id": "risha_checkin",
+   "name": "七日杀每日签到",
+   "keys": [
+    "risha_cookie"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/7risha.jpg"
+   ],
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha_checkin.js",
+   "settings": [
+    {
+     "id": "risha_cookie",
+     "name": "Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "打开七日杀签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 08:30 自动签到"
+    }
+   ],
+   "descs_html": [
+    "七日杀中文网每日签到，每天 08:30 自动签到。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha.plugin\">点击安装 Loon 插件</a>"
+   ]
+  },
+  {
+   "id": "chilledmelon_checkin",
+   "name": "ChilledMelon 每日签到",
+   "keys": [
+    "chilledmelon_username",
+    "chilledmelon_password",
+    "chilledmelon_username2",
+    "chilledmelon_password2",
+    "chilledmelon_username3",
+    "chilledmelon_password3",
+    "chilledmelon_accounts"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/chilledmelon.jpg"
+   ],
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/chilledmelon_checkin.js",
+   "settings": [
+    {
+     "id": "chilledmelon_username",
+     "name": "账号1 账号",
+     "val": "",
+     "type": "text",
+     "desc": "ChilledMelon 用户名"
+    },
+    {
+     "id": "chilledmelon_password",
+     "name": "账号1 密码",
+     "val": "",
+     "type": "password",
+     "desc": "ChilledMelon 密码。每天 09:00 自动登录、做运算题、签到"
+    },
+    {
+     "id": "chilledmelon_username2",
+     "name": "账号2 账号",
+     "val": "",
+     "type": "text",
+     "desc": "第 2 个 ChilledMelon 账号"
+    },
+    {
+     "id": "chilledmelon_password2",
+     "name": "账号2 密码",
+     "val": "",
+     "type": "password",
+     "desc": "第 2 个 ChilledMelon 账号的密码"
+    },
+    {
+     "id": "chilledmelon_username3",
+     "name": "账号3 账号",
+     "val": "",
+     "type": "text",
+     "desc": "第 3 个 ChilledMelon 账号"
+    },
+    {
+     "id": "chilledmelon_password3",
+     "name": "账号3 密码",
+     "val": "",
+     "type": "password",
+     "desc": "第 3 个 ChilledMelon 账号的密码"
+    },
+    {
+     "id": "chilledmelon_accounts",
+     "name": "多账号",
+     "val": "",
+     "type": "textarea",
+     "desc": "多账号：每行一个 账号；密码（中文分号隔开），不限个数"
+    }
+   ],
+   "descs_html": [
+    "ChilledMelon 每日签到，每天 09:00 自动登录、做运算题、签到，+5~20 积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/ChilledMelonCheckin.plugin\">点击安装 Loon 插件</a>",
+    "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
+   ]
+  },
+  {
+   "id": "weibo_signin",
+   "name": "微博超话签到",
+   "keys": [
+    "weibo_chaohua_tokens",
+    "weibo_signin_tokens"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_signin_checkin.js",
+   "settings": [
+    {
+     "id": "weibo_chaohua_tokens",
+     "name": "超话签到凭证",
+     "val": "",
+     "type": "textarea",
+     "desc": "抓取插件自动保存（已关注超话列表+签到链接）"
+    },
+    {
+     "id": "weibo_signin_tokens",
+     "name": "微博签到凭证",
+     "val": "",
+     "type": "textarea",
+     "desc": "抓取插件自动保存（每日签到链接）"
+    }
+   ],
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg"
+   ],
+   "descs_html": [
+    "微博超话签到，每天 09:00 自动做两件事：微博每日签到、所有已关注超话全部签到。本版没有黄子弘凡图文打卡。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohuaSignin.plugin\">点击安装</a>",
+    "使用前先抓一次：装好插件后，在微博 App 里打开超话社区 → 我的 → 关注，点进一个超话签到一次，随便刷一下微博。"
+   ]
+  },
+  {
+   "id": "embypulse_taotu_checkin",
+   "name": "乐蛙每日签到",
+   "keys": [
+    "embypulse1_session_id",
+    "embypulse1_username",
+    "embypulse1_password",
+    "embypulse1_session_id2",
+    "embypulse1_username2",
+    "embypulse1_password2",
+    "embypulse1_session_id3",
+    "embypulse1_username3",
+    "embypulse1_password3",
+    "embypulse1_accounts"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/embypulse_taotu_checkin.js",
+   "settings": [
+    {
+     "id": "embypulse1_session_id",
+     "name": "账号1 session_id",
+     "val": "",
+     "type": "textarea",
+     "desc": "账号1 的 session_id：打开 https://ue2.taotu.ink/ 自动抓取，或手动粘贴。也可以只填账号密码登录，不用填 session_id"
+    },
+    {
+     "id": "embypulse1_username",
+     "name": "账号1 账号",
+     "val": "",
+     "type": "text",
+     "desc": "乐蛙账号（和 session_id 二选一）"
+    },
+    {
+     "id": "embypulse1_password",
+     "name": "账号1 密码",
+     "val": "",
+     "type": "password",
+     "desc": "乐蛙密码"
+    },
+    {
+     "id": "embypulse1_session_id2",
+     "name": "账号2 session_id",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 2 个乐蛙账号的 session_id（和账号密码二选一）"
+    },
+    {
+     "id": "embypulse1_username2",
+     "name": "账号2 账号",
+     "val": "",
+     "type": "text",
+     "desc": "第 2 个乐蛙账号"
+    },
+    {
+     "id": "embypulse1_password2",
+     "name": "账号2 密码",
+     "val": "",
+     "type": "password",
+     "desc": "第 2 个乐蛙账号的密码"
+    },
+    {
+     "id": "embypulse1_session_id3",
+     "name": "账号3 session_id",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 3 个乐蛙账号的 session_id（和账号密码二选一）"
+    },
+    {
+     "id": "embypulse1_username3",
+     "name": "账号3 账号",
+     "val": "",
+     "type": "text",
+     "desc": "第 3 个乐蛙账号"
+    },
+    {
+     "id": "embypulse1_password3",
+     "name": "账号3 密码",
+     "val": "",
+     "type": "password",
+     "desc": "第 3 个乐蛙账号的密码"
+    },
+    {
+     "id": "embypulse1_accounts",
+     "name": "多账号",
+     "val": "",
+     "type": "textarea",
+     "desc": "多账号：每行一个，填 session_id，或 账号；密码（中文分号隔开），不限个数"
+    }
+   ],
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/lewa.jpg"
+   ],
+   "descs_html": [
+    "乐蛙每日签到，每天 09:00 自动签到，奖励 100-120 积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/EmbyPulseTaotuCheckin.plugin\">点击安装 Loon 插件</a>",
+    "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
+   ]
+  },
+  {
+   "id": "embypulse_dijia_checkin",
+   "name": "乐观每日签到",
+   "keys": [
+    "embypulse2_session_id",
+    "embypulse2_username",
+    "embypulse2_password",
+    "embypulse2_session_id2",
+    "embypulse2_username2",
+    "embypulse2_password2",
+    "embypulse2_session_id3",
+    "embypulse2_username3",
+    "embypulse2_password3",
+    "embypulse2_accounts"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/embypulse_dijia_checkin.js",
+   "settings": [
+    {
+     "id": "embypulse2_session_id",
+     "name": "账号1 session_id",
+     "val": "",
+     "type": "textarea",
+     "desc": "账号1 的 session_id：打开 https://embyyh.dijia.de/ 自动抓取，或手动粘贴。也可以只填账号密码登录，不用填 session_id"
+    },
+    {
+     "id": "embypulse2_username",
+     "name": "账号1 账号",
+     "val": "",
+     "type": "text",
+     "desc": "乐观账号（和 session_id 二选一）"
+    },
+    {
+     "id": "embypulse2_password",
+     "name": "账号1 密码",
+     "val": "",
+     "type": "password",
+     "desc": "乐观密码"
+    },
+    {
+     "id": "embypulse2_session_id2",
+     "name": "账号2 session_id",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 2 个乐观账号的 session_id（和账号密码二选一）"
+    },
+    {
+     "id": "embypulse2_username2",
+     "name": "账号2 账号",
+     "val": "",
+     "type": "text",
+     "desc": "第 2 个乐观账号"
+    },
+    {
+     "id": "embypulse2_password2",
+     "name": "账号2 密码",
+     "val": "",
+     "type": "password",
+     "desc": "第 2 个乐观账号的密码"
+    },
+    {
+     "id": "embypulse2_session_id3",
+     "name": "账号3 session_id",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 3 个乐观账号的 session_id（和账号密码二选一）"
+    },
+    {
+     "id": "embypulse2_username3",
+     "name": "账号3 账号",
+     "val": "",
+     "type": "text",
+     "desc": "第 3 个乐观账号"
+    },
+    {
+     "id": "embypulse2_password3",
+     "name": "账号3 密码",
+     "val": "",
+     "type": "password",
+     "desc": "第 3 个乐观账号的密码"
+    },
+    {
+     "id": "embypulse2_accounts",
+     "name": "多账号",
+     "val": "",
+     "type": "textarea",
+     "desc": "多账号：每行一个，填 session_id，或 账号；密码（中文分号隔开），不限个数"
+    }
+   ],
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/leguan.jpg"
+   ],
+   "descs_html": [
+    "乐观每日签到，每天 09:00 自动签到，奖励 90-130 积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/EmbyPulseDijiaCheckin.plugin\">点击安装 Loon 插件</a>",
+    "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
+   ]
+  },
+  {
+   "id": "quark_checkin",
+   "name": "夸克每日签到",
+   "keys": [
+    "quark_drive_query",
+    "quark_drive_ua",
+    "quark_browser_query",
+    "quark_browser_ua"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-quark/quark_checkin.js",
+   "settings": [
+    {
+     "id": "quark_drive_query",
+     "name": "夸克网盘 签到参数",
+     "val": "",
+     "type": "textarea",
+     "desc": "打开一次夸克网盘 App 自动抓取；也可以手动粘贴签到请求的完整 query（? 后面的那串）"
+    },
+    {
+     "id": "quark_browser_query",
+     "name": "夸克浏览器 签到参数",
+     "val": "",
+     "type": "textarea",
+     "desc": "打开一次夸克浏览器 App 自动抓取；也可以手动粘贴签到请求的完整 query（? 后面的那串）"
+    }
+   ],
+   "descs_html": [
+    "夸克网盘 + 夸克浏览器每日签到，每天 09:00 自动签到领网盘容量。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-quark/QuarkCheckin.plugin\">点击安装 Loon 插件</a>",
+    "第一次使用：打开一次夸克网盘和夸克浏览器，插件会自动保存签到参数。"
+   ],
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/quark.jpg"
+   ]
+  },
+  {
+   "id": "gh_secrets_sync",
+   "name": "同步Git Secrets",
+   "keys": [
+    "github_pat",
+    "github_repo"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/gh-secrets.jpg"
+   ],
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-gh-sync/github_secrets_sync.js",
+   "descs_html": [
+    "把 BoxJs 里的签到账号传到 GitHub 仓库的 Secrets 里，GitHub Actions 每天 09:00 自动签到，不用挂梯子，手机关机也能签。本地 Loon 插件保持不变，两边同时跑，先签到的那个生效。",
+    "先创建一个 Token：<a href=\"https://github.com/settings/tokens?type=beta\">点这里创建 Fine-grained Token</a>，选 Only select repositories → loon-plugins，Repository permissions 里 Secrets 选 Read and write，然后把 Token 粘贴到下面的「GitHub Token」。",
+    "填好后在 Loon 里点这个插件的脚本手动运行一次，就会上传（空着的账号不会上传）。以后账号换了，再运行一次就行。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-gh-sync/GitHubSecretsSync.plugin\">点击安装</a>"
+   ],
+   "settings": [
+    {
+     "id": "github_pat",
+     "name": "GitHub Token",
+     "val": "",
+     "type": "password",
+     "desc": "在 GitHub 上创建一个 Fine-grained Token，只给 loon-plugins 仓库 Secrets 的读写权限，粘贴到这里，不要发给任何人"
+    },
+    {
+     "id": "github_repo",
+     "name": "仓库",
+     "val": "",
+     "type": "text",
+     "desc": "格式：用户名/仓库名"
+    }
+   ]
+  },
+  {
+   "id": "loon_config_backup",
+   "name": "Loon配置状态备份",
+   "keys": [
+    "loon_backup_pat",
+    "loon_backup_repo"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/loon-backup.jpg"
+   ],
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-config-backup/loon_config_backup.js",
+   "descs_html": [
+    "每天 04:00 自动把 Loon 当前运行配置（运行模式、各策略组、每个策略组当前选的节点、各组节点名）保存到你的私人 GitHub 仓库，单个文件 loon-config-state.json，有变化才提交。",
+    "注意：Loon 不允许脚本读取完整的 .conf 文件，所以这份备份不含节点账号密码、订阅地址、规则、脚本原文。完整配置请在 Loon 里手动导出 .conf 后放进同一个私人仓库。",
+    "先创建一个 Token：<a href=\"https://github.com/settings/tokens?type=beta\">点这里创建 Fine-grained Token</a>，选 Only select repositories → loon-config-backup，Repository permissions 里 Contents 选 Read and write，然后把 Token 粘贴到下面的「GitHub Token」。",
+    "仓库填 用户名/仓库名，例如 Crack22/loon-config-backup。填好后点一下这个 App 就能立即备份一次。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-config-backup/LoonConfigBackup.plugin\">点击安装</a>"
+   ],
+   "settings": [
+    {
+     "id": "loon_backup_pat",
+     "name": "GitHub Token",
+     "val": "",
+     "type": "password",
+     "desc": "在 GitHub 上创建一个 Fine-grained Token，只给私人备份仓库 Contents 的读写权限，粘贴到这里，不要发给任何人"
+    },
+    {
+     "id": "loon_backup_repo",
+     "name": "备份仓库",
+     "val": "",
+     "type": "text",
+     "desc": "格式：用户名/仓库名，例如 Crack22/loon-config-backup"
+    }
+   ]
+  },
+  {
+   "id": "glados_checkin",
+   "name": "GLaDOS 每日签到",
+   "keys": [
+    "glados_cookie",
+    "glados_cookie2",
+    "glados_cookie3",
+    "glados_accounts",
+    "glados_exchange"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/glados.png"
+   ],
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/glados_checkin.js",
+   "settings": [
+    {
+     "id": "glados_cookie",
+     "name": "账号1 Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "账号1 的 Cookie：点上面链接打开账号页停 1 秒自动抓取；抓不到时可手动粘贴"
+    },
+    {
+     "id": "glados_cookie2",
+     "name": "账号2 Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 2 个 GLaDOS 账号的 Cookie"
+    },
+    {
+     "id": "glados_cookie3",
+     "name": "账号3 Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 3 个 GLaDOS 账号的 Cookie"
+    },
+    {
+     "id": "glados_accounts",
+     "name": "多账号",
+     "val": "",
+     "type": "textarea",
+     "desc": "多账号：每行一个 Cookie，不限个数"
+    },
+    {
+     "id": "glados_exchange",
+     "name": "自动兑换",
+     "val": "",
+     "type": "text",
+     "desc": "积分够了自动兑换天数：填 100 / 200 / 500，分别换 10 / 30 / 100 天，空着不兑换"
+    }
+   ],
+   "descs_html": [
+    "GLaDOS 每日签到，每天 09:00 自动签到领积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/GladosCheckin.plugin\">点击安装 Loon 插件</a>",
+    "抓 Cookie：<a href=\"https://glados.rocks/console/account\">打开 GLaDOS 账号页</a>，停 1 秒自动抓取。",
+    "注意：GLaDOS 会校验抓包时的设备，抓包和签到必须用同一台设备（建议都在手机上），换设备登录后要重新抓 Cookie。",
+    "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
+   ]
+  },
+  {
+   "id": "shiri_checkin",
+   "name": "识日每日签到",
+   "keys": [
+    "shiri_token",
+    "shiri_token2",
+    "shiri_token3",
+    "shiri_accounts"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/shiri_checkin.js",
+   "settings": [
+    {
+     "id": "shiri_token",
+     "name": "账号1 Token",
+     "val": "",
+     "type": "textarea",
+     "desc": "账号1 的 Token：打开识日 App 停 1 秒自动抓取；抓不到时可手动粘贴"
+    },
+    {
+     "id": "shiri_token2",
+     "name": "账号2 Token",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 2 个识日账号的 Token"
+    },
+    {
+     "id": "shiri_token3",
+     "name": "账号3 Token",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 3 个识日账号的 Token"
+    },
+    {
+     "id": "shiri_accounts",
+     "name": "多账号",
+     "val": "",
+     "type": "textarea",
+     "desc": "多账号：每行一个 Token，不限个数"
+    }
+   ],
+   "descs_html": [
+    "识日每日签到，每天 09:00 自动签到领读币。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/ShiriCheckin.plugin\">点击安装 Loon 插件</a>",
+    "抓 Token：打开识日 App 停 1 秒自动抓取；Token 过期时重新打开 App 抓一次。"
+   ],
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/shiri.jpg"
+   ]
+  },
+  {
+   "id": "netease_checkin",
+   "name": "网易云音乐每日签到",
+   "keys": [
+    "netease_cookie",
+    "netease_cookie2",
+    "netease_cookie3",
+    "netease_accounts"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/netease.jpg"
+   ],
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-netease/netease_checkin.js",
+   "settings": [
+    {
+     "id": "netease_cookie",
+     "name": "账号1 Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "账号1 的 Cookie：打开网易云音乐 App 停 1 秒自动抓取；抓不到时可手动粘贴完整 Cookie。每天 09:00 自动签到"
+    },
+    {
+     "id": "netease_cookie2",
+     "name": "账号2 Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 2 个网易云账号的完整 Cookie"
+    },
+    {
+     "id": "netease_cookie3",
+     "name": "账号3 Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 3 个网易云账号的完整 Cookie"
+    },
+    {
+     "id": "netease_accounts",
+     "name": "多账号",
+     "val": "",
+     "type": "textarea",
+     "desc": "多账号：每行一个完整 Cookie，不限个数（Cookie 里本身带分号，每行就是一个账号，不要拆开）"
+    }
+   ],
+   "descs_html": [
+    "网易云音乐每日签到，每天 09:00 自动签到，+2 成长值。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-netease/NetEaseCheckin.plugin\">点击安装 Loon 插件</a>",
+    "抓 Cookie：打开网易云音乐 App 停 1 秒自动抓取；Cookie 过期时重新打开 App 抓一次。",
+    "注意：APP 端签到接口已停用，只能签网页端；云贝中心和 VIP 签到是加密接口，做不了自动签。",
+    "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
+   ]
+  },
+  {
+   "id": "xream-gist",
+   "name": "Gist 备份",
+   "keys": [
+    "@xream.gist.username",
+    "@xream.gist.token",
+    "@xream.gist.desc",
+    "@xream.gist.saveKey",
+    "@xream.gist.testFlightAccountLocalId",
+    "@xream.gist.testFlightAccountOnly",
+    "@xream.gist.testFlightAccountOnlyForBackup",
+    "@xream.gist.keys"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/asset/icon.png"
+   ],
+   "settings": [
+    {
+     "id": "@xream.gist.username",
+     "name": "用户名",
+     "val": "",
+     "type": "text",
+     "desc": "你的个人页面地址是 https://github.com/用户名，用户名就是最后那部分"
+    },
+    {
+     "id": "@xream.gist.token",
+     "name": "Personal access token",
+     "placeholder": "",
+     "val": "",
+     "type": "text",
+     "desc": "获取方式见👆🏻"
+    },
+    {
+     "id": "@xream.gist.desc",
+     "name": "Gist 描述",
+     "placeholder": "",
+     "val": "",
+     "type": "text",
+     "desc": "默认为 Auto Generated BoxJs Global Backup"
+    },
+    {
+     "id": "@xream.gist.saveKey",
+     "name": "Gist 文件名",
+     "placeholder": "",
+     "val": "",
+     "type": "text",
+     "desc": "默认为 backup.json"
+    },
+    {
+     "id": "@xream.gist.testFlightAccountLocalId",
+     "name": "合并更新 TestFlight 账户管理脚本的数据时 要保留的本地 ID(s)",
+     "placeholder": "",
+     "val": "",
+     "type": "text",
+     "desc": "多个 ID 逗号分隔"
+    },
+    {
+     "id": "@xream.gist.testFlightAccountOnly",
+     "name": "仅恢复 TestFlight 账户管理脚本的数据",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认禁用. 启用后只会恢复 TestFlight 账户管理脚本的数据"
+    },
+    {
+     "id": "@xream.gist.testFlightAccountOnlyForBackup",
+     "name": "仅备份 TestFlight 账户管理脚本的数据",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认禁用. 启用后只会备份 TestFlight 账户管理脚本的数据"
+    },
+    {
+     "id": "@xream.gist.keys",
+     "name": "需要额外备份的持久化缓存的 key(s)",
+     "placeholder": "",
+     "val": "",
+     "type": "textarea",
+     "persistentHint": true,
+     "desc": "多个 key 逗号分隔"
+    }
+   ],
+   "descs_html": [
+    "BoxJs 配置备份到 GitHub Gist。",
+    "需要 GitHub 用户名和有 gist 权限的 Personal Access Token（在 GitHub 头像菜单 → Settings → Developer settings → Personal access tokens 里生成并勾选 gist）。"
+   ]
+  },
+  {
+   "id": "xream-sub-store-mega",
+   "name": "Sub-Store Mega(请使用 Lite)",
+   "keys": [
+    "@xream.sub_store_mega.disabled",
+    "@xream.sub_store_mega.concurrency",
+    "@xream.sub_store_mega.title",
+    "@xream.sub_store_mega.prefix",
+    "@xream.sub_store_mega.suffix",
+    "@xream.sub_store_mega.method",
+    "@xream.sub_store_mega.host",
+    "@xream.sub_store_mega.hostPrefix",
+    "@xream.sub_store_mega.hostSuffix",
+    "@xream.sub_store_mega.path",
+    "@xream.sub_store_mega.pathPrefix",
+    "@xream.sub_store_mega.pathSuffix",
+    "@xream.sub_store_mega.network",
+    "@xream.sub_store_mega.defaultNetworkPath",
+    "@xream.sub_store_mega.networkPrefix",
+    "@xream.sub_store_mega.networkSuffix",
+    "@xream.sub_store_mega.port",
+    "@xream.sub_store_mega.sort",
+    "@xream.sub_store_mega.resolve",
+    "@xream.sub_store_mega.resolver",
+    "@xream.sub_store_mega.ipPrefix",
+    "@xream.sub_store_mega.ipSuffix",
+    "@xream.sub_store_mega.sleep",
+    "@xream.sub_store_mega.expire",
+    "@xream.sub_store_mega.cacheMaxSize",
+    "@xream.sub_store_mega.notifyOnSuccessDisabled",
+    "@xream.sub_store_mega.mock",
+    "@xream.sub_store_mega.clearCache"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/sub-store-scripts/mega/assets/icon.png"
+   ],
+   "settings": [
+    {
+     "id": "@xream.sub_store_mega.disabled",
+     "name": "是否禁用",
+     "val": "",
+     "type": "boolean",
+     "desc": "禁用后将返回原始节点数据"
+    },
+    {
+     "id": "@xream.sub_store_mega.concurrency",
+     "name": "并发数",
+     "val": "",
+     "type": "number",
+     "desc": "默认 15. 若因为并发过多导致失败, 可将此值设小"
+    },
+    {
+     "id": "@xream.sub_store_mega.title",
+     "name": "通知标题",
+     "val": "",
+     "type": "text",
+     "desc": "默认为 Sub-Store Mega"
+    },
+    {
+     "id": "@xream.sub_store_mega.prefix",
+     "name": "节点名前缀",
+     "val": "",
+     "type": "text",
+     "desc": "默认为空. 例 [免流骚机场]"
+    },
+    {
+     "id": "@xream.sub_store_mega.suffix",
+     "name": "节点名后缀",
+     "val": "",
+     "type": "text",
+     "desc": "默认为空. 例 [全国停机]"
+    },
+    {
+     "id": "@xream.sub_store_mega.host",
+     "name": "Host 混淆",
+     "val": "",
+     "type": "text",
+     "desc": "默认为空 不修改. 例 a.189.cn"
+    },
+    {
+     "id": "@xream.sub_store_mega.hostPrefix",
+     "name": "为修改了 Host 的节点名添加前缀",
+     "val": "",
+     "type": "text",
+     "desc": "默认为空"
+    },
+    {
+     "id": "@xream.sub_store_mega.hostSuffix",
+     "name": "为修改了 Host 的节点名添加后缀",
+     "val": "",
+     "type": "text",
+     "desc": "默认为空. 例 [微博混淆]"
+    },
+    {
+     "id": "@xream.sub_store_mega.path",
+     "name": "Path 路径",
+     "val": "",
+     "type": "text",
+     "desc": "默认为空 不修改. 例 /TS/recharge/tzUrl.html"
+    },
+    {
+     "id": "@xream.sub_store_mega.pathPrefix",
+     "name": "为修改了 Path 的节点名添加前缀",
+     "val": "",
+     "type": "text",
+     "desc": "默认为空"
+    },
+    {
+     "id": "@xream.sub_store_mega.pathSuffix",
+     "name": "为修改了 Path 的节点名添加后缀",
+     "val": "",
+     "type": "text",
+     "desc": "默认为空. 例 [广停路径]"
+    },
+    {
+     "id": "@xream.sub_store_mega.network",
+     "name": "Network 网络(所谓的 vmess tcp 加混淆应该为 http)",
+     "type": "text",
+     "desc": "⚠️ Sub-Store 对非 ws 支持不完整. 但你可以设置一个新 host 和 path ⚠️ 默认为空 不修改. 例 ws"
+    },
+    {
+     "id": "@xream.sub_store_mega.defaultNetworkPath",
+     "name": "设置 Network 网络时 默认的 Path 路径",
+     "val": "",
+     "type": "text",
+     "desc": "原始数据无 path 时, 默认设置为 / "
+    },
+    {
+     "id": "@xream.sub_store_mega.networkPrefix",
+     "name": "为节点名添加 network 前缀",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认为空"
+    },
+    {
+     "id": "@xream.sub_store_mega.networkSuffix",
+     "name": "为节点名添加 network 后缀",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认为空. 例: [WS]"
+    },
+    {
+     "id": "@xream.sub_store_mega.method",
+     "name": "method",
+     "type": "text",
+     "desc": "例 GET 网络为 http 时, 可能需要设置此项"
+    },
+    {
+     "id": "@xream.sub_store_mega.port",
+     "name": "端口",
+     "val": "",
+     "type": "number",
+     "desc": "默认为空 不修改. 例 443"
+    },
+    {
+     "id": "@xream.sub_store_mega.sort",
+     "name": "排序",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认禁用. ⚠️ 脚本内部有一个我自用的根据节点名排序的逻辑 随时可能更改"
+    },
+    {
+     "id": "@xream.sub_store_mega.resolve",
+     "name": "域名 转 IP",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认禁用. 使用网络请求解析域名 ⚠️ Sub-Store 已内置此功能 本脚本将放弃维护此功能"
+    },
+    {
+     "id": "@xream.sub_store_mega.resolver",
+     "name": "域名 转 IP 服务",
+     "type": "selects",
+     "items": [
+      {
+       "key": "cloudflare",
+       "label": "Cloudflare"
+      },
+      {
+       "key": "google",
+       "label": "Google"
+      },
+      {
+       "key": "ip-api",
+       "label": "IP-API(有频次限制)"
+      }
+     ],
+     "val": "",
+     "desc": "默认 Cloudflare"
+    },
+    {
+     "id": "@xream.sub_store_mega.ipPrefix",
+     "name": "为 IP 节点添加前缀",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认禁用"
+    },
+    {
+     "id": "@xream.sub_store_mega.ipSuffix",
+     "name": "为 IP 节点添加后缀",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认禁用. 例 [1.1.1.1]"
+    },
+    {
+     "id": "@xream.sub_store_mega.sleep",
+     "name": "域名解析等待时间(单位 秒)",
+     "val": "",
+     "type": "number",
+     "desc": "因为网络请求的接口一般有频次限制 默认每次查询间隔 0 秒"
+    },
+    {
+     "id": "@xream.sub_store_mega.expire",
+     "name": "域名解析结果缓存时间(单位 秒)",
+     "val": "",
+     "type": "number",
+     "desc": "默认 1800 秒(30 分钟). 若 <= 0 则不缓存"
+    },
+    {
+     "id": "@xream.sub_store_mega.cacheMaxSize",
+     "name": "域名解析结果缓存最大数",
+     "val": "",
+     "type": "number",
+     "desc": "默认 100"
+    },
+    {
+     "id": "@xream.sub_store_mega.notifyOnSuccessDisabled",
+     "name": "禁用成功后的通知",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认会在成功后发送通知"
+    },
+    {
+     "id": "@xream.sub_store_mega.clearCache",
+     "name": "下次清除缓存",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认禁用. 启用后下次将清除缓存, 然后自动禁用"
+    }
+   ],
+   "descs_html": [
+    "Sub-Store 订阅节点管理配置：节点名前缀/后缀、Host 混淆、排序、解析等。",
+    "需配合 Sub-Store 脚本使用；原作者提示请使用 Lite 版。"
+   ]
+  },
+  {
+   "id": "gistbackup",
+   "name": "Gist备份",
+   "keys": [
+    "@gist.token",
+    "@gist.username",
+    "@gist.split",
+    "@gist.revision_options",
+    "@gist.backup_type",
+    "@gist.backup_black_apps",
+    "@gist.backup_white_apps"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Former-Years/icon/master/github-bf.png"
+   ],
+   "settings": [
+    {
+     "id": "@gist.split",
+     "name": "用户数据分段",
+     "val": "",
+     "type": "number",
+     "placeholder": "用户数据过大时，请进行拆分防止内存警告⚠️",
+     "desc": "值为数字，拆分段数比如 2 就拆分成两个 datas."
+    },
+    {
+     "id": "@gist.revision_id",
+     "type": "modalSelects",
+     "name": "历史版本RevisionId",
+     "desc": "不填写时，默认获取最新，恢复后会自动清空。选择无内容时，请运行上方更新历史版本",
+     "items": "@gist.revision_options"
+    },
+    {
+     "id": "@gist.backup_type",
+     "name": "备份/恢复内容",
+     "val": "",
+     "type": "checkboxes",
+     "items": [
+      {
+       "key": "usercfgs",
+       "label": "用户偏好"
+      },
+      {
+       "key": "datas",
+       "label": "用户数据"
+      },
+      {
+       "key": "sessions",
+       "label": "应用会话"
+      },
+      {
+       "key": "curSessions",
+       "label": "当前会话"
+      },
+      {
+       "key": "backups",
+       "label": "备份索引"
+      },
+      {
+       "key": "appSubCaches",
+       "label": "应用订阅缓存"
+      }
+     ]
+    },
+    {
+     "id": "@gist.username",
+     "name": "用户名",
+     "val": "",
+     "type": "text",
+     "placeholder": "github 用户名",
+     "desc": "必填"
+    },
+    {
+     "id": "@gist.token",
+     "name": "Personal access tokens",
+     "val": "",
+     "type": "text",
+     "placeholder": "github personal access tokens",
+     "desc": "必填"
+    }
+   ],
+   "descs_html": [
+    "BoxJs 数据备份到 GitHub Gist：用户偏好、用户数据、应用会话等，可选备份内容与黑白名单。",
+    "需要 GitHub 用户名和有 gist 权限的 Personal Access Token（在 GitHub 头像菜单 → Settings → Developer settings → Personal access tokens 里生成并勾选 gist）。"
+   ]
+  },
+  {
+   "id": "set-time",
+   "name": "定时任务",
+   "keys": [
+    "@SET_TIME.TASK",
+    "@SET_TIME.SUB",
+    "@SET_TIME.CACHE"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/dompling/Script/master/icon/setTime.png"
+   ],
+   "settings": [
+    {
+     "id": "@SET_TIME.SUB",
+     "name": "任务订阅",
+     "val": "",
+     "type": "textarea",
+     "desc": "QX 定时任务配置",
+     "primary": [
+      "author"
+     ],
+     "autoGrow": false,
+     "rows": 8,
+     "child": [
+      {
+       "id": "author",
+       "name": "作者",
+       "type": "text"
+      },
+      {
+       "id": "url",
+       "name": "订阅链接",
+       "type": "text"
+      }
+     ]
+    }
+   ],
+   "descs_html": [
+    "自定义定时任务配置工具（Quantumult X 格式的任务订阅）。"
+   ]
+  },
+  {
+   "id": "gistbackupblackapp",
+   "name": "数据黑名",
+   "keys": [
+    "@gist.backup_black_apps"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/dompling/Script/master/icon/github-black.jpg"
+   ],
+   "settings": [
+    {
+     "id": "@gist.backup_black_apps",
+     "name": "请运行【刷新APP】,刷新后再刷新当前页面",
+     "val": "",
+     "type": "textarea",
+     "placeholder": "请运行【刷新APP】",
+     "desc": "除黑名单相关 APP 的 Key 到用户数据，无选择内容时，请运行【刷新APP】"
+    }
+   ],
+   "descs_html": [
+    "Gist 备份的黑名单配置：黑名单中的应用会被跳过备份和恢复。",
+    "需配合 Gist备份使用。"
+   ]
+  },
+  {
+   "id": "jd-cookies-remark",
+   "name": "登录助手",
+   "keys": [
+    "CookieIndex",
+    "@jd_ck_remark.remark",
+    "@jd_ck_remark.mute"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jingdong.png"
+   ],
+   "settings": [
+    {
+     "id": "@jd_ck_remark.mute",
+     "name": "静音",
+     "val": "",
+     "type": "boolean",
+     "desc": "不会执行通知提示"
+    },
+    {
+     "id": "CookieIndex",
+     "name": "默认账号",
+     "val": "",
+     "type": "text",
+     "autoGrow": false,
+     "rows": 2,
+     "placeholder": "cookie 下标（0）"
+    },
+    {
+     "id": "@jd_ck_remark.actions",
+     "name": "快捷跳转",
+     "val": "",
+     "type": "textarea",
+     "autoGrow": false,
+     "rows": 4,
+     "desc": "快捷跳转 (JSON 格式)",
+     "primary": [
+      "title"
+     ],
+     "child": [
+      {
+       "id": "title",
+       "name": "标题",
+       "type": "text"
+      },
+      {
+       "id": "icon",
+       "name": "图标",
+       "type": "text"
+      },
+      {
+       "id": "url",
+       "name": "跳转地址",
+       "type": "text"
+      },
+      {
+       "id": "where",
+       "name": "显示条件",
+       "type": "text"
+      },
+      {
+       "id": "color",
+       "name": "图标背景",
+       "type": "colorpicker"
+      }
+     ]
+    },
+    {
+     "id": "@jd_ck_remark.remark",
+     "name": "CK 备注列表",
+     "val": "",
+     "type": "textarea",
+     "autoGrow": false,
+     "rows": 8,
+     "desc": "CK 备注列表 (JSON 格式)",
+     "primary": [
+      "nickname",
+      "status"
+     ],
+     "child": [
+      {
+       "id": "index",
+       "name": "下标",
+       "type": "text",
+       "disabled": true
+      },
+      {
+       "id": "username",
+       "name": "用户 pin",
+       "disabled": true,
+       "type": "text"
+      },
+      {
+       "id": "nickname",
+       "name": "昵称",
+       "type": "text"
+      },
+      {
+       "id": "qywxUserId",
+       "name": "企业微信通知 ID",
+       "type": "text"
+      },
+      {
+       "id": "cardId",
+       "name": "身份证",
+       "type": "text"
+      },
+      {
+       "id": "paymentCode",
+       "name": "支付密码",
+       "type": "text"
+      },
+      {
+       "id": "avatar",
+       "name": "头像",
+       "type": "text"
+      },
+      {
+       "id": "mobile",
+       "name": "手机号",
+       "type": "text"
+      },
+      {
+       "id": "remark",
+       "name": "备注",
+       "type": "text"
+      },
+      {
+       "id": "isPlusVip",
+       "name": "是否是 VIP",
+       "disabled": true,
+       "type": "text"
+      },
+      {
+       "id": "beanNum",
+       "name": "京豆数量",
+       "disabled": true,
+       "type": "text"
+      },
+      {
+       "id": "fruit",
+       "name": "农场进度",
+       "disabled": true,
+       "type": "text"
+      }
+     ]
+    }
+   ],
+   "descs_html": [
+    "京东 Cookie 查询/备注助手：给多账号加备注，按下标、用户名、备注或状态搜索。",
+    "读取京东签到插件抓取的 Cookie（CookiesJD），需先用京东插件抓取 Cookie；每天 9:00 自动检查 Cookie 过期状态。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/jd-cookies-remark/JdCookiesRemark.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/jd_cookie_search.js"
+  },
+  {
+   "id": "wxcode",
+   "name": "Code Server",
+   "keys": [
+    "codeServer"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/FoKit/Scripts/main/images/WeChat.png"
+   ],
+   "settings": [
+    {
+     "id": "@codeServer.open",
+     "name": "开启code模式",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认关闭"
+    },
+    {
+     "id": "@codeServer.address",
+     "name": "服务器地址",
+     "val": "",
+     "type": "textarea",
+     "autoGrow": true,
+     "rows": 1,
+     "desc": "填写服务器地址, 不包含/, 如 http://127.0.0.1:8888"
+    },
+    {
+     "id": "@codeServer.wxid",
+     "name": "wxid",
+     "val": "",
+     "type": "textarea",
+     "autoGrow": true,
+     "rows": 1,
+     "desc": "微信原始ID, 多个id以英文逗号隔开"
+    },
+    {
+     "id": "@codeServer.fun",
+     "name": "自定义函数",
+     "val": "",
+     "type": "textarea",
+     "autoGrow": true,
+     "rows": 1,
+     "desc": "API 接口自定义函数"
+    }
+   ],
+   "descs_html": [
+    "VS Code Server（code-server）连接配置。",
+    "需要自有 code-server 服务器地址和微信原始 ID。"
+   ]
+  },
+  {
+   "id": "tools",
+   "name": "Tools",
+   "keys": [
+    "reRequest",
+    "_barkKey",
+    "is_debug"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/FoKit/Scripts/main/images/debug.png"
+   ],
+   "settings": [
+    {
+     "id": "@reRequest.options",
+     "name": "请求信息",
+     "val": "",
+     "type": "textarea",
+     "autoGrow": true,
+     "rows": 1,
+     "desc": "Request options"
+    },
+    {
+     "id": "@reRequest.count",
+     "name": "请求次数",
+     "val": "",
+     "type": "text",
+     "desc": "Request count"
+    },
+    {
+     "id": "@reRequest.wait",
+     "name": "请求间隔",
+     "val": "",
+     "type": "text",
+     "desc": "Request wait (ms)"
+    },
+    {
+     "id": "@reRequest.timeout",
+     "name": "超时时间",
+     "val": "",
+     "type": "text",
+     "desc": "Request timeout (ms)"
+    },
+    {
+     "id": "_barkKey",
+     "name": "Bark key",
+     "val": "",
+     "type": "text",
+     "placeholder": "",
+     "desc": "Bark 通知 key"
+    },
+    {
+     "id": "is_debug",
+     "name": "Debug",
+     "val": "",
+     "type": "boolean",
+     "desc": "Debug 模式"
+    }
+   ],
+   "descs_html": [
+    "通用工具配置：请求重放（次数/间隔/超时）、Bark 推送 key、Debug 开关。"
+   ]
+  },
+  {
+   "id": "wskey",
+   "name": "京东WSKEY",
+   "keys": [
+    "WSKEY_AUTO_UPLOAD",
+    "WSKEY_TG_BOT_TOKEN",
+    "WSKEY_TG_USER_ID",
+    "wskeyList"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jdjoy.png"
+   ],
+   "settings": [
+    {
+     "id": "WSKEY_AUTO_UPLOAD",
+     "name": "自动提交WSKEY",
+     "val": "",
+     "type": "boolean",
+     "desc": "启用后, 重写抓取的WSKEY会自动提交(上车)"
+    },
+    {
+     "id": "WSKEY_TG_BOT_TOKEN",
+     "name": "Telegram机器人Token",
+     "val": "",
+     "type": "text",
+     "desc": "填写 Telegram 机器人的 Token, 格式: 123456:abcdefgabcdefgabcdefg"
+    },
+    {
+     "id": "WSKEY_TG_USER_ID",
+     "name": "Telegram 会话ID",
+     "val": "",
+     "type": "text",
+     "desc": "填写 Telegram 会话ID: -1001701121614"
+    },
+    {
+     "id": "wskeyList",
+     "name": "京东WSKEY",
+     "val": "",
+     "type": "textarea",
+     "autoGrow": false,
+     "rows": 10,
+     "desc": "京东WSKEY列表"
+    }
+   ],
+   "descs_html": [
+    "京东 WSKEY 自动上传配置：抓取到的 WSKEY 可自动同步到青龙面板或推送到 Telegram。",
+    "同步到 Telegram 需要 Telegram 机器人 Token 和会话 ID。"
+   ]
+  },
+  {
+   "id": "ql-fokit",
+   "name": "数据同步",
+   "keys": [
+    "@ql.ip",
+    "@ql.client_id",
+    "@ql.client_secret",
+    "@ql.username",
+    "@ql.password",
+    "@ql.env",
+    "@ql.mute",
+    "@ql.is_pwd",
+    "@ql.ENV_KEY"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/dompling/Script/master/image/ql.png"
+   ],
+   "settings": [
+    {
+     "id": "@ql.mute",
+     "name": "静音",
+     "val": "",
+     "type": "boolean",
+     "desc": "同步时，不会执行通知提示"
+    },
+    {
+     "id": "@ql.is_pwd",
+     "name": "开启密码登陆",
+     "val": "",
+     "type": "boolean",
+     "desc": "同步时，优先使用密码登陆"
+    },
+    {
+     "id": "@ql.ENV_KEY",
+     "name": "环境变量KEY",
+     "val": "",
+     "type": "textarea",
+     "autoGrow": false,
+     "placeholder": "boxjs 同步到 Ql 的环境变量",
+     "primary": [
+      "BoxJsKey"
+     ],
+     "childScripts": [
+      {
+       "name": "同步到青龙",
+       "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/boxjs_env_to_ql.js"
+      }
+     ],
+     "child": [
+      {
+       "id": "BoxJsKey",
+       "name": "BoxJS缓存Key",
+       "type": "cacheKey",
+       "desc": "读取BoxJS对应Key的值"
+      },
+      {
+       "id": "qlKey",
+       "name": "青龙环境变量KEY",
+       "type": "text"
+      },
+      {
+       "id": "remark",
+       "name": "覆盖备注",
+       "type": "textarea",
+       "placeholder": "请输入覆盖备注",
+       "desc": "覆盖和青龙环境变量中备注相同的变量"
+      }
+     ]
+    },
+    {
+     "id": "@ql.ip",
+     "name": "青龙登陆的域名或IP:端口号",
+     "val": "",
+     "type": "text",
+     "placeholder": "111.21.0.32:5700"
+    },
+    {
+     "id": "@ql.client_id",
+     "name": "应用 Client ID",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "@ql.client_secret",
+     "name": "应用 Client Secret",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "@ql.username",
+     "name": "账号",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "@ql.password",
+     "name": "密码",
+     "val": "",
+     "type": "text"
+    }
+   ],
+   "descs_html": [
+    "青龙面板数据同步配置：把 BoxJs 数据同步为青龙环境变量。",
+    "需要自有青龙面板（地址、应用 ClientId/ClientSecret 或账号密码）。"
+   ]
+  },
+  {
+   "id": "buy-helper",
+   "name": "购物助手",
+   "keys": [
+    "jd_unionId",
+    "jd_positionId",
+    "jtt_appid",
+    "jtt_appkey",
+    "buy_helper_LR",
+    "buy_helper_zdm",
+    "buy_helper_mmm",
+    "buy_helper_gwd",
+    "buy_helper_copy"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jingfen.png"
+   ],
+   "settings": [
+    {
+     "id": "jd_unionId",
+     "name": "联盟 ID",
+     "val": "",
+     "type": "text",
+     "placeholder": "",
+     "desc": ""
+    },
+    {
+     "id": "jd_positionId",
+     "name": "推广位 ID",
+     "val": "",
+     "type": "text",
+     "placeholder": "",
+     "desc": "京东联盟推广位ID"
+    },
+    {
+     "id": "jtt_appid",
+     "name": "京推推 AppId",
+     "val": "",
+     "placeholder": "",
+     "type": "text",
+     "desc": ""
+    },
+    {
+     "id": "jtt_appkey",
+     "name": "京推推 AppKey",
+     "val": "",
+     "placeholder": "",
+     "type": "text",
+     "desc": ""
+    },
+    {
+     "id": "buy_helper_LR",
+     "name": "悬浮按键",
+     "val": "",
+     "type": "radios",
+     "desc": "悬浮按键显示位置",
+     "items": [
+      {
+       "key": "left",
+       "label": "左侧"
+      },
+      {
+       "key": "right",
+       "label": "右侧"
+      }
+     ]
+    },
+    {
+     "id": "buy_helper_zdm",
+     "name": "值得买",
+     "val": "",
+     "type": "boolean",
+     "desc": ""
+    },
+    {
+     "id": "buy_helper_mmm",
+     "name": "慢慢买",
+     "val": "",
+     "type": "boolean",
+     "desc": ""
+    },
+    {
+     "id": "buy_helper_gwd",
+     "name": "购物党",
+     "val": "",
+     "type": "boolean",
+     "desc": ""
+    },
+    {
+     "id": "buy_helper_copy",
+     "name": "复制短链",
+     "val": "",
+     "type": "boolean",
+     "desc": ""
+    }
+   ],
+   "descs_html": [
+    "购物返利助手配置：京东联盟 ID/推广位、京推推 AppId/AppKey；购物时可转链返利，并跳转慢慢买、购物党、什么值得买比价。"
+   ]
+  },
+  {
+   "id": "bilimangapoints",
+   "name": "哔哩漫画抢券",
+   "keys": [
+    "BM_ProductName",
+    "BM_ProductNum",
+    "BM_ExchangeNum"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/manga.png"
+   ],
+   "settings": [
+    {
+     "id": "@BILI_COMICS_CHECKIN.ProductName",
+     "name": "商品名",
+     "val": "",
+     "type": "text",
+     "placeholder": "(点击以展开说明)",
+     "desc": "要抢购的积分商城商品名"
+    },
+    {
+     "id": "@BILI_COMICS_CHECKIN.ProductNum",
+     "name": "兑换数量",
+     "val": "",
+     "type": "text",
+     "placeholder": "(点击以展开说明)",
+     "desc": "要兑换的数量, 默认为积分可兑换的最大值"
+    },
+    {
+     "id": "@BILI_COMICS_CHECKIN.ExchangeNum",
+     "name": "抢购次数",
+     "val": "",
+     "type": "text",
+     "placeholder": "(点击以展开说明)",
+     "desc": "默认暴力抢购100次"
+    }
+   ],
+   "descs_html": [
+    "哔哩哔哩漫画积分商城自动抢券：每周日、周一 0:00 自动兑换配置的商品（默认限量 0 点秒杀）。",
+    "需要先用哔哩漫画签到脚本获取 Cookie（BoxJs 数据 BILI_COMICS_CHECKIN），账号需已有积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/bilimangapoints/Bilimangapoints.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/ExchangePoints.js"
+  },
+  {
+   "id": "caiyun",
+   "name": "彩云天气",
+   "keys": [
+    "@caiyun.token.caiyun",
+    "@caiyun.token.tencent",
+    "@caiyun.display_location",
+    "@caiyun.location.latitude",
+    "@caiyun.location.longitude",
+    "@caiyun.address"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/caiyuntianqi.png"
+   ],
+   "settings": [
+    {
+     "id": "@caiyun.token.caiyun",
+     "name": "彩云天气API Token",
+     "val": "",
+     "type": "text",
+     "autoGrow": false,
+     "rows": 2,
+     "desc": "彩云天气的Token，可以自行申请或者前往频道获取"
+    },
+    {
+     "id": "@caiyun.token.tencent",
+     "name": "腾讯地图API Token",
+     "val": "",
+     "type": "text",
+     "rows": 1,
+     "desc": ""
+    },
+    {
+     "id": "@caiyun.display_location",
+     "name": "是否在日志中显示经纬度",
+     "val": "",
+     "type": "boolean",
+     "desc": ""
+    },
+    {
+     "id": "@caiyun.location.latitude",
+     "name": "纬度",
+     "val": "",
+     "type": "text",
+     "desc": "纬度，可以关闭MITM获取位置，手动设置"
+    },
+    {
+     "id": "@caiyun.location.longitude",
+     "name": "经度",
+     "val": "",
+     "type": "text",
+     "desc": "经度，可以关闭MITM获取位置，手动设置"
+    }
+   ],
+   "descs_html": [
+    "彩云天气推送：自动定位、异常天气预警、实时天气预报，每 2 小时推送一次。",
+    "需要免费申请彩云天气 API Token 填入 BoxJs；定位通过打开系统天气 App 自动获取，也可在 BoxJs 手动填经纬度。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/caiyun/Caiyun.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js"
+  },
+  {
+   "id": "blackmatrix7-bark",
+   "name": "Bark推送",
+   "keys": [
+    "magic_bark_url"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/matrix/dark/bark.jpg"
+   ],
+   "settings": [
+    {
+     "id": "magic_bark_url",
+     "name": "Bark推送URL",
+     "val": "",
+     "type": "input",
+     "placeholder": "https://api.day.app/xxxxxxxxxxxxxxxxxx/",
+     "autoGrow": true,
+     "desc": "填写Bark推送的链接，脚本通知将通过Bark推送。仅基于MagicJS 3的脚本支持。"
+    }
+   ],
+   "descs_html": [
+    "Bark 推送地址配置：脚本通知将通过 Bark 推送。",
+    "需要 Bark 的推送链接（https://api.day.app/你的 key/）。"
+   ]
+  },
+  {
+   "id": "blackmatrix7-magicjs",
+   "name": "MagicJS",
+   "keys": [
+    "magic_test_data",
+    "magic_test_notification",
+    "magic_test_http",
+    "magic_test_qinglong",
+    "magic_test_qinglong_data"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/magicjs/images/logo_dark.png"
+   ],
+   "settings": [
+    {
+     "id": "magic_loglevel",
+     "name": "日志等级",
+     "val": "",
+     "type": "radios",
+     "items": [
+      {
+       "key": "INFO",
+       "label": "INFO"
+      },
+      {
+       "key": "WARNING",
+       "label": "WARNING"
+      },
+      {
+       "key": "ERROR",
+       "label": "ERROR"
+      },
+      {
+       "key": "DEBUG",
+       "label": "DEBUG"
+      },
+      {
+       "key": "SNIFFER",
+       "label": "SNIFFER"
+      }
+     ],
+     "desc": "出现异常时请选择DEBUG提交日志"
+    }
+   ],
+   "descs_html": [
+    "MagicJS 开发者调试配置（日志等级等）。"
+   ]
+  },
+  {
+   "id": "blackmatrix7-testflight",
+   "name": "TestFlight",
+   "keys": [
+    "tf_app_id",
+    "tf_join_mode",
+    "tf_loop_count",
+    "tf_session_info",
+    "tf_joined_app_id",
+    "tf_storefront_id",
+    "tf_invalid_app_id",
+    "tf_check_account_id",
+    "tf_join_concurrency",
+    "tf_app_use_account_id",
+    "tf_check_session_time",
+    "tf_check_session_time_diff"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight.png"
+   ],
+   "settings": [
+    {
+     "id": "tf_sync_qinglong",
+     "name": "同步数据到青龙面板",
+     "val": "",
+     "type": "boolean",
+     "desc": "将必要数据同步至青龙面板，以执行作业"
+    },
+    {
+     "id": "tf_join_mode",
+     "name": "执行模式",
+     "val": "",
+     "type": "radios",
+     "items": [
+      {
+       "key": "0",
+       "label": "温和"
+      },
+      {
+       "key": "1",
+       "label": "标准"
+      },
+      {
+       "key": "2",
+       "label": "暴力"
+      }
+     ],
+     "desc": "推荐使用温和与标准模式，暴力模式风险极高"
+    },
+    {
+     "id": "tf_app_id",
+     "name": "TestFlight App愿望清单",
+     "val": "",
+     "type": "input",
+     "placeholder": "",
+     "autoGrow": true,
+     "desc": "等待加入的TestFlight APP Id，多个APP Id以;分隔"
+    },
+    {
+     "id": "tf_join_concurrency",
+     "name": "并发数量",
+     "val": "",
+     "type": "number",
+     "placeholder": "",
+     "autoGrow": true,
+     "desc": "当App的Beta可加入时，每个账户并发多少个请求尝试加入"
+    },
+    {
+     "id": "tf_loop_count",
+     "name": "每次运行循环次数",
+     "val": "",
+     "type": "number",
+     "placeholder": "",
+     "autoGrow": true,
+     "desc": "每次运行脚本时循环多少次，每次循环间隔800毫秒。NodeJS(非青龙面板)可设置为0，表示持续运行"
+    },
+    {
+     "id": "tf_check_session_time_diff",
+     "name": "检查Session有效性的间隔",
+     "val": "",
+     "type": "number",
+     "placeholder": "",
+     "autoGrow": true,
+     "desc": "每间隔多少秒检查一次账户的有效性，默认7200秒"
+    },
+    {
+     "id": "tf_joined_app_id",
+     "name": "TestFlight每个账户已加入成功的AppId",
+     "val": "",
+     "type": "textarea",
+     "placeholder": "",
+     "autoGrow": true,
+     "desc": "多账户的TestFlight已加入的AppId，不建议手动修改"
+    },
+    {
+     "id": "tf_session_info",
+     "name": "TestFlight Session数据",
+     "val": "",
+     "type": "textarea",
+     "placeholder": "",
+     "autoGrow": true,
+     "desc": "多账户的TestFlight数据，仅供查看，请勿手动修改以免引发异常"
+    },
+    {
+     "id": "tf_check_account_id",
+     "name": "用于检查App Beta可否加入的AccountId",
+     "val": "",
+     "type": "input",
+     "placeholder": "",
+     "autoGrow": true,
+     "desc": "选择一个账号专门用于检测TF是否可以加入，以保护主号"
+    },
+    {
+     "id": "tf_storefront_id",
+     "name": "自定义storefrontId",
+     "val": "",
+     "type": "input",
+     "desc": "自定义storefrontId，以解决国区账号TestFlight下载App受限问题"
+    }
+   ],
+   "descs_html": [
+    "TestFlight 自动加入/监控配置：愿望清单 App ID、执行模式、并发数，可自动抢 Beta 测试位。"
+   ]
+  },
+  {
+   "id": "blackmatrix7-qinglong",
+   "name": "青龙面板",
+   "keys": [
+    "magic_qlurl",
+    "magic_qlclient",
+    "magic_qlsecrt",
+    "magic_qlname",
+    "magic_qlpwd",
+    "magic_qltoken"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/magicjs/images/qinglong_dark.png"
+   ],
+   "settings": [
+    {
+     "id": "magic_qlurl",
+     "name": "登录地址",
+     "val": "",
+     "type": "input",
+     "placeholder": "http://qinglong.mydomain.com",
+     "autoGrow": true,
+     "desc": "填写青龙面板的登录地址，如为https请保证证书有效"
+    },
+    {
+     "id": "magic_qlclient",
+     "name": "ClientId",
+     "val": "",
+     "type": "input",
+     "placeholder": "",
+     "autoGrow": true,
+     "desc": "填写青龙面板的ClientId"
+    },
+    {
+     "id": "magic_qlsecrt",
+     "name": "ClientSecret",
+     "val": "",
+     "type": "input",
+     "placeholder": "",
+     "autoGrow": true,
+     "desc": "填写青龙面板的ClientSecret"
+    },
+    {
+     "id": "magic_qlname",
+     "name": "账号",
+     "val": "",
+     "type": "input",
+     "placeholder": "",
+     "autoGrow": true,
+     "desc": "填写青龙面板的账号，当存在ClientId时，填写账号不会生效"
+    },
+    {
+     "id": "magic_qlpwd",
+     "name": "密码",
+     "val": "",
+     "type": "input",
+     "placeholder": "http://qinglong.mydomain.com",
+     "autoGrow": true,
+     "desc": "填写青龙面板的密码，当存在ClientId时，填写密码不会生效"
+    },
+    {
+     "id": "magic_qltoken",
+     "name": "token",
+     "val": "",
+     "type": "textarea",
+     "placeholder": "",
+     "autoGrow": true,
+     "desc": "登录token，正常情况下不需要填写，自动获取"
+    }
+   ],
+   "descs_html": [
+    "青龙面板连接配置。",
+    "需要自有青龙面板（登录地址、ClientId/ClientSecret 或账号密码）。"
+   ]
+  },
+  {
+   "id": "idaily",
+   "name": "iDaily",
+   "keys": [
+    "@iDaily.random"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/idaily_tran.png"
+   ],
+   "settings": [
+    {
+     "id": "@iDaily.random",
+     "name": "随机获取",
+     "val": "",
+     "type": "boolean",
+     "desc": "打开将会随机获取内容"
+    }
+   ],
+   "descs_html": [
+    "iDaily 每日环球视野推送：每天 0:05 推送一条精选内容。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/idaily/Idaily.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/idaily/idaily.js"
+  },
+  {
+   "id": "testflightaccount-fmz",
+   "name": "TF账户管理",
+   "keys": [
+    "TESTFLIGHT-ACCOUNT"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/testflight.png"
+   ],
+   "settings": [
+    {
+     "id": "@TESTFLIGHT-ACCOUNT.Debug",
+     "name": "开发者模式",
+     "val": "",
+     "type": "boolean",
+     "desc": "用于调试脚本, 一般用户请勿开启."
+    },
+    {
+     "id": "@TESTFLIGHT-ACCOUNT.EnableCache",
+     "name": "启用缓存",
+     "val": "",
+     "type": "boolean",
+     "desc": "用于缓存APP列表, 改善列表页面加载过慢，需与\"请求超时\"配合使用。开启缓存并刷新列表后，可适当调小超时"
+    },
+    {
+     "id": "@TESTFLIGHT-ACCOUNT.Timeout",
+     "name": "请求超时",
+     "val": "",
+     "type": "number",
+     "placeholder": "30",
+     "desc": "默认为30, 单位: 秒"
+    },
+    {
+     "id": "@TESTFLIGHT-ACCOUNT.ForceIOSlist",
+     "name": "使用iOS应用列表",
+     "val": "",
+     "type": "boolean",
+     "desc": "强制使用iOS应用列表, 用于改善 macOS TestFlight 加载过慢, iOS用户无需开启"
+    }
+   ],
+   "descs_html": [
+    "TestFlight 账户管理配置。",
+    "需配合 TF 自动加入使用。"
+   ]
+  },
+  {
+   "id": "fmz200-xiaohongshu",
+   "name": "小红书功能增强",
+   "keys": [
+    "fmz200.xiaohongshu.imageQuality"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/xiaohongshu.png"
+   ],
+   "settings": [
+    {
+     "id": "fmz200.xiaohongshu.imageQuality",
+     "name": "小红书无水印图片保存质量",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "original",
+       "label": "原始分辨率 (图片占用空间大)"
+      },
+      {
+       "key": "highPixels",
+       "label": "高像素输出 (图片占用空间小)"
+      },
+      {
+       "key": "highQuality",
+       "label": "高质量压缩"
+      },
+      {
+       "key": "medium",
+       "label": "平衡配置"
+      }
+     ],
+     "desc": "图片质量可选：原始分辨率PNG，高像素输出HEIF，高质量压缩，平衡配置"
+    }
+   ],
+   "descs_html": [
+    "小红书功能增强配置：保存无水印图片/视频的图片质量。",
+    "需配合对应重写脚本使用。"
+   ]
+  },
+  {
+   "id": "id77-oandi",
+   "name": "O&I",
+   "keys": [
+    "oIArr"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+   ],
+   "settings": [
+    {
+     "id": "oIArr",
+     "name": "openId&iPhone",
+     "val": "",
+     "type": "textarea",
+     "desc": "示例：openId1@13800138000#openId2@13800138001",
+     "autoGrow": true,
+     "rows": 2
+    }
+   ],
+   "descs_html": [
+    "输入输出辅助配置（openId 与手机号对应关系）。"
+   ]
+  },
+  {
+   "id": "id77-qr",
+   "name": "QR助手",
+   "keys": [
+    "id77_qr_data",
+    "id77_qr_domClass"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+   ],
+   "settings": [
+    {
+     "id": "id77_qr_domClass",
+     "name": "QR元素Class",
+     "val": "",
+     "type": "text",
+     "desc": "css选着器"
+    },
+    {
+     "id": "id77_qr_data",
+     "name": "QR数据",
+     "val": "",
+     "type": "textarea",
+     "desc": "数组，[{url:xxx,text:xxx}]",
+     "autoGrow": true,
+     "rows": 2
+    }
+   ],
+   "descs_html": [
+    "二维码识别/生成辅助工具配置。"
+   ]
+  },
+  {
+   "id": "id77-movie",
+   "name": "影票",
+   "keys": [
+    "id77_movie_maximumLoss"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+   ],
+   "settings": [
+    {
+     "id": "id77_movie_maximumLoss",
+     "name": "最大损失",
+     "val": "",
+     "type": "number",
+     "desc": "最多保留两位小数；不用时，可以设置0"
+    }
+   ],
+   "descs_html": [
+    "影票辅助配置（最大损失设置）。"
+   ]
+  },
+  {
+   "id": "id77-mitm",
+   "name": "抓包数据",
+   "keys": [
+    "id77_mitmData"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+   ],
+   "settings": [
+    {
+     "id": "id77_mitmData",
+     "name": "抓包数据",
+     "val": "",
+     "type": "textarea",
+     "desc": "抓包数据，一次性抓包，复制使用。新抓包需手动清除。",
+     "autoGrow": true,
+     "rows": 2
+    }
+   ],
+   "descs_html": [
+    "抓包数据查看/调试工具配置。"
+   ]
+  },
+  {
+   "id": "id77-clicker",
+   "name": "点击器",
+   "keys": [
+    "id77_clicker_frequency",
+    "id77_clicker_off_zIndex"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+   ],
+   "settings": [
+    {
+     "id": "id77_clicker_frequency",
+     "name": "点击频率",
+     "val": "",
+     "type": "number",
+     "desc": "数值，1-60"
+    },
+    {
+     "id": "id77_clicker_off_zIndex",
+     "name": "开关 z-index",
+     "val": "",
+     "type": "number",
+     "desc": "数值，建议10000以上"
+    }
+   ],
+   "descs_html": [
+    "网页自动点击辅助工具配置（点击频率、开关层级）。"
+   ]
+  },
+  {
+   "id": "id77-api",
+   "name": "自用JDCookie管理",
+   "keys": [
+    "CookiesJD",
+    "id77_api",
+    "id77_api_sync_cookie"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/link.png"
+   ],
+   "settings": [
+    {
+     "id": "CookiesJD",
+     "name": "cookie List",
+     "val": "",
+     "type": "textarea",
+     "autoGrow": true,
+     "rows": 2
+    },
+    {
+     "id": "id77_api",
+     "name": "api",
+     "val": "",
+     "type": "textarea",
+     "autoGrow": true,
+     "rows": 2
+    },
+    {
+     "id": "id77_api_sync_cookie",
+     "name": "api",
+     "val": "",
+     "type": "textarea",
+     "autoGrow": true,
+     "rows": 2
+    }
+   ],
+   "descs_html": [
+    "自用京东 Cookie 同步管理：从自建同步接口拉取京东 Cookie 并写入本地，每天 9:15 同步一次。",
+    "需要自备返回京东 Cookie 列表的接口地址（id77_api_sync_cookie）。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/id77-api/Id77Api.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/Script/syncJDCookie.js"
+  },
+  {
+   "id": "id77-ql",
+   "name": "青龙上传设置任务",
+   "keys": [
+    "id77_ql_flag",
+    "id77_ql_addrs",
+    "id77_ql_baseUrl",
+    "id77_ql_port",
+    "id77_ql_clientId",
+    "id77_ql_clientSecret",
+    "id77_ql_fileName",
+    "id77_ql_schedule",
+    "id77_ql_taskName",
+    "id77_deviceName"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+   ],
+   "settings": [
+    {
+     "id": "id77_ql_flag",
+     "name": "启用",
+     "val": "",
+     "type": "boolean",
+     "desc": "使用BoxJS数据"
+    },
+    {
+     "id": "id77_ql_fileName",
+     "name": "本地文件名",
+     "val": "",
+     "type": "text",
+     "placeholder": "QX取iCloud的Scripts文件夹文件，NodeJS取运行同级路径下的文件"
+    },
+    {
+     "id": "id77_ql_schedule",
+     "name": "任务定时",
+     "val": "",
+     "type": "text",
+     "placeholder": "cron 格式"
+    },
+    {
+     "id": "id77_ql_taskName",
+     "name": "任务名",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "id77_ql_addrs",
+     "name": "青龙域名或IP(固定)",
+     "val": "",
+     "type": "textarea",
+     "autoGrow": true,
+     "rows": 2,
+     "placeholder": "192.168.2.1@192.168.2.2"
+    },
+    {
+     "id": "id77_ql_addrs_other",
+     "name": "青龙域名或IP(预留)",
+     "val": "",
+     "type": "textarea",
+     "autoGrow": true,
+     "rows": 2,
+     "placeholder": "192.168.2.1@192.168.2.2"
+    },
+    {
+     "id": "id77_ql_port",
+     "name": "青龙端口",
+     "val": "",
+     "type": "number"
+    },
+    {
+     "id": "id77_ql_baseUrl",
+     "name": "青龙基础URL",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "id77_ql_clientId",
+     "name": "青龙 Client Id",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "id77_ql_clientSecret",
+     "name": "青龙 Client Secret",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "id77_deviceName",
+     "name": "设备名称",
+     "val": "",
+     "type": "text"
+    }
+   ],
+   "descs_html": [
+    "向自有青龙面板上传任务的配置。",
+    "需要自有青龙面板地址与应用凭证。"
+   ]
+  },
+  {
+   "id": "qcej",
+   "name": "去重二剪",
+   "keys": [
+    "qcej_token"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Former-Years/icon/master/qcej.png"
+   ],
+   "settings": [
+    {
+     "id": "qcej_token",
+     "name": "去重二剪Token",
+     "val": "",
+     "type": "text",
+     "placeholder": "",
+     "autoGrow": true,
+     "rows": 2,
+     "desc": ""
+    }
+   ],
+   "descs_html": [
+    "去重二剪视频处理工具：每天 9:15 自动执行去重二剪任务。",
+    "需要去重二剪服务的 Token：打开去重二剪小程序即可自动抓取。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/qcej/Qcej.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/qcej.js"
+  },
+  {
+   "id": "yuheng-imaotai-v1-5",
+   "name": "i茅台预约",
+   "keys": [
+    "imaotai_debug",
+    "imaotai_mobile",
+    "imaotai_code",
+    "imaotai_params",
+    "imaotai__config__islarge",
+    "imaotai__config__istravel",
+    "imaotai__config__province",
+    "imaotai__config__city",
+    "imaotai__config__itemcode",
+    "imaotai__config__address",
+    "imaotai__config__location",
+    "imaotai_bark_key"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ae/f4/18/aef41811-955e-e6b0-5d23-6763c2eef1ab/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png"
+   ],
+   "settings": [
+    {
+     "id": "imaotai_debug",
+     "name": "是否开启调试模式",
+     "val": "",
+     "type": "boolean",
+     "desc": ""
+    },
+    {
+     "id": "imaotai_mobile",
+     "name": "手机号(用于获取验证码)",
+     "val": "",
+     "type": "text",
+     "desc": ""
+    },
+    {
+     "id": "imaotai_code",
+     "name": "验证码",
+     "val": "",
+     "type": "text",
+     "desc": "务必先执行获取验证码接口再填写该字段"
+    },
+    {
+     "id": "imaotai__config__islarge",
+     "name": "预约方式[是否开启最大投放量]",
+     "val": "",
+     "type": "boolean",
+     "desc": ""
+    },
+    {
+     "id": "imaotai__config__istravel",
+     "name": "是否开启茅运旅行[⚠️临时停用]",
+     "val": "",
+     "type": "boolean",
+     "desc": ""
+    },
+    {
+     "id": "imaotai__config__province",
+     "name": "*省份名称, 如: 贵州省",
+     "val": "",
+     "type": "text",
+     "rows": 1,
+     "desc": "必填"
+    },
+    {
+     "id": "imaotai__config__city",
+     "name": "*城市名称, 如: 贵阳市",
+     "val": "",
+     "type": "text",
+     "rows": 1,
+     "desc": "必填"
+    },
+    {
+     "id": "imaotai__config__itemcode",
+     "name": "*预约项",
+     "val": "",
+     "type": "checkboxes",
+     "items": [
+      {
+       "key": "11318",
+       "label": "53%vol 500ml贵州茅台酒（乙巳蛇年）"
+      },
+      {
+       "key": "11317",
+       "label": "53%vol 500ml贵州茅台酒（笙乐飞天）"
+      },
+      {
+       "key": "11319",
+       "label": "53%vol 375ml×2贵州茅台酒（乙巳蛇年）"
+      },
+      {
+       "key": "2478",
+       "label": "贵州茅台酒（珍品）"
+      },
+      {
+       "key": "11240",
+       "label": "53%vol 500ml 茅台1935·中国国家地理文创酒（喜逢大运河）"
+      }
+     ]
+    },
+    {
+     "id": "imaotai__config__address",
+     "name": "当前位置(与经纬度二选一, 建议填写地址)",
+     "val": "",
+     "type": "text",
+     "rows": 1,
+     "desc": "尽量具体, 比如: 山东省济南市齐鲁软件园, 精确到标志性建筑物"
+    },
+    {
+     "id": "imaotai__config__location",
+     "name": "(选填)当前经纬度",
+     "val": "",
+     "type": "text",
+     "rows": 1,
+     "desc": "注意经度在前, 纬度在后, 例如: 117.119999,36.651216,不填根据当前位置获取"
+    },
+    {
+     "id": "imaotai_bark_key",
+     "name": "Bark通知",
+     "val": "",
+     "type": "text",
+     "rows": 1,
+     "desc": "填写Bark的app提供的key, 填写后不再使用默认通知方式"
+    },
+    {
+     "id": "amap_api",
+     "name": "(选填)高德开发者Key",
+     "val": "",
+     "type": "text",
+     "rows": 1,
+     "desc": "后续key失效后需要填写"
+    }
+   ],
+   "descs_html": [
+    "i茅台预约抢购配置。",
+    "需要 i茅台账号手机号和验证码，并填写省份、城市、预约项；无独立脚本，验证码与登录操作在配套脚本中完成。"
+   ]
+  },
+  {
+   "id": "yuheng-60s",
+   "name": "每天60秒读懂世界",
+   "keys": [
+    "zaobao_debug",
+    "zaobao_original_url"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/60s.png"
+   ],
+   "settings": [
+    {
+     "id": "zaobao_debug",
+     "name": "是否开启调试模式",
+     "val": "",
+     "type": "boolean",
+     "desc": ""
+    },
+    {
+     "id": "zaobao_original_url",
+     "name": "点击横幅是否跳转原文",
+     "val": "",
+     "type": "boolean",
+     "desc": "开启跳转微信公众号文章, 关闭点击横幅跳转图片链接"
+    }
+   ],
+   "descs_html": [
+    "每天 60 秒读懂世界早报推送：每天 9:30 推送，点击通知可跳转原文或图片。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-60s/Yuheng60s.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js"
+  },
+  {
+   "id": "yuheng-95598-web",
+   "name": "网上国网",
+   "keys": [
+    "95598_log_debug",
+    "95598_recent_elc_fee",
+    "95598_notify_type",
+    "95598_username",
+    "95598_password",
+    "95598_bizrt",
+    "95598_bindInfo"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/83/d8/8a/83d88a92-5a4d-7a2f-118c-80d795e7a9f6/AppIcon-0-0-1x_U007emarketing-0-5-0-0-sRGB-85-220.png/144x144.png"
+   ],
+   "settings": [
+    {
+     "id": "95598_log_debug",
+     "name": "是否输出日志",
+     "val": "",
+     "type": "boolean",
+     "desc": ""
+    },
+    {
+     "id": "95598_recent_elc_fee",
+     "name": "是否查看近期用电量",
+     "val": "",
+     "type": "boolean",
+     "desc": ""
+    },
+    {
+     "id": "95598_notify_type",
+     "name": "是否通知全部绑定户号",
+     "val": "",
+     "type": "boolean",
+     "desc": ""
+    },
+    {
+     "id": "95598_username",
+     "name": "账号",
+     "val": "",
+     "type": "text",
+     "rows": 1,
+     "desc": "手机号"
+    },
+    {
+     "id": "95598_password",
+     "name": "密码",
+     "val": "",
+     "type": "text",
+     "rows": 1,
+     "desc": ""
+    }
+   ],
+   "descs_html": [
+    "网上国网电费查询：每天 9:00 查询账户余额、本期电量、年度用电等并通知。",
+    "需要网上国网账号（手机号）和密码。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-95598-web/Yuheng95598Web.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.js"
+  },
+  {
+   "id": "zz-douban",
+   "name": "电影日历",
+   "keys": [
+    "@MovieCalendar.apikey",
+    "@MovieCalendar.diylink",
+    "@MovieCalendar.time",
+    "@MovieCalendar.choosePic",
+    "@MovieCalendar.chooseClient"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/MovieCalendar.png"
+   ],
+   "settings": [
+    {
+     "id": "@MovieCalendar.debug",
+     "name": "测试环境",
+     "val": "",
+     "type": "boolean",
+     "desc": "如未出现特殊报错等问题请保持关闭。"
+    },
+    {
+     "id": "@MovieCalendar.time",
+     "name": "重试次数",
+     "val": "",
+     "type": "number",
+     "placeholder": "10",
+     "desc": "运行时接口失败的重试次数，不填默认为 10，请谨慎填写，过大会爆内存。"
+    },
+    {
+     "id": "@MovieCalendar.apikey",
+     "name": "APIKey",
+     "val": "",
+     "type": "text",
+     "desc": "豆瓣获取接口的 APIKey，请自行获取。"
+    },
+    {
+     "id": "@MovieCalendar.choosePic",
+     "name": "多媒体",
+     "val": "",
+     "type": "radios",
+     "desc": "选择通知中的多媒体。",
+     "items": [
+      {
+       "key": "poster",
+       "label": "电影剧照"
+      },
+      {
+       "key": "cover",
+       "label": "电影海报"
+      },
+      {
+       "key": "trailer",
+       "label": "预告片"
+      }
+     ]
+    },
+    {
+     "id": "@MovieCalendar.chooseClient",
+     "name": "客户端",
+     "val": "",
+     "type": "radios",
+     "desc": "选择点击跳转的客户端。",
+     "items": [
+      {
+       "key": "Safari",
+       "label": "Safari"
+      },
+      {
+       "key": "douban",
+       "label": "豆瓣"
+      },
+      {
+       "key": "diy",
+       "label": "自定义跳转"
+      }
+     ]
+    },
+    {
+     "id": "@MovieCalendar.diylink",
+     "name": "跳转链接",
+     "val": "",
+     "type": "text",
+     "placeholder": "dingtalk://dingtalkclient/page/link?url=https://attend.dingtalk.com/attend/index.html",
+     "desc": "自定义跳转链接，可为 URL Scheme，仅当客户端选择「自定义跳转」时有效。"
+    }
+   ],
+   "descs_html": [
+    "电影上映日历查询工具。",
+    "需要豆瓣 API Key（官方已取消申请，需自行解决：找他人分享的 Key 或抓包获取本机上的）。"
+   ]
+  },
+  {
+   "id": "componentservice-12123",
+   "name": "交管12123",
+   "keys": [
+    "@ComponentService.12123.Settings",
+    "@ComponentService.12123.Caches"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Nanako718/Scripting/main/images/12123.png"
+   ],
+   "settings": [
+    {
+     "id": "@ComponentService.12123.Settings.token",
+     "name": "交管 12123 token（完整字符串）",
+     "type": "text",
+     "val": "",
+     "placeholder": "建议通过脚本自动抓取，无需手动填写",
+     "desc": "脚本会自动写入完整 token 字符串。如需重置，可先清空此字段，再重新触发抓取流程。"
+    }
+   ],
+   "descs_html": [
+    "交管 12123 Token 保存组件，供 Scriptable / 面板组件 / 其他脚本复用。",
+    "打开支付宝小程序交管 12123 触发抓取，脚本自动写入 Token，无需手动填写。"
+   ]
+  },
+  {
+   "id": "wyy-bottom-tab",
+   "name": "底部 Tab",
+   "keys": [
+    "wyy_FX",
+    "wyy_MY",
+    "wyy_DT",
+    "wyy_GZ",
+    "wyy_SOU",
+    "wyy_SY_NAME",
+    "wyy_WD_NAME",
+    "wyy_MY_NAME",
+    "wyy_DT_NAME",
+    "wyy_FX_NAME"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Keywos/rule/main/tv/app/144px/Netease.png"
+   ],
+   "settings": [
+    {
+     "id": "wyy_FX",
+     "name": "发现",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "显示"
+      },
+      {
+       "key": "1",
+       "label": "隐藏"
+      }
+     ]
+    },
+    {
+     "id": "wyy_MY",
+     "name": "漫游",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "显示"
+      },
+      {
+       "key": "1",
+       "label": "隐藏"
+      }
+     ]
+    },
+    {
+     "id": "wyy_DT",
+     "name": "笔记",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "显示"
+      },
+      {
+       "key": "1",
+       "label": "隐藏"
+      }
+     ]
+    },
+    {
+     "id": "wyy_GZ",
+     "name": "关注",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "显示"
+      },
+      {
+       "key": "1",
+       "label": "隐藏"
+      }
+     ]
+    },
+    {
+     "id": "wyy_SOU",
+     "name": "搜索",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "显示"
+      },
+      {
+       "key": "1",
+       "label": "隐藏"
+      }
+     ]
+    },
+    {
+     "id": "wyy_SY_NAME",
+     "name": "首页自定义名称",
+     "val": "",
+     "type": "text",
+     "desc": "留空保持原名"
+    },
+    {
+     "id": "wyy_WD_NAME",
+     "name": "我的自定义名称",
+     "val": "",
+     "type": "text",
+     "desc": "留空保持原名"
+    },
+    {
+     "id": "wyy_MY_NAME",
+     "name": "漫游自定义名称",
+     "val": "",
+     "type": "text",
+     "desc": "留空保持原名"
+    },
+    {
+     "id": "wyy_DT_NAME",
+     "name": "笔记自定义名称",
+     "val": "",
+     "type": "text",
+     "desc": "留空保持原名"
+    },
+    {
+     "id": "wyy_FX_NAME",
+     "name": "发现自定义名称",
+     "val": "",
+     "type": "text",
+     "desc": "留空保持原名"
+    }
+   ],
+   "descs_html": [
+    "网易云音乐界面精简配置：隐藏/显示底部 Tab（发现/漫游/笔记/关注/搜索）及自定义名称。",
+    "需配合对应重写脚本使用。"
+   ]
+  },
+  {
+   "id": "wyy-home-cards",
+   "name": "首页卡片",
+   "keys": [
+    "wyy_PRGG",
+    "wyy_PRDRD",
+    "wyy_PRSCVPT",
+    "wyy_PRST",
+    "wyy_HMPR",
+    "wyy_PRRR",
+    "wyy_PRRK",
+    "wyy_PRMST",
+    "wyy_PRCN",
+    "wyy_PRPRS",
+    "wyy_PRRSS"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Keywos/rule/main/tv/app/144px/Netease.png"
+   ],
+   "settings": [
+    {
+     "id": "wyy_PRGG",
+     "name": "问候语",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    },
+    {
+     "id": "wyy_PRDRD",
+     "name": "每日推荐",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    },
+    {
+     "id": "wyy_PRSCVPT",
+     "name": "推荐歌单",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    },
+    {
+     "id": "wyy_PRST",
+     "name": "最近常听",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    },
+    {
+     "id": "wyy_HMPR",
+     "name": "音乐合伙人",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    },
+    {
+     "id": "wyy_PRRR",
+     "name": "雷达歌单",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    },
+    {
+     "id": "wyy_PRRK",
+     "name": "排行榜",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    },
+    {
+     "id": "wyy_PRMST",
+     "name": "推荐专属歌单",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    },
+    {
+     "id": "wyy_PRCN",
+     "name": "你的专属歌单",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    },
+    {
+     "id": "wyy_PRPRS",
+     "name": "私房推荐歌曲",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    },
+    {
+     "id": "wyy_PRRSS",
+     "name": "红心相似歌曲",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    }
+   ],
+   "descs_html": [
+    "网易云音乐界面精简配置：隐藏/显示首页卡片。",
+    "需配合对应重写脚本使用。"
+   ]
+  },
+  {
+   "id": "cheryfs",
+   "name": "好奇车生活兑换",
+   "keys": [
+    "Cheryfs_Acc",
+    "Cheryfs_GIFTID",
+    "Cheryfs"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs.jpg"
+   ],
+   "settings": [
+    {
+     "id": "Cheryfs_Acc",
+     "name": "兑换账号",
+     "val": "",
+     "type": "text",
+     "desc": "默认第一个用户兑换，第二个填1，以此类推"
+    },
+    {
+     "id": "Cheryfs_GIFTID",
+     "name": "商品id",
+     "val": "",
+     "type": "text",
+     "desc": "运行脚本查看"
+    },
+    {
+     "id": "Cheryfs",
+     "name": "账号数据",
+     "val": "",
+     "type": "textarea",
+     "desc": "好奇车生活账号数据（JSON 数组，如 [{\"accountId\":\"1\"}]），兑换脚本从这里读取账号"
+    }
+   ],
+   "descs_html": [
+    "好奇车生活积分兑换：每天 17:59 自动用积分兑换配置的商品。",
+    "需要在 BoxJs 填写账号数据和商品 id；账号需已有积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/cheryfs/Cheryfs.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs_Exchange.js"
+  },
+  {
+   "id": "tkzx",
+   "name": "泰康在线兑换",
+   "keys": [
+    "TKZX_Acc",
+    "TKZX_GiftId",
+    "TKZX"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TKZX/TKZX.PNG"
+   ],
+   "settings": [
+    {
+     "id": "TKZX_Acc",
+     "name": "兑换账号",
+     "val": "",
+     "type": "text",
+     "desc": "默认第一个用户兑换，第二个填1，以此类推"
+    },
+    {
+     "id": "TKZX_GiftId",
+     "name": "商品id",
+     "val": "",
+     "type": "text",
+     "desc": "运行脚本查看"
+    },
+    {
+     "id": "TKZX",
+     "name": "账号数据",
+     "val": "",
+     "type": "textarea",
+     "desc": "泰康在线账号数据（JSON 数组，如 [{\"unionId\":\"1\",\"openId\":\"1\"}]），兑换脚本从这里读取账号"
+    }
+   ],
+   "descs_html": [
+    "泰康在线积分兑换：每天 10:00 自动用积分兑换配置的商品。",
+    "需要在 BoxJs 填写账号数据和商品 id；账号需已有积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/tkzx/Tkzx.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TKZX/TKZX_Exchange.js"
+  },
+  {
+   "id": "redbull",
+   "name": "红牛会员俱乐部兑换",
+   "keys": [
+    "RedBull_Acc",
+    "RedBull_GiftId",
+    "RedBull"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.jpg"
+   ],
+   "settings": [
+    {
+     "id": "RedBull_Acc",
+     "name": "兑换账号",
+     "val": "",
+     "type": "text",
+     "desc": "默认第一个用户兑换，第二个填1，以此类推"
+    },
+    {
+     "id": "RedBull_GiftId",
+     "name": "商品id",
+     "val": "",
+     "type": "text",
+     "desc": "运行脚本查看"
+    },
+    {
+     "id": "RedBull",
+     "name": "账号数据",
+     "val": "",
+     "type": "textarea",
+     "desc": "红牛会员俱乐部账号数据（JSON 数组，如 [{\"id\":\"1\",\"openId\":\"1\",\"token\":\"1\"}]），兑换脚本从这里读取账号"
+    }
+   ],
+   "descs_html": [
+    "红牛会员俱乐部积分兑换：每周五 13:59 自动用积分兑换配置的商品。",
+    "需要在 BoxJs 填写账号数据和商品 id；账号需已有积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/redbull/Redbull.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull_Exchange.js"
+  },
+  {
+   "id": "qiehuang",
+   "name": "茄皇兑换",
+   "keys": [
+    "QieHuang_Acc",
+    "QieHuang_GiftId",
+    "QieHuang_Body",
+    "OCR_SERVER"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TongYi/QieHuang.png"
+   ],
+   "settings": [
+    {
+     "id": "QieHuang_Acc",
+     "name": "兑换账号",
+     "val": "",
+     "type": "text",
+     "desc": "默认第一个用户兑换，第二个填2，以此类推"
+    },
+    {
+     "id": "QieHuang_GiftId",
+     "name": "商品id",
+     "val": "",
+     "type": "text",
+     "desc": "运行脚本查看"
+    },
+    {
+     "id": "QieHuang_Body",
+     "name": "账号数据",
+     "val": "",
+     "type": "textarea",
+     "desc": "茄皇账号数据（JSON 数组，如 [{\"wid\":\"1\",\"thirdId\":\"1\"}]），兑换脚本从这里读取账号"
+    },
+    {
+     "id": "OCR_SERVER",
+     "name": "OCR 服务地址",
+     "val": "",
+     "type": "textarea",
+     "desc": "自建 OCR 服务地址，用于验证码识别"
+    }
+   ],
+   "descs_html": [
+    "茄皇兑换：每天 9:45 自动用积分兑换配置的商品。",
+    "需要在 BoxJs 填写账号数据和商品 id，以及自建 OCR 服务地址（用于验证码识别）；账号需已有积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/qiehuang/Qiehuang.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TongYi/QieHuang_Exchange.js"
+  },
+  {
+   "id": "xream-enhanced-github",
+   "name": "GitHub 增强",
+   "keys": [
+    "@xream.enhanced-github.username",
+    "@xream.enhanced-github.token",
+    "@xream.enhanced-github.cache",
+    "@xream.enhanced-github.log_disabled"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/58xinian/icon/master/Github.png"
+   ],
+   "settings": [
+    {
+     "id": "@xream.enhanced-github.username",
+     "name": "用户名",
+     "val": "",
+     "type": "text",
+     "desc": "你的个人页面是 https://github.com/xream 那么 xream 就是你的用户名"
+    },
+    {
+     "id": "@xream.enhanced-github.token",
+     "name": "Personal access token",
+     "val": "",
+     "type": "text",
+     "desc": "获取方式见👆🏻"
+    },
+    {
+     "id": "@xream.enhanced-github.cache",
+     "name": "允许缓存",
+     "val": false,
+     "type": "boolean",
+     "desc": "默认关闭, 表示禁用缓存. 开启后, 将恢复正常缓存逻辑"
+    },
+    {
+     "id": "@xream.enhanced-github.log_disabled",
+     "name": "禁用日志",
+     "val": false,
+     "type": "boolean",
+     "desc": "默认关闭, 表示不禁用日志. 开启后, 将禁用日志"
+    }
+   ],
+   "descs_html": [
+    "GitHub App 增强配置。需要自备 GitHub Personal Access Token。"
+   ]
+  },
+  {
+   "id": "chinamobile-10086",
+   "name": "移动余量",
+   "keys": [
+    "china_mobile_debug",
+    "china_mobile_phonenumber",
+    "china_mobile_params",
+    "china_mobile_cookie",
+    "china_mobile_bark_key",
+    "china_mobile_silent",
+    "china_mobile_service"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/92/8b/03/928b0371-20fc-288b-e4e4-05f48b7082c2/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/144x144.png"
+   ],
+   "settings": [
+    {
+     "id": "china_mobile_debug",
+     "name": "是否开启调试模式",
+     "val": false,
+     "type": "boolean"
+    },
+    {
+     "id": "china_mobile_phonenumber",
+     "name": "手机号码",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "china_mobile_params",
+     "name": "加密参数",
+     "val": "",
+     "type": "textarea"
+    },
+    {
+     "id": "china_mobile_cookie",
+     "name": "Cookie",
+     "val": "",
+     "type": "textarea"
+    },
+    {
+     "id": "china_mobile_bark_key",
+     "name": "Bark_Key",
+     "val": "",
+     "type": "text",
+     "desc": "填写后优先使用Bark推送"
+    },
+    {
+     "id": "china_mobile_silent",
+     "name": "是否开启静默模式",
+     "val": false,
+     "type": "boolean"
+    },
+    {
+     "id": "china_mobile_service",
+     "name": "是否开启服务模式",
+     "val": false,
+     "type": "boolean",
+     "desc": "配合小组件使用, 不知者无视"
+    }
+   ],
+   "descs_html": [
+    "中国移动话费/流量余量查询配置。需要填手机号和抓取的加密参数、Cookie。"
+   ]
+  },
+  {
+   "id": "yy-spotify",
+   "name": "Spotify",
+   "keys": [
+    "BaiDu_APP_ID",
+    "BaiDu_SECURITY_KEY",
+    "@Spotify.music163",
+    "@Spotify.cacheLyics",
+    "@Spotify.autoTrans",
+    "@Spotify.spotifyToken",
+    "@Spotify.spotifyTo163Ids",
+    "@Spotify.spotifyTo163Lyics",
+    "@Spotify.clientId",
+    "@Spotify.clientSecret"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png"
+   ],
+   "settings": [
+    {
+     "id": "@Spotify.autoTrans",
+     "name": "自动翻译",
+     "val": false,
+     "type": "boolean",
+     "desc": "翻译后的内容直接显示在歌词播放界面"
+    },
+    {
+     "id": "BaiDu_APP_ID",
+     "name": "百度 APP_ID",
+     "val": "",
+     "type": "text",
+     "desc": "APP_ID"
+    },
+    {
+     "id": "BaiDu_SECURITY_KEY",
+     "name": "百度 SECURITY_KEY",
+     "val": "",
+     "type": "text",
+     "desc": "SECURITY_KEY"
+    },
+    {
+     "id": "@Spotify.music163",
+     "name": "网易云歌词",
+     "val": false,
+     "type": "boolean",
+     "desc": "开启时，当歌曲无歌词时，自动在网易云搜索歌词匹配"
+    },
+    {
+     "id": "@Spotify.cacheLyics",
+     "name": "缓存歌词",
+     "val": false,
+     "type": "boolean",
+     "desc": "读取到第三方音乐的歌词时，自动缓存"
+    },
+    {
+     "id": "@Spotify.clientId",
+     "name": "Spotify ClientId",
+     "val": "",
+     "type": "text",
+     "desc": "ClientId"
+    },
+    {
+     "id": "@Spotify.clientSecret",
+     "name": "Spotify ClientSecret",
+     "val": "",
+     "type": "text",
+     "desc": "ClientSecret"
+    }
+   ],
+   "descs_html": [
+    "Spotify 歌词翻译、转存网易云配置。需要百度翻译 APP_ID 和密钥，以及 Spotify Client ID 和 Client Secret。"
+   ]
+  },
+  {
+   "id": "gistbackupwhiteapp",
+   "name": "数据白名",
+   "keys": [
+    "@gist.backup_white_apps"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/dompling/Script/master/icon/github-white.jpg"
+   ],
+   "settings": [
+    {
+     "id": "@gist.backup_white_apps",
+     "name": "请运行【刷新APP】,刷新后再刷新当前页面",
+     "val": "",
+     "type": "textarea",
+     "desc": "白名单相关 APP 的 Key 到用户数据，无选择内容时，请运行【刷新APP】"
+    }
+   ],
+   "descs_html": [
+    "Gist 备份白名单配置，需配合 Gist 备份使用。先运行 BoxJs 里的【刷新APP】，再回来填写白名单。"
+   ]
+  },
+  {
+   "id": "scriptable",
+   "name": "桌面组件",
+   "keys": [
+    "scriptable"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [],
+   "settings": [
+    {
+     "id": "scriptable",
+     "name": "scriptable",
+     "val": "",
+     "type": "textarea",
+     "desc": "请填写 scriptable"
+    }
+   ],
+   "descs_html": [
+    "Scriptable 桌面组件配置。"
+   ]
+  },
+  {
+   "id": "ql-dompling",
+   "name": "青龙同步",
+   "keys": [
+    "@ql.ip",
+    "@ql.client_id",
+    "@ql.client_secret",
+    "@ql.username",
+    "@ql.password",
+    "@ql.env",
+    "@ql.ENV_KEY",
+    "@ql.mute",
+    "@ql.is_pwd"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/dompling/Script/master/image/ql.png"
+   ],
+   "settings": [
+    {
+     "id": "@ql.mute",
+     "name": "静音",
+     "val": false,
+     "type": "boolean",
+     "desc": "同步时，不会执行通知提示"
+    },
+    {
+     "id": "@ql.is_pwd",
+     "name": "开启密码登陆",
+     "val": false,
+     "type": "boolean",
+     "desc": "同步时，优先使用密码登陆"
+    },
+    {
+     "id": "@ql.ENV_KEY",
+     "name": "环境变量KEY",
+     "val": "",
+     "type": "textarea"
+    },
+    {
+     "id": "@ql.ip",
+     "name": "青龙登陆的域名或IP:端口号",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "@ql.client_id",
+     "name": "应用 Client ID",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "@ql.client_secret",
+     "name": "应用 Client Secret",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "@ql.username",
+     "name": "账号",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "@ql.password",
+     "name": "密码",
+     "val": "",
+     "type": "text"
+    }
+   ],
+   "descs_html": [
+    "把 BoxJs 数据同步到自有青龙面板（或从青龙同步回 BoxJs）。需要自有青龙面板地址和应用 Client ID、Client Secret（或账号密码）。"
+   ]
+  },
+  {
+   "id": "geocaching",
+   "name": "Geocaching",
+   "keys": [
+    "geocaching_translate",
+    "geocaching_gps_fix",
+    "Geo_membershipTypeId",
+    "BaiDu_APP_ID",
+    "BaiDu_API_KEY",
+    "BAIDU_TRANSLATE_FROM_KEY",
+    "BAIDU_TRANSLATE_TO_KEY",
+    "geocaching_temp",
+    "geo_tags"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/FoKit/Scripts/main/images/geocaching.png"
+   ],
+   "settings": [
+    {
+     "id": "geocaching_translate",
+     "name": "翻译功能",
+     "val": false,
+     "type": "boolean",
+     "desc": "开启后自动翻译 Geocaching & Adventure"
+    },
+    {
+     "id": "geocaching_gps_fix",
+     "name": "坐标修正",
+     "val": false,
+     "type": "boolean",
+     "desc": "用于修复高德地图坐标偏移 WGS-84 -> GCJ-02"
+    },
+    {
+     "id": "geo_tags",
+     "name": "翻译保持",
+     "val": "",
+     "type": "text",
+     "desc": "通过打标签保持无需翻译的字符串，用英文逗号隔开，如人名 John,Michael,David,James"
+    },
+    {
+     "id": "Geo_membershipTypeId",
+     "name": "membershipTypeId",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "BaiDu_APP_ID",
+     "name": "百度翻译 appid",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "BaiDu_API_KEY",
+     "name": "百度翻译 API Key",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "BAIDU_TRANSLATE_FROM_KEY",
+     "name": "翻译原始语言",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "auto",
+       "label": "自动识别"
+      },
+      {
+       "key": "zh",
+       "label": "中文(简体)"
+      },
+      {
+       "key": "yue",
+       "label": "中文(粤语)"
+      },
+      {
+       "key": "cht",
+       "label": "中文(繁体)"
+      },
+      {
+       "key": "en",
+       "label": "English - 英语"
+      },
+      {
+       "key": "jp",
+       "label": "日本語 - 日语"
+      },
+      {
+       "key": "kor",
+       "label": "한국어 - 韩语"
+      },
+      {
+       "key": "fra",
+       "label": "Français - 法语"
+      },
+      {
+       "key": "de",
+       "label": "Deutsch - 德语"
+      },
+      {
+       "key": "spa",
+       "label": "Español - 西班牙语"
+      }
+     ]
+    },
+    {
+     "id": "BAIDU_TRANSLATE_TO_KEY",
+     "name": "翻译目标语言",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "zh",
+       "label": "中文(简体)"
+      },
+      {
+       "key": "yue",
+       "label": "中文(粤语)"
+      },
+      {
+       "key": "cht",
+       "label": "中文(繁体)"
+      },
+      {
+       "key": "en",
+       "label": "English - 英语"
+      },
+      {
+       "key": "jp",
+       "label": "日本語 - 日语"
+      },
+      {
+       "key": "kor",
+       "label": "한국어 - 韩语"
+      },
+      {
+       "key": "fra",
+       "label": "Français - 法语"
+      },
+      {
+       "key": "de",
+       "label": "Deutsch - 德语"
+      },
+      {
+       "key": "spa",
+       "label": "Español - 西班牙语"
+      }
+     ]
+    },
+    {
+     "id": "geocaching_temp",
+     "name": "缓存数据",
+     "val": "",
+     "type": "textarea"
+    }
+   ],
+   "descs_html": [
+    "Geocaching 寻宝游戏辅助配置（自动翻译、GPS 坐标修正）。翻译功能需要百度翻译 APP_ID 和 API Key。"
+   ]
+  },
+  {
+   "id": "imaotai",
+   "name": "i茅台",
+   "keys": [
+    "MT_TOKENS",
+    "MT_PROVINCE",
+    "MT_CITY",
+    "MT_DISTRICT",
+    "MT_ITEM_BLACK",
+    "MT_VERSION",
+    "MT_USERAGENT",
+    "MT_R"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/FoKit/Scripts/main/images/iMaoTai.png"
+   ],
+   "settings": [
+    {
+     "id": "MT_TOKENS",
+     "name": "i茅台Token",
+     "val": "",
+     "type": "textarea"
+    },
+    {
+     "id": "MT_PROVINCE",
+     "name": "省份",
+     "val": "",
+     "type": "text",
+     "desc": "XX省 / 直辖市"
+    },
+    {
+     "id": "MT_CITY",
+     "name": "城市",
+     "val": "",
+     "type": "text",
+     "desc": "XX市 / 直辖市"
+    },
+    {
+     "id": "MT_DISTRICT",
+     "name": "区域",
+     "val": "",
+     "type": "text",
+     "desc": "xx区|xx区"
+    },
+    {
+     "id": "MT_ITEM_BLACK",
+     "name": "商品黑名单",
+     "val": "",
+     "type": "text",
+     "desc": "2478|10056"
+    },
+    {
+     "id": "MT_VERSION",
+     "name": "APP版本号",
+     "val": "",
+     "type": "text",
+     "desc": "x.x.x"
+    },
+    {
+     "id": "MT_USERAGENT",
+     "name": "用户标识",
+     "val": "",
+     "type": "text",
+     "desc": "iOS;16.1.2;Apple;"
+    },
+    {
+     "id": "MT_R",
+     "name": "MT_R",
+     "val": "",
+     "type": "text",
+     "desc": "clips_xxx"
+    }
+   ],
+   "descs_html": [
+    "i茅台申购配置（Token、省市区、商品黑名单）。需要另配抢购脚本，本批只提供配置项。"
+   ]
+  },
+  {
+   "id": "string-replace",
+   "name": "字符串替换",
+   "keys": [
+    "string_replace",
+    "string_replace_all"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [],
+   "settings": [
+    {
+     "id": "string_replace",
+     "name": "规则",
+     "val": "",
+     "type": "textarea",
+     "desc": "示例: replace@text 多条规则以换行分隔"
+    },
+    {
+     "id": "string_replace_all",
+     "name": "全局规则",
+     "val": "",
+     "type": "textarea",
+     "desc": "示例: replace@text 多条规则以换行分隔"
+    }
+   ],
+   "descs_html": [
+    "响应体字符串替换规则配置。按「替换后内容@原内容」格式填写，多条规则换行分隔。"
+   ]
+  },
+  {
+   "id": "10086-coupons",
+   "name": "移动话费券",
+   "keys": [
+    "wx10086_token",
+    "wx10086_count",
+    "wx10086_wait"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/FoKit/Scripts/main/images/10086.png"
+   ],
+   "settings": [
+    {
+     "id": "wx10086_token",
+     "name": "Token",
+     "val": "",
+     "type": "textarea",
+     "desc": "活动 Token, 以数组字符串形式保存"
+    },
+    {
+     "id": "wx10086_count",
+     "name": "请求次数",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "wx10086_wait",
+     "name": "间隔时间",
+     "val": "",
+     "type": "text",
+     "desc": "单位 ms"
+    }
+   ],
+   "descs_html": [
+    "移动话费券领取配置。需要另配领取脚本，本批只提供配置项。"
+   ]
+  },
+  {
+   "id": "testflightaccount-nobyda",
+   "name": "TestFlight账户管理",
+   "keys": [
+    "TESTFLIGHT-ACCOUNT"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/NobyDa/mini/master/Color/testflight.png"
+   ],
+   "settings": [
+    {
+     "id": "@TESTFLIGHT-ACCOUNT.Debug",
+     "name": "开发者模式",
+     "val": false,
+     "type": "boolean",
+     "desc": "用于调试脚本, 一般用户请勿开启."
+    },
+    {
+     "id": "@TESTFLIGHT-ACCOUNT.EnableCache",
+     "name": "启用缓存",
+     "val": false,
+     "type": "boolean",
+     "desc": "用于缓存APP列表, 改善列表页面加载过慢，需与\"请求超时\"配合使用。开启缓存并刷新列表后，可适当调小超时"
+    },
+    {
+     "id": "@TESTFLIGHT-ACCOUNT.Timeout",
+     "name": "请求超时",
+     "val": "",
+     "type": "number",
+     "desc": "默认为30, 单位: 秒"
+    },
+    {
+     "id": "@TESTFLIGHT-ACCOUNT.ForceIOSlist",
+     "name": "使用iOS应用列表",
+     "val": false,
+     "type": "boolean",
+     "desc": "强制使用iOS应用列表, 用于改善 macOS TestFlight 加载过慢, iOS用户无需开启"
+    }
+   ],
+   "descs_html": [
+    "TestFlight 多账号管理与缓存清理。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/testflightaccount-nobyda/TestflightaccountNobyda.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://gist.githubusercontent.com/NobyDa/d025c53d3922657f921b983ce129fc1d/raw/TestFlightAccountRemoveCache.js"
+  },
+  {
+   "id": "telegram",
+   "name": "Telegram 频道媒体推送",
+   "keys": [
+    "@telegram.channels",
+    "@telegram.maxMedias"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/58xinian/icon/master/telegram.png"
+   ],
+   "settings": [
+    {
+     "id": "@telegram.channels",
+     "name": "频道列表",
+     "val": "",
+     "type": "textarea",
+     "desc": "频道列表，比如说一个频道的链接为https://t.me/s/ABCD，那么将\"ABCD\"加到列表中。"
+    },
+    {
+     "id": "@telegram.maxMedias",
+     "name": "每个频道最多显示视频和图片的数量",
+     "val": "",
+     "type": "text",
+     "desc": "每个频道最多显示视频和图片的数量, 默认为3"
+    }
+   ],
+   "descs_html": [
+    "Telegram 频道新图片/视频推送。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/telegram/Telegram.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/telegram.js"
+  },
+  {
+   "id": "flow",
+   "name": "机场流量查询",
+   "keys": [
+    "@flow.subscriptions"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/58xinian/icon/master/flow.png"
+   ],
+   "settings": [
+    {
+     "id": "@flow.subscriptions",
+     "name": "机场订阅",
+     "val": "",
+     "type": "textarea",
+     "desc": "机场订阅 (JSON 格式)"
+    }
+   ],
+   "descs_html": [
+    "机场订阅流量、剩余流量和到期时间查询。需要机场订阅链接。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/flow/Flow.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/flow.js"
+  },
+  {
+   "id": "blackmatrix7-findmy",
+   "name": "Find My",
+   "keys": [
+    "find_my_device_discovery_id"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [],
+   "settings": [
+    {
+     "id": "find_my_device_discovery_id",
+     "name": "Find My设备ID",
+     "val": "",
+     "type": "textarea",
+     "desc": "Find My设备ID，多个设备以;分隔"
+    }
+   ],
+   "descs_html": [
+    "Find My 设备发现 ID 配置，多个设备以英文分号分隔。"
+   ]
+  },
+  {
+   "id": "blackmatrix7-synology",
+   "name": "Synology",
+   "keys": [
+    "syno_https_url",
+    "syno_account",
+    "syno_passwd",
+    "syno_sid"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [],
+   "settings": [
+    {
+     "id": "syno_https_url",
+     "name": "群晖地址",
+     "val": "",
+     "type": "input",
+     "desc": "目前暂不支持https，请使用http"
+    },
+    {
+     "id": "syno_account",
+     "name": "群晖账户",
+     "val": "",
+     "type": "input",
+     "desc": "可访问DownloadStation的账号，记得设置默认下载路径"
+    },
+    {
+     "id": "syno_passwd",
+     "name": "群晖密码",
+     "val": "",
+     "type": "input",
+     "desc": "建议单独建立一个账户保证安全"
+    },
+    {
+     "id": "syno_sid",
+     "name": "群晖Sid",
+     "val": "",
+     "type": "input",
+     "desc": "除非无法正常获取Sid，否则保持现在的值，不要修改"
+    }
+   ],
+   "descs_html": [
+    "群晖 NAS 连接配置。需要自有群晖 NAS 地址和账号（建议单独建一个仅能访问 DownloadStation 的账号）。"
+   ]
+  },
+  {
+   "id": "blackmatrix7-zheye",
+   "name": "哲也同学",
+   "keys": [
+    "zhihu_blocked_users",
+    "zhihu_current_userinfo",
+    "zhihu_keyword_block",
+    "zhihu_black_answers",
+    "zheye_server_url"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zheye/zheye.png"
+   ],
+   "settings": [
+    {
+     "id": "zhihu_settings_fake_vip",
+     "name": "显示为盐选会员",
+     "val": false,
+     "type": "boolean",
+     "desc": "非会员用户显示为盐选会员"
+    },
+    {
+     "id": "zhihu_settings_app_conf",
+     "name": "软件配置优化",
+     "val": false,
+     "type": "boolean",
+     "desc": "对下发的软件配置进行一些调整"
+    },
+    {
+     "id": "zhihu_settings_remove_live_tab",
+     "name": "移除推荐页强制标签",
+     "val": false,
+     "type": "boolean",
+     "desc": "强制移除推荐页的强制标签，需配置移除的标签，并开启“软件配置优化”"
+    },
+    {
+     "id": "zhihu_settings_blocked_keywords",
+     "name": "推荐页关键词过滤",
+     "val": false,
+     "type": "boolean",
+     "desc": "除普通关键词外还支持正则表达式过滤，需要开启“显示为盐选会员”"
+    },
+    {
+     "id": "zhihu_settings_recommend_stream",
+     "name": "屏蔽推荐页流媒体",
+     "val": false,
+     "type": "boolean",
+     "desc": "屏蔽推荐页中的视频、直播等流媒体信息"
+    },
+    {
+     "id": "zhihu_settings_recommend_pin",
+     "name": "屏蔽推荐页想法",
+     "val": false,
+     "type": "boolean",
+     "desc": "屏蔽推荐页中的想法"
+    },
+    {
+     "id": "zhihu_settings_blocked_users",
+     "name": "黑名单屏蔽效果增强",
+     "val": false,
+     "type": "boolean",
+     "desc": "增强知乎APP黑名单用户屏蔽效果"
+    },
+    {
+     "id": "zhihu_settings_moments_stream",
+     "name": "屏蔽关注页流媒体",
+     "val": false,
+     "type": "boolean",
+     "desc": "屏蔽关注页中的视频等流媒体"
+    },
+    {
+     "id": "zhihu_settings_moments_recommend",
+     "name": "屏蔽关注页推荐关注人",
+     "val": false,
+     "type": "boolean",
+     "desc": "屏蔽关注页中的“为您推荐”"
+    },
+    {
+     "id": "zhihu_settings_moments_activity",
+     "name": "屏蔽关注页活动更新",
+     "val": false,
+     "type": "boolean",
+     "desc": "屏蔽关注页中的“关注的内容”"
+    },
+    {
+     "id": "zhihu_settings_hot_list",
+     "name": "热榜去广告",
+     "val": false,
+     "type": "boolean",
+     "desc": "去除知乎热榜页面的广告"
+    },
+    {
+     "id": "zhihu_settings_preset_words",
+     "name": "屏蔽预置关键词广告",
+     "val": false,
+     "type": "boolean",
+     "desc": "屏蔽搜索页中的预置关键词广告"
+    },
+    {
+     "id": "zhihu_settings_remove_article",
+     "name": "屏蔽推荐页中的文章",
+     "val": false,
+     "type": "boolean",
+     "desc": "屏蔽推荐页中的文章，默认不启用"
+    },
+    {
+     "id": "zhihu_settings_sys_msg",
+     "name": "屏蔽官方账号推广消息",
+     "val": false,
+     "type": "boolean",
+     "desc": "屏蔽消息页内的官方账号推广消息"
+    },
+    {
+     "id": "zhihu_settings_answer_tip",
+     "name": "付费内容/营销推广/购物推广提醒",
+     "val": false,
+     "type": "boolean",
+     "desc": "在知乎回答中提示付费或营销内容"
+    },
+    {
+     "id": "zhihu_settings_check_paid_content",
+     "name": "推荐页中提示付费/营销/购物推广",
+     "val": false,
+     "type": "boolean",
+     "desc": "需要额外消耗流量，可能会影响推荐页加载速度"
+    },
+    {
+     "id": "zhihu_settings_request_content",
+     "name": "推荐页主动探测内容的方式",
+     "val": "",
+     "type": "radios",
+     "desc": "开启推荐页中推广内容提示时，需要配置主动探测方式。默认为本地，使用云端需要在下方配置中填写服务端地址。",
+     "items": [
+      {
+       "key": "local",
+       "label": "本地"
+      },
+      {
+       "key": "cloud",
+       "label": "云端"
+      }
+     ]
+    },
+    {
+     "id": "zhihu_credit_score",
+     "name": "自定义用户盐值",
+     "val": "",
+     "type": "input",
+     "desc": "修改用户盐值显示，无实际意义，不建议使用。仅当修改的盐值大于真实盐值时生效，关闭此功能请将盐值设置为0。"
+    },
+    {
+     "id": "zhihu_black_answers",
+     "name": "知乎黑名单用户回答Id",
+     "val": "",
+     "type": "input",
+     "desc": "记录知乎黑名单用户的回答Id的临时变量，通常不会有太多数据。如果数据量过大请清空此内容。"
+    },
+    {
+     "id": "zhihu_keyword_block",
+     "name": "知乎屏蔽关键词",
+     "val": "",
+     "type": "textarea",
+     "desc": "必须是JSON格式，Key为用户Id，不要修改。格式不正确可能导致执行异常。"
+    },
+    {
+     "id": "zheye_server_url",
+     "name": "哲也同学服务端",
+     "val": "",
+     "type": "input",
+     "desc": "用于解锁更多功能。示例 http://192.168.1.200:52273 。"
+    },
+    {
+     "id": "zheye_remove_feed_tabs",
+     "name": "强制移除指定推荐页标签",
+     "val": "",
+     "type": "input",
+     "desc": "每个标签以;分隔，如“直播;科学”"
+    }
+   ],
+   "descs_html": [
+    "知乎屏蔽配置：屏蔽用户、关键词、黑回答等。需配合知乎去广告重写脚本使用；哲也服务地址（zheye_server_url）需要自有服务。"
+   ]
+  },
+  {
+   "id": "nasapic",
+   "name": "NASA每日一图",
+   "keys": [
+    "@NASA.nasaapi"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa.png"
+   ],
+   "settings": [
+    {
+     "id": "@NASA.translate",
+     "name": "翻译",
+     "val": false,
+     "type": "boolean",
+     "desc": "是否进行翻译"
+    },
+    {
+     "id": "@NASA.nasaapi",
+     "name": "API",
+     "val": "",
+     "type": "textarea",
+     "desc": "请填入API"
+    }
+   ],
+   "descs_html": [
+    "NASA 每日一图推送。需要去 https://api.nasa.gov/ 免费申请 API Key。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/nasapic/Nasapic.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js"
+  },
+  {
+   "id": "fmz200-testflight",
+   "name": "TF自动加入",
+   "keys": [
+    "fmz200_TF_notify",
+    "fmz200_TF_APP_ID",
+    "fmz200_TF_header"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/TestFlight_03.png"
+   ],
+   "settings": [
+    {
+     "id": "fmz200_TF_notify",
+     "name": "获取令牌成功通知",
+     "val": false,
+     "type": "boolean"
+    },
+    {
+     "id": "fmz200_TF_APP_ID",
+     "name": "要加入的TF App",
+     "val": "",
+     "type": "textarea",
+     "desc": "以英文逗号分隔多个key"
+    },
+    {
+     "id": "fmz200_TF_header",
+     "name": "TF账号令牌",
+     "val": "",
+     "type": "textarea",
+     "desc": "json格式存储，理论支持多账号"
+    }
+   ],
+   "descs_html": [
+    "TestFlight 自动加入内测配置。需要填要加入的 TF App ID 和抓取的 TF 账号令牌。"
+   ]
+  },
+  {
+   "id": "fmz200-oil-price",
+   "name": "今日油价",
+   "keys": [
+    "oil_price_region"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/oil.png"
+   ],
+   "settings": [
+    {
+     "id": "oil_price_region",
+     "name": "今日油价查询地区",
+     "val": "",
+     "type": "textarea",
+     "desc": "今日油价查询地区"
+    }
+   ],
+   "descs_html": [
+    "今日油价查询地区配置。"
+   ]
+  },
+  {
+   "id": "id77-hd",
+   "name": "HD",
+   "keys": [
+    "id77_needReloadStatusCode",
+    "id77_hideDomClass",
+    "id77_click_interval",
+    "id77_notCache",
+    "id77_editDomClass"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+   ],
+   "settings": [
+    {
+     "id": "id77_needReloadStatusCode",
+     "name": "需要自动刷新的响应码",
+     "val": "",
+     "type": "text",
+     "desc": " 比如502和404，填502@404，使用@间隔"
+    },
+    {
+     "id": "id77_hideDomClass",
+     "name": "双击隐藏元素",
+     "val": "",
+     "type": "textarea",
+     "desc": "元素的class"
+    },
+    {
+     "id": "id77_editDomClass",
+     "name": "编辑元素class",
+     "val": "",
+     "type": "textarea",
+     "desc": "元素的class"
+    },
+    {
+     "id": "id77_click_interval",
+     "name": "点击间隔",
+     "val": "",
+     "type": "number",
+     "desc": "毫秒"
+    },
+    {
+     "id": "id77_notCache",
+     "name": "禁用缓存",
+     "val": "",
+     "type": "number",
+     "desc": "1禁用，0不禁用"
+    }
+   ],
+   "descs_html": [
+    "网页元素隐藏/自动点击辅助配置（双击隐藏元素 class、点击间隔等）。"
+   ]
+  },
+  {
+   "id": "id77-ocr",
+   "name": "OCR",
+   "keys": [
+    "id77_ocr_api",
+    "id77_ocr_path",
+    "id77_ocr_rules"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+   ],
+   "settings": [
+    {
+     "id": "id77_ocr_api",
+     "name": "OCR API",
+     "val": "",
+     "type": "text",
+     "desc": "自建 OCR API"
+    },
+    {
+     "id": "id77_ocr_path",
+     "name": "OCR MITM Path",
+     "val": "",
+     "type": "text",
+     "desc": "重写路径，解决跨域问题"
+    },
+    {
+     "id": "id77_ocr_rules",
+     "name": "OCR 识别规则",
+     "val": "",
+     "type": "textarea",
+     "desc": "识别规则，JSON 格式，\n[{\"domain\": \"test.cn\",\"captchaSelector\": \"img.test\",\"inputSelector\": \"input.test\",\"type\": \"数字\", \"regex\": [{\"pattern\": \"test\", \"flags\": \"g\", \"substitution\": \"1\"}]}], \ntype 正则/数字/字母/数字+字母/算术"
+    }
+   ],
+   "descs_html": [
+    "图片验证码识别配置。需要自建 OCR 接口地址。"
+   ]
+  },
+  {
+   "id": "id77-tg",
+   "name": "wskey 提取器",
+   "keys": [
+    "id77_TGUserID",
+    "wskeyList"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/jd_car.png"
+   ],
+   "settings": [
+    {
+     "id": "id77_TGUserID",
+     "name": "Telegram User ID",
+     "val": "",
+     "type": "number"
+    },
+    {
+     "id": "wskeyList",
+     "name": "wskey List",
+     "val": "",
+     "type": "textarea"
+    }
+   ],
+   "descs_html": [
+    "从 Telegram 提取京东 wskey 的配置。需要 Telegram User ID。"
+   ]
+  },
+  {
+   "id": "id77-phone",
+   "name": "手机集",
+   "keys": [
+    "id77_phone_arr"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+   ],
+   "settings": [
+    {
+     "id": "id77_phone_arr",
+     "name": "手机号码",
+     "val": "",
+     "type": "textarea",
+     "desc": "多个时，使用@间隔"
+    }
+   ],
+   "descs_html": [
+    "手机号集合管理，多个手机号用 @ 间隔。"
+   ]
+  },
+  {
+   "id": "id77-resp",
+   "name": "数据体",
+   "keys": [
+    "id77_resp"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+   ],
+   "settings": [
+    {
+     "id": "id77_resp",
+     "name": "数据体",
+     "val": "",
+     "type": "textarea",
+     "desc": "需要替换为什么内容就填什么"
+    }
+   ],
+   "descs_html": [
+    "请求响应体查看/替换调试配置。"
+   ]
+  },
+  {
+   "id": "id77-cookie",
+   "name": "自用Cookie管理",
+   "keys": [
+    "Oclean_mini"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+   ],
+   "settings": [
+    {
+     "id": "Oclean_mini",
+     "name": "Oclean mini",
+     "val": "",
+     "type": "textarea"
+    }
+   ],
+   "descs_html": [
+    "个人 Cookie 集中管理配置。"
+   ]
+  },
+  {
+   "id": "id77-ex",
+   "name": "通用重放脚本",
+   "keys": [
+    "id77_ex_run_num",
+    "id77_ex_request"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/ex.png"
+   ],
+   "settings": [
+    {
+     "id": "id77_ex_run_num",
+     "name": "自动循环次数",
+     "val": "",
+     "type": "number"
+    },
+    {
+     "id": "id77_ex_interval",
+     "name": "间隔时间",
+     "val": "",
+     "type": "number",
+     "desc": "单位：毫秒"
+    },
+    {
+     "id": "id77_ex_request",
+     "name": "请求信息",
+     "val": "",
+     "type": "textarea"
+    }
+   ],
+   "descs_html": [
+    "通用请求重放调试：把抓到的请求按次数、间隔重复执行。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/id77-ex/Id77Ex.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/ex.task.js"
+  },
+  {
+   "id": "lkmiyoushecustom",
+   "name": "米游社App自定义",
+   "keys": [
+    "regionGamesKey",
+    "homeTopBarKey",
+    "homePageTabKey"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/miyoushe.png"
+   ],
+   "settings": [
+    {
+     "id": "lkIsEnableLogMiyousheCustom",
+     "name": "开启/关闭日志",
+     "val": false,
+     "type": "boolean",
+     "desc": "默认开启"
+    },
+    {
+     "id": "lkNotifyOnlyFailMiyousheCustom",
+     "name": "只当执行失败才通知",
+     "val": false,
+     "type": "boolean",
+     "desc": "默认关闭"
+    },
+    {
+     "id": "lkIsEnableTgNotifyMiyousheCustom",
+     "name": "开启/关闭Telegram通知",
+     "val": false,
+     "type": "boolean",
+     "desc": "默认关闭"
+    },
+    {
+     "id": "lkTgNotifyUrlMiyousheCustom",
+     "name": "Telegram通知地址",
+     "val": "",
+     "type": "text",
+     "desc": "Tg的通知地址，如：https://api.telegram.org/bot-token/sendMessage?chat_id=-100140&parse_mode=Markdown&text="
+    },
+    {
+     "id": "regionGamesKey",
+     "name": "App我的游戏卡片过滤",
+     "val": "",
+     "type": "text",
+     "desc": "请填写要保留的游戏卡片，多个用\",\"隔开：新艾利都:url,天空岛；后面的url是卡片点击跳转链接，不改可以不写"
+    },
+    {
+     "id": "homeTopBarKey",
+     "name": "App绝区零首页顶栏",
+     "val": "",
+     "type": "text",
+     "desc": "请填写要保留的顶栏，多个用\",\"隔开：工具箱:url,签到福利；后面的url是跳转链接，不改可以不写"
+    },
+    {
+     "id": "homePageTabKey",
+     "name": "App绝区零首页tab栏",
+     "val": "",
+     "type": "text",
+     "desc": "请填写要保留的tab栏，多个用\",\"隔开：咖啡馆,同人图。发现和官方tab无法自定义"
+    },
+    {
+     "id": "goodsRegFilterKey",
+     "name": "App兑换中心过滤",
+     "val": "",
+     "type": "text",
+     "desc": "填写正则，多个用<>隔开，只要符合一个就显示"
+    },
+    {
+     "id": "coffeeTopPostFilterKey",
+     "name": "绝区零咖啡馆置顶过滤",
+     "val": "",
+     "type": "text",
+     "desc": "填写正则，多个用<>隔开，只要符合一个就不显示"
+    }
+   ],
+   "descs_html": [
+    "米游社 App 界面自定义（游戏卡片、顶栏、Tab、兑换中心过滤）。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkmiyoushecustom/Lkmiyoushecustom.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/lowking/Scripts/master/mihoyo/miyousheCustom.js"
+  },
+  {
+   "id": "yuheng-testflight-autojoin",
+   "name": "TestFlight公测自动加入",
+   "keys": [
+    "tf_key",
+    "tf_session_id",
+    "tf_session_digest",
+    "tf_request_id",
+    "tf_apple_store_front",
+    "tf_apple_ta_device",
+    "tf_apple_amd_m",
+    "tf_apple_device_model",
+    "tf_user_agent",
+    "tf_app_ids",
+    "tf_loon_count",
+    "tf_interval"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/githubdulong/Script/master/Images/testflight.png"
+   ],
+   "settings": [
+    {
+     "id": "tf_app_ids",
+     "name": "监控的应用ID",
+     "val": "",
+     "type": "textarea",
+     "desc": "#后代表加入的状态, 0为未加入, 1为已加入"
+    },
+    {
+     "id": "tf_loon_count",
+     "name": "并发数",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "tf_interval",
+     "name": "间隔时间(单位: 秒)",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "tf_key",
+     "name": "用户标识",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "tf_session_id",
+     "name": "SessionId",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "tf_session_digest",
+     "name": "SessionDigest",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "tf_request_id",
+     "name": "RequestId",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "tf_apple_store_front",
+     "name": "AppleStoreFront",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "tf_apple_ta_device",
+     "name": "AppleTaDevice",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "tf_apple_amd_m",
+     "name": "AppleAMDM",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "tf_apple_device_model",
+     "name": "AppleDeviceModel",
+     "val": "",
+     "type": "text"
+    },
+    {
+     "id": "tf_user_agent",
+     "name": "UserAgent",
+     "val": "",
+     "type": "text"
+    }
+   ],
+   "descs_html": [
+    "TestFlight 公测名额监控并自动加入。需要抓取 TestFlight 会话参数。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-testflight-autojoin/YuhengTestflightAutojoin.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/AutoJoinTF.js"
+  },
+  {
+   "id": "yuheng-moyu",
+   "name": "摸鱼",
+   "keys": [
+    "moyu_notify_with_media",
+    "moyu_debug",
+    "moyu_show_another_date",
+    "moyu_show_almanac",
+    "moyu_custom_notify_img",
+    "moyu_remind_days",
+    "moyu_festival_conf",
+    "moyu_bark_key"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png"
+   ],
+   "settings": [
+    {
+     "id": "moyu_notify_with_media",
+     "name": "是否通知带图片",
+     "val": false,
+     "type": "boolean"
+    },
+    {
+     "id": "moyu_debug",
+     "name": "是否开启调试模式",
+     "val": false,
+     "type": "boolean"
+    },
+    {
+     "id": "moyu_show_another_date",
+     "name": "当传入日期为阳历时, 是否展示农历, 当传入阴历时, 是否展示阳历",
+     "val": false,
+     "type": "boolean",
+     "desc": "比如老婆生日:3月15日, 如果勾选, 通知时会带上距离农历还有xx天"
+    },
+    {
+     "id": "moyu_show_almanac",
+     "name": "是否展示黄历",
+     "val": false,
+     "type": "boolean",
+     "desc": "顾名思义"
+    },
+    {
+     "id": "moyu_custom_notify_img",
+     "name": "🔗通知图片(链接)",
+     "val": "",
+     "type": "textarea",
+     "desc": "不填随机选择"
+    },
+    {
+     "id": "moyu_remind_days",
+     "name": "距离多少天提醒",
+     "val": "",
+     "type": "text",
+     "desc": "比如默认50天, 超过100天的节日不通知"
+    },
+    {
+     "id": "moyu_festival_conf",
+     "name": "节日配置",
+     "val": "",
+     "type": "textarea",
+     "desc": "自定义规范: <节日1>&<节日2>&节日名称:(YYYY年)?MM月DD日($农历)($阳历)?&..."
+    },
+    {
+     "id": "moyu_bark_key",
+     "name": "Bark通知",
+     "val": "",
+     "type": "text",
+     "desc": "填写Bark的app提供的key, 填写后不再使用默认通知方式"
+    }
+   ],
+   "descs_html": [
+    "摸鱼日报：节日倒计时、上下班倒计时、黄历推送。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-moyu/YuhengMoyu.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/moyu.js"
+  },
+  {
+   "id": "yuheng-top",
+   "name": "热搜聚合",
+   "keys": [
+    "top_debug",
+    "top_user_select",
+    "top_limit"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/9a/d8/77/9ad877c6-e3d7-61a1-3911-5036239a41a6/AppIcon-1x_U007emarketing-0-7-0-0-sRGB-85-220.png/144x144bb.png"
+   ],
+   "settings": [
+    {
+     "id": "top_debug",
+     "name": "是否开启调试模式",
+     "val": false,
+     "type": "boolean"
+    },
+    {
+     "id": "top_user_select",
+     "name": "自行选择通知类型",
+     "val": "",
+     "type": "radios",
+     "items": [
+      {
+       "key": null,
+       "label": "系统帮选"
+      },
+      {
+       "key": "微博",
+       "label": "微博"
+      },
+      {
+       "key": "知乎",
+       "label": "知乎"
+      },
+      {
+       "key": "今日头条",
+       "label": "今日头条"
+      },
+      {
+       "key": "抖音",
+       "label": "抖音"
+      },
+      {
+       "key": "百度",
+       "label": "百度"
+      },
+      {
+       "key": "哔哩哔哩",
+       "label": "哔哩哔哩"
+      }
+     ]
+    },
+    {
+     "id": "top_limit",
+     "name": "通知条数",
+     "val": "",
+     "type": "number",
+     "desc": "不建议超过20条[通知会截断]"
+    }
+   ],
+   "descs_html": [
+    "各平台热搜聚合推送。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-top/YuhengTop.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/top.js"
+  },
+  {
+   "id": "yuheng-douban",
+   "name": "豆瓣电影日历",
+   "keys": [
+    "douban_debug",
+    "douban_api_key",
+    "douban_bark_push"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/90/5d/f8/905df82a-0e2e-5a2c-2be6-cc690fb0bec0/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png"
+   ],
+   "settings": [
+    {
+     "id": "douban_debug",
+     "name": "是否开启调试模式",
+     "val": false,
+     "type": "boolean"
+    },
+    {
+     "id": "douban_api_key",
+     "name": "豆瓣接口密钥",
+     "val": "",
+     "type": "textarea",
+     "desc": "不知道可不填, 已默认"
+    },
+    {
+     "id": "douban_bark_push",
+     "name": "Bark密钥",
+     "val": "",
+     "type": "text",
+     "desc": "填写后只使用Bark推送"
+    }
+   ],
+   "descs_html": [
+    "豆瓣电影日历推送。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-douban/YuhengDouban.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/douban.js"
+  },
+  {
+   "id": "zz-unblockurlinwechat",
+   "name": "解除微信链接限制",
+   "keys": [
+    "@UnblockURLinWeChat.useCache",
+    "@UnblockURLinWeChat.forceRedirect",
+    "@UnblockURLinWeChat.wechatExportKey"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png"
+   ],
+   "settings": [
+    {
+     "id": "@UnblockURLinWeChat.useCache",
+     "name": "在微信中用快照显示被封禁的链接",
+     "val": false,
+     "type": "boolean",
+     "desc": "是否以快照的形式（如果有）在微信浏览器中直接显示封禁的链接。"
+    },
+    {
+     "id": "@UnblockURLinWeChat.forceRedirect",
+     "name": "在微信中进行强制重定向",
+     "val": false,
+     "type": "boolean",
+     "desc": "是否在微信中进行强制重定向，允许的情况下可能出现循环重定向。"
+    },
+    {
+     "id": "@UnblockURLinWeChat.wechatExportKey",
+     "name": "微信 exportKey",
+     "val": "",
+     "type": "text",
+     "desc": "微信的一个 key，macOS 部分封禁链接跳转 Safari 后缺失微信的 exportKey 参数，无法解析出原始链接，这个暂未解决。"
+    }
+   ],
+   "descs_html": [
+    "解除微信内链接跳转限制：被封禁的链接可在微信内用快照查看或强制重定向。Loon 插件未建：脚本头注释和源订阅里都没有给出重写触发规则，无法确定触发链接，故只提供配置项。"
+   ]
+  },
+  {
+   "id": "componentservice-sgcc",
+   "name": "网上国网（95598）",
+   "keys": [
+    "@ComponentService.SGCC.Settings",
+    "@ComponentService.SGCC.Caches"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/83/d8/8a/83d88a92-5a4d-7a2f-118c-80d795e7a9f6/AppIcon-0-0-1x_U007emarketing-0-5-0-0-sRGB-85-220.png/144x144.png"
+   ],
+   "settings": [
+    {
+     "id": "@ComponentService.SGCC.Settings.logDebug",
+     "name": "是否输出调试日志",
+     "val": false,
+     "type": "boolean",
+     "desc": "打开后日志会更详细（排查登录/授权码/加解密失败时有用）。"
+    },
+    {
+     "id": "@ComponentService.SGCC.Settings.phoneNum",
+     "name": "账号（手机号）",
+     "val": "",
+     "type": "text",
+     "desc": "网上国网登录手机号"
+    },
+    {
+     "id": "@ComponentService.SGCC.Settings.password",
+     "name": "密码",
+     "val": "",
+     "type": "text",
+     "desc": "网上国网登录密码"
+    },
+    {
+     "id": "@ComponentService.SGCC.Settings.notifyType",
+     "name": "通知类型（notifyType）",
+     "val": "",
+     "type": "text",
+     "desc": "通知策略（脚本可读取该字段决定是否推送）。常见值：all=全部；arrears=仅欠费；change=仅电费变化；none=不通知。"
+    },
+    {
+     "id": "@ComponentService.SGCC.Settings.recentElcFee",
+     "name": "电费变动阈值（recentElcFee）",
+     "val": "",
+     "type": "number",
+     "desc": "当 notifyType=change 时，可用于控制电费变化超过该阈值才通知；0 表示不设阈值。"
+    },
+    {
+     "id": "@ComponentService.SGCC.Caches.bizrt",
+     "name": "缓存（bizrt）",
+     "val": "",
+     "type": "textarea",
+     "desc": "脚本自动写入登录凭证缓存（token/userInfo 等）。如遇登录异常/频繁失效，可清空此字段后重新触发脚本。"
+    }
+   ],
+   "descs_html": [
+    "网上国网（95598）电费/用电查询组件配置。需要网上国网账号（手机号）和密码。"
+   ]
+  },
+  {
+   "id": "wyy-top-tab",
+   "name": "顶部 Tab",
+   "keys": [
+    "wyy_XD",
+    "wyy_BK",
+    "wyy_TS",
+    "wyy_HDTAB"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Keywos/rule/main/tv/app/144px/Netease.png"
+   ],
+   "settings": [
+    {
+     "id": "wyy_XD",
+     "name": "心动",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    },
+    {
+     "id": "wyy_BK",
+     "name": "播客",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    },
+    {
+     "id": "wyy_TS",
+     "name": "听书",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    },
+    {
+     "id": "wyy_HDTAB",
+     "name": "活动 Tab (周年等运营位)",
+     "val": "",
+     "type": "selects",
+     "items": [
+      {
+       "key": "0",
+       "label": "隐藏"
+      },
+      {
+       "key": "1",
+       "label": "显示"
+      }
+     ]
+    }
+   ],
+   "descs_html": [
+    "网易云音乐顶部 Tab 显示/隐藏配置（心动、播客、听书、活动 Tab）。需配合对应的网易云重写脚本使用，本批只提供配置项。"
+   ]
+  },
+  {
+   "id": "iqoo",
+   "name": "IQOO社区兑换",
+   "keys": [
+    "IQOO_Acc",
+    "IQOO_GiftId",
+    "IQOO"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/IQOO/IQOO.jpg"
+   ],
+   "settings": [
+    {
+     "id": "IQOO",
+     "name": "账号数据",
+     "val": "",
+     "type": "textarea",
+     "desc": "账号数据（JSON 数组，含 id、xVisitor、token），按脚本头注释里的格式填写"
+    },
+    {
+     "id": "IQOO_Acc",
+     "name": "兑换账号",
+     "val": "",
+     "type": "text",
+     "desc": "默认第一个用户兑换，第二个填1，以此类推"
+    },
+    {
+     "id": "IQOO_GiftId",
+     "name": "商品id",
+     "val": "",
+     "type": "text",
+     "desc": "运行脚本查看"
+    }
+   ],
+   "descs_html": [
+    "iQOO 社区积分兑换。需要 iQOO 社区账号已有积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/iqoo/Iqoo.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/IQOO/IQOO_Exchange.js"
+  },
+  {
+   "id": "yongxin",
+   "name": "富连e充兑换",
+   "keys": [
+    "YongXin_ExchangeNum",
+    "YongXin"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YongXin/YongXin.jpg"
+   ],
+   "settings": [
+    {
+     "id": "YongXin",
+     "name": "账号数据",
+     "val": "",
+     "type": "textarea",
+     "desc": "账号数据（JSON 数组，含 userId、wxOpenId、aliPayOpenId），按脚本头注释里的格式填写"
+    },
+    {
+     "id": "YongXin_ExchangeNum",
+     "name": "兑换次数",
+     "val": "",
+     "type": "text",
+     "desc": "默认不兑换"
+    }
+   ],
+   "descs_html": [
+    "富连e充积分兑换。需要富连e充账号已有积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yongxin/Yongxin.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YongXin/YongXin.js"
+  },
+  {
+   "id": "haitian",
+   "name": "海天美味馆兑换",
+   "keys": [
+    "HaiTian_Acc",
+    "HaiTian_GiftId",
+    "HaiTian_Goods",
+    "HaiTian"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiTian/HaiTian.jpg"
+   ],
+   "settings": [
+    {
+     "id": "HaiTian",
+     "name": "账号数据",
+     "val": "",
+     "type": "textarea",
+     "desc": "账号数据（JSON 数组，含 id、token、hadayToken、uuid），按脚本头注释里的格式填写"
+    },
+    {
+     "id": "HaiTian_Acc",
+     "name": "兑换账号",
+     "val": "",
+     "type": "text",
+     "desc": "默认第一个用户兑换，第二个填1，以此类推"
+    },
+    {
+     "id": "HaiTian_GiftId",
+     "name": "商品id",
+     "val": "",
+     "type": "text",
+     "desc": "运行脚本查看"
+    },
+    {
+     "id": "HaiTian_Goods",
+     "name": "查看商品列表",
+     "val": false,
+     "type": "boolean",
+     "desc": "默认关闭，开启后运行脚本查看"
+    }
+   ],
+   "descs_html": [
+    "海天美味馆积分兑换。需要海天美味馆账号已有积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/haitian/Haitian.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiTian/HaiTian_Exchange.js"
+  },
+  {
+   "id": "wyyx",
+   "name": "网易严选兑换",
+   "keys": [
+    "WYYX_Acc",
+    "WYYX_Name",
+    "WYYX"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX.png"
+   ],
+   "settings": [
+    {
+     "id": "WYYX",
+     "name": "账号数据",
+     "val": "",
+     "type": "textarea",
+     "desc": "账号数据（JSON 数组，含 userId、cookie、token），按脚本头注释里的格式填写"
+    },
+    {
+     "id": "WYYX_Acc",
+     "name": "兑换账号",
+     "val": "",
+     "type": "text",
+     "desc": "默认第一个用户兑换，第二个填1，以此类推"
+    },
+    {
+     "id": "WYYX_Name",
+     "name": "商品名称",
+     "val": "",
+     "type": "text",
+     "desc": "运行脚本查看"
+    }
+   ],
+   "descs_html": [
+    "网易严选积分兑换。需要网易严选账号已有积分。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/wyyx/Wyyx.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX_Exchange.js"
+  }
+ ]
 }

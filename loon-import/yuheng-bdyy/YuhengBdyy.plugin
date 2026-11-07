@@ -1,0 +1,17 @@
+#!name=波点音乐自动签到
+#!desc=波点音乐自动签到；用法：装好插件，打开重写和 cron，打开波点音乐 App，点「我的」，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 01:00 自动签到。\n手动抓取：点 Loon 脚本里的「波点音乐去抓取」，按弹出的提示操作。
+#!author=許諾
+#!icon=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/05/b9/57/05b9577c-3773-cd2b-5a99-49c0dc3f331d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：Yuheng0101/X（bdyy.js）
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
+
+[MITM]
+hostname = bd-api.kuwo.cn
+
+[Script]
+http-request ^https?://bd-api\.kuwo\.cn/api/ucenter/users/pub.+uid=\d+&token= script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-bdyy/yuheng-bdyy_capture.js, requires-body=false, tag=波点音乐自动签到 Cookie, argument="title=波点音乐", enable={capture}
+cron "0 1 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/Bdyy/bdyy.js, timeout=300, tag=波点音乐自动签到, img-url=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/05/b9/57/05b9577c-3773-cd2b-5a99-49c0dc3f331d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=波点音乐去抓取, img-url=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/05/b9/57/05b9577c-3773-cd2b-5a99-49c0dc3f331d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png, argument="title=波点音乐&url=&hint=打开波点音乐 App，点「我的」，收到通知即抓取成功", enable={capture}

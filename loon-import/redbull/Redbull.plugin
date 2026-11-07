@@ -1,0 +1,9 @@
+#!name=红牛会员俱乐部兑换
+#!desc=红牛会员俱乐部积分兑换：每周五 13:59 自动用积分兑换配置的商品。需要在 BoxJs 填写账号数据和商品 id；账号需已有积分。脚本头为 6 段式 cron（57 59 13 * * 5，首段为秒），已换算为 Loon 5 段式。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.jpg
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：xzxxn777/Surge（RedBull_Exchange.js）
+[Script]
+cron "59 13 * * 5" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull_Exchange.js, timeout=300, tag=红牛会员俱乐部兑换, img-url=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.jpg, enable=true

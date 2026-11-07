@@ -1,0 +1,10 @@
+#!name=摸鱼
+#!desc=摸鱼日报：每天 9:06 推送节日倒计时、上下班倒计时和黄历；在 BoxJs 里可自定义节日、提醒天数和通知图片。
+#!author=許諾
+#!icon=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+# 脚本来源：Yuheng0101/X（moyu.js）
+
+[Script]
+cron "6 9 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/moyu.js, timeout=300, tag=摸鱼, img-url=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png, enable=true
