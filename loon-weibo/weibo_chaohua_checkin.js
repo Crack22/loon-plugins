@@ -344,7 +344,7 @@ const picFid = read(DAKA_PIC_FID);
 const picMd5 = read(DAKA_PIC_MD5);
 const copy = read(COPY_KEY) || DEFAULT_COPY;
 if (!checkUrl ||!checkHeadersRaw ||!picFid ||!picMd5) {
-lines.push("打卡：还没抓取打卡信息，在黄子弘凡超话点一次打卡（用每天要发的照片发一次）");
+lines.push("黄子弘凡打卡：还没抓取打卡信息，在黄子弘凡超话点一次打卡（用每天要发的照片发一次）");
 return;
 }
 let headers = {};
@@ -355,13 +355,13 @@ const apiBase = "https://api.weibo.cn";
 const freshCheckUrl = checkUrl.replace(/ul_ctime=\d+/, "ul_ctime=" + Date.now());
 const resp2 = await httpGet(freshCheckUrl, headers);
 if (resp2.error ||!resp2.body) {
-lines.push("打卡：检查失败 " + (resp2.error || "无返回"));
+lines.push("黄子弘凡打卡：检查失败 " + (resp2.error || "无返回"));
 return;
 }
 let scheme = "";
 try { scheme = JSON.parse(resp2.body).scheme || "";} catch (e) { scheme = "";}
 if (!scheme) {
-lines.push("打卡：检查失败，没拿到发帖模板");
+lines.push("黄子弘凡打卡：检查失败，没拿到发帖模板");
 return;
 }
 const sq = scheme.split("?")[1] || "";
@@ -369,7 +369,7 @@ const sp = parseQuery(sq);
 const template = sp.content || "";
 const callbackUrl = sp.callback_url || "";
 if (!template ||!callbackUrl) {
-lines.push("打卡：检查失败，模板不完整");
+lines.push("黄子弘凡打卡：检查失败，模板不完整");
 return;
 }
 const dayM = template.match(/Day(\d+)/);
@@ -411,7 +411,7 @@ const h = Object.assign({}, headers);
 h["Content-Type"] = "application/x-www-form-urlencoded; charset=utf-8";
 const resp3 = await httpPost(sendUrl, h, encodeQuery(body));
 if (resp3.error ||!resp3.body) {
-lines.push("打卡：发帖失败 " + (resp3.error || "无返回"));
+lines.push("黄子弘凡打卡：发帖失败 " + (resp3.error || "无返回"));
 return;
 }
 let ok = false;
@@ -419,8 +419,8 @@ try {
 const o = JSON.parse(resp3.body);
 if (o.idstr) ok = true;
 } catch (e) {}
-if (ok) lines.push("打卡：✅成功 Day" + day);
-else lines.push("打卡：发帖失败 " + shortMsg(resp3.body));
+if (ok) lines.push("黄子弘凡打卡：✅成功 Day" + day);
+else lines.push("黄子弘凡打卡：发帖失败 " + shortMsg(resp3.body));
 }
 
 // ---------- 主流程 ----------
@@ -428,7 +428,7 @@ else lines.push("打卡：发帖失败 " + shortMsg(resp3.body));
 const lines = [];
 if (argOn("dailySignin")) await dailySignin(lines); else lines.push("微博签到：已在设置里关闭");
 if (argOn("chaohuaSignin")) await chaohuaSignin(lines); else lines.push("超话签到：已在设置里关闭");
-if (argOn("daka")) await daka(lines); else lines.push("打卡：已在设置里关闭");
+if (argOn("daka")) await daka(lines); else lines.push("黄子弘凡打卡：已在设置里关闭");
 $notification.post("微博超话签到打卡", lines[0] || "完成", lines.join("\n"));
 $done({});
 })().catch(function (e) {
