@@ -26,6 +26,15 @@ return v === null || v === undefined? "": v;
 function readArr(key) {
 try { return JSON.parse(read(key) || "[]");} catch (e) { return [];}
 }
+// 读设置里的开关（没传参数时默认开）
+function argOn(name) {
+  try {
+    if (typeof $argument === "undefined" || !$argument) return true;
+    const v = $argument[name];
+    if (v === undefined || v === null || v === "") return true;
+    return v === true || v === "true";
+  } catch (e) { return true; }
+}
 function uuid() {
 return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
 const r = (Math.random() * 16) | 0;
@@ -403,9 +412,9 @@ else lines.push("打卡：发帖失败 " + shortMsg(resp3.body));
 // ---------- 主流程 ----------
 (async function () {
 const lines = [];
-await dailySignin(lines);
-await chaohuaSignin(lines);
-await daka(lines);
+if (argOn("dailySignin")) await dailySignin(lines); else lines.push("微博签到：已在设置里关闭");
+if (argOn("chaohuaSignin")) await chaohuaSignin(lines); else lines.push("超话签到：已在设置里关闭");
+if (argOn("daka")) await daka(lines); else lines.push("打卡：已在设置里关闭");
 $notification.post("微博超话签到打卡", lines[0] || "完成", lines.join("\n"));
 $done({});
 })().catch(function (e) {

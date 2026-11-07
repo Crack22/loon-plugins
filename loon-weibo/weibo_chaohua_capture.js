@@ -33,8 +33,15 @@ function getHeader(headers, name) {
   }
   return "";
 }
+// 设置里的「抓取开关」：没传参数时默认开；关掉时不抓（脚本行上的 enable={capture} 也会拦一道，这里是双保险）
+let captureOn = true;
+try {
+  if (typeof $argument !== "undefined" && $argument && $argument.capture !== undefined && $argument.capture !== null && $argument.capture !== "") {
+    captureOn = $argument.capture === true || $argument.capture === "true";
+  }
+} catch (e) {}
 
-if ($request && $request.method !== "OPTIONS") {
+if (captureOn && $request && $request.method !== "OPTIONS") {
   const url = $request.url || "";
   const headers = $request.headers || {};
   const body = $request.body || "";
