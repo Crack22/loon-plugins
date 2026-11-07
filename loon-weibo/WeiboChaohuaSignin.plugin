@@ -1,0 +1,19 @@
+#!name=微博超话签到
+#!desc=每天 09:00 自动做两件事：\n1、微博每日签到；\n2、把所有已关注超话全部签到一遍。\n本版没有黄子弘凡图文打卡（不发帖、不发照片），只做签到。\n\n使用前先抓一次（装好插件，打开重写和 cron）：在微博 App 里依次做——打开超话社区 → 我的 → 关注（弹“已获取已关注超话列表”）、点进一个超话签到一次（弹“已获取超话签到链接”）、随便刷一下微博（弹“微博签到数据已获取”）。抓完后在下面的「设置」里关掉「抓取开关」，只留定时签到。\n注意：登录凭证会过期，签到开始失败时，重新打开抓取开关抓一次就行。\n注意：不要和「微博超话签到打卡」版同时装，两个都会在 09:00 跑，会重复签到；用哪个就只装哪个。已用打卡版抓过的不用重抓，两版共用同一套签到凭证。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg
+#!homepage=https://github.com/Crack22/loon-plugins
+#!loon_version=3.2.1(745)
+
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，在微博 App 里的操作会自动保存签到要用的链接；抓完可以关掉
+dailySignin = switch,true,tag=微博每日签到,desc=每天 09:00 自动做微博每日签到
+chaohuaSignin = switch,true,tag=超话签到,desc=每天 09:00 把所有已关注超话全部签到一遍
+
+[MITM]
+hostname = api.weibo.cn, m.api.weibo.com
+
+[Script]
+http-request ^https?://m?api\.weibo\.c(n|om)/2/(flowlist|page/button) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_signin_capture.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg, requires-body=true, tag=微博超话抓取, argument=[{capture}], enable={capture}
+http-request ^https?://api\.weibo\.cn/2/users/show script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_signin_capture.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg, tag=微博签到抓取, argument=[{capture}], enable={capture}
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_signin_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg, timeout=600, tag=微博超话签到, argument=[{dailySignin},{chaohuaSignin}], enable=true
