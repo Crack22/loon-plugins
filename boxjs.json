@@ -266,7 +266,6 @@
    ],
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
-   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_signin_checkin.js",
    "settings": [
     {
      "id": "weibo_chaohua_tokens",
