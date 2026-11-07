@@ -1,5 +1,5 @@
 // yanxuan_capture.js — 网易严选专用抓取（許諾签到合集）
-// 上游 yanxuan.cookie.js：Cookie 须含 yx_csrf 才存 chavy_cookie_yanxuan；URL 查询参数拼成 JSON，含 csrf_token 才存 chavy_token_yanxuan
+// yanxuan.cookie.js：Cookie 须含 yx_csrf 才存 chavy_cookie_yanxuan；URL 查询参数拼成 JSON，含 csrf_token 才存 chavy_token_yanxuan
 // 只在值变化时保存并通知一次
 (function () {
   function getHeader(headers, name) {

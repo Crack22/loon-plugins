@@ -1,5 +1,5 @@
 // fmz200-pingme_capture.js — PingMe 签到参数抓取（許諾签到合集）
-// 上游签到脚本把抓到的内容当 JSON 读（{url, paramsRaw, headers}），
+// 签到脚本把抓到的内容当 JSON 读（{url, paramsRaw, headers}），
 // 通用 fmz_checkin_capture.js 只存单个头字段，存不了这份 JSON，
 // 所以用这个专用脚本：把请求 URL、原始查询参数和请求头原样存成 JSON。
 // 触发：^https://api.pingmeapp.net/app/queryBalanceAndBonus

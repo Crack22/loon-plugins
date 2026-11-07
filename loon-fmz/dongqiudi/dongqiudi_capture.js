@@ -1,5 +1,5 @@
 // dongqiudi_capture.js — 懂球帝专用抓取（許諾签到合集）
-// 上游 dongqiudi.cookie.js：把 UUID 和 Authorization 请求头拼成 JSON 存进 chavy_cookie_dongqiudi，签到脚本 JSON.parse 后使用
+// dongqiudi.cookie.js：把 UUID 和 Authorization 请求头拼成 JSON 存进 chavy_cookie_dongqiudi，签到脚本 JSON.parse 后使用
 // 只在值变化时保存并通知一次
 (function () {
   function getHeader(headers, name) {

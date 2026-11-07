@@ -1,6 +1,6 @@
 // aliyun_capture.js — 阿里云盘签到：抓取 refresh_token（許諾签到合集）
 // http-request script-request-body ^https://(auth|aliyundrive).alipan.com/v2/account/token
-// 请求体 JSON 含 refresh_token；用它换一次用户信息（昵称/device_id），按上游 aliyun_data 格式存入 JSON 数组
+// 请求体 JSON 含 refresh_token；用它换一次用户信息（昵称/device_id），按 aliyun_data 格式存入 JSON 数组
 (function () {
   var key = "aliyun_data";
   function save(list, nick) {

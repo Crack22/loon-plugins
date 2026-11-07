@@ -4,7 +4,6 @@
 #!icon=https://raw.githubusercontent.com/58xinian/icon/master/telegram.png
 #!homepage=https://github.com/Crack22/loon-plugins
 
-# 脚本来源：Peng-YM/QuanX（telegram.js）
 
 [Script]
 cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/telegram.js, timeout=300, tag=Telegram 频道媒体推送, img-url=https://raw.githubusercontent.com/58xinian/icon/master/telegram.png, enable=true

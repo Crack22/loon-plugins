@@ -4,6 +4,5 @@
 #!icon=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Switch.png
 #!homepage=https://github.com/Crack22/loon-plugins
 
-# 脚本来源：Sliverkiss（gist switch520.js）
 [Script]
 cron "11 10 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/3d9c00790143eba146c3ba798eda4696/raw/switch520.js, timeout=300, tag=Switch520每日签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Switch.png, enable=true

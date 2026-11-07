@@ -4,7 +4,6 @@
 #!icon=https://raw.githubusercontent.com/FoKit/Scripts/main/images/pp_parking.png
 #!homepage=https://github.com/Crack22/loon-plugins
 
-# 脚本来源：FoKit/Scripts（pp_parking.js）
 [Argument]
 capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保存签到要用的 Cookie；抓完可以关掉
 

@@ -1,5 +1,5 @@
 // acfun_capture.js — AcFun专用抓取（許諾签到合集）
-// 上游 acfun.cookie.js：Cookie 请求头存 chavy_cookie_acfun，access_token 请求头存 chavy_token_acfun
+// acfun.cookie.js：Cookie 请求头存 chavy_cookie_acfun，access_token 请求头存 chavy_token_acfun
 // 只在值变化时保存并通知一次
 (function () {
   function getHeader(headers, name) {

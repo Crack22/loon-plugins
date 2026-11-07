@@ -1,4 +1,3 @@
-// 微博超话抓取（改编自 fmz200：超话部分原作者 Evilbutcher、toulanboy，fmz200 重构；每日签到抓取改编自 fmz200 的 get_cookie.js；打卡部分自研）
 // 抓五样东西（只能在微博 App 里做）：
 // 1) 已关注超话列表：POST /2/flowlist，body 含 fid=232478_-_super_topic_followed（新版微博客户端 16.x+）
 // 2) 超话签到链接：GET page/button，URL 含 active_checkin

@@ -1,5 +1,5 @@
 // feng_capture.js — 威锋网专用抓取（許諾签到合集）
-// 上游 feng.cookie.js：把登录请求整个存为 JSON（地址+请求体+请求头）到 chavy_login_feng，签到脚本用它调 /v1/auth/signin 换 token 后签到
+// feng.cookie.js：把登录请求整个存为 JSON（地址+请求体+请求头）到 chavy_login_feng，签到脚本用它调 /v1/auth/signin 换 token 后签到
 // 只在值变化时保存并通知一次
 (function () {
   function getHeader(headers, name) {

@@ -1,5 +1,5 @@
 // apktw_capture.js — APK.TW专用抓取（許諾签到合集）
-// 上游 apktw.cookie.js：把登录请求整个存为 JSON（地址+请求体+请求头，去掉 Content-Length 和 Cookie）到 chavy_cookie_apktw，签到脚本直接重放该请求
+// apktw.cookie.js：把登录请求整个存为 JSON（地址+请求体+请求头，去掉 Content-Length 和 Cookie）到 chavy_cookie_apktw，签到脚本直接重放该请求
 // 只在值变化时保存并通知一次
 (function () {
   function getHeader(headers, name) {

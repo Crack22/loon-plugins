@@ -1,10 +1,9 @@
 #!name=TestFlight公测自动加入
-#!desc=监控 TestFlight 公测名额，有空位时自动加入；先在 TestFlight 里打开任意应用的加入页抓取会话参数（重写会自动保存），再在 BoxJs 里填要监控的应用 ID；Loon 每 5 分钟检查一次（上游是每 5 秒，Loon 定时任务不支持秒级，改为 5 分钟）。
+#!desc=监控 TestFlight 公测名额，有空位时自动加入；先在 TestFlight 里打开任意应用的加入页抓取会话参数（重写会自动保存），再在 BoxJs 里填要监控的应用 ID；Loon 每 5 分钟检查一次（每 5 秒一次，Loon 定时任务不支持秒级，改为 5 分钟）。
 #!author=許諾
 #!icon=https://raw.githubusercontent.com/githubdulong/Script/master/Images/testflight.png
 #!homepage=https://github.com/Crack22/loon-plugins
 
-# 脚本来源：Yuheng0101/X（AutoJoinTF.js）
 
 [MITM]
 hostname = testflight.apple.com

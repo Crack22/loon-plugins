@@ -1,5 +1,5 @@
 // kuaikan_capture.js — 快看漫画专用抓取（許諾签到合集）
-// 上游 NobyDa 的 KKMH.js 把 Cookie 存进 KKMH 的 JSON 字段 COOKIE（@KKMH.COOKIE）；本脚本照此保存，抓取请求须带 session=
+// KKMH.js 把 Cookie 存进 KKMH 的 JSON 字段 COOKIE（@KKMH.COOKIE）；本脚本照此保存，抓取请求须带 session=
 // 只在值变化时保存并通知一次
 (function () {
   function getHeader(headers, name) {

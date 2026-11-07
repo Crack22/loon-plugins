@@ -4,7 +4,6 @@
 #!icon=https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/miyoushe.png
 #!homepage=https://github.com/Crack22/loon-plugins
 
-# 脚本来源：lowking/Scripts（miyousheCustom.js）
 
 [MITM]
 hostname = api-takumi-record.mihoyo.com, bbs-api.miyoushe.com

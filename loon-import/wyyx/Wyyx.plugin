@@ -4,7 +4,6 @@
 #!icon=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX.png
 #!homepage=https://github.com/Crack22/loon-plugins
 
-# 脚本来源：xzxxn777/Surge（WYYX_Exchange.js）
 
 [Script]
 cron "45 0,11,21 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX_Exchange.js, timeout=300, tag=网易严选兑换, img-url=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX.png, enable=true

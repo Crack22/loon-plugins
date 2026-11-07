@@ -1095,7 +1095,7 @@
    ],
    "descs_html": [
     "Sub-Store 订阅节点管理配置：节点名前缀/后缀、Host 混淆、排序、解析等。",
-    "需配合 Sub-Store 脚本使用；原作者提示请使用 Lite 版。"
+    "需配合 Sub-Store 脚本使用；建议使用 Lite 版。"
    ]
   },
   {

@@ -1,5 +1,5 @@
 // telecom-10000_capture.js — 电信营业厅专用抓取（許諾签到合集）
-// 上游 10000.cookie.js 保存签到请求的请求头 JSON（chavy_signheader_10000）和请求体（chavy_signbody_10000）；手机号 chavy_mobile_10000 需手动填
+// 10000.cookie.js 保存签到请求的请求头 JSON（chavy_signheader_10000）和请求体（chavy_signbody_10000）；手机号 chavy_mobile_10000 需手动填
 // 只在值变化时保存并通知一次
 (function () {
   function getHeader(headers, name) {

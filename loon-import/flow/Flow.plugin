@@ -4,7 +4,6 @@
 #!icon=https://raw.githubusercontent.com/58xinian/icon/master/flow.png
 #!homepage=https://github.com/Crack22/loon-plugins
 
-# 脚本来源：Peng-YM/QuanX（flow.js）
 
 [Script]
 cron "5 9 * * *" script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/flow.js, timeout=300, tag=机场流量查询, img-url=https://raw.githubusercontent.com/58xinian/icon/master/flow.png, enable=true

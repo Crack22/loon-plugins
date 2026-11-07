@@ -3,7 +3,6 @@
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
-# 脚本来源：id77/QuantumultX（task/thg.js，抓取见 task/thg.cookie.js）
 # 注意：太好购为各商家独立域名，MITM 需手动添加本次抓包请求里的域名。
 
 [Argument]

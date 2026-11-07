@@ -1,5 +1,5 @@
 // flyertea_capture.js — 飞客茶馆专用抓取（許諾签到合集）
-// 上游 flyertea.cookie.js：Cookie 请求头存 chavy_cookie_flyertea，签到请求 URL 的查询参数拼成 JSON 存 chavy_token_flyertea
+// flyertea.cookie.js：Cookie 请求头存 chavy_cookie_flyertea，签到请求 URL 的查询参数拼成 JSON 存 chavy_token_flyertea
 // 只在值变化时保存并通知一次
 (function () {
   function getHeader(headers, name) {

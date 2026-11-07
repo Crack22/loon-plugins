@@ -52,7 +52,7 @@ loon-plugins/
 
 ## 許諾签到合集
 
-把签到类任务全部转成 Loon 插件，共 135 个（京东、爱奇艺、哔哩哔哩、腾讯视频、百度贴吧、QQ 音乐、喜马拉雅、美团、饿了么、顺丰、携程、芒果 TV……）。签到脚本本身留在上游，这里只提供插件外壳和 BoxJs 设置；只在 Loon 本地跑，不进云端。每个带抓取的插件都有「去抓取」手动按钮（Loon → 脚本里点一下，点通知打开抓取页）和设置里的抓取开关。
+把签到类任务全部转成 Loon 插件，共 135 个（京东、爱奇艺、哔哩哔哩、腾讯视频、百度贴吧、QQ 音乐、喜马拉雅、美团、饿了么、顺丰、携程、芒果 TV……）。这里提供插件外壳和 BoxJs 设置；只在 Loon 本地跑，不进云端。每个带抓取的插件都有「去抓取」手动按钮（Loon → 脚本里点一下，点通知打开抓取页）和设置里的抓取开关。
 
 完整列表：[docs/xunuo-checkins.md](docs/xunuo-checkins.md)
 
@@ -74,7 +74,7 @@ loon-plugins/
 | 許諾图标合集 | 16 个图标库合并，5375 个图标，每天 06:00 自动更新 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/icons-merged.json |
 | 許諾 BoxJs 图标 | 本仓库全部 BoxJs 图标，160 个图标，每天 06:00 自动更新 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/icons-boxjs.json |
 
-图标库来源在 [icons/sources.json](icons/sources.json) 里，改它就能增减上游库。`icons/zishi-cs.json` 是 LovedGM 图标库的原样备份，不参与合并。
+图标库来源在 [icons/sources.json](icons/sources.json) 里，改它就能增减图标库。`icons/zishi-cs.json` 是 LovedGM 图标库的原样备份，不参与合并。
 
 ## 自动运行
 

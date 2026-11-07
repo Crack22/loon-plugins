@@ -1,5 +1,5 @@
 // jd-read_capture.js — 京东读书专用抓取（許諾签到合集）
-// 上游脚本需多值（URL + 请求头 + 请求体），通用 Cookie 抓取无法覆盖，故专用抓取。
+// 签到脚本需多值（URL + 请求头 + 请求体），通用 Cookie 抓取无法覆盖，故专用抓取。
 // 只在值变化时保存并通知一次
 (function () {
   function getHeader(headers, name) {

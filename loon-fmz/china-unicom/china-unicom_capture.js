@@ -1,7 +1,6 @@
 // china-unicom_capture.js — 中国联通签到抓取（許諾签到合集）
 // 保存签到请求的 URL + 请求头 JSON（部分含 Body）到 $persistentStore，供 cron 签到脚本重放
 // 匹配的请求由同目录 ChinaUnicom.plugin 的 http-request 正则限定；只在值变化时保存并通知一次
-// 脚本来源：chavyleung/scripts（10010.js 抓取逻辑的 Loon 改编）
 (function () {
   var TITLE = "中国联通";
   var RULES = [

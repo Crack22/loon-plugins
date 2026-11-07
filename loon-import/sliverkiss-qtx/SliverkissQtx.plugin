@@ -4,6 +4,5 @@
 #!icon=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/qtx.png
 #!homepage=https://github.com/Crack22/loon-plugins
 
-# 脚本来源：zjk2017/ArcadiaScriptPublic（qtx.js）
 [Script]
 cron "9 5 * * *" script-path=https://raw.githubusercontent.com/zjk2017/ArcadiaScriptPublic/main/qtx.js, timeout=300, tag=青碳行每日签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/qtx.png, enable=true

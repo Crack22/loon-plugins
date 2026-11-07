@@ -1,5 +1,5 @@
 // videoqq_capture.js — 腾讯视频专用抓取（許諾签到合集）
-// 上游 videoqq.cookie.js：URL 含 auth_refresh 时存 Cookie + 登录地址/请求头；含 mobile_checkin 时存签到地址/请求头并清空登录地址/请求头
+// videoqq.cookie.js：URL 含 auth_refresh 时存 Cookie + 登录地址/请求头；含 mobile_checkin 时存签到地址/请求头并清空登录地址/请求头
 // 只在值变化时保存并通知一次
 (function () {
   function getHeader(headers, name) {

@@ -1,5 +1,5 @@
 // qqmusic_capture.js — QQ音乐专用抓取（許諾签到合集）
-// 上游 qqmusic.cookie.js：请求体含 receive_score 且带 Cookie 时，存签到地址/请求头/请求体/签到类型；响应体含 totalDays 时通知手动签到结果
+// qqmusic.cookie.js：请求体含 receive_score 且带 Cookie 时，存签到地址/请求头/请求体/签到类型；响应体含 totalDays 时通知手动签到结果
 // 只在值变化时保存并通知一次
 (function () {
   function getHeader(headers, name) {

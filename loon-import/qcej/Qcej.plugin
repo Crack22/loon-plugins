@@ -4,7 +4,6 @@
 #!icon=https://raw.githubusercontent.com/Former-Years/icon/master/qcej.png
 #!homepage=https://github.com/Crack22/loon-plugins
 
-# 脚本来源：Former-Years/Surge（qcej.js）
 [Argument]
 capture = switch,true,tag=抓取开关,desc=打开后，打开对应 App/小程序会自动保存要用的数据；抓完可以关掉
 

@@ -1,9 +1,8 @@
 #!name=哔哩漫画抢券
-#!desc=哔哩哔哩漫画积分商城自动抢券：每周日、周一 0:00 自动兑换配置的商品（默认限量 0 点秒杀，默认抢 100 次）；需要先用哔哩漫画签到脚本获取 Cookie，账号需已有积分。原脚本为每秒执行，Loon 最小粒度为 1 分钟，故改为 0:00 执行一次，单次执行内已含多次抢购。
+#!desc=哔哩哔哩漫画积分商城自动抢券：每周日、周一 0:00 自动兑换配置的商品（默认限量 0 点秒杀，默认抢 100 次）；需要先用哔哩漫画签到脚本获取 Cookie，账号需已有积分。该脚本原本每秒执行一次，Loon 最小粒度为 1 分钟，故改为 0:00 执行一次，单次执行内已含多次抢购。
 #!author=許諾
 #!icon=https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/manga.png
 #!homepage=https://github.com/Crack22/loon-plugins
 
-# 脚本来源：NobyDa/Script（ExchangePoints.js）
 [Script]
 cron "0 0 * * 0,1" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/ExchangePoints.js, timeout=300, tag=哔哩漫画抢券, img-url=https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/manga.png, enable=true

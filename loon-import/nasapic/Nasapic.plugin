@@ -4,7 +4,6 @@
 #!icon=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa.png
 #!homepage=https://github.com/Crack22/loon-plugins
 
-# 脚本来源：evilbutcher/Quantumult_X（nasapic.js）
 
 [Script]
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js, timeout=300, tag=NASA每日一图, img-url=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa.png, enable=true
