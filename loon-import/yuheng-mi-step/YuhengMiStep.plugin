@@ -1,8 +1,8 @@
 #!name=小米刷步
-#!desc=小米刷步；用法：在 BoxJs 里填好小米账号和密码（多账号用 && 分隔），可自定义步数区间和递增模式；cron 每天 08:33 自动运行。
+#!desc=小米刷步；用法：在 BoxJs 里填好小米账号和密码（多账号用 ； 分隔），可自定义步数区间和递增模式；cron 每天 08:33 自动运行。
 #!author=許諾
 #!icon=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/color.png
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Script]
-cron "33 8 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/step.js, timeout=300, tag=小米刷步, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/color.png, enable=true
+cron "33 8 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-mi-step/yuheng_mi_step.js, timeout=300, tag=小米刷步, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/color.png, enable=true

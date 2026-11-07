@@ -5583,14 +5583,14 @@
      "name": "小米账号",
      "val": "",
      "type": "textarea",
-     "desc": "多账号用 && 分隔"
+     "desc": "多账号用 ； 分隔"
     },
     {
      "id": "xiaomi_step_password",
      "name": "小米密码",
      "val": "",
      "type": "textarea",
-     "desc": "多账号用 && 分隔，与账号一一对应"
+     "desc": "多账号用 ； 分隔，与账号一一对应"
     },
     {
      "id": "xiaomi_step_space",
@@ -5618,7 +5618,7 @@
     "小米运动刷步：每天自动刷步数，需填小米账号和密码。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-mi-step/YuhengMiStep.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/step.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-mi-step/yuheng_mi_step.js"
   }
  ]
 }
