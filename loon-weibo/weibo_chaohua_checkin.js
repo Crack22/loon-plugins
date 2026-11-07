@@ -181,7 +181,7 @@ if (!match) continue;
 const id = match[1];
 if (seenIds.has(id)) continue;
 seenIds.add(id);
-nameList.push(data.title_sub || "");
+nameList.push(data.title_sub || data.title || "");
 idList.push(id);
 count++;
 }
@@ -265,25 +265,25 @@ let headers = {};
 try { headers = JSON.parse(token.checkinHeaders || "{}");} catch (e) { headers = {};}
 const resp = await httpGet(sendUrl, headers);
 const cleanName = (name || "").replace(/超话/, "");
-if (resp.error) return { ok: false, text: "：❌请求失败 " + resp.error};
+if (resp.error) return { ok: false, text: cleanName + "：❌请求失败 " + resp.error};
 if (resp.status === 200) {
 let o;
 try { o = JSON.parse(resp.body);} catch (e) {
-return { ok: false, text: "：❌响应解析失败"};
+return { ok: false, text: cleanName + "：❌响应解析失败"};
 }
 if (o.errmsg!== undefined) {
-if (o.errcode === 382004) return { ok: true, text: "：✨今天已签到"};
-return { ok: false, text: "：" + o.errmsg};
+if (o.errcode === 382004) return { ok: true, text: cleanName + "：✨今天已签到"};
+return { ok: false, text: cleanName + "：" + o.errmsg};
 }
 if (o.result === 1) {
 const btn = o.button && o.button.name? o.button.name: "签到成功";
-return { ok: true, text: "：✅" + btn};
+return { ok: true, text: cleanName + "：✅" + btn};
 }
-return { ok: false, text: "：发生错误"};
+return { ok: false, text: cleanName + "：发生错误"};
 }
-if (resp.status === 418) return { ok: false, text: "：签到太频繁啦，请稍后再试"};
-if (resp.status === 511) return { ok: false, text: "：需要身份验证，请稍后再试"};
-return { ok: false, text: "：发生错误（" + resp.status + "）"};
+if (resp.status === 418) return { ok: false, text: cleanName + "：签到太频繁啦，请稍后再试"};
+if (resp.status === 511) return { ok: false, text: cleanName + "：需要身份验证，请稍后再试"};
+return { ok: false, text: cleanName + "：发生错误（" + resp.status + "）"};
 }
 async function chaohuaSignin(lines) {
 const tokens = readArr(CHAOHUA_KEY);
