@@ -25,6 +25,21 @@ return v === null || v === undefined? "": v;
 function readArr(key) {
 try { return JSON.parse(read(key) || "[]");} catch (e) { return [];}
 }
+// 去重：同一账号抓了多次时只留第一条，避免通知重复
+function dedupeTokens(tokens, idField) {
+  const seen = new Set();
+  const out = [];
+  for (const t of tokens) {
+    const id = t && t[idField];
+    if (id) {
+      if (seen.has(id)) continue;
+      seen.add(id);
+    }
+    out.push(t);
+  }
+  return out;
+}
+
 // 读设置里的开关（没传参数时默认开）
 function argOn(name) {
   try {
@@ -115,7 +130,7 @@ return p;
 
 // ---------- 1) 微博每日签到 ----------
 async function dailySignin(lines) {
-const tokens = readArr(SIGNIN_KEY);
+const tokens = dedupeTokens(readArr(SIGNIN_KEY), "weibo_id");
 if (tokens.length === 0) {
 lines.push("微博签到：还没抓取数据，打开微博 App 随便刷一下");
 return;
@@ -286,7 +301,7 @@ if (resp.status === 511) return { ok: false, text: cleanName + "：需要身份�
 return { ok: false, text: cleanName + "：发生错误（" + resp.status + "）"};
 }
 async function chaohuaSignin(lines) {
-const tokens = readArr(CHAOHUA_KEY);
+const tokens = dedupeTokens(readArr(CHAOHUA_KEY), "userId");
 if (tokens.length === 0) {
 lines.push("超话签到：还没抓取数据，打开微博 App → 超话社区 → 我的 → 关注");
 return;
