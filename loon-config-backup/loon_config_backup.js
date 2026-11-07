@@ -16,6 +16,10 @@
  * 配置（BoxJs 里填）：
  *   loon_backup_pat  - 细粒度 GitHub Token，只给备份仓库 Contents 读写权限
  *   loon_backup_repo - 仓库，格式：用户名/仓库名，例如 Crack22/loon-config-backup
+ *
+ * 注意：主流程必须包在 main() 里。Loon 用 JavaScriptCore 按普通脚本解析，
+ * 顶层写 return 会直接报 SyntaxError（Node 的 --check 测不出来，因为 Node
+ * 会把文件包进 CommonJS 函数里，顶层 return 在那里是合法的）。
  */
 
 var FILE_PATH = 'loon-config-state.json';
@@ -69,107 +73,111 @@ function fail(title, content) {
   $done();
 }
 
-var pat = $persistentStore.read('loon_backup_pat');
-var repo = $persistentStore.read('loon_backup_repo');
-if (!pat) { fail('还没填 Token', '请在 BoxJs「Loon配置状态备份」里填 GitHub Token，再点一下 App 立即备份一次。'); return; }
-if (!repo || repo.indexOf('/') < 0) { fail('还没填仓库', '请在 BoxJs「Loon配置状态备份」里填仓库，格式：用户名/仓库名，例如 Crack22/loon-config-backup。'); return; }
+function main() {
+  var pat = $persistentStore.read('loon_backup_pat');
+  var repo = $persistentStore.read('loon_backup_repo');
+  if (!pat) { fail('还没填 Token', '请在 BoxJs「Loon配置状态备份」里填 GitHub Token，再点一下 App 立即备份一次。'); return; }
+  if (!repo || repo.indexOf('/') < 0) { fail('还没填仓库', '请在 BoxJs「Loon配置状态备份」里填仓库，格式：用户名/仓库名，例如 Crack22/loon-config-backup。'); return; }
 
-// ---------- 1. 收集 Loon 当前运行配置 ----------
-var conf;
-try {
-  conf = JSON.parse($config.getConfig());
-} catch (e) {
-  fail('读不到当前配置', '错误：' + e);
-  return;
-}
-var groups = conf.all_policy_groups || [];
-var subPolicies = {};
-var collected = 0;
-var finished = false;
+  // ---------- 1. 收集 Loon 当前运行配置 ----------
+  var conf;
+  try {
+    conf = JSON.parse($config.getConfig());
+  } catch (e) {
+    fail('读不到当前配置', '错误：' + e);
+    return;
+  }
+  var groups = conf.all_policy_groups || [];
+  var subPolicies = {};
+  var collected = 0;
+  var finished = false;
 
-function collectDone() {
-  if (finished) return;
-  finished = true;
-  upload();
-}
+  function collectDone() {
+    if (finished) return;
+    finished = true;
+    upload();
+  }
 
-if (groups.length === 0) {
-  collectDone();
-} else {
-  for (var gi = 0; gi < groups.length; gi++) {
-    (function (name) {
-      try {
-        $config.getSubPolicies(name, function (subs) {
-          subPolicies[name] = subs || [];
+  if (groups.length === 0) {
+    collectDone();
+  } else {
+    for (var gi = 0; gi < groups.length; gi++) {
+      (function (name) {
+        try {
+          $config.getSubPolicies(name, function (subs) {
+            subPolicies[name] = subs || [];
+            collected++;
+            if (collected >= groups.length) collectDone();
+          });
+        } catch (e) {
+          subPolicies[name] = [];
           collected++;
           if (collected >= groups.length) collectDone();
-        });
-      } catch (e) {
-        subPolicies[name] = [];
-        collected++;
-        if (collected >= groups.length) collectDone();
-      }
-    })(groups[gi]);
-  }
-  // 兜底：15 秒内没收齐也照常备份已收到的部分，不让脚本一直挂着
-  setTimeout(function () { collectDone(); }, 15000);
-}
-
-// ---------- 2. 上传到 GitHub 私人仓库 ----------
-function upload() {
-  var loonInfo = '';
-  try { loonInfo = JSON.stringify($loon); } catch (e) { loonInfo = ''; }
-  var snapshot = {
-    name: 'Loon配置状态备份',
-    note: 'Loon 不允许脚本读取完整 .conf 文件；这份备份只含运行模式、策略组及当前选择、各组节点名。完整配置请手动导出 .conf 放进本仓库。',
-    updated_at: beijingNow() + ' (北京时间)',
-    device: loonInfo,
-    config: conf,
-    sub_policies: subPolicies
-  };
-  var content = JSON.stringify(snapshot, null, 2);
-  var b64 = b64encode(utf8ToBytes(content));
-  var url = API_BASE + '/repos/' + repo + '/contents/' + FILE_PATH;
-  var headers = {
-    'Authorization': 'Bearer ' + pat,
-    'Accept': 'application/vnd.github+json',
-    'User-Agent': 'loon-config-backup'
-  };
-
-  // 先读现有文件：拿到 sha（更新用），没变化就不提交
-  $httpClient.get({ url: url, headers: headers, timeout: 20 }, function (err, resp, data) {
-    if (err) { fail('备份失败', '读仓库文件失败：' + err); return; }
-    var status = resp && resp.status;
-    var sha = null;
-    if (status === 200) {
-      try {
-        var cur = JSON.parse(data);
-        sha = cur.sha;
-        if (cur.content && bytesToUtf8(b64decode(cur.content)) === content) {
-          console.log('[Loon配置备份] 无变化，跳过提交');
-          $done();
-          return;
         }
-      } catch (e) { /* 解析失败就继续走更新 */ }
-    } else if (status !== 404) {
-      fail('备份失败', '读仓库文件返回 HTTP ' + status + '，请检查 Token 和仓库名。');
-      return;
+      })(groups[gi]);
     }
-    var body = { message: '备份 Loon 配置状态 ' + beijingNow(), content: b64 };
-    if (sha) body.sha = sha;
-    $httpClient.put({ url: url, headers: headers, body: JSON.stringify(body), timeout: 20 }, function (err2, resp2, data2) {
-      if (err2) { fail('备份失败', '上传失败：' + err2); return; }
-      var st = resp2 && resp2.status;
-      if (st === 200 || st === 201) {
-        $notification.post('Loon配置备份', '已备份', '已保存到 ' + repo + '（' + beijingNow() + '）');
-        $done();
-      } else if (st === 401) {
-        fail('Token 无效或已过期', '请重新建一个 Token 填进 BoxJs。');
-      } else if (st === 404) {
-        fail('仓库不存在或 Token 没权限', '请检查仓库名 ' + repo + '，以及 Token 是否给了这个仓库 Contents 读写权限。');
-      } else {
-        fail('备份失败', 'GitHub 返回 HTTP ' + st + '：' + String(data2 || '').slice(0, 200));
+    // 兜底：15 秒内没收齐也照常备份已收到的部分，不让脚本一直挂着
+    setTimeout(function () { collectDone(); }, 15000);
+  }
+
+  // ---------- 2. 上传到 GitHub 私人仓库 ----------
+  function upload() {
+    var loonInfo = '';
+    try { loonInfo = JSON.stringify($loon); } catch (e) { loonInfo = ''; }
+    var snapshot = {
+      name: 'Loon配置状态备份',
+      note: 'Loon 不允许脚本读取完整 .conf 文件；这份备份只含运行模式、策略组及当前选择、各组节点名。完整配置请手动导出 .conf 放进本仓库。',
+      updated_at: beijingNow() + ' (北京时间)',
+      device: loonInfo,
+      config: conf,
+      sub_policies: subPolicies
+    };
+    var content = JSON.stringify(snapshot, null, 2);
+    var b64 = b64encode(utf8ToBytes(content));
+    var url = API_BASE + '/repos/' + repo + '/contents/' + FILE_PATH;
+    var headers = {
+      'Authorization': 'Bearer ' + pat,
+      'Accept': 'application/vnd.github+json',
+      'User-Agent': 'loon-config-backup'
+    };
+
+    // 先读现有文件：拿到 sha（更新用），没变化就不提交
+    $httpClient.get({ url: url, headers: headers, timeout: 20 }, function (err, resp, data) {
+      if (err) { fail('备份失败', '读仓库文件失败：' + err); return; }
+      var status = resp && resp.status;
+      var sha = null;
+      if (status === 200) {
+        try {
+          var cur = JSON.parse(data);
+          sha = cur.sha;
+          if (cur.content && bytesToUtf8(b64decode(cur.content)) === content) {
+            console.log('[Loon配置备份] 无变化，跳过提交');
+            $done();
+            return;
+          }
+        } catch (e) { /* 解析失败就继续走更新 */ }
+      } else if (status !== 404) {
+        fail('备份失败', '读仓库文件返回 HTTP ' + status + '，请检查 Token 和仓库名。');
+        return;
       }
+      var body = { message: '备份 Loon 配置状态 ' + beijingNow(), content: b64 };
+      if (sha) body.sha = sha;
+      $httpClient.put({ url: url, headers: headers, body: JSON.stringify(body), timeout: 20 }, function (err2, resp2, data2) {
+        if (err2) { fail('备份失败', '上传失败：' + err2); return; }
+        var st = resp2 && resp2.status;
+        if (st === 200 || st === 201) {
+          $notification.post('Loon配置备份', '已备份', '已保存到 ' + repo + '（' + beijingNow() + '）');
+          $done();
+        } else if (st === 401) {
+          fail('Token 无效或已过期', '请重新建一个 Token 填进 BoxJs。');
+        } else if (st === 404) {
+          fail('仓库不存在或 Token 没权限', '请检查仓库名 ' + repo + '，以及 Token 是否给了这个仓库 Contents 读写权限。');
+        } else {
+          fail('备份失败', 'GitHub 返回 HTTP ' + st + '：' + String(data2 || '').slice(0, 200));
+        }
+      });
     });
-  });
+  }
 }
+
+main();
