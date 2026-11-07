@@ -61,7 +61,7 @@ loon-plugins/
 | --- | --- | --- |
 | 許諾自用应用 | 14 个应用：上面全部签到插件 + 同步 Git Secrets + Loon 配置状态备份 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs.json |
 | 乐观专用 | 乐观每日签到 + 同步 Git Secrets（可分享给别人用） | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-leguan.json |
-| 微博超话签到打卡 | 微博每日签到 + 所有超话全部签到 + 只给黄子弘凡图文打卡（可分享给别人用） | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-weibo-daka.json |
+| 微博超话签到打卡·特供版 | 微博每日签到 + 所有超话全部签到 + 只给黄子弘凡图文打卡（可分享给别人用） | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-weibo-daka.json |
 | 許諾签到合集 | 87 个 fmz 签到应用，详见 [docs/fmz-checkins.md](docs/fmz-checkins.md) | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-checkins.json |
 
 乐观专用完整使用指南：[docs/leguan-guide.md](docs/leguan-guide.md)
