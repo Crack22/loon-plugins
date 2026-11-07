@@ -3,7 +3,7 @@
 原脚本名称: 光卷
 原脚本作者：彭于晏
 原脚本地址：https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/gj.js
-移植作者：許諾
+改编作者：許諾
 Loon 适配：http-response lume96resapi.imendon.com/v2/purchase/vip/verification
 *******************************/
 

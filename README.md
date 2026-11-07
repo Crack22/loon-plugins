@@ -17,7 +17,7 @@ loon-plugins/
 ├── boxjs-weibo-daka.json  # BoxJs 独立订阅：微博超话签到打卡（带黄子弘凡打卡）
 ├── boxjs-checkins.json # BoxJs 独立订阅：許諾签到合集（135 个签到）
 ├── loon-fmz/          # 許諾签到合集：87 个插件
-├── loon-import/       # 移植合集：52 个新签到插件 + 26 个工具插件
+├── loon-import/       # 重新启动项目：51 个新签到插件 + 27 个工具插件
 ├── icons/             # 图标与图标库
 ├── docs/              # 使用指南
 └── actions/           # GitHub Actions 云端签到脚本
