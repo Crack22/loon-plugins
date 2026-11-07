@@ -1,6 +1,6 @@
 {
   "name": "許諾 BoxJs 图标",
-  "description": "BoxJs 订阅里的全部图标，共 53 个，每天自动同步 BoxJs 订阅的新图标。",
+  "description": "BoxJs 订阅里的全部图标，共 52 个，每天自动同步 BoxJs 订阅的新图标。",
   "icons": [
     {
       "name": "AcFun每日签到",
@@ -41,10 +41,6 @@
     {
       "name": "七日杀每日签到",
       "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/7risha.jpg"
-    },
-    {
-      "name": "万达电影每日签到",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/wanda.png"
     },
     {
       "name": "中国联通每日签到",
@@ -111,7 +107,7 @@
       "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ccbLife.jpg"
     },
     {
-      "name": "微博超话签到打卡",
+      "name": "微博超话签到",
       "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg"
     },
     {
