@@ -17,6 +17,7 @@ const DAKA_PIC_MD5 = "weibo_daka_pic_md5";
 const COPY_KEY = "weibo_daka_copy";
 const INTERVAL = 3000; // 超话之间间隔 3 秒，避免请求过快
 const TIMEOUT = 15000; // 单次请求超时 15 秒
+const MANUAL_DONE_KEY = "manualDaka_done";
 
 function read(key) {
 const v = $persistentStore.read(key);
@@ -438,13 +439,23 @@ else lines.push("黄子弘凡打卡：发帖失败 " + shortMsg(resp3.body));
 (async function () {
 const lines = [];
 const manual = manualOn();
-const runDaily = manual || argOn("dailySignin");
-const runChaohua = manual || argOn("chaohuaSignin");
-const runDaka = manual || argOn("daka");
-if (runDaily) await dailySignin(lines); else lines.push("微博签到：已在设置里关闭");
-if (runChaohua) await chaohuaSignin(lines); else lines.push("超话签到：已在设置里关闭");
-if (runDaka) await daka(lines); else lines.push("黄子弘凡打卡：已在设置里关闭");
-if (manual) write("manualDaka", "false");
+if (manual) {
+  // 手动运行：今天已经跑过一次就不重复，跑完后由用户手动关开关
+  const today = new Date().toISOString().slice(0, 10);
+  if (read(MANUAL_DONE_KEY) === today) {
+    $done({});
+    return;
+  }
+  await dailySignin(lines);
+  await chaohuaSignin(lines);
+  await daka(lines);
+  write(MANUAL_DONE_KEY, today);
+} else {
+  write(MANUAL_DONE_KEY, "");
+  if (argOn("dailySignin")) await dailySignin(lines); else lines.push("微博签到：已在设置里关闭");
+  if (argOn("chaohuaSignin")) await chaohuaSignin(lines); else lines.push("超话签到：已在设置里关闭");
+  if (argOn("daka")) await daka(lines); else lines.push("黄子弘凡打卡：已在设置里关闭");
+}
 $notification.post("微博超话签到打卡", lines[0] || "完成", lines.join("\n"));
 $done({});
 })().catch(function (e) {

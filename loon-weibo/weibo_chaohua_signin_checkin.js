@@ -6,10 +6,14 @@ const CHAOHUA_KEY = "weibo_chaohua_tokens";
 const SIGNIN_KEY = "weibo_signin_tokens";
 const INTERVAL = 3000; // 超话之间间隔 3 秒，避免请求过快
 const TIMEOUT = 15000; // 单次请求超时 15 秒
+const MANUAL_DONE_KEY = "manualRun_done";
 
 function read(key) {
 const v = $persistentStore.read(key);
 return v === null || v === undefined? "": v;
+}
+function write(key, val) {
+try { $persistentStore.write(val, key); } catch (e) {}
 }
 function readArr(key) {
 try { return JSON.parse(read(key) || "[]");} catch (e) { return [];}
@@ -37,6 +41,14 @@ function argOn(name) {
     if (v === undefined || v === null || v === "") return true;
     return v === true || v === "true";
   } catch (e) { return true; }
+}
+// 手动运行开关：没传参数时默认关（和 argOn 默认开不同）
+function manualOn() {
+  try {
+    if (typeof $argument === "undefined" || !$argument) return false;
+    const v = $argument["manualRun"];
+    return v === true || v === "true";
+  } catch (e) { return false; }
 }
 function parseQuery(qs) {
 const out = {};
@@ -312,8 +324,22 @@ lines.push("超话签到[" + userId + "]：执行异常 " + (e.message || e));
 // ---------- 主流程 ----------
 (async function () {
 const lines = [];
-if (argOn("dailySignin")) await dailySignin(lines); else lines.push("微博签到：已在设置里关闭");
-if (argOn("chaohuaSignin")) await chaohuaSignin(lines); else lines.push("超话签到：已在设置里关闭");
+const manual = manualOn();
+if (manual) {
+  // 手动运行：今天已经跑过一次就不重复，跑完后由用户手动关开关
+  const today = new Date().toISOString().slice(0, 10);
+  if (read(MANUAL_DONE_KEY) === today) {
+    $done({});
+    return;
+  }
+  await dailySignin(lines);
+  await chaohuaSignin(lines);
+  write(MANUAL_DONE_KEY, today);
+} else {
+  write(MANUAL_DONE_KEY, "");
+  if (argOn("dailySignin")) await dailySignin(lines); else lines.push("微博签到：已在设置里关闭");
+  if (argOn("chaohuaSignin")) await chaohuaSignin(lines); else lines.push("超话签到：已在设置里关闭");
+}
 $notification.post("微博超话签到", lines[0] || "完成", lines.join("\n"));
 $done({});
 })().catch(function (e) {

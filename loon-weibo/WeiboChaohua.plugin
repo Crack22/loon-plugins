@@ -10,7 +10,7 @@ capture = switch,true,tag=抓取开关,desc=打开后，在微博 App 里的操�
 dailySignin = switch,true,tag=微博每日签到,desc=每天 09:00 自动做微博每日签到
 chaohuaSignin = switch,true,tag=超话签到,desc=每天 09:00 把所有已关注超话全部签到一遍
 daka = switch,true,tag=黄子弘凡打卡,desc=每天 09:00 只给黄子弘凡发图文打卡帖
-manualDaka = switch,false,tag=手动打卡一次,desc=打开后打卡一次，完成后自动关闭
+manualDaka = switch,false,tag=手动运行一次,desc=打开后运行一次，手动关闭
 
 [MITM]
 hostname = api.weibo.cn, m.api.weibo.com
@@ -19,4 +19,4 @@ hostname = api.weibo.cn, m.api.weibo.com
 http-request ^https?://m?api\.weibo\.c(n|om)/2/(flowlist|page/button|statuses/send) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_capture.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg, requires-body=true, tag=微博超话抓取, argument=[{capture}], enable={capture}
 http-request ^https?://api\.weibo\.cn/2/users/show script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_capture.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg, tag=微博签到抓取, argument=[{capture}], enable={capture}
 cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg, timeout=600, tag=微博超话打卡, argument=[{dailySignin},{chaohuaSignin},{daka}], enable=true
-cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg, timeout=600, tag=手动打卡一次, argument=[{dailySignin},{chaohuaSignin},{daka},{manualDaka}], enable={manualDaka}
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg, timeout=600, tag=手动运行一次, argument=[{dailySignin},{chaohuaSignin},{daka},{manualDaka}], enable={manualDaka}

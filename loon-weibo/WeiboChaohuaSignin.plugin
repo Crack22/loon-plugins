@@ -9,6 +9,7 @@
 capture = switch,true,tag=抓取开关,desc=打开后，在微博 App 里的操作会自动保存签到要用的链接；抓完可以关掉
 dailySignin = switch,true,tag=微博每日签到,desc=每天 09:00 自动做微博每日签到
 chaohuaSignin = switch,true,tag=超话签到,desc=每天 09:00 把所有已关注超话全部签到一遍
+manualRun = switch,false,tag=手动运行一次,desc=打开后运行一次，手动关闭
 
 [MITM]
 hostname = api.weibo.cn, m.api.weibo.com
@@ -17,4 +18,4 @@ hostname = api.weibo.cn, m.api.weibo.com
 http-request ^https?://m?api\.weibo\.c(n|om)/2/(flowlist|page/button) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_signin_capture.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg, requires-body=true, tag=微博超话抓取, argument=[{capture}], enable={capture}
 http-request ^https?://api\.weibo\.cn/2/users/show script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_signin_capture.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg, tag=微博签到抓取, argument=[{capture}], enable={capture}
 cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_signin_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg, timeout=600, tag=微博超话签到, argument=[{dailySignin},{chaohuaSignin}], enable=true
-cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_signin_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg, timeout=600, tag=手动签到, argument=[{dailySignin},{chaohuaSignin}], enable=true
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/weibo_chaohua_signin_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg, timeout=600, tag=手动运行一次, argument=[{dailySignin},{chaohuaSignin},{manualRun}], enable={manualRun}
