@@ -22,6 +22,9 @@ function read(key) {
 const v = $persistentStore.read(key);
 return v === null || v === undefined? "": v;
 }
+function write(key, val) {
+try { $persistentStore.write(val, key); } catch (e) {}
+}
 function readArr(key) {
 try { return JSON.parse(read(key) || "[]");} catch (e) { return [];}
 }
@@ -48,6 +51,14 @@ function argOn(name) {
     if (v === undefined || v === null || v === "") return true;
     return v === true || v === "true";
   } catch (e) { return true; }
+}
+// 手动打卡开关：没传参数时默认关（和 argOn 默认开不同）
+function manualOn() {
+  try {
+    if (typeof $argument === "undefined" || !$argument) return false;
+    const v = $argument["manualDaka"];
+    return v === true || v === "true";
+  } catch (e) { return false; }
 }
 function uuid() {
 return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -426,9 +437,14 @@ else lines.push("黄子弘凡打卡：发帖失败 " + shortMsg(resp3.body));
 // ---------- 主流程 ----------
 (async function () {
 const lines = [];
-if (argOn("dailySignin")) await dailySignin(lines); else lines.push("微博签到：已在设置里关闭");
-if (argOn("chaohuaSignin")) await chaohuaSignin(lines); else lines.push("超话签到：已在设置里关闭");
-if (argOn("daka")) await daka(lines); else lines.push("黄子弘凡打卡：已在设置里关闭");
+const manual = manualOn();
+const runDaily = manual || argOn("dailySignin");
+const runChaohua = manual || argOn("chaohuaSignin");
+const runDaka = manual || argOn("daka");
+if (runDaily) await dailySignin(lines); else lines.push("微博签到：已在设置里关闭");
+if (runChaohua) await chaohuaSignin(lines); else lines.push("超话签到：已在设置里关闭");
+if (runDaka) await daka(lines); else lines.push("黄子弘凡打卡：已在设置里关闭");
+if (manual) write("manualDaka", "false");
 $notification.post("微博超话签到打卡", lines[0] || "完成", lines.join("\n"));
 $done({});
 })().catch(function (e) {
