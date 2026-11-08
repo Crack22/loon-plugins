@@ -1,642 +1,638 @@
 {
-  "name": "許諾 BoxJs 图标",
-  "description": "BoxJs 订阅里的全部图标，共 159 个，每天自动同步 BoxJs 订阅的新图标。",
-  "icons": [
-    {
-      "name": "4K世界自动签到",
-      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/4ksj.png"
-    },
-    {
-      "name": "AcFun每日签到",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/acfun.png"
-    },
-    {
-      "name": "Bark推送",
-      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/matrix/dark/bark.jpg"
-    },
-    {
-      "name": "Bing积分每日签到",
-      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/bingPoint.png"
-    },
-    {
-      "name": "ChilledMelon 每日签到",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/chilledmelon.jpg"
-    },
-    {
-      "name": "Code Server",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/WeChat.png"
-    },
-    {
-      "name": "GLaDOS 每日签到",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/glados.png"
-    },
-    {
-      "name": "Geocaching",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/geocaching.png"
-    },
-    {
-      "name": "Gist 备份",
-      "url": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/asset/icon.png"
-    },
-    {
-      "name": "Gist备份",
-      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/github-bf.png"
-    },
-    {
-      "name": "GitHub 增强",
-      "url": "https://raw.githubusercontent.com/58xinian/icon/master/Github.png"
-    },
-    {
-      "name": "G动每日签到",
-      "url": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/gdong.png"
-    },
-    {
-      "name": "IQOO社区兑换",
-      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/IQOO/IQOO.jpg"
-    },
-    {
-      "name": "IT之家每日签到",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/ithome.png"
-    },
-    {
-      "name": "Loon配置状态备份",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/loon-backup.jpg"
-    },
-    {
-      "name": "Luka阅读养成每日签到",
-      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/luka/luka.png"
-    },
-    {
-      "name": "MagicJS",
-      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/magicjs/images/logo_dark.png"
-    },
-    {
-      "name": "NASA每日一图",
-      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa.png"
-    },
-    {
-      "name": "O&I",
-      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
-    },
-    {
-      "name": "PP 停车每日签到",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/pp_parking.png"
-    },
-    {
-      "name": "PingMe每日签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/PingMe.png"
-    },
-    {
-      "name": "QQ音乐每日签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/QQMusic.png"
-    },
-    {
-      "name": "STLXZ每日签到",
-      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Stlxz.png"
-    },
-    {
-      "name": "Spotify",
-      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png"
-    },
-    {
-      "name": "Sub-Store Mega(请使用 Lite)",
-      "url": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/sub-store-scripts/mega/assets/icon.png"
-    },
-    {
-      "name": "Switch520每日签到",
-      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Switch.png"
-    },
-    {
-      "name": "TF自动加入",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/TestFlight_03.png"
-    },
-    {
-      "name": "TF账户管理",
-      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/testflight.png"
-    },
-    {
-      "name": "Telegram 频道媒体推送",
-      "url": "https://raw.githubusercontent.com/58xinian/icon/master/telegram.png"
-    },
-    {
-      "name": "TestFlight",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight.png"
-    },
-    {
-      "name": "TestFlight公测自动加入",
-      "url": "https://raw.githubusercontent.com/githubdulong/Script/master/Images/testflight.png"
-    },
-    {
-      "name": "TestFlight账户管理",
-      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Color/testflight.png"
-    },
-    {
-      "name": "Timepop每日签到",
-      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/timepop_tran.png"
-    },
-    {
-      "name": "Tools",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/debug.png"
-    },
-    {
-      "name": "V2EX每日签到",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/V2ex.png"
-    },
-    {
-      "name": "WPS Office 每日签到",
-      "url": "https://raw.githubusercontent.com/MaYIHEI/pin/refs/heads/main/app/wps.png"
-    },
-    {
-      "name": "hifini签到",
-      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/hifinisignin.png"
-    },
-    {
-      "name": "iDaily",
-      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/idaily_tran.png"
-    },
-    {
-      "name": "i茅台",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/iMaoTai.png"
-    },
-    {
-      "name": "i茅台预约",
-      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ae/f4/18/aef41811-955e-e6b0-5d23-6763c2eef1ab/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png"
-    },
-    {
-      "name": "qq会员成长值",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png"
-    },
-    {
-      "name": "wskey 提取器",
-      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/jd_car.png"
-    },
-    {
-      "name": "七日杀每日签到",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/7risha.jpg"
-    },
-    {
-      "name": "中免会员每日签到",
-      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Zmhy.png"
-    },
-    {
-      "name": "中兴每日签到",
-      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/ZTE/ZTE.png"
-    },
-    {
-      "name": "中国联通每日签到",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/China_Unicom.png"
-    },
-    {
-      "name": "丽影云街每日签到",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/livingmall.png"
-    },
-    {
-      "name": "乐蛙每日签到",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/lewa.jpg"
-    },
-    {
-      "name": "乐观每日签到",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/leguan.jpg"
-    },
-    {
-      "name": "九木杂物社每日签到",
-      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/jiumu_tran.png"
-    },
-    {
-      "name": "交管12123",
-      "url": "https://raw.githubusercontent.com/Nanako718/Scripting/main/images/12123.png"
-    },
-    {
-      "name": "京东WSKEY",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jdjoy.png"
-    },
-    {
-      "name": "京东白条每日签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/JD.png"
-    },
-    {
-      "name": "什么值得买每日签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/smzdm.png"
-    },
-    {
-      "name": "今日头条极速版每日签到",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jinritoutiao.png"
-    },
-    {
-      "name": "今日油价",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/oil.png"
-    },
-    {
-      "name": "伊利乳品每日签到",
-      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png"
-    },
-    {
-      "name": "华住会每日签到",
-      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png"
-    },
-    {
-      "name": "去重二剪",
-      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/qcej.png"
-    },
-    {
-      "name": "同步Git Secrets",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/gh-secrets.jpg"
-    },
-    {
-      "name": "吾爱破解每日签到",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/52pojie.png"
-    },
-    {
-      "name": "哔哩哔哩漫画每日签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png"
-    },
-    {
-      "name": "哔哩漫画抢券",
-      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/manga.png"
-    },
-    {
-      "name": "哲也同学",
-      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zheye/zheye.png"
-    },
-    {
-      "name": "唐机豆豆每日签到",
-      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/tjdd.png"
-    },
-    {
-      "name": "喜马拉雅每日签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ximalaya.png"
-    },
-    {
-      "name": "大蓝树每日签到",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dalanshu.jpg"
-    },
-    {
-      "name": "夸克每日签到",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/quark.jpg"
-    },
-    {
-      "name": "奇瑞汽车App签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chery.png"
-    },
-    {
-      "name": "好奇车生活兑换",
-      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs.jpg"
-    },
-    {
-      "name": "学掌门打卡",
-      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/atstudy.png"
-    },
-    {
-      "name": "定时任务",
-      "url": "https://raw.githubusercontent.com/dompling/Script/master/icon/setTime.png"
-    },
-    {
-      "name": "富连e充兑换",
-      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YongXin/YongXin.jpg"
-    },
-    {
-      "name": "小木虫每日签到",
-      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/muchong.png"
-    },
-    {
-      "name": "小米刷步",
-      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/color.png"
-    },
-    {
-      "name": "小红书功能增强",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/xiaohongshu.png"
-    },
-    {
-      "name": "工银e生活每日签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/ICBC.png"
-    },
-    {
-      "name": "巴哈姆特每日签到",
-      "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/bahamutGame.png"
-    },
-    {
-      "name": "底部 Tab",
-      "url": "https://raw.githubusercontent.com/Keywos/rule/main/tv/app/144px/Netease.png"
-    },
-    {
-      "name": "建行生活签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ccbLife.jpg"
-    },
-    {
-      "name": "彩云天气",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/caiyuntianqi.png"
-    },
-    {
-      "name": "微信支付有优惠每日签到",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png"
-    },
-    {
-      "name": "微博超话签到",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg"
-    },
-    {
-      "name": "快手果园",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/kuaishou.png"
-    },
-    {
-      "name": "悦然荟每日签到",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/yrh.png"
-    },
-    {
-      "name": "懂球帝每日签到",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dongqiudi.png"
-    },
-    {
-      "name": "托迈酷客每日签到",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/ThomasCook.png"
-    },
-    {
-      "name": "招商银行 - 688、188每日签到",
-      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/cmbchina.png"
-    },
-    {
-      "name": "拼多多果园",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/pinduoduo.png"
-    },
-    {
-      "name": "捷停车每日签到",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jparking.png"
-    },
-    {
-      "name": "携程旅行每日签到",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiechenglvxing.png"
-    },
-    {
-      "name": "摸鱼",
-      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png"
-    },
-    {
-      "name": "支付宝 - 积分能量每日签到",
-      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/alipay.png"
-    },
-    {
-      "name": "数据同步",
-      "url": "https://raw.githubusercontent.com/dompling/Script/master/image/ql.png"
-    },
-    {
-      "name": "数据白名",
-      "url": "https://raw.githubusercontent.com/dompling/Script/master/icon/github-white.jpg"
-    },
-    {
-      "name": "数据黑名",
-      "url": "https://raw.githubusercontent.com/dompling/Script/master/icon/github-black.jpg"
-    },
-    {
-      "name": "斗鱼鱼吧签到",
-      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/douyu.png"
-    },
-    {
-      "name": "新浪微博每日签到",
-      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/weibo.png"
-    },
-    {
-      "name": "无忧行每日签到",
-      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/wyx.png"
-    },
-    {
-      "name": "晓晓优选每日任务",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/xxyx.png"
-    },
-    {
-      "name": "朴朴签到",
-      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/pupu.png"
-    },
-    {
-      "name": "机场流量查询",
-      "url": "https://raw.githubusercontent.com/58xinian/icon/master/flow.png"
-    },
-    {
-      "name": "步道乐跑",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/budaolepao.jpg"
-    },
-    {
-      "name": "每天60秒读懂世界",
-      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/60s.png"
-    },
-    {
-      "name": "永旺 Aeon每日签到",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/aeon.png"
-    },
-    {
-      "name": "沪上阿姨每日签到",
-      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hsay.png"
-    },
-    {
-      "name": "波点音乐自动签到",
-      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/05/b9/57/05b9577c-3773-cd2b-5a99-49c0dc3f331d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png"
-    },
-    {
-      "name": "泰康在线兑换",
-      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TKZX/TKZX.PNG"
-    },
-    {
-      "name": "海信爱家每日签到",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/hisense.png"
-    },
-    {
-      "name": "海天美味馆兑换",
-      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiTian/HaiTian.jpg"
-    },
-    {
-      "name": "热搜聚合",
-      "url": "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/9a/d8/77/9ad877c6-e3d7-61a1-3911-5036239a41a6/AppIcon-1x_U007emarketing-0-7-0-0-sRGB-85-220.png/144x144bb.png"
-    },
-    {
-      "name": "爱奇艺每日签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/iqiyi.png"
-    },
-    {
-      "name": "电信营业厅每日签到",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dianxin.png"
-    },
-    {
-      "name": "电影日历",
-      "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/MovieCalendar.png"
-    },
-    {
-      "name": "登录助手",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jingdong.png"
-    },
-    {
-      "name": "百度贴吧(客户端)每日签到",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/baidutieba.png"
-    },
-    {
-      "name": "移动余量",
-      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/92/8b/03/928b0371-20fc-288b-e4e4-05f48b7082c2/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/144x144.png"
-    },
-    {
-      "name": "移动话费券",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/10086.png"
-    },
-    {
-      "name": "米游社App自定义",
-      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/miyoushe.png"
-    },
-    {
-      "name": "红牛会员俱乐部兑换",
-      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.jpg"
-    },
-    {
-      "name": "绝区零每日签到",
-      "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/zzz.png"
-    },
-    {
-      "name": "网上国网",
-      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/83/d8/8a/83d88a92-5a4d-7a2f-118c-80d795e7a9f6/AppIcon-0-0-1x_U007emarketing-0-5-0-0-sRGB-85-220.png/144x144.png"
-    },
-    {
-      "name": "网易严选兑换",
-      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX.png"
-    },
-    {
-      "name": "网易云音乐每日签到",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/netease.jpg"
-    },
-    {
-      "name": "美团外卖每日签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meituan.png"
-    },
-    {
-      "name": "腾讯视频每日签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/TencentVideo.png"
-    },
-    {
-      "name": "自用JDCookie管理",
-      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/link.png"
-    },
-    {
-      "name": "芒果TV每日签到",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/mangguotv.png"
-    },
-    {
-      "name": "花城汇每日签到",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/hch.png"
-    },
-    {
-      "name": "茄皇兑换",
-      "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TongYi/QieHuang.png"
-    },
-    {
-      "name": "虎课网每日签到",
-      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/huke.png"
-    },
-    {
-      "name": "蜗牛每日签到",
-      "url": "https://woniu.qljiang.com/weixin_files/woniu_white.png"
-    },
-    {
-      "name": "蜜雪冰城每日签到",
-      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png"
-    },
-    {
-      "name": "解除微信链接限制",
-      "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png"
-    },
-    {
-      "name": "許諾签到合集",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/checkins.jpg"
-    },
-    {
-      "name": "許諾自用应用",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/subscription.jpg"
-    },
-    {
-      "name": "识日每日签到",
-      "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/shiri.jpg"
-    },
-    {
-      "name": "谢瑞麟 TSL每日签到",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tsl.png"
-    },
-    {
-      "name": "豆瓣电影日历",
-      "url": "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/90/5d/f8/905df82a-0e2e-5a2c-2be6-cc690fb0bec0/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png"
-    },
-    {
-      "name": "购物助手",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jingfen.png"
-    },
-    {
-      "name": "起点读书自动签到",
-      "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/97/40/5e/97405e49-87bb-3f0a-bf3a-91cf8fdf99a0/AppIcon-0-0-1x_U007epad-0-1-0-0-sRGB-GLES2_U002c0-85-220.png/144x144.png"
-    },
-    {
-      "name": "轻之文库每日签到",
-      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Linovel.png"
-    },
-    {
-      "name": "达美乐披萨每日签到",
-      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Dlm.png"
-    },
-    {
-      "name": "途虎养车每日签到",
-      "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png"
-    },
-    {
-      "name": "通用重放脚本",
-      "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/ex.png"
-    },
-    {
-      "name": "酷乐潮玩App每日签到",
-      "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw_tran.png"
-    },
-    {
-      "name": "阿里云盘签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AliYunDrive.png"
-    },
-    {
-      "name": "雀巢咖啡每日签到",
-      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Nestle.png"
-    },
-    {
-      "name": "雨晨ios每日签到",
-      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/yuchenios.png"
-    },
-    {
-      "name": "霸王茶姬每日签到",
-      "url": "https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj.png"
-    },
-    {
-      "name": "青碳行每日签到",
-      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/qtx.png"
-    },
-    {
-      "name": "青龙面板",
-      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/magicjs/images/qinglong_dark.png"
-    },
-    {
-      "name": "顺丰速运每日签到",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/shunfeng.png"
-    },
-    {
-      "name": "飞客-签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/flyert.png"
-    },
-    {
-      "name": "饿了么每日签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Element.png"
-    },
-    {
-      "name": "马克喵签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Macat.png"
-    },
-    {
-      "name": "高德地图打车签到",
-      "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/GaodeMap.jpg"
-    },
-    {
-      "name": "鸿星尔克每日签到",
-      "url": "https://raw.githubusercontent.com/Former-Years/icon/master/erke.png"
-    },
-    {
-      "name": "𝐙𝐈𝐏𝐏𝐎会员中心签到",
-      "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/zippo.jpg"
-    }
-  ]
+ "name": "許諾 BoxJs 图标",
+ "description": "BoxJs 订阅里的全部图标，共 159 个，每天自动同步 BoxJs 订阅的新图标。",
+ "icons": [
+  {
+   "name": "4K世界自动签到",
+   "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/4ksj.png"
+  },
+  {
+   "name": "AcFun每日签到",
+   "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/acfun.png"
+  },
+  {
+   "name": "Bark推送",
+   "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/matrix/dark/bark.jpg"
+  },
+  {
+   "name": "Bing积分每日签到",
+   "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/bingPoint.png"
+  },
+  {
+   "name": "ChilledMelon 每日签到",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/chilledmelon.jpg"
+  },
+  {
+   "name": "Code Server",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/WeChat.png"
+  },
+  {
+   "name": "GLaDOS 每日签到",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/glados.png"
+  },
+  {
+   "name": "Geocaching",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/geocaching.png"
+  },
+  {
+   "name": "Gist 备份",
+   "url": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/asset/icon.png"
+  },
+  {
+   "name": "Gist备份",
+   "url": "https://raw.githubusercontent.com/Former-Years/icon/master/github-bf.png"
+  },
+  {
+   "name": "GitHub 增强",
+   "url": "https://raw.githubusercontent.com/58xinian/icon/master/Github.png"
+  },
+  {
+   "name": "G动每日签到",
+   "url": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/gdong.png"
+  },
+  {
+   "name": "IQOO社区兑换",
+   "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/IQOO/IQOO.jpg"
+  },
+  {
+   "name": "IT之家每日签到",
+   "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/ithome.png"
+  },
+  {
+   "name": "Loon配置状态备份",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/loon-backup.jpg"
+  },
+  {
+   "name": "Luka阅读养成每日签到",
+   "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/luka/luka.png"
+  },
+  {
+   "name": "MagicJS",
+   "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/magicjs/images/logo_dark.png"
+  },
+  {
+   "name": "NASA每日一图",
+   "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa.png"
+  },
+  {
+   "name": "O&I",
+   "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/sim.png"
+  },
+  {
+   "name": "PP 停车每日签到",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/pp_parking.png"
+  },
+  {
+   "name": "PingMe每日签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/PingMe.png"
+  },
+  {
+   "name": "QQ音乐每日签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/QQMusic.png"
+  },
+  {
+   "name": "STLXZ每日签到",
+   "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Stlxz.png"
+  },
+  {
+   "name": "Spotify",
+   "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png"
+  },
+  {
+   "name": "Sub-Store Mega(请使用 Lite)",
+   "url": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/sub-store-scripts/mega/assets/icon.png"
+  },
+  {
+   "name": "Switch520每日签到",
+   "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Switch.png"
+  },
+  {
+   "name": "TF自动加入",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/TestFlight_03.png"
+  },
+  {
+   "name": "TF账户管理",
+   "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/testflight.png"
+  },
+  {
+   "name": "Telegram 频道媒体推送",
+   "url": "https://raw.githubusercontent.com/58xinian/icon/master/telegram.png"
+  },
+  {
+   "name": "TestFlight",
+   "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight.png"
+  },
+  {
+   "name": "TestFlight公测自动加入",
+   "url": "https://raw.githubusercontent.com/githubdulong/Script/master/Images/testflight.png"
+  },
+  {
+   "name": "TestFlight账户管理",
+   "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Color/testflight.png"
+  },
+  {
+   "name": "Timepop每日签到",
+   "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/timepop_tran.png"
+  },
+  {
+   "name": "Tools",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/debug.png"
+  },
+  {
+   "name": "V2EX每日签到",
+   "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/V2ex.png"
+  },
+  {
+   "name": "WPS Office 每日签到",
+   "url": "https://raw.githubusercontent.com/MaYIHEI/pin/refs/heads/main/app/wps.png"
+  },
+  {
+   "name": "hifini签到",
+   "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/hifinisignin.png"
+  },
+  {
+   "name": "iDaily",
+   "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/idaily_tran.png"
+  },
+  {
+   "name": "i茅台",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/iMaoTai.png"
+  },
+  {
+   "name": "i茅台预约",
+   "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ae/f4/18/aef41811-955e-e6b0-5d23-6763c2eef1ab/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png"
+  },
+  {
+   "name": "qq会员成长值",
+   "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png"
+  },
+  {
+   "name": "wskey 提取器",
+   "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/jd_car.png"
+  },
+  {
+   "name": "七日杀每日签到",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/7risha.jpg"
+  },
+  {
+   "name": "中免会员每日签到",
+   "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Zmhy.png"
+  },
+  {
+   "name": "中兴每日签到",
+   "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/ZTE/ZTE.png"
+  },
+  {
+   "name": "中国联通每日签到",
+   "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/China_Unicom.png"
+  },
+  {
+   "name": "丽影云街每日签到",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/livingmall.png"
+  },
+  {
+   "name": "乐蛙每日签到",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/lewa.jpg"
+  },
+  {
+   "name": "乐观每日签到",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/leguan.jpg"
+  },
+  {
+   "name": "九木杂物社每日签到",
+   "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/jiumu_tran.png"
+  },
+  {
+   "name": "交管12123",
+   "url": "https://raw.githubusercontent.com/Nanako718/Scripting/main/images/12123.png"
+  },
+  {
+   "name": "京东WSKEY",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jdjoy.png"
+  },
+  {
+   "name": "京东白条每日签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/JD.png"
+  },
+  {
+   "name": "什么值得买每日签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/smzdm.png"
+  },
+  {
+   "name": "今日头条极速版每日签到",
+   "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jinritoutiao.png"
+  },
+  {
+   "name": "今日油价",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/oil.png"
+  },
+  {
+   "name": "伊利乳品每日签到",
+   "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png"
+  },
+  {
+   "name": "华住会每日签到",
+   "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png"
+  },
+  {
+   "name": "去重二剪",
+   "url": "https://raw.githubusercontent.com/Former-Years/icon/master/qcej.png"
+  },
+  {
+   "name": "同步Git Secrets",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/gh-secrets.jpg"
+  },
+  {
+   "name": "吾爱破解每日签到",
+   "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/52pojie.png"
+  },
+  {
+   "name": "哔哩哔哩漫画每日签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png"
+  },
+  {
+   "name": "哔哩漫画抢券",
+   "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/manga.png"
+  },
+  {
+   "name": "哲也同学",
+   "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zheye/zheye.png"
+  },
+  {
+   "name": "唐机豆豆每日签到",
+   "url": "https://raw.githubusercontent.com/Former-Years/icon/master/tjdd.png"
+  },
+  {
+   "name": "喜马拉雅每日签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ximalaya.png"
+  },
+  {
+   "name": "大蓝树每日签到",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dalanshu.jpg"
+  },
+  {
+   "name": "夸克每日签到",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/quark.jpg"
+  },
+  {
+   "name": "奇瑞汽车App签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/chery.png"
+  },
+  {
+   "name": "好奇车生活兑换",
+   "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs.jpg"
+  },
+  {
+   "name": "学掌门打卡",
+   "url": "https://raw.githubusercontent.com/Former-Years/icon/master/atstudy.png"
+  },
+  {
+   "name": "定时任务",
+   "url": "https://raw.githubusercontent.com/dompling/Script/master/icon/setTime.png"
+  },
+  {
+   "name": "富连e充兑换",
+   "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YongXin/YongXin.jpg"
+  },
+  {
+   "name": "小木虫每日签到",
+   "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/muchong.png"
+  },
+  {
+   "name": "小米刷步",
+   "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/color.png"
+  },
+  {
+   "name": "小红书功能增强",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/xiaohongshu.png"
+  },
+  {
+   "name": "工银e生活每日签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/ICBC.png"
+  },
+  {
+   "name": "巴哈姆特每日签到",
+   "url": "https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/bahamutGame.png"
+  },
+  {
+   "name": "底部 Tab",
+   "url": "https://raw.githubusercontent.com/Keywos/rule/main/tv/app/144px/Netease.png"
+  },
+  {
+   "name": "建行生活签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ccbLife.jpg"
+  },
+  {
+   "name": "彩云天气",
+   "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/caiyuntianqi.png"
+  },
+  {
+   "name": "微信支付有优惠每日签到",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png"
+  },
+  {
+   "name": "微博超话签到",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/weibo.jpg"
+  },
+  {
+   "name": "快手果园",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/kuaishou.png"
+  },
+  {
+   "name": "悦然荟每日签到",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/yrh.png"
+  },
+  {
+   "name": "懂球帝每日签到",
+   "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dongqiudi.png"
+  },
+  {
+   "name": "托迈酷客每日签到",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/ThomasCook.png"
+  },
+  {
+   "name": "招商银行 - 688、188每日签到",
+   "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/cmbchina.png"
+  },
+  {
+   "name": "拼多多果园",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/pinduoduo.png"
+  },
+  {
+   "name": "捷停车每日签到",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jparking.png"
+  },
+  {
+   "name": "携程旅行每日签到",
+   "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiechenglvxing.png"
+  },
+  {
+   "name": "摸鱼",
+   "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png"
+  },
+  {
+   "name": "支付宝 - 积分能量每日签到",
+   "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/alipay.png"
+  },
+  {
+   "name": "数据同步",
+   "url": "https://raw.githubusercontent.com/dompling/Script/master/image/ql.png"
+  },
+  {
+   "name": "数据白名",
+   "url": "https://raw.githubusercontent.com/dompling/Script/master/icon/github-white.jpg"
+  },
+  {
+   "name": "数据黑名",
+   "url": "https://raw.githubusercontent.com/dompling/Script/master/icon/github-black.jpg"
+  },
+  {
+   "name": "斗鱼鱼吧签到",
+   "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/douyu.png"
+  },
+  {
+   "name": "新浪微博每日签到",
+   "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/weibo.png"
+  },
+  {
+   "name": "无忧行每日签到",
+   "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/wyx.png"
+  },
+  {
+   "name": "晓晓优选每日任务",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/xxyx.png"
+  },
+  {
+   "name": "朴朴签到",
+   "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/pupu.png"
+  },
+  {
+   "name": "机场流量查询",
+   "url": "https://raw.githubusercontent.com/58xinian/icon/master/flow.png"
+  },
+  {
+   "name": "步道乐跑",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/budaolepao.jpg"
+  },
+  {
+   "name": "每天60秒读懂世界",
+   "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/60s.png"
+  },
+  {
+   "name": "永旺 Aeon每日签到",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/aeon.png"
+  },
+  {
+   "name": "沪上阿姨每日签到",
+   "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hsay.png"
+  },
+  {
+   "name": "波点音乐自动签到",
+   "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/05/b9/57/05b9577c-3773-cd2b-5a99-49c0dc3f331d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png"
+  },
+  {
+   "name": "泰康在线兑换",
+   "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TKZX/TKZX.PNG"
+  },
+  {
+   "name": "海信爱家每日签到",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/hisense.png"
+  },
+  {
+   "name": "海天美味馆兑换",
+   "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiTian/HaiTian.jpg"
+  },
+  {
+   "name": "热搜聚合",
+   "url": "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/9a/d8/77/9ad877c6-e3d7-61a1-3911-5036239a41a6/AppIcon-1x_U007emarketing-0-7-0-0-sRGB-85-220.png/144x144bb.png"
+  },
+  {
+   "name": "爱奇艺每日签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/iqiyi.png"
+  },
+  {
+   "name": "电信营业厅每日签到",
+   "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dianxin.png"
+  },
+  {
+   "name": "电影日历",
+   "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/MovieCalendar.png"
+  },
+  {
+   "name": "登录助手",
+   "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jingdong.png"
+  },
+  {
+   "name": "百度贴吧(客户端)每日签到",
+   "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/baidutieba.png"
+  },
+  {
+   "name": "移动余量",
+   "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/92/8b/03/928b0371-20fc-288b-e4e4-05f48b7082c2/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/144x144.png"
+  },
+  {
+   "name": "移动话费券",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/10086.png"
+  },
+  {
+   "name": "米游社App自定义",
+   "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/miyoushe.png"
+  },
+  {
+   "name": "红牛会员俱乐部兑换",
+   "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.jpg"
+  },
+  {
+   "name": "绝区零每日签到",
+   "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/zzz.png"
+  },
+  {
+   "name": "网上国网",
+   "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/83/d8/8a/83d88a92-5a4d-7a2f-118c-80d795e7a9f6/AppIcon-0-0-1x_U007emarketing-0-5-0-0-sRGB-85-220.png/144x144.png"
+  },
+  {
+   "name": "网易严选兑换",
+   "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX.png"
+  },
+  {
+   "name": "网易云音乐每日签到",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/netease.jpg"
+  },
+  {
+   "name": "美团外卖每日签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meituan.png"
+  },
+  {
+   "name": "腾讯视频每日签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/TencentVideo.png"
+  },
+  {
+   "name": "自用JDCookie管理",
+   "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/link.png"
+  },
+  {
+   "name": "芒果TV每日签到",
+   "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/mangguotv.png"
+  },
+  {
+   "name": "花城汇每日签到",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/hch.png"
+  },
+  {
+   "name": "茄皇兑换",
+   "url": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TongYi/QieHuang.png"
+  },
+  {
+   "name": "虎课网每日签到",
+   "url": "https://raw.githubusercontent.com/Former-Years/icon/master/huke.png"
+  },
+  {
+   "name": "蜗牛每日签到",
+   "url": "https://woniu.qljiang.com/weixin_files/woniu_white.png"
+  },
+  {
+   "name": "蜜雪冰城每日签到",
+   "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png"
+  },
+  {
+   "name": "解除微信链接限制",
+   "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png"
+  },
+  {
+   "name": "許諾签到合集",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/checkins.jpg"
+  },
+  {
+   "name": "許諾自用应用",
+   "url": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/subscription.jpg"
+  },
+  {
+   "name": "谢瑞麟 TSL每日签到",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tsl.png"
+  },
+  {
+   "name": "豆瓣电影日历",
+   "url": "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/90/5d/f8/905df82a-0e2e-5a2c-2be6-cc690fb0bec0/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png"
+  },
+  {
+   "name": "购物助手",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jingfen.png"
+  },
+  {
+   "name": "起点读书自动签到",
+   "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/97/40/5e/97405e49-87bb-3f0a-bf3a-91cf8fdf99a0/AppIcon-0-0-1x_U007epad-0-1-0-0-sRGB-GLES2_U002c0-85-220.png/144x144.png"
+  },
+  {
+   "name": "轻之文库每日签到",
+   "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Linovel.png"
+  },
+  {
+   "name": "达美乐披萨每日签到",
+   "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Dlm.png"
+  },
+  {
+   "name": "途虎养车每日签到",
+   "url": "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png"
+  },
+  {
+   "name": "通用重放脚本",
+   "url": "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/ex.png"
+  },
+  {
+   "name": "酷乐潮玩App每日签到",
+   "url": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw_tran.png"
+  },
+  {
+   "name": "阿里云盘签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AliYunDrive.png"
+  },
+  {
+   "name": "雀巢咖啡每日签到",
+   "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Nestle.png"
+  },
+  {
+   "name": "雨晨ios每日签到",
+   "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/yuchenios.png"
+  },
+  {
+   "name": "霸王茶姬每日签到",
+   "url": "https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj.png"
+  },
+  {
+   "name": "青碳行每日签到",
+   "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/qtx.png"
+  },
+  {
+   "name": "青龙面板",
+   "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/magicjs/images/qinglong_dark.png"
+  },
+  {
+   "name": "顺丰速运每日签到",
+   "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/shunfeng.png"
+  },
+  {
+   "name": "飞客-签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/flyert.png"
+  },
+  {
+   "name": "饿了么每日签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Element.png"
+  },
+  {
+   "name": "马克喵签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Macat.png"
+  },
+  {
+   "name": "高德地图打车签到",
+   "url": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/GaodeMap.jpg"
+  },
+  {
+   "name": "鸿星尔克每日签到",
+   "url": "https://raw.githubusercontent.com/Former-Years/icon/master/erke.png"
+  },
+  {
+   "name": "𝐙𝐈𝐏𝐏𝐎会员中心签到",
+   "url": "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/zippo.jpg"
+  }
+ ]
 }

@@ -662,57 +662,6 @@
    ]
   },
   {
-   "id": "shiri_checkin",
-   "name": "识日每日签到",
-   "keys": [
-    "shiri_token",
-    "shiri_token2",
-    "shiri_token3",
-    "shiri_accounts"
-   ],
-   "author": "許諾",
-   "repo": "https://github.com/Crack22/loon-plugins",
-   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/shiri_checkin.js",
-   "settings": [
-    {
-     "id": "shiri_token",
-     "name": "账号1 Token",
-     "val": "",
-     "type": "textarea",
-     "desc": "账号1 的 Token：打开识日 App 停 1 秒自动抓取；抓不到时可手动粘贴"
-    },
-    {
-     "id": "shiri_token2",
-     "name": "账号2 Token",
-     "val": "",
-     "type": "textarea",
-     "desc": "第 2 个识日账号的 Token"
-    },
-    {
-     "id": "shiri_token3",
-     "name": "账号3 Token",
-     "val": "",
-     "type": "textarea",
-     "desc": "第 3 个识日账号的 Token"
-    },
-    {
-     "id": "shiri_accounts",
-     "name": "多账号",
-     "val": "",
-     "type": "textarea",
-     "desc": "多账号：每行一个 Token，不限个数"
-    }
-   ],
-   "descs_html": [
-    "识日每日签到，每天 09:00 自动签到领读币。",
-    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/ShiriCheckin.plugin\">点击安装 Loon 插件</a>",
-    "抓 Token：打开识日 App 停 1 秒自动抓取；Token 过期时重新打开 App 抓一次。"
-   ],
-   "icons": [
-    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/shiri.jpg"
-   ]
-  },
-  {
    "id": "netease_checkin",
    "name": "网易云音乐每日签到",
    "keys": [

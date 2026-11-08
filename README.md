@@ -39,7 +39,6 @@ loon-plugins/
 | 乐观每日签到 | EmbyPulse 乐观每日签到，+90~130 积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/EmbyPulseDijiaCheckin.plugin) |
 | 夸克每日签到 | 夸克网盘 + 夸克浏览器每日签到领容量 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-quark/QuarkCheckin.plugin) |
 | GLaDOS 每日签到 | GLaDOS 每日签到领积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/GladosCheckin.plugin) |
-| 识日每日签到 | 识日每日签到领读币 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-shiri/ShiriCheckin.plugin) |
 | 网易云音乐每日签到 | 网易云音乐每日签到，+2 成长值 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-netease/NetEaseCheckin.plugin) |
 | X 网页版会员标签页 | X 网页版会员标签页 | — | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-x/XWebEnhance.plugin) |
 | lume 相机 | Lume 相机 VIP 验证响应修改 | — | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-lume/LumeCamera.plugin) |
