@@ -1,6 +1,6 @@
 {
   "name": "許諾图标合集",
-  "description": "合并自 16 个图标库，共 5375 个图标，每天自动同步更新，有新图标自动加入。",
+  "description": "合并自 16 个图标库，共 5378 个图标，每天自动同步更新，有新图标自动加入。",
   "icons": [
     {
       "name": "#.png",
@@ -4971,6 +4971,10 @@
       "url": "https://raw.githubusercontent.com/baiitang/Sakura/main/Fileball/Yuan/icon/Fengyuege.png"
     },
     {
+      "name": "Ferrarifalali",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Ferrarifalali.png"
+    },
+    {
       "name": "Figma",
       "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/Figma.png"
     },
@@ -6493,6 +6497,10 @@
     {
       "name": "Japan.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Japan.png"
+    },
+    {
+      "name": "Jeeyiojiyou",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Jeeyiojiyou.png"
     },
     {
       "name": "Jellyfin",
@@ -16449,6 +16457,10 @@
     {
       "name": "android.png",
       "url": "https://raw.githubusercontent.com/tugepaopao/Image-Storage/master/cartoon/Cute/android.png"
+    },
+    {
+      "name": "anxinjijiaban",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/anxinjijiaban.png"
     },
     {
       "name": "anyland",
