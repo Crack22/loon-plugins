@@ -1,5 +1,5 @@
-// 微博超话签到打卡 + 微博每日签到（每天 09:00）
-// 每天 09:00 自动做三件事：
+// 微博超话签到打卡 + 微博每日签到（签到时间可在 BoxJs 里自定义，默认 09:00）
+// 每天自动做三件事：
 // 1) 微博每日签到：POST /2/checkin/add（fmz200 的做法）
 // 2) 超话签到：重放已关注超话列表（POST flowlist，可翻页），把所有超话全部签到一遍
 // 3) 打卡：只给黄子弘凡发图文打卡帖（出道八周年活动，话题标签 + DayN + 文案 + 每天同一张照片）
@@ -60,6 +60,87 @@ function manualOn() {
     const v = $argument["manualDaka"];
     return v === true || v === "true";
   } catch (e) { return false; }
+}
+// ---------- 自定义签到时间 ----------
+// BoxJs 设置（两个微博应用共用同一套 key）：
+// weibo_time_enabled：开关，启用自定义签到时间（默认关 = 每天 09:00）
+// weibo_time_mode：fixed = 指定时间 / random = 时间区间随机
+// weibo_time：指定时间 "HH:MM"，如 09:30
+// weibo_time_range：时间区间 "HH:MM-HH:MM"，如 08:00-10:00
+const TIME_ENABLED_KEY = "weibo_time_enabled";
+const TIME_MODE_KEY = "weibo_time_mode";
+const TIME_KEY = "weibo_time";
+const TIME_RANGE_KEY = "weibo_time_range";
+const TIME_TARGET_KEY = "weibo_time_target"; // 当天随机挑好的时间，格式 "YYYY-MM-DD HH:MM|HH:MM-HH:MM"
+const TIME_DONE_KEY = "weibo_time_done"; // 自动签到今天已跑过的日期
+const DEFAULT_TIME_MIN = 9 * 60; // 默认 09:00
+
+// 开关值可能是 "true"/true/"1"/1，都当作开
+function isTrue(v) {
+  return v === true || v === "true" || v === 1 || v === "1";
+}
+// 本地日期 YYYY-MM-DD（不用 toISOString，那是 UTC 日期，凌晨会差一天）
+function todayStr() {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return y + "-" + m + "-" + day;
+}
+// 现在是今天的第几分钟（本地时间）
+function nowMin() {
+  const d = new Date();
+  return d.getHours() * 60 + d.getMinutes();
+}
+// "HH:MM" 转分钟，非法返回 null
+function parseHM(s) {
+  if (!s) return null;
+  const m = String(s).trim().match(/^(\d{1,2}):(\d{1,2})$/);
+  if (!m) return null;
+  const h = parseInt(m[1], 10), mi = parseInt(m[2], 10);
+  if (h < 0 || h > 23 || mi < 0 || mi > 59) return null;
+  return h * 60 + mi;
+}
+// 分钟转 "HH:MM"
+function fmtHM(min) {
+  const h = Math.floor(min / 60), mi = min % 60;
+  return String(h).padStart(2, "0") + ":" + String(mi).padStart(2, "0");
+}
+// 今天的目标签到时间（分钟）。未启用或配置非法时回落到 09:00
+function todayTargetMin() {
+  if (!isTrue(read(TIME_ENABLED_KEY))) return DEFAULT_TIME_MIN;
+  const mode = (read(TIME_MODE_KEY) || "").trim();
+  if (mode === "fixed") {
+    const t = parseHM(read(TIME_KEY));
+    return t === null ? DEFAULT_TIME_MIN : t;
+  }
+  if (mode === "random") {
+    const range = (read(TIME_RANGE_KEY) || "").trim();
+    const parts = range.split("-");
+    if (parts.length !== 2) return DEFAULT_TIME_MIN;
+    const start = parseHM(parts[0]), end = parseHM(parts[1]);
+    if (start === null || end === null || end <= start) return DEFAULT_TIME_MIN;
+    const today = todayStr();
+    // 当天已挑过且区间没变 → 用存好的；否则重新随机挑一个
+    const stored = read(TIME_TARGET_KEY);
+    if (stored) {
+      const sp = stored.split("|");
+      if (sp.length === 2 && sp[0].slice(0, 10) === today && sp[1] === range) {
+        const t = parseHM(sp[0].slice(11));
+        if (t !== null) return t;
+      }
+    }
+    const pick = start + Math.floor(Math.random() * (end - start + 1));
+    write(TIME_TARGET_KEY, today + " " + fmtHM(pick) + "|" + range);
+    return pick;
+  }
+  return DEFAULT_TIME_MIN;
+}
+// 自动定时是否该跑：到了目标时间且今天还没跑过
+function shouldRunAuto() {
+  const today = todayStr();
+  if (read(TIME_DONE_KEY) === today) return false;
+  return nowMin() >= todayTargetMin();
 }
 function uuid() {
 return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -441,7 +522,7 @@ const lines = [];
 const manual = manualOn();
 if (manual) {
   // 手动运行：今天已经跑过一次就不重复，跑完后由用户手动关开关
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayStr(); // 本地日期，和自动定时保持一致
   if (read(MANUAL_DONE_KEY) === today) {
     $done({});
     return;
@@ -450,11 +531,17 @@ if (manual) {
   await chaohuaSignin(lines);
   await daka(lines);
   write(MANUAL_DONE_KEY, today);
+  write(TIME_DONE_KEY, todayStr()); // 手动跑过后，当天自动定时不再重复跑
 } else {
-  write(MANUAL_DONE_KEY, "");
+  // 自动定时：没到设定的时间、或今天已跑过，就悄悄退出
+  if (!shouldRunAuto()) {
+    $done({});
+    return;
+  }
   if (argOn("dailySignin")) await dailySignin(lines); else lines.push("微博签到：已在设置里关闭");
   if (argOn("chaohuaSignin")) await chaohuaSignin(lines); else lines.push("超话签到：已在设置里关闭");
   if (argOn("daka")) await daka(lines); else lines.push("黄子弘凡打卡：已在设置里关闭");
+  write(TIME_DONE_KEY, todayStr());
 }
 $notification.post("微博超话签到打卡", lines[0] || "完成", lines.join("\n"));
 $done({});
