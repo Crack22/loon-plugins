@@ -2855,7 +2855,7 @@
     "读取京东签到插件抓取的 Cookie（CookiesJD），需先用京东插件抓取 Cookie；每天 9:00 自动检查 Cookie 过期状态。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/jd-cookies-remark/JdCookiesRemark.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/jd_cookie_search.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/jd-cookies-remark/jd_cookie_search.js"
   },
   {
    "id": "wxcode",
@@ -3278,7 +3278,7 @@
     "需要先用哔哩漫画签到脚本获取 Cookie（BoxJs 数据 BILI_COMICS_CHECKIN），账号需已有积分。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/bilimangapoints/Bilimangapoints.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/ExchangePoints.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/bilimangapoints/ExchangePoints.js"
   },
   {
    "id": "caiyun",
@@ -3341,7 +3341,7 @@
     "需要免费申请彩云天气 API Token 填入 BoxJs；定位通过打开系统天气 App 自动获取，也可在 BoxJs 手动填经纬度。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/caiyun/Caiyun.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/caiyun/caiyun.js"
   },
   {
    "id": "blackmatrix7-bark",
@@ -3647,7 +3647,7 @@
     "iDaily 每日环球视野推送：每天 0:05 推送一条精选内容。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/idaily/Idaily.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/idaily/idaily.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/idaily/idaily.js"
   },
   {
    "id": "testflightaccount-fmz",
@@ -3925,7 +3925,7 @@
     "需要自备返回京东 Cookie 列表的接口地址（id77_api_sync_cookie）。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/id77-api/Id77Api.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/Script/syncJDCookie.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/id77-api/syncJDCookie.js"
   },
   {
    "id": "id77-ql",
@@ -4057,7 +4057,7 @@
     "需要去重二剪服务的 Token：打开去重二剪小程序即可自动抓取。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/qcej/Qcej.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/qcej.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/qcej/qcej.js"
   },
   {
    "id": "yuheng-imaotai-v1-5",
@@ -4231,7 +4231,7 @@
     "每天 60 秒读懂世界早报推送：每天 9:30 推送，点击通知可跳转原文或图片。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-60s/Yuheng60s.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-60s/60s.js"
   },
   {
    "id": "yuheng-95598-web",
@@ -4294,7 +4294,7 @@
     "需要网上国网账号（手机号）和密码。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-95598-web/Yuheng95598Web.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-95598-web/95598.js"
   },
   {
    "id": "zz-douban",
@@ -4804,7 +4804,7 @@
     "需要在 BoxJs 填写账号数据和商品 id；账号需已有积分。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/cheryfs/Cheryfs.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs_Exchange.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/cheryfs/Cheryfs_Exchange.js"
   },
   {
    "id": "tkzx",
@@ -4847,7 +4847,7 @@
     "需要在 BoxJs 填写账号数据和商品 id；账号需已有积分。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/tkzx/Tkzx.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TKZX/TKZX_Exchange.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/tkzx/TKZX_Exchange.js"
   },
   {
    "id": "redbull",
@@ -4890,7 +4890,7 @@
     "需要在 BoxJs 填写账号数据和商品 id；账号需已有积分。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/redbull/Redbull.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull_Exchange.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/redbull/RedBull_Exchange.js"
   },
   {
    "id": "qiehuang",
@@ -4941,7 +4941,7 @@
     "需要在 BoxJs 填写账号数据和商品 id，以及自建 OCR 服务地址（用于验证码识别）；账号需已有积分。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/qiehuang/Qiehuang.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TongYi/QieHuang_Exchange.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/qiehuang/QieHuang_Exchange.js"
   },
   {
    "id": "xream-enhanced-github",
@@ -5609,7 +5609,7 @@
     "TestFlight 多账号管理与缓存清理。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/testflightaccount-nobyda/TestflightaccountNobyda.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://gist.githubusercontent.com/NobyDa/d025c53d3922657f921b983ce129fc1d/raw/TestFlightAccountRemoveCache.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/testflightaccount-nobyda/TestFlightAccountRemoveCache.js"
   },
   {
    "id": "telegram",
@@ -5643,7 +5643,7 @@
     "Telegram 频道新图片/视频推送。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/telegram/Telegram.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/telegram.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/telegram/telegram.js"
   },
   {
    "id": "flow",
@@ -5669,7 +5669,7 @@
     "机场订阅流量、剩余流量和到期时间查询。需要机场订阅链接。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/flow/Flow.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/flow.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/flow/flow.js"
   },
   {
    "id": "blackmatrix7-findmy",
@@ -5955,7 +5955,7 @@
     "NASA 每日一图推送。需要去 https://api.nasa.gov/ 免费申请 API Key。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/nasapic/Nasapic.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/nasapic/nasapic.js"
   },
   {
    "id": "fmz200-testflight",
@@ -6254,7 +6254,7 @@
     "通用请求重放调试：把抓到的请求按次数、间隔重复执行。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/id77-ex/Id77Ex.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/ex.task.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/id77-ex/ex.task.js"
   },
   {
    "id": "lkmiyoushecustom",
@@ -6338,7 +6338,7 @@
     "米游社 App 界面自定义（游戏卡片、顶栏、Tab、兑换中心过滤）。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkmiyoushecustom/Lkmiyoushecustom.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/lowking/Scripts/master/mihoyo/miyousheCustom.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkmiyoushecustom/miyousheCustom.js"
   },
   {
    "id": "yuheng-testflight-autojoin",
@@ -6441,7 +6441,7 @@
     "TestFlight 公测名额监控并自动加入。需要抓取 TestFlight 会话参数。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-testflight-autojoin/YuhengTestflightAutojoin.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/AutoJoinTF.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-testflight-autojoin/AutoJoinTF.js"
   },
   {
    "id": "yuheng-moyu",
@@ -6521,7 +6521,7 @@
     "摸鱼日报：节日倒计时、上下班倒计时、黄历推送。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-moyu/YuhengMoyu.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/moyu.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-moyu/moyu.js"
   },
   {
    "id": "yuheng-top",
@@ -6591,7 +6591,7 @@
     "各平台热搜聚合推送。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-top/YuhengTop.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/top.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-top/top.js"
   },
   {
    "id": "yuheng-douban",
@@ -6632,7 +6632,7 @@
     "豆瓣电影日历推送。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-douban/YuhengDouban.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/douban.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-douban/douban.js"
   },
   {
    "id": "zz-unblockurlinwechat",
@@ -6858,7 +6858,7 @@
     "iQOO 社区积分兑换。需要 iQOO 社区账号已有积分。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/iqoo/Iqoo.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/IQOO/IQOO_Exchange.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/iqoo/IQOO_Exchange.js"
   },
   {
    "id": "yongxin",
@@ -6892,7 +6892,7 @@
     "富连e充积分兑换。需要富连e充账号已有积分。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yongxin/Yongxin.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YongXin/YongXin.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yongxin/YongXin.js"
   },
   {
    "id": "haitian",
@@ -6942,7 +6942,7 @@
     "海天美味馆积分兑换。需要海天美味馆账号已有积分。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/haitian/Haitian.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiTian/HaiTian_Exchange.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/haitian/HaiTian_Exchange.js"
   },
   {
    "id": "wyyx",
@@ -6984,7 +6984,7 @@
     "网易严选积分兑换。需要网易严选账号已有积分。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/wyyx/Wyyx.plugin\">点击安装 Loon 插件</a>"
    ],
-   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX_Exchange.js"
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/wyyx/WYYX_Exchange.js"
   },
   {
    "id": "yuheng-mi-step",

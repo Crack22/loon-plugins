@@ -5,4 +5,4 @@
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Script]
-cron "25 7 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Alipay/Alipay.js, timeout=300, tag=支付宝 - 积分能量每日签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/alipay.png, enable=true
+cron "25 7 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/zz-alipay/Alipay.js, timeout=300, tag=支付宝 - 积分能量每日签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/alipay.png, enable=true

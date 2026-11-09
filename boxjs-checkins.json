@@ -42,7 +42,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/kuaishou.png"
    ],
-   "script": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/kuaishou/ks_fruit.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/kuaishou/ks_fruit.js",
    "settings": [
     {
      "id": "kscookies",
@@ -69,7 +69,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/pinduoduo.png"
    ],
-   "script": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/pinduoduo/pdd_guoyuan.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/pdd/pdd_guoyuan.js",
    "settings": [
     {
      "id": "ddgyck",
@@ -102,7 +102,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Macat.png"
    ],
-   "script": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/macat/macat_signin.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/macat/macat_signin.js",
    "settings": [
     {
      "id": "fmz200.macat_loginBody",
@@ -130,7 +130,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ccbLife.jpg"
    ],
-   "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/ccb-life/jhsh_checkIn.js",
    "settings": [
     {
      "id": "JHSH_BODY",
@@ -222,7 +222,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Orz-3/mini/master/Color/douyu.png"
    ],
-   "script": "https://github.com/fmz200/wool_scripts/raw/main/Scripts/douyu/yubaSign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/douyu/yubaSign.js",
    "settings": [
     {
      "id": "CookieDY",
@@ -249,7 +249,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/GaodeMap.jpg"
    ],
-   "script": "https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/gaode-dache/ampDache.js",
    "settings": [
     {
      "id": "GD_Val",
@@ -276,7 +276,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/flyert.png"
    ],
-   "script": "https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/CheckIn/flyert.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/flyert/flyert.js",
    "settings": [
     {
      "id": "Flyert_Cookie_Key",
@@ -310,7 +310,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/funboat/funboat.js",
    "settings": [
     {
      "id": "evil_funkourl",
@@ -355,7 +355,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/zZPiglet/Task/master/Oclean/Oclean.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/oclean/Oclean.js",
    "settings": [
     {
      "id": "Oclean",
@@ -379,7 +379,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/zZPiglet/Task/master/Oclean/Oclean_mini.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/oclean-mall/Oclean_mini.js",
    "settings": [
     {
      "id": "Oclean_mini",
@@ -405,7 +405,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jingdong.png"
    ],
-   "script": "https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/jd/JD_DailyBonus.js",
    "settings": [
     {
      "id": "CookiesJD",
@@ -432,7 +432,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/iqiyi.png"
    ],
-   "script": "https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/iqiyi/iQIYI.js",
    "settings": [
     {
      "id": "CookieQY",
@@ -458,7 +458,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/52pojie.png"
    ],
-   "script": "https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/52pojie/52pojie.js",
    "settings": [
     {
      "id": "COOKIE",
@@ -485,7 +485,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png"
    ],
-   "script": "https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/bilibili-manga/Manga.js",
    "settings": [
     {
      "id": "BILI_COMICS_CHECKIN",
@@ -511,7 +511,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/baidutieba.png"
    ],
-   "script": "https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/tieba-app/TieBa.js",
    "settings": [
     {
      "id": "CookieTB",
@@ -535,7 +535,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/NobyDa/Script/master/KuaiKan-DailyBonus/KKMH.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/kuaikan/KKMH.js",
    "settings": [
     {
      "id": "KKMH",
@@ -562,7 +562,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/JD.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/jd/JD_BaiTiao.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/jd-baitiao/JD_BaiTiao.js",
    "settings": [
     {
      "id": "CookieJD",
@@ -595,7 +595,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/baidutieba.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/tieba-web/tieba.js",
    "settings": [
     {
      "id": "chavy_cookie_tieba",
@@ -624,7 +624,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dianxin.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/telecom-10000/10000.js",
    "settings": [
     {
      "id": "chavy_signheader_10000",
@@ -665,7 +665,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/acfun.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/acfun/acfun.js",
    "settings": [
     {
      "id": "chavy_cookie_acfun",
@@ -696,7 +696,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/apktw/apktw.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/apktw/apktw.js",
    "settings": [
     {
      "id": "chavy_cookie_apktw",
@@ -723,7 +723,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/bilibili/bilibili.js",
    "settings": [
     {
      "id": "chavy_cookie_bilibili",
@@ -750,7 +750,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.silver2coin.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/bilibili-silver2coin/bilibili.silver2coin.js",
    "settings": [
     {
      "id": "chavy_cookie_bilibili",
@@ -777,7 +777,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dongqiudi.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/dongqiudi/dongqiudi.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/dongqiudi/dongqiudi.js",
    "settings": [
     {
      "id": "chavy_cookie_dongqiudi",
@@ -801,7 +801,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/feng/feng.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/feng/feng.js",
    "settings": [
     {
      "id": "chavy_login_feng",
@@ -828,7 +828,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/flyert.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/flyertea/flyertea.js",
    "settings": [
     {
      "id": "chavy_cookie_flyertea",
@@ -861,7 +861,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/shunfeng.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/sfexpress/sfexpress.js",
    "settings": [
     {
      "id": "chavy_login_sfexpress",
@@ -887,7 +887,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/smzdm.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/smzdm/smzdm.js",
    "settings": [
     {
      "id": "chavy_cookie_smzdm",
@@ -914,7 +914,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/V2ex.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/v2ex/v2ex.js",
    "settings": [
     {
      "id": "chavy_cookie_v2ex",
@@ -945,7 +945,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/TencentVideo.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/videoqq/videoqq.js",
    "settings": [
     {
      "id": "chavy_cookie_videoqq",
@@ -999,7 +999,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ximalaya.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/ximalaya/ximalaya.js",
    "settings": [
     {
      "id": "chavy_cookie_ximalaya",
@@ -1028,7 +1028,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/QQMusic.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/qqmusic/qqmusic.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qqmusic/qqmusic.js",
    "settings": [
     {
      "id": "chavy_signurl_qqmusic",
@@ -1076,7 +1076,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/csdn/csdn.js",
    "settings": [
     {
      "id": "chavy_tokenurl_csdn",
@@ -1122,7 +1122,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/gdoil/gdoil.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/gdoil/gdoil.js",
    "settings": [
     {
      "id": "chavy_signurl_gdoil",
@@ -1156,7 +1156,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/mangguotv.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/mgtv/mgtv.js",
    "settings": [
     {
      "id": "chavy_signurl_mgtv",
@@ -1196,7 +1196,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/China_Unicom.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/china-unicom/10010.js",
    "settings": [
     {
      "id": "chavy_tokenurl_10010",
@@ -1271,7 +1271,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/maomicd/maomicd.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/maomicd/maomicd.js",
    "settings": [
     {
      "id": "chavy_signurl_maomicd",
@@ -1309,7 +1309,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meituan.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/meituan-waimai/wmmeituan.js",
    "settings": [
     {
      "id": "chavy_tokenurl_wmmeituan",
@@ -1367,7 +1367,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meituan.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/meituan/meituan.js",
    "settings": [
     {
      "id": "chavy_signurl_meituan",
@@ -1420,7 +1420,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/everphoto/everphoto.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/everphoto/everphoto.js",
    "settings": [
     {
      "id": "chavy_sign_url_everphoto",
@@ -1452,7 +1452,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/dingdong/mcdd.js",
    "settings": [
     {
      "id": "chavy_home_url_mcdd",
@@ -1485,7 +1485,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/fandeng/fandeng.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fandeng/fandeng.js",
    "settings": [
     {
      "id": "senku_signurl_pandeng",
@@ -1525,7 +1525,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/qmkg/qmkg.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qmkg/qmkg.js",
    "settings": [
     {
      "id": "senku_signurl_qmkg",
@@ -1564,7 +1564,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/nio/nio.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/nio/nio.js",
    "settings": [
     {
      "id": "signurl_nextevcar",
@@ -1597,7 +1597,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/haidilao/hdl.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/haidilao/hdl.js",
    "settings": [
     {
      "id": "signurl_hdl",
@@ -1641,7 +1641,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/qimao/qmnovel.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qimao/qmnovel.js",
    "settings": [
     {
      "id": "UrlDC",
@@ -1708,7 +1708,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/zxhc/zxhc.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zxhc/zxhc.js",
    "settings": [
     {
      "id": "senku_signheader_zxhc",
@@ -1752,7 +1752,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/suning/suning.js",
    "settings": [
     {
      "id": "chavy_login_url_suning",
@@ -1869,7 +1869,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/zaker/zaker.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zaker/zaker.js",
    "settings": [
     {
      "id": "UrlZK",
@@ -1900,7 +1900,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/hellobike/hellobike.js",
    "settings": [
     {
      "id": "hellobike",
@@ -1930,7 +1930,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/zsfc/zsfc.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zsfc/zsfc.js",
    "settings": [
     {
      "id": "zsfc_accessToken",
@@ -1997,7 +1997,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/duokan/duokan.js",
    "settings": [
     {
      "id": "duokan_cookie",
@@ -2031,7 +2031,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/noteyoudao/noteyoudao.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/noteyoudao/noteyoudao.js",
    "settings": [
     {
      "id": "chavy_signurl_noteyoudao",
@@ -2069,7 +2069,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/wanda/wanda.js",
    "settings": [
     {
      "id": "senku_wanda_mi_",
@@ -2093,7 +2093,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/pagoda/pagoda.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/pagoda/pagoda.js",
    "settings": [
     {
      "id": "chavy_sign_pagoda",
@@ -2119,7 +2119,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/ithome.png"
    ],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/ithome/ithome.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/ithome/ithome.js",
    "settings": [
     {
      "id": "senku_ithome_userHash",
@@ -2143,7 +2143,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/nfzm/nfzm.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/nfzm/nfzm.js",
    "settings": [
     {
      "id": "senku_nfzm_url",
@@ -2168,7 +2168,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/iepngs/Script/master/dingdong/index.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/dingdong-farm/index.js",
    "settings": [
     {
      "id": "CookieDDXQfarm",
@@ -2199,7 +2199,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/iepngs/Script/master/studygolang/index.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/studygolang/index.js",
    "settings": [
     {
      "id": "StudyGolang",
@@ -2226,7 +2226,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiechenglvxing.png"
    ],
-   "script": "https://raw.githubusercontent.com/iepngs/Script/master/ctrip/index.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/ctrip/index.js",
    "settings": [
     {
      "id": "cookie_ctrip",
@@ -2254,7 +2254,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/jinritoutiao.png"
    ],
-   "script": "https://raw.githubusercontent.com/iepngs/Script/master/jrtt/index.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/jrtt/index.js",
    "settings": [
     {
      "id": "jrttTaskCookie",
@@ -2292,7 +2292,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/iepngs/Script/master/lxsj/index.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/lxsj/index.js",
    "settings": [
     {
      "id": "lxsjCookie",
@@ -2318,7 +2318,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png"
    ],
-   "script": "https://raw.githubusercontent.com/lowking/Scripts/master/QQVip/qqVipCheckIn.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qqvip/qqVipCheckIn.js",
    "settings": [
     {
      "id": "lkQQSignHeaderKey",
@@ -2344,7 +2344,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/lowking/Scripts/master/sony/sonyClub.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/sony/sonyClub.js",
    "settings": [
     {
      "id": "lkSonyClubLoginId",
@@ -2385,7 +2385,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png"
    ],
-   "script": "https://raw.githubusercontent.com/lowking/Scripts/master/QQPet/lkQQPet.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qqpet/lkQQPet.js",
    "settings": [
     {
      "id": "lkQQPetToken",
@@ -2418,7 +2418,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Element.png"
    ],
-   "script": "https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/eleme/elemSign.js",
    "settings": [
     {
      "id": "cookie_elem",
@@ -2445,7 +2445,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/xiechenglvxing.png"
    ],
-   "script": "https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip_wx/ct_sign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/ctrip-wx/ct_sign.js",
    "settings": [
     {
      "id": "chen_body_xc",
@@ -2478,7 +2478,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/JD.png"
    ],
-   "script": "https://raw.githubusercontent.com/barrym-chen/Script/master/jdczf/jdczf.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/jd-czf/jdczf.js",
    "settings": [
     {
      "id": "chen_cookie_jingdong",
@@ -2505,7 +2505,7 @@
    "icons": [
     "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/ICBC.png"
    ],
-   "script": "https://raw.githubusercontent.com/barrym-chen/Script/master/icbc/icbc_sign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/icbc/icbc_sign.js",
    "settings": [
     {
      "id": "chen_body_icbc",
@@ -2537,7 +2537,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/barrym-chen/Script/master/tongc/tongc_sign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/tongcheng/tongc_sign.js",
    "settings": [
     {
      "id": "chen_body_tc",
@@ -2568,7 +2568,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/barrym-chen/Script/master/fcz/fcz_sign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fcz/fcz_sign.js",
    "settings": [
     {
      "id": "chen_cookie_fcz",
@@ -2595,7 +2595,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/nga/nga.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/nga/nga.js",
    "settings": [
     {
      "id": "vei_nga_cookie",
@@ -2641,7 +2641,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/thg.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/thg/thg.js",
    "settings": [
     {
      "id": "id77_thg_token",
@@ -2674,7 +2674,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/yzkbSign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/yzkb/yzkbSign.js",
    "settings": [
     {
      "id": "yzkburlname",
@@ -2713,7 +2713,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/jddsSign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/jd-read/jddsSign.js",
    "settings": [
     {
      "id": "jddsurlname",
@@ -2746,7 +2746,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/zymkSign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zymk/zymkSign.js",
    "settings": [
     {
      "id": "zymkurlname",
@@ -2788,7 +2788,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/hdhycSign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/hdhyc/hdhycSign.js",
    "settings": [
     {
      "id": "RecordAddbdname",
@@ -2848,7 +2848,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/mygmcSign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/mygmc/mygmcSign.js",
    "settings": [
     {
      "id": "Recordgeturlname",
@@ -2935,7 +2935,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/wsxqSign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/wsxq/wsxqSign.js",
    "settings": [
     {
      "id": "wsxqurlname",
@@ -3014,7 +3014,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/XidNDD/2020scripts/master/zscdbSign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zscdb/zscdbSign.js",
    "settings": [
     {
      "id": "userurlname",
@@ -3147,7 +3147,7 @@
    "author": "許諾",
    "repo": "https://github.com/Crack22/loon-plugins",
    "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/follow/follow.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/follow/follow.js",
    "settings": [
     {
      "id": "follow_csrfToken",
@@ -3184,7 +3184,7 @@
    "icons": [
     "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/jiumu_tran.png"
    ],
-   "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/jiumu/jiumu.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/jiumu/jiumu.js",
    "settings": [
     {
      "id": "evil_jiumuSignStr",
@@ -3238,7 +3238,7 @@
    "icons": [
     "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw_tran.png"
    ],
-   "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw-app.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/klcwapp/klcw-app.js",
    "settings": [
     {
      "id": "evil_klcwappBody",
@@ -3269,7 +3269,7 @@
    "icons": [
     "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw_tran.png"
    ],
-   "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/klcw/klcw.js",
    "settings": [
     {
      "id": "evil_klcwid",
@@ -3333,7 +3333,7 @@
    "icons": [
     "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/timepop_tran.png"
    ],
-   "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/timepop/timepop.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/timepop/timepop.js",
    "settings": [
     {
      "id": "evil_timepopurl",
@@ -3381,7 +3381,7 @@
    "icons": [
     "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png"
    ],
-   "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/hzh/hzh.js",
    "settings": [
     {
      "id": "evil_hzhCookie",
@@ -3415,7 +3415,7 @@
    "icons": [
     "https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/gdong.png"
    ],
-   "script": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/Script/gdong.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/gdong/gdong.js",
    "settings": [
     {
      "id": "gdCookie",
@@ -3448,7 +3448,7 @@
    "icons": [
     "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jparking.png"
    ],
-   "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/jparking/jparking_sign.js",
    "settings": [
     {
      "id": "jtc_userId",
@@ -3475,7 +3475,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/weibo.png"
    ],
-   "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/weibo/weibo_sign.js",
    "settings": [
     {
      "id": "sy_token_wb",
@@ -3508,7 +3508,7 @@
    "icons": [
     "https://raw.githubusercontent.com/FoKit/Scripts/main/images/ThomasCook.png"
    ],
-   "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/ThomasCook.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/thomascook/ThomasCook.js",
    "settings": [
     {
      "id": "ThomasCook_Cookie",
@@ -3537,7 +3537,7 @@
    "icons": [
     "https://raw.githubusercontent.com/FoKit/Scripts/main/images/hisense.png"
    ],
-   "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/Hisense.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/hisense/Hisense.js",
    "settings": [
     {
      "id": "HISENSE_CPS",
@@ -3586,7 +3586,7 @@
    "icons": [
     "https://raw.githubusercontent.com/FoKit/Scripts/main/images/yrh.png"
    ],
-   "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/yueran_sign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yueranhui/yueran_sign.js",
    "settings": [
     {
      "id": "@yueranhui.bid",
@@ -3652,7 +3652,7 @@
    "icons": [
     "https://raw.githubusercontent.com/FoKit/Scripts/main/images/pp_parking.png"
    ],
-   "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/pp_parking.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/pp-parking/pp_parking.js",
    "settings": [
     {
      "id": "pp_token",
@@ -3679,7 +3679,7 @@
    "icons": [
     "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png"
    ],
-   "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/tuhu.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/tuhu/tuhu.js",
    "settings": [
     {
      "id": "tuhu_token",
@@ -3712,7 +3712,7 @@
    "icons": [
     "https://raw.githubusercontent.com/FoKit/Scripts/main/images/livingmall.png"
    ],
-   "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/livingmall.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/livingmall/livingmall.js",
    "settings": [
     {
      "id": "living_info",
@@ -3741,7 +3741,7 @@
    "icons": [
     "https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png"
    ],
-   "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/wechat-pay-coupon/wechat_pay_coupon.js",
    "settings": [
     {
      "id": "wechat_pay_token",
@@ -3788,7 +3788,7 @@
    "icons": [
     "https://raw.githubusercontent.com/FoKit/Scripts/main/images/aeon.png"
    ],
-   "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/aeon_sign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/aeon-sign/aeon_sign.js",
    "settings": [
     {
      "id": "aeon_data",
@@ -3814,7 +3814,7 @@
    "icons": [
     "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tsl.png"
    ],
-   "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/tsl_sign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/tsl-sign/tsl_sign.js",
    "settings": [
     {
      "id": "tsl_data",
@@ -3843,7 +3843,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/pupu.png"
    ],
-   "script": "https://raw.githubusercontent.com/lowking/Scripts/master/pupu/pupuCheckIn.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkpupucheckin/pupuCheckIn.js",
    "settings": [
     {
      "id": "lkPuPuTokenKey",
@@ -3896,7 +3896,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/hifinisignin.png"
    ],
-   "script": "https://raw.githubusercontent.com/lowking/Scripts/master/hifini/hifiniSign.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkhifinisignin/hifiniSign.js",
    "settings": [
     {
      "id": "lkHifiniCookieKey",
@@ -3984,7 +3984,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/bingPoint.png"
    ],
-   "script": "https://raw.githubusercontent.com/lowking/Scripts/master/bing/bingPoint.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkbingpoint/bingPoint.js",
    "settings": [
     {
      "id": "bingIsExecUSKey",
@@ -4156,7 +4156,7 @@
    "icons": [
     "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/zzz.png"
    ],
-   "script": "https://raw.githubusercontent.com/lowking/Scripts/master/mihoyo/zzz.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkzzz/zzz.js",
    "settings": [
     {
      "id": "zzzUidKey",
@@ -4268,7 +4268,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/cmbchina.png"
    ],
-   "script": "https://raw.githubusercontent.com/zZPiglet/Task/master/CMB/CMB_688.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/zz-cmb-688/CMB_688.js",
    "settings": [
     {
      "id": "CMB_wait_6888",
@@ -4309,7 +4309,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/alipay.png"
    ],
-   "script": "https://raw.githubusercontent.com/zZPiglet/Task/master/Alipay/Alipay.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/zz-alipay/Alipay.js",
    "settings": [
     {
      "id": "Alipay_wait_family",
@@ -4342,7 +4342,7 @@
    "icons": [
     "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png"
    ],
-   "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yili/yiLi.js",
    "settings": [
     {
      "id": "id77_yiLi_cookies",
@@ -4368,7 +4368,7 @@
    "icons": [
     "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/wyx.png"
    ],
-   "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/jegotrip.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/id77-jegotrip/jegotrip.js",
    "settings": [
     {
      "id": "id77_jegotrip_token",
@@ -4395,7 +4395,7 @@
    "icons": [
     "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/ZTE/ZTE.png"
    ],
-   "script": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/ZTE/ZTE.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/zte/ZTE.js",
    "settings": [
     {
      "id": "ZTE",
@@ -4429,7 +4429,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Former-Years/icon/master/huke.png"
    ],
-   "script": "https://raw.githubusercontent.com/Former-Years/Surge/main/Script/huke.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/huke/huke.js",
    "settings": [
     {
      "id": "huke_token",
@@ -4462,7 +4462,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Former-Years/icon/master/atstudy.png"
    ],
-   "script": "https://raw.githubusercontent.com/Former-Years/Surge/main/Script/daka.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/atstudydk/daka.js",
    "settings": [
     {
      "id": "daka_hd",
@@ -4488,7 +4488,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Former-Years/icon/master/erke.png"
    ],
-   "script": "https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/erke.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/erke/erke.js",
    "settings": [
     {
      "id": "erke_data",
@@ -4514,7 +4514,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Former-Years/icon/master/tjdd.png"
    ],
-   "script": "https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/tjdd.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/tjdd/tjdd.js",
    "settings": [
     {
      "id": "tjdd_data",
@@ -4540,7 +4540,7 @@
    "icons": [
     "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/05/b9/57/05b9577c-3773-cd2b-5a99-49c0dc3f331d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144.png"
    ],
-   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/Bdyy/bdyy.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-bdyy/bdyy.js",
    "settings": [
     {
      "id": "bdyy_account",
@@ -4570,7 +4570,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/4ksj.png"
    ],
-   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/4ksj.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-4ksj/4ksj.js",
    "settings": [
     {
      "id": "4k_world_accounts",
@@ -4625,7 +4625,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/zippo.jpg"
    ],
-   "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/zippo.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-zippo/zippo.js",
    "settings": [
     {
      "id": "zippo_mp_auth",
@@ -4741,7 +4741,7 @@
    "icons": [
     "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/luka/luka.png"
    ],
-   "script": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/luka/luka_signin.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/blackmatrix7-luka/luka_signin.js",
    "settings": [
     {
      "id": "luka_checkin_cookie",
@@ -4775,7 +4775,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Orz-3/mini/master/Color/muchong.png"
    ],
-   "script": "https://raw.githubusercontent.com/toulanboy/scripts/master/muchong/muchong.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/muchong/muchong.js",
    "settings": [
     {
      "id": "muchong_headers",
@@ -4835,7 +4835,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj.png"
    ],
-   "script": "https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-bwcj/bwcj.js",
    "settings": [
     {
      "id": "bw_token",
@@ -4864,7 +4864,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hsay.png"
    ],
-   "script": "https://raw.githubusercontent.com/zjk2017/ArcadiaScriptPublic/main/M_hsay.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-hsay/M_hsay.js",
    "settings": [
     {
      "id": "hsay_data",
@@ -4910,7 +4910,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Dlm.png"
    ],
-   "script": "https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-dlm/dlm.js",
    "settings": [
     {
      "id": "dlm_data",
@@ -4972,7 +4972,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Zmhy.png"
    ],
-   "script": "https://gist.githubusercontent.com/Sliverkiss/7f16bab92e312d1f0e520ca20d389924/raw/29b180093d17edd6ccf0a6fdce14a8d9ec7b06df/zmhy.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-zmhy/zmhy.js",
    "settings": [
     {
      "id": "zmhy_data",
@@ -4999,7 +4999,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png"
    ],
-   "script": "https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-mxbc/mxbc.js",
    "settings": [
     {
      "id": "mxbc_data",
@@ -5053,7 +5053,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Linovel.png"
    ],
-   "script": "https://gist.githubusercontent.com/Sliverkiss/a56aaa31bbc01191590b9c4c5c698751/raw/linovel.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-linovel/linovel.js",
    "settings": [
     {
      "id": "linovel_data",
@@ -5080,7 +5080,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/qtx.png"
    ],
-   "script": "https://raw.githubusercontent.com/zjk2017/ArcadiaScriptPublic/main/qtx.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-qtx/qtx.js",
    "settings": [
     {
      "id": "qtxtk",
@@ -5107,7 +5107,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Nestle.png"
    ],
-   "script": "https://gist.githubusercontent.com/Sliverkiss/f533ada8d658a0cbbe4b2e791c3b0ac8/raw/be3d9b74fe1cde69e6d39b599e5526110c996958/nestle.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-qc/nestle.js",
    "settings": [
     {
      "id": "qc_data",
@@ -5134,7 +5134,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Switch.png"
    ],
-   "script": "https://gist.githubusercontent.com/Sliverkiss/3d9c00790143eba146c3ba798eda4696/raw/switch520.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-switch/switch520.js",
    "settings": [
     {
      "id": "switch_data",
@@ -5161,7 +5161,7 @@
    "icons": [
     "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Stlxz.png"
    ],
-   "script": "https://gist.githubusercontent.com/Sliverkiss/b1b8b87351ff3aca189c5addaa054430/raw/stlxz.js",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-stlxz/stlxz.js",
    "settings": [
     {
      "id": "stlxz_data",
