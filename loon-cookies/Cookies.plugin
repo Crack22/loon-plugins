@@ -151,44 +151,44 @@ zxhc = switch,true,tag=智行火车
 # >>>>>>>>>>>>>>> ✅ A ✅ <<<<<<<<<<<<<<
 # > AcFun
 # hostname = 
-http-request ^https:\/\/api\-new\.app\.acfun\.cn\/rest\/app\/user\/personalInfo script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.cookie.js, timeout=60, tag=AcFun, enable={acfun}, argument=[{acfun}]
+http-request ^https:\/\/api\-new\.app\.acfun\.cn\/rest\/app\/user\/personalInfo script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/acfun_cookie.js, timeout=60, tag=AcFun, enable={acfun}, argument=[{acfun}]
 
 # > APK.TW
 # hostname = 
-http-request ^https://apk.tw\/member.php(.*?)action=login script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/apktw/apktw.cookie.js, requires-body=true, timeout=60, tag=APK.TW, enable={apktw}, argument=[{apktw}]
+http-request ^https://apk.tw\/member.php(.*?)action=login script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/apktw_cookie.js, requires-body=true, timeout=60, tag=APK.TW, enable={apktw}, argument=[{apktw}]
 
 # > 阿里云盘
 # hostname = auth.alipan.com, auth.aliyundrive.com
-http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=60, tag=阿里云盘@Sliverkiss, enable={aliyunpan}, argument=[{aliyunpan}]
-http-response ^https:\/\/auth.aliyundrive.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js, requires-body=true, timeout=60, tag=阿里云盘@lowking, enable={aliyunpan2}, argument=[{aliyunpan2}]
+http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/aliyunpan_cookie.js, requires-body=true, timeout=60, tag=阿里云盘@Sliverkiss, enable={aliyunpan}, argument=[{aliyunpan}]
+http-response ^https:\/\/auth.aliyundrive.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/aliyunpan2_cookie.js, requires-body=true, timeout=60, tag=阿里云盘@lowking, enable={aliyunpan2}, argument=[{aliyunpan2}]
 
 # > 爱奇艺
 # hostname = 
-http-request ^https:\/\/passport\.iqiyi\.com\/apis\/user\/ script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, timeout=60, tag=爱奇艺, enable={iqiyi}, argument=[{iqiyi}]
+http-request ^https:\/\/passport\.iqiyi\.com\/apis\/user\/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/iqiyi_cookie.js, timeout=60, tag=爱奇艺, enable={iqiyi}, argument=[{iqiyi}]
 
 
 
 # >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
 # > bing必应
 # hostname = 
-http-request ^https:\/\/rewards\.bing\.com script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bing/bingPoint.js, timeout=60, tag=bing获取积分cookie, enable={bing}, argument=[{bing}]
+http-request ^https:\/\/rewards\.bing\.com script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/bing_cookie.js, timeout=60, tag=bing获取积分cookie, enable={bing}, argument=[{bing}]
 
 # > 百度贴吧
 # hostname = 
-http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js, timeout=60, tag=百度贴吧@NobyDa, enable={tieba}, argument=[{tieba}]
+http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/tieba_cookie.js, timeout=60, tag=百度贴吧@NobyDa, enable={tieba}, argument=[{tieba}]
 
 # > 哔哩哔哩漫画
 # hostname = 
-http-request ^https:\/\/passport\.biligame\.com\/api\/login\/sso.+?version%22%3A%22(3|4|5) script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js, timeout=60, tag=哔哩哔哩漫画@NobyDa, enable={bilibili_manga}, argument=[{bilibili_manga}]
+http-request ^https:\/\/passport\.biligame\.com\/api\/login\/sso.+?version%22%3A%22(3|4|5) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/bilibili_manga_cookie.js, timeout=60, tag=哔哩哔哩漫画@NobyDa, enable={bilibili_manga}, argument=[{bilibili_manga}]
 
 # 哔哩哔哩大会员特权领取cookie
-http-request https:\/\/api.bilibili.com\/x\/vip\/privilege\/receive script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bilibili/privilegeReceive.js, timeout=60, tag=哔哩哔哩大会员特权获取cookie@lowking, enable={bilibili_vip}, argument=[{bilibili_vip}]
+http-request https:\/\/api.bilibili.com\/x\/vip\/privilege\/receive script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/bilibili_vip_cookie.js, timeout=60, tag=哔哩哔哩大会员特权获取cookie@lowking, enable={bilibili_vip}, argument=[{bilibili_vip}]
 
 # 哔哩哔哩番剧监控cookie
-http-request https?:\/\/app.bilibili.com\/x\/v2\/space\/bangumi script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bilibili/bangumiMonitor.js, timeout=60, tag=哔哩哔哩番剧监控cookie@lowking, enable={bilibili_bangumi}, argument=[{bilibili_bangumi}]
+http-request https?:\/\/app.bilibili.com\/x\/v2\/space\/bangumi script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/bilibili_bangumi_cookie.js, timeout=60, tag=哔哩哔哩番剧监控cookie@lowking, enable={bilibili_bangumi}, argument=[{bilibili_bangumi}]
 
 # 哔哩哔哩
-http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js, timeout=60, tag=哔哩哔哩@chavyleung, enable={bilibili}, argument=[{bilibili}]
+http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/bilibili_cookie.js, timeout=60, tag=哔哩哔哩@chavyleung, enable={bilibili}, argument=[{bilibili}]
 
 
 
@@ -196,12 +196,12 @@ http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path=https://raw.g
 # >>>>>>>>>>>>>>> ✅ C ✅ <<<<<<<<<<<<<<
 # > CSDN
 # hostname = 
-http-request ^https:\/\/passport.csdn.net\/v2\/api\/app\/login\/checkAndRefreshToken script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js, timeout=60, tag=CSDN, enable={csdn}, argument=[{csdn}]
-http-request ^https:\/\/gw.csdn.net\/mini-app\/v2\/lucky_draw\/login\/sign_in\? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js, timeout=60, tag=CSDN, enable={csdn2}, argument=[{csdn2}]
+http-request ^https:\/\/passport.csdn.net\/v2\/api\/app\/login\/checkAndRefreshToken script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/csdn_cookie.js, timeout=60, tag=CSDN, enable={csdn}, argument=[{csdn}]
+http-request ^https:\/\/gw.csdn.net\/mini-app\/v2\/lucky_draw\/login\/sign_in\? script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/csdn_cookie.js, timeout=60, tag=CSDN, enable={csdn2}, argument=[{csdn2}]
 
 # > 彩云
 # hostname = 
-http-request ^https?:\/\/api.weather\.com script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, timeout=60, tag=彩云, enable={caiyun}, argument=[{caiyun}]
+http-request ^https?:\/\/api.weather\.com script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/caiyun_cookie.js, timeout=60, tag=彩云, enable={caiyun}, argument=[{caiyun}]
 
 
 
@@ -209,29 +209,29 @@ http-request ^https?:\/\/api.weather\.com script-path=https://raw.githubusercont
 # >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
 # > 滴滴出行-滴滴果园 获取token
 # tips = ddgyToken: 必填，账号token，多账号换行或者@隔开，格式uid&token。uid不可随便填，主要是方便区分账号用
-http-request ^https?:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/newWatering\? script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, requires-body=true, timeout=60, tag=滴滴果园获取token, enable={didi_guoyuan}, argument=[{didi_guoyuan}]
+http-request ^https?:\/\/game\.xiaojukeji\.com\/api\/game\/plant\/newWatering\? script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/get_cookie.js, requires-body=true, timeout=60, tag=滴滴果园获取token, enable={didi_guoyuan}, argument=[{didi_guoyuan}]
 
 # > 滴滴打车
 # tips = 微信小程序 -- 滴滴出行, 第一次注册登录后可能需要退出再进一次
-http-response ^https:\/\/epassport\.diditaxi\.com\.cn\/passport\/login\/v5\/signInByOpenid script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, requires-body=true, timeout=60, tag=滴滴打车, enable={didi}, argument=[{didi}]
+http-response ^https:\/\/epassport\.diditaxi\.com\.cn\/passport\/login\/v5\/signInByOpenid script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/get_cookie.js, requires-body=true, timeout=60, tag=滴滴打车, enable={didi}, argument=[{didi}]
 
 # > 抖音 抖抖果园
 # hostname = 
-http-request ^https://minigame.zijieapi.com/ttgame/game_orchard_ecom/polling_info script-path=https://raw.githubusercontent.com/LinYuanovo/scripts/main/dygy.js, timeout=60, tag=抖音-抖抖果园, enable={douyin_guoyuan}, argument=[{douyin_guoyuan}]
+http-request ^https://minigame.zijieapi.com/ttgame/game_orchard_ecom/polling_info script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/douyin_guoyuan_cookie.js, timeout=60, tag=抖音-抖抖果园, enable={douyin_guoyuan}, argument=[{douyin_guoyuan}]
 
 # > 斗鱼鱼吧 获取cookie
 # hostname = 
-http-request ^https://yuba.douyu.com/wbapi/web/group/myFollow? script-path=https://raw.githubusercontent.com/lowking/Scripts/master/douyu/yubaSign.js, timeout=60, tag=斗鱼鱼吧, enable={douyu_yuba}, argument=[{douyu_yuba}]
+http-request ^https://yuba.douyu.com/wbapi/web/group/myFollow? script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/douyu_yuba_cookie.js, timeout=60, tag=斗鱼鱼吧, enable={douyu_yuba}, argument=[{douyu_yuba}]
 
 # > 懂球帝
 # hostname = 
-http-request ^https:\/\/api\.dongqiudi\.com\/v2\/user\/is_login script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/dongqiudi/dongqiudi.cookie.js, timeout=60, tag=懂球帝, enable={dongqiudi}, argument=[{dongqiudi}]
+http-request ^https:\/\/api\.dongqiudi\.com\/v2\/user\/is_login script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/dongqiudi_cookie.js, timeout=60, tag=懂球帝, enable={dongqiudi}, argument=[{dongqiudi}]
 
 # > 叮咚农场
-http-request https:\/\/maicai\.api\.ddxq\.mobi\/user\/checkLogin script-path=https://raw.githubusercontent.com/iepngs/Script/master/dingdong/index.js, timeout=60, tag=叮咚农场, enable={dingdong_nongchang}, argument=[{dingdong_nongchang}]
+http-request https:\/\/maicai\.api\.ddxq\.mobi\/user\/checkLogin script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/dingdong_nongchang_cookie.js, timeout=60, tag=叮咚农场, enable={dingdong_nongchang}, argument=[{dingdong_nongchang}]
 
 # > 叮咚果园
-http-request https:\/\/farm\.api\.ddxq\.mobi\/api\/v2\/props\/feed script-path=https://raw.githubusercontent.com/iepngs/Script/master/dingdong/ddgy.js, timeout=60, tag=叮咚果园获取Cookie, enable={dingdong_guoyuan}, argument=[{dingdong_guoyuan}]
+http-request https:\/\/farm\.api\.ddxq\.mobi\/api\/v2\/props\/feed script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/dingdong_guoyuan_cookie.js, timeout=60, tag=叮咚果园获取Cookie, enable={dingdong_guoyuan}, argument=[{dingdong_guoyuan}]
 
 
 
@@ -242,11 +242,11 @@ http-request https:\/\/farm\.api\.ddxq\.mobi\/api\/v2\/props\/feed script-path=h
 # >>>>>>>>>>>>>>> ✅ F ✅ <<<<<<<<<<<<<<
 # > 飞客茶馆
 # hostname = www.flyert.com.cn
-http-request ^https?:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=getdata&.* script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/CheckIn/flyert.js, timeout=60, tag=飞客茶馆获取cookie, enable={flyert}, argument=[{flyert}]
+http-request ^https?:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=getdata&.* script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/flyert_cookie.js, timeout=60, tag=飞客茶馆获取cookie, enable={flyert}, argument=[{flyert}]
 
 # > 樊登读书
 # hostname = 
-http-request ^https://api\.dushu\.io/CheckIn script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/fandeng/fandeng.cookie.js, requires-body=true, timeout=60, tag=樊登读书, enable={fandeng}, argument=[{fandeng}]
+http-request ^https://api\.dushu\.io/CheckIn script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/fandeng_cookie.js, requires-body=true, timeout=60, tag=樊登读书, enable={fandeng}, argument=[{fandeng}]
 
 
 
@@ -259,11 +259,11 @@ http-request ^https://api\.dushu\.io/CheckIn script-path=https://raw.githubuserc
 # >>>>>>>>>>>>>>> ✅ H ✅ <<<<<<<<<<<<<<
 # > hifini
 # hostname = 
-http-request https:\/\/www.hifini.com\/my.htm script-path=https://raw.githubusercontent.com/lowking/Scripts/master/hifini/hifiniSign.js, timeout=60, tag=hifini-签到cookie, enable={hifini}, argument=[{hifini}]
+http-request https:\/\/www.hifini.com\/my.htm script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/hifini_cookie.js, timeout=60, tag=hifini-签到cookie, enable={hifini}, argument=[{hifini}]
 
 # > 合创
 # hostname = 
-http-request ^https:\/\/wxprdapplet\.gac-nio\.com\/community\/userSignIn\/simpleAuth\/front\/v3\.1\.3\.5\/signV2$ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hycan/hycan.cookie.js, timeout=60, tag=合创.cookie, enable={hycan}, argument=[{hycan}]
+http-request ^https:\/\/wxprdapplet\.gac-nio\.com\/community\/userSignIn\/simpleAuth\/front\/v3\.1\.3\.5\/signV2$ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/hycan_cookie.js, timeout=60, tag=合创.cookie, enable={hycan}, argument=[{hycan}]
 
 
 
@@ -277,8 +277,8 @@ http-request ^https:\/\/wxprdapplet\.gac-nio\.com\/community\/userSignIn\/simple
 # > 京东
 # hostname = home.m.jd.com, un.m.jd.com, sec.m.jd.com
 # 浏览器登录京东，点击右下角我的页面获取
-http-request ^https:\/\/home\.m\.jd\.com\/myJd\/(newhome|home)\.action script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingdong/jd_cookie.js, timeout=60, tag=获取京东网页Cookie, enable={jd_web}, argument=[{jd_web}]
-http-request ^https:\/\/my\.m\.jd\.com script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingdong/jd_cookie.js, timeout=60, tag=获取京东网页Cookie, enable={jd_web2}, argument=[{jd_web2}]
+http-request ^https:\/\/home\.m\.jd\.com\/myJd\/(newhome|home)\.action script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/jd_web_cookie.js, timeout=60, tag=获取京东网页Cookie, enable={jd_web}, argument=[{jd_web}]
+http-request ^https:\/\/my\.m\.jd\.com script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/jd_web_cookie.js, timeout=60, tag=获取京东网页Cookie, enable={jd_web2}, argument=[{jd_web2}]
 # 打开京东APP-右上角齿轮设置-点击个人资料
 # http-request ^https:\/\/un\.m\.jd\.com\/cgi-bin\/app\/appjmp\? script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingdong/jd_cookie.js, tag=获取京东APP-Cookie
 # 打开京东APP-右上角齿轮设置-点击个人资料-点击账号名
@@ -286,23 +286,23 @@ http-request ^https:\/\/my\.m\.jd\.com script-path=https://raw.githubusercontent
 
 # > 京东读书
 # hostname = 
-http-request ^https:\/\/jdread-api\.jd\.com\/* script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/jddsSign.js, timeout=60, tag=京东读书, enable={jd_read}, argument=[{jd_read}]
+http-request ^https:\/\/jdread-api\.jd\.com\/* script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/jd_read_cookie.js, timeout=60, tag=京东读书, enable={jd_read}, argument=[{jd_read}]
 
 # > 京东到家
 # hostname = 
-http-request ^https:\/\/daojia.jd.com/client(.*?)functionId=signin(.*?)userSigninNew script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.cookie.js, requires-body=true, timeout=60, tag=京东到家, enable={jd_daojia}, argument=[{jd_daojia}]
+http-request ^https:\/\/daojia.jd.com/client(.*?)functionId=signin(.*?)userSigninNew script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/jd_daojia_cookie.js, requires-body=true, timeout=60, tag=京东到家, enable={jd_daojia}, argument=[{jd_daojia}]
 
 # > 建行生活
 # hostname = 
-http-request ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js, requires-body=true, timeout=60, tag=建行生活-签到cookie, enable={ccb_life}, argument=[{ccb_life}]
+http-request ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/ccb_life_cookie.js, requires-body=true, timeout=60, tag=建行生活-签到cookie, enable={ccb_life}, argument=[{ccb_life}]
 
 # > 柚子快报
 # hostname = 
-http-request ^http?:\/\/hongbao\.youzikuaibao\.com\/youzi\/* script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/yzkbSign.js, requires-body=true, timeout=60, tag=柚子快报, enable={youzi}, argument=[{youzi}]
+http-request ^http?:\/\/hongbao\.youzikuaibao\.com\/youzi\/* script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/youzi_cookie.js, requires-body=true, timeout=60, tag=柚子快报, enable={youzi}, argument=[{youzi}]
 
 # > 加油广东
 # hostname = 
-http-request ^https:\/\/m.gdoil.cn\/webapi\/usersign\/addusersign script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/gdoil/gdoil.cookie.js, timeout=60, tag=加油广东, enable={gdoil}, argument=[{gdoil}]
+http-request ^https:\/\/m.gdoil.cn\/webapi\/usersign\/addusersign script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/gdoil_cookie.js, timeout=60, tag=加油广东, enable={gdoil}, argument=[{gdoil}]
 
 
 
@@ -310,18 +310,18 @@ http-request ^https:\/\/m.gdoil.cn\/webapi\/usersign\/addusersign script-path=ht
 # >>>>>>>>>>>>>>> ✅ K ✅ <<<<<<<<<<<<<<
 # > 快手果园
 # hostname = 
-http-request ^https://ug-fission.kuaishou.com/rest/n/darwin/orchard/water/watering script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/kuaishou/ks_getCookie.js, timeout=60, tag=快手果园-获取cookie, enable={kuaishou_guoyuan}, argument=[{kuaishou_guoyuan}]
+http-request ^https://ug-fission.kuaishou.com/rest/n/darwin/orchard/water/watering script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/kuaishou_guoyuan_cookie.js, timeout=60, tag=快手果园-获取cookie, enable={kuaishou_guoyuan}, argument=[{kuaishou_guoyuan}]
 
 # > 快看漫画
 # hostname = 
-http-request ^https:\/\/api\.kkmh\.com\/v\d\/passport\/user script-path=https://raw.githubusercontent.com/NobyDa/Script/master/KuaiKan-DailyBonus/KKMH.js, timeout=60, tag=快看漫画-cookie, enable={kkmh}, argument=[{kkmh}]
+http-request ^https:\/\/api\.kkmh\.com\/v\d\/passport\/user script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/kkmh_cookie.js, timeout=60, tag=快看漫画-cookie, enable={kkmh}, argument=[{kkmh}]
 
 
 
 # >>>>>>>>>>>>>>> ✅ L ✅ <<<<<<<<<<<<<<
 # > Luka 获取cookie
 # hostname = 
-http-request ^https?:\/\/luka\-graphql\.ling\.cn\/graphql\/mobile\?operation=UserInfoWithPendingRobotQuery script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/luka/luka_signin.js, timeout=60, tag=Luka-获取cookie, enable={luka}, argument=[{luka}]
+http-request ^https?:\/\/luka\-graphql\.ling\.cn\/graphql\/mobile\?operation=UserInfoWithPendingRobotQuery script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/luka_cookie.js, timeout=60, tag=Luka-获取cookie, enable={luka}, argument=[{luka}]
 
 
 
@@ -329,32 +329,32 @@ http-request ^https?:\/\/luka\-graphql\.ling\.cn\/graphql\/mobile\?operation=Use
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
 # > 美团
 # 进入“完善资料”，这一步可以获取到用户ID用于更新多账号信息
-http-response https://open.meituan.com/user/v1/info/auditting script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, requires-body=true, timeout=60, tag=美团token, enable={meituan}, argument=[{meituan}]
+http-response https://open.meituan.com/user/v1/info/auditting script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/get_cookie.js, requires-body=true, timeout=60, tag=美团token, enable={meituan}, argument=[{meituan}]
 # 旧版本
-http-request https://gaea.meituan.com/mapi/usercenter script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, timeout=60, tag=美团旧版本token, enable={meituan_old}, argument=[{meituan_old}]
+http-request https://gaea.meituan.com/mapi/usercenter script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/get_cookie.js, timeout=60, tag=美团旧版本token, enable={meituan_old}, argument=[{meituan_old}]
 
 # > 美团外卖
 # hostname = 
-http-request ^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/(entry|doaction) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js, timeout=60, tag=美团外卖, enable={meituan_waimai}, argument=[{meituan_waimai}]
+http-request ^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/(entry|doaction) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/meituan_waimai_cookie.js, timeout=60, tag=美团外卖, enable={meituan_waimai}, argument=[{meituan_waimai}]
 
 # > 芒果TV
 # hostname = 
-http-request ^https:\/\/credits.bz.mgtv.com\/user\/creditsTake script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.cookie.js, timeout=60, tag=芒果TV, enable={mgtv}, argument=[{mgtv}]
+http-request ^https:\/\/credits.bz.mgtv.com\/user\/creditsTake script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/mgtv_cookie.js, timeout=60, tag=芒果TV, enable={mgtv}, argument=[{mgtv}]
 
 # > 米游社
 # hostname = 
-http-request ^https:\/\/api-takumi.mihoyo.com\/apihub\/api\/getGameList script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mihoyo/mihoyo.cookie.js, timeout=60, tag=米游社, enable={mihoyo}, argument=[{mihoyo}]
+http-request ^https:\/\/api-takumi.mihoyo.com\/apihub\/api\/getGameList script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/mihoyo_cookie.js, timeout=60, tag=米游社, enable={mihoyo}, argument=[{mihoyo}]
 
 # > 猫咪音乐网
 # hostname = 
-http-request https:\/\/www.maomicd.com\/plugin.php\?id=k_misign:sign&operation=qiandao script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/maomicd/maomicd.cookie.js, timeout=60, tag=猫咪音乐网, enable={maomicd}, argument=[{maomicd}]
+http-request https:\/\/www.maomicd.com\/plugin.php\?id=k_misign:sign&operation=qiandao script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/maomicd_cookie.js, timeout=60, tag=猫咪音乐网, enable={maomicd}, argument=[{maomicd}]
 
 
 
 # >>>>>>>>>>>>>>> ✅ N ✅ <<<<<<<<<<<<<<
 # > nga
 # hostname = 
-http-request ^https:\/\/ngabbs.com\/nuke.php\?? script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/nga/nga.cookie.js, requires-body=true, timeout=60, tag=nga.cookie, enable={nga}, argument=[{nga}]
+http-request ^https:\/\/ngabbs.com\/nuke.php\?? script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/nga_cookie.js, requires-body=true, timeout=60, tag=nga.cookie, enable={nga}, argument=[{nga}]
 
 
 
@@ -367,39 +367,39 @@ http-request ^https:\/\/ngabbs.com\/nuke.php\?? script-path=https://raw.githubus
 # >>>>>>>>>>>>>>> ✅ P ✅ <<<<<<<<<<<<<<
 # > 拼多多果园
 # hostname = 
-http-request https://m.pinduoduo.net/proxy/api/api/server/_stm script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/pinduoduo/pdd_getToken.js, timeout=60, tag=拼多多果园, enable={pdd_guoyuan}, argument=[{pdd_guoyuan}]
+http-request https://m.pinduoduo.net/proxy/api/api/server/_stm script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/pdd_guoyuan_cookie.js, timeout=60, tag=拼多多果园, enable={pdd_guoyuan}, argument=[{pdd_guoyuan}]
 
 # > 朴朴签到cookie
 # hostname = 
-http-request https:\/\/cauth.pupuapi.com\/clientauth\/user\/verify_login script-path=https://raw.githubusercontent.com/lowking/Scripts/master/pupu/pupuCheckIn.js, timeout=60, tag=朴朴签到cookie, enable={pupu}, argument=[{pupu}]
+http-request https:\/\/cauth.pupuapi.com\/clientauth\/user\/verify_login script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/pupu_cookie.js, timeout=60, tag=朴朴签到cookie, enable={pupu}, argument=[{pupu}]
 
 
 
 # >>>>>>>>>>>>>>> ✅ Q ✅ <<<<<<<<<<<<<<
 # > QQ VipCheckIn
 # hostname = 
-http-request https:\/\/proxy.vac.qq.com\/cgi-bin\/srfentry.fcgi? script-path=https://raw.githubusercontent.com/lowking/Scripts/master/QQVip/qqVipCheckIn.js, timeout=60, tag=QQ-VipCheckIn, enable={qq_vip}, argument=[{qq_vip}]
+http-request https:\/\/proxy.vac.qq.com\/cgi-bin\/srfentry.fcgi? script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/qq_vip_cookie.js, timeout=60, tag=QQ-VipCheckIn, enable={qq_vip}, argument=[{qq_vip}]
 
 # > QQ萌宠 cookie
 # hostname = 
-http-response https:\/\/qqpet.jwetech.com\/api\/authorizations script-path=https://raw.githubusercontent.com/lowking/Scripts/master/QQPet/lkQQPet.js, requires-body=true, timeout=60, tag=QQ萌宠cookie, enable={qq_pet}, argument=[{qq_pet}]
+http-response https:\/\/qqpet.jwetech.com\/api\/authorizations script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/qq_pet_cookie.js, requires-body=true, timeout=60, tag=QQ萌宠cookie, enable={qq_pet}, argument=[{qq_pet}]
 
 # > 汽车之家极速版
 # hostname = 
-http-request ^https:\/\/mobile\.app\.autohome\.com\.cn\/fasthome\/* script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/qczjSign.js, requires-body=true, timeout=60, tag=汽车之家极速版, enable={autohome}, argument=[{autohome}]
-http-request ^http:\/\/mobile\.app\.autohome\.com\.cn\/fasthome\/coin\/* script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/qczjSign.js, requires-body=true, timeout=60, tag=qczjSign, enable={qczj}, argument=[{qczj}]
+http-request ^https:\/\/mobile\.app\.autohome\.com\.cn\/fasthome\/* script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/autohome_cookie.js, requires-body=true, timeout=60, tag=汽车之家极速版, enable={autohome}, argument=[{autohome}]
+http-request ^http:\/\/mobile\.app\.autohome\.com\.cn\/fasthome\/coin\/* script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/autohome_cookie.js, requires-body=true, timeout=60, tag=qczjSign, enable={qczj}, argument=[{qczj}]
 
 # > 去哪儿
 # hostname = 
-http-request ^https:\/\/user.qunar.com\/webapi\/member\/signIndexV2.htm script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qunar/qunar.cookie.js, timeout=60, tag=去哪儿.cookie, enable={qunar}, argument=[{qunar}]
+http-request ^https:\/\/user.qunar.com\/webapi\/member\/signIndexV2.htm script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/qunar_cookie.js, timeout=60, tag=去哪儿.cookie, enable={qunar}, argument=[{qunar}]
 
 # > 全民K歌
 # hostname = 
-http-request ^https://node\.kg\.qq\.com/webapp/proxy? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qmkg/qmkg.cookie.js, requires-body=true, timeout=60, tag=全民K歌.cookie, enable={qmkg}, argument=[{qmkg}]
+http-request ^https://node\.kg\.qq\.com/webapp/proxy? script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/qmkg_cookie.js, requires-body=true, timeout=60, tag=全民K歌.cookie, enable={qmkg}, argument=[{qmkg}]
 
 # > 奇瑞汽车App
 # hostname = mobile-consumer-sapp.chery.cn
-http-response ^https:\/\/mobile-consumer-sapp\.chery\.cn\/web\/user\/current\/details\? script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, requires-body=true, timeout=60, tag=奇瑞汽车App获取多账号token, enable={chery}, argument=[{chery}]
+http-response ^https:\/\/mobile-consumer-sapp\.chery\.cn\/web\/user\/current\/details\? script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/get_cookie.js, requires-body=true, timeout=60, tag=奇瑞汽车App获取多账号token, enable={chery}, argument=[{chery}]
 
 
 
@@ -413,46 +413,46 @@ http-response ^https:\/\/mobile-consumer-sapp\.chery\.cn\/web\/user\/current\/de
 # >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
 # > 什么值得买 (APP点击个人头像/个人资料获取)
 # hostname = 
-http-request ^https:\/\/user-api\.smzdm\.com\/users\/info script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, timeout=60, tag=什么值得买, enable={smzdm}, argument=[{smzdm}]
+http-request ^https:\/\/user-api\.smzdm\.com\/users\/info script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/get_cookie.js, timeout=60, tag=什么值得买, enable={smzdm}, argument=[{smzdm}]
 
 # > 顺丰速运
 # tips = 打开小程序或APP-我的-积分, 捉以下几种url之一,把整个url放到变量 sfsyUrl 里,多账号换行分割
-http-request ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, timeout=60, tag=顺丰速运顺丰速运, enable={sfsy}, argument=[{sfsy}]
-http-request ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/app\/shareRedirect script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, timeout=60, tag=顺丰速运, enable={sfsy2}, argument=[{sfsy2}]
+http-request ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/get_cookie.js, timeout=60, tag=顺丰速运顺丰速运, enable={sfsy}, argument=[{sfsy}]
+http-request ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/app\/shareRedirect script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/get_cookie.js, timeout=60, tag=顺丰速运, enable={sfsy2}, argument=[{sfsy2}]
 
 # > 水滴筹
 # hostname = 
-http-request ^https:\/\/api\.sdbao\.com\/* script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/sdcbxscSign.js, requires-body=true, timeout=60, tag=水滴筹, enable={shuidichou}, argument=[{shuidichou}]
+http-request ^https:\/\/api\.sdbao\.com\/* script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/shuidichou_cookie.js, requires-body=true, timeout=60, tag=水滴筹, enable={shuidichou}, argument=[{shuidichou}]
 
 # > 水晶DJ
 # hostname = 
-http-request ^http:\/\/app\.oscaches\.com\/* script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/sjdjSign.js, requires-body=true, timeout=60, tag=水晶DJ, enable={sjdj}, argument=[{sjdj}]
+http-request ^http:\/\/app\.oscaches\.com\/* script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/sjdj_cookie.js, requires-body=true, timeout=60, tag=水晶DJ, enable={sjdj}, argument=[{sjdj}]
 
 # > 时光相册
 # hostname = 
-http-request ^https:\/\/api.everphoto.cn\/users\/self\/checkin\/v2 script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/everphoto/everphoto.cookie.js, timeout=60, tag=时光相册.cookie, enable={everphoto}, argument=[{everphoto}]
+http-request ^https:\/\/api.everphoto.cn\/users\/self\/checkin\/v2 script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/everphoto_cookie.js, timeout=60, tag=时光相册.cookie, enable={everphoto}, argument=[{everphoto}]
 
 # > 苏宁易购
 # hostname = 
-http-request ^https:\/\/passport.suning.com\/ids\/login$ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js, requires-body=true, timeout=60, tag=苏宁易购.cookie, enable={suning}, argument=[{suning}]
-http-request ^https:\/\/luckman.suning.com\/luck-web\/sign\/api\/clock_sign.do script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js, timeout=60, tag=苏宁易购.cookie, enable={suning2}, argument=[{suning2}]
-http-request ^https:\/\/sign.suning.com\/sign-web\/m\/promotion\/sign\/doSign.do script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js, timeout=60, tag=苏宁易购.cookie, enable={suning3}, argument=[{suning3}]
-http-request ^https:\/\/gameapi.suning.com\/sngame-web\/(api\/signin\/private\/customerSignOperation.do|gateway\/api\/queryPrize.do) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js, timeout=60, tag=苏宁易购.cookie, enable={suning4}, argument=[{suning4}]
+http-request ^https:\/\/passport.suning.com\/ids\/login$ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/suning_cookie.js, requires-body=true, timeout=60, tag=苏宁易购.cookie, enable={suning}, argument=[{suning}]
+http-request ^https:\/\/luckman.suning.com\/luck-web\/sign\/api\/clock_sign.do script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/suning_cookie.js, timeout=60, tag=苏宁易购.cookie, enable={suning2}, argument=[{suning2}]
+http-request ^https:\/\/sign.suning.com\/sign-web\/m\/promotion\/sign\/doSign.do script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/suning_cookie.js, timeout=60, tag=苏宁易购.cookie, enable={suning3}, argument=[{suning3}]
+http-request ^https:\/\/gameapi.suning.com\/sngame-web\/(api\/signin\/private\/customerSignOperation.do|gateway\/api\/queryPrize.do) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/suning_cookie.js, timeout=60, tag=苏宁易购.cookie, enable={suning4}, argument=[{suning4}]
 
 
 
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
 # > 太好购
 # hostname = 
-http-request ^https:\/\/cxdng\.cpic\.com\.cn\/taieshop\/api\/CustomerFansInfo\/GetFansInfo script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/thg.cookie.js, timeout=60, tag=太好购, enable={thg}, argument=[{thg}]
+http-request ^https:\/\/cxdng\.cpic\.com\.cn\/taieshop\/api\/CustomerFansInfo\/GetFansInfo script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/thg_cookie.js, timeout=60, tag=太好购, enable={thg}, argument=[{thg}]
 
 # > 天天挖矿
 # hostname = 
-http-request ^https:\/\/operation-api\.jimistore\.com\/* script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/ttwbxcxSign.js, requires-body=true, timeout=60, tag=天天挖矿, enable={ttwk}, argument=[{ttwk}]
+http-request ^https:\/\/operation-api\.jimistore\.com\/* script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/ttwk_cookie.js, requires-body=true, timeout=60, tag=天天挖矿, enable={ttwk}, argument=[{ttwk}]
 
 # > 腾讯视频
 # hostname = 
-http-request ^https:\/\/access.video.qq.com\/user\/auth_refresh script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js, timeout=60, tag=腾讯视频.cookie, enable={videoqq}, argument=[{videoqq}]
+http-request ^https:\/\/access.video.qq.com\/user\/auth_refresh script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/videoqq_cookie.js, timeout=60, tag=腾讯视频.cookie, enable={videoqq}, argument=[{videoqq}]
 
 
 
@@ -463,7 +463,7 @@ http-request ^https:\/\/access.video.qq.com\/user\/auth_refresh script-path=http
 # >>>>>>>>>>>>>>> ✅ V ✅ <<<<<<<<<<<<<<
 # > V2EX
 # hostname = 
-http-request ^https:\/\/www\.v2ex\.com\/mission\/daily script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/quanx/v2ex.cookie.js, timeout=60, tag=v2ex.cookie, enable={v2ex}, argument=[{v2ex}]
+http-request ^https:\/\/www\.v2ex\.com\/mission\/daily script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/v2ex_cookie.js, timeout=60, tag=v2ex.cookie, enable={v2ex}, argument=[{v2ex}]
 
 
 
@@ -471,60 +471,60 @@ http-request ^https:\/\/www\.v2ex\.com\/mission\/daily script-path=https://raw.g
 # >>>>>>>>>>>>>>> ✅ W ✅ <<<<<<<<<<<<<<
 # > WPS
 # hostname = 
-http-request ^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js, timeout=60, tag=wps.cookie, enable={wps}, argument=[{wps}]
+http-request ^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/wps_cookie.js, timeout=60, tag=wps.cookie, enable={wps}, argument=[{wps}]
 
 # > 微博 获取cookie
 # hostname = 
-http-request ^https:\/\/m?api\.weibo\.c(n|om)\/\d\/users\/show script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, timeout=60, tag=微博-获取cookie, enable={weibo}, argument=[{weibo}]
-http-request ^https:\/\/api\.weibo\.cn\/\d\/users\/show script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js, timeout=60, tag=微博-获取cookie, enable={weibo2}, argument=[{weibo2}]
-http-request ^https:\/\/api\.weibo\.cn\/2\/logservice\/attach script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js, timeout=60, tag=微博-获取cookie, enable={weibo3}, argument=[{weibo3}]
-http-request https:\/\/weibo\.com\/p\/aj\/general\/button\?ajwvr=6&api=http:\/\/i\.huati\.weibo\.com\/aj\/super\/checkin script-path=https://raw.githubusercontent.com/lowking/Scripts/master/weibo/weiboSTCookie.js, timeout=60, tag=微博-获取cookie, enable={weibo4}, argument=[{weibo4}]
+http-request ^https:\/\/m?api\.weibo\.c(n|om)\/\d\/users\/show script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/get_cookie.js, timeout=60, tag=微博-获取cookie, enable={weibo}, argument=[{weibo}]
+http-request ^https:\/\/api\.weibo\.cn\/\d\/users\/show script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/weibo2_cookie.js, timeout=60, tag=微博-获取cookie, enable={weibo2}, argument=[{weibo2}]
+http-request ^https:\/\/api\.weibo\.cn\/2\/logservice\/attach script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/weibo2_cookie.js, timeout=60, tag=微博-获取cookie, enable={weibo3}, argument=[{weibo3}]
+http-request https:\/\/weibo\.com\/p\/aj\/general\/button\?ajwvr=6&api=http:\/\/i\.huati\.weibo\.com\/aj\/super\/checkin script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/weibo4_cookie.js, timeout=60, tag=微博-获取cookie, enable={weibo4}, argument=[{weibo4}]
 
 # > 吾爱破解 cookie
 # hostname = 
-http-request https:\/\/www\.52pojie\.cn\/home\.php\? script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js, timeout=60, tag=吾爱破解cookie, enable={pojie52}, argument=[{pojie52}]
+http-request https:\/\/www\.52pojie\.cn\/home\.php\? script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/pojie52_cookie.js, timeout=60, tag=吾爱破解cookie, enable={pojie52}, argument=[{pojie52}]
 
 # > 网易云音乐
 # hostname = 
-http-request ^https:\/\/music.163.com\/weapi\/user\/level script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.cookie.js, requires-body=true, timeout=60, tag=网易云音乐.cookie, enable={neteasemusic}, argument=[{neteasemusic}]
+http-request ^https:\/\/music.163.com\/weapi\/user\/level script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/neteasemusic_cookie.js, requires-body=true, timeout=60, tag=网易云音乐.cookie, enable={neteasemusic}, argument=[{neteasemusic}]
 
 # > 网易新闻
 # hostname = 
-http-request ^https:\/\/(.*?)c\.m\.163\.com\/uc\/api\/sign\/v3\/commit script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasenews/neteasenews.cookie.js, requires-body=true, timeout=60, tag=网易新闻.cookie, enable={neteasenews}, argument=[{neteasenews}]
+http-request ^https:\/\/(.*?)c\.m\.163\.com\/uc\/api\/sign\/v3\/commit script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/neteasenews_cookie.js, requires-body=true, timeout=60, tag=网易新闻.cookie, enable={neteasenews}, argument=[{neteasenews}]
 
 # > 网易考拉
 # hostname = 
-http-request ^https:\/\/m-bean\.kaola\.com/m/point/sign\.html script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wykl/wykl.cookie.js, requires-body=true, timeout=60, tag=网易考拉.cookie, enable={kaola}, argument=[{kaola}]
+http-request ^https:\/\/m-bean\.kaola\.com/m/point/sign\.html script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/kaola_cookie.js, requires-body=true, timeout=60, tag=网易考拉.cookie, enable={kaola}, argument=[{kaola}]
 
 # > 微商星球
 # hostname = 
-http-request ^https:\/\/api\.momosyb\.com\/(v6|v1)\/(fans|user)\/* script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/wsxqSign.js, requires-body=true, timeout=60, tag=微商星球, enable={wsxq}, argument=[{wsxq}]
+http-request ^https:\/\/api\.momosyb\.com\/(v6|v1)\/(fans|user)\/* script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/wsxq_cookie.js, requires-body=true, timeout=60, tag=微商星球, enable={wsxq}, argument=[{wsxq}]
 
 # > 蔚来
 # hostname = 
-http-request ^https:\/\/app\.nio\.com\/api\/1\/app\/daily_checkin script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/nio/nio.cookie.js, timeout=60, tag=蔚来.cookie, enable={nio}, argument=[{nio}]
+http-request ^https:\/\/app\.nio\.com\/api\/1\/app\/daily_checkin script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/nio_cookie.js, timeout=60, tag=蔚来.cookie, enable={nio}, argument=[{nio}]
 
 
 
 # >>>>>>>>>>>>>>> ✅ X ✅ <<<<<<<<<<<<<<
 # > 携程
 # hostname = 
-http-request ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/ctrip/ctrip_cookie.js, timeout=60, tag=携程, enable={ctrip}, argument=[{ctrip}]
+http-request ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/14946\/json\/userBaseInfo script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/ctrip_cookie.js, timeout=60, tag=携程, enable={ctrip}, argument=[{ctrip}]
 
 # > 喜马拉雅
 # hostname = 
-http-request ^https?:\/\/.*\/mobile\-user\/(v1\/)?homePage\/.* script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js, timeout=60, tag=喜马拉雅.cookie, enable={ximalaya}, argument=[{ximalaya}]
+http-request ^https?:\/\/.*\/mobile\-user\/(v1\/)?homePage\/.* script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/ximalaya_cookie.js, timeout=60, tag=喜马拉雅.cookie, enable={ximalaya}, argument=[{ximalaya}]
 
 # > 晓晓优选
 # hostname = xxyx-client-api.xiaoxiaoyouxuan.com
-http-response ^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/my script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cookie/get_cookie.js, requires-body=true, timeout=60, tag=晓晓优选, enable={xxyx}, argument=[{xxyx}]
+http-response ^https:\/\/xxyx-client-api\.xiaoxiaoyouxuan\.com\/my script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/get_cookie.js, requires-body=true, timeout=60, tag=晓晓优选, enable={xxyx}, argument=[{xxyx}]
 
 
 
 # >>>>>>>>>>>>>>> ✅ Y ✅ <<<<<<<<<<<<<<
 # > 伊利
 # hostname = 
-http-request https:\/\/club\.yili\.com\/MALLIFChe\/MCSWSIAPI\.asmx\/Call script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.cookie.js, requires-body=true, timeout=60, tag=伊利.cookie, enable={yili}, argument=[{yili}]
+http-request https:\/\/club\.yili\.com\/MALLIFChe\/MCSWSIAPI\.asmx\/Call script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/yili_cookie.js, requires-body=true, timeout=60, tag=伊利.cookie, enable={yili}, argument=[{yili}]
 
 
 
@@ -532,25 +532,25 @@ http-request https:\/\/club\.yili\.com\/MALLIFChe\/MCSWSIAPI\.asmx\/Call script-
 # >>>>>>>>>>>>>>> ✅ Z ✅ <<<<<<<<<<<<<<
 # > 中国电信
 # hostname = e.dlife.cn, e.189.cn, wapside.189.cn
-http-request ^https:\/\/(e\.189\.cn\/store\/user|open\.e\.189\.cn\/api\/logbox\/oauth2\/loginSubmit\.do) script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_10000_cookie.js, timeout=60, tag=中国电信@FoKit, enable={telecom}, argument=[{telecom}]
-http-request ^https:\/\/wapside\.189\.cn:9001\/api\/home\/sign script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js, requires-body=true, timeout=60, tag=电信营业厅@chavyleung, enable={telecom2}, argument=[{telecom2}]
-http-request ^https:\/\/e\.dlife\.cn\/user\/loginMiddle script-path=https://raw.githubusercontent.com/dompling/Script/master/10000/index.js, tag=电信登录地址@dompling, enable={telecom3}, argument=[{telecom3}]
+http-request ^https:\/\/(e\.189\.cn\/store\/user|open\.e\.189\.cn\/api\/logbox\/oauth2\/loginSubmit\.do) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/telecom_cookie.js, timeout=60, tag=中国电信@FoKit, enable={telecom}, argument=[{telecom}]
+http-request ^https:\/\/wapside\.189\.cn:9001\/api\/home\/sign script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/telecom2_cookie.js, requires-body=true, timeout=60, tag=电信营业厅@chavyleung, enable={telecom2}, argument=[{telecom2}]
+http-request ^https:\/\/e\.dlife\.cn\/user\/loginMiddle script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/telecom3_cookie.js, tag=电信登录地址@dompling, enable={telecom3}, argument=[{telecom3}]
 
 # > 中国联通
 # hostname = act.10010.com, m.client.10010.com
-http-request ^https:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js, timeout=60, tag=中国联通.cookie, enable={unicom}, argument=[{unicom}]
-http-request ^https:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js, timeout=60, tag=中国联通.cookie, enable={unicom2}, argument=[{unicom2}]
-http-request ^https:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js, timeout=60, tag=中国联通.cookie, enable={unicom3}, argument=[{unicom3}]
+http-request ^https:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/unicom_cookie.js, timeout=60, tag=中国联通.cookie, enable={unicom}, argument=[{unicom}]
+http-request ^https:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/unicom_cookie.js, timeout=60, tag=中国联通.cookie, enable={unicom2}, argument=[{unicom2}]
+http-request ^https:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/unicom_cookie.js, timeout=60, tag=中国联通.cookie, enable={unicom3}, argument=[{unicom3}]
 # 打开中国联通app --> 首页的流量查询获取Cookie
-http-request ^https?:\/\/m\.client\.10010\.com\/serviceimportantbusiness\/smart\/smartwisdomCommonNew script-path=https://raw.githubusercontent.com/dompling/Script/master/10010/index.js, timeout=60, tag=中国联通.cookie@dompling, enable={unicom4}, argument=[{unicom4}]
+http-request ^https?:\/\/m\.client\.10010\.com\/serviceimportantbusiness\/smart\/smartwisdomCommonNew script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/unicom4_cookie.js, timeout=60, tag=中国联通.cookie@dompling, enable={unicom4}, argument=[{unicom4}]
 
 # > 追书畅读版
 # hostname = 
-http-request ^https:\/\/.+zhuishushenqi\.com\/* script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/zscdbSign.js, requires-body=true, timeout=60, tag=追书畅读版, enable={zhuishu}, argument=[{zhuishu}]
+http-request ^https:\/\/.+zhuishushenqi\.com\/* script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/zhuishu_cookie.js, requires-body=true, timeout=60, tag=追书畅读版, enable={zhuishu}, argument=[{zhuishu}]
 
 # > 知音漫客
 # hostname = 
-http-request ^https:\/\/getconfig-globalapi\.zymk\.cn\/app_api\/* script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/zymkSign.js, requires-body=true, timeout=60, tag=知音漫客, enable={zymk}, argument=[{zymk}]
+http-request ^https:\/\/getconfig-globalapi\.zymk\.cn\/app_api\/* script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/zymk_cookie.js, requires-body=true, timeout=60, tag=知音漫客, enable={zymk}, argument=[{zymk}]
 
 # > 字幕组
 # hostname = 
@@ -559,7 +559,7 @@ http-request ^https:\/\/getconfig-globalapi\.zymk\.cn\/app_api\/* script-path=ht
 
 # > 智行火车
 # hostname = 
-http-request ^https:\/\/m\.ctrip\.com/restapi/soa2/14593/json/attendanceDay? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zxhc/zxhc.cookie.js, requires-body=true, timeout=60, tag=智行火车.cookie, enable={zxhc}, argument=[{zxhc}]
+http-request ^https:\/\/m\.ctrip\.com/restapi/soa2/14593/json/attendanceDay? script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/scripts/zxhc_cookie.js, requires-body=true, timeout=60, tag=智行火车.cookie, enable={zxhc}, argument=[{zxhc}]
 
 
 [MITM]
