@@ -11,7 +11,8 @@
    "icon": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/cookie.png",
    "descs_html": [
     "<a href=\"https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/Cookies.plugin\">点击安装 Loon 插件</a>",
-    "在插件设置里开关每个抓包，抓完可关掉。"
+    "上面 90 个开关：在插件设置里开关每个抓包，抓完可关掉。",
+    "下面是已抓取的数据：每个服务抓到后自动显示在这里，空的表示还没抓到；也可以手动粘贴。"
    ],
    "settings": [
     {
@@ -643,23 +644,7 @@
      "val": "true",
      "type": "boolean",
      "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
-    }
-   ]
-  },
-  {
-   "id": "cookies_captured",
-   "name": "已抓取 Cookie",
-   "keys": [],
-   "author": "許諾",
-   "repo": "https://github.com/Crack22/loon-plugins",
-   "icons": [
-    "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/cookie.png"
-   ],
-   "script": "",
-   "descs_html": [
-    "已抓取的数据：每个服务抓到后自动显示在这里，空的表示还没抓到。"
-   ],
-   "settings": [
+    },
     {
      "id": "chavy_cookie_acfun",
      "name": "AcFun",
