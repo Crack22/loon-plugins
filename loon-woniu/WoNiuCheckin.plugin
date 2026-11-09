@@ -13,6 +13,10 @@
 [MITM]
 hostname = www.wn4k.com
 
+[Argument]
+manualRun = switch,false,tag=手动运行一次,desc=打开后运行一次，手动关闭
+
 [Script]
 http-request ^https:\/\/www\.wn4k\.com\/user\/checkin\.html tag=蜗牛 Cookie, script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_cookie.js, requires-body=false, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png
 cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_checkin.js, tag=蜗牛签到, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, enable=true
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_checkin.js, tag=手动运行一次, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, argument=[{manualRun}], enable={manualRun}

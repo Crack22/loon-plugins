@@ -26,6 +26,7 @@ const TIME_KEY = "embypulse1_time";
 const TIME_RANGE_KEY = "embypulse1_time_range";
 const TIME_TARGET_KEY = "embypulse1_time_target"; // 当天随机挑好的时间，格式 "YYYY-MM-DD HH:MM|HH:MM-HH:MM"
 const TIME_DONE_KEY = "embypulse1_time_done"; // 自动签到今天已跑过的日期
+const MANUAL_DONE_KEY = "embypulse1_manual_done"; // 手动运行一次今天已跑过的日期
 const DEFAULT_TIME_MIN = 9 * 60; // 默认 09:00
 
 // 开关值可能是 "true"/true/"1"/1，都当作开
@@ -89,6 +90,14 @@ function todayTargetMin() {
   return DEFAULT_TIME_MIN;
 }
 // 自动定时是否该跑：目标时间起 60 分钟内且今天还没跑过（窗口外不跑，避免打开 Loon 时补跑）
+// 手动运行开关：没传参数时默认关
+function manualOn() {
+  try {
+    if (typeof $argument === "undefined" || !$argument) return false;
+    const v = $argument["manualRun"];
+    return v === true || v === "true";
+  } catch (e) { return false; }
+}
 function shouldRunAuto() {
   const today = todayStr();
   if (read(TIME_DONE_KEY) === today) return false;
@@ -230,10 +239,18 @@ function finish() {
     $persistentStore.write(todayStr(), TIME_DONE_KEY);
     $notification.post(NAME + "签到", "共 " + results.length + " 个账号", results.join("\n"));
   }
+  if (manualOn()) $persistentStore.write(todayStr(), MANUAL_DONE_KEY);
   $done({});
 }
 
-if (!shouldRunAuto()) {
+if (manualOn()) {
+  // 手动运行一次：今天已跑过就悄悄退出
+  if (read(MANUAL_DONE_KEY) === todayStr()) {
+    $done({});
+  } else {
+    processNext();
+  }
+} else if (!shouldRunAuto()) {
   $done({});
 } else {
   processNext();

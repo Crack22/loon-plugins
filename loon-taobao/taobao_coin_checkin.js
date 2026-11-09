@@ -19,6 +19,7 @@ const TIME_KEY = "taobao_time";
 const TIME_RANGE_KEY = "taobao_time_range";
 const TIME_TARGET_KEY = "taobao_time_target"; // 当天随机挑好的时间，格式 "YYYY-MM-DD HH:MM|HH:MM-HH:MM"
 const TIME_DONE_KEY = "taobao_time_done"; // 自动签到今天已跑过的日期
+const MANUAL_DONE_KEY = "taobao_manual_done"; // 手动运行一次今天已跑过的日期
 const DEFAULT_TIME_MIN = 9 * 60; // 默认 09:00
 
 // 开关值可能是 "true"/true/"1"/1，都当作开
@@ -82,6 +83,14 @@ function todayTargetMin() {
   return DEFAULT_TIME_MIN;
 }
 // 自动定时是否该跑：目标时间起 60 分钟内且今天还没跑过（窗口外不跑，避免打开 Loon 时补跑）
+// 手动运行开关：没传参数时默认关
+function manualOn() {
+  try {
+    if (typeof $argument === "undefined" || !$argument) return false;
+    const v = $argument["manualRun"];
+    return v === true || v === "true";
+  } catch (e) { return false; }
+}
 function shouldRunAuto() {
   const today = todayStr();
   if (($persistentStore.read(TIME_DONE_KEY) || "") === today) return false;
@@ -171,12 +180,20 @@ function doSign(account, cb) {
 }
 
 function main() {
-  if (!shouldRunAuto()) {
+  var manual = manualOn();
+  if (manual) {
+    // 手动运行一次：今天已跑过就悄悄退出
+    if (($persistentStore.read(MANUAL_DONE_KEY) || "") === todayStr()) {
+      $done({});
+      return;
+    }
+  } else if (!shouldRunAuto()) {
     $done({});
     return;
   }
   var accounts = collectAccounts();
   if (accounts.length === 0) {
+    if (manual) $persistentStore.write(todayStr(), MANUAL_DONE_KEY);
     $notification.post("淘宝淘金币签到", "未抓取到签到请求", "打开淘宝 App → 淘金币 → 点一次签到");
     $done({});
     return;
@@ -187,6 +204,7 @@ function main() {
     if (idx >= accounts.length) {
       // 跑完一轮就写 done，不管成功失败（失败也不再每分钟重试）
       $persistentStore.write(todayStr(), TIME_DONE_KEY);
+      if (manual) $persistentStore.write(todayStr(), MANUAL_DONE_KEY);
       var title = "淘宝淘金币签到";
       var subtitle = results.length > 1 ? ("共 " + results.length + " 个账号") : "";
       $notification.post(title, subtitle, results.join("\n"));

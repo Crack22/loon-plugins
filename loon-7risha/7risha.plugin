@@ -13,6 +13,10 @@
 [MITM]
 hostname = www.7risha.com
 
+[Argument]
+manualRun = switch,false,tag=手动运行一次,desc=打开后运行一次，手动关闭
+
 [Script]
 http-request ^https:\/\/www\.7risha\.com\/sign tag=7risha Cookie, script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha_cookie.js, requires-body=false, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/7risha.jpg
 cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha_checkin.js, tag=七日杀签到, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/7risha.jpg, enable=true
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha_checkin.js, tag=手动运行一次, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/7risha.jpg, argument=[{manualRun}], enable={manualRun}

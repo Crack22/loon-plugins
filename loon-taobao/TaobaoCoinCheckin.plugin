@@ -13,6 +13,7 @@
 
 [Argument]
 capture = switch,true,tag=抓取开关,desc=打开后，在淘宝 App 里点一次淘金币签到即可抓取；抓完可以关掉
+manualRun = switch,false,tag=手动运行一次,desc=打开后运行一次，手动关闭
 
 [MITM]
 hostname = acs.m.taobao.com
@@ -20,3 +21,4 @@ hostname = acs.m.taobao.com
 [Script]
 http-request ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.coingame\.sign\.supply\/ tag=淘宝淘金币签到抓取, script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-taobao/taobao_coin_capture.js, requires-body=false, argument=[{capture}], enable={capture}
 cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-taobao/taobao_coin_checkin.js, tag=淘宝淘金币每日签到, enable=true
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-taobao/taobao_coin_checkin.js, tag=手动运行一次, argument=[{manualRun}], enable={manualRun}

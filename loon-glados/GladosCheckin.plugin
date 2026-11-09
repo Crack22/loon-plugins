@@ -13,6 +13,10 @@
 [MITM]
 hostname = glados.rocks
 
+[Argument]
+manualRun = switch,false,tag=手动运行一次,desc=打开后运行一次，手动关闭
+
 [Script]
 http-request ^https:\/\/glados\.rocks\/console\/account$ tag=GLaDOS Cookie, script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/glados_cookie.js, requires-body=false, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/glados.png
 cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/glados_checkin.js, tag=GLaDOS签到, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/glados.png, enable=true
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/glados_checkin.js, tag=手动运行一次, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/glados.png, argument=[{manualRun}], enable={manualRun}
