@@ -5,4 +5,4 @@
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Script]
-cron "0 0 * * 0,1" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/ExchangePoints.js, timeout=300, tag=哔哩漫画抢券, img-url=https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/manga.png, enable=true
+cron "0 0 * * 0,1" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/bilimangapoints/ExchangePoints.js, timeout=300, tag=哔哩漫画抢券, img-url=https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/manga.png, enable=true

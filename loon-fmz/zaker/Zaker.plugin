@@ -11,5 +11,5 @@ hostname = iphone.myzaker.com
 
 [Script]
 http-request ^https://iphone\.myzaker\.com/zaker/sign_in//api/sign_in\.php script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zaker/zaker_capture.js, requires-body=false, tag=Zaker Cookie, argument="title=Zaker", enable={capture}
-cron "8 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zaker/zaker.js, timeout=300, tag=Zaker签到, enable=true
+cron "8 8 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/zaker/zaker.js, timeout=300, tag=Zaker签到, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=Zaker去抓取, argument="title=Zaker&url=&hint=打开「Zaker」App 手动签到一次即自动抓取", enable={capture}

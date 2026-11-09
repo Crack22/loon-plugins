@@ -12,5 +12,5 @@ hostname = www.smzdm.com
 
 [Script]
 http-request ^https?://www\.smzdm\.com/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_checkin_capture.js, requires-body=false, tag=什么值得买每日签到 Cookie, argument="key=chavy_cookie_smzdm&source=cookie&title=什么值得买", enable={capture}
-cron "3 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js, timeout=300, tag=什么值得买每日签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/smzdm.png, enable=true
+cron "3 8 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/smzdm/smzdm.js, timeout=300, tag=什么值得买每日签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/smzdm.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=什么值得买去抓取, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/smzdm.png, argument="title=什么值得买&url=https%3A%2F%2Fwww.smzdm.com%2F&hint=在浏览器里打开什么值得买，停留几秒即自动抓取", enable={capture}

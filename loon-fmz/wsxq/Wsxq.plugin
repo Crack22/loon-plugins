@@ -11,5 +11,5 @@ hostname = api.momosyb.com
 
 [Script]
 http-request ^https?://api\.momosyb\.com/(v6|v1)/(fans|user)/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/wsxq/wsxq_capture.js, requires-body=true, tag=微商星球 Cookie, argument="title=微商星球", enable={capture}
-cron "16 0 * * *" script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/wsxqSign.js, timeout=300, tag=微商星球签到, enable=true
+cron "16 0 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/wsxq/wsxqSign.js, timeout=300, tag=微商星球签到, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=微商星球去抓取, argument="title=微商星球&url=&hint=打开「微商星球」停留几秒即自动抓取", enable={capture}

@@ -12,5 +12,5 @@ hostname = wapside.189.cn
 
 [Script]
 http-request ^https?://wapside\.189\.cn:9001/api/home/sign script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/telecom-10000/telecom-10000_capture.js, requires-body=true, tag=电信营业厅每日签到 Cookie, argument="key=chavy_signbody_10000&title=电信营业厅", enable={capture}
-cron "3 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js, timeout=300, tag=电信营业厅每日签到, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dianxin.png, enable=true
+cron "3 8 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/telecom-10000/10000.js, timeout=300, tag=电信营业厅每日签到, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dianxin.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=电信营业厅去抓取, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/03CNSoft/dianxin.png, argument="title=电信营业厅&url=&hint=先在 BoxJs 填写手机号，再打开「电信营业厅」点一次签到即自动抓取", enable={capture}

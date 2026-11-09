@@ -12,5 +12,5 @@ hostname = api.aeonbuy.com
 
 [Script]
 http-response ^https://api\.aeonbuy\.com/api/access-auth-api/auth/third/silentWechatMiniLogin script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/aeon-sign/aeon_sign_capture.js, requires-body=true, tag=永旺 Aeon每日签到抓取, enable={capture}
-cron "20 8 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/aeon_sign.js, timeout=300, tag=永旺 Aeon每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/aeon.png, enable=true
+cron "20 8 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/aeon-sign/aeon_sign.js, timeout=300, tag=永旺 Aeon每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/aeon.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=永旺 Aeon去抓取, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/aeon.png, argument="title=永旺 Aeon&url=&hint=打开永旺 Aeon 微信小程序并登录", enable={capture}

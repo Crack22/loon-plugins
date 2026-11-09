@@ -13,5 +13,5 @@ hostname = gdongapi.wo-ish.com
 [Script]
 http-request ^https://gdongapi\.wo-ish\.com/user/getUInfo script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/gdong/gdong_capture.js, requires-body=false, tag=G动每日签到抓取, enable={capture}
 http-request ^https://gdongapi\.wo-ish\.com/MsgBoard/ShupUpV5 script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/gdong/gdong_capture.js, requires-body=true, tag=G动每日签到抓取, enable={capture}
-cron "10 7 * * *" script-path=https://raw.githubusercontent.com/WowYiJiu/Personal/main/Script/gdong.js, timeout=300, tag=G动每日签到, img-url=https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/gdong.png, enable=true
+cron "10 7 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/gdong/gdong.js, timeout=300, tag=G动每日签到, img-url=https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/gdong.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=G动去抓取, img-url=https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Alpha/gdong.png, argument="title=G动&url=&hint=打开 G动 App，点底部「锻炼」和「我的」", enable={capture}
