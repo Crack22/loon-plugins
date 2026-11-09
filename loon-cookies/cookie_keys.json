@@ -3,540 +3,630 @@
   "switch": "acfun",
   "service": "AcFun",
   "cookie_key": "chavy_cookie_acfun",
-  "file": "acfun_cookie.js"
+  "file": "acfun_cookie.js",
+  "display_key": "chavy_cookie_acfun"
  },
  {
   "switch": "apktw",
   "service": "APK.TW",
   "cookie_key": "chavy_cookie_apktw",
-  "file": "apktw_cookie.js"
+  "file": "apktw_cookie.js",
+  "display_key": "chavy_cookie_apktw"
  },
  {
   "switch": "aliyunpan",
   "service": "阿里云盘@Sliverkiss",
   "cookie_key": "",
-  "file": "aliyunpan_cookie.js"
+  "file": "aliyunpan_cookie.js",
+  "display_key": "Bearer "
  },
  {
   "switch": "aliyunpan2",
   "service": "阿里云盘@lowking",
   "cookie_key": "",
-  "file": "aliyunpan2_cookie.js"
+  "file": "aliyunpan2_cookie.js",
+  "display_key": "lkAliYunPanRefreshTokenKey"
  },
  {
   "switch": "iqiyi",
   "service": "爱奇艺",
   "cookie_key": "CookieQY",
-  "file": "iqiyi_cookie.js"
+  "file": "iqiyi_cookie.js",
+  "display_key": "CookieQY"
  },
  {
   "switch": "bing",
   "service": "bing获取积分cookie",
   "cookie_key": "bingPointCookieKey",
-  "file": "bing_cookie.js"
+  "file": "bing_cookie.js",
+  "display_key": "bingPointCookieKey"
  },
  {
   "switch": "tieba",
   "service": "百度贴吧@NobyDa",
   "cookie_key": "CookieTB",
-  "file": "tieba_cookie.js"
+  "file": "tieba_cookie.js",
+  "display_key": "CookieTB"
  },
  {
   "switch": "bilibili_manga",
   "service": "哔哩哔哩漫画@NobyDa",
   "cookie_key": "",
-  "file": "bilibili_manga_cookie.js"
+  "file": "bilibili_manga_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "bilibili_vip",
   "service": "哔哩哔哩大会员特权获取cookie@lowking",
   "cookie_key": "",
-  "file": "bilibili_vip_cookie.js"
+  "file": "bilibili_vip_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "bilibili_bangumi",
   "service": "哔哩哔哩番剧监控cookie@lowking",
   "cookie_key": "",
-  "file": "bilibili_bangumi_cookie.js"
+  "file": "bilibili_bangumi_cookie.js",
+  "display_key": "lkBilibiliBangumiErrCount"
  },
  {
   "switch": "bilibili",
   "service": "哔哩哔哩@chavyleung",
   "cookie_key": "chavy_cookie_bilibili",
-  "file": "bilibili_cookie.js"
+  "file": "bilibili_cookie.js",
+  "display_key": "chavy_cookie_bilibili"
  },
  {
   "switch": "csdn",
   "service": "CSDN",
   "cookie_key": "",
-  "file": "csdn_cookie.js"
+  "file": "csdn_cookie.js",
+  "display_key": "chavy_tokenheader_csdn"
  },
  {
   "switch": "csdn2",
   "service": "CSDN",
   "cookie_key": "",
-  "file": "csdn_cookie.js"
+  "file": "csdn_cookie.js",
+  "display_key": "chavy_tokenheader_csdn"
  },
  {
   "switch": "caiyun",
   "service": "彩云",
   "cookie_key": "",
-  "file": "caiyun_cookie.js"
+  "file": "caiyun_cookie.js",
+  "display_key": "#latitude"
  },
  {
   "switch": "didi_guoyuan",
   "service": "滴滴果园获取token",
   "cookie_key": "",
-  "file": "get_cookie.js"
+  "file": "get_cookie.js",
+  "display_key": "#fmz200_didi_fruit"
  },
  {
   "switch": "didi",
   "service": "滴滴打车",
   "cookie_key": "",
-  "file": "get_cookie.js"
+  "file": "get_cookie.js",
+  "display_key": "#fmz200_didi_ticket"
  },
  {
   "switch": "douyin_guoyuan",
   "service": "抖音-抖抖果园",
   "cookie_key": "ddgyCk",
-  "file": "douyin_guoyuan_cookie.js"
+  "file": "douyin_guoyuan_cookie.js",
+  "display_key": "ddgyCk"
  },
  {
   "switch": "douyu_yuba",
   "service": "斗鱼鱼吧",
   "cookie_key": "",
-  "file": "douyu_yuba_cookie.js"
+  "file": "douyu_yuba_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "dongqiudi",
   "service": "懂球帝",
   "cookie_key": "chavy_cookie_dongqiudi",
-  "file": "dongqiudi_cookie.js"
+  "file": "dongqiudi_cookie.js",
+  "display_key": "chavy_cookie_dongqiudi"
  },
  {
   "switch": "dingdong_nongchang",
   "service": "叮咚农场",
   "cookie_key": "CookieDDXQfarm",
-  "file": "dingdong_nongchang_cookie.js"
+  "file": "dingdong_nongchang_cookie.js",
+  "display_key": "CookieDDXQfarm"
  },
  {
   "switch": "dingdong_guoyuan",
   "service": "叮咚果园获取Cookie",
   "cookie_key": "DDFruitFarm",
-  "file": "dingdong_guoyuan_cookie.js"
+  "file": "dingdong_guoyuan_cookie.js",
+  "display_key": "DDFruitFarm"
  },
  {
   "switch": "flyert",
   "service": "飞客茶馆获取cookie",
   "cookie_key": "Flyert_Cookie_Key",
-  "file": "flyert_cookie.js"
+  "file": "flyert_cookie.js",
+  "display_key": "Flyert_Cookie_Key"
  },
  {
   "switch": "fandeng",
   "service": "樊登读书",
   "cookie_key": "",
-  "file": "fandeng_cookie.js"
+  "file": "fandeng_cookie.js",
+  "display_key": "senku_signurl_pandeng"
  },
  {
   "switch": "hifini",
   "service": "hifini-签到cookie",
   "cookie_key": "lkHifiniCookieKey",
-  "file": "hifini_cookie.js"
+  "file": "hifini_cookie.js",
+  "display_key": "lkHifiniCookieKey"
  },
  {
   "switch": "hycan",
   "service": "合创.cookie",
   "cookie_key": "",
-  "file": "hycan_cookie.js"
+  "file": "hycan_cookie.js",
+  "display_key": "signurl_hycan"
  },
  {
   "switch": "jd_web",
   "service": "获取京东网页Cookie",
   "cookie_key": "",
-  "file": "jd_web_cookie.js"
+  "file": "jd_web_cookie.js",
+  "display_key": "CookiesJD"
  },
  {
   "switch": "jd_web2",
   "service": "获取京东网页Cookie",
   "cookie_key": "",
-  "file": "jd_web_cookie.js"
+  "file": "jd_web_cookie.js",
+  "display_key": "CookiesJD"
  },
  {
   "switch": "jd_read",
   "service": "京东读书",
   "cookie_key": "",
-  "file": "jd_read_cookie.js"
+  "file": "jd_read_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "jd_daojia",
   "service": "京东到家",
   "cookie_key": "",
-  "file": "jd_daojia_cookie.js"
+  "file": "jd_daojia_cookie.js",
+  "display_key": "chen_signheader_jddj"
  },
  {
   "switch": "ccb_life",
   "service": "建行生活-签到cookie",
   "cookie_key": "",
-  "file": "ccb_life_cookie.js"
+  "file": "ccb_life_cookie.js",
+  "display_key": "JHSH_TOKEN"
  },
  {
   "switch": "youzi",
   "service": "柚子快报",
   "cookie_key": "",
-  "file": "youzi_cookie.js"
+  "file": "youzi_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "gdoil",
   "service": "加油广东",
   "cookie_key": "",
-  "file": "gdoil_cookie.js"
+  "file": "gdoil_cookie.js",
+  "display_key": "chavy_signurl_gdoil"
  },
  {
   "switch": "kuaishou_guoyuan",
   "service": "快手果园-获取cookie",
   "cookie_key": "",
-  "file": "kuaishou_guoyuan_cookie.js"
+  "file": "kuaishou_guoyuan_cookie.js",
+  "display_key": "#kscookies"
  },
  {
   "switch": "kkmh",
   "service": "快看漫画-cookie",
   "cookie_key": "@KKMH.COOKIE",
-  "file": "kkmh_cookie.js"
+  "file": "kkmh_cookie.js",
+  "display_key": "@KKMH.COOKIE"
  },
  {
   "switch": "luka",
   "service": "Luka-获取cookie",
   "cookie_key": "luka_checkin_cookie",
-  "file": "luka_cookie.js"
+  "file": "luka_cookie.js",
+  "display_key": "luka_checkin_cookie"
  },
  {
   "switch": "meituan",
   "service": "美团token",
   "cookie_key": "",
-  "file": "get_cookie.js"
+  "file": "get_cookie.js",
+  "display_key": "#fmz200_meituan_cookie"
  },
  {
   "switch": "meituan_old",
   "service": "美团旧版本token",
   "cookie_key": "",
-  "file": "get_cookie.js"
+  "file": "get_cookie.js",
+  "display_key": "#fmz200_meituan_cookie"
  },
  {
   "switch": "meituan_waimai",
   "service": "美团外卖",
   "cookie_key": "",
-  "file": "meituan_waimai_cookie.js"
+  "file": "meituan_waimai_cookie.js",
+  "display_key": "chavy_tokenheader_wmmeituan"
  },
  {
   "switch": "mgtv",
   "service": "芒果TV",
   "cookie_key": "",
-  "file": "mgtv_cookie.js"
+  "file": "mgtv_cookie.js",
+  "display_key": "chavy_signurl_mgtv"
  },
  {
   "switch": "mihoyo",
   "service": "米游社",
   "cookie_key": "",
-  "file": "mihoyo_cookie.js"
+  "file": "mihoyo_cookie.js",
+  "display_key": "chavy_signurl_mihoyo"
  },
  {
   "switch": "maomicd",
   "service": "猫咪音乐网",
   "cookie_key": "",
-  "file": "maomicd_cookie.js"
+  "file": "maomicd_cookie.js",
+  "display_key": "chavy_signurl_maomicd"
  },
  {
   "switch": "nga",
   "service": "nga.cookie",
   "cookie_key": "",
-  "file": "nga_cookie.js"
+  "file": "nga_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "pdd_guoyuan",
   "service": "拼多多果园",
   "cookie_key": "",
-  "file": "pdd_guoyuan_cookie.js"
+  "file": "pdd_guoyuan_cookie.js",
+  "display_key": "#ddgyck"
  },
  {
   "switch": "pupu",
   "service": "朴朴签到cookie",
   "cookie_key": "",
-  "file": "pupu_cookie.js"
+  "file": "pupu_cookie.js",
+  "display_key": "lkPuPuRefreshTokenKey"
  },
  {
   "switch": "qq_vip",
   "service": "QQ-VipCheckIn",
   "cookie_key": "",
-  "file": "qq_vip_cookie.js"
+  "file": "qq_vip_cookie.js",
+  "display_key": "lkQQSignBlockListKey"
  },
  {
   "switch": "qq_pet",
   "service": "QQ萌宠cookie",
   "cookie_key": "",
-  "file": "qq_pet_cookie.js"
+  "file": "qq_pet_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "autohome",
   "service": "汽车之家极速版",
   "cookie_key": "",
-  "file": "autohome_cookie.js"
+  "file": "autohome_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "qczj",
   "service": "qczjSign",
   "cookie_key": "",
-  "file": "autohome_cookie.js"
+  "file": "autohome_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "qunar",
   "service": "去哪儿.cookie",
   "cookie_key": "chavy_cookie_qunar",
-  "file": "qunar_cookie.js"
+  "file": "qunar_cookie.js",
+  "display_key": "chavy_cookie_qunar"
  },
  {
   "switch": "qmkg",
   "service": "全民K歌.cookie",
   "cookie_key": "",
-  "file": "qmkg_cookie.js"
+  "file": "qmkg_cookie.js",
+  "display_key": "senku_signurl_qmkg"
  },
  {
   "switch": "chery",
   "service": "奇瑞汽车App获取多账号token",
   "cookie_key": "",
-  "file": "get_cookie.js"
+  "file": "get_cookie.js",
+  "display_key": "#fmz200_chery_account"
  },
  {
   "switch": "smzdm",
   "service": "什么值得买",
   "cookie_key": "",
-  "file": "get_cookie.js"
+  "file": "get_cookie.js",
+  "display_key": "#fmz200_smzdm_cookie"
  },
  {
   "switch": "sfsy",
   "service": "顺丰速运顺丰速运",
   "cookie_key": "",
-  "file": "get_cookie.js"
+  "file": "get_cookie.js",
+  "display_key": "#sfsyBee"
  },
  {
   "switch": "sfsy2",
   "service": "顺丰速运",
   "cookie_key": "",
-  "file": "get_cookie.js"
+  "file": "get_cookie.js",
+  "display_key": "#sfsyBee"
  },
  {
   "switch": "shuidichou",
   "service": "水滴筹",
   "cookie_key": "",
-  "file": "shuidichou_cookie.js"
+  "file": "shuidichou_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "sjdj",
   "service": "水晶DJ",
   "cookie_key": "",
-  "file": "sjdj_cookie.js"
+  "file": "sjdj_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "everphoto",
   "service": "时光相册.cookie",
   "cookie_key": "",
-  "file": "everphoto_cookie.js"
+  "file": "everphoto_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "suning",
   "service": "苏宁易购.cookie",
   "cookie_key": "",
-  "file": "suning_cookie.js"
+  "file": "suning_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "suning2",
   "service": "苏宁易购.cookie",
   "cookie_key": "",
-  "file": "suning_cookie.js"
+  "file": "suning_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "suning3",
   "service": "苏宁易购.cookie",
   "cookie_key": "",
-  "file": "suning_cookie.js"
+  "file": "suning_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "suning4",
   "service": "苏宁易购.cookie",
   "cookie_key": "",
-  "file": "suning_cookie.js"
+  "file": "suning_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "thg",
   "service": "太好购",
   "cookie_key": "",
-  "file": "thg_cookie.js"
+  "file": "thg_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "ttwk",
   "service": "天天挖矿",
   "cookie_key": "",
-  "file": "ttwk_cookie.js"
+  "file": "ttwk_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "videoqq",
   "service": "腾讯视频.cookie",
   "cookie_key": "chavy_cookie_videoqq",
-  "file": "videoqq_cookie.js"
+  "file": "videoqq_cookie.js",
+  "display_key": "chavy_cookie_videoqq"
  },
  {
   "switch": "v2ex",
   "service": "v2ex.cookie",
   "cookie_key": "chavy_cookie_v2ex",
-  "file": "v2ex_cookie.js"
+  "file": "v2ex_cookie.js",
+  "display_key": "chavy_cookie_v2ex"
  },
  {
   "switch": "wps",
   "service": "wps.cookie",
   "cookie_key": "",
-  "file": "wps_cookie.js"
+  "file": "wps_cookie.js",
+  "display_key": "chavy_signhomeheader_wps"
  },
  {
   "switch": "weibo",
   "service": "微博-获取cookie",
   "cookie_key": "",
-  "file": "get_cookie.js"
+  "file": "get_cookie.js",
+  "display_key": "#fmz200_weibo_token"
  },
  {
   "switch": "weibo2",
   "service": "微博-获取cookie",
   "cookie_key": "wb_cookie",
-  "file": "weibo2_cookie.js"
+  "file": "weibo2_cookie.js",
+  "display_key": "wb_cookie"
  },
  {
   "switch": "weibo3",
   "service": "微博-获取cookie",
   "cookie_key": "wb_cookie",
-  "file": "weibo2_cookie.js"
+  "file": "weibo2_cookie.js",
+  "display_key": "wb_cookie"
  },
  {
   "switch": "weibo4",
   "service": "微博-获取cookie",
   "cookie_key": "",
-  "file": "weibo4_cookie.js"
+  "file": "weibo4_cookie.js",
+  "display_key": "lkWeiboSTSignHeaderKey"
  },
  {
   "switch": "pojie52",
   "service": "吾爱破解cookie",
   "cookie_key": "COOKIE",
-  "file": "pojie52_cookie.js"
+  "file": "pojie52_cookie.js",
+  "display_key": "COOKIE"
  },
  {
   "switch": "neteasemusic",
   "service": "网易云音乐.cookie",
   "cookie_key": "chavy_cookie_neteasemusic",
-  "file": "neteasemusic_cookie.js"
+  "file": "neteasemusic_cookie.js",
+  "display_key": "chavy_cookie_neteasemusic"
  },
  {
   "switch": "neteasenews",
   "service": "网易新闻.cookie",
   "cookie_key": "chavy_cookie_neteasenews",
-  "file": "neteasenews_cookie.js"
+  "file": "neteasenews_cookie.js",
+  "display_key": "chavy_cookie_neteasenews"
  },
  {
   "switch": "kaola",
   "service": "网易考拉.cookie",
   "cookie_key": "",
-  "file": "kaola_cookie.js"
+  "file": "kaola_cookie.js",
+  "display_key": "senku_signurl_wykl"
  },
  {
   "switch": "wsxq",
   "service": "微商星球",
   "cookie_key": "",
-  "file": "wsxq_cookie.js"
+  "file": "wsxq_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "nio",
   "service": "蔚来.cookie",
   "cookie_key": "",
-  "file": "nio_cookie.js"
+  "file": "nio_cookie.js",
+  "display_key": "signurl_nextevcar"
  },
  {
   "switch": "ctrip",
   "service": "携程",
   "cookie_key": "cookie_ctrip",
-  "file": "ctrip_cookie.js"
+  "file": "ctrip_cookie.js",
+  "display_key": "cookie_ctrip"
  },
  {
   "switch": "ximalaya",
   "service": "喜马拉雅.cookie",
   "cookie_key": "chavy_cookie_ximalaya",
-  "file": "ximalaya_cookie.js"
+  "file": "ximalaya_cookie.js",
+  "display_key": "chavy_cookie_ximalaya"
  },
  {
   "switch": "xxyx",
   "service": "晓晓优选",
   "cookie_key": "",
-  "file": "get_cookie.js"
+  "file": "get_cookie.js",
+  "display_key": "#fmz200_xxyx_token"
  },
  {
   "switch": "yili",
   "service": "伊利.cookie",
   "cookie_key": "",
-  "file": "yili_cookie.js"
+  "file": "yili_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "telecom",
   "service": "中国电信@FoKit",
   "cookie_key": "",
-  "file": "telecom_cookie.js"
+  "file": "telecom_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "telecom2",
   "service": "电信营业厅@chavyleung",
   "cookie_key": "",
-  "file": "telecom2_cookie.js"
+  "file": "telecom2_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "telecom3",
   "service": "电信登录地址@dompling",
   "cookie_key": "",
-  "file": "telecom3_cookie.js"
+  "file": "telecom3_cookie.js",
+  "display_key": "yy_10000"
  },
  {
   "switch": "unicom",
   "service": "中国联通.cookie",
   "cookie_key": "",
-  "file": "unicom_cookie.js"
+  "file": "unicom_cookie.js",
+  "display_key": "chavy_tokenheader_10010"
  },
  {
   "switch": "unicom2",
   "service": "中国联通.cookie",
   "cookie_key": "",
-  "file": "unicom_cookie.js"
+  "file": "unicom_cookie.js",
+  "display_key": "chavy_tokenheader_10010"
  },
  {
   "switch": "unicom3",
   "service": "中国联通.cookie",
   "cookie_key": "",
-  "file": "unicom_cookie.js"
+  "file": "unicom_cookie.js",
+  "display_key": "chavy_tokenheader_10010"
  },
  {
   "switch": "unicom4",
   "service": "中国联通.cookie@dompling",
   "cookie_key": "cookie",
-  "file": "unicom4_cookie.js"
+  "file": "unicom4_cookie.js",
+  "display_key": "cookie"
  },
  {
   "switch": "zhuishu",
   "service": "追书畅读版",
   "cookie_key": "",
-  "file": "zhuishu_cookie.js"
+  "file": "zhuishu_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "zymk",
   "service": "知音漫客",
   "cookie_key": "",
-  "file": "zymk_cookie.js"
+  "file": "zymk_cookie.js",
+  "display_key": ""
  },
  {
   "switch": "zxhc",
   "service": "智行火车.cookie",
   "cookie_key": "",
-  "file": "zxhc_cookie.js"
+  "file": "zxhc_cookie.js",
+  "display_key": "senku_signurl_zxhc"
  }
 ]

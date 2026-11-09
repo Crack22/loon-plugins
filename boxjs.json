@@ -647,6 +647,435 @@
    ]
   },
   {
+   "id": "cookies_captured",
+   "name": "已抓取 Cookie",
+   "keys": [],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/cookie.png"
+   ],
+   "script": "",
+   "descs_html": [
+    "已抓取的数据：每个服务抓到后自动显示在这里，空的表示还没抓到。"
+   ],
+   "settings": [
+    {
+     "id": "chavy_cookie_acfun",
+     "name": "AcFun",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_cookie_apktw",
+     "name": "APK.TW",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "Bearer ",
+     "name": "阿里云盘@Sliverkiss",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "lkAliYunPanRefreshTokenKey",
+     "name": "阿里云盘@lowking",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "CookieQY",
+     "name": "爱奇艺",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "bingPointCookieKey",
+     "name": "bing获取积分cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "CookieTB",
+     "name": "百度贴吧@NobyDa",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "lkBilibiliBangumiErrCount",
+     "name": "哔哩哔哩番剧监控cookie@lowking",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_cookie_bilibili",
+     "name": "哔哩哔哩@chavyleung",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_tokenheader_csdn",
+     "name": "CSDN",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "#latitude",
+     "name": "彩云",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "#fmz200_didi_fruit",
+     "name": "滴滴果园获取token",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "#fmz200_didi_ticket",
+     "name": "滴滴打车",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "ddgyCk",
+     "name": "抖音-抖抖果园",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_cookie_dongqiudi",
+     "name": "懂球帝",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "CookieDDXQfarm",
+     "name": "叮咚农场",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "DDFruitFarm",
+     "name": "叮咚果园获取Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "Flyert_Cookie_Key",
+     "name": "飞客茶馆获取cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "senku_signurl_pandeng",
+     "name": "樊登读书",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "lkHifiniCookieKey",
+     "name": "hifini-签到cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "signurl_hycan",
+     "name": "合创.cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "CookiesJD",
+     "name": "获取京东网页Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chen_signheader_jddj",
+     "name": "京东到家",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "JHSH_TOKEN",
+     "name": "建行生活-签到cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_signurl_gdoil",
+     "name": "加油广东",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "#kscookies",
+     "name": "快手果园-获取cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "@KKMH.COOKIE",
+     "name": "快看漫画-cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "luka_checkin_cookie",
+     "name": "Luka-获取cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "#fmz200_meituan_cookie",
+     "name": "美团token",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_tokenheader_wmmeituan",
+     "name": "美团外卖",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_signurl_mgtv",
+     "name": "芒果TV",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_signurl_mihoyo",
+     "name": "米游社",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_signurl_maomicd",
+     "name": "猫咪音乐网",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "#ddgyck",
+     "name": "拼多多果园",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "lkPuPuRefreshTokenKey",
+     "name": "朴朴签到cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "lkQQSignBlockListKey",
+     "name": "QQ-VipCheckIn",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_cookie_qunar",
+     "name": "去哪儿.cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "senku_signurl_qmkg",
+     "name": "全民K歌.cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "#fmz200_chery_account",
+     "name": "奇瑞汽车App获取多账号token",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "#fmz200_smzdm_cookie",
+     "name": "什么值得买",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "#sfsyBee",
+     "name": "顺丰速运顺丰速运",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_cookie_videoqq",
+     "name": "腾讯视频.cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_cookie_v2ex",
+     "name": "v2ex.cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_signhomeheader_wps",
+     "name": "wps.cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "#fmz200_weibo_token",
+     "name": "微博-获取cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "wb_cookie",
+     "name": "微博-获取cookie 2",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "lkWeiboSTSignHeaderKey",
+     "name": "微博-获取cookie 3",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "COOKIE",
+     "name": "吾爱破解cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_cookie_neteasemusic",
+     "name": "网易云音乐.cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_cookie_neteasenews",
+     "name": "网易新闻.cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "senku_signurl_wykl",
+     "name": "网易考拉.cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "signurl_nextevcar",
+     "name": "蔚来.cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "cookie_ctrip",
+     "name": "携程",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_cookie_ximalaya",
+     "name": "喜马拉雅.cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "#fmz200_xxyx_token",
+     "name": "晓晓优选",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "yy_10000",
+     "name": "电信登录地址@dompling",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "chavy_tokenheader_10010",
+     "name": "中国联通.cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "cookie",
+     "name": "中国联通.cookie@dompling",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    },
+    {
+     "id": "senku_signurl_zxhc",
+     "name": "智行火车.cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "已抓取的数据（抓到后自动显示在这里）；也可以手动粘贴"
+    }
+   ]
+  },
+  {
    "id": "wps_checkin",
    "name": "WPS Office 每日签到",
    "keys": [
