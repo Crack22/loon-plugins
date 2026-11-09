@@ -12,5 +12,5 @@ hostname = www.flyert.com.cn
 
 [Script]
 http-request ^https://www\.flyert\.com\.cn/api/mobile/index\.php\?module=getdata&.* script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/flyert/flyert_capture.js, tag=飞客-签到抓取, enable={capture}
-cron "10 0 * * *" script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/CheckIn/flyert.js, timeout=300, tag=飞客-签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/flyert.png, enable=true
+cron "10 0 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/flyert/flyert.js, timeout=300, tag=飞客-签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/flyert.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=飞客去抓取, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/flyert.png, argument="title=飞客&url=&hint=打开「飞客」App 浏览一下即自动抓取", enable={capture}

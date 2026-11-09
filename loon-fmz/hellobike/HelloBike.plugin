@@ -11,5 +11,5 @@ hostname = gameapi.hellobike.com
 
 [Script]
 http-request ^https?://gameapi\.hellobike\.com/api script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/hellobike/hellobike_capture.js, requires-body=true, tag=哈啰出行 Cookie, argument="title=哈啰出行", enable={capture}
-cron "8 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/hellobike/hellobike.js, timeout=300, tag=哈啰出行签到, enable=true
+cron "8 8 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/hellobike/hellobike.js, timeout=300, tag=哈啰出行签到, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=哈啰出行去抓取, argument="title=哈啰出行&url=&hint=打开「哈啰出行」停留几秒即自动抓取", enable={capture}

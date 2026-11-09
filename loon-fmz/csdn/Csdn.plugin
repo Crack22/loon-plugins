@@ -12,5 +12,5 @@ hostname = passport.csdn.net, gw.csdn.net
 [Script]
 http-request ^https://passport\.csdn\.net/v2/api/app/login/checkAndRefreshToken script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/csdn/csdn_capture.js, requires-body=false, tag=CSDN Cookie, argument="title=CSDN", enable={capture}
 http-request ^https://gw\.csdn\.net/mini-app/v2/lucky_draw/login/sign_in\? script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/csdn/csdn_capture.js, requires-body=false, tag=CSDN Cookie, argument="title=CSDN", enable={capture}
-cron "4 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.js, timeout=300, tag=CSDN签到, enable=true
+cron "4 8 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/csdn/csdn.js, timeout=300, tag=CSDN签到, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=CSDN去抓取, argument="title=CSDN&url=&hint=打开「CSDN」App 并手动签到一次即自动抓取", enable={capture}

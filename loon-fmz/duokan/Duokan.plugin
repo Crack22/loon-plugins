@@ -11,5 +11,5 @@ hostname = www.duokan.com
 
 [Script]
 http-request ^https?://www\.duokan\.com/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/duokan/duokan_capture.js, requires-body=false, tag=多看 Cookie, argument="title=多看", enable={capture}
-cron "0 3 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.js, timeout=300, tag=多看签到, enable=true
+cron "0 3 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/duokan/duokan.js, timeout=300, tag=多看签到, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=多看去抓取, argument="title=多看&url=https%3A%2F%2Fwww.duokan.com%2F&hint=在浏览器里打开多看，停留几秒即自动抓取", enable={capture}

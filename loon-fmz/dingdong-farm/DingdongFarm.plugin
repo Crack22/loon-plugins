@@ -11,5 +11,5 @@ hostname = maicai.api.ddxq.mobi
 
 [Script]
 http-request ^https?://maicai\.api\.ddxq\.mobi/user/checkLogin script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/dingdong-farm/dingdong-farm_capture.js, requires-body=false, tag=叮咚农场 Cookie, argument="title=叮咚农场", enable={capture}
-cron "1 8,12,17 * * *" script-path=https://raw.githubusercontent.com/iepngs/Script/master/dingdong/index.js, timeout=300, tag=叮咚农场签到, enable=true
+cron "1 8,12,17 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/dingdong-farm/index.js, timeout=300, tag=叮咚农场签到, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=叮咚农场去抓取, argument="title=叮咚农场&url=&hint=打开「叮咚买菜」停留几秒即自动抓取", enable={capture}

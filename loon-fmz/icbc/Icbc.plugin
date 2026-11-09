@@ -12,5 +12,5 @@ hostname = icbc1.wlphp.com
 
 [Script]
 http-request ^https?://icbc1\.wlphp\.com:8444/js/api/index/signIn script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/icbc/icbc_capture.js, requires-body=true, tag=工银e生活 Cookie, argument="title=工银e生活", enable={capture}
-cron "10 8 * * *" script-path=https://raw.githubusercontent.com/barrym-chen/Script/master/icbc/icbc_sign.js, timeout=300, tag=工银e生活签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/ICBC.png, enable=true
+cron "10 8 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/icbc/icbc_sign.js, timeout=300, tag=工银e生活签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/ICBC.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=工银e生活去抓取, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/bank/ICBC.png, argument="title=工银e生活&url=&hint=打开「工银e生活」停留几秒即自动抓取", enable={capture}

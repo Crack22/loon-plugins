@@ -11,5 +11,5 @@ hostname = activity-1.m.duiba.com.cn
 
 [Script]
 http-request ^https://activity-1\.m\.duiba\.com\.cn/signactivity/doSign$ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/haidilao/haidilao_capture.js, requires-body=true, tag=海底捞 Cookie, argument="title=海底捞", enable={capture}
-cron "7 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/haidilao/hdl.js, timeout=300, tag=海底捞签到, enable=true
+cron "7 8 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/haidilao/hdl.js, timeout=300, tag=海底捞签到, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=海底捞去抓取, argument="title=海底捞&url=&hint=打开「海底捞」App 手动签到一次即自动抓取", enable={capture}
