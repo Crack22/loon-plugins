@@ -13,7 +13,638 @@
     "<a href=\"https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/Cookies.plugin\">点击安装 Loon 插件</a>",
     "在插件设置里开关每个抓包，抓完可关掉。"
    ],
-   "settings": []
+   "settings": [
+    {
+     "id": "acfun",
+     "name": "AcFun",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "apktw",
+     "name": "APK.TW",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "aliyunpan",
+     "name": "阿里云盘",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "aliyunpan2",
+     "name": "阿里云盘 2",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "iqiyi",
+     "name": "爱奇艺",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "bing",
+     "name": "bing获取积分",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "tieba",
+     "name": "百度贴吧",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "bilibili_manga",
+     "name": "哔哩哔哩漫画",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "bilibili_vip",
+     "name": "哔哩哔哩大会员特权",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "bilibili_bangumi",
+     "name": "哔哩哔哩番剧监控",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "bilibili",
+     "name": "哔哩哔哩",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "csdn",
+     "name": "CSDN",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "csdn2",
+     "name": "CSDN 2",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "caiyun",
+     "name": "彩云",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "didi_guoyuan",
+     "name": "滴滴果园",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "didi",
+     "name": "滴滴打车",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "douyin_guoyuan",
+     "name": "抖音抖抖果园",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "douyu_yuba",
+     "name": "斗鱼鱼吧",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "dongqiudi",
+     "name": "懂球帝",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "dingdong_nongchang",
+     "name": "叮咚农场",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "dingdong_guoyuan",
+     "name": "叮咚果园",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "flyert",
+     "name": "飞客茶馆",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "fandeng",
+     "name": "樊登读书",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "hifini",
+     "name": "hifini",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "hycan",
+     "name": "合创",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "jd_web",
+     "name": "京东网页",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "jd_web2",
+     "name": "京东网页 2",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "jd_read",
+     "name": "京东读书",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "jd_daojia",
+     "name": "京东到家",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "ccb_life",
+     "name": "建行生活",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "youzi",
+     "name": "柚子快报",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "gdoil",
+     "name": "加油广东",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "kuaishou_guoyuan",
+     "name": "快手果园",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "kkmh",
+     "name": "快看漫画",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "luka",
+     "name": "Luka",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "meituan",
+     "name": "美团",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "meituan_old",
+     "name": "美团旧版本",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "meituan_waimai",
+     "name": "美团外卖",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "mgtv",
+     "name": "芒果TV",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "mihoyo",
+     "name": "米游社",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "maomicd",
+     "name": "猫咪音乐网",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "nga",
+     "name": "nga",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "pdd_guoyuan",
+     "name": "拼多多果园",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "pupu",
+     "name": "朴朴",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "qq_vip",
+     "name": "QQ会员",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "qq_pet",
+     "name": "QQ萌宠",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "autohome",
+     "name": "汽车之家极速版",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "qczj",
+     "name": "汽车之家极速版 2",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "qunar",
+     "name": "去哪儿",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "qmkg",
+     "name": "全民K歌",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "chery",
+     "name": "奇瑞汽车",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "smzdm",
+     "name": "什么值得买",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "sfsy",
+     "name": "顺丰速运",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "sfsy2",
+     "name": "顺丰速运 2",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "shuidichou",
+     "name": "水滴筹",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "sjdj",
+     "name": "水晶DJ",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "everphoto",
+     "name": "时光相册",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "suning",
+     "name": "苏宁易购",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "suning2",
+     "name": "苏宁易购 2",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "suning3",
+     "name": "苏宁易购 3",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "suning4",
+     "name": "苏宁易购 4",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "thg",
+     "name": "太好购",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "ttwk",
+     "name": "天天挖矿",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "videoqq",
+     "name": "腾讯视频",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "v2ex",
+     "name": "V2EX",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "wps",
+     "name": "WPS",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "weibo",
+     "name": "微博",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "weibo2",
+     "name": "微博 2",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "weibo3",
+     "name": "微博 3",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "weibo4",
+     "name": "微博 4",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "pojie52",
+     "name": "吾爱破解",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "neteasemusic",
+     "name": "网易云音乐",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "neteasenews",
+     "name": "网易新闻",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "kaola",
+     "name": "网易考拉",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "wsxq",
+     "name": "微商星球",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "nio",
+     "name": "蔚来",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "ctrip",
+     "name": "携程",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "ximalaya",
+     "name": "喜马拉雅",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "xxyx",
+     "name": "晓晓优选",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "yili",
+     "name": "伊利",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "telecom",
+     "name": "中国电信",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "telecom2",
+     "name": "电信营业厅",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "telecom3",
+     "name": "电信登录地址",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "unicom",
+     "name": "中国联通",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "unicom2",
+     "name": "中国联通 2",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "unicom3",
+     "name": "中国联通 3",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "unicom4",
+     "name": "中国联通 4",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "zhuishu",
+     "name": "追书畅读版",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "zymk",
+     "name": "知音漫客",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    },
+    {
+     "id": "zxhc",
+     "name": "智行火车",
+     "val": "true",
+     "type": "boolean",
+     "desc": "抓取开关：打开后抓取该服务的 Cookie；抓完可以关掉"
+    }
+   ]
   },
   {
    "id": "wps_checkin",
