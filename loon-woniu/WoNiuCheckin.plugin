@@ -1,5 +1,5 @@
 #!name=蜗牛每日签到
-#!desc=蜗牛 4K 每日签到，每天 +10 积分；Cookie 和账号密码二选一，账号数量不限。\nCookie 方式：开重写，打开蜗牛签到页停 1 秒，收到 Cookie 获取成功即抓取成功。\n账号密码方式：在 BoxJs 里填账号和密码，签到时自动登录，Cookie 过期时也会自动重新登录。\n账号1/2/3：在 BoxJs 里分别填 Cookie 或账号密码；多账号：在「多账号」里每行填一个 Cookie 或 账号；密码（中文分号隔开）。\ncron 每天 09:00 自动签到，Cookie 和密码只保存在手机本地。
+#!desc=蜗牛 4K 每日签到，每天 +10 积分；Cookie 和账号密码二选一，账号数量不限。\nCookie 方式：开重写，打开蜗牛签到页停 1 秒，收到 Cookie 获取成功即抓取成功。\n账号密码方式：在 BoxJs 里填账号和密码，签到时自动登录，Cookie 过期时也会自动重新登录。\n账号1/2/3：在 BoxJs 里分别填 Cookie 或账号密码；多账号：在「多账号」里每行填一个 Cookie 或 账号；密码（中文分号隔开）。\n签到时间可在 BoxJs 里自定义（指定时间或区间随机），默认每天 09:00；Cookie 和密码只保存在手机本地。
 #!author=許諾
 #!icon=https://woniu.qljiang.com/weixin_files/woniu_white.png
 #!tag=蜗牛
@@ -9,10 +9,10 @@
 # 1、安装插件，开启重写脚本 + cron
 # 2、打开「蜗牛」签到页 https://www.wn4k.com/user/checkin.html 停留 1 秒
 # 3、收到 ✅ 蜗牛 Cookie 获取成功 通知即抓取成功
-# 4、cron 每天 09:00 自动签到
+# 4、cron 每分钟检查，到了设定的时间自动签到（默认 09:00，可在 BoxJs 里改）
 [MITM]
 hostname = www.wn4k.com
 
 [Script]
 http-request ^https:\/\/www\.wn4k\.com\/user\/checkin\.html tag=蜗牛 Cookie, script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_cookie.js, requires-body=false, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_checkin.js, tag=蜗牛签到, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, enable=true
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/woniu_checkin.js, tag=蜗牛签到, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, enable=true

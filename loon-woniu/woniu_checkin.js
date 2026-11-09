@@ -8,7 +8,98 @@ const UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/6
 const LOGIN_URL = "https://www.wn4k.com/user/login.html";
 const CHECKIN_URL = "https://www.wn4k.com/user/checkin.html";
 
+// ---------- 自定义签到时间（区间签到） ----------
+// BoxJs 设置：
+// woniu_time_enabled：开关，启用自定义签到时间（默认关 = 每天 09:00）
+// woniu_time_mode：fixed = 指定时间 / random = 时间区间随机
+// woniu_time：指定时间 "HH:MM"，如 09:30
+// woniu_time_range：时间区间 "HH:MM-HH:MM"，如 08:00-10:00
+const TIME_ENABLED_KEY = "woniu_time_enabled";
+const TIME_MODE_KEY = "woniu_time_mode";
+const TIME_KEY = "woniu_time";
+const TIME_RANGE_KEY = "woniu_time_range";
+const TIME_TARGET_KEY = "woniu_time_target"; // 当天随机挑好的时间，格式 "YYYY-MM-DD HH:MM|HH:MM-HH:MM"
+const TIME_DONE_KEY = "woniu_time_done"; // 自动签到今天已跑过的日期
+const DEFAULT_TIME_MIN = 9 * 60; // 默认 09:00
+
+// 开关值可能是 "true"/true/"1"/1，都当作开
+function isTrue(v) {
+  return v === true || v === "true" || v === 1 || v === "1";
+}
+// 本地日期 YYYY-MM-DD（不用 toISOString，那是 UTC 日期，凌晨会差一天）
+function todayStr() {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return y + "-" + m + "-" + day;
+}
+// 现在是今天的第几分钟（本地时间）
+function nowMin() {
+  const d = new Date();
+  return d.getHours() * 60 + d.getMinutes();
+}
+// "HH:MM" 转分钟，非法返回 null
+function parseHM(s) {
+  if (!s) return null;
+  const m = String(s).trim().match(/^(\d{1,2}):(\d{1,2})$/);
+  if (!m) return null;
+  const h = parseInt(m[1], 10), mi = parseInt(m[2], 10);
+  if (h < 0 || h > 23 || mi < 0 || mi > 59) return null;
+  return h * 60 + mi;
+}
+// 分钟转 "HH:MM"
+function fmtHM(min) {
+  const h = Math.floor(min / 60), mi = min % 60;
+  return String(h).padStart(2, "0") + ":" + String(mi).padStart(2, "0");
+}
+// 今天的目标签到时间（分钟）。未启用或配置非法时回落到 09:00
+function todayTargetMin() {
+  if (!isTrue(read(TIME_ENABLED_KEY))) return DEFAULT_TIME_MIN;
+  const mode = (read(TIME_MODE_KEY) || "").trim();
+  if (mode === "fixed") {
+    const t = parseHM(read(TIME_KEY));
+    return t === null ? DEFAULT_TIME_MIN : t;
+  }
+  if (mode === "random") {
+    const range = (read(TIME_RANGE_KEY) || "").trim();
+    const parts = range.split("-");
+    if (parts.length !== 2) return DEFAULT_TIME_MIN;
+    const start = parseHM(parts[0]), end = parseHM(parts[1]);
+    if (start === null || end === null || end <= start) return DEFAULT_TIME_MIN;
+    const today = todayStr();
+    // 当天已挑过且区间没变 → 用存好的；否则重新随机挑一个
+    const stored = read(TIME_TARGET_KEY);
+    if (stored) {
+      const sp = stored.split("|");
+      if (sp.length === 2 && sp[0].slice(0, 10) === today && sp[1] === range) {
+        const t = parseHM(sp[0].slice(11));
+        if (t !== null) return t;
+      }
+    }
+    const pick = start + Math.floor(Math.random() * (end - start + 1));
+    write(TIME_TARGET_KEY, today + " " + fmtHM(pick) + "|" + range);
+    return pick;
+  }
+  return DEFAULT_TIME_MIN;
+}
+// 自动定时是否该跑：到了目标时间且今天还没跑过
+function shouldRunAuto() {
+  const today = todayStr();
+  if (read(TIME_DONE_KEY) === today) return false;
+  return nowMin() >= todayTargetMin();
+}
+// 今天的签到是否已有成功/已签到结果（成功才写 done，失败留给下一分钟重试）
+function hasSuccess() {
+  for (var i = 0; i < results.length; i++) {
+    var s = results[i];
+    if (s.indexOf("签到成功") !== -1 || s.indexOf("今日已签到") !== -1) return true;
+  }
+  return false;
+}
+
 function read(k) { return $persistentStore.read(k) || ""; }
+function write(k, v) { $persistentStore.write(v, k); }
 function parseJson(d) { try { return JSON.parse(d); } catch (e) { return null; } }
 function getSetCookie(resp) {
   if (!resp || !resp.headers) return "";
@@ -68,6 +159,22 @@ var accounts = collectAccounts();
 var results = [];
 var idx = 0;
 
+// 从签到返回里找总积分（字段名各站点不统一，都试一遍；找不到就返回 ""）
+function findTotal(r) {
+  if (!r) return "";
+  var info = r.info || {};
+  var cands = [
+    info.total, info.totalPoints, info.total_points, info.sum, info.all,
+    info.pointsTotal, info.balance, info.score, info.credit, info.userPoints,
+    r.total, r.totalPoints, r.total_points, r.sum, r.balance, r.score
+  ];
+  for (var i = 0; i < cands.length; i++) {
+    var v = cands[i];
+    if (v !== undefined && v !== null && v !== "" && !isNaN(Number(v))) return String(v);
+  }
+  return "";
+}
+
 function doCheckin(acct, cookie, triedLogin, next) {
   $httpClient.post({
     url: CHECKIN_URL,
@@ -82,10 +189,14 @@ function doCheckin(acct, cookie, triedLogin, next) {
     var r = parseJson(data);
     if (r && r.code === 1) {
       var points = (r.info && r.info.points) || "10";
-      results.push(acct.label + "：签到成功 +" + points + " 积分");
+      var total = findTotal(r);
+      var suffix = total ? "，总积分 " + total : "";
+      results.push(acct.label + "：签到成功 +" + points + " 积分" + suffix);
       next();
     } else if (r && r.code === 1001) {
-      results.push(acct.label + "：今日已签到");
+      var total2 = findTotal(r);
+      var suffix2 = total2 ? "，总积分 " + total2 : "";
+      results.push(acct.label + "：今日已签到" + suffix2);
       next();
     } else if (!triedLogin && acct.user && acct.pass) {
       // 可能是 Cookie 过期，用账号密码重新登录一次再试
@@ -136,6 +247,7 @@ function processNext() {
 }
 
 function finish() {
+  if (hasSuccess()) write(TIME_DONE_KEY, todayStr());
   if (results.length === 0) {
     $notification.post(NAME + "签到", "还没填账号", "在 BoxJs 里填 Cookie 或账号密码，多账号每行一个");
   } else {
@@ -144,4 +256,8 @@ function finish() {
   $done({});
 }
 
-processNext();
+if (shouldRunAuto()) {
+  processNext();
+} else {
+  $done({});
+}

@@ -10,9 +10,130 @@
 var NAME = "网易云音乐";
 var URL = "https://music.163.com/api/point/dailyTask?type=1";
 var UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15";
+var GROWTH_URL = "https://music.163.com/api/vipnewcenter/app/level/growhpoint/basic";
+
+// ---------- 自定义签到时间（区间签到） ----------
+// BoxJs 设置：
+// netease_time_enabled：开关，启用自定义签到时间（默认关 = 每天 09:00）
+// netease_time_mode：fixed = 指定时间 / random = 时间区间随机
+// netease_time：指定时间 "HH:MM"，如 09:30
+// netease_time_range：时间区间 "HH:MM-HH:MM"，如 08:00-10:00
+const TIME_ENABLED_KEY = "netease_time_enabled";
+const TIME_MODE_KEY = "netease_time_mode";
+const TIME_KEY = "netease_time";
+const TIME_RANGE_KEY = "netease_time_range";
+const TIME_TARGET_KEY = "netease_time_target"; // 当天随机挑好的时间，格式 "YYYY-MM-DD HH:MM|HH:MM-HH:MM"
+const TIME_DONE_KEY = "netease_time_done"; // 自动签到今天已跑过的日期
+const DEFAULT_TIME_MIN = 9 * 60; // 默认 09:00
+
+// 开关值可能是 "true"/true/"1"/1，都当作开
+function isTrue(v) {
+  return v === true || v === "true" || v === 1 || v === "1";
+}
+// 本地日期 YYYY-MM-DD（不用 toISOString，那是 UTC 日期，凌晨会差一天）
+function todayStr() {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return y + "-" + m + "-" + day;
+}
+// 现在是今天的第几分钟（本地时间）
+function nowMin() {
+  const d = new Date();
+  return d.getHours() * 60 + d.getMinutes();
+}
+// "HH:MM" 转分钟，非法返回 null
+function parseHM(s) {
+  if (!s) return null;
+  const m = String(s).trim().match(/^(\d{1,2}):(\d{1,2})$/);
+  if (!m) return null;
+  const h = parseInt(m[1], 10), mi = parseInt(m[2], 10);
+  if (h < 0 || h > 23 || mi < 0 || mi > 59) return null;
+  return h * 60 + mi;
+}
+// 分钟转 "HH:MM"
+function fmtHM(min) {
+  const h = Math.floor(min / 60), mi = min % 60;
+  return String(h).padStart(2, "0") + ":" + String(mi).padStart(2, "0");
+}
+// 今天的目标签到时间（分钟）。未启用或配置非法时回落到 09:00
+function todayTargetMin() {
+  if (!isTrue(read(TIME_ENABLED_KEY))) return DEFAULT_TIME_MIN;
+  const mode = (read(TIME_MODE_KEY) || "").trim();
+  if (mode === "fixed") {
+    const t = parseHM(read(TIME_KEY));
+    return t === null ? DEFAULT_TIME_MIN : t;
+  }
+  if (mode === "random") {
+    const range = (read(TIME_RANGE_KEY) || "").trim();
+    const parts = range.split("-");
+    if (parts.length !== 2) return DEFAULT_TIME_MIN;
+    const start = parseHM(parts[0]), end = parseHM(parts[1]);
+    if (start === null || end === null || end <= start) return DEFAULT_TIME_MIN;
+    const today = todayStr();
+    // 当天已挑过且区间没变 → 用存好的；否则重新随机挑一个
+    const stored = read(TIME_TARGET_KEY);
+    if (stored) {
+      const sp = stored.split("|");
+      if (sp.length === 2 && sp[0].slice(0, 10) === today && sp[1] === range) {
+        const t = parseHM(sp[0].slice(11));
+        if (t !== null) return t;
+      }
+    }
+    const pick = start + Math.floor(Math.random() * (end - start + 1));
+    write(TIME_TARGET_KEY, today + " " + fmtHM(pick) + "|" + range);
+    return pick;
+  }
+  return DEFAULT_TIME_MIN;
+}
+// 自动定时是否该跑：到了目标时间且今天还没跑过
+function shouldRunAuto() {
+  const today = todayStr();
+  if (read(TIME_DONE_KEY) === today) return false;
+  return nowMin() >= todayTargetMin();
+}
+// 今天的签到是否已有成功/已签到结果（成功才写 done，失败留给下一分钟重试）
+function hasSuccess() {
+  for (var i = 0; i < results.length; i++) {
+    var s = results[i];
+    if (s.indexOf("签到成功") !== -1 || s.indexOf("今日已签到") !== -1) return true;
+  }
+  return false;
+}
 
 function read(k) { return $persistentStore.read(k) || ""; }
+function write(k, v) { $persistentStore.write(v, k); }
 function parseJson(d) { try { return JSON.parse(d); } catch (e) { return null; } }
+// 从成长值接口返回里找总数（字段名不统一，都试一遍；找不到返回 ""）
+function findGrowthTotal(o) {
+  if (!o) return "";
+  var d = o.data || o;
+  var cands = [
+    d.growthPoint, d.growth_point, d.total, d.totalPoint, d.total_point,
+    d.point, d.points, d.score, d.value, d.levelPoint,
+    o.growthPoint, o.total, o.point
+  ];
+  for (var i = 0; i < cands.length; i++) {
+    var v = cands[i];
+    if (v !== undefined && v !== null && v !== "" && !isNaN(Number(v))) return String(v);
+  }
+  return "";
+}
+// 查一次总成长值，拿不到就回 ""（不阻塞签到结果）
+function fetchGrowthTotal(cookie, cb) {
+  $httpClient.get({
+    url: GROWTH_URL,
+    headers: { "Cookie": cookie, "User-Agent": UA, "Referer": "https://music.163.com/" }
+  }, function (error, response, data) {
+    var total = "";
+    try {
+      var o = parseJson(data);
+      if (o) total = findGrowthTotal(o);
+    } catch (e) {}
+    cb(total);
+  });
+}
 
 function collectAccounts() {
   var list = [];
@@ -47,15 +168,25 @@ function doCheckin(acct, next) {
       return;
     }
     if (r.code === 200 && r.point !== undefined) {
-      results.push(acct.label + "：签到成功，+" + r.point + " 成长值");
+      var gain = r.point;
+      fetchGrowthTotal(acct.cookie, function (total) {
+        var suffix = total ? "，总成长值 " + total : "";
+        results.push(acct.label + "：签到成功，+" + gain + " 成长值" + suffix);
+        next();
+      });
     } else if (r.code === -2) {
-      results.push(acct.label + "：今日已签到");
+      fetchGrowthTotal(acct.cookie, function (total) {
+        var suffix = total ? "，总成长值 " + total : "";
+        results.push(acct.label + "：今日已签到" + suffix);
+        next();
+      });
     } else if (r.code === 200 && r.msg) {
       results.push(acct.label + "：签到失败，" + r.msg + "（Cookie 可能过期，重新打开 App 抓一次）");
+      next();
     } else {
       results.push(acct.label + "：签到失败，" + JSON.stringify(r).slice(0, 80));
+      next();
     }
-    next();
   });
 }
 
@@ -66,6 +197,7 @@ function processNext() {
 }
 
 function finish() {
+  if (hasSuccess()) write(TIME_DONE_KEY, todayStr());
   if (results.length === 0) {
     $notification.post(NAME + "签到", "还没填 Cookie", "打开网易云音乐 App 停 1 秒自动抓取");
   } else {
@@ -74,4 +206,8 @@ function finish() {
   $done({});
 }
 
-processNext();
+if (shouldRunAuto()) {
+  processNext();
+} else {
+  $done({});
+}

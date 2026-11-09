@@ -148,10 +148,49 @@
      "val": "",
      "type": "textarea",
      "desc": "多账号：每行一个，填 Cookie，或 账号；密码（中文分号隔开），不限个数"
+    },
+    {
+     "id": "woniu_time_enabled",
+     "name": "启用自定义签到时间",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认关闭（每天 09:00 签到）。打开后按下面选的时间签到；关闭则恢复 09:00"
+    },
+    {
+     "id": "woniu_time_mode",
+     "name": "签到时间模式",
+     "type": "selects",
+     "items": [
+      {
+       "key": "fixed",
+       "label": "指定时间"
+      },
+      {
+       "key": "random",
+       "label": "时间区间随机"
+      }
+     ],
+     "val": "",
+     "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+    },
+    {
+     "id": "woniu_time",
+     "name": "指定签到时间",
+     "val": "",
+     "type": "text",
+     "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 09:00"
+    },
+    {
+     "id": "woniu_time_range",
+     "name": "签到时间区间",
+     "val": "",
+     "type": "text",
+     "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 09:00"
     }
    ],
    "descs_html": [
-    "蜗牛 4K 每日签到，每天 09:00 自动签到，+10 积分。",
+    "蜗牛 4K 每日签到，每天自动签到，+10 积分。",
+    "签到时间：默认每天 09:00；在下面打开“启用自定义签到时间”可改成指定时间或区间随机。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/WoNiuCheckin.plugin\">点击安装 Loon 插件</a>",
     "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
    ]
@@ -175,10 +214,49 @@
      "val": "",
      "type": "textarea",
      "desc": "打开七日杀签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 08:30 自动签到"
+    },
+    {
+     "id": "risha_time_enabled",
+     "name": "启用自定义签到时间",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认关闭（每天 08:30 签到）。打开后按下面选的时间签到；关闭则恢复 08:30"
+    },
+    {
+     "id": "risha_time_mode",
+     "name": "签到时间模式",
+     "type": "selects",
+     "items": [
+      {
+       "key": "fixed",
+       "label": "指定时间"
+      },
+      {
+       "key": "random",
+       "label": "时间区间随机"
+      }
+     ],
+     "val": "",
+     "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+    },
+    {
+     "id": "risha_time",
+     "name": "指定签到时间",
+     "val": "",
+     "type": "text",
+     "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 08:30"
+    },
+    {
+     "id": "risha_time_range",
+     "name": "签到时间区间",
+     "val": "",
+     "type": "text",
+     "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 08:30"
     }
    ],
    "descs_html": [
-    "七日杀中文网每日签到，每天 08:30 自动签到。",
+    "七日杀中文网每日签到，每天自动签到。",
+    "签到时间：默认每天 08:30；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha.plugin\">点击安装 Loon 插件</a>"
    ]
   },
@@ -249,10 +327,49 @@
      "val": "",
      "type": "textarea",
      "desc": "多账号：每行一个 账号；密码（中文分号隔开），不限个数"
+    },
+    {
+     "id": "chilledmelon_time_enabled",
+     "name": "启用自定义签到时间",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认关闭（每天 09:00 签到）。打开后按下面选的时间签到；关闭则恢复 09:00"
+    },
+    {
+     "id": "chilledmelon_time_mode",
+     "name": "签到时间模式",
+     "type": "selects",
+     "items": [
+      {
+       "key": "fixed",
+       "label": "指定时间"
+      },
+      {
+       "key": "random",
+       "label": "时间区间随机"
+      }
+     ],
+     "val": "",
+     "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+    },
+    {
+     "id": "chilledmelon_time",
+     "name": "指定签到时间",
+     "val": "",
+     "type": "text",
+     "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 09:00"
+    },
+    {
+     "id": "chilledmelon_time_range",
+     "name": "签到时间区间",
+     "val": "",
+     "type": "text",
+     "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 09:00"
     }
    ],
    "descs_html": [
-    "ChilledMelon 每日签到，每天 09:00 自动登录、做运算题、签到，+5~20 积分。",
+    "ChilledMelon 每日签到，每天自动登录、做运算题、签到，+5~20 积分。",
+    "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/ChilledMelonCheckin.plugin\">点击安装 Loon 插件</a>",
     "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
    ]
@@ -419,13 +536,52 @@
      "val": "",
      "type": "textarea",
      "desc": "多账号：每行一个，填 session_id，或 账号；密码（中文分号隔开），不限个数"
+    },
+    {
+     "id": "embypulse1_time_enabled",
+     "name": "启用自定义签到时间",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认关闭（每天 09:00 签到）。打开后按下面选的时间签到；关闭则恢复 09:00"
+    },
+    {
+     "id": "embypulse1_time_mode",
+     "name": "签到时间模式",
+     "type": "selects",
+     "items": [
+      {
+       "key": "fixed",
+       "label": "指定时间"
+      },
+      {
+       "key": "random",
+       "label": "时间区间随机"
+      }
+     ],
+     "val": "",
+     "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+    },
+    {
+     "id": "embypulse1_time",
+     "name": "指定签到时间",
+     "val": "",
+     "type": "text",
+     "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 09:00"
+    },
+    {
+     "id": "embypulse1_time_range",
+     "name": "签到时间区间",
+     "val": "",
+     "type": "text",
+     "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 09:00"
     }
    ],
    "icons": [
     "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/lewa.jpg"
    ],
    "descs_html": [
-    "乐蛙每日签到，每天 09:00 自动签到，奖励 100-120 积分。",
+    "乐蛙每日签到，每天自动签到，奖励 100-120 积分。",
+    "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/EmbyPulseTaotuCheckin.plugin\">点击安装 Loon 插件</a>",
     "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
    ]
@@ -518,13 +674,52 @@
      "val": "",
      "type": "textarea",
      "desc": "多账号：每行一个，填 session_id，或 账号；密码（中文分号隔开），不限个数"
+    },
+    {
+     "id": "embypulse2_time_enabled",
+     "name": "启用自定义签到时间",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认关闭（每天 09:00 签到）。打开后按下面选的时间签到；关闭则恢复 09:00"
+    },
+    {
+     "id": "embypulse2_time_mode",
+     "name": "签到时间模式",
+     "type": "selects",
+     "items": [
+      {
+       "key": "fixed",
+       "label": "指定时间"
+      },
+      {
+       "key": "random",
+       "label": "时间区间随机"
+      }
+     ],
+     "val": "",
+     "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+    },
+    {
+     "id": "embypulse2_time",
+     "name": "指定签到时间",
+     "val": "",
+     "type": "text",
+     "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 09:00"
+    },
+    {
+     "id": "embypulse2_time_range",
+     "name": "签到时间区间",
+     "val": "",
+     "type": "text",
+     "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 09:00"
     }
    ],
    "icons": [
     "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/leguan.jpg"
    ],
    "descs_html": [
-    "乐观每日签到，每天 09:00 自动签到，奖励 90-130 积分。",
+    "乐观每日签到，每天自动签到，奖励 90-130 积分。",
+    "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/EmbyPulseDijiaCheckin.plugin\">点击安装 Loon 插件</a>",
     "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
    ]
@@ -555,10 +750,49 @@
      "val": "",
      "type": "textarea",
      "desc": "打开一次夸克浏览器 App 自动抓取；也可以手动粘贴签到请求的完整 query（? 后面的那串）"
+    },
+    {
+     "id": "quark_time_enabled",
+     "name": "启用自定义签到时间",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认关闭（每天 09:00 签到）。打开后按下面选的时间签到；关闭则恢复 09:00"
+    },
+    {
+     "id": "quark_time_mode",
+     "name": "签到时间模式",
+     "type": "selects",
+     "items": [
+      {
+       "key": "fixed",
+       "label": "指定时间"
+      },
+      {
+       "key": "random",
+       "label": "时间区间随机"
+      }
+     ],
+     "val": "",
+     "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+    },
+    {
+     "id": "quark_time",
+     "name": "指定签到时间",
+     "val": "",
+     "type": "text",
+     "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 09:00"
+    },
+    {
+     "id": "quark_time_range",
+     "name": "签到时间区间",
+     "val": "",
+     "type": "text",
+     "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 09:00"
     }
    ],
    "descs_html": [
-    "夸克网盘 + 夸克浏览器每日签到，每天 09:00 自动签到领网盘容量。",
+    "夸克网盘 + 夸克浏览器每日签到，每天自动签到领网盘容量。",
+    "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-quark/QuarkCheckin.plugin\">点击安装 Loon 插件</a>",
     "第一次使用：打开一次夸克网盘和夸克浏览器，插件会自动保存签到参数。"
    ],
@@ -690,10 +924,49 @@
      "val": "",
      "type": "text",
      "desc": "积分够了自动兑换天数：填 100 / 200 / 500，分别换 10 / 30 / 100 天，空着不兑换"
+    },
+    {
+     "id": "glados_time_enabled",
+     "name": "启用自定义签到时间",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认关闭（每天 09:00 签到）。打开后按下面选的时间签到；关闭则恢复 09:00"
+    },
+    {
+     "id": "glados_time_mode",
+     "name": "签到时间模式",
+     "type": "selects",
+     "items": [
+      {
+       "key": "fixed",
+       "label": "指定时间"
+      },
+      {
+       "key": "random",
+       "label": "时间区间随机"
+      }
+     ],
+     "val": "",
+     "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+    },
+    {
+     "id": "glados_time",
+     "name": "指定签到时间",
+     "val": "",
+     "type": "text",
+     "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 09:00"
+    },
+    {
+     "id": "glados_time_range",
+     "name": "签到时间区间",
+     "val": "",
+     "type": "text",
+     "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 09:00"
     }
    ],
    "descs_html": [
-    "GLaDOS 每日签到，每天 09:00 自动签到领积分。",
+    "GLaDOS 每日签到，每天自动签到领积分。",
+    "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/GladosCheckin.plugin\">点击安装 Loon 插件</a>",
     "抓 Cookie：<a href=\"https://glados.rocks/console/account\">打开 GLaDOS 账号页</a>，停 1 秒自动抓取。",
     "注意：GLaDOS 会校验抓包时的设备，抓包和签到必须用同一台设备（建议都在手机上），换设备登录后要重新抓 Cookie。",
@@ -743,10 +1016,49 @@
      "val": "",
      "type": "textarea",
      "desc": "多账号：每行一个完整 Cookie，不限个数（Cookie 里本身带分号，每行就是一个账号，不要拆开）"
+    },
+    {
+     "id": "netease_time_enabled",
+     "name": "启用自定义签到时间",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认关闭（每天 09:00 签到）。打开后按下面选的时间签到；关闭则恢复 09:00"
+    },
+    {
+     "id": "netease_time_mode",
+     "name": "签到时间模式",
+     "type": "selects",
+     "items": [
+      {
+       "key": "fixed",
+       "label": "指定时间"
+      },
+      {
+       "key": "random",
+       "label": "时间区间随机"
+      }
+     ],
+     "val": "",
+     "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+    },
+    {
+     "id": "netease_time",
+     "name": "指定签到时间",
+     "val": "",
+     "type": "text",
+     "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 09:00"
+    },
+    {
+     "id": "netease_time_range",
+     "name": "签到时间区间",
+     "val": "",
+     "type": "text",
+     "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 09:00"
     }
    ],
    "descs_html": [
-    "网易云音乐每日签到，每天 09:00 自动签到，+2 成长值。",
+    "网易云音乐每日签到，每天自动签到，+2 成长值。",
+    "签到时间：默认每天 09:00；在下面打开“启用自定义签到时间”可改成指定时间或区间随机。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-netease/NetEaseCheckin.plugin\">点击安装 Loon 插件</a>",
     "抓 Cookie：插件设置里「抓取开关」默认开，打开网易云音乐 App 停 1 秒自动抓取；抓完可以关掉；Cookie 过期时重新打开抓一次。",
     "注意：APP 端签到接口已停用，只能签网页端；云贝中心和 VIP 签到是加密接口，做不了自动签。",
@@ -793,10 +1105,49 @@
      "val": "",
      "type": "textarea",
      "desc": "多账号：每行一个签到请求 JSON，不限个数"
+    },
+    {
+     "id": "taobao_time_enabled",
+     "name": "启用自定义签到时间",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认关闭（每天 09:00 签到）。打开后按下面选的时间签到；关闭则恢复 09:00"
+    },
+    {
+     "id": "taobao_time_mode",
+     "name": "签到时间模式",
+     "type": "selects",
+     "items": [
+      {
+       "key": "fixed",
+       "label": "指定时间"
+      },
+      {
+       "key": "random",
+       "label": "时间区间随机"
+      }
+     ],
+     "val": "",
+     "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+    },
+    {
+     "id": "taobao_time",
+     "name": "指定签到时间",
+     "val": "",
+     "type": "text",
+     "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 09:00"
+    },
+    {
+     "id": "taobao_time_range",
+     "name": "签到时间区间",
+     "val": "",
+     "type": "text",
+     "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 09:00"
     }
    ],
    "descs_html": [
-    "淘宝淘金币每日签到，每天 09:00 自动签到。",
+    "淘宝淘金币每日签到，每天自动签到。",
+    "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-taobao/TaobaoCoinCheckin.plugin\">点击安装 Loon 插件</a>",
     "抓取：插件设置里「抓取开关」默认开，打开淘宝 App → 淘金币 → 点一次签到自动抓取；抓完可以关掉。",
     "注意：签到请求有时效，自动签失败时重新在 App 里点一次签到即可。"
@@ -5659,6 +6010,16 @@
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-mi-step/YuhengMiStep.plugin\">点击安装 Loon 插件</a>"
    ],
    "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-mi-step/yuheng_mi_step.js"
+  },
+  {
+   "id": "cookies_collection",
+   "name": "获取 Cookie 合集",
+   "icon": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/cookie.png",
+   "descs_html": [
+    "<a href=\"https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/Cookies.plugin\">点击安装 Loon 插件</a>",
+    "在插件设置里开关每个抓包，抓完可关掉。"
+   ],
+   "settings": []
   }
  ]
 }
