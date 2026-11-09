@@ -1,5 +1,5 @@
 #!name=网易严选每日签到
-#!desc=网易严选每日签到；用法：装好插件，打开重写和 cron，打开「网易严选」点一次签到，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:03 自动签到。\n手动抓取：点 Loon 脚本里的「网易严选去抓取」，按弹出的提示操作。
+#!desc=网易严选每日签到；用法：装好插件，打开重写和 cron，打开「网易严选」点一次签到，收到通知即抓取成功，抓完后在设置里关掉「抓取开关」；cron 每天 08:03 自动签到。
 #!author=許諾
 #!homepage=https://github.com/Crack22/loon-plugins
 
@@ -12,4 +12,3 @@ hostname = m.you.163.com
 [Script]
 http-request ^https?://m\.you\.163\.com/xhr/points/(index|sign)\.json script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/yanxuan/yanxuan_capture.js, requires-body=false, tag=网易严选每日签到 Cookie, argument="key=chavy_cookie_yanxuan&title=网易严选", enable={capture}
 cron "3 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/yanxuan/yanxuan.js, timeout=300, tag=网易严选每日签到, enable=true
-cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=网易严选去抓取, argument="title=网易严选&url=&hint=打开「网易严选」点一次签到即自动抓取", enable={capture}
