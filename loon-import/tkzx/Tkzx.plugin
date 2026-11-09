@@ -5,4 +5,4 @@
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Script]
-cron "0 10 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TKZX/TKZX_Exchange.js, timeout=300, tag=泰康在线兑换, img-url=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TKZX/TKZX.PNG, enable=true
+cron "0 10 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/tkzx/TKZX_Exchange.js, timeout=300, tag=泰康在线兑换, img-url=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/TKZX/TKZX.PNG, enable=true

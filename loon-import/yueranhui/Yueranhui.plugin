@@ -12,5 +12,5 @@ hostname = wox2019.woxshare.com
 
 [Script]
 http-request ^https?://wox2019\.woxshare\.com/clientApi/userCenterDetail script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yueranhui/yueranhui_capture.js, requires-body=false, tag=悦然荟每日签到抓取, enable={capture}
-cron "17 7 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/yueran_sign.js, timeout=300, tag=悦然荟每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/yrh.png, enable=true
+cron "17 7 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yueranhui/yueran_sign.js, timeout=300, tag=悦然荟每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/yrh.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=悦然荟去抓取, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/yrh.png, argument="title=悦然荟&url=&hint=打开悦然荟微信小程序，进入会员中心", enable={capture}

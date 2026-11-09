@@ -12,5 +12,5 @@ hostname = wx-center.zippo.com.cn
 
 [Script]
 http-request ^https?://wx-center\.zippo\.com\.cn/api/users/profile script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_checkin_capture.js, requires-body=false, tag=𝐙𝐈𝐏𝐏𝐎会员中心签到 Cookie, argument="key=zippo_mp_auth&source=authorization&title=ZIPPO", enable={capture}
-cron "0 6 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/zippo.js, timeout=300, tag=𝐙𝐈𝐏𝐏𝐎会员中心签到, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/zippo.jpg, enable=true
+cron "0 6 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-zippo/zippo.js, timeout=300, tag=𝐙𝐈𝐏𝐏𝐎会员中心签到, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/zippo.jpg, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=ZIPPO去抓取, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/zippo.jpg, argument="title=ZIPPO&url=&hint=微信搜索 ZIPPO会员中心 小程序，注册/登录后点「我的」，收到通知即抓取成功", enable={capture}

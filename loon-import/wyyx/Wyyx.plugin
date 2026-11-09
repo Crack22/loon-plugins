@@ -6,4 +6,4 @@
 
 
 [Script]
-cron "45 0,11,21 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX_Exchange.js, timeout=300, tag=网易严选兑换, img-url=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX.png, enable=true
+cron "45 0,11,21 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/wyyx/WYYX_Exchange.js, timeout=300, tag=网易严选兑换, img-url=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WYYX/WYYX.png, enable=true

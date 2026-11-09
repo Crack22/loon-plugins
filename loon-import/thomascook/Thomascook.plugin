@@ -12,5 +12,5 @@ hostname = apis.folidaymall.com
 
 [Script]
 http-request ^https://apis\.folidaymall\.com/online/capi/uc/getCount script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_checkin_capture.js, requires-body=false, tag=托迈酷客每日签到抓取, argument="key=ThomasCook_Cookie&source=authorization&title=托迈酷客每日签到", enable={capture}
-cron "15 10 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/ThomasCook.js, timeout=300, tag=托迈酷客每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/ThomasCook.png, enable=true
+cron "15 10 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/thomascook/ThomasCook.js, timeout=300, tag=托迈酷客每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/ThomasCook.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=托迈酷客去抓取, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/ThomasCook.png, argument="title=托迈酷客&url=&hint=打开托迈酷客 App 或小程序", enable={capture}

@@ -12,5 +12,5 @@ hostname = payapp.weixin.qq.com
 
 [Script]
 http-response ^https://payapp\.weixin\.qq\.com/(coupon-center-user/home/login|coupon-center-award/award/detail) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/wechat-pay-coupon/wechat_pay_coupon_capture.js, requires-body=true, tag=微信支付有优惠每日签到抓取, enable={capture}
-cron "30 9 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js, timeout=300, tag=微信支付有优惠每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png, enable=true
+cron "30 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/wechat-pay-coupon/wechat_pay_coupon.js, timeout=300, tag=微信支付有优惠每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=微信支付有优惠去抓取, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png, argument="title=微信支付有优惠&url=&hint=打开微信支付有优惠小程序", enable={capture}

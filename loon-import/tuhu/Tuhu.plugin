@@ -12,5 +12,5 @@ hostname = api.tuhu.cn
 
 [Script]
 http-request ^https://api\.tuhu\.cn/User/GetInternalCenterInfo script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/tuhu/tuhu_capture.js, requires-body=false, tag=途虎养车每日签到抓取, enable={capture}
-cron "17 7 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/tuhu.js, timeout=300, tag=途虎养车每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png, enable=true
+cron "17 7 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/tuhu/tuhu.js, timeout=300, tag=途虎养车每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=途虎养车去抓取, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png, argument="title=途虎养车&url=&hint=打开途虎养车 App，进入个人中心", enable={capture}

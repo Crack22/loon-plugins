@@ -11,6 +11,6 @@ capture = switch,true,tag=抓取开关,desc=打开后，打开 App 会自动保�
 hostname = club.yili.com
 
 [Script]
-http-request ^https://club\.yili\.com/MALLIFChe/MCSWSIAPI\.asmx/Call script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.cookie.js, requires-body=true, tag=伊利乳品 Cookie, enable={capture}
-cron "10 0 * * *" script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js, timeout=300, tag=伊利乳品每日签到, img-url=https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png, enable=true
+http-request ^https://club\.yili\.com/MALLIFChe/MCSWSIAPI\.asmx/Call script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yili/yiLi.cookie.js, requires-body=true, tag=伊利乳品 Cookie, enable={capture}
+cron "10 0 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yili/yiLi.js, timeout=300, tag=伊利乳品每日签到, img-url=https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=伊利乳品去抓取, img-url=https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png, argument="title=伊利乳品&url=&hint=微信打开伊利小程序，点个人中心，收到通知即抓取成功", enable={capture}

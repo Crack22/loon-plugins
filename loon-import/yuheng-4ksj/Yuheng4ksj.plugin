@@ -5,4 +5,4 @@
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Script]
-cron "0 6 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/4ksj.js, timeout=300, tag=4K世界自动签到, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/4ksj.png, enable=true
+cron "0 6 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-4ksj/4ksj.js, timeout=300, tag=4K世界自动签到, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/4ksj.png, enable=true

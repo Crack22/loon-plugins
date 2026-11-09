@@ -12,5 +12,5 @@ hostname = crm.nestlechinese.com
 
 [Script]
 http-request ^https:\/\/crm\.nestlechinese\.com\/openapi\/pointsservice\/api\/Points\/getuserbalance script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_checkin_capture.js, requires-body=false, tag=雀巢咖啡每日签到 Cookie, argument="key=qc_data&source=authorization&title=雀巢咖啡每日签到", enable={capture}
-cron "30 0 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/f533ada8d658a0cbbe4b2e791c3b0ac8/raw/be3d9b74fe1cde69e6d39b599e5526110c996958/nestle.js, timeout=300, tag=雀巢咖啡每日签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Nestle.png, enable=true
+cron "30 0 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-qc/nestle.js, timeout=300, tag=雀巢咖啡每日签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Nestle.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=雀巢咖啡去抓取, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Nestle.png, argument="title=雀巢咖啡&url=&hint=打开雀巢会员俱乐部小程序，进入「我的」即自动抓取", enable={capture}

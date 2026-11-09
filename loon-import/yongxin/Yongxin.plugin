@@ -6,4 +6,4 @@
 
 
 [Script]
-cron "10 0,23 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YongXin/YongXin.js, timeout=300, tag=富连e充兑换, img-url=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YongXin/YongXin.jpg, enable=true
+cron "10 0,23 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yongxin/YongXin.js, timeout=300, tag=富连e充兑换, img-url=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/YongXin/YongXin.jpg, enable=true

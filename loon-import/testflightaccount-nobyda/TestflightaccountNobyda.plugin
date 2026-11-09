@@ -6,4 +6,4 @@
 
 
 [Script]
-cron "0 0 29 2 *" script-path=https://gist.githubusercontent.com/NobyDa/d025c53d3922657f921b983ce129fc1d/raw/TestFlightAccountRemoveCache.js, timeout=300, tag=清除缓存, img-url=https://raw.githubusercontent.com/NobyDa/mini/master/Color/testflight.png, enable=true
+cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/testflightaccount-nobyda/TestFlightAccountRemoveCache.js, timeout=300, tag=清除缓存, img-url=https://raw.githubusercontent.com/NobyDa/mini/master/Color/testflight.png, enable=true
