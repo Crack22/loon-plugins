@@ -77,11 +77,13 @@ function todayTargetMin() {
   }
   return DEFAULT_TIME_MIN;
 }
-// 自动定时是否该跑：到了目标时间且今天还没跑过
+// 自动定时是否该跑：目标时间起 60 分钟内且今天还没跑过（窗口外不跑，避免打开 Loon 时补跑）
 function shouldRunAuto() {
   const today = todayStr();
   if (($persistentStore.read(TIME_DONE_KEY) || "") === today) return false;
-  return nowMin() >= todayTargetMin();
+  const target = todayTargetMin();
+  const now = nowMin();
+  return now >= target && now < target + 60;
 }
 
 function main() {
@@ -107,6 +109,7 @@ function main() {
     body: 'sign=1'
   }, function (error, response, data) {
     if (error) {
+      $persistentStore.write(todayStr(), TIME_DONE_KEY);
       $notification.post('7risha签到失败', '', '网络异常，请稍后重试');
       $done();
       return;
@@ -120,13 +123,17 @@ function main() {
         $persistentStore.write(todayStr(), TIME_DONE_KEY);
         $notification.post('7risha今日已签到', '', (r.msg || '今日已签到') + '，累计签到 ' + (r.sign_c || '') + ' 天');
       } else if (r.code === 8) {
+        $persistentStore.write(todayStr(), TIME_DONE_KEY);
         $notification.post('7risha签到失败', '', '需先绑定手机号');
       } else if (r.code === 9) {
+        $persistentStore.write(todayStr(), TIME_DONE_KEY);
         $notification.post('7risha签到失败', '', '需先绑定邮箱');
       } else {
+        $persistentStore.write(todayStr(), TIME_DONE_KEY);
         $notification.post('7risha签到失败', '', (r.msg || '签到失败') + '，请重新抓取 Cookie');
       }
     } catch (e) {
+      $persistentStore.write(todayStr(), TIME_DONE_KEY);
       $notification.post('7risha签到失败', '', '返回异常，请检查登录态');
     }
     $done();

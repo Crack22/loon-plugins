@@ -81,11 +81,13 @@ function todayTargetMin() {
   }
   return DEFAULT_TIME_MIN;
 }
-// 自动定时是否该跑：到了目标时间且今天还没跑过
+// 自动定时是否该跑：目标时间起 60 分钟内且今天还没跑过（窗口外不跑，避免打开 Loon 时补跑）
 function shouldRunAuto() {
   const today = todayStr();
   if (($persistentStore.read(TIME_DONE_KEY) || "") === today) return false;
-  return nowMin() >= todayTargetMin();
+  const target = todayTargetMin();
+  const now = nowMin();
+  return now >= target && now < target + 60;
 }
 
 function collectAccounts() {
@@ -180,11 +182,11 @@ function main() {
     return;
   }
   var results = [];
-  var allOk = true;
   var idx = 0;
   function next() {
     if (idx >= accounts.length) {
-      if (allOk) $persistentStore.write(todayStr(), TIME_DONE_KEY);
+      // 跑完一轮就写 done，不管成功失败（失败也不再每分钟重试）
+      $persistentStore.write(todayStr(), TIME_DONE_KEY);
       var title = "淘宝淘金币签到";
       var subtitle = results.length > 1 ? ("共 " + results.length + " 个账号") : "";
       $notification.post(title, subtitle, results.join("\n"));
@@ -194,7 +196,6 @@ function main() {
     var acc = accounts[idx];
     idx++;
     doSign(acc, function (ok, msg) {
-      if (!ok) allOk = false;
       results.push(acc.name + "：" + msg);
       next();
     });

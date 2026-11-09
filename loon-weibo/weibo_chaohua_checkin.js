@@ -136,11 +136,13 @@ function todayTargetMin() {
   }
   return DEFAULT_TIME_MIN;
 }
-// 自动定时是否该跑：到了目标时间且今天还没跑过
+// 自动定时是否该跑：目标时间起 60 分钟内且今天还没跑过（窗口外不跑，避免打开 Loon 时补跑）
 function shouldRunAuto() {
   const today = todayStr();
   if (read(TIME_DONE_KEY) === today) return false;
-  return nowMin() >= todayTargetMin();
+  const target = todayTargetMin();
+  const now = nowMin();
+  return now >= target && now < target + 60;
 }
 function uuid() {
 return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {

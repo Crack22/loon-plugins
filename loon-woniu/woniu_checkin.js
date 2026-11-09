@@ -83,19 +83,13 @@ function todayTargetMin() {
   }
   return DEFAULT_TIME_MIN;
 }
-// 自动定时是否该跑：到了目标时间且今天还没跑过
+// 自动定时是否该跑：目标时间起 60 分钟内且今天还没跑过（窗口外不跑，避免打开 Loon 时补跑）
 function shouldRunAuto() {
   const today = todayStr();
   if (read(TIME_DONE_KEY) === today) return false;
-  return nowMin() >= todayTargetMin();
-}
-// 今天的签到是否已有成功/已签到结果（成功才写 done，失败留给下一分钟重试）
-function hasSuccess() {
-  for (var i = 0; i < results.length; i++) {
-    var s = results[i];
-    if (s.indexOf("签到成功") !== -1 || s.indexOf("今日已签到") !== -1) return true;
-  }
-  return false;
+  const target = todayTargetMin();
+  const now = nowMin();
+  return now >= target && now < target + 60;
 }
 
 function read(k) { return $persistentStore.read(k) || ""; }
@@ -247,7 +241,8 @@ function processNext() {
 }
 
 function finish() {
-  if (hasSuccess()) write(TIME_DONE_KEY, todayStr());
+  // 跑完一轮就写 done，不管成功失败（失败也不再每分钟重试）
+  if (results.length > 0) write(TIME_DONE_KEY, todayStr());
   if (results.length === 0) {
     $notification.post(NAME + "签到", "还没填账号", "在 BoxJs 里填 Cookie 或账号密码，多账号每行一个");
   } else {

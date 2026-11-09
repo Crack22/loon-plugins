@@ -89,15 +89,13 @@ function todayTargetMin() {
   }
   return DEFAULT_TIME_MIN;
 }
-// 自动定时是否该跑：到了目标时间且今天还没跑过
+// 自动定时是否该跑：目标时间起 60 分钟内且今天还没跑过（窗口外不跑，避免打开 Loon 时补跑）
 function shouldRunAuto() {
   const today = todayStr();
   if (read(TIME_DONE_KEY) === today) return false;
-  return nowMin() >= todayTargetMin();
-}
-// 单条签到结果是否成功（成功或今日已签到）
-function isOkResult(s) {
-  return s.indexOf("签到成功") !== -1 || s.indexOf("今日已签到") !== -1;
+  const target = todayTargetMin();
+  const now = nowMin();
+  return now >= target && now < target + 60;
 }
 function parseJson(d) { try { return JSON.parse(d); } catch (e) { return null; } }
 function mb(bytes) { return Math.round(bytes / 1048576); }
@@ -115,12 +113,9 @@ var results = [];
 var idx = 0;
 
 function finish() {
+  // 跑完一轮就写 done，不管成功失败（失败也不再每分钟重试）
   if (results.length > 0) {
-    var allOk = true;
-    for (var i = 0; i < results.length; i++) {
-      if (!isOkResult(results[i])) { allOk = false; break; }
-    }
-    if (allOk) $persistentStore.write(todayStr(), TIME_DONE_KEY);
+    $persistentStore.write(todayStr(), TIME_DONE_KEY);
   }
   $notification.post("夸克每日签到", "", results.join("\n"));
   $done({});
