@@ -6,6 +6,16 @@
  "repo": "https://github.com/Crack22/loon-plugins",
  "apps": [
   {
+   "id": "cookies_collection",
+   "name": "获取 Cookie 合集",
+   "icon": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/cookie.png",
+   "descs_html": [
+    "<a href=\"https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/Cookies.plugin\">点击安装 Loon 插件</a>",
+    "在插件设置里开关每个抓包，抓完可关掉。"
+   ],
+   "settings": []
+  },
+  {
    "id": "wps_checkin",
    "name": "WPS Office 每日签到",
    "keys": [
@@ -6010,16 +6020,6 @@
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-mi-step/YuhengMiStep.plugin\">点击安装 Loon 插件</a>"
    ],
    "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-mi-step/yuheng_mi_step.js"
-  },
-  {
-   "id": "cookies_collection",
-   "name": "获取 Cookie 合集",
-   "icon": "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/cookie.png",
-   "descs_html": [
-    "<a href=\"https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-cookies/Cookies.plugin\">点击安装 Loon 插件</a>",
-    "在插件设置里开关每个抓包，抓完可关掉。"
-   ],
-   "settings": []
   }
  ]
 }
