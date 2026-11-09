@@ -12,5 +12,5 @@ hostname = sweixin.hisense.com
 
 [Script]
 http-response ^https://sweixin\.hisense\.com/ecrp/member/initMember script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/hisense/hisense_capture.js, requires-body=true, tag=海信爱家每日签到抓取, enable={capture}
-cron "52 7 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/Hisense.js, timeout=300, tag=海信爱家每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/hisense.png, enable=true
+cron "52 7 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/hisense/Hisense.js, timeout=300, tag=海信爱家每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/hisense.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=海信爱家去抓取, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/hisense.png, argument="title=海信爱家&url=&hint=打开海信爱家微信小程序，进入会员页", enable={capture}

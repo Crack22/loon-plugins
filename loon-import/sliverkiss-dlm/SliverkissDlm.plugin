@@ -12,5 +12,5 @@ hostname = game.dominos.com.cn
 
 [Script]
 http-request ^https:\/\/game\.dominos\.com\.cn\/.+\/game\/gameDone script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-dlm/sliverkiss-dlm_capture.js, requires-body=true, tag=达美乐披萨每日签到 Cookie, enable={capture}
-cron "30 10 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js, timeout=300, tag=达美乐披萨每日签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Dlm.png, enable=true
+cron "30 10 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-dlm/dlm.js, timeout=300, tag=达美乐披萨每日签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Dlm.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=达美乐披萨去抓取, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Dlm.png, argument="title=达美乐披萨&url=&hint=打开达美乐披萨公众号，进入「优惠｜咨询」→「有奖游戏」，手动完成一次游戏即自动抓取", enable={capture}

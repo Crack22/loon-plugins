@@ -9,8 +9,8 @@
 hostname = api-takumi-record.mihoyo.com, bbs-api.miyoushe.com
 
 [Script]
-http-response https://\/\/api-takumi-record.mihoyo.com\/game_record\/card\/api\/getGameRecordCard script-path=https://raw.githubusercontent.com/lowking/Scripts/master/mihoyo/miyousheCustom.js, requires-body=true, tag=米游社App自定义
-http-response https://\/\/bbs-api.miyoushe.com\/apihub\/api\/home\/new script-path=https://raw.githubusercontent.com/lowking/Scripts/master/mihoyo/miyousheCustom.js, requires-body=true, tag=米游社App自定义
-http-response https://\/\/bbs-api.miyoushe.com\/forum\/api\/getDiscussionByGame\?gids=8 script-path=https://raw.githubusercontent.com/lowking/Scripts/master/mihoyo/miyousheCustom.js, requires-body=true, tag=米游社App自定义
-http-response https://\/\/bbs-api.miyoushe.com\/common\/homushop\/v1\/web\/goods\/list script-path=https://raw.githubusercontent.com/lowking/Scripts/master/mihoyo/miyousheCustom.js, requires-body=true, tag=米游社App自定义
-http-response https://\/\/bbs-api.miyoushe.com\/apihub\/api\/forumMain script-path=https://raw.githubusercontent.com/lowking/Scripts/master/mihoyo/miyousheCustom.js, requires-body=true, tag=米游社App自定义
+http-response https://\/\/api-takumi-record.mihoyo.com\/game_record\/card\/api\/getGameRecordCard script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkmiyoushecustom/miyousheCustom.js, requires-body=true, tag=米游社App自定义
+http-response https://\/\/bbs-api.miyoushe.com\/apihub\/api\/home\/new script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkmiyoushecustom/miyousheCustom.js, requires-body=true, tag=米游社App自定义
+http-response https://\/\/bbs-api.miyoushe.com\/forum\/api\/getDiscussionByGame\?gids=8 script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkmiyoushecustom/miyousheCustom.js, requires-body=true, tag=米游社App自定义
+http-response https://\/\/bbs-api.miyoushe.com\/common\/homushop\/v1\/web\/goods\/list script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkmiyoushecustom/miyousheCustom.js, requires-body=true, tag=米游社App自定义
+http-response https://\/\/bbs-api.miyoushe.com\/apihub\/api\/forumMain script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/lkmiyoushecustom/miyousheCustom.js, requires-body=true, tag=米游社App自定义

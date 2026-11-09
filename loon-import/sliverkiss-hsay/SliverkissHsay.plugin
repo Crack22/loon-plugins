@@ -12,5 +12,5 @@ hostname = qmwebapi.qmai.cn,webapi.qmai.cn,webapi2.qmai.cn
 
 [Script]
 http-request ^https:\/\/(webapi|webapi2|qmwebapi)\.qmai\.cn\/web\/(catering|catering2-apiserver)\/crm\/points-info script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-hsay/sliverkiss-hsay_capture.js, tag=沪上阿姨每日签到 Cookie, enable={capture}
-cron "30 9 * * *" script-path=https://raw.githubusercontent.com/zjk2017/ArcadiaScriptPublic/main/M_hsay.js, timeout=300, tag=沪上阿姨每日签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hsay.png, enable=true
+cron "30 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-hsay/M_hsay.js, timeout=300, tag=沪上阿姨每日签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hsay.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=沪上阿姨去抓取, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hsay.png, argument="title=沪上阿姨&url=&hint=打开沪上阿姨小程序，进入「我的」页面即自动抓取", enable={capture}

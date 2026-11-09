@@ -12,5 +12,5 @@ hostname = hweb-mbf.huazhu.com
 
 [Script]
 http-request ^https://hweb-mbf\.huazhu\.com/api/signIn script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/hzh/hzh_capture.js, requires-body=false, tag=华住会每日签到抓取, enable={capture}
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js, timeout=300, tag=华住会每日签到, img-url=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png, enable=true
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/hzh/hzh.js, timeout=300, tag=华住会每日签到, img-url=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=华住会去抓取, img-url=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png, argument="title=华住会&url=&hint=打开华住会 App，点一次签到", enable={capture}

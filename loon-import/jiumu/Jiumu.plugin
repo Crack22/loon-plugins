@@ -12,5 +12,5 @@ hostname = wxavip-up.ezrpro.cn
 
 [Script]
 http-request ^https://wxavip-up\.ezrpro\.cn/Vip/SignIn/SignIn script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/jiumu/jiumu_capture.js, requires-body=true, tag=九木杂物社每日签到抓取, enable={capture}
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/jiumu/jiumu.js, timeout=300, tag=九木杂物社每日签到, img-url=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/jiumu_tran.png, enable=true
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/jiumu/jiumu.js, timeout=300, tag=九木杂物社每日签到, img-url=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/jiumu_tran.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=九木杂物社去抓取, img-url=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/jiumu_tran.png, argument="title=九木杂物社&url=&hint=在微信里打开九木杂物社小程序，点一次签到", enable={capture}

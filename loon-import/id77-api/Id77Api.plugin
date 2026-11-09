@@ -5,4 +5,4 @@
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Script]
-cron "15 9 * * *" script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/syncJDCookie.js, timeout=300, tag=自用JDCookie管理, img-url=https://raw.githubusercontent.com/id77/QuantumultX/master/icon/link.png, enable=true
+cron "15 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/id77-api/syncJDCookie.js, timeout=300, tag=自用JDCookie管理, img-url=https://raw.githubusercontent.com/id77/QuantumultX/master/icon/link.png, enable=true

@@ -6,4 +6,4 @@
 
 
 [Script]
-cron "20 9 * * *" script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/IQOO/IQOO_Exchange.js, timeout=300, tag=IQOO社区兑换, img-url=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/IQOO/IQOO.jpg, enable=true
+cron "20 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/iqoo/IQOO_Exchange.js, timeout=300, tag=IQOO社区兑换, img-url=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/IQOO/IQOO.jpg, enable=true

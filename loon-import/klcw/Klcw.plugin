@@ -12,5 +12,5 @@ hostname = wxavip-tp.ezrpro.cn
 
 [Script]
 http-request ^https://wxavip-tp\.ezrpro\.cn/Vip/SignIn/SignIn script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/klcw/klcw_capture.js, requires-body=true, tag=酷乐潮玩小程序每日签到抓取, enable={capture}
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw.js, timeout=300, tag=酷乐潮玩小程序每日签到, img-url=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw_tran.png, enable=true
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/klcw/klcw.js, timeout=300, tag=酷乐潮玩小程序每日签到, img-url=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw_tran.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=酷乐潮玩小程序去抓取, img-url=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw_tran.png, argument="title=酷乐潮玩小程序&url=&hint=在微信里打开酷乐潮玩小程序，点一次签到", enable={capture}

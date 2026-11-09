@@ -12,5 +12,5 @@ hostname = api.660pp.com
 
 [Script]
 http-request ^https://api\.660pp\.com/rest/[\d.]+?/user/token script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/pp-parking/pp_parking_capture.js, requires-body=false, tag=PP 停车每日签到抓取, enable={capture}
-cron "17 7 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/pp_parking.js, timeout=300, tag=PP 停车每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/pp_parking.png, enable=true
+cron "17 7 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/pp-parking/pp_parking.js, timeout=300, tag=PP 停车每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/pp_parking.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=PP 停车去抓取, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/pp_parking.png, argument="title=PP 停车&url=&hint=打开 PP 停车 App", enable={capture}

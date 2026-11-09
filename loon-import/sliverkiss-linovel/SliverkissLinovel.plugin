@@ -5,4 +5,4 @@
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Script]
-cron "15 2 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/a56aaa31bbc01191590b9c4c5c698751/raw/linovel.js, timeout=300, tag=轻之文库每日签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Linovel.png, enable=true
+cron "15 2 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-linovel/linovel.js, timeout=300, tag=轻之文库每日签到, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Linovel.png, enable=true

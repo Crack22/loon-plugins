@@ -12,5 +12,5 @@ hostname = rest.zhimatech.com
 
 [Script]
 http-request ^https://rest\.zhimatech\.com/v3/api script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/livingmall/livingmall_capture.js, requires-body=true, tag=丽影云街每日签到抓取, enable={capture}
-cron "17 7 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/livingmall.js, timeout=300, tag=丽影云街每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/livingmall.png, enable=true
+cron "17 7 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/livingmall/livingmall.js, timeout=300, tag=丽影云街每日签到, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/livingmall.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=丽影云街去抓取, img-url=https://raw.githubusercontent.com/FoKit/Scripts/main/images/livingmall.png, argument="title=丽影云街&url=&hint=打开丽影云街微信小程序", enable={capture}
