@@ -5016,33 +5016,6 @@
    ]
   },
   {
-   "id": "sliverkiss-yuchenios_checkin",
-   "name": "雨晨ios每日签到",
-   "keys": [
-    "yuchenCookie"
-   ],
-   "author": "許諾",
-   "repo": "https://github.com/Crack22/loon-plugins",
-   "icons": [
-    "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/yuchenios.png"
-   ],
-   "script": "https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/yuchenios.js",
-   "settings": [
-    {
-     "id": "yuchenCookie",
-     "name": "Cookie",
-     "val": "",
-     "type": "textarea",
-     "desc": "网站 Cookie，打开网站登录后进入「我的」自动抓取，多账号用 @ 分隔；注意：脚本实际读 yuchenCookie，旧的 yuchenios_data 已作废，请重新抓取；每天 10:14 自动签到"
-    }
-   ],
-   "descs_html": [
-    "雨晨ios每日签到，每天 10:14 自动签到。注意：脚本实际读 yuchenCookie，旧的 yuchenios_data 已作废，请重新抓取。",
-    "抓 Cookie：<a href=\"https://yuchen.tonghuaios.com\">👉 点我打开雨晨ios抓取</a>",
-    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/sliverkiss-yuchenios/SliverkissYuchenios.plugin\">点击安装 Loon 插件</a>"
-   ]
-  },
-  {
    "id": "sliverkiss-linovel_checkin",
    "name": "轻之文库每日签到",
    "keys": [
