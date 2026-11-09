@@ -754,6 +754,58 @@
    ]
   },
   {
+   "id": "taobao_coin_checkin",
+   "name": "淘宝淘金币签到",
+   "keys": [
+    "taobao_coin_req",
+    "taobao_coin_req2",
+    "taobao_coin_req3",
+    "taobao_coin_accounts"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-taobao/taobao_coin_checkin.js",
+   "settings": [
+    {
+     "id": "taobao_coin_req",
+     "name": "账号1 签到请求",
+     "val": "",
+     "type": "textarea",
+     "desc": "账号1 的签到请求（JSON，含完整 URL 和请求头）：打开淘宝 App → 淘金币 → 点一次签到自动抓取；抓不到时可手动粘贴。每天 09:00 自动签到"
+    },
+    {
+     "id": "taobao_coin_req2",
+     "name": "账号2 签到请求",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 2 个淘宝账号的签到请求 JSON"
+    },
+    {
+     "id": "taobao_coin_req3",
+     "name": "账号3 签到请求",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 3 个淘宝账号的签到请求 JSON"
+    },
+    {
+     "id": "taobao_coin_accounts",
+     "name": "多账号",
+     "val": "",
+     "type": "textarea",
+     "desc": "多账号：每行一个签到请求 JSON，不限个数"
+    }
+   ],
+   "descs_html": [
+    "淘宝淘金币每日签到，每天 09:00 自动签到。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-taobao/TaobaoCoinCheckin.plugin\">点击安装 Loon 插件</a>",
+    "抓取：插件设置里「抓取开关」默认开，打开淘宝 App → 淘金币 → 点一次签到自动抓取；抓完可以关掉。",
+    "注意：签到请求有时效，自动签失败时重新在 App 里点一次签到即可。"
+   ],
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/taobao.jpg"
+   ]
+  },
+  {
    "id": "xream-gist",
    "name": "Gist 备份",
    "keys": [
@@ -5607,55 +5659,6 @@
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-mi-step/YuhengMiStep.plugin\">点击安装 Loon 插件</a>"
    ],
    "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-mi-step/yuheng_mi_step.js"
-  },
-  {
-   "id": "taobao_coin_checkin",
-   "name": "淘宝淘金币签到",
-   "keys": [
-    "taobao_coin_req",
-    "taobao_coin_req2",
-    "taobao_coin_req3",
-    "taobao_coin_accounts"
-   ],
-   "author": "許諾",
-   "repo": "https://github.com/Crack22/loon-plugins",
-   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-taobao/taobao_coin_checkin.js",
-   "settings": [
-    {
-     "id": "taobao_coin_req",
-     "name": "账号1 签到请求",
-     "val": "",
-     "type": "textarea",
-     "desc": "账号1 的签到请求（JSON，含完整 URL 和请求头）：打开淘宝 App → 淘金币 → 点一次签到自动抓取；抓不到时可手动粘贴。每天 09:00 自动签到"
-    },
-    {
-     "id": "taobao_coin_req2",
-     "name": "账号2 签到请求",
-     "val": "",
-     "type": "textarea",
-     "desc": "第 2 个淘宝账号的签到请求 JSON"
-    },
-    {
-     "id": "taobao_coin_req3",
-     "name": "账号3 签到请求",
-     "val": "",
-     "type": "textarea",
-     "desc": "第 3 个淘宝账号的签到请求 JSON"
-    },
-    {
-     "id": "taobao_coin_accounts",
-     "name": "多账号",
-     "val": "",
-     "type": "textarea",
-     "desc": "多账号：每行一个签到请求 JSON，不限个数"
-    }
-   ],
-   "descs_html": [
-    "淘宝淘金币每日签到，每天 09:00 自动签到。",
-    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-taobao/TaobaoCoinCheckin.plugin\">点击安装 Loon 插件</a>",
-    "抓取：插件设置里「抓取开关」默认开，打开淘宝 App → 淘金币 → 点一次签到自动抓取；抓完可以关掉。",
-    "注意：签到请求有时效，自动签失败时重新在 App 里点一次签到即可。"
-   ]
   }
  ]
 }

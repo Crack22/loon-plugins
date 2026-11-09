@@ -1,6 +1,7 @@
 #!name=淘宝淘金币每日签到
 #!desc=淘宝淘金币每日自动签到，每天 09:00 运行。用法：安装后打开淘宝 App → 淘金币 → 点一次签到，插件会自动保存签到请求，之后每天自动签。\n注意：签到请求有时效，自动签失败时重新在 App 里点一次签到即可。
 #!author=許諾
+#!icon=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/taobao.jpg
 #!system=ios
 
 # 用法：
