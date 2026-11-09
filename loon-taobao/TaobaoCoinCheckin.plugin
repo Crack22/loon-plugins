@@ -1,0 +1,21 @@
+#!name=淘宝淘金币每日签到
+#!desc=淘宝淘金币每日自动签到，每天 09:00 运行。用法：安装后打开淘宝 App → 淘金币 → 点一次签到，插件会自动保存签到请求，之后每天自动签。\n注意：签到请求有时效，自动签失败时重新在 App 里点一次签到即可。
+#!author=許諾
+#!system=ios
+
+# 用法：
+# 1、安装插件，开启重写脚本 + cron
+# 2、打开淘宝 App → 淘金币 → 点一次签到
+# 3、收到「签到请求已抓取」通知即抓取成功
+# 4、cron 每天 09:00 自动签到
+# 注意：签到请求有时效，自动签失败时重新在 App 里点一次签到
+
+[Argument]
+capture = switch,true,tag=抓取开关,desc=打开后，在淘宝 App 里点一次淘金币签到即可抓取；抓完可以关掉
+
+[MITM]
+hostname = acs.m.taobao.com
+
+[Script]
+http-request ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.coingame\.sign\.supply\/ tag=淘宝淘金币签到抓取, script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-taobao/taobao_coin_capture.js, requires-body=false, argument=[{capture}], enable={capture}
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-taobao/taobao_coin_checkin.js, tag=淘宝淘金币每日签到, enable=true
