@@ -3071,7 +3071,7 @@
      "childScripts": [
       {
        "name": "同步到青龙",
-       "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/boxjs_env_to_ql.js"
+       "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/ql-fokit/boxjs_env_to_ql.js"
       }
      ],
      "child": [
