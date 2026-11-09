@@ -12,5 +12,5 @@ hostname = i.meituan.com
 
 [Script]
 http-request ^https://i\.meituan\.com/evolve/signin/signpost/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/meituan/meituan_capture.js, requires-body=true, tag=美团 Cookie, argument="title=美团", enable={capture}
-cron "5 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js, timeout=300, tag=美团签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meituan.png, enable=true
+cron "5 8 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/meituan/meituan.js, timeout=300, tag=美团签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meituan.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=美团去抓取, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/meituan.png, argument="title=美团&url=&hint=打开「美团」App 手动签到一次即自动抓取", enable={capture}

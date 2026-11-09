@@ -12,5 +12,5 @@ hostname = www.macat.vip
 
 [Script]
 http-request ^https://www\.macat\.vip/wp-admin/admin-ajax\.php$ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/macat/macat_capture.js, requires-body=true, tag=马克喵签到抓取, enable={capture}
-cron "22 7 * * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/macat/macat_signin.js, timeout=300, tag=马克喵签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Macat.png, enable=true
+cron "22 7 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/macat/macat_signin.js, timeout=300, tag=马克喵签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Macat.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=马克喵去抓取, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Macat.png, argument="title=马克喵&url=&hint=打开马克喵网站登录一次即自动抓取", enable={capture}

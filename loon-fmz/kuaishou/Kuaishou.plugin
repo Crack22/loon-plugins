@@ -12,5 +12,5 @@ hostname = ug-fission.kuaishou.com
 
 [Script]
 http-request ^https?://ug-fission\.kuaishou\.com/rest/n/darwin/orchard/water/watering script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_checkin_capture.js, requires-body=false, tag=快手果园 Cookie, argument="key=kscookies&source=cookie&title=快手果园", enable={capture}
-cron "30 1,8,12,17 * * *" script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/kuaishou/ks_fruit.js, timeout=300, tag=快手果园, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/kuaishou.png, enable=true
+cron "30 1,8,12,17 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/kuaishou/ks_fruit.js, timeout=300, tag=快手果园, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/kuaishou.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=快手果园去抓取, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/kuaishou.png, argument="title=快手果园&url=&hint=打开「快手」进果园浇一次水即自动抓取", enable={capture}

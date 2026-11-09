@@ -11,5 +11,5 @@ hostname = api.kkmh.com
 
 [Script]
 http-request ^https?://api\.kkmh\.com/v\d/passport/user script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/kuaikan/kuaikan_capture.js, requires-body=false, tag=快看漫画每日签到 Cookie, argument="key=KKMH&title=快看漫画", enable={capture}
-cron "4 9 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/KuaiKan-DailyBonus/KKMH.js, timeout=300, tag=快看漫画每日签到, enable=true
+cron "4 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/kuaikan/KKMH.js, timeout=300, tag=快看漫画每日签到, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=快看漫画去抓取, argument="title=快看漫画&url=&hint=打开「快看漫画」点「我的」即自动抓取", enable={capture}

@@ -11,5 +11,5 @@ hostname = ngabbs.com
 
 [Script]
 http-request ^https?://ngabbs\.com/nuke\.php script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/nga/nga_capture.js, requires-body=true, tag=NGA刮墙 Cookie, argument="title=NGA刮墙", enable={capture}
-cron "10 0 * * *" script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/nga/nga.js, timeout=300, tag=NGA刮墙签到, enable=true
+cron "10 0 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/nga/nga.js, timeout=300, tag=NGA刮墙签到, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=NGA刮墙去抓取, argument="title=NGA刮墙&url=&hint=打开「NGA」停留几秒即自动抓取", enable={capture}

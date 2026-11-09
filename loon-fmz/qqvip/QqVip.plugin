@@ -12,5 +12,5 @@ hostname = proxy.vac.qq.com
 
 [Script]
 http-request ^https?://proxy\.vac\.qq\.com/cgi-bin/srfentry\.fcgi script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qqvip/qqvip_capture.js, requires-body=false, tag=qq会员成长值 Cookie, argument="title=qq会员成长值", enable={capture}
-cron "5 5 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/QQVip/qqVipCheckIn.js, timeout=300, tag=qq会员成长值签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png, enable=true
+cron "5 5 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/qqvip/qqVipCheckIn.js, timeout=300, tag=qq会员成长值签到, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=qq会员成长值去抓取, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/QQ.png, argument="title=qq会员成长值&url=&hint=打开「QQ」停留几秒即自动抓取", enable={capture}

@@ -11,5 +11,5 @@ hostname = mall.oclean.com
 
 [Script]
 http-request ^https://mall\.oclean\.com/API/VshopProcess\.ashx$ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/oclean/oclean_capture.js, tag=欧可林每日签到抓取, enable={capture}
-cron "0 10,21 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Oclean/Oclean.js, timeout=300, tag=欧可林每日签到, enable=true
+cron "0 10,21 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/oclean/Oclean.js, timeout=300, tag=欧可林每日签到, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=欧可林去抓取, argument="title=欧可林&url=&hint=打开「欧可林」App 点一下「活动」即自动抓取", enable={capture}

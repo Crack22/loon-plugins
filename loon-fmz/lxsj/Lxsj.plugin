@@ -11,5 +11,5 @@ hostname = ios-fenqu11.lxsjgo.com
 
 [Script]
 http-request ^https?://ios-fenqu11\.lxsjgo\.com/dog/bug\?ts script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/lxsj/lxsj_capture.js, requires-body=true, tag=旅行世界购物版 Cookie, argument="title=旅行世界购物版", enable={capture}
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/iepngs/Script/master/lxsj/index.js, timeout=300, tag=旅行世界购物版签到, enable=true
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/lxsj/index.js, timeout=300, tag=旅行世界购物版签到, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=旅行世界购物版去抓取, argument="title=旅行世界购物版&url=&hint=打开「旅行世界」停留几秒即自动抓取", enable={capture}

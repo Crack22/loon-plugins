@@ -11,5 +11,5 @@ hostname = appsmall.rtmap.com
 
 [Script]
 http-request ^https?://appsmall\.rtmap\.com/.*(sign/signRecord|wxapp-root/api/v1/(score/account|customer/info)) script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/mygmc/mygmc_capture.js, requires-body=true, tag=民盈国贸城 Cookie, argument="title=民盈国贸城", enable={capture}
-cron "15 0 * * *" script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/mygmcSign.js, timeout=300, tag=民盈国贸城签到, enable=true
+cron "15 0 * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/mygmc/mygmcSign.js, timeout=300, tag=民盈国贸城签到, enable=true
 cron "0 0 29 2 *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/fmz_open_capture.js, tag=民盈国贸城去抓取, argument="title=民盈国贸城&url=&hint=打开「民盈国贸城」小程序停留几秒即自动抓取", enable={capture}
