@@ -6,38 +6,6 @@
  "repo": "https://github.com/Crack22/loon-plugins",
  "apps": [
   {
-   "id": "yanxuan_checkin",
-   "name": "网易严选每日签到",
-   "keys": [
-    "chavy_cookie_yanxuan",
-    "chavy_token_yanxuan"
-   ],
-   "author": "許諾",
-   "repo": "https://github.com/Crack22/loon-plugins",
-   "icons": [],
-   "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/yanxuan/yanxuan.js",
-   "settings": [
-    {
-     "id": "chavy_cookie_yanxuan",
-     "name": "Cookie",
-     "val": "",
-     "type": "textarea",
-     "desc": "打开网易严选自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
-    },
-    {
-     "id": "chavy_token_yanxuan",
-     "name": "Token",
-     "val": "",
-     "type": "textarea",
-     "desc": "打开网易严选自动抓取；抓不到时可手动粘贴；每天 08:03 自动签到"
-    }
-   ],
-   "descs_html": [
-    "网易严选每日签到，每天 08:03 自动签到。",
-    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-fmz/yanxuan/Yanxuan.plugin\">点击安装 Loon 插件</a>"
-   ]
-  },
-  {
    "id": "aliyun_checkin",
    "name": "阿里云盘签到",
    "keys": [
