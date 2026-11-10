@@ -1,5 +1,5 @@
 // 抓三样东西（只能在微博 App 里做）：
-// 1) 已关注超话列表：POST /2/flowlist，body 含 fid=232478_-_super_topic_followed（新版微博客户端 16.x+）
+// 1) 已关注超话列表：POST /2/flowlist，body 含 fid=232478_-_super_topic_followed（旧版）或 fid=231093_-_selffollowed（微博 16.11+）
 // 2) 超话签到链接：GET page/button，URL 含 active_checkin
 // 3) 微博每日签到数据：GET api.weibo.cn/2/users/show，URL 含 uid=
 // 抓完后可以关掉本插件的抓取开关，只留每天 09:00 的定时签到。登录凭证会过期，签到开始失败时，重新抓一次就行。
@@ -38,8 +38,8 @@ if (captureOn && $request && $request.method !== "OPTIONS") {
   const body = $request.body || "";
   const userId = getHeader(headers, "x-log-uid") || "unknown";
 
-  if (url.includes("/2/flowlist") && body.includes("fid=232478_-_super_topic_followed")) {
-    // 已关注超话列表（新版客户端 POST）
+  if (url.includes("/2/flowlist") && (body.includes("fid=232478_-_super_topic_followed") || body.includes("fid=231093_-_selffollowed"))) {
+    // 已关注超话列表（新版客户端 POST；微博 16.11+ 改用 fid=231093_-_selffollowed）
     let tokens = readArr(CHAOHUA_KEY);
     let token = tokens.find(function (t) { return t.userId === userId; });
     if (token) {
