@@ -1,6 +1,6 @@
 {
   "name": "許諾图标合集",
-  "description": "合并自 16 个图标库，共 5378 个图标，每天自动同步更新，有新图标自动加入。",
+  "description": "合并自 16 个图标库，共 5379 个图标，每天自动同步更新，有新图标自动加入。",
   "icons": [
     {
       "name": "#.png",
@@ -8789,6 +8789,10 @@
     {
       "name": "Notion.png",
       "url": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Notion.png"
+    },
+    {
+      "name": "NovoNET",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/NovoNET.png"
     },
     {
       "name": "Noxemby",
@@ -18991,6 +18995,14 @@
       "url": "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/miyoushe.png"
     },
     {
+      "name": "mnkcloud",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/mnkcloud.png"
+    },
+    {
+      "name": "mnkcloud(1)",
+      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/mnkcloud(1).png"
+    },
+    {
       "name": "moji.png",
       "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/moji.png"
     },
@@ -19041,14 +19053,6 @@
     {
       "name": "mydigit.png",
       "url": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/mydigit.png"
-    },
-    {
-      "name": "naiu",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/naiu.png"
-    },
-    {
-      "name": "naiu(1)",
-      "url": "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/naiu(1).png"
     },
     {
       "name": "naixue.png",

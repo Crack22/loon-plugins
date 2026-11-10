@@ -1,6 +1,6 @@
 {
   "name": "許諾 BoxJs 图标",
-  "description": "BoxJs 订阅里的全部图标，共 159 个，每天自动同步 BoxJs 订阅的新图标。",
+  "description": "BoxJs 订阅里的全部图标，共 158 个，每天自动同步 BoxJs 订阅的新图标。",
   "icons": [
     {
       "name": "4K世界自动签到",
@@ -593,10 +593,6 @@
     {
       "name": "雀巢咖啡每日签到",
       "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Nestle.png"
-    },
-    {
-      "name": "雨晨ios每日签到",
-      "url": "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/yuchenios.png"
     },
     {
       "name": "霸王茶姬每日签到",
