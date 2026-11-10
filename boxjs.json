@@ -1499,7 +1499,7 @@
     "微博超话签到，每天自动做两件事：微博每日签到、所有已关注超话全部签到。",
     "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
     "手动运行：插件设置里有「手动运行一次」，打开后 1 分钟内马上跑一次签到，跑完自己手动关掉。",
-    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohuaSignin.plugin\">点击安装</a>",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/2d510e980501311efab7e2393a5f37704ad6719a/loon-weibo/WeiboChaohuaSignin.plugin\">点击安装</a>",
     "使用前先抓一次：装好插件后，在微博 App 里打开超话社区 → 我的 → 关注，点进一个超话签到一次，随便刷一下微博。"
    ]
   },
