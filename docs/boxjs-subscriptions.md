@@ -26,14 +26,6 @@
 
 自己的订阅
 
-## 微博超话签到打卡·特供版
-
-订阅链接：https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-weibo-daka.json
-
-一键导入：http://boxjs.com/#/sub/add/https%3A%2F%2Fraw.githubusercontent.com%2FCrack22%2Floon-plugins%2Fmain%2Fboxjs-weibo-daka.json
-
-自己的订阅
-
 ## Biliverse: BiliBili
 
 订阅链接：https://raw.githubusercontent.com/BiliUniverse/BoxJs/main/BiliBili.boxjs.json

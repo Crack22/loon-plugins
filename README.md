@@ -14,7 +14,6 @@ loon-plugins/
 ├── loon-*/            # 插件：每个插件一个文件夹（.plugin + 脚本）
 ├── boxjs.json         # BoxJs 统一订阅：許諾自用应用
 ├── boxjs-leguan.json  # BoxJs 独立订阅：乐观专用
-├── boxjs-weibo-daka.json  # BoxJs 独立订阅：微博超话签到打卡（带黄子弘凡打卡）
 ├── boxjs-checkins.json # BoxJs 独立订阅：許諾签到合集（135 个签到）
 ├── loon-fmz/          # 許諾签到合集：87 个插件
 ├── loon-import/       # 重新启动项目：51 个新签到插件 + 27 个工具插件
@@ -33,7 +32,6 @@ loon-plugins/
 | 蜗牛每日签到 | 蜗牛 4K 每日签到，+10 积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/WoNiuCheckin.plugin) |
 | 七日杀每日签到 | 七日杀中文网每日签到 | 08:30 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha.plugin) |
 | ChilledMelon 每日签到 | ChilledMelon 每日签到，+5~20 积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/ChilledMelonCheckin.plugin) |
-| 微博超话签到打卡 | 微博每日签到 + 所有超话全部签到 + 只给黄子弘凡图文打卡 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohua.plugin) |
 | 微博超话签到 | 微博每日签到 + 所有超话全部签到，无打卡 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-weibo/WeiboChaohuaSignin.plugin) |
 | 乐蛙每日签到 | EmbyPulse 乐蛙每日签到，+100~120 积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/EmbyPulseTaotuCheckin.plugin) |
 | 乐观每日签到 | EmbyPulse 乐观每日签到，+90~130 积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/EmbyPulseDijiaCheckin.plugin) |
@@ -62,7 +60,6 @@ loon-plugins/
 | --- | --- | --- |
 | 許諾自用应用 | 92 个应用：上面全部签到插件 + 工具 + 同步 Git Secrets + Loon 配置状态备份 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs.json |
 | 乐观专用 | 乐观每日签到 + 同步 Git Secrets（可分享给别人用） | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-leguan.json |
-| 微博超话签到打卡·特供版 | 微博每日签到 + 所有超话全部签到 + 只给黄子弘凡图文打卡（可分享给别人用） | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-weibo-daka.json |
 | 許諾签到合集 | 135 个签到应用，详见 [docs/xunuo-checkins.md](docs/xunuo-checkins.md) | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-checkins.json |
 
 乐观专用完整使用指南：[docs/leguan-guide.md](docs/leguan-guide.md)
