@@ -181,13 +181,8 @@ function doSign(account, cb) {
 
 function main() {
   var manual = manualOn();
-  if (manual) {
-    // 手动运行一次：今天已跑过就悄悄退出
-    if (($persistentStore.read(MANUAL_DONE_KEY) || "") === todayStr()) {
-      $done({});
-      return;
-    }
-  } else if (!shouldRunAuto()) {
+  // 手动运行不拦截：手动权限大于自动，只要开了手动开关就跑（跑完需手动关开关）
+  if (!manual && !shouldRunAuto()) {
     $done({});
     return;
   }

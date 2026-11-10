@@ -28,7 +28,6 @@ const TIME_RANGE_KEY = "glados_time_range";
 const TIME_TARGET_KEY = "glados_time_target"; // 当天随机挑好的时间，格式 "YYYY-MM-DD HH:MM|HH:MM-HH:MM"
 const TIME_DONE_KEY = "glados_time_done"; // 自动签到今天已跑过的日期
 const MANUAL_DONE_KEY = "glados_manual_done"; // 手动运行一次今天已跑过的日期
-const MANUAL_FP_KEY = "glados_manual_fp"; // 上次手动运行用的 Cookie 指纹（换 Cookie 后允许再手动跑一次）
 const DEFAULT_TIME_MIN = 9 * 60; // 默认 09:00
 
 // 开关值可能是 "true"/true/"1"/1，都当作开
@@ -131,16 +130,6 @@ function collectAccounts() {
 
 var accounts = collectAccounts();
 var ua = read("glados_ua") || DEFAULT_UA;
-// 当前全部账号 Cookie 的指纹（每条取前 24 字 + 长度）：换了 Cookie 指纹就变，
-// 手动运行据此判断是不是“换了新 Cookie 后再跑一次”，而不是死板地按天拦
-function cookieFingerprint() {
-  var parts = [];
-  for (var i = 0; i < accounts.length; i++) {
-    var c = accounts[i].cookie || "";
-    parts.push(c.slice(0, 24) + ":" + c.length);
-  }
-  return parts.join("|");
-}
 var exchangePlan = (read("glados_exchange") || "").trim();
 var results = [];
 var idx = 0;
@@ -254,21 +243,13 @@ function finish() {
     $persistentStore.write(todayStr(), TIME_DONE_KEY);
     $notification.post(NAME + "签到", "共 " + results.length + " 个账号", results.join("\n"));
   }
-  if (manualOn()) {
-    $persistentStore.write(todayStr(), MANUAL_DONE_KEY);
-    $persistentStore.write(cookieFingerprint(), MANUAL_FP_KEY);
-  }
+  if (manualOn()) $persistentStore.write(todayStr(), MANUAL_DONE_KEY);
   $done({});
 }
 
 if (manualOn()) {
-  // 手动运行一次：今天已跑过且 Cookie 没换过，就悄悄退出；
-  // 换了 Cookie（指纹变了）就再跑一次，修好 Cookie 后能立即重跑
-  if (read(MANUAL_DONE_KEY) === todayStr() && read(MANUAL_FP_KEY) === cookieFingerprint()) {
-    $done({});
-  } else {
-    processNext();
-  }
+  // 手动运行不拦截：手动权限大于自动，只要开了手动开关就跑（跑完需手动关开关）
+  processNext();
 } else if (!shouldRunAuto()) {
   $done({});
 } else {

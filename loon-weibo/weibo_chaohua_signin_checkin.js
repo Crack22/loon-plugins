@@ -409,15 +409,10 @@ lines.push("超话签到[" + userId + "]：执行异常 " + (e.message || e));
 const lines = [];
 const manual = manualOn();
 if (manual) {
-  // 手动运行：今天已经跑过一次就不重复，跑完后由用户手动关开关
-  const today = todayStr(); // 本地日期，和自动定时保持一致
-  if (read(MANUAL_DONE_KEY) === today) {
-    $done({});
-    return;
-  }
+  // 手动运行不拦截：手动权限大于自动，只要开了手动开关就跑（跑完需手动关开关）
   await dailySignin(lines);
   await chaohuaSignin(lines);
-  write(MANUAL_DONE_KEY, today);
+  write(MANUAL_DONE_KEY, todayStr());
   write(TIME_DONE_KEY, todayStr()); // 手动跑过后，当天自动定时不再重复跑
 } else {
   // 自动定时：没到设定的时间、或今天已跑过，就悄悄退出
