@@ -1,5 +1,5 @@
 // 抓五样东西（只能在微博 App 里做）：
-// 1) 已关注超话列表：POST /2/flowlist，body 含 fid=232478_-_super_topic_followed（新版微博客户端 16.x+）
+// 1) 已关注超话列表：POST /2/flowlist，body 含 fid=232478_-_super_topic_followed（旧版）或 fid=231093_-_selffollowed（微博 16.11+）
 // 2) 超话签到链接：GET page/button，URL 含 active_checkin
 // 3) 黄子弘凡打卡检查链接：GET page/button，URL 含 KeepActivityPublish 且含黄子弘凡 page_id
 // 4) 打卡图片：POST /2/statuses/send，body 含 keep_activityid 且含黄子弘凡话题 hash
@@ -46,8 +46,8 @@ if (captureOn && $request && $request.method !== "OPTIONS") {
   const body = $request.body || "";
   const userId = getHeader(headers, "x-log-uid") || "unknown";
 
-  if (url.includes("/2/flowlist") && body.includes("fid=232478_-_super_topic_followed")) {
-    // 已关注超话列表（新版客户端 POST）
+  if (url.includes("/2/flowlist") && (body.includes("fid=232478_-_super_topic_followed") || body.includes("fid=231093_-_selffollowed"))) {
+    // 已关注超话列表（新版客户端 POST；微博 16.11+ 改用 fid=231093_-_selffollowed）
     let tokens = readArr(CHAOHUA_KEY);
     let token = tokens.find(function (t) { return t.userId === userId; });
     if (token) {
