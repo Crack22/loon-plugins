@@ -153,6 +153,19 @@ return encodeURIComponent(k) + "=" + encodeURIComponent(params[k]);
 function sleep(ms) {
 return new Promise(function (resolve) { setTimeout(resolve, ms);});
 }
+// 重放抓到的请求时，去掉会让服务器返回脚本解析不了的数据的请求头：
+// accept-encoding 含 br（Brotli）时，Loon 的 $httpClient 未必会解压，
+// 拿到的就是一串二进制，JSON.parse 直接失败，列表就取不到；
+// content-length 是抓包那次的旧值，翻页改了 body 后长度就对不上。
+// 去掉这两个头，服务器会直接返回明文 JSON，长度也由客户端自己算。
+function cleanHeaders(headers) {
+  const h = Object.assign({}, headers || {});
+  const drop = ["accept-encoding", "content-length", "cronet_rid", "snrt"];
+  for (const k of Object.keys(h)) {
+    if (drop.indexOf(k.toLowerCase()) !== -1) delete h[k];
+  }
+  return h;
+}
 function httpGet(url, headers) {
 return new Promise(function (resolve) {
 let done = false;
@@ -161,7 +174,7 @@ if (done) return;
 done = true;
 resolve({ error: "请求超时", status: 0, body: ""});
 }, TIMEOUT);
-$httpClient.get({ url: url, headers: headers || {}}, function (error, response, data) {
+$httpClient.get({ url: url, headers: cleanHeaders(headers)}, function (error, response, data) {
 if (done) return;
 done = true;
 clearTimeout(timer);
@@ -177,7 +190,7 @@ if (done) return;
 done = true;
 resolve({ error: "请求超时", status: 0, body: ""});
 }, TIMEOUT);
-const h = Object.assign({}, headers || {});
+const h = cleanHeaders(headers);
 $httpClient.post({ url: url, headers: h, body: body || ""}, function (error, response, data) {
 if (done) return;
 done = true;
@@ -299,6 +312,7 @@ return result.join("&");
 async function getAllTopics(token) {
 const nameList = [], idList = [];
 const seenIds = new Set();
+let failReason = "";
 let headers = {};
 try { headers = JSON.parse(token.tokenHeaders || "{}");} catch (e) { headers = {};}
 let page = 1, sinceId = "", maxId = "", hasMore = true;
@@ -312,15 +326,18 @@ break;
 }
 const resp = await httpPost(token.tokenUrl, headers, body);
 if (resp.error ||!resp.body) {
+failReason = "请求失败：" + (resp.error || "无响应");
 console.log("获取超话列表失败：" + (resp.error || "无响应"));
 break;
 }
 let obj;
 try { obj = JSON.parse(resp.body);} catch (e) {
+failReason = "响应解析失败（可能是压缩过的二进制）";
 console.log("解析超话列表响应失败");
 break;
 }
 if (obj.errmsg) {
+failReason = "服务器返回：" + obj.errmsg;
 console.log("获取超话列表错误：" + obj.errmsg + "，账号可能过期了");
 break;
 }
@@ -337,7 +354,7 @@ maxId = moreInfo.params.max_id || "";
 hasMore = false;
 }
 }
-return { nameList: nameList, idList: idList};
+return { nameList: nameList, idList: idList, failReason: failReason };
 }
 // 单个超话签到：把签到链接里的 fid/pageid 换成这个超话的
 async function checkinOne(token, id, name) {
@@ -385,7 +402,7 @@ continue;
 try {
 const topics = await getAllTopics(token);
 if (topics.nameList.length === 0) {
-lines.push("超话签到[" + userId + "]：未获取到关注的超话，可能凭证已过期");
+lines.push("超话签到[" + userId + "]：未获取到关注的超话" + (topics.failReason ? "，" + topics.failReason : "，可能凭证已过期"));
 continue;
 }
 let success = 0, fail = 0;
