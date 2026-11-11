@@ -1,0 +1,11 @@
+#!name=IP 查询
+#!desc=合并 ip.cx 和 iplark.com 的功能：查当前出口 IP 的归属地、ISP、ASN、时区、多源定位对比，并检测 Google、YouTube、GitHub、ChatGPT、百度、淘宝的连通性。\n打开「手动查询一次」开关，等一分钟出结果，记得关掉。也可以在 BoxJs 里填一个指定 IP 来查。\n数据来自免费接口 ip-api.com + ipinfo.io，不用 key。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/ipinfo.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+[Argument]
+manualRun = switch,false,tag=手动查询一次,desc=打开后查询一次，记得手动关闭
+
+[Script]
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-ip/ip_info.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/ipinfo.png, timeout=60, tag=手动查询一次, argument=[{manualRun}], enable={manualRun}

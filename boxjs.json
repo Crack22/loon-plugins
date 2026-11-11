@@ -7065,6 +7065,40 @@
     "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-mi-step/YuhengMiStep.plugin\">点击安装 Loon 插件</a>"
    ],
    "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-import/yuheng-mi-step/yuheng_mi_step.js"
+  },
+  {
+   "id": "ipinfo_query",
+   "name": "IP 查询",
+   "keys": [
+    "ipinfo_ip",
+    "ipinfo_check"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/ipinfo.png"
+   ],
+   "settings": [
+    {
+     "id": "ipinfo_ip",
+     "name": "指定查询的 IP",
+     "val": "",
+     "type": "text",
+     "desc": "留空查当前出口 IP；填一个 IP 就查那个 IP"
+    },
+    {
+     "id": "ipinfo_check",
+     "name": "检测常用网站连通性",
+     "val": true,
+     "type": "boolean",
+     "desc": "查 Google、YouTube、GitHub、ChatGPT、百度、淘宝通不通"
+    }
+   ],
+   "descs_html": [
+    "合并 ip.cx 和 iplark.com：查当前出口 IP 的归属地、ISP、ASN、时区、多源定位对比，并检测常用网站连通性。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-ip/IPInfo.plugin\">点击安装 Loon 插件</a>"
+   ],
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-ip/ip_info.js"
   }
  ]
 }
