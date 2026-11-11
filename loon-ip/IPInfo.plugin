@@ -5,4 +5,4 @@
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Script]
-generic then script("https://raw.githubusercontent.com/Crack22/loon-plugins/4927079fc41abac263de1d099ce334e4ca086462/loon-ip/ip_info.js") with tag="IP 查询", img_url="https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/ipinfo.png", timeout=65
+generic then script("https://raw.githubusercontent.com/Crack22/loon-plugins/5b3492834ad9ecda9b75d427cfa2c748193a8a04/loon-ip/ip_info.js") with tag="IP 查询", img_url="https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/ipinfo.png", timeout=65
