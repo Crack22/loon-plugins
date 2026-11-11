@@ -38,13 +38,18 @@ if (captureOn && $request && $request.method !== "OPTIONS") {
   const body = $request.body || "";
   const userId = getHeader(headers, "x-log-uid") || "unknown";
 
-  if (url.includes("/2/flowlist") && (body.includes("fid=232478_-_super_topic_followed") || body.includes("fid=231093_-_selffollowed"))) {
-    // 已关注超话列表（新版客户端 POST；微博 16.11+ 改用 fid=231093_-_selffollowed）
+  if (url.includes("/2/flowlist") && (body.includes("fid=232478_-_super_topic_followed") || body.includes("fid=231093_-_selffollowed") || body.includes("fid=231093_-_chaohua"))) {
+    // 已关注超话列表：微博 16.11 里 selffollowed 返回的是关注的人的动态流、没有超话，
+    // 真正带超话列表的是 chaohua（231093_-_chaohua），所以三个 fid 都接。
+    // 已有该账号时也更新列表请求参数（保留已抓到的签到链接），保证重抓能刷新掉旧的。
     let tokens = readArr(CHAOHUA_KEY);
     let token = tokens.find(function (t) { return t.userId === userId; });
     if (token) {
-      // 已有该账号的列表请求参数；签到脚本每次运行时会实时请求最新列表，不覆盖、不重复通知
-      console.log("已有超话列表参数 [" + userId + "]，跳过重复获取");
+      token.tokenUrl = url;
+      token.tokenHeaders = JSON.stringify(headers);
+      token.tokenBody = body;
+      writeArr(CHAOHUA_KEY, tokens);
+      $notification.post("微博超话", "✅已刷新关注超话列表 [" + userId + "]", "接下来点进一个超话签到一次");
     } else {
       tokens.push({
         userId: userId,
