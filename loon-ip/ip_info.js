@@ -1,8 +1,8 @@
 // IP 查询：合并 ip.cx + iplark.com 的功能
-// 查当前出口 IP（或 BoxJs 里指定的 IP）的归属地、ISP、ASN、多源定位对比，并检测常用网站连通性
+// 在节点界面长按节点，点菜单里的「IP 查询」就会对这个节点跑一次
+// 查该节点出口 IP 的归属地、ISP、ASN、时区、多源定位对比，并检测常用网站连通性
 // 数据源：ip-api.com（主）+ ipinfo.io（多源对比），免费免 key
-// 手动运行：打开插件里的「手动查询一次」开关，等一分钟出结果，记得关掉
-const IP_KEY = "ipinfo_ip"; // 指定查询的 IP，留空 = 查当前出口 IP
+const IP_KEY = "ipinfo_ip"; // 指定查询的 IP，留空 = 查当前节点的出口 IP
 const CHECK_KEY = "ipinfo_check"; // 是否检测常用网站连通性，默认开
 
 // 连通性检测的网站（ip.cx 的国内外检测 + 常用服务）
@@ -29,14 +29,6 @@ function checkOn() {
   const v = read(CHECK_KEY);
   if (v === "" || v === null || v === undefined) return true;
   return isTrue(v);
-}
-
-function manualOn() {
-  try {
-    if (typeof $argument === "undefined" || !$argument) return false;
-    const v = $argument["manualRun"];
-    return v === true || v === "true";
-  } catch (e) { return false; }
 }
 
 function httpGet(url, headers, timeout) {
@@ -71,11 +63,6 @@ async function checkSite(site) {
 }
 
 async function main() {
-  if (!manualOn()) {
-    $done({});
-    return;
-  }
-
   const customIp = read(IP_KEY).trim();
   const queryIp = customIp || "";
   const apiUrl = queryIp
