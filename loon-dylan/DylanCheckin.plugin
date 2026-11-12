@@ -1,0 +1,16 @@
+#!name=宸宇每日签到
+#!desc=自动签到 https://vip.dylan.xin/，每天签到领积分，连续递增加成，断签重置（签到时间在 BoxJs 里设置，默认 09:00，也可以指定时间或在时间区间内随机）。\n登录要验证码，账号密码登不上去，只能用 Cookie：打开本站一次自动抓取。\n账号1/2/3：在 BoxJs 里分别填完整 Cookie；多账号：在「多账号」里每行填一个完整 Cookie。\nCookie 只保存在你手机本地，不会上传。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dylan.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+[Argument]
+manualRun = switch,false,tag=手动运行一次,desc=打开后运行一次，手动关闭
+
+[Script]
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-dylan/dylan_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dylan.png, tag=宸宇签到, enable=true
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-dylan/dylan_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dylan.png, tag=手动运行一次, argument=[{manualRun}], enable={manualRun}
+http-request ^https?://vip\.dylan\.xin/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-dylan/dylan_cookie.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dylan.png, requires-body=false, tag=宸宇Cookie抓取, enable=true
+
+[MITM]
+hostname = vip.dylan.xin

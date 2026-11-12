@@ -2212,6 +2212,96 @@
    ]
   },
   {
+   "id": "dylan_checkin",
+   "name": "宸宇每日签到",
+   "keys": [
+    "dylan_cookie",
+    "dylan_cookie2",
+    "dylan_cookie3",
+    "dylan_accounts"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "script": "https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-dylan/dylan_checkin.js",
+   "settings": [
+    {
+     "id": "dylan_cookie",
+     "name": "账号1 Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "账号1 的完整 Cookie：打开 https://vip.dylan.xin/ 自动抓取，或手动粘贴（登录要验证码，只能用 Cookie）"
+    },
+    {
+     "id": "dylan_cookie2",
+     "name": "账号2 Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 2 个宸宇账号的完整 Cookie"
+    },
+    {
+     "id": "dylan_cookie3",
+     "name": "账号3 Cookie",
+     "val": "",
+     "type": "textarea",
+     "desc": "第 3 个宸宇账号的完整 Cookie"
+    },
+    {
+     "id": "dylan_accounts",
+     "name": "多账号",
+     "val": "",
+     "type": "textarea",
+     "desc": "多账号：每行一个完整 Cookie，不限个数"
+    },
+    {
+     "id": "dylan_time_enabled",
+     "name": "启用自定义签到时间",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认关闭（每天 09:00 签到）。打开后按下面选的时间签到；关闭则恢复 09:00"
+    },
+    {
+     "id": "dylan_time_mode",
+     "name": "签到时间模式",
+     "type": "selects",
+     "items": [
+      {
+       "key": "fixed",
+       "label": "指定时间"
+      },
+      {
+       "key": "random",
+       "label": "时间区间随机"
+      }
+     ],
+     "val": "",
+     "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+    },
+    {
+     "id": "dylan_time",
+     "name": "指定签到时间",
+     "val": "",
+     "type": "text",
+     "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 09:00"
+    },
+    {
+     "id": "dylan_time_range",
+     "name": "签到时间区间",
+     "val": "",
+     "type": "text",
+     "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 09:00"
+    }
+   ],
+   "icons": [
+    "https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/dylan.png"
+   ],
+   "descs_html": [
+    "宸宇每日签到，每天自动签到领积分，连续递增加成，断签重置。",
+    "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
+    "只支持 Cookie：登录要验证码，账号密码登不上去。打开 https://vip.dylan.xin/ 一次自动抓取 Cookie。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-dylan/DylanCheckin.plugin\">点击安装 Loon 插件</a>"
+   ]
+  },
+  {
    "id": "xream-gist",
    "name": "Gist 备份",
    "keys": [
