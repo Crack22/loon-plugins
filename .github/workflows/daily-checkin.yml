@@ -1,0 +1,69 @@
+name: 每日签到
+
+# 每天 09:00（北京时间）自动跑，不用挂梯子，手机关机也能签
+# 账号来自仓库 Secrets：用 Loon 里的「同步到 GitHub Secrets」插件从 BoxJs 上传
+# 也可以点 Actions 页面的 Run workflow 手动跑一次
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+jobs:
+  checkin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run check-ins
+        run: node actions/checkin.mjs
+        env:
+            WONIU_COOKIE: ${{ secrets.WONIU_COOKIE }}
+            WONIU_USERNAME: ${{ secrets.WONIU_USERNAME }}
+            WONIU_PASSWORD: ${{ secrets.WONIU_PASSWORD }}
+            WONIU_COOKIE2: ${{ secrets.WONIU_COOKIE2 }}
+            WONIU_USERNAME2: ${{ secrets.WONIU_USERNAME2 }}
+            WONIU_PASSWORD2: ${{ secrets.WONIU_PASSWORD2 }}
+            WONIU_COOKIE3: ${{ secrets.WONIU_COOKIE3 }}
+            WONIU_USERNAME3: ${{ secrets.WONIU_USERNAME3 }}
+            WONIU_PASSWORD3: ${{ secrets.WONIU_PASSWORD3 }}
+            WONIU_ACCOUNTS: ${{ secrets.WONIU_ACCOUNTS }}
+            LEWA_SESSION_ID: ${{ secrets.LEWA_SESSION_ID }}
+            LEWA_USERNAME: ${{ secrets.LEWA_USERNAME }}
+            LEWA_PASSWORD: ${{ secrets.LEWA_PASSWORD }}
+            LEWA_SESSION_ID2: ${{ secrets.LEWA_SESSION_ID2 }}
+            LEWA_USERNAME2: ${{ secrets.LEWA_USERNAME2 }}
+            LEWA_PASSWORD2: ${{ secrets.LEWA_PASSWORD2 }}
+            LEWA_SESSION_ID3: ${{ secrets.LEWA_SESSION_ID3 }}
+            LEWA_USERNAME3: ${{ secrets.LEWA_USERNAME3 }}
+            LEWA_PASSWORD3: ${{ secrets.LEWA_PASSWORD3 }}
+            LEWA_ACCOUNTS: ${{ secrets.LEWA_ACCOUNTS }}
+            LEGUAN_SESSION_ID: ${{ secrets.LEGUAN_SESSION_ID }}
+            LEGUAN_USERNAME: ${{ secrets.LEGUAN_USERNAME }}
+            LEGUAN_PASSWORD: ${{ secrets.LEGUAN_PASSWORD }}
+            LEGUAN_SESSION_ID2: ${{ secrets.LEGUAN_SESSION_ID2 }}
+            LEGUAN_USERNAME2: ${{ secrets.LEGUAN_USERNAME2 }}
+            LEGUAN_PASSWORD2: ${{ secrets.LEGUAN_PASSWORD2 }}
+            LEGUAN_SESSION_ID3: ${{ secrets.LEGUAN_SESSION_ID3 }}
+            LEGUAN_USERNAME3: ${{ secrets.LEGUAN_USERNAME3 }}
+            LEGUAN_PASSWORD3: ${{ secrets.LEGUAN_PASSWORD3 }}
+            LEGUAN_ACCOUNTS: ${{ secrets.LEGUAN_ACCOUNTS }}
+            CHILLEDMELON_USERNAME: ${{ secrets.CHILLEDMELON_USERNAME }}
+            CHILLEDMELON_PASSWORD: ${{ secrets.CHILLEDMELON_PASSWORD }}
+            CHILLEDMELON_USERNAME2: ${{ secrets.CHILLEDMELON_USERNAME2 }}
+            CHILLEDMELON_PASSWORD2: ${{ secrets.CHILLEDMELON_PASSWORD2 }}
+            CHILLEDMELON_USERNAME3: ${{ secrets.CHILLEDMELON_USERNAME3 }}
+            CHILLEDMELON_PASSWORD3: ${{ secrets.CHILLEDMELON_PASSWORD3 }}
+            CHILLEDMELON_ACCOUNTS: ${{ secrets.CHILLEDMELON_ACCOUNTS }}
+            GLADOS_COOKIE: ${{ secrets.GLADOS_COOKIE }}
+            GLADOS_COOKIE2: ${{ secrets.GLADOS_COOKIE2 }}
+            GLADOS_COOKIE3: ${{ secrets.GLADOS_COOKIE3 }}
+            GLADOS_UA: ${{ secrets.GLADOS_UA }}
+            GLADOS_ACCOUNTS: ${{ secrets.GLADOS_ACCOUNTS }}
+            GLADOS_EXCHANGE: ${{ secrets.GLADOS_EXCHANGE }}
+            NETEASE_COOKIE: ${{ secrets.NETEASE_COOKIE }}
+            NETEASE_COOKIE2: ${{ secrets.NETEASE_COOKIE2 }}
+            NETEASE_COOKIE3: ${{ secrets.NETEASE_COOKIE3 }}
+            NETEASE_ACCOUNTS: ${{ secrets.NETEASE_ACCOUNTS }}
