@@ -2465,6 +2465,169 @@
       ]
     },
     {
+      "id": "flixpilot_checkin",
+      "name": "FlixPilot每日签到",
+      "keys": [
+        "flixpilot_cookie",
+        "flixpilot_username",
+        "flixpilot_password",
+        "flixpilot_name",
+        "flixpilot_cookie2",
+        "flixpilot_username2",
+        "flixpilot_password2",
+        "flixpilot_name2",
+        "flixpilot_cookie3",
+        "flixpilot_username3",
+        "flixpilot_password3",
+        "flixpilot_name3",
+        "flixpilot_accounts"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "settings": [
+        {
+          "id": "flixpilot_cookie",
+          "name": "账号1 Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "账号1 的 Cookie：打开 https://flixpilot.wybcs.work/home 自动抓取，或手动粘贴（和账号密码二选一，都填优先账号密码登录）"
+        },
+        {
+          "id": "flixpilot_username",
+          "name": "账号1 用户名",
+          "val": "",
+          "type": "text",
+          "desc": "账号1 的登录用户名，和密码一起填，每天自动登录签到"
+        },
+        {
+          "id": "flixpilot_password",
+          "name": "账号1 密码",
+          "val": "",
+          "type": "password",
+          "desc": "账号1 的登录密码"
+        },
+        {
+          "id": "flixpilot_name",
+          "name": "账号1 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号1”"
+        },
+        {
+          "id": "flixpilot_cookie2",
+          "name": "账号2 Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "第 2 个 FlixPilot 账号的 Cookie"
+        },
+        {
+          "id": "flixpilot_username2",
+          "name": "账号2 用户名",
+          "val": "",
+          "type": "text",
+          "desc": "第 2 个 FlixPilot 账号的登录用户名"
+        },
+        {
+          "id": "flixpilot_password2",
+          "name": "账号2 密码",
+          "val": "",
+          "type": "password",
+          "desc": "第 2 个 FlixPilot 账号的登录密码"
+        },
+        {
+          "id": "flixpilot_name2",
+          "name": "账号2 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号2”"
+        },
+        {
+          "id": "flixpilot_cookie3",
+          "name": "账号3 Cookie",
+          "val": "",
+          "type": "textarea",
+          "desc": "第 3 个 FlixPilot 账号的 Cookie"
+        },
+        {
+          "id": "flixpilot_username3",
+          "name": "账号3 用户名",
+          "val": "",
+          "type": "text",
+          "desc": "第 3 个 FlixPilot 账号的登录用户名"
+        },
+        {
+          "id": "flixpilot_password3",
+          "name": "账号3 密码",
+          "val": "",
+          "type": "password",
+          "desc": "第 3 个 FlixPilot 账号的登录密码"
+        },
+        {
+          "id": "flixpilot_name3",
+          "name": "账号3 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号3”"
+        },
+        {
+          "id": "flixpilot_accounts",
+          "name": "多账号",
+          "val": "",
+          "type": "textarea",
+          "desc": "多账号：每行一个 Cookie，或每行一个 用户名；密码（中文分号隔开），不限个数；行首加 名字| 可自定义通知里的名字，如 小号|用户名；密码"
+        },
+        {
+          "id": "flixpilot_time_enabled",
+          "name": "启用自定义签到时间",
+          "val": "",
+          "type": "boolean",
+          "desc": "默认关闭（每天 09:00 签到）。打开后按下面选的时间签到；关闭则恢复 09:00"
+        },
+        {
+          "id": "flixpilot_time_mode",
+          "name": "签到时间模式",
+          "type": "selects",
+          "items": [
+            {
+              "key": "fixed",
+              "label": "指定时间"
+            },
+            {
+              "key": "random",
+              "label": "时间区间随机"
+            }
+          ],
+          "val": "",
+          "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+        },
+        {
+          "id": "flixpilot_time",
+          "name": "指定签到时间",
+          "val": "",
+          "type": "text",
+          "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 09:00"
+        },
+        {
+          "id": "flixpilot_time_range",
+          "name": "签到时间区间",
+          "val": "",
+          "type": "text",
+          "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 09:00"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Category_Popcorn.png"
+      ],
+      "descs_html": [
+        "FlixPilot每日签到，每天自动签到领爆米花：先查签到状态，没签就自动签到。",
+        "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
+        "两种登录方式二选一：填用户名和密码，每天自动登录签到；或打开 https://flixpilot.wybcs.work/home 一次自动抓取 Cookie。两个都填优先账号密码。",
+        "通知里的账号名字可以在下面「账号1 名称」等栏位自定义，不填显示 账号1/2/3；通知里会显示连签天数和爆米花余额。",
+        "手动签到去 Loon「脚本」里点「手动运行一次」，或打开插件的「手动运行一次」开关（跑完记得关）。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-flixpilot/FlixPilotCheckin.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
       "id": "xream-gist",
       "name": "Gist 备份",
       "keys": [
