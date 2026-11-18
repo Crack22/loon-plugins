@@ -1,6 +1,7 @@
 // 法拉利每日签到：账号密码登录 或 Token 两种方式
 // 账号1/2/3：falali_token(+2/+3) 或 falali_username(+2/+3) + falali_password(+2/+3)，二选一，都填优先账号密码登录
-// 多账号：falali_accounts，每行一个 Token，或 邮箱；密码（中文分号隔开）
+// 多账号：falali_accounts，每行一个 Token，或 邮箱；密码（中文分号隔开）；行首加 名字| 可自定义通知里的名字
+// 通知：固定账号名 falali_name(+2/+3)，不填显示 账号1/2/3；通知末尾汇总今天共领流量
 // 登录：POST /api/v1/passport/auth/login {email,password}，取 data.auth_data 作 Token，登录成功后存回对应 Token 栏位
 // 状态：GET /api/v1/user/falali-checkin，data = {eligible, checked_today, today_mb}
 // 领取：POST /api/v1/user/falali-checkin {}，成功 data.mb = 本次领到的 MB 数
@@ -11,6 +12,7 @@ const TOKEN_KEY = "falali_token";
 const USER_KEY = "falali_username";
 const PASS_KEY = "falali_password";
 const EXTRA_KEY = "falali_accounts";
+const NAME_KEY = "falali_name";
 const NAME = "法拉利";
 const UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1";
 
@@ -125,23 +127,33 @@ function collectAccounts() {
     var token = (read(TOKEN_KEY + suf) || "").trim();
     var user = (read(USER_KEY + suf) || "").trim();
     var pass = (read(PASS_KEY + suf) || "").trim();
+    var name = (read(NAME_KEY + suf) || "").trim();
+    var label = name || ("账号" + (n + 1));
     if (user && pass) {
-      list.push({ label: "账号" + (n + 1), user: user, pass: pass, tokenKey: TOKEN_KEY + suf });
+      list.push({ label: label, user: user, pass: pass, tokenKey: TOKEN_KEY + suf });
     } else if (token) {
-      list.push({ label: "账号" + (n + 1), token: token });
+      list.push({ label: label, token: token });
     }
   }
   var lines = (read(EXTRA_KEY) || "").split("\n");
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i].trim();
     if (!line) continue;
-    var p = line.indexOf("；");
-    if (p === -1) p = line.indexOf(";");
+    var label = "账号" + (list.length + 1);
+    var cred = line;
+    var bar = line.indexOf("|");
+    if (bar > 0) {
+      var nm = line.slice(0, bar).trim();
+      var rest = line.slice(bar + 1).trim();
+      if (nm && rest) { label = nm; cred = rest; }
+    }
+    var p = cred.indexOf("；");
+    if (p === -1) p = cred.indexOf(";");
     if (p !== -1) {
-      var u = line.slice(0, p).trim(), pw = line.slice(p + 1).trim();
-      if (u && pw) list.push({ label: "账号" + (list.length + 1), user: u, pass: pw });
-    } else if (line.length >= 10) {
-      list.push({ label: "账号" + (list.length + 1), token: line });
+      var u = cred.slice(0, p).trim(), pw = cred.slice(p + 1).trim();
+      if (u && pw) list.push({ label: label, user: u, pass: pw });
+    } else if (cred.length >= 10) {
+      list.push({ label: label, token: cred });
     }
   }
   return list;
@@ -149,6 +161,7 @@ function collectAccounts() {
 
 var accounts = collectAccounts();
 var results = [];
+var totalMb = 0;
 var idx = 0;
 
 function processNext() {
@@ -206,6 +219,8 @@ function checkStatus(acct, token, next) {
     if (st.eligible === false) { results.push(acct.label + "：当前不符合签到条件"); next(); return; }
     if (st.checked_today) {
       var mb = (st.today_mb !== undefined && st.today_mb !== null) ? st.today_mb : "";
+      var n = Number(st.today_mb);
+      if (isFinite(n)) totalMb += n;
       results.push(acct.label + "：今日已签到" + (mb !== "" ? "，今天已领 " + mb + " MB" : ""));
       next(); return;
     }
@@ -224,6 +239,8 @@ function claim(acct, token, next) {
     if (!body) { results.push(acct.label + "：领取签到失败，服务器返回无法解析（HTTP " + (r && r.status) + "）"); next(); return; }
     if (body.status === "success" && body.data) {
       var mb = body.data.mb;
+      var n = Number(mb);
+      if (isFinite(n)) totalMb += n;
       results.push(acct.label + "：签到成功" + ((mb !== undefined && mb !== null) ? "，领到 " + mb + " MB 流量" : ""));
     } else if (isExpired(r, body)) {
       results.push(acct.label + "：登录已过期，" + (acct.user ? "请检查账号密码" : "打开本站重新抓取 Token"));
@@ -240,7 +257,9 @@ function finish() {
   } else {
     // 跑完一轮就写 done，不管成功失败（失败也不再每分钟重试）
     $persistentStore.write(todayStr(), TIME_DONE_KEY);
-    $notification.post(NAME + "签到", "共 " + results.length + " 个账号", results.join("\n"));
+    var body = results.join("\n");
+    if (totalMb > 0) body += "\n今天共领 " + totalMb + " MB";
+    $notification.post(NAME + "签到", "共 " + results.length + " 个账号", body);
   }
   if (manualOn()) $persistentStore.write(todayStr(), MANUAL_DONE_KEY);
   $done({});

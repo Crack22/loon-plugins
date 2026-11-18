@@ -5,12 +5,13 @@
 #!homepage=https://github.com/Crack22/loon-plugins
 
 [Argument]
+capture = switch,true,tag=Token抓取,desc=打开后，打开本站会自动抓取 Token；抓完可以关掉
 manualRun = switch,false,tag=手动运行一次,desc=打开后运行一次，手动关闭
 
 [Script]
 cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-falali/falali_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/falali.png, tag=法拉利签到, enable=true
 cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-falali/falali_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/falali.png, tag=手动运行一次, argument=[{manualRun}], enable={manualRun}
-http-request ^https?://pop67xra\.faalaa\.cc/api/v1/user/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-falali/falali_token.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/falali.png, requires-body=false, tag=法拉利Token抓取, enable=true
+http-request ^https?://pop67xra\.faalaa\.cc/api/v1/user/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-falali/falali_token.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/falali.png, requires-body=false, tag=法拉利Token抓取, enable={capture}
 
 [MITM]
 hostname = pop67xra.faalaa.cc

@@ -13,7 +13,9 @@ function main() {
   var old = $persistentStore.read(KEY) || "";
   if (old === token) { $done({}); return; }
   $persistentStore.write(token, KEY);
-  $notification.post("法拉利签到", "Token 获取成功", "已保存到账号1，明天自动签到");
+  var name = ($persistentStore.read("falali_name") || "").trim();
+  var label = name || "账号1";
+  $notification.post("法拉利签到", "Token 获取成功", "已保存到" + label + "，明天自动签到");
   $done({});
 }
 main();
