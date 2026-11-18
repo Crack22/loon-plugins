@@ -31,9 +31,10 @@ function checkOn() {
   return isTrue(v);
 }
 
+// timeout 单位：毫秒（Loon 不是秒），默认 12000 = 12 秒
 function httpGet(url, headers, timeout) {
   return new Promise(function (resolve) {
-    $httpClient.get({ url: url, headers: headers || {}, timeout: timeout || 12 }, function (error, response, body) {
+    $httpClient.get({ url: url, headers: headers || {}, timeout: timeout || 12000 }, function (error, response, body) {
       if (error) return resolve({ error: String(error), status: 0, body: "" });
       resolve({ error: null, status: response.status || 0, body: body || "" });
     });
@@ -52,7 +53,7 @@ function ipType(isp, org) {
 // 连通性检测：返回 {name, ok, ms}
 async function checkSite(site) {
   const t0 = Date.now();
-  const r = await httpGet(site.url, {}, 6);
+  const r = await httpGet(site.url, {}, 6000);
   const ms = Date.now() - t0;
   const ok = !r.error && r.status > 0 && r.status < 500;
   return { name: site.name, ok: ok, ms: ms };
@@ -116,11 +117,11 @@ async function main() {
 
   // 1) ip-api.com 和 ipinfo.io 并行取，哪个先回用哪个
   const results = await Promise.all([
-    httpGet(apiUrl, {}, 12).then(function (r) {
+    httpGet(apiUrl, {}, 12000).then(function (r) {
       if (r.error || !r.body) return null;
       try { return parseIPAPI(JSON.parse(r.body), queryIp); } catch (e) { return null; }
     }),
-    httpGet(infoUrl, {}, 12).then(function (r) {
+    httpGet(infoUrl, {}, 12000).then(function (r) {
       if (r.error || !r.body) return null;
       try { return parseIPInfo(JSON.parse(r.body), queryIp); } catch (e) { return null; }
     })
@@ -133,7 +134,7 @@ async function main() {
 
   // 2) 两个都失败，再试 Cloudflare trace 兜底（至少拿到 IP 和国家）
   if (!info) {
-    const r3 = await httpGet("https://www.cloudflare.com/cdn-cgi/trace", {}, 12);
+    const r3 = await httpGet("https://www.cloudflare.com/cdn-cgi/trace", {}, 12000);
     if (!r3.error && r3.body) {
       info = parseCFTrace(r3.body, queryIp);
     }

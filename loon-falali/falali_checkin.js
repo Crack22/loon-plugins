@@ -122,7 +122,7 @@ function isExpired(resp, body) {
 // 网络异常时重试：最多 2 次，间隔 3 秒；HTTP 响应（哪怕是 401）不重试
 function httpReq(method, opts, cb) {
   var tries = 0;
-  opts.timeout = 60;
+  opts.timeout = 60000; // Loon 的 timeout 单位是毫秒，不是秒
   function go() {
     function done(e, r, d) {
       if (e) {

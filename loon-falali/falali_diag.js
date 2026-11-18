@@ -1,4 +1,5 @@
 // 法拉利诊断：只探测，不签到、不改任何设置
+// 注意：Loon $httpClient 的 timeout 单位是毫秒（不是秒），写 20 只给 20 毫秒，请求必超时
 // 1) 出口 IP（看脚本请求走哪条路） 2) 网站首页 3) 账号1登录
 // 用法：先停用「法拉利每日签到」插件（排除 MITM 影响），再到 Loon「脚本」里点「法拉利诊断」运行，跑完把通知截图发来
 const UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1";
@@ -15,7 +16,7 @@ function shortErr(e) {
 
 function probeIP(next) {
   var t0 = Date.now();
-  $httpClient.get({ url: "https://api.ipify.org?format=json", timeout: 20 }, function (e, r, d) {
+  $httpClient.get({ url: "https://api.ipify.org?format=json", timeout: 20000 }, function (e, r, d) {
     var ms = Date.now() - t0;
     if (e) { lines.push("出口IP: 失败，" + shortErr(e) + " (" + ms + "ms)"); }
     else {
@@ -29,7 +30,7 @@ function probeIP(next) {
 
 function probeHome(next) {
   var t0 = Date.now();
-  $httpClient.get({ url: "https://pop67xra.faalaa.cc/", headers: { "User-Agent": UA }, timeout: 20 }, function (e, r, d) {
+  $httpClient.get({ url: "https://pop67xra.faalaa.cc/", headers: { "User-Agent": UA }, timeout: 20000 }, function (e, r, d) {
     var ms = Date.now() - t0;
     if (e) { lines.push("首页: 失败，" + shortErr(e) + " (" + ms + "ms)"); }
     else { lines.push("首页: HTTP " + (r && r.status) + " (" + ms + "ms)"); }
@@ -46,7 +47,7 @@ function probeLogin(next) {
     url: "https://pop67xra.faalaa.cc/api/v1/passport/auth/login",
     headers: { "Content-Type": "application/json", "Accept": "application/json", "User-Agent": UA },
     body: JSON.stringify({ email: user, password: pass }),
-    timeout: 20
+    timeout: 20000
   }, function (e, r, d) {
     var ms = Date.now() - t0;
     if (e) { lines.push("登录: 失败，" + shortErr(e) + " (" + ms + "ms)"); next(); return; }

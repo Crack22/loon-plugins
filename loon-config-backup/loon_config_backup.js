@@ -144,7 +144,7 @@ function main() {
     // 先读现有文件：拿到 sha（更新用），没变化就不提交；网络超时重试 2 次
     var getTries = 0;
     function doGet() {
-      $httpClient.get({ url: url, headers: headers, timeout: 60 }, function (err, resp, data) {
+      $httpClient.get({ url: url, headers: headers, timeout: 60000 }, function (err, resp, data) {
       if (err) {
         getTries++;
         if (getTries <= 2) { console.log('[Loon配置备份] 读文件超时，第 ' + getTries + ' 次重试'); setTimeout(doGet, 3000); return; }
@@ -170,7 +170,7 @@ function main() {
       if (sha) body.sha = sha;
       var putTries = 0;
       function doPut() {
-      $httpClient.put({ url: url, headers: headers, body: JSON.stringify(body), timeout: 60 }, function (err2, resp2, data2) {
+      $httpClient.put({ url: url, headers: headers, body: JSON.stringify(body), timeout: 60000 }, function (err2, resp2, data2) {
         if (err2) {
           putTries++;
           if (putTries <= 2) { console.log('[Loon配置备份] 上传超时，第 ' + putTries + ' 次重试'); setTimeout(doPut, 3000); return; }
