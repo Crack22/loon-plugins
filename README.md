@@ -36,13 +36,10 @@ loon-plugins/
 | 乐蛙每日签到 | EmbyPulse 乐蛙每日签到，+100~120 积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/EmbyPulseTaotuCheckin.plugin) |
 | 乐观每日签到 | EmbyPulse 乐观每日签到，+90~130 积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/EmbyPulseDijiaCheckin.plugin) |
 | 夸克每日签到 | 夸克网盘 + 夸克浏览器每日签到领容量 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-quark/QuarkCheckin.plugin) |
-| GLaDOS 每日签到 | GLaDOS 每日签到领积分 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-glados/GladosCheckin.plugin) |
 | 网易云音乐每日签到 | 网易云音乐每日签到，+2 成长值 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-netease/NetEaseCheckin.plugin) |
-| 淘宝淘金币每日签到 | 淘宝淘金币每日签到领金币 | 09:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-taobao/TaobaoCoinCheckin.plugin) |
 | X 网页版会员标签页 | X 网页版会员标签页 | — | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-x/XWebEnhance.plugin) |
 | lume 相机 | Lume 相机 VIP 验证响应修改 | — | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-lume/LumeCamera.plugin) |
 | 同步 Git Secrets | 把 BoxJs 里的签到账号同步到 GitHub Secrets | 手动 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-gh-sync/GitHubSecretsSync.plugin) |
-| Loon 配置状态备份 | 每天备份 Loon 运行配置到私人仓库 | 04:00 | [一键安装](https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-config-backup/LoonConfigBackup.plugin) |
 
 安装方法：点「一键安装」打开插件文件，复制地址栏链接，在 Loon 里用「从链接导入」粘贴即可（GitHub 页面不支持直接跳到 Loon）。
 
@@ -58,7 +55,7 @@ loon-plugins/
 
 | 订阅 | 内容 | 导入 |
 | --- | --- | --- |
-| 許諾自用应用 | 92 个应用：上面全部签到插件 + 工具 + 同步 Git Secrets + Loon 配置状态备份 | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs.json |
+| 許諾自用应用 | 92 个应用：上面全部签到插件 + 工具 + 同步 Git Secrets | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs.json |
 | 乐观专用 | 乐观每日签到 + 同步 Git Secrets（可分享给别人用） | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-leguan.json |
 | 許諾签到合集 | 135 个签到应用，详见 [docs/xunuo-checkins.md](docs/xunuo-checkins.md) | https://raw.githubusercontent.com/Crack22/loon-plugins/main/boxjs-checkins.json |
 
