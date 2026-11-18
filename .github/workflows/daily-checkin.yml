@@ -57,12 +57,6 @@ jobs:
             CHILLEDMELON_USERNAME3: ${{ secrets.CHILLEDMELON_USERNAME3 }}
             CHILLEDMELON_PASSWORD3: ${{ secrets.CHILLEDMELON_PASSWORD3 }}
             CHILLEDMELON_ACCOUNTS: ${{ secrets.CHILLEDMELON_ACCOUNTS }}
-            GLADOS_COOKIE: ${{ secrets.GLADOS_COOKIE }}
-            GLADOS_COOKIE2: ${{ secrets.GLADOS_COOKIE2 }}
-            GLADOS_COOKIE3: ${{ secrets.GLADOS_COOKIE3 }}
-            GLADOS_UA: ${{ secrets.GLADOS_UA }}
-            GLADOS_ACCOUNTS: ${{ secrets.GLADOS_ACCOUNTS }}
-            GLADOS_EXCHANGE: ${{ secrets.GLADOS_EXCHANGE }}
             NETEASE_COOKIE: ${{ secrets.NETEASE_COOKIE }}
             NETEASE_COOKIE2: ${{ secrets.NETEASE_COOKIE2 }}
             NETEASE_COOKIE3: ${{ secrets.NETEASE_COOKIE3 }}
