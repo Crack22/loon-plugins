@@ -47,6 +47,7 @@ DOMAIN-SUFFIX,ad.tencent.com,REJECT
 
 # ---------- 易帆广告 / GDT SDK（2026-11-06 抓包确认：跑完步 1 秒后请求 yfanads 取弹窗广告；GDT SDK 同时在场） ----------
 DOMAIN-SUFFIX,yfanads.com,REJECT
+DOMAIN-SUFFIX,yfanads.cn,REJECT
 DOMAIN-SUFFIX,e.qq.com,REJECT
 
 # ---------- 快手联盟 ----------
@@ -106,6 +107,7 @@ DOMAIN-SUFFIX,ad.meizu.com,REJECT
 # 抓包实测：tracker.yfanads.com 的 batchUpload 已被下面 /ads/ 规则拦住（replace_response），
 # mobads-logs.baidu.com 的 /dz.zb 已被 [Rule] 拦住（无响应），只剩 adx-data.yfanads.com 漏网。
 ^https?:\/\/([^\/]*\.)?yfanads\.com\/ - reject
+^https?:\/\/([^\/]*\.)?yfanads\.cn\/ - reject
 ^https?:\/\/([^\/]*\.)?e\.qq\.com\/ - reject
 ^https?:\/\/[^\/]+\/[^?]*\/(ad|ads|advert|advertisement|banner|splash|kaiping|openscreen|open_screen|startpage|start_page|interstitial|reward|rewarded|incentive|promotion|tuiguang|feed_ad|native_ad|popup_ad)(\/|$|\?|&) - reject-dict
 ^https?:\/\/[^\/]+\/[^?]*[?&](ad|ads|ad_id|adid|is_ad|ad_type|adtype)=[^&]* - reject-dict
