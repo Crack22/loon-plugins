@@ -1,5 +1,5 @@
 #!name=法拉利诊断
-#!desc=只探测不签到：出口 IP、网站首页、账号1登录。先停用「法拉利每日签到」插件，再到 Loon「脚本」里点「法拉利诊断」运行，跑完把通知截图发来。
+#!desc=只探测不签到：出口 IP、网站首页。在 Loon「脚本」里点「法拉利诊断」运行，查看三项探测结果。
 #!author=許諾
 #!icon=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/falali.png
 #!homepage=https://github.com/Crack22/loon-plugins
