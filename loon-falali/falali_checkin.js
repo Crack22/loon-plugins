@@ -6,6 +6,7 @@
 // 状态：GET /api/v1/user/falali-checkin，data = {eligible, checked_today, today_mb}
 // 领取：POST /api/v1/user/falali-checkin {}，成功 data.mb = 本次领到的 MB 数
 // 请求头 Authorization 直接放 Token，没有 Bearer 前缀
+// 网络异常自动重试 2 次（间隔 3 秒，单次超时 60 秒），通知里只显示简短原因
 const BASE = "https://pop67xra.faalaa.cc";
 const API = BASE + "/api/v1";
 const TOKEN_KEY = "falali_token";
@@ -118,6 +119,31 @@ function isExpired(resp, body) {
   var msg = (body && body.message) || "";
   return msg.indexOf("未登录") !== -1 || msg.indexOf("过期") !== -1 || msg.toLowerCase().indexOf("unauthenticated") !== -1;
 }
+// 网络异常时重试：最多 2 次，间隔 3 秒；HTTP 响应（哪怕是 401）不重试
+function httpReq(method, opts, cb) {
+  var tries = 0;
+  opts.timeout = 60;
+  function go() {
+    function done(e, r, d) {
+      if (e) {
+        tries++;
+        if (tries <= 2) { console.log("[法拉利签到] 请求异常，第 " + tries + " 次重试"); setTimeout(go, 3000); return; }
+      }
+      cb(e, r, d);
+    }
+    if (method === "POST") $httpClient.post(opts, done); else $httpClient.get(opts, done);
+  }
+  go();
+}
+// 把 Loon 的长错误串缩成一句人话
+function shortErr(e) {
+  var s = String(e || "");
+  if (/timeout/i.test(s)) return "请求超时";
+  if (/cancel/i.test(s)) return "请求被取消";
+  if (/not connected|offline|network connection/i.test(s)) return "网络未连接";
+  if (/dns|host/i.test(s)) return "域名解析失败";
+  return s.length > 30 ? s.slice(0, 30) + "…" : s;
+}
 
 // 收集全部账号：账号1/2/3（固定栏位，账号密码和 Token 二选一）+ 多账号文本框（每行一个 Token，或 邮箱；密码）
 function collectAccounts() {
@@ -179,12 +205,12 @@ function runAccount(acct, next) {
 }
 
 function login(acct, next) {
-  $httpClient.post({
+  httpReq("POST", {
     url: API + "/passport/auth/login",
     headers: { "Content-Type": "application/json", "Accept": "application/json", "User-Agent": UA },
     body: JSON.stringify({ email: acct.user, password: acct.pass })
   }, function (e, r, d) {
-    if (e) { results.push(acct.label + "：登录网络异常，" + e); next(); return; }
+    if (e) { results.push(acct.label + "：登录网络异常，" + shortErr(e)); next(); return; }
     var body = parseBody(d);
     if (!body) { results.push(acct.label + "：登录失败，服务器返回无法解析（HTTP " + (r && r.status) + "）"); next(); return; }
     var data = body.data || {};
@@ -199,11 +225,11 @@ function login(acct, next) {
 }
 
 function checkStatus(acct, token, next) {
-  $httpClient.get({
+  httpReq("GET", {
     url: API + "/user/falali-checkin",
     headers: { "Authorization": token, "Accept": "application/json", "User-Agent": UA }
   }, function (e, r, d) {
-    if (e) { results.push(acct.label + "：查询签到状态网络异常，" + e); next(); return; }
+    if (e) { results.push(acct.label + "：查询签到状态网络异常，" + shortErr(e)); next(); return; }
     var body = parseBody(d);
     if (!body) { results.push(acct.label + "：查询签到状态失败，服务器返回无法解析（HTTP " + (r && r.status) + "）"); next(); return; }
     if (body.status === "fail") {
@@ -229,12 +255,12 @@ function checkStatus(acct, token, next) {
 }
 
 function claim(acct, token, next) {
-  $httpClient.post({
+  httpReq("POST", {
     url: API + "/user/falali-checkin",
     headers: { "Authorization": token, "Content-Type": "application/json", "Accept": "application/json", "User-Agent": UA },
     body: "{}"
   }, function (e, r, d) {
-    if (e) { results.push(acct.label + "：领取签到网络异常，" + e); next(); return; }
+    if (e) { results.push(acct.label + "：领取签到网络异常，" + shortErr(e)); next(); return; }
     var body = parseBody(d);
     if (!body) { results.push(acct.label + "：领取签到失败，服务器返回无法解析（HTTP " + (r && r.status) + "）"); next(); return; }
     if (body.status === "success" && body.data) {
