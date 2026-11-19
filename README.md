@@ -1,8 +1,5 @@
 # 許諾的 Loon 插件合集
 
-[![图标更新](https://img.shields.io/github/actions/workflow/status/Crack22/loon-plugins/update-icons.yml?label=%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%96%B0&style=for-the-badge&logo=github)](https://github.com/Crack22/loon-plugins/actions/workflows/update-icons.yml)
-[![每日签到](https://img.shields.io/github/actions/workflow/status/Crack22/loon-plugins/daily-checkin.yml?label=%E6%AF%8F%E6%97%A5%E7%AD%BE%E5%88%B0&style=for-the-badge&logo=github)](https://github.com/Crack22/loon-plugins/actions/workflows/daily-checkin.yml)
-
 許諾自用的 Loon 插件合集：每日签到、去广告、BoxJs 订阅、图标库，全部亲测可用。
 
 > 提示：Loon 里更新插件不会刷新插件的标题和描述，更新后请删除插件再重新导入。
