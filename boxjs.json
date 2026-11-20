@@ -2400,6 +2400,149 @@
       ]
     },
     {
+      "id": "xingchi_checkin",
+      "name": "星驰每日签到",
+      "keys": [
+        "xingchi_access_token",
+        "xingchi_refresh_token",
+        "xingchi_name",
+        "xingchi_access_token2",
+        "xingchi_refresh_token2",
+        "xingchi_name2",
+        "xingchi_access_token3",
+        "xingchi_refresh_token3",
+        "xingchi_name3",
+        "xingchi_accounts",
+        "xingchi_time_enabled",
+        "xingchi_time_mode",
+        "xingchi_time",
+        "xingchi_time_range"
+      ],
+      "author": "許諾",
+      "repo": "https://github.com/Crack22/loon-plugins",
+      "settings": [
+        {
+          "id": "xingchi_access_token",
+          "name": "账号1 access_token",
+          "val": "",
+          "type": "textarea",
+          "desc": "账号1 的 access_token：在 Safari 打开 https://xingchiapi.com 登录一次自动抓取，或手动粘贴"
+        },
+        {
+          "id": "xingchi_refresh_token",
+          "name": "账号1 refresh_token",
+          "val": "",
+          "type": "textarea",
+          "desc": "账号1 的 refresh_token：登录时和 access_token 一起自动抓取；每天签到靠它刷新登录"
+        },
+        {
+          "id": "xingchi_name",
+          "name": "账号1 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号1”"
+        },
+        {
+          "id": "xingchi_access_token2",
+          "name": "账号2 access_token",
+          "val": "",
+          "type": "textarea",
+          "desc": "账号2 的 access_token：在 Safari 打开 https://xingchiapi.com 登录一次自动抓取，或手动粘贴"
+        },
+        {
+          "id": "xingchi_refresh_token2",
+          "name": "账号2 refresh_token",
+          "val": "",
+          "type": "textarea",
+          "desc": "账号2 的 refresh_token：登录时和 access_token 一起自动抓取；每天签到靠它刷新登录"
+        },
+        {
+          "id": "xingchi_name2",
+          "name": "账号2 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号2”"
+        },
+        {
+          "id": "xingchi_access_token3",
+          "name": "账号3 access_token",
+          "val": "",
+          "type": "textarea",
+          "desc": "账号3 的 access_token：在 Safari 打开 https://xingchiapi.com 登录一次自动抓取，或手动粘贴"
+        },
+        {
+          "id": "xingchi_refresh_token3",
+          "name": "账号3 refresh_token",
+          "val": "",
+          "type": "textarea",
+          "desc": "账号3 的 refresh_token：登录时和 access_token 一起自动抓取；每天签到靠它刷新登录"
+        },
+        {
+          "id": "xingchi_name3",
+          "name": "账号3 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号3”"
+        },
+        {
+          "id": "xingchi_accounts",
+          "name": "多账号",
+          "val": "",
+          "type": "textarea",
+          "desc": "多账号：每行一个 refresh_token，不限个数；行首加 名字| 可自定义通知里的名字，如 小号|refresh_token"
+        },
+        {
+          "id": "xingchi_time_enabled",
+          "name": "启用自定义签到时间",
+          "val": "",
+          "type": "boolean",
+          "desc": "默认关闭（每天 09:00 签到）。打开后按下面选的时间签到；关闭则恢复 09:00"
+        },
+        {
+          "id": "xingchi_time_mode",
+          "name": "签到时间模式",
+          "type": "selects",
+          "items": [
+            {
+              "key": "fixed",
+              "label": "指定时间"
+            },
+            {
+              "key": "random",
+              "label": "时间区间随机"
+            }
+          ],
+          "val": "",
+          "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+        },
+        {
+          "id": "xingchi_time",
+          "name": "指定签到时间",
+          "val": "",
+          "type": "text",
+          "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 09:00"
+        },
+        {
+          "id": "xingchi_time_range",
+          "name": "签到时间区间",
+          "val": "",
+          "type": "text",
+          "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 09:00"
+        }
+      ],
+      "icons": [
+        "https://xingchiapi.com/logo.svg"
+      ],
+      "descs_html": [
+        "星驰API公益站每日签到，每天自动签到领额度：先查签到状态，没签就自动领取。",
+        "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
+        "不用填账号密码：先在 Safari 打开 https://xingchiapi.com 登录一次（登录页有人机验证，脚本无法代替登录），Token 会自动抓取保存到账号1；之后每天自动刷新 Token 签到。Token 过期时重新登录一次即可。",
+        "通知里的账号名字可以在下面「账号1 名称」等栏位自定义，不填显示 账号1/2/3；通知末尾会汇总今天共领的额度。",
+        "手动签到去 Loon「脚本」里点「手动运行一次」，或打开插件的「手动运行一次」开关（跑完记得关）。",
+        "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-xingchi/XingchiCheckin.plugin\">点击安装 Loon 插件</a>"
+      ]
+    },
+    {
       "id": "xream-gist",
       "name": "Gist 备份",
       "keys": [
