@@ -1,0 +1,18 @@
+#!name=HoHai每日签到
+#!desc=HoHai每日签到领随机奖励：每天先查签到状态，没签就自动签到，签到结果会通知你（签到时间在 BoxJs 里设置，默认 09:00，也可以指定时间或在时间区间内随机）。\n测试版：这个版本不带人机验证，直接调签到接口，看服务器拦不拦。如果通知里报验证相关失败，说明本站签到必须过 Cloudflare Turnstile，自动签到做不了。\n两种登录方式二选一：①账号密码：在 BoxJs 里填用户名和密码，每天自动登录签到（登录接口本身不要验证）；②Token：打开本站一次自动抓取（只存账号1），或在 BoxJs 里粘贴 Token。两个都填优先账号密码。\n多账号：在 BoxJs「多账号」里每行一个 Token，或每行一个 用户名；密码。\n账号密码和 Token 只保存在你手机本地，不会上传。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Emby.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+[Argument]
+capture = switch,true,tag=Token抓取,desc=打开后，打开本站会自动抓取 Token；抓完可以关掉
+manualRun = switch,false,tag=手动运行一次,desc=打开后运行一次，手动关闭
+
+[Script]
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-hohai/hohai_checkin.js, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Emby.png, tag=HoHai签到, enable=true
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-hohai/hohai_checkin.js, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Emby.png, tag=手动运行一次, argument=[{manualRun}], enable={manualRun}
+http-response ^https://tv\.hohai\.eu\.org/api/auth/(login|refresh-token)$ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-hohai/hohai_token.js, requires-body=true, tag=HoHai Token抓取, enable={capture}
+http-request ^https://tv\.hohai\.eu\.org/api/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-hohai/hohai_token.js, requires-body=false, tag=HoHai Token抓取, enable={capture}
+
+[MITM]
+hostname = tv.hohai.eu.org
