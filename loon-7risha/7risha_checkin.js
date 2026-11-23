@@ -2,6 +2,9 @@
 // 实测：无需 ticket/randstr（前端腾讯验证码后端不校验），成功 code=1，已签到 code=2，失败 code=0
 // 签到时间可在 BoxJs 里自定义，默认 08:30
 const COOKIE_KEY = 'risha_cookie';
+const NAME_KEY = 'risha_name';
+// 账号名称：BoxJs 里填 risha_name，通知里会带上它，不填不显示
+function acctLabel() { var nm = ($persistentStore.read(NAME_KEY) || '').trim(); return nm ? nm + '：' : ''; }
 
 // ---------- 自定义签到时间 ----------
 // BoxJs 设置：
@@ -105,7 +108,7 @@ function main() {
   const cookie = $persistentStore.read(COOKIE_KEY);
   if (!cookie) {
     if (manual) $persistentStore.write(todayStr(), MANUAL_DONE_KEY);
-    $notification.post('7risha签到失败', '', '未获取到 Cookie，请先打开签到页抓取');
+    $notification.post('7risha签到失败', '', acctLabel() + '未获取到 Cookie，请先打开签到页抓取');
     $done();
     return;
   }
@@ -123,7 +126,7 @@ function main() {
     if (error) {
       $persistentStore.write(todayStr(), TIME_DONE_KEY);
       if (manual) $persistentStore.write(todayStr(), MANUAL_DONE_KEY);
-      $notification.post('7risha签到失败', '', '网络异常，请稍后重试');
+      $notification.post('7risha签到失败', '', acctLabel() + '网络异常，请稍后重试');
       $done();
       return;
     }
@@ -131,23 +134,23 @@ function main() {
       const r = JSON.parse(data);
       if (r.code === 1) {
         $persistentStore.write(todayStr(), TIME_DONE_KEY);
-        $notification.post('7risha签到成功', '', (r.msg || '签到成功') + '，累计签到 ' + (r.sign_c || '') + ' 天');
+        $notification.post('7risha签到成功', '', acctLabel() + (r.msg || '签到成功') + '，累计签到 ' + (r.sign_c || '') + ' 天');
       } else if (r.code === 2) {
         $persistentStore.write(todayStr(), TIME_DONE_KEY);
-        $notification.post('7risha今日已签到', '', (r.msg || '今日已签到') + '，累计签到 ' + (r.sign_c || '') + ' 天');
+        $notification.post('7risha今日已签到', '', acctLabel() + (r.msg || '今日已签到') + '，累计签到 ' + (r.sign_c || '') + ' 天');
       } else if (r.code === 8) {
         $persistentStore.write(todayStr(), TIME_DONE_KEY);
-        $notification.post('7risha签到失败', '', '需先绑定手机号');
+        $notification.post('7risha签到失败', '', acctLabel() + '需先绑定手机号');
       } else if (r.code === 9) {
         $persistentStore.write(todayStr(), TIME_DONE_KEY);
-        $notification.post('7risha签到失败', '', '需先绑定邮箱');
+        $notification.post('7risha签到失败', '', acctLabel() + '需先绑定邮箱');
       } else {
         $persistentStore.write(todayStr(), TIME_DONE_KEY);
-        $notification.post('7risha签到失败', '', (r.msg || '签到失败') + '，请重新抓取 Cookie');
+        $notification.post('7risha签到失败', '', acctLabel() + (r.msg || '签到失败') + '，请重新抓取 Cookie');
       }
     } catch (e) {
       $persistentStore.write(todayStr(), TIME_DONE_KEY);
-      $notification.post('7risha签到失败', '', '返回异常，请检查登录态');
+      $notification.post('7risha签到失败', '', acctLabel() + '返回异常，请检查登录态');
     }
     if (manual) $persistentStore.write(todayStr(), MANUAL_DONE_KEY);
     $done();

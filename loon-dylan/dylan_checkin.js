@@ -7,6 +7,7 @@
 const SITE = "https://vip.dylan.xin";
 const COOKIE_KEY = "dylan_cookie";
 const EXTRA_KEY = "dylan_accounts";
+const NAME_KEY = "dylan_name";
 const NAME = "宸宇";
 const UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1";
 
@@ -144,18 +145,35 @@ function checkedInToday(html) {
 }
 
 // 收集全部账号：账号1/2/3（固定栏位）+ 多账号文本框（每行一个完整 Cookie）
+// 账号名称：固定栏位用 dylan_name(+2/+3)，多账号行首加 名字|，不填显示 账号N
+// 多账号行首的 名字| 前缀：如 小号|账号；密码，不填则显示 账号N
+function splitName(line) {
+  var bar = line.indexOf("|");
+  if (bar > 0) {
+    var nm = line.slice(0, bar).trim();
+    var rest = line.slice(bar + 1).trim();
+    if (nm && rest && nm.length <= 20 && nm.indexOf("=") === -1 && nm.indexOf(";") === -1 && nm.indexOf("\uFF1B") === -1) return { name: nm, rest: rest };
+  }
+  return { name: "", rest: line };
+}
+function slotLabel(n, nameKey) {
+  var nm = ($persistentStore.read(nameKey) || "").trim();
+  return nm || ("账号" + (n + 1));
+}
 function collectAccounts() {
   var list = [];
   var keys = [COOKIE_KEY, COOKIE_KEY + "2", COOKIE_KEY + "3"];
   for (var n = 0; n < 3; n++) {
     var c = (read(keys[n]) || "").trim();
-    if (c && c.indexOf("sid=") !== -1) list.push({ cookie: c, label: "账号" + (n + 1) });
+    if (c && c.indexOf("sid=") !== -1) list.push({ cookie: c, label: slotLabel(n, NAME_KEY + (n === 0 ? "" : String(n + 1))) });
   }
   var lines = (read(EXTRA_KEY) || "").split("\n");
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i].trim();
-    if (!line || line.indexOf("sid=") === -1) continue;
-    list.push({ cookie: line, label: "账号" + (list.length + 1) });
+    if (!line) continue;
+    var sn = splitName(line); line = sn.rest;
+    if (line.indexOf("sid=") === -1) continue;
+    list.push({ cookie: line, label: sn.name || ("账号" + (list.length + 1)) });
   }
   return list;
 }

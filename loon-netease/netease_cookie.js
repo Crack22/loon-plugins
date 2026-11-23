@@ -11,7 +11,8 @@ if (!cookie || cookie.indexOf("MUSIC_U=") === -1) {
   var old = $persistentStore.read(KEY) || "";
   if (old !== cookie) {
     $persistentStore.write(cookie, KEY);
-    $notification.post("网易云 Cookie 获取成功", "", "已保存，自动签到可用。");
+    var nm = ($persistentStore.read("netease_name") || "").trim();
+    $notification.post("网易云 Cookie 获取成功", "", "已保存" + (nm ? "到" + nm : "") + "，自动签到可用。");
   }
   $done({});
 }

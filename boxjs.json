@@ -1119,12 +1119,15 @@
         "woniu_cookie",
         "woniu_username",
         "woniu_password",
+        "woniu_name",
         "woniu_cookie2",
         "woniu_username2",
         "woniu_password2",
+        "woniu_name2",
         "woniu_cookie3",
         "woniu_username3",
         "woniu_password3",
+        "woniu_name3",
         "woniu_accounts"
       ],
       "author": "許諾",
@@ -1156,6 +1159,13 @@
           "desc": "蜗牛密码"
         },
         {
+          "id": "woniu_name",
+          "name": "账号1 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号1”"
+        },
+        {
           "id": "woniu_cookie2",
           "name": "账号2 Cookie",
           "val": "",
@@ -1175,6 +1185,13 @@
           "val": "",
           "type": "password",
           "desc": "第 2 个蜗牛账号的密码"
+        },
+        {
+          "id": "woniu_name2",
+          "name": "账号2 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号2”"
         },
         {
           "id": "woniu_cookie3",
@@ -1198,11 +1215,18 @@
           "desc": "第 3 个蜗牛账号的密码"
         },
         {
+          "id": "woniu_name3",
+          "name": "账号3 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号3”"
+        },
+        {
           "id": "woniu_accounts",
           "name": "多账号",
           "val": "",
           "type": "textarea",
-          "desc": "多账号：每行一个，填 Cookie，或 账号；密码（中文分号隔开），不限个数"
+          "desc": "多账号：每行一个，填 Cookie，或 账号；密码（中文分号隔开），不限个数；行首加 名字| 可自定义通知里的名字，如 小号|账号；密码"
         },
         {
           "id": "woniu_time_enabled",
@@ -1245,6 +1269,7 @@
       ],
       "descs_html": [
         "蜗牛 4K 每日签到，每天自动签到，+10 积分。",
+        "通知里的账号名字可以在下面「账号1 名称」等栏位自定义，不填显示 账号1/2/3；多账号行首加 名字| 也可以自定义。",
         "签到时间：默认每天 09:00；在下面打开“启用自定义签到时间”可改成指定时间或区间随机。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-woniu/WoNiuCheckin.plugin\">点击安装 Loon 插件</a>",
         "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
@@ -1254,7 +1279,8 @@
       "id": "risha_checkin",
       "name": "七日杀每日签到",
       "keys": [
-        "risha_cookie"
+        "risha_cookie",
+        "risha_name"
       ],
       "author": "許諾",
       "repo": "https://github.com/Crack22/loon-plugins",
@@ -1269,6 +1295,13 @@
           "val": "",
           "type": "textarea",
           "desc": "打开七日杀签到页停 1 秒自动抓取；抓不到时可手动粘贴。每天 08:30 自动签到"
+        },
+        {
+          "id": "risha_name",
+          "name": "账号名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填不显示"
         },
         {
           "id": "risha_time_enabled",
@@ -1311,6 +1344,7 @@
       ],
       "descs_html": [
         "七日杀中文网每日签到，每天自动签到。",
+        "通知里的账号名字可以在下面「账号名称」里自定义，不填不显示。",
         "签到时间：默认每天 08:30；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-7risha/7risha.plugin\">点击安装 Loon 插件</a>"
       ]
@@ -1321,10 +1355,13 @@
       "keys": [
         "chilledmelon_username",
         "chilledmelon_password",
+        "chilledmelon_name",
         "chilledmelon_username2",
         "chilledmelon_password2",
+        "chilledmelon_name2",
         "chilledmelon_username3",
         "chilledmelon_password3",
+        "chilledmelon_name3",
         "chilledmelon_accounts"
       ],
       "author": "許諾",
@@ -1349,6 +1386,13 @@
           "desc": "ChilledMelon 密码。每天 09:00 自动登录、做运算题、签到"
         },
         {
+          "id": "chilledmelon_name",
+          "name": "账号1 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号1”"
+        },
+        {
           "id": "chilledmelon_username2",
           "name": "账号2 账号",
           "val": "",
@@ -1361,6 +1405,13 @@
           "val": "",
           "type": "password",
           "desc": "第 2 个 ChilledMelon 账号的密码"
+        },
+        {
+          "id": "chilledmelon_name2",
+          "name": "账号2 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号2”"
         },
         {
           "id": "chilledmelon_username3",
@@ -1377,11 +1428,18 @@
           "desc": "第 3 个 ChilledMelon 账号的密码"
         },
         {
+          "id": "chilledmelon_name3",
+          "name": "账号3 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号3”"
+        },
+        {
           "id": "chilledmelon_accounts",
           "name": "多账号",
           "val": "",
           "type": "textarea",
-          "desc": "多账号：每行一个 账号；密码（中文分号隔开），不限个数"
+          "desc": "多账号：每行一个 账号；密码（中文分号隔开），不限个数；行首加 名字| 可自定义通知里的名字，如 小号|账号；密码"
         },
         {
           "id": "chilledmelon_time_enabled",
@@ -1424,6 +1482,7 @@
       ],
       "descs_html": [
         "ChilledMelon 每日签到，每天自动登录、做运算题、签到，+5~20 积分。",
+        "通知里的账号名字可以在下面「账号1 名称」等栏位自定义，不填显示 账号1/2/3；多账号行首加 名字| 也可以自定义。",
         "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chilledmelon/ChilledMelonCheckin.plugin\">点击安装 Loon 插件</a>",
         "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
@@ -1510,12 +1569,15 @@
         "embypulse1_session_id",
         "embypulse1_username",
         "embypulse1_password",
+        "embypulse1_name",
         "embypulse1_session_id2",
         "embypulse1_username2",
         "embypulse1_password2",
+        "embypulse1_name2",
         "embypulse1_session_id3",
         "embypulse1_username3",
         "embypulse1_password3",
+        "embypulse1_name3",
         "embypulse1_accounts"
       ],
       "author": "許諾",
@@ -1544,6 +1606,13 @@
           "desc": "乐蛙密码"
         },
         {
+          "id": "embypulse1_name",
+          "name": "账号1 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号1”"
+        },
+        {
           "id": "embypulse1_session_id2",
           "name": "账号2 session_id",
           "val": "",
@@ -1563,6 +1632,13 @@
           "val": "",
           "type": "password",
           "desc": "第 2 个乐蛙账号的密码"
+        },
+        {
+          "id": "embypulse1_name2",
+          "name": "账号2 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号2”"
         },
         {
           "id": "embypulse1_session_id3",
@@ -1586,11 +1662,18 @@
           "desc": "第 3 个乐蛙账号的密码"
         },
         {
+          "id": "embypulse1_name3",
+          "name": "账号3 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号3”"
+        },
+        {
           "id": "embypulse1_accounts",
           "name": "多账号",
           "val": "",
           "type": "textarea",
-          "desc": "多账号：每行一个，填 session_id，或 账号；密码（中文分号隔开），不限个数"
+          "desc": "多账号：每行一个，填 session_id，或 账号；密码（中文分号隔开），不限个数；行首加 名字| 可自定义通知里的名字，如 小号|账号；密码"
         },
         {
           "id": "embypulse1_time_enabled",
@@ -1636,6 +1719,7 @@
       ],
       "descs_html": [
         "乐蛙每日签到，每天自动签到，奖励 100-120 积分。",
+        "通知里的账号名字可以在下面「账号1 名称」等栏位自定义，不填显示 账号1/2/3；多账号行首加 名字| 也可以自定义。",
         "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse1/EmbyPulseTaotuCheckin.plugin\">点击安装 Loon 插件</a>",
         "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
@@ -1648,12 +1732,15 @@
         "embypulse2_session_id",
         "embypulse2_username",
         "embypulse2_password",
+        "embypulse2_name",
         "embypulse2_session_id2",
         "embypulse2_username2",
         "embypulse2_password2",
+        "embypulse2_name2",
         "embypulse2_session_id3",
         "embypulse2_username3",
         "embypulse2_password3",
+        "embypulse2_name3",
         "embypulse2_accounts"
       ],
       "author": "許諾",
@@ -1682,6 +1769,13 @@
           "desc": "乐观密码"
         },
         {
+          "id": "embypulse2_name",
+          "name": "账号1 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号1”"
+        },
+        {
           "id": "embypulse2_session_id2",
           "name": "账号2 session_id",
           "val": "",
@@ -1701,6 +1795,13 @@
           "val": "",
           "type": "password",
           "desc": "第 2 个乐观账号的密码"
+        },
+        {
+          "id": "embypulse2_name2",
+          "name": "账号2 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号2”"
         },
         {
           "id": "embypulse2_session_id3",
@@ -1724,11 +1825,18 @@
           "desc": "第 3 个乐观账号的密码"
         },
         {
+          "id": "embypulse2_name3",
+          "name": "账号3 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号3”"
+        },
+        {
           "id": "embypulse2_accounts",
           "name": "多账号",
           "val": "",
           "type": "textarea",
-          "desc": "多账号：每行一个，填 session_id，或 账号；密码（中文分号隔开），不限个数"
+          "desc": "多账号：每行一个，填 session_id，或 账号；密码（中文分号隔开），不限个数；行首加 名字| 可自定义通知里的名字，如 小号|账号；密码"
         },
         {
           "id": "embypulse2_time_enabled",
@@ -1774,6 +1882,7 @@
       ],
       "descs_html": [
         "乐观每日签到，每天自动签到，奖励 90-130 积分。",
+        "通知里的账号名字可以在下面「账号1 名称」等栏位自定义，不填显示 账号1/2/3；多账号行首加 名字| 也可以自定义。",
         "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-embypulse2/EmbyPulseDijiaCheckin.plugin\">点击安装 Loon 插件</a>",
         "不用挂梯子也能签：用「同步Git Secrets」把账号传到云上，GitHub Actions 每天 09:00 自动签。"
@@ -1784,8 +1893,10 @@
       "name": "夸克每日签到",
       "keys": [
         "quark_drive_query",
+        "quark_drive_name",
         "quark_drive_ua",
         "quark_browser_query",
+        "quark_browser_name",
         "quark_browser_ua"
       ],
       "author": "許諾",
@@ -1800,11 +1911,25 @@
           "desc": "打开一次夸克网盘 App 自动抓取；也可以手动粘贴签到请求的完整 query（? 后面的那串）"
         },
         {
+          "id": "quark_drive_name",
+          "name": "夸克网盘 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“夸克网盘”"
+        },
+        {
           "id": "quark_browser_query",
           "name": "夸克浏览器 签到参数",
           "val": "",
           "type": "textarea",
           "desc": "打开一次夸克浏览器 App 自动抓取；也可以手动粘贴签到请求的完整 query（? 后面的那串）"
+        },
+        {
+          "id": "quark_browser_name",
+          "name": "夸克浏览器 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“夸克”"
         },
         {
           "id": "quark_time_enabled",
@@ -1847,6 +1972,7 @@
       ],
       "descs_html": [
         "夸克网盘 + 夸克浏览器每日签到，每天自动签到领网盘容量。",
+        "通知里的账号名字可以在下面「夸克网盘 名称」「夸克浏览器 名称」里自定义，不填显示原来的。",
         "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-quark/QuarkCheckin.plugin\">点击安装 Loon 插件</a>",
         "第一次使用：打开一次夸克网盘和夸克浏览器，插件会自动保存签到参数。"
@@ -1896,8 +2022,11 @@
       "name": "网易云音乐每日签到",
       "keys": [
         "netease_cookie",
+        "netease_name",
         "netease_cookie2",
+        "netease_name2",
         "netease_cookie3",
+        "netease_name3",
         "netease_accounts"
       ],
       "author": "許諾",
@@ -1915,11 +2044,25 @@
           "desc": "账号1 的 Cookie：打开网易云音乐 App 停 1 秒自动抓取；抓不到时可手动粘贴完整 Cookie。每天 09:00 自动签到"
         },
         {
+          "id": "netease_name",
+          "name": "账号1 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号1”"
+        },
+        {
           "id": "netease_cookie2",
           "name": "账号2 Cookie",
           "val": "",
           "type": "textarea",
           "desc": "第 2 个网易云账号的完整 Cookie"
+        },
+        {
+          "id": "netease_name2",
+          "name": "账号2 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号2”"
         },
         {
           "id": "netease_cookie3",
@@ -1929,11 +2072,18 @@
           "desc": "第 3 个网易云账号的完整 Cookie"
         },
         {
+          "id": "netease_name3",
+          "name": "账号3 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号3”"
+        },
+        {
           "id": "netease_accounts",
           "name": "多账号",
           "val": "",
           "type": "textarea",
-          "desc": "多账号：每行一个完整 Cookie，不限个数（Cookie 里本身带分号，每行就是一个账号，不要拆开）"
+          "desc": "多账号：每行一个完整 Cookie，不限个数（Cookie 里本身带分号，每行就是一个账号，不要拆开）；行首加 名字| 可自定义通知里的名字，如 小号|Cookie"
         },
         {
           "id": "netease_time_enabled",
@@ -1976,6 +2126,7 @@
       ],
       "descs_html": [
         "网易云音乐每日签到，每天自动签到，+2 成长值。",
+        "通知里的账号名字可以在下面「账号1 名称」等栏位自定义，不填显示 账号1/2/3；多账号行首加 名字| 也可以自定义。",
         "签到时间：默认每天 09:00；在下面打开“启用自定义签到时间”可改成指定时间或区间随机。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-netease/NetEaseCheckin.plugin\">点击安装 Loon 插件</a>",
         "抓 Cookie：插件设置里「抓取开关」默认开，打开网易云音乐 App 停 1 秒自动抓取；抓完可以关掉；Cookie 过期时重新打开抓一次。",
@@ -1988,8 +2139,11 @@
       "name": "宸宇每日签到",
       "keys": [
         "dylan_cookie",
+        "dylan_name",
         "dylan_cookie2",
+        "dylan_name2",
         "dylan_cookie3",
+        "dylan_name3",
         "dylan_accounts"
       ],
       "author": "許諾",
@@ -2004,11 +2158,25 @@
           "desc": "账号1 的完整 Cookie：打开 https://vip.dylan.xin/ 自动抓取，或手动粘贴（登录要验证码，只能用 Cookie）"
         },
         {
+          "id": "dylan_name",
+          "name": "账号1 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号1”"
+        },
+        {
           "id": "dylan_cookie2",
           "name": "账号2 Cookie",
           "val": "",
           "type": "textarea",
           "desc": "第 2 个宸宇账号的完整 Cookie"
+        },
+        {
+          "id": "dylan_name2",
+          "name": "账号2 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号2”"
         },
         {
           "id": "dylan_cookie3",
@@ -2018,11 +2186,18 @@
           "desc": "第 3 个宸宇账号的完整 Cookie"
         },
         {
+          "id": "dylan_name3",
+          "name": "账号3 名称",
+          "val": "",
+          "type": "text",
+          "desc": "通知里显示的名字，不填显示“账号3”"
+        },
+        {
           "id": "dylan_accounts",
           "name": "多账号",
           "val": "",
           "type": "textarea",
-          "desc": "多账号：每行一个完整 Cookie，不限个数"
+          "desc": "多账号：每行一个完整 Cookie，不限个数；行首加 名字| 可自定义通知里的名字，如 小号|Cookie"
         },
         {
           "id": "dylan_time_enabled",
@@ -2068,6 +2243,7 @@
       ],
       "descs_html": [
         "宸宇每日签到，每天自动签到领积分，连续递增加成，断签重置。",
+        "通知里的账号名字可以在下面「账号1 名称」等栏位自定义，不填显示 账号1/2/3；多账号行首加 名字| 也可以自定义。",
         "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
         "只支持 Cookie：登录要验证码，账号密码登不上去。打开 https://vip.dylan.xin/ 一次自动抓取 Cookie。",
         "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-dylan/DylanCheckin.plugin\">点击安装 Loon 插件</a>"

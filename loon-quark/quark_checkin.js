@@ -8,10 +8,12 @@ const HOST = "https://drive-member.quark.cn";
 const ORIGIN = "https://b.quark.cn";
 const DEFAULT_UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 27_3 like Mac OS X; zh-cn) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/24C5037i Quark/10.20.5.1093 QKCloud/10.20.5.1093 Mobile";
 
+// 账号名称：BoxJs 里填 quark_drive_name / quark_browser_name，通知里会用它代替 夸克网盘 / 夸克，不填显示原来的
 const APPS = [
-  { name: "夸克网盘", queryKey: "quark_drive_query", uaKey: "quark_drive_ua" },
-  { name: "夸克", queryKey: "quark_browser_query", uaKey: "quark_browser_ua" }
+  { name: "夸克网盘", nameKey: "quark_drive_name", queryKey: "quark_drive_query", uaKey: "quark_drive_ua" },
+  { name: "夸克", nameKey: "quark_browser_name", queryKey: "quark_browser_query", uaKey: "quark_browser_ua" }
 ];
+function displayName(app) { var nm = (read(app.nameKey) || "").trim(); return nm || app.name; }
 
 function read(k) { return $persistentStore.read(k) || ""; }
 
@@ -149,20 +151,20 @@ function fetchInfo(query, ua, cb) {
 function checkOne(app, next) {
   var query = read(app.queryKey);
   if (!query) {
-    results.push(app.name + "：未保存参数，打开一次 " + app.name + " App 自动获取");
+    results.push(displayName(app) + "：未保存参数，打开一次 " + displayName(app) + " App 自动获取");
     next();
     return;
   }
   var ua = read(app.uaKey);
   fetchInfo(query, ua, function (st) {
     if (!st) {
-      results.push(app.name + "：状态查询失败，参数可能失效，打开一次 App 刷新");
+      results.push(displayName(app) + "：状态查询失败，参数可能失效，打开一次 App 刷新");
       next();
       return;
     }
     var stat = "（连续第" + st.progress + "天，共" + st.total + "天）";
     if (st.signed) {
-      results.push(app.name + "：今日已签到" + stat);
+      results.push(displayName(app) + "：今日已签到" + stat);
       next();
       return;
     }
@@ -174,17 +176,17 @@ function checkOne(app, next) {
         var reward = mb(s.data.sign_daily_reward);
         fetchInfo(query, ua, function (st2) {
           if (st2) {
-            results.push(app.name + "：签到成功 +" + reward + "MB（连续第" + st2.progress + "天，共" + st2.total + "天）");
+            results.push(displayName(app) + "：签到成功 +" + reward + "MB（连续第" + st2.progress + "天，共" + st2.total + "天）");
           } else {
-            results.push(app.name + "：签到成功 +" + reward + "MB");
+            results.push(displayName(app) + "：签到成功 +" + reward + "MB");
           }
           next();
         });
       } else if (s && s.code === 44210) {
-        results.push(app.name + "：今日已签到" + stat);
+        results.push(displayName(app) + "：今日已签到" + stat);
         next();
       } else {
-        results.push(app.name + "：签到失败（" + (s ? (s.code + " " + (s.message || "")) : "无响应") + "），打开一次 App 刷新参数");
+        results.push(displayName(app) + "：签到失败（" + (s ? (s.code + " " + (s.message || "")) : "无响应") + "），打开一次 App 刷新参数");
         next();
       }
     });

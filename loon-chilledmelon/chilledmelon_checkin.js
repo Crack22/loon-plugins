@@ -5,6 +5,7 @@
 // → 未签到则 GET /api/auth/me/checkin/captcha 取运算题 → 算出答案 → POST /api/auth/me/checkin 提交
 // 账号密码存在 BoxJs（$persistentStore），不在脚本里
 const USER_KEY = 'chilledmelon_username';
+const NAME_KEY = 'chilledmelon_name';
 const PASS_KEY = 'chilledmelon_password';
 const EXTRA_KEY = 'chilledmelon_accounts';
 const BASE = 'https://www.chilledmelon.com';
@@ -106,27 +107,43 @@ function shouldRunAuto() {
 
 // 收集全部账号：账号1（单独的键）+ 多账号文本框（每行一个 账号 密码）
 // 收集全部账号：账号1/2/3（固定栏位）+ 多账号文本框（每行一个 账号；密码）
+// 账号名称：固定栏位用 chilledmelon_name(+2/+3)，多账号行首加 名字|，不填显示 账号N
+// 多账号行首的 名字| 前缀：如 小号|账号；密码，不填则显示 账号N
+function splitName(line) {
+  var bar = line.indexOf("|");
+  if (bar > 0) {
+    var nm = line.slice(0, bar).trim();
+    var rest = line.slice(bar + 1).trim();
+    if (nm && rest && nm.length <= 20 && nm.indexOf("=") === -1 && nm.indexOf(";") === -1 && nm.indexOf("\uFF1B") === -1) return { name: nm, rest: rest };
+  }
+  return { name: "", rest: line };
+}
+function slotLabel(n, nameKey) {
+  var nm = ($persistentStore.read(nameKey) || "").trim();
+  return nm || ("账号" + (n + 1));
+}
 function collectAccounts() {
   var list = [];
   var slots = [
-    { u: USER_KEY, p: PASS_KEY },
-    { u: USER_KEY + "2", p: PASS_KEY + "2" },
-    { u: USER_KEY + "3", p: PASS_KEY + "3" }
+    { u: USER_KEY, p: PASS_KEY, nm: NAME_KEY },
+    { u: USER_KEY + "2", p: PASS_KEY + "2", nm: NAME_KEY + "2" },
+    { u: USER_KEY + "3", p: PASS_KEY + "3", nm: NAME_KEY + "3" }
   ];
   for (var n = 0; n < 3; n++) {
     var u = read(slots[n].u), pw = read(slots[n].p);
-    if (u && pw) list.push({ label: "账号" + (n + 1), user: u, pass: pw });
+    if (u && pw) list.push({ label: slotLabel(n, slots[n].nm), user: u, pass: pw });
   }
   var lines = (read(EXTRA_KEY) || "").split("\n");
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i].trim();
     if (!line) continue;
+    var sn = splitName(line); line = sn.rest;
     var p = line.indexOf("；");
     if (p === -1) p = line.indexOf(";");
     if (p === -1) continue;
     var u = line.slice(0, p).trim(), pw = line.slice(p + 1).trim();
     if (!u || !pw) continue;
-    list.push({ label: "账号" + (list.length + 1), user: u, pass: pw });
+    list.push({ label: sn.name || ("账号" + (list.length + 1)), user: u, pass: pw });
   }
   return list;
 }

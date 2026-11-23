@@ -10,7 +10,8 @@ if (m && m[1]) {
   const old = $persistentStore.read(KEY);
   if (old !== sid) {
     $persistentStore.write(sid, KEY);
-    $notification.post(NAME + " Cookie 获取成功", "", "session_id 已保存，签到插件每天 09:00 自动生效");
+    var nm = ($persistentStore.read("embypulse2_name") || "").trim();
+    $notification.post(NAME + " Cookie 获取成功", "", "session_id 已保存" + (nm ? "到" + nm : "") + "，签到插件每天 09:00 自动生效");
   }
 }
 $done({});

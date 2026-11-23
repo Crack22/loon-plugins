@@ -7,6 +7,7 @@ const SITE = "https://embyyh.dijia.de";
 const SESSION_KEY = "embypulse2_session_id";
 const USER_KEY = "embypulse2_username";
 const PASS_KEY = "embypulse2_password";
+const NAME_KEY = "embypulse2_name";
 const EXTRA_KEY = "embypulse2_accounts";
 const NAME = "乐观";
 const UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1";
@@ -128,22 +129,38 @@ function headers(sessionId) {
 
 // 收集全部账号：账号1（单独的键）+ 多账号文本框（每行一个）
 // 收集全部账号：账号1/2/3（固定栏位）+ 多账号文本框（每行一个）
+// 账号名称：固定栏位用 embypulse2_name(+2/+3)，多账号行首加 名字|，不填显示 账号N
+// 多账号行首的 名字| 前缀：如 小号|账号；密码，不填则显示 账号N
+function splitName(line) {
+  var bar = line.indexOf("|");
+  if (bar > 0) {
+    var nm = line.slice(0, bar).trim();
+    var rest = line.slice(bar + 1).trim();
+    if (nm && rest && nm.length <= 20 && nm.indexOf("=") === -1 && nm.indexOf(";") === -1 && nm.indexOf("\uFF1B") === -1) return { name: nm, rest: rest };
+  }
+  return { name: "", rest: line };
+}
+function slotLabel(n, nameKey) {
+  var nm = ($persistentStore.read(nameKey) || "").trim();
+  return nm || ("账号" + (n + 1));
+}
 function collectAccounts() {
   var list = [];
   var slots = [
-    { ck: SESSION_KEY, u: USER_KEY, p: PASS_KEY },
-    { ck: SESSION_KEY + "2", u: USER_KEY + "2", p: PASS_KEY + "2" },
-    { ck: SESSION_KEY + "3", u: USER_KEY + "3", p: PASS_KEY + "3" }
+    { ck: SESSION_KEY, u: USER_KEY, p: PASS_KEY, nm: NAME_KEY },
+    { ck: SESSION_KEY + "2", u: USER_KEY + "2", p: PASS_KEY + "2", nm: NAME_KEY + "2" },
+    { ck: SESSION_KEY + "3", u: USER_KEY + "3", p: PASS_KEY + "3", nm: NAME_KEY + "3" }
   ];
   for (var n = 0; n < 3; n++) {
     var k = slots[n];
     var a = { cookieKey: k.ck, cookie: read(k.ck), user: read(k.u), pass: read(k.p) };
-    if (a.cookie || (a.user && a.pass)) { a.label = "账号" + (n + 1); list.push(a); }
+    if (a.cookie || (a.user && a.pass)) { a.label = slotLabel(n, k.nm); list.push(a); }
   }
   var lines = (read(EXTRA_KEY) || "").split("\n");
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i].trim();
     if (!line) continue;
+    var sn = splitName(line); line = sn.rest;
     var a = { cookieKey: "", cookie: "", user: "", pass: "" };
     var p = line.indexOf("；");
     if (p === -1) p = line.indexOf(";");
@@ -154,7 +171,7 @@ function collectAccounts() {
     } else {
       a.cookie = line;
     }
-    a.label = "账号" + (list.length + 1);
+    a.label = sn.name || ("账号" + (list.length + 1));
     list.push(a);
   }
   return list;

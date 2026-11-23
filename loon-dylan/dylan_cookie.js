@@ -8,7 +8,8 @@ if (cookie && cookie.indexOf("sid=") !== -1) {
   const old = $persistentStore.read(KEY);
   if (old !== cookie) {
     $persistentStore.write(cookie, KEY);
-    $notification.post(NAME + " Cookie 获取成功", "", "Cookie 已保存，签到插件每天 09:00 自动生效");
+    var nm = ($persistentStore.read("dylan_name") || "").trim();
+    $notification.post(NAME + " Cookie 获取成功", "", "Cookie 已保存" + (nm ? "到" + nm : "") + "，签到插件每天 09:00 自动生效");
   }
 }
 $done({});

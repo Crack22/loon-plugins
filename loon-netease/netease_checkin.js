@@ -8,6 +8,7 @@
 // 云贝中心（/xeapi/pointmall/user/sign）和 VIP 签到（/xeapi/vip-center-bff/task/sign）是 xeapi 加密接口，
 // 每次请求的密文都不一样，无法重放、也无法在 Loon 里重新加密，所以做不了自动签，只能在 App 里手动签
 var NAME = "网易云音乐";
+var NAME_KEY = "netease_name";
 var URL = "https://music.163.com/api/point/dailyTask?type=1";
 var UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15";
 var GROWTH_URL = "https://music.163.com/api/vipnewcenter/app/level/growhpoint/basic";
@@ -138,19 +139,35 @@ function fetchGrowthTotal(cookie, cb) {
   });
 }
 
+// 账号名称：固定栏位用 netease_name(+2/+3)，多账号行首加 名字|，不填显示 账号N
+// 多账号行首的 名字| 前缀：如 小号|账号；密码，不填则显示 账号N
+function splitName(line) {
+  var bar = line.indexOf("|");
+  if (bar > 0) {
+    var nm = line.slice(0, bar).trim();
+    var rest = line.slice(bar + 1).trim();
+    if (nm && rest && nm.length <= 20 && nm.indexOf("=") === -1 && nm.indexOf(";") === -1 && nm.indexOf("\uFF1B") === -1) return { name: nm, rest: rest };
+  }
+  return { name: "", rest: line };
+}
+function slotLabel(n, nameKey) {
+  var nm = ($persistentStore.read(nameKey) || "").trim();
+  return nm || ("账号" + (n + 1));
+}
 function collectAccounts() {
   var list = [];
   var c1 = read("netease_cookie").trim();
-  if (c1) list.push({ cookie: c1, label: "账号1" });
+  if (c1) list.push({ cookie: c1, label: slotLabel(0, NAME_KEY) });
   var c2 = read("netease_cookie2").trim();
-  if (c2) list.push({ cookie: c2, label: "账号2" });
+  if (c2) list.push({ cookie: c2, label: slotLabel(1, NAME_KEY + "2") });
   var c3 = read("netease_cookie3").trim();
-  if (c3) list.push({ cookie: c3, label: "账号3" });
+  if (c3) list.push({ cookie: c3, label: slotLabel(2, NAME_KEY + "3") });
   var lines = (read("netease_accounts") || "").split("\n");
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i].trim();
     if (!line) continue;
-    list.push({ cookie: line, label: "账号" + (list.length + 1) });
+    var sn = splitName(line);
+    list.push({ cookie: sn.rest, label: sn.name || ("账号" + (list.length + 1)) });
   }
   return list;
 }

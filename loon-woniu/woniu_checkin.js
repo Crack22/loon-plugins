@@ -4,6 +4,7 @@
 // 登录接口：POST https://www.wn4k.com/user/login.html（user_name + user_pwd），成功 code=1，登录后从 Set-Cookie 取 user_check 保存
 // 签到接口：POST https://www.wn4k.com/user/checkin.html，成功 code=1（info.points 积分），已签到 code=1001
 const NAME = "蜗牛";
+const NAME_KEY = "woniu_name";
 const UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1";
 const LOGIN_URL = "https://www.wn4k.com/user/login.html";
 const CHECKIN_URL = "https://www.wn4k.com/user/checkin.html";
@@ -126,22 +127,38 @@ function buildCookie(setCookieStr) {
 
 // 收集全部账号：账号1（单独的键）+ 多账号文本框（每行一个）
 // 收集全部账号：账号1/2/3（固定栏位）+ 多账号文本框（每行一个）
+// 账号名称：固定栏位用 woniu_name(+2/+3)，多账号行首加 名字|，不填显示 账号N
+// 多账号行首的 名字| 前缀：如 小号|账号；密码，不填则显示 账号N
+function splitName(line) {
+  var bar = line.indexOf("|");
+  if (bar > 0) {
+    var nm = line.slice(0, bar).trim();
+    var rest = line.slice(bar + 1).trim();
+    if (nm && rest && nm.length <= 20 && nm.indexOf("=") === -1 && nm.indexOf(";") === -1 && nm.indexOf("\uFF1B") === -1) return { name: nm, rest: rest };
+  }
+  return { name: "", rest: line };
+}
+function slotLabel(n, nameKey) {
+  var nm = ($persistentStore.read(nameKey) || "").trim();
+  return nm || ("账号" + (n + 1));
+}
 function collectAccounts() {
   var list = [];
   var slots = [
-    { ck: "woniu_cookie", u: "woniu_username", p: "woniu_password" },
-    { ck: "woniu_cookie2", u: "woniu_username2", p: "woniu_password2" },
-    { ck: "woniu_cookie3", u: "woniu_username3", p: "woniu_password3" }
+    { ck: "woniu_cookie", u: "woniu_username", p: "woniu_password", nm: "woniu_name" },
+    { ck: "woniu_cookie2", u: "woniu_username2", p: "woniu_password2", nm: "woniu_name2" },
+    { ck: "woniu_cookie3", u: "woniu_username3", p: "woniu_password3", nm: "woniu_name3" }
   ];
   for (var n = 0; n < 3; n++) {
     var k = slots[n];
     var a = { cookieKey: k.ck, cookie: read(k.ck), user: read(k.u), pass: read(k.p) };
-    if (a.cookie || (a.user && a.pass)) { a.label = "账号" + (n + 1); list.push(a); }
+    if (a.cookie || (a.user && a.pass)) { a.label = slotLabel(n, k.nm); list.push(a); }
   }
   var lines = (read("woniu_accounts") || "").split("\n");
   for (var i = 0; i < lines.length; i++) {
     var line = lines[i].trim();
     if (!line) continue;
+    var sn = splitName(line); line = sn.rest;
     var a = { cookieKey: "", cookie: "", user: "", pass: "" };
     var p = line.indexOf("；");
     if (p === -1) p = line.indexOf(";");
@@ -152,7 +169,7 @@ function collectAccounts() {
     } else {
       a.cookie = line;
     }
-    a.label = "账号" + (list.length + 1);
+    a.label = sn.name || ("账号" + (list.length + 1));
     list.push(a);
   }
   return list;
