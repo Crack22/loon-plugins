@@ -1,0 +1,17 @@
+#!name=Altare每日签到
+#!desc=Altare每日签到领 bolts：每天先查签到状态，没签就自动签到，签到结果会通知你（签到时间在 BoxJs 里设置，默认 09:00，也可以指定时间或在时间区间内随机）。\nCookie 抓取：打开每日奖励页 https://console.altare.gg/billing/rewards/daily 一次自动抓取（只存账号1），或在 BoxJs 里粘贴 Cookie、Authorization 和 Tenant ID。\n多账号：在 BoxJs「多账号」里每行一个账号，格式 Cookie；Authorization；TenantID（中文分号隔开）。\n奖励按 UTC 日重置，北京时间每天 08:00 后可领新一天的；连续签到每天多 0.67 bolts，上限 10 天，漏签重新开始。\nCookie 和 Authorization 只保存在你手机本地，不会上传。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/altare.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+[Argument]
+capture = switch,true,tag=Cookie抓取,desc=打开后，打开每日奖励页会自动抓取 Cookie 和 Authorization；抓完可以关掉
+manualRun = switch,false,tag=手动运行一次,desc=打开后运行一次，手动关闭
+
+[Script]
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-altare/altare_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/altare.png, tag=Altare签到, enable=true
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-altare/altare_checkin.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/altare.png, tag=手动运行一次, argument=[{manualRun}], enable={manualRun}
+http-request ^https?://console\.altare\.gg/api/tenants/[^/]+/rewards script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-altare/altare_cookie.js, img-url=https://raw.githubusercontent.com/Crack22/loon-plugins/main/icons/altare.png, requires-body=false, tag=Altare Cookie抓取, enable={capture}
+
+[MITM]
+hostname = console.altare.gg
