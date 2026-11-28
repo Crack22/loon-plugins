@@ -9,9 +9,9 @@ capture = switch,true,tag=Cookie抓取,desc=打开后，打开网站会自动抓
 manualRun = switch,false,tag=手动运行一次,desc=打开后运行一次，手动关闭
 
 [Script]
-cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-wn4k/wn4k_checkin.js, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, tag=蜗牛emby签到, enable=true
-cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-wn4k/wn4k_checkin.js, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, tag=手动运行一次, argument=[{manualRun}], enable={manualRun}
-http-request ^https?://wn4k\.ykvip\.net/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-wn4k/wn4k_cookie.js, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, requires-body=false, tag=蜗牛emby Cookie抓取, enable={capture}
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/5248725b7e287dbc5fb91a939574d8324c5e9c14/loon-wn4k/wn4k_checkin.js, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, tag=蜗牛emby签到, enable=true
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/5248725b7e287dbc5fb91a939574d8324c5e9c14/loon-wn4k/wn4k_checkin.js, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, tag=手动运行一次, argument=[{manualRun}], enable={manualRun}
+http-request ^https?://wn4k\.ykvip\.net/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/5248725b7e287dbc5fb91a939574d8324c5e9c14/loon-wn4k/wn4k_cookie.js, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, requires-body=false, tag=蜗牛emby Cookie抓取, enable={capture}
 
 [MITM]
 hostname = wn4k.ykvip.net
