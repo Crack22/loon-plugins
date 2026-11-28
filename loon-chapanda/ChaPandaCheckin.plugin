@@ -1,0 +1,17 @@
+#!name=ChaPanda每日签到
+#!desc=ChaPanda每日签到领积分：每天先查签到状态，没签就先拿一道数学加减法验证题、算出答案再签到，签到结果会通知你（签到时间在 BoxJs 里设置，默认 09:00，也可以指定时间或在时间区间内随机）。\nToken 抓取：打开门户 https://app.chapanda.us.ci/#/portal 一次自动抓取（只存账号1），或在 BoxJs 里粘贴 x-admin-token。登录还要 Telegram 二次确认，脚本不做账号密码登录。\n多账号：在 BoxJs「多账号」里每行一个 x-admin-token。\nToken 只保存在你手机本地，不会上传。
+#!author=許諾
+#!icon=https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Emby/ChaPanda-02.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+[Argument]
+capture = switch,true,tag=Token抓取,desc=打开后，打开门户会自动抓取 x-admin-token；抓完可以关掉
+manualRun = switch,false,tag=手动运行一次,desc=打开后运行一次，手动关闭
+
+[Script]
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chapanda/chapanda_checkin.js, img-url=https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Emby/ChaPanda-02.png, tag=ChaPanda签到, enable=true
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chapanda/chapanda_checkin.js, img-url=https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Emby/ChaPanda-02.png, tag=手动运行一次, argument=[{manualRun}], enable={manualRun}
+http-request ^https?://app\.chapanda\.us\.ci/api/auth/me script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chapanda/chapanda_cookie.js, img-url=https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Emby/ChaPanda-02.png, requires-body=false, tag=ChaPanda Token抓取, enable={capture}
+
+[MITM]
+hostname = app.chapanda.us.ci

@@ -2854,6 +2854,121 @@
    ]
   },
   {
+   "id": "chapanda_checkin",
+   "name": "ChaPanda每日签到",
+   "keys": [
+    "chapanda_token",
+    "chapanda_name",
+    "chapanda_token2",
+    "chapanda_name2",
+    "chapanda_token3",
+    "chapanda_name3",
+    "chapanda_accounts"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "settings": [
+    {
+     "id": "chapanda_token",
+     "name": "账号1 Token",
+     "val": "",
+     "type": "password",
+     "desc": "账号1 的 x-admin-token：打开 https://app.chapanda.us.ci/#/portal 自动抓取，或手动粘贴"
+    },
+    {
+     "id": "chapanda_name",
+     "name": "账号1 名称",
+     "val": "",
+     "type": "text",
+     "desc": "通知里显示的名字，不填显示“账号1”"
+    },
+    {
+     "id": "chapanda_token2",
+     "name": "账号2 Token",
+     "val": "",
+     "type": "password",
+     "desc": "第 2 个 ChaPanda 账号的 x-admin-token"
+    },
+    {
+     "id": "chapanda_name2",
+     "name": "账号2 名称",
+     "val": "",
+     "type": "text",
+     "desc": "通知里显示的名字，不填显示“账号2”"
+    },
+    {
+     "id": "chapanda_token3",
+     "name": "账号3 Token",
+     "val": "",
+     "type": "password",
+     "desc": "第 3 个 ChaPanda 账号的 x-admin-token"
+    },
+    {
+     "id": "chapanda_name3",
+     "name": "账号3 名称",
+     "val": "",
+     "type": "text",
+     "desc": "通知里显示的名字，不填显示“账号3”"
+    },
+    {
+     "id": "chapanda_accounts",
+     "name": "多账号",
+     "val": "",
+     "type": "textarea",
+     "desc": "多账号：每行一个 x-admin-token，不限个数；行首加 名字| 可自定义通知里的名字，如 小号|token"
+    },
+    {
+     "id": "chapanda_time_enabled",
+     "name": "启用自定义签到时间",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认关闭（每天 09:00 签到）。打开后按下面选的时间签到；关闭则恢复 09:00"
+    },
+    {
+     "id": "chapanda_time_mode",
+     "name": "签到时间模式",
+     "type": "selects",
+     "items": [
+      {
+       "key": "fixed",
+       "label": "指定时间"
+      },
+      {
+       "key": "random",
+       "label": "时间区间随机"
+      }
+     ],
+     "val": "",
+     "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+    },
+    {
+     "id": "chapanda_time",
+     "name": "指定签到时间",
+     "val": "",
+     "type": "text",
+     "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 09:00"
+    },
+    {
+     "id": "chapanda_time_range",
+     "name": "签到时间区间",
+     "val": "",
+     "type": "text",
+     "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 09:00"
+    }
+   ],
+   "icons": [
+    "https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Emby/ChaPanda-02.png"
+   ],
+   "descs_html": [
+    "ChaPanda每日签到，每天自动签到领积分：先查签到状态，没签就拿一道数学加减法验证题、算出答案再签到。",
+    "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。奖励每天随机 +2~5 积分。",
+    "Token 抓取：打开门户 https://app.chapanda.us.ci/#/portal 一次自动抓取 x-admin-token（只存账号1）。登录还要 Telegram 二次确认，脚本不做账号密码登录。",
+    "通知里的账号名字可以在下面「账号1 名称」等栏位自定义，不填显示 账号1/2/3；通知里会显示领到的积分和余额。",
+    "手动签到去 Loon「脚本」里点「手动运行一次」，或打开插件的「手动运行一次」开关（跑完记得关）。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-chapanda/ChaPandaCheckin.plugin\">点击安装 Loon 插件</a>"
+   ]
+  },
+  {
    "id": "xream-gist",
    "name": "Gist 备份",
    "keys": [
