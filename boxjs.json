@@ -2969,6 +2969,182 @@
    ]
   },
   {
+   "id": "wn4k_checkin",
+   "name": "蜗牛emby每日签到",
+   "keys": [
+    "wn4k_cookie",
+    "wn4k_name",
+    "wn4k_username",
+    "wn4k_password",
+    "wn4k_cookie2",
+    "wn4k_name2",
+    "wn4k_username2",
+    "wn4k_password2",
+    "wn4k_cookie3",
+    "wn4k_name3",
+    "wn4k_username3",
+    "wn4k_password3",
+    "wn4k_accounts",
+    "wn4k_time_enabled",
+    "wn4k_time_mode",
+    "wn4k_time",
+    "wn4k_time_range",
+    "wn4k_renew_notify"
+   ],
+   "author": "許諾",
+   "repo": "https://github.com/Crack22/loon-plugins",
+   "settings": [
+    {
+     "id": "wn4k_cookie",
+     "name": "账号1 Cookie",
+     "val": "",
+     "type": "password",
+     "desc": "账号1 的 Cookie：打开 https://wn4k.ykvip.net/request?tab=explore 自动抓取 session_id，或手动粘贴完整 Cookie"
+    },
+    {
+     "id": "wn4k_name",
+     "name": "账号1 名称",
+     "val": "",
+     "type": "text",
+     "desc": "通知里显示的名字，不填显示“账号1”"
+    },
+    {
+     "id": "wn4k_username",
+     "name": "账号1 用户名",
+     "val": "",
+     "type": "text",
+     "desc": "账号1 的 Emby 用户名；填了账号密码后，Cookie 过期时自动重新登录"
+    },
+    {
+     "id": "wn4k_password",
+     "name": "账号1 密码",
+     "val": "",
+     "type": "password",
+     "desc": "账号1 的 Emby 密码；登录成功后自动保存新 session_id"
+    },
+    {
+     "id": "wn4k_cookie2",
+     "name": "账号2 Cookie",
+     "val": "",
+     "type": "password",
+     "desc": "第 2 个蜗牛emby账号的 Cookie"
+    },
+    {
+     "id": "wn4k_name2",
+     "name": "账号2 名称",
+     "val": "",
+     "type": "text",
+     "desc": "通知里显示的名字，不填显示“账号2”"
+    },
+    {
+     "id": "wn4k_username2",
+     "name": "账号2 用户名",
+     "val": "",
+     "type": "text",
+     "desc": "第 2 个账号的 Emby 用户名"
+    },
+    {
+     "id": "wn4k_password2",
+     "name": "账号2 密码",
+     "val": "",
+     "type": "password",
+     "desc": "第 2 个账号的 Emby 密码"
+    },
+    {
+     "id": "wn4k_cookie3",
+     "name": "账号3 Cookie",
+     "val": "",
+     "type": "password",
+     "desc": "第 3 个蜗牛emby账号的 Cookie"
+    },
+    {
+     "id": "wn4k_name3",
+     "name": "账号3 名称",
+     "val": "",
+     "type": "text",
+     "desc": "通知里显示的名字，不填显示“账号3”"
+    },
+    {
+     "id": "wn4k_username3",
+     "name": "账号3 用户名",
+     "val": "",
+     "type": "text",
+     "desc": "第 3 个账号的 Emby 用户名"
+    },
+    {
+     "id": "wn4k_password3",
+     "name": "账号3 密码",
+     "val": "",
+     "type": "password",
+     "desc": "第 3 个账号的 Emby 密码"
+    },
+    {
+     "id": "wn4k_accounts",
+     "name": "多账号",
+     "val": "",
+     "type": "textarea",
+     "desc": "多账号：每行一个完整 Cookie，或 用户名；密码（全角分号隔开），不限个数；行首加 名字| 可自定义通知里的名字，如 小号|账号；密码"
+    },
+    {
+     "id": "wn4k_time_enabled",
+     "name": "启用自定义签到时间",
+     "val": "",
+     "type": "boolean",
+     "desc": "默认关闭（每天 09:00 签到）。打开后按下面选的时间签到；关闭则恢复 09:00"
+    },
+    {
+     "id": "wn4k_time_mode",
+     "name": "签到时间模式",
+     "type": "selects",
+     "items": [
+      {
+       "key": "fixed",
+       "label": "指定时间"
+      },
+      {
+       "key": "random",
+       "label": "时间区间随机"
+      }
+     ],
+     "val": "",
+     "desc": "指定时间：每天在固定时间签到；时间区间随机：每天在区间内随机一个时间签到"
+    },
+    {
+     "id": "wn4k_time",
+     "name": "指定签到时间",
+     "val": "",
+     "type": "text",
+     "desc": "指定时间模式用，格式 HH:MM，如 09:30；不填或格式不对按 09:00"
+    },
+    {
+     "id": "wn4k_time_range",
+     "name": "签到时间区间",
+     "val": "",
+     "type": "text",
+     "desc": "时间区间随机模式用，格式 HH:MM-HH:MM，如 08:00-10:00；不填或格式不对按 09:00"
+    },
+    {
+     "id": "wn4k_renew_notify",
+     "name": "续期提醒",
+     "val": "true",
+     "type": "boolean",
+     "desc": "默认打开。签到查到余额满 150 分后，当天中午 12:00 单独发一条续期提醒；关掉就不发；只通知，不会自动续期"
+    }
+   ],
+   "icons": [
+    "https://woniu.qljiang.com/weixin_files/woniu_white.png"
+   ],
+   "descs_html": [
+    "蜗牛emby每日签到，每天自动签到领积分：先查签到状态，没签就自动签到。奖励每天 30~50 积分浮动，连签 7 天 +100，30 天 +500。",
+    "签到时间：默认每天 09:00；打开下面的「启用自定义签到时间」，可以指定时间（如 09:30）或在时间区间内随机（如 08:00-10:00）。",
+    "Cookie 抓取：打开网站 https://wn4k.ykvip.net/request?tab=explore 一次自动抓取 session_id（只存账号1）。也可以在上面填 Emby 账号密码，登录成功后自动保存新 session_id，Cookie 过期时自动重新登录。",
+    "续期提醒：签到查到余额满 150 分后，当天中午 12:00 会单独发一条续期提醒（如果签到本身在 12:00 之后，当时就发）；余额不到 150 不发；下面的「续期提醒」开关关掉就不发；只通知，不会自动续期。",
+    "通知里的账号名字可以在下面「账号1 名称」等栏位自定义，不填显示 账号1/2/3；通知里会显示领到的积分和余额。",
+    "手动签到去 Loon「脚本」里点「手动运行一次」，或打开插件的「手动运行一次」开关（跑完记得关）。",
+    "Loon 插件：<a href=\"loon://import?plugin=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-wn4k/WoniuEmbyCheckin.plugin\">点击安装 Loon 插件</a>"
+   ]
+  },
+  {
    "id": "xream-gist",
    "name": "Gist 备份",
    "keys": [

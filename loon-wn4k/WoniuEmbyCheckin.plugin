@@ -1,0 +1,17 @@
+#!name=蜗牛emby每日签到
+#!desc=蜗牛emby每日签到领积分：每天先查签到状态，没签就自动签到，签到结果会通知你（签到时间在 BoxJs 里设置，默认 09:00，也可以指定时间或在时间区间内随机）。奖励每天 30~50 积分浮动，连签 7 天 +100，30 天 +500。\nCookie 抓取：打开网站 https://wn4k.ykvip.net/request?tab=explore 一次自动抓取（只存账号1），或在 BoxJs 里粘贴 Cookie；也可以在 BoxJs 里填 Emby 账号密码，登录后自动保存 session_id，Cookie 过期时自动重新登录。\n多账号：在 BoxJs「多账号」里每行一个 Cookie，或 用户名；密码（全角分号隔开）。\n续期提醒：签到查到余额满 150 分，当天中午 12:00 会单独发一条续期提醒“积分已满150分，可以去续期30天了”；如果签到本身在 12:00 之后，当时就发；余额不到 150 不发，开关在 Loon 里可关；只通知，不自动续期。\nCookie 和密码只保存在你手机本地，不会上传。
+#!author=許諾
+#!icon=https://woniu.qljiang.com/weixin_files/woniu_white.png
+#!homepage=https://github.com/Crack22/loon-plugins
+
+[Argument]
+capture = switch,true,tag=Cookie抓取,desc=打开后，打开网站会自动抓取 Cookie；抓完可以关掉
+manualRun = switch,false,tag=手动运行一次,desc=打开后运行一次，手动关闭
+
+[Script]
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-wn4k/wn4k_checkin.js, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, tag=蜗牛emby签到, enable=true
+cron "* * * * *" script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-wn4k/wn4k_checkin.js, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, tag=手动运行一次, argument=[{manualRun}], enable={manualRun}
+http-request ^https?://wn4k\.ykvip\.net/ script-path=https://raw.githubusercontent.com/Crack22/loon-plugins/main/loon-wn4k/wn4k_cookie.js, img-url=https://woniu.qljiang.com/weixin_files/woniu_white.png, requires-body=false, tag=蜗牛emby Cookie抓取, enable={capture}
+
+[MITM]
+hostname = wn4k.ykvip.net
